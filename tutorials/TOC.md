@@ -14,12 +14,12 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/techmarketing-test.en
 
 # Implementation Guide by Daniel
 
-+ [Overview](web-side/implementation/pages/index.md)
++ [Overview](web-side-implementation/pages/index.md)
 + Configure Launch{#configure-launch}
-  + [Create a Launch Property](web-side/implementation/pages/launch.md)
-  + [Add the Embed Code](web-side/implementation/pages/launch-add-embed.md)
-  + [Add Data Elements, Rules and Libraries](web-side/implementation/pages/launch-data-elements-rules.md)
-  + [Switch Environments with Launch Command](web-side/implementation/pages/launch-switch-environments.md)
+  + [Create a Launch Property](web-side-implementation/pages/launch.md)
+  + [Add the Embed Code](web-side-implementation/pages/launch-add-embed.md)
+  + [Add Data Elements, Rules and Libraries](web-side-implementation/pages/launch-data-elements-rules.md)
+  + [Switch Environments with Launch Command](web-side-implementation/pages/launch-switch-environments.md)
 + Implement Solutions{#implement-solutions}
-  + [Experience Cloud ID Service](web-side/implementation/pages/id-service.md)
-  + [Target](web-side/implementation/pages/target.md)
+  + [Experience Cloud ID Service](web-side-implementation/pages/id-service.md)
+  + [Target](web-side-implementation/pages/target.md)
