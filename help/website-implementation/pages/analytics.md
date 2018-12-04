@@ -8,13 +8,21 @@ solution: Experience Cloud
 
 # Adobe Analytics
 
-In this lesson, you will implement Adobe Analytics extension.
+In this lesson, we will implement the Adobe Analytics extension, and create rules that will send data data from the page into Adobe Analytics.
 
 The Adobe Analytics extension supports client-side Analytics implementations using AppMeasurement.js.
 
+There are many things that could be implemented for Analytics in Launch, but we will limit this demo to the implementation of the following items:
+1. Tracking `pageName` at a global level in the Analytics extension 
+1. When Product Detail Pages are viewed, set an `eVar` and an `event`
+1. Tracking a click on navigation links, populating an `eVar`, `prop`, and `event`
+1. Implementing a plug-in to help track campaigns, and keep them from falsely duplicating `click-throughs`
+
 ## Prerequisites
 
-The report suite ids and tracking servers you are going to use with this tutorial should be defined before you configure the extension and you should have the details readily available.
+As noted in the Adobe Target section, to complete the lessons in this section, you should have already completed the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md). Implementing Analytics does not depend on having Target implemented, but for the purposes of this tutorial, we will assume that you did follow along and implement Target.
+
+In addition, you will need at least one report suite ID and also your tracking servers to complete this tutorial. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html). Please also have your tracking code readily available. You can retrieve this from your current implementation, or talk to your Adobe Consultant or Customer Care representative to help you decide on one.
 
 ## Add the Analytics Extension
 
@@ -26,7 +34,7 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
    ![Install the Analytics extension](../assets/images/analytics-catalog-install.png)
 
-1. Under `Library Management > Report Suites`, enter the report suite ids you would like to use with each Launch environment
+1. Under `Library Management > Report Suites`, enter the report suite ids you would like to use with each Launch environment (It's OK to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](../assets/images/analytics-config-reportSuite.png)
 
@@ -36,7 +44,7 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
    ![Enter the tracking servers](../assets/images/analytics-config-trackingServer.png)
 
-1. In the Global Variables section, set the `Page Name` variable using your `Page Name` data element
+1. In the Global Variables section, set the `Page Name` variable using your `Page Name` data element (click the ![data element icon](../assets/images/icon-dataElement.png) icon and choose the page Page Name element)
 
    ![Set the page name variable](../assets/images/analytics-extension-pageName.png)
 
@@ -58,7 +66,7 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
 * The managed library option ships with a specific version of AppMeasurement.js
 
-* Multiple Analytics instances like having two Analytics "Tools" in DTM is not supported
+* Multiple Analytics instances, like having two Analytics "Tools" in DTM, is not supported
 
 * General: New options for *Custom* Character Set and Currency Code
 
@@ -66,7 +74,7 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
 * Global Variables: New options for Server, State, Zip
 
-* Global Variables: data elements must be defined before the Launch header embed code for variables set in the extension configuration(variables set in Rules can come from data elements set before the event)
+* Global Variables: data elements must be defined before the Launch header embed code for variables set in the extension configuration (variables set in Rules can come from data elements set before the event)
 
 * Custom Code: Option to load before or after the UI settings has been removed
 
@@ -74,21 +82,31 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
 ## Fire the Analytics Beacon in a Rule
 
-Now you will use a rule to set the `Page Name` variable and fire the Analytics beacon.
+Now you will create a rule to fire the Analytics beacon, which will also set the `Page Name` variable.
+>[!NOTE] We have already created an "All Pages - Library Loaded" rule in the Target section of this tutorial, which fires on every page. We *could* use this rule for Analytics as well, but this rule fires at the top of the page, and best practice for Analytics is to fire closer to the bottom of the page, so that we can use data that has been developed on the page as it loads, etc. Therefore, we will be creating a new "all pages" rule to use for Analytics.
 
-1. Go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor.
+1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
 
-   ![Open All Pages - Library Loaded Rule](../assets/images/analytics-editRule.png)
+   ![Add Rule](../assets/images/target-addRule.png)
+
+1. Name the rule `All Pages - DOM Ready - Analytics`
+1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
+
+   ![Name the rule and add the event](../assets/images/analytics-domReady-nameAddAnalyticsEvent.png)
+
+1. Select **[!UICONTROL Event Type > DOM Ready]**
+1. Click **[!UICONTROL Keep Changes]**
+   ![Configure the Event](../assets/images/analytics-configureEventDomReady.png)
 
 1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add a new action
 
-   ![Click the Plus icon to add a new action](../assets/images/analytics-addAction.png)
+   ![Click the Plus icon to add a new action](../assets/images/analytics-ruleAddAction.png)
 
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 
 1. Select **[!UICONTROL Action Type > Send Beacon]**
 
-1. Leave Tracking set to `s.t()`. Note that if you wanted to make an `s.tl()` call in a click-event rule you could do that using the Send Beacon action, as well.
+1. Leave Tracking set to `s.t()`. Note that if you wanted to make an `s.tl()` call in a click-event rule you could do that using the Send Beacon action, as well. However, in this case, we have set the action in this rule to "DOM Ready" so it won't require a click.
 
 1. Click the **[!UICONTROL Keep Changes]** button
 
@@ -96,610 +114,253 @@ Now you will use a rule to set the `Page Name` variable and fire the Analytics b
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-  ![Click Save to Library and Build](../assets/images/target-rearrangeActions.png)
+  ![Click Save to Library and Build](../assets/images/analytics-saveToLibraryAndBuild.png)
 
-1. Save the rule
+## Validate the Page Load Hit and Page Name Variable
 
-## Add Variables and Events
+Now that we have created a rule to send an Analytics beacon, we should be able to see the hit in the Experience Cloud Debugger.
+1. Open (or refresh) your we.retail page in a browser (you should have set a bookmark to it in an early exercise)
+1. Click the debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click to the Analytics tab
+1. Expand your Report Suite's hit
+1. Notice the Page Name variable/value
 
-### Add the pageName Variable
+![Validate the page hit](../assets/images/analytics-validatePageHit.png)
 
-### Add the Purchase Event
+>[!NOTE] If the Page Name is not showing up for you, go back through the steps in this page to make sure that you haven't missed anything. 
 
-The purchase event is one of the most critical parts of many Analytics implementations. It consists of:
+## Setting "Product Details Page" into an `eVar` (and set an `Event`) on Product Details Pages
 
-* capture of the `s.purchaseID`
-* setting of the `purchase` event in `s.events`
-* setting of the `s.products`
+In our deployment, we are going to focus on Product Detail Pages (PDP), also sometimes called "Product View Pages." When we load a Product Detail Page, we would like to put that value into a "Page Type" `eVar`, as well as set an event. This will allow us to see the following in our analysis:
+1. How many times product detail pages are loaded
+1. How other factors (campaigns, search, etc) affect how many PDP's people load.
 
-1. Create a new rule called "Order Confirmation Page - Bottom - 30 "
+#### Create Data Element for Page Type
 
-1. Create a new event
+1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Add Data Element]**
+1. Name the data element `Page Type`
+1. Check the `Clean text` and `Force Lower Case` options
+1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
+1. Use `digitalData.page.category.type` as the `Path to Variable`
+1. Click **[!UICONTROL Save to Library and Build]**
 
-a. Select the Core extension
+#### Create the Rule for Product Detail Pages
 
-b. Select the "Library Loaded (Page Top)" event type
+For this functionality, we will create another page load rule, triggered by DOM Ready again. However, this time, since we only want this to fire on PDP's and not on other page types, we will put a condition on the rule instead of having it fire every time any page loads.
 
-c. Name the new event \"Core -- Library Loaded (Page Top)\".
+1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
 
-d. Set the Order to 30.\
+   ![Add Rule](../assets/images/target-addRule.png)
 
-1. Create a new condition
+1. Name the rule `PDP Pages - DOM Ready - Analytics`
+1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
-e. Select the Core extension
+   ![Name the rule and add the event](../assets/images/analytics-domReadyAddEvent.png)
 
-f. Select the "Path Without Query String" Condition Type
+1. Select **[!UICONTROL Event Type > DOM Ready]**
+1. Set the **[!UICONTROL Order]** to 40, so that it will happen BEFORE the main Analytics rule runs. In this rule, we will set some variables, and then in the main Analytics rule the beacon sends them in (along with the normal every-page stuff).
+1. Click **[!UICONTROL Keep Changes]**
+   ![Configure the Event](../assets/images/analytics-configDOMReadyEvent.png)
 
-g. Name the new condition "Core -- Path Without Query String"\
+1. Under **[!UICONTROL Conditions]**, click the ![Click the Plus icon](../assets/images/icon-plus.png) to open the `Condition Configuration` screen
+   ![Click the Plus icon to add a new condition](../assets/images/analytics-PDPRuleAddCondition.png)
 
-   ![temp](../assets/images/advanced-image23.png)
+   1. Select **[!UICONTROL Condition Type > Value Comparison]**
+   1. Use the data element picker, choose `Page Type` in the first field
+   1. Select  **[!UICONTROL Contains]** from the comparison operator dropdown
+   1. In the next field type `product-page` (this is the unique part of the page type value pulled from the data layer on PDP's)
+   1. Click **[!UICONTROL Keep Changes]**
 
-h. Set the Path field to the following string: thank-you.html.html\
+      ![Define the condition](../assets/images/analytics-PDP-condition.png)
 
-   ![temp](../assets/images/advanced-image55.png)
+1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add a new action
 
-1. Create a new action
+   ![Click the Plus icon to add a new action](../assets/images/analytics-PDPAddAction.png)
 
-i. Select the "Adobe Analytics" extension
+1. Select **[!UICONTROL Extension > Adobe Analytics]**
+1. Select **[!UICONTROL Action Type > Set Varibles]**
+1. Set **[!UICONTROL eVar2 Set as]** `product detail page`
+1. Set **[!UICONTROL event2]**, leaving the optional values blank
+1. Click **[!UICONTROL Keep Changes]**
+![Set Analytics Variables in PDP Rule](../assets/images/analytics-PDPsetVariables.png)
+1. Click **[!UICONTROL Save to Library and Build]**
 
-j. Select the "Set Variables" Action Type
+## Validate the Product Detail Page Data
 
-k. Name the new action "Adobe Analytics - Set Variables"\
+We have just created a rule that sets some variables (before the hit goes out). We should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
+1. Open your we.retail site in a browser and navigate to any product detail page
+1. Click the debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click to the Analytics tab
+1. Expand your Report Suite's hit
+1. Notice the Product Detail Variables that are now in the debugger, namely that `eVar2` has been set to product detail page, and that the `Events` variable has been set to event2 (and that your Page Name is still set by the Analytics extension)
 
-   ![temp](../assets/images/advanced-image40.png)
+![Validate the page hit](../assets/images/analytics-validatePDPvars.png)
 
-l. Under "Events", set "purchase":\
+## Add a Plug-in to Track Campaigns
 
-   ![temp](../assets/images/advanced-image56.png)
+A Plug-in is a piece of JavaScript code that we can add to our implementation to perform a specific function that is not built into the product. Plug-ins can be built by you, by other Adobe Customers/Partners, or by Adobe Consulting. Even if they are created by Adobe Consulting, they are always implemented on your site as-is, and you are responsible to do all of the testing on your site to make sure that they work correctly.
 
-1. Save the new "Order Confirmation Page - Top" rule
+To implement plug-ins, there are basically three steps:
+1. Include the doPlugins function, where the plug-in will be referenced
+1. Add the main function code for the plug-in
+1. Include the code that calls the function and sets variables, etc.
 
-To validate this rule, follow the steps in the [Rule Validation: Product, Cart, and Checkout Flow](#Rule Validation: Product, Cart, and Checkout flow) section below.
+#### Make the Code Globally Accessible
 
-## Click-tracking and s.tl()
+If you are going to add the doPlugins function (below) and use plug-ins, you need to check a box to make the code available globally in the Analytics imnplementation.
 
-## Add Plugins
+1. Go to **[!UICONTROL Extensions > Installed]**
 
-### User Sign-in -- Sign in Start
+1. In the Adobe Analytics extension, Click **[!UICONTROL Configure]**
 
-This rule reports when a user begins the sign in process on the reference site.
+![Configure Analytics](../assets/images/analytics-configureExtension.png)
+
+1. Under **[!UICONTROL Library Management]**, select the box labeled `Make tracker globally accessible`. As you can see in the help bubble, this will make the tracker be scoped globally under window.s, which will be important as we refer to it in our customer JavaScript.
+
+#### Including the doPlugins Function
+
+To add plug-ins, we need to add a function called doPlugins. This function is not added by default, but once added, is handled by the AppMeasurement library, and is called last when a hit is being sent into Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
+
+1. While still in the Analytics extension, scroll down and expand the section titled `Configure Tracking Using Custom Code.`
+1. Select **[!UICONTROL Open Editor]**
+1. Paste the following code into the code editor:
+
+```javascript
+/* Plugin Config */
+s.usePlugins=true
+s.doPlugins=function(s) {
+    /* Add calls to plugins here */
+}
+```
+1. Keep this window open for the next step
+
+#### Add Function Code for the Plug-in
+We are actually going to call two plug-ins in this code, but one of them is built into the AppMeasurement library, so for that one we do not need to add the function to call. However, for the second one, we do need to add the function code as well. This function is called getValOnce(). 
+
+##### The getValOnce() Plug-in
+
+The purpose of this plug-in is to keep values from getting falsely duplicated in the code when a visitor refreshes a page or uses the browser's back button to go back to a page where a value was set. In this tutorial, we will use it to keep the `clickthrough` event from being duplicated.
+
+This code for this plug-in is available in the [Analytics Documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/getValOnce.html), but we will include it here for your ease of copy/paste.
+1. Copy the following code
+```javascript
+/*
+ * Plugin: getValOnce_v1.11
+ */
+s.getValOnce=new Function("v","c","e","t",""
++"var s=this,a=new Date,v=v?v:'',c=c?c:'s_gvo',e=e?e:0,i=t=='m'?6000"
++"0:86400000,k=s.c_r(c);if(v){a.setTime(a.getTime()+e*i);s.c_w(c,v,e"
++"==0?0:a);}return v==k?'':v");
+```
+1. Paste it into the code window in the Analytics extension (that you hopefully still have open - else re-open from the previous step), **completely below** the doPlugins function (not inside of it).
+![Add Plug-in Code](../assets/images/analytics-doPluginsAndGeValOnceCode.png)
+
+You can now call this plug-in from within doPlugins.
+
+#### Calling Plug-ins from Within doPlugins
+
+Now that the code is there and can be referenced, we can make the calls to plug-ins within the doPlugins function. 
+First we will call a plug-in which has been incorporated into the AppMeasurement library, and so is known as a "utility." It is referred to as `s.Util.getQueryParam`, because it is part of the s object, is a built-in utility, and will grab values (based on a parameter) from the query string in the URL.
+1. copy the following code:
+
+`s.campaign = s.Util.getQueryParam("cid");`
+
+1. Paste it into the doPlugins function. This will look for a parameter called `cid` in the current page URL and place it into the s.campaign variable.
+1. Now call the getValOnce function by copying the following code and pasting it in right below the call to getQueryParam:
+
+`s.campaign=s.getValOnce(s.campaign,'s_cmp',30);`
+This code will make sure that the same value is not sent in more than once in a row for 30 days (see the documentation for ways to customize this code to your needs).
+
+![Call Plug-ins in doPlugins](../assets/images/analytics-doPluginsWithPlugins.png)
+1. Save the code window
+1. Click **[!UICONTROL Save to Library and Build]**
+
+## Validate the Plug-ins
+
+Now let's make sure that the plug-ins are working the way that we expect.
+1. Open your browser to we.retail
+1. Click the debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click to the Analytics tab
+1. Expand your Report Suite's hit
+1. Notice the Analytics hit does not have a Campaign variable
+1. Leaving your debugger open, go back to the site and add  `?cid=1234` to the URL and hit Enter to refresh the page with that query string included
+![Add a Query String](../assets/images/analytics-cidAdded.png)
+1. Check the debugger and now see that there is a Campaign variable with the value 1234 in this second hit
+![getQueryParam step 1](../assets/images/analytics-getQueryParam1.png)
+1. Go back and refresh the page, with the query string still in the URL
+1. Check the next hit in the debugger, and the Campaign variable value will be gone, because the getValOnce plug-in has made sure that it doesn't get duplicated and look like another person came in from the campaign tracking code.
+![getQueryParam step 1](../assets/images/analytics-getQueryParam2.png)
+
+>[!NOTE] There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as we have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs. 
+
+## Sending an s.tl() into Analytics
+
+When a page loads, we typically have Launch trigger an `s.t()` call, which is referred to as a page load call. This sets the variables you send in, and automatically records a `page view` metric for the page listed in the `pageName` variable.
+However, sometimes you don't want to increase page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, we will use the `s.tl` function, which is commonly referred to as a custom link call (or "hit"). Even though it is referred to as a custom link call, it doesn't have to be triggered on a link click. It can be triggered by **any** of the events that are available to you in the Launch rules.
+
+In this tutorial, we will trigger an s.tl() call using one of the coolest JavaScript events, an `Enters Viewport` event.
+
+#### The Use Case
+For this use case, we want to know if people are scrolling down on our we.retail home page far enough to see the "New Arrivals" section on our page. There is some internal discord at our company about whether people are even seeing that section or not, so we want to use Analytics to determine the truth. 
+
+### Create the Rule in Launch
+
+1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
+   ![Add Rule](../assets/images/target-addRule.png)
+1. Name the rule `View New Arrivals Section`
+1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
+![Add New Arrivals Rule](../assets/images/analytics-newArrivalsRuleAdd.png)
+1. Select **[!UICONTROL Event Type > Enters Viewport]**. This will bring up a field where you need to enter the CSS selector that will identify the item on your page that should trigger the rule when it enters view in the browser.
+1. Go back to the home page of we.retail and scroll down to the New Arrivals section.
+1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what we want. :)
+1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
+1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
+![Configure the Enters Viewport Event](../assets/images/analytics-copyElementSelector.png)
+1. Go back to Launch, and paste this value from the clipboard into the field labeled `Elements matching the CSS selector`. 
+   1. On a side note, it is up to you to decide how to identify CSS selectors. This method is a bit fragile, as certain changes on the page may break this selector. Please consider this when using any CSS selectors in Launch.
+1. Click **[!UICONTROL Keep Changes]**
+   ![Configure the Enters Viewport Event](../assets/images/analytics-configEntersViewportEvent.png) 
+
+1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add a new action
+
+1. Select **[!UICONTROL Extension > Adobe Analytics]**
+1. Select **[!UICONTROL Action Type > Set Variables]**
+1. Set `eVar3` to `Home Page - New Arrivals`
+1. Set `prop3` to `Home Page - New Arrivals`
+1. Set the `Events` variable to `event3`
+1. Click **[!UICONTROL Keep Changes]**
+![Configure the Enters Viewport Event](../assets/images/analytics-configViewportAction.png)
+1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add another new action
+![Add Send Beacon Action](../assets/images/analytics-newArrivalsSendBeacon1.png)
+1. Select **[!UICONTROL Extension > Adobe Analytics]**
+1. Select **[!UICONTROL Action Type > Send Beacon]**
+1. Choose the **[!UICONTROL s.tl()]** tracking option
+1. In the **[!UICONTROL Link Name]** field, enter `Scrolled down to New Arrivals'. This value will be placed into the Custom Links report in Analytics.
+1. Click **[!UICONTROL Keep Changes]**
+![Config New Arrivals Beacon](../assets/images/analytics-configEntersViewportBeacon.png)
+1. Click **[!UICONTROL Save to Library and Build]**
+
+## Validate the Enters Viewport s.tl()
+
+Now we will want to make sure that this hit goes in when we scroll down to the New Arrivals section of the Home Page of our site. When we first bring up our site, the values shouldn't be there, but as we scroll down and the section comes into view, the hit should fire with our new values.
+
+1. Open the we.retail site in the browser and make sure you are at the top of the home page.
+1. Click the debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click to the Analytics tab
+1. Expand your Report Suite's hit
+1. Notice the normal page view hit for the home page with the page name, etc. (but nothing in eVar3 or prop3).
+![Debugger with a Page View](../assets/images/analytics-debuggerPageView.png)
+1. Leaving the debugger open, scroll down on your site until you can see the New Arrivals section
+1. View the debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that we set up, namely:
+   1. `LinkType = "link_o"` (this means that the hit is a custom link hit, not a page view hit)
+   1. `LinkName = "Scrolled down to New Items"`
+   1. `prop3 = "Home Page - New Arrivals"`
+   1. `eVar3 = "Home Page - New Arrivals"`
+   1. `Events = "event3"`
+![Debugger with a Page View](../assets/images/analytics-debuggerEntersViewport.png)
+
+Nice work! You have completed the Analytics section. Of course, there are many other things that we can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
-1. Create a new rule called "Sign In -- Start"
-
-1. Create a new Event
-
-a. Select the Core extension
-
-b. Select the "Library Loaded (Page Top)" event type
-
-c. Name the new event \"Core -- Library Loaded (Page Top)\"\
-
-1. Create a new condition
-
-d. Select the Core extension
-
-e. Select the "Path Without Query String" Condition Type
-
-f. Name the new condition "Core -- Path Without Query String"\
-
-   ![temp](../assets/images/advanced-image23.png)
-
-1. Set the Path field to the following string: `/content/we-retail/us/en/community/signin.html`
-
-   ![temp](../assets/images/advanced-image24.png)
-
-1. Create a new action
-
-g. Select the "Adobe Analytics" extension
-
-h. Select the "Set Variables" Action Type
-
-i. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image25.png)
-
-1. Under "Events", set event2:\
-
-   ![temp](../assets/images/advanced-image26.png)
-
-1. Save the new "Sign In -- Start" rule
-
-To validate this rule, take the following steps:
-
-1. Ensure your debugger or the Network tab of your browser's developer tools is open. Click the "preserve log" option, if available.
-
-1. From any page on the example site, find the "Login" link in the upper right corner of the page and click it:\
-
-   ![temp](../assets/images/advanced-image27.png)
-
-1. In your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The pageName parameter is set to
-"content:we-retail:us:en:community:signin"
-
-b. The events parameter includes "event2"\
-
-   ![temp](../assets/images/advanced-image28.png)
-
-### User Sign-in -- Sign in Confirmation
-
-1. Create a new rule called "Sign In"
-
-1. Create a new event
-
-h. Select the Core extension
-
-i. Select the "Data Element Change" event type
-
-j. Name the new event \"Core -- Data Element Change\"\
-
-   ![temp](../assets/images/advanced-image29.png)
-
-1. Create a new condition
-
-k. Select the Core extension
-
-l. Select the "Data Element" Condition Type
-
-m. Name the new condition "Core -- Data Element"\
-
-   ![temp](../assets/images/advanced-image30.png)
-
-1. Set this Condition to check that the Data Element "Authentication State" has the following value: "logged out"\
-
-   ![temp](../assets/images/advanced-image31.png)
-
-1. Create a new action
-
-n. Select the "Adobe Analytics" extension
-
-o. Select the "Set Variables" Action Type
-
-p. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image32.png)
-
-1. Under "Events", set event3:\
-
-   ![temp](../assets/images/advanced-image33.png)
-
-1. Create a (second) new action
-
-q. Select the "Adobe Analytics" extension
-
-r. Select the "Send Beacon" action type
-
-s. Name the new action "Adobe Analytics -- Send Beacon"\
-
-   ![temp](../assets/images/advanced-image34.png)
-
-1. Under "Tracking":
-
-t. Select "s.tl()"
-
-u. Set Link Type to "Custom Link"
-
-v. Set Link Name to "signin":\
-
-   ![temp](../assets/images/advanced-image35.png)
-
-1. Save the new "Sign In" rule
-
-> To validate this rule, take the following steps:
-
-1. Ensure your debugger or the Network tab of your browser's developer tools is open. Click the "preserve log" option, if available.
-
-1. From any page on the example site, find the "Login" link in the upper right corner of the page and click it:\
-
-   ![temp](../assets/images/advanced-image36.png)
-
-1. Sign in to the site (see [Appendix: Test Account](#User account:) for information on creating an account)
-
-1. When the following page loads, in your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "event3"
-
-### Product Details
-
-For Product Details pages, two rules are required: one at the page top,
-and one at the bottom. The \"Product Details - Bottom\" rule is used for
-Target deployments (see above).
-
-For Analytics, the \"Product Details -- Top - 20\" rule is configured as
-follows.
-
-1. Create a new Rule, called \"Product Details - Top - 20\"
-
-1. Create a new event
-
-a. Select the Core extension
-
-b. Select the "Library Loaded (Page Top)" event type
-
-c. Name the new event \"Core -- Library Loaded (Page Top)\"
-
-d. Set Order to 20\
-
-   ![temp](../assets/images/advanced-image37.png)
-
-1. Create a new condition
-
-e. Select the Core extension
-
-f. Select the "Data Element" Condition Type
-
-g. Name the new condition "Core -- Data Element":\
-
-   ![temp](../assets/images/advanced-image38.png)
-
-1. Set this condition as follows:
-
-h. Check that the Data Element "Product SKU (Target) has the
-following value: (\[\^\\s\])
-
-i. Enable the Regex flag\
-
-   ![temp](../assets/images/advanced-image39.png)
-
-1. Create a new action
-
-j. Select the "Adobe Analytics" extension
-
-k. Select the "Set Variables" Action Type
-
-l. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image40.png)
-
-1. In the Custom Code editor of the Action, enter the following code: (see the Appendix entry for [Product information (product details pages)](#product-information-product-details-pages) for details on configuring this data element)
-
-1. Under "Events", set prodView:\
-
-   ![temp](../assets/images/advanced-image41.png)
-
-1. Save the new "Product Details -- Top" rule.
-
-To validate this rule, follow the steps in the [Rule Validation: Product, Cart, and Checkout Flow](#Rule Validation: Product, Cart, and Checkout flow) section below.
-
-### Shopping Cart Adds
-
-This rule assumes a custom JavaScript event, "cart-add", has been created and executes on the submit action of the add-to-cart process. Adding a rule to the click of an add-to-cart button or form may result in less accurate reporting than using an event connected with the CMS or ecommerce platform.\
-
-   ![temp](../assets/images/advanced-image42.png)
-
-1. Create a new Rule called \"Cart Adds\"
-
-1. Create a new event
-
-a. Select the Core extension
-
-b. Select the "Custom Event" event type
-
-c. Name the new event \"Core -- Custom Event\"\
-
-   ![temp](../assets/images/advanced-image43.png)
-
-1. In the Event Configuration:
-
-d. Set Custom Event Type to "cart-add"
-
-e. Select the "specific elements" option
-
-f. Set the CSS selector to "body"\
-
-   ![temp](../assets/images/advanced-image44.png)
-
-1. Create a new action
-
-g. Select the "Adobe Analytics" extension
-
-h. Select the "Set Variables" Action Type
-
-i. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image40.png)
-
-1. Create a new action
-
-j. Select the "Adobe Analytics" extension
-
-k. Select the "Send Beacon" Action Type
-
-l. Name the new action "Adobe Analytics -- Send Beacon"\
-
-   ![temp](../assets/images/advanced-image45.png)
-
-1. Under Tracking:
-
-m. Select s.tl()
-
-n. Set Link Type to "Custom Link"
-
-o. Set Link Name to "scAdd":\
-
-   ![temp](../assets/images/advanced-image46.png)
-
-To validate this rule, follow the steps in the [Rule Validation: Product, Cart, and Checkout Flow](#Rule Validation: Product, Cart, and Checkout flow) section below.
-
-### Shopping Cart Removes
-
-This rule assumes a custom JavaScript event, "cart-remove", has been created and executes on the submit action of the add-to-cart process. Adding a rule to the click of an add-to-cart button or form may result in less accurate reporting than using an event connected with the CMS or ecommerce platform
-
-1. Create a new Rule called \"Cart Removes\"
-
-1. Create a new event
-
-a. Select the Core extension
-
-b. Select the "Custom Event" event type
-
-c. Name the new event \"Core -- Custom Event\"\
-
-   ![temp](../assets/images/advanced-image47.png)
-
-1. In the Event Configuration:
-
-d. Set Custom Event Type to "cart-remove"
-
-e. Select the "specific elements" option
-
-f. Set the CSS selector to "body".
-
-   ![temp](../assets/images/advanced-image48.png)
-
-1. Create a new action
-
-g. Select the "Adobe Analytics" extension
-
-h. Select the "Set Variables" Action Type
-
-i. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image40.png)
-
-j. Add "scRemove" to the Events section:\
-
-   ![temp](../assets/images/advanced-image49.png)
-
-1. Create a (second) new action
-
-k. Select the "Adobe Analytics" extension
-
-l. Select the "Send Beacon" Action Type
-
-m. Name the new action "Adobe Analytics -- Send Beacon"\
-
-   ![temp](../assets/images/advanced-image45.png)
-
-n. Under Tracking, select s.tl(), set Link Type to "Custom Link",
-and set Link Name to "scRemove":\
-
-   ![temp](../assets/images/advanced-image50.png)
-
-To validate this rule, follow the steps in the [Rule Validation:
-Product, Cart, and Checkout
-Flow](#Rule Validation: Product, Cart, and Checkout flow) section below.
-
-### Checkout Initiation
-
-1. Create a new rule called "Checkout Page - Top"
-
-1. Create a new event
-
-a. Select the Core extension
-
-b. Select the "Library Loaded (Page Top)" event type
-
-c. Name the new event \"Core -- Library Loaded (Page Top)\"\
-
-   ![temp](../assets/images/advanced-image51.png)
-
-1. Create a new condition
-
-d. Select the Core extension
-
-e. Select the "Path Without Query String" Condition Type
-
-f. Name the new condition "Core -- Path Without Query String"\
-
-   ![temp](../assets/images/advanced-image23.png)
-
-g. Set the Path field to the following string: checkout.html\
-
-   ![temp](../assets/images/advanced-image52.png)
-
-1. Create a new action
-
-h. Select the "Adobe Analytics" extension
-
-i. Select the "Set Variables" Action Type
-
-j. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image40.png)
-
-1. Under "Events", set scCheckout:\
-
-   ![temp](../assets/images/advanced-image53.png)
-
-1. Save the new "Checkout Page - Top" rule
-
-To validate this rule, follow the steps in the [Rule Validation:
-Product, Cart, and Checkout
-Flow](#Rule Validation: Product, Cart, and Checkout flow) section below.
-
-
-
-### Site Search
-
-1. Create a new rule named "Search Results -- Top"
-
-1. Create a new event
-
-a. Select the Core extension
-
-b. Select the "Library Loaded (Page Top)" event type
-
-c. Name the new event \"Core -- Library Loaded (Page Top)\"\
-
-   ![temp](../assets/images/advanced-image51.png)
-
-1. Create a new condition
-
-d. Select the Core extension
-
-e. Select the "Query String Parameter" condition type
-
-f. Name the new condition "Core - Query String Parameter"\
-
-   ![temp](../assets/images/advanced-image57.png)
-
-g. Set this Condition as follows:
-
-i. Check that the URL Parameter Name "searchText" has the Regex wildcard "." (to match any single character)
-
-ii. Enable the Regex flag:\
-
-   ![temp](../assets/images/advanced-image58.png)
-
-1. Create a new action
-
-h. Select the "Adobe Analytics" extension
-
-i. Select the "Set Variables" Action Type
-
-j. Name the new action "Adobe Analytics - Set Variables"
-
-k. In the new action, set eVar2 to %search term%:\
-
-   ![temp](../assets/images/advanced-image59.png)
-
-1. Save the "Search Results -- Top" rule.
-
-To validate this rule:
-
-1. Ensure your debugger or the Network tab of your browser's developer tools is open. Click the "preserve log" option.
-
-1. Click the Search icon, located near the upper right of any page:\
-
-   ![temp](../assets/images/advanced-image60.png)
-
-1. Enter a search term, and press return to go to the search results page:\
-
-   ![temp](../assets/images/advanced-image61.png)
-
-1. In your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "event2"
-
-b. The eVar2 parameter includes the search term you entered. In the
-example above, eVar2 should be set to "jacket".
-
-### Rule Validation: Product, Cart, and Checkout flow
-
-The steps below validate each step of the product purchase flow rules
-defined above. Before beginning the validation process, ensure your
-debugger or the Network tab of your browser's developer tools is open.
-Click the "preserve log" option, if available.
-
-Product Details Page:
-
-1. Browse to a product details page, or use the following example page:\ <https://aem100-us.adobevlab.com/content/we-retail/us/en/products/men/shirts/eton-short-sleeve-shirt.html#meotsuett-S>
-
-1. In your debugger, verify that an image request was made to the Adobe tracking server. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "prodView"
-
-b. The correct product string is present. For the example page above, that value should be ";meotsuett"\ ![temp](../assets/images/advanced-image62.png)
-
-Cart Adds:
-
-1. From a product details page, click the Add To Cart button\
-
-   ![temp](../assets/images/advanced-image63.png)
-
-1. In your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "scAdd"
-
-b. The correct product string is present. For the example page
-above, that value should be ";meotsuett"\
-![temp](../assets/images/advanced-image62.png)
-
-Cart Removes:
-
-1. Assuming the item from the previous step has been added to your cart, view your shopping cart by clicking the "My Cart" link in the upper right of the page:\
-
-   ![temp](../assets/images/advanced-image64.png)
-
-1. In the cart slide-out widget, click the "x" icon next to the product added above.\
-
-   ![temp](../assets/images/advanced-image65.png)
-
-1. In your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "scRemove"
-
-b. The correct product string is present. For the example page above, that value should be ";meotsuett"\
-
-   ![temp](../assets/images/advanced-image62.png)
-
-Checkout Initiation:
-
-1. Repeat the steps above to add a product to the shopping cart.
-
-1. View your shopping cart by clicking the "My Cart" link in the upper right of the page:\ ![temp](../assets/images/advanced-image64.png) . . . or visit the following link:\ <https://aem100-us.adobevlab.com/content/we-retail/us/en/user/cart.html>
-
-1. Click the "check out" button:\
-
-   ![temp](../assets/images/advanced-image66.png)
-
-1. Upon reaching the checkout page, in your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "scCheckout"
-
-b. The correct product string is present. For the example page
-above, and assuming a quantity of 1 item, that value should be
-";meotsuett-S"\
-
-   ![temp](../assets/images/advanced-image67.png)
-
-> Order Confirmation:
-
-1. From the Checkout page (link below), enter address and payment information. This demonstration site accepts fake information, as referenced in [Appendix: Test Account Information](#Order and address information:). (please don't submit personal data). For example:\
-
-   ![temp](../assets/images/advanced-image68.png)
-
-   ![temp](../assets/images/advanced-image69.png)
-
-1. Once information has been entered, click Continue.
-
-1. On the Review Order page, click "Place Order".
-
-1. Upon reaching the order confirmation page, in your debugger, verify that an image request was made to the Adobe tracking server.
-
-1. In the query parameters of that image request, verify the following values:
-
-a. The events parameter includes "purchase"
-
-1. The correct product string is present, including units and price. For the example product used here, and assuming a quantity of 1 item, that value should be ";meotsuett-S;1;24"\
-
-   ![temp](../assets/images/advanced-image70.png)
-
-   Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
-
-   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
 
 [Next "Add Adobe Audience Manager" >](audience-manager.md)
