@@ -149,7 +149,7 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
    ![Click Keep Changes](../assets/images/target-addPageName-keepChanges.png)
 
-1. Click-and-drag on the left edge of the `Add Parames to Global Mbox` action to rearrange the actions so that `Add Parames to Global Mbox` is between `Load Target` and `Fire Global Mbox`
+1. Click-and-drag on the left edge of the `Add Params to Global Mbox` action to rearrange the actions so that `Add Params to Global Mbox` is between `Load Target` and `Fire Global Mbox`
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -223,7 +223,7 @@ Here is an optional exercise, if you would like to implement a property token in
 
    ![Open All Pages - Library Loaded Rule](../assets/images/target-editRule.png)
 
-1. Under Actions, click the `Adobe Target - Add Params to Global Mbox` action top open the `Action Configuration`
+1. Under Actions, click the `Adobe Target - Add Params to Global Mbox` action to open the `Action Configuration`
 
    ![Open the Add Params to Global Mbox action](../assets/images/target-openParamsAction.png)
 
@@ -426,7 +426,7 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
 
 #### Create Data Element for Order Id
 
-1. Click **[!UICONTROL Rules]** in the top navigation
+1. Click **[!UICONTROL Data Elements]** in the top navigation
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Order Id`
 1. Check the `Clean text` option
@@ -463,16 +463,15 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
    return targetProdSkus;
    ```
 
-1. Use `digitalData.cart.cartAmount` as the `Path to Variable`
 1. Click **[!UICONTROL Save to Library and Build]**
 
 #### Create Rule for Order Confirmation page
 
 1. Click **[!UICONTROL Rules]** in the top navigation
-1. Click **[!UICONTROL Add New Rule]**
+1. Click **[!UICONTROL Add Rule]**
 1. Name the rule `Order Confirmation Page - Library Loaded - 60`
 1. Click **[!UICONTROL Events > Add]**
-   1. Select **[!UICONTROL Events > Library Loaded (Page Top)]**
+   1. Select **[!UICONTROL Event Type > Library Loaded (Page Top)]**
    1. Change the `Order` to `60` so that it will fire after the `Load Target` action (which is in our `All Pages - Library Loaded` rule where `Order` is set to `50`)
    1. Click **[!UICONTROL Keep Changes]**
 1. Click **[!UICONTROL Conditions > Add]**
@@ -608,7 +607,7 @@ You will use this to set the reserved `entity.message` parameter to populate the
 
       ![Use a Custom Code action](../assets/images/target-recs-prodDetail-actionCustom-windowLoaded.png)
 
-   1. Paste the following code into the `Code Editor`. Note that we are are going to add one more parameter `entity.event.detailsOnly=true` to indicate that this request is simply for the collection of catalog data and should not increment a view for the product in the Recommendations algorithms.
+   1. Paste the following code into the `Code Editor`. Note that we are are going to add one more parameter `entity.event.detailsOnly:true` to indicate that this request is simply for the collection of catalog data and should not increment a view for the product in the Recommendations algorithms.
 
       ```javascript
       adobe.target.getOffer({
@@ -617,7 +616,7 @@ You will use this to set the reserved `entity.message` parameter to populate the
           "entity.id": _satellite.getVar('Product SKU (Target)'),
           "entity.value": _satellite.getVar('Product Price'),
           "entity.message": _satellite.getVar('Product Description'),
-          "entity.event.detailsOnly"="true"
+          "entity.event.detailsOnly":"true"
         },
         "success": function(offer) {
       },
