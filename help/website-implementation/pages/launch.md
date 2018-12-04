@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # General Launch Configuration & Settings
 
-This lesson will introduce you to one of the main concepts of Launch&#8212;Properties.
+This lesson will introduce you to one of the main concepts of Launch&#x2014;Properties
 
 ## Prerequisites
 
