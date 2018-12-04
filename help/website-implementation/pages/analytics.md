@@ -33,11 +33,14 @@ In addition, you will need at least one report suite ID and also your tracking s
 
    ![Install the Analytics extension](../assets/images/analytics-catalog-install.png)
 
+
 1. Under `Library Management > Report Suites`, enter the report suite ids you would like to use with each Launch environment (It's OK to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](../assets/images/analytics-config-reportSuite.png)
 
-   >![TIP] We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
+   >![TIP]
+   >
+   >We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
 
 1. Under `General > Tracking Server`, enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
 
@@ -55,28 +58,25 @@ In addition, you will need at least one report suite ID and also your tracking s
 
    ![Configure the Link Tracking section](../assets/images/analytics-config-linkTracking.png)
 
->[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
+>[!NOTE]
+>
+>Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
 
 ### What is different from DTM
 
 * Support for Server Side Forwarding to Audience Manager is built-in
-
 * Report Suites don't auto-populate---you have to know the specific report suite ids and manually enter them
-
 * The managed library option ships with a specific version of AppMeasurement.js
 
 * Multiple Analytics instances, like having two Analytics "Tools" in DTM, is not supported
 
 * General: New options for *Custom* Character Set and Currency Code
-
 * General: Data Center option has been removed
-
 * Global Variables: New options for Server, State, Zip
 
 * Global Variables: data elements must be defined before the Launch header embed code for variables set in the extension configuration (variables set in Rules can come from data elements set before the event)
 
 * Custom Code: Option to load before or after the UI settings has been removed
-
 * Some options have been rearranged to more intuitive locations
 
 ## Fire the Analytics Beacon in a Rule
@@ -383,6 +383,7 @@ Now we will want to make sure that this hit goes in when we scroll down to the N
 
 ![Debugger with a Page View](../assets/images/analytics-debuggerPageView.png)
 
+
 1. Leaving the debugger open, scroll down on your site until you can see the New Arrivals section
 1. View the debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that we set up, namely:
    1. `LinkType = "link_o"` (this means that the hit is a custom link hit, not a page view hit)
@@ -395,4 +396,4 @@ Now we will want to make sure that this hit goes in when we scroll down to the N
 
 Nice work! You have completed the Analytics section. Of course, there are many other things that we can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
-[Next "Add Adobe Audience Manager" >](audience-manager.md)
+[Next "Add Adobe Audience Manager"](audience-manager.md)
