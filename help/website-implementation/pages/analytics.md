@@ -26,11 +26,13 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
    ![Install the Analytics extension](../assets/images/analytics-catalog-install.png)
 
-1. Under `Library Management > Report Suites`, enter the report suite ids you would like to use with each Launch environment
+1. Under **[!UI CONTROL Library Management > Report Suites]**, enter the report suite ids you would like to use with each Launch environment
 
    ![Enter the report suite ids](../assets/images/analytics-config-reportSuite.png)
 
-   >![TIP] We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
+   >![TIP]
+   >
+   >We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
 
 1. Under `General > Tracking Server`, enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
 
@@ -48,28 +50,21 @@ The report suite ids and tracking servers you are going to use with this tutoria
 
    ![Configure the Link Tracking section](../assets/images/analytics-config-linkTracking.png)
 
->[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
+>[!NOTE]
+>
+>Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
 
 ### What is different from DTM
 
 * Support for Server Side Forwarding to Audience Manager is built-in
-
 * Report Suites don't auto-populate---you have to know the specific report suite ids and manually enter them
-
 * The managed library option ships with a specific version of AppMeasurement.js
-
 * Multiple Analytics instances like having two Analytics "Tools" in DTM is not supported
-
 * General: New options for *Custom* Character Set and Currency Code
-
 * General: Data Center option has been removed
-
 * Global Variables: New options for Server, State, Zip
-
 * Global Variables: data elements must be defined before the Launch header embed code for variables set in the extension configuration(variables set in Rules can come from data elements set before the event)
-
 * Custom Code: Option to load before or after the UI settings has been removed
-
 * Some options have been rearranged to more intuitive locations
 
 ## Fire the Analytics Beacon in a Rule
@@ -113,50 +108,40 @@ The purchase event is one of the most critical parts of many Analytics implement
 * setting of the `s.products`
 
 1. Create a new rule called "Order Confirmation Page - Bottom - 30 "
-
 1. Create a new event
-
-a. Select the Core extension
-
-b. Select the "Library Loaded (Page Top)" event type
-
-c. Name the new event \"Core -- Library Loaded (Page Top)\".
-
-d. Set the Order to 30.\
+   * Select the Core extension
+   * Select the `Library Loaded (Page Top)` event type
+   * Name the new event `Core -- Library Loaded (Page Top)`.
+   * Set the Order to `30`
 
 1. Create a new condition
 
-e. Select the Core extension
+   * Select the Core extension
+   * Select the "Path Without Query String" Condition Type
+   * Name the new condition "Core -- Path Without Query String"\
 
-f. Select the "Path Without Query String" Condition Type
+      ![temp](../assets/images/advanced-image23.png)
 
-g. Name the new condition "Core -- Path Without Query String"\
+   * Set the Path field to the following string: thank-you.html.html\
 
-   ![temp](../assets/images/advanced-image23.png)
+      ![temp](../assets/images/advanced-image55.png)
 
-h. Set the Path field to the following string: thank-you.html.html\
+   * Create a new action
+   * Select the Adobe Analytics extension
+   * Select the **[!UICONROL Set Variables]** Action Type
+   * Name the new action `Adobe Analytics - Set Variables`
 
-   ![temp](../assets/images/advanced-image55.png)
+      ![temp](../assets/images/advanced-image40.png)
 
-1. Create a new action
+   * Under "Events", set "purchase":\
 
-i. Select the "Adobe Analytics" extension
+      ![temp](../assets/images/advanced-image56.png)
 
-j. Select the "Set Variables" Action Type
-
-k. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image40.png)
-
-l. Under "Events", set "purchase":\
-
-   ![temp](../assets/images/advanced-image56.png)
-
-1. Save the new "Order Confirmation Page - Top" rule
+1. Save the new [!UICONTROL Order Confirmation Page - Top] rule
 
 To validate this rule, follow the steps in the [Rule Validation: Product, Cart, and Checkout Flow](#Rule Validation: Product, Cart, and Checkout flow) section below.
 
-## Click-tracking and s.tl()
+## Click-tracking and s.tl
 
 ## Add Plugins
 
@@ -165,38 +150,28 @@ To validate this rule, follow the steps in the [Rule Validation: Product, Cart, 
 This rule reports when a user begins the sign in process on the reference site.
 
 1. Create a new rule called "Sign In -- Start"
-
 1. Create a new Event
-
-a. Select the Core extension
-
-b. Select the "Library Loaded (Page Top)" event type
-
-c. Name the new event \"Core -- Library Loaded (Page Top)\"\
+   * Select the Core extension
+   * Select the [!UICONTROL Library Loaded (Page Top)] event type
+   * Name the new event `Core -- Library Loaded (Page Top)`
 
 1. Create a new condition
+   * Select the Core extension
+   * Select the "Path Without Query String" Condition Type
+   * Name the new condition "Core -- Path Without Query String"\
 
-d. Select the Core extension
-
-e. Select the "Path Without Query String" Condition Type
-
-f. Name the new condition "Core -- Path Without Query String"\
-
-   ![temp](../assets/images/advanced-image23.png)
+      ![temp](../assets/images/advanced-image23.png)
 
 1. Set the Path field to the following string: `/content/we-retail/us/en/community/signin.html`
 
    ![temp](../assets/images/advanced-image24.png)
 
 1. Create a new action
+   * Select the "Adobe Analytics" extension
+   * Select the "Set Variables" Action Type
+   * Name the new action "Adobe Analytics - Set Variables"\
 
-g. Select the "Adobe Analytics" extension
-
-h. Select the "Set Variables" Action Type
-
-i. Name the new action "Adobe Analytics - Set Variables"\
-
-   ![temp](../assets/images/advanced-image25.png)
+      ![temp](../assets/images/advanced-image25.png)
 
 1. Under "Events", set event2:\
 
@@ -216,34 +191,29 @@ To validate this rule, take the following steps:
 
 1. In the query parameters of that image request, verify the following values:
 
-a. The pageName parameter is set to
-"content:we-retail:us:en:community:signin"
-
-b. The events parameter includes "event2"\
+   * The pageName parameter is set to `content:we-retail:us:en:community:signin`
+   * The events parameter includes `event2`
 
    ![temp](../assets/images/advanced-image28.png)
 
 ### User Sign-in -- Sign in Confirmation
 
 1. Create a new rule called "Sign In"
-
 1. Create a new event
 
-h. Select the Core extension
-
-i. Select the "Data Element Change" event type
-
-j. Name the new event \"Core -- Data Element Change\"\
+   * Select the Core extension
+   * Select the "Data Element Change" event type
+   * Name the new event \"Core -- Data Element Change\"\
 
    ![temp](../assets/images/advanced-image29.png)
 
 1. Create a new condition
 
-k. Select the Core extension
+   * Select the Core extension
 
 l. Select the "Data Element" Condition Type
 
-m. Name the new condition "Core -- Data Element"\
+   * Name the new condition "Core -- Data Element"\
 
    ![temp](../assets/images/advanced-image30.png)
 
@@ -253,7 +223,7 @@ m. Name the new condition "Core -- Data Element"\
 
 1. Create a new action
 
-n. Select the "Adobe Analytics" extension
+   * Select the "Adobe Analytics" extension
 
 o. Select the "Set Variables" Action Type
 
@@ -694,7 +664,7 @@ above, and assuming a quantity of 1 item, that value should be
 
 a. The events parameter includes "purchase"
 
-1. The correct product string is present, including units and price. For the example product used here, and assuming a quantity of 1 item, that value should be ";meotsuett-S;1;24"\
+1. The correct product string is present, including units and price. For the example product used here, and assuming a quantity of 1 item, that value should be `;meotsuett-S;1;24`
 
    ![temp](../assets/images/advanced-image70.png)
 
@@ -702,4 +672,4 @@ a. The events parameter includes "purchase"
 
    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
 
-[Next "Add Adobe Audience Manager" >](audience-manager.md)
+[Next "Add Adobe Audience Manager"](audience-manager.md)
