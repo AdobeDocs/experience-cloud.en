@@ -28,3 +28,5 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/techmarketing-test.en
   + [Experience Cloud Integrations](pages/integrations.md)
 + Publishing your Property{#publishing}
   + [Publish your Property](pages/publish.md)
++ Video Test{#video-test}
+  + [Video Test](pages/video-test.md)
