@@ -43,7 +43,7 @@ At the end of this lesson, you will be able to:
 
     ![Save the extension](../assets/images/idservice-save.png)
 
-That's it! You've added the ID Service. For more details on the advanced options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
+That's it! You've added the ID Service. For more details on the  options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
 
 >[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
 

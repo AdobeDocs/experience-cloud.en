@@ -30,7 +30,7 @@ Launch is the next generation of website tag and mobile SDK management capabilit
 
 1. Log into the [Adobe Experience Cloud](https://experiencecloud.adobe.com)
 
-1. Click the ![Solution Switcher Icon](../assets/images/launch-solutionSwitcher.png) icon to open the   solution switcher
+1. Click the ![Solution Switcher Icon](../assets/images/launch-solutionSwitcher.png) icon to open the solution switcher
 
 1. Select **[!UICONTROL Activation]** from the menu ![Open the solution switcher using the icon and click Activation](../assets/images/launch-solutionSwitcherActivation.png)
 
