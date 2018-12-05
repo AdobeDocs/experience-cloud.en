@@ -231,13 +231,14 @@ To add plug-ins, we need to add a function called doPlugins. This function is no
 1. Select **[!UICONTROL Open Editor]**
 1. Paste the following code into the code editor:
 
-```javascript
-/* Plugin Config */
-s.usePlugins=true
-s.doPlugins=function(s) {
-    /* Add calls to plugins here */
-}
-```
+   ```javascript
+
+   /* Plugin Config */
+   s.usePlugins=true
+   s.doPlugins=function(s) {
+   /* Add calls to plugins here */
+   }
+   ```
 
 1. Keep this window open for the next step
 
@@ -254,6 +255,7 @@ This code for this plug-in is available in the [Analytics Documentation](https:/
 1. Copy the following code
 
    ```javascript
+
    /*
    * Plugin: getValOnce_v1.11
    */
@@ -261,6 +263,7 @@ This code for this plug-in is available in the [Analytics Documentation](https:/
    +"var s=this,a=new Date,v=v?v:'',c=c?c:'s_gvo',e=e?e:0,i=t=='m'?6000"
    +"0:86400000,k=s.c_r(c);if(v){a.setTime(a.getTime()+e*i);s.c_w(c,v,e"
    +"==0?0:a);}return v==k?'':v");
+
    ```
 
 1. Paste it into the code window in the Analytics extension (that you hopefully still have open - else re-open from the previous step), **completely below** the doPlugins function (not inside of it).
@@ -316,13 +319,14 @@ Now let's make sure that the plug-ins are working the way that we expect.
 ## Sending an `s.tl()` into Analytics
 
 When a page loads, we typically have Launch trigger an `s.t()` call, which is referred to as a page load call. This sets the variables you send in, and automatically records a `page view` metric for the page listed in the `pageName` variable.
-However, sometimes you don't want to increase page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, we will use the `s.tl` function, which is commonly referred to as a custom link call (or "hit"). Even though it is referred to as a custom link call, it doesn't have to be triggered on a link click. It can be triggered by **any** of the events that are available to you in the Launch rules.
+
+However, sometimes you don't want to increase page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, we will use the `s.tl` function, which is commonly referred to as a custom link call (or "hit"). Even though it is referred to as a custom link call, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you in the Launch rules.
 
 In this tutorial, we will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
 
 ### The Use Case
 
-For this use case, we want to know if people are scrolling down on our we.retail home page far enough to see the "New Arrivals" section on our page. There is some internal discord at our company about whether people are even seeing that section or not, so we want to use Analytics to determine the truth.
+For this use case, we want to know if people are scrolling down on our we.retail home page far enough to see the *New Arrivals* section on our page. There is some internal discord at our company about whether people are even seeing that section or not, so we want to use Analytics to determine the truth.
 
 ### Create the Rule in Launch
 
@@ -376,13 +380,12 @@ For this use case, we want to know if people are scrolling down on our we.retail
 Now we will want to make sure that this hit goes in when we scroll down to the New Arrivals section of the Home Page of our site. When we first bring up our site, the values shouldn't be there, but as we scroll down and the section comes into view, the hit should fire with our new values.
 
 1. Open the we.retail site in the browser and make sure you are at the top of the home page.
-1. Click the debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
 1. Click to the Analytics tab
 1. Expand your Report Suite's hit
 1. Notice the normal page view hit for the home page with the page name, etc. (but nothing in eVar3 or prop3).
 
 ![Debugger with a Page View](../assets/images/analytics-debuggerPageView.png)
-
 
 1. Leaving the debugger open, scroll down on your site until you can see the New Arrivals section
 1. View the debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that we set up, namely:
