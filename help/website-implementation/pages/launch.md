@@ -8,11 +8,19 @@ solution: Experience Cloud
 
 # General Launch Configuration & Settings
 
-This lesson will introduce you to one of the main concepts of Launch&#8212;Properties.
+This lesson will introduce you to one of the main constructs in Launch&#8212;Properties.
 
 ## Prerequisites
 
-In order to complete this lesson, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/administration/user-permissions).
+In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/administration/user-permissions).
+
+## Learning Objectives
+
+At the end of this lesson, you will be able to:
+
+* Log into the Launch user interface
+* Create a new Launch property
+* Configure a Launch property
 
 ## Go to Launch
 
@@ -52,7 +60,7 @@ A property is basically a container that you fill with extensions, rules, data e
 
    ![Create a new Property](../assets/images/launch-newProperty.png)
 
-Your new property should display on Properties page. Click on the name of your property (e.g. `Launch Tutorial`) to open the Overview screen.
+Your new property should display on Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Launch Tutorial`) to open the `Overview` screen.
 ![Click the name of the property to open it](../assets/images/launch-openProperty.png)
 
 [Next "Add the Launch Embed Code" >](launch-add-embed.md)

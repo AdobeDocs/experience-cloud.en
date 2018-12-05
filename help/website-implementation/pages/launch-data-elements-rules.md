@@ -8,13 +8,26 @@ solution: Experience Cloud
 
 # Add a Data Element, a Rule and a Library
 
-This lesson will introduce you to some of the main concepts of Launch&#8212;Data Elements, Rules, and Libraries.
+In this lesson, you will create your first Data Element, Rule, and Library.
 
 Data Elements and Rules are the basic building blocks of Launch. Data Elements store the attributes you want to send to your marketing and advertising solutions, while Rules fire the requests to those solutions under the right conditions.  Libraries are the JavaScript files that load on the page to do all of the work. In this lesson, we will use all three to make our sample page do something.
+
+## Learning Objectives
+
+At the end of this lesson, you will be able to:
+
+* Create a data element
+* Create a rule
+* Create a library
+* Add changes to a library
+* Validate that your library is loading in your web browser
+* Use the "Working Library" feature to work more efficiently
 
 ## Data Element for Page Name
 
 Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, we will create a data element for Page Name, which we will use later in our Target and Analytics implementations.
+
+**To create a data element**
 
 1. In the top navigation, click **[!UICONTROL Data Elements]**
 
@@ -38,17 +51,17 @@ Data elements are Launch’s version of a data layer. They can store values from
 
    ![Create the Page Name data element](../assets/images/launch-dataElement.png).
 
-### Differences in Data Elements between Launch and DTM
+>[!NOTE]**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
 
-* Data Elements have their own top navigation element
-* New data element types have been added, such as Local Storage, Session Storage, Page Info, and Random Number
-* Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
+>[!NOTE]Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 ## Create a Rule
 
 Next we will use this data element in a simple rule. Rules are one of the most powerful features in Launch and allow you to specify what should happen when. When the criteria outlined in your rules are met, the rule triggers the extension, script, or HTML you identified.
 
 We are going to create a rule that outputs the Page Name data element value to the browser console.
+
+**To create a rule**
 
 1. In the top navigation, click **[!UICONTROL Rules]**
 
@@ -80,7 +93,11 @@ We are going to create a rule that outputs the Page Name data element value to t
 
    ![Select an Action](../assets/images/launch-selectAction.png)
 
-1. Add the following to the code editor. This code will output the value of the Page Name data element to the browser console so we can confirm it's working: `console.log('The page name is '+_satellite.getVar('Page Name'));`
+1. Add the following to the code editor. This code will output the value of the Page Name data element to the browser console so we can confirm it's working: 
+
+    ```javascript
+      console.log('The page name is '+_satellite.getVar('Page Name'));
+    ```
 
 1. Save the code editor
 
@@ -101,7 +118,13 @@ We are going to create a rule that outputs the Page Name data element value to t
 > * Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
 > * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things    like setting Customer IDs, firing Analytics beacons, and firing the    global mbox.
 
-## Save the Rule to a Library
+## Save Your Changes a Library
+
+After configuring a collection of extensions, data elements, and rules in the Launch interface, you need to package these capabilities and logic into a set of JavaScript code that you can deploy on your website so that marketing tags will fire when visitors come to the site. A library is the set of JavaScript code that will do this.
+
+In an earlier lesson, you implemented the embed code of your development environment on the sample page. When you loaded the sample page a 404 error was returned for the embed code URL because a Launch library had not been built yet and assigned to the environment. Now you will put your new data element and rule in a library so that your sample page can do something.
+
+**To add and build a library**
 
 1. Go to the Publishing tab
 
@@ -127,10 +150,6 @@ After a few moments, the status dot will turn green indicating the library succe
 
 ![Library Built](../assets/images/launch-libraryBuilt.png)
 
-### Differences in Libraries between Launch and DTM
-
-* The ability to have multiple development libraries
-
 ## Validate Your Work
 
 Now let's validate that your rule is working as expected.
@@ -138,7 +157,6 @@ Now let's validate that your rule is working as expected.
 Reload your sample page. If you look at the Developer Tools -> Network tab, you should now see a 200 response for your Launch Library!
 
 ![Library loads with 200 response](../assets/images/samplepage-200.png)
-
 
 If you look at the Developer Tools -> Console, you should see the text "The page name is home"
 
@@ -148,7 +166,7 @@ Congratulations, you created your first Data Element and Rule and built your fir
 
 ## Use the Working Library Feature
 
-Now that you have created your "Initial Setup" library, let's look at a feature in Launch that will let you rapidly save your changes and rebuild the library at the same time.
+When you are making a lot of changes in Launch, it is inconvenient to have to come to the Publishing tab and add changes to the library each time you want to see the result.  Now that you have created your "Initial Setup" library, you can use a feature called "Working Library" that will let you rapidly save your changes and rebuild the library in one step.
 
 Let's make a small change to our "All Pages - Library Loaded" rule. In the top navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
 
@@ -160,15 +178,19 @@ On the `Edit Rule` page, click the ***[!UICONTROL Select an option]*** dropdown 
 
 Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save and to Library and Build]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild the JavaScript files with the changes. You won't have to add the changes and rebuild on the Publishing page like you did earlier:
 
-![The Save and Build option now exists](../assets/images/launch-workingLibrary-saveAndBuild.png)
+Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 
-Let's test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads `console.log('The page name is: '+_satellite.getVar('Page Name'));`
+```javascript
+  console.log('The page name is: '+_satellite.getVar('Page Name'));
+```
 
 Save the code, keep the changes in the action, and now click the **[!UICONTROL Save to Library and Build]** button.
+
+![The Save and Build option now exists](../assets/images/launch-workingLibrary-saveAndBuild.png)
 
 Reload your sample page and you should see your change reflected in the console message (you may have to clear your browser cache and reload, in order to see the change to the page):
 ![Console Message with Colon](../assets/images/samplepage-consoleWithColon.png)
 
-This is a much faster way of working and we will use this approach for the rest of the tutorial.
+This is a much faster way of working and you will use this approach for the rest of the tutorial.
 
 [Next "Switch Environments with the Experience Cloud Debugger" >](launch-switch-environments.md)

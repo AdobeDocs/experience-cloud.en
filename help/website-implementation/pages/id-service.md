@@ -10,27 +10,42 @@ solution: Experience Cloud
 
 ## Overview
 
-This lesson will guide your through the steps required to implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/). The ID Service sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilites such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+This lesson will guide your through the steps required to implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+
+The ID Service sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+
+## Learning Objectives
+
+At the end of this lesson, you will be able to:
+
+* Add the ID Service extension
+* Create a data element to collect customer ids
+* Add a Launch embed code to an html document
+* Explain the optimal location of the Launch embed code in relation to other code in the `<head>` of an html document
 
 ## Add the Experience Cloud ID Service Extension
 
-In this step we will add the ID Service Extension:
+**To add the ID Service Extension**
 
 1. In the top navigation, click **[!UICONTROL Extensions]**
+
 1. Click **[!UICONTROL Catalog]** to go to the Extensions Catalog page
 
     ![Go to the Extensions Catalog](../assets/images/extensions-goToExtensionsCatalog.png)
 
 1. In the filter at the top, type "id" to filter the Catalog
+
 1. On the card for the Experience Cloud ID Service, click **[!UICONTROL Install]**
 
-  ![Install the ID Service Extension](../assets/images/idservice-install.png)
+    ![Install the ID Service Extension](../assets/images/idservice-install.png)
 
 1. Leave all of the default settings and click **[!UICONTROL Save to Library and Build]**
 
-  ![Save the extension](../assets/images/idservice-save.png)
+    ![Save the extension](../assets/images/idservice-save.png)
 
 That's it! You've added the ID Service. For more details on the advanced options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
+
+>[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
 
 ## Add Data Elements for Customer IDs
 
@@ -40,10 +55,10 @@ In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-ele
 
 We will start by creating two data elements:
 
-1. `Authentication State`--to capture whether or not the visitor is logged in
+1. `Authentication State`—to capture whether or not the visitor is logged in
 1. `Email (Hashed)`—to capture the hashed version of the email address (used as the customer ID) from the data layer
 
-Let's create the data element for Authentication State:
+**To create the data element for Authentication State**
 
 1. Click **[!UICONTROL Data Elements]** in the top navigation
 1. Click the **[!UICONTROL Add Data Element]** button
@@ -58,12 +73,12 @@ Let's create the data element for Authentication State:
 
 1. In the **[!UICONTROL Edit Code] window, use the following, which will return values of "logged in" or "logged out" based on an attribute in the We.Retail site's data layer:
 
-``` javascript
-if (digitalData.user[0].profile[0].attributes.loggedIn)
-    return "logged in"
-else
-    return "logged out"
-```
+        ``` javascript
+        if (digitalData.user[0].profile[0].attributes.loggedIn)
+            return "logged in"
+        else
+            return "logged out"
+        ```
 
 1. Click **[!UICONTROL Save]** to save the custom code
 
@@ -74,7 +89,9 @@ else
 
    ![Save the data element](../assets/images/idservice-authenticationStateFinalSave.png)
 
-Now let's add the data element for the `Email (Hashed)`:
+By knowing the authentication state of the user, you know when a customer id would exist on the page that you could send to the ID Service. The next step is to create a data element for the customer id you will send. On the We.Retail demo site, you will use the hashed version of the visitor's email address.
+
+**To add the data element for the hashed email**
 
 1. Click the **[!UICONTROL Add Data Element]** button
 
@@ -90,7 +107,9 @@ Now let's add the data element for the `Email (Hashed)`:
 
 ## Add a Rule to send the Customer IDs
 
-The Experience Cloud ID Service passes the Customer IDs using a Rule Action called “Set Customer IDs.”  We will now create a rule to trigger this action when the visitor is authenticated:
+The Experience Cloud ID Service passes the Customer IDs using a Rule Action called “Set Customer IDs.”  We will now create a rule to trigger this action when the visitor is authenticated.
+
+**To create a rule to send the Customer IDs**
 
 1. In the top navigation, click **[!UICONTROL Rules]**
 1. Click **[!UICONTROL Add Rule]** to open the Rule Builder
@@ -99,7 +118,7 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
 
 1. Name the rule `All Pages - Library Loaded - Authenticated - 10`
   
-  >[!TIP] This naming convention indicates we are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this--instead of naming it for the solutions triggered in the actions will allow us to minimize the overall number of rules needed by our implementation
+    >[!TIP] This naming convention indicates we are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this--instead of naming it for the solutions triggered in the actions will allow us to minimize the overall number of rules needed by our implementation
 
 1. Under **[!UICONTROL Events]** click **[!UICONTROL Add]**
 
@@ -118,11 +137,11 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
     1. For the **[!UICONTROL Condition Type]** select **[!UICONTROL Value Comparison]**
     1. Click the ![data element icon](../assets/images/icon-dataElement.png) icon to open the Data Element modal
 
-    ![open the data element modal](../assets/images/idservice-customerId-valueComparison.png)
+        ![open the data element modal](../assets/images/idservice-customerId-valueComparison.png)
 
     1. In the Data Element Modal, click on **[!UICONTROL Authentication State]** and then click **[!UICONTROL Select]**
 
-    ![set the authentication state](../assets/images/idservice-customerId-authStateCondition.png)
+        ![set the authentication state](../assets/images/idservice-customerId-authStateCondition.png)
 
 1. Type "logged in" in the `Equals` field, causing our rule fire whenever the Data Element “Authentication State” has has a value of “logged in”:
 
@@ -141,7 +160,7 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
     1. For the **[!UICONTROL Auth State]** select **[!UICONTROL Authenticated]**
     1. Click the **[!UICONTROL Keep Changes]** button to save the action and return to the Rule Builder
 
-    ![Configure the action and save the changes](../assets/images/idservice-customerId-action.png)
+        ![Configure the action and save the changes](../assets/images/idservice-customerId-action.png)
 
 1. Click the **[!UICONTROL Save]** button to save the action
 
@@ -149,27 +168,11 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
 
 You've now created a rule that will send the Customer Id as a variable `crm_id` when the visitor is Authenticated. Since we specified the Order as `10` this rule will fire before our `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
 
-## Update your library
-
-Now it's time to add all of the new changes to your Development library so you can test them. Open the Initial Setup library:
-
-1. From the top navigation, select **[!UICONTROL Publishing]**
-1. In the section for the Initial Setup library, open the dropdown
-1. Select **[!UICONTROL Edit]**
-
-   ![Edit the Library](../assets/images/idservice-editLibrary.png)
-
-Add the changed resources, by clicking the **[!UICONTROL Add All Changed Resources]** button:
-
-![Click the Add All Changed Resources button](../assets/images/idservice-addAllChangedResources.png)
-
-You should see your new data elements, rule, and the ID Service extension appear in the **[!UICONTROL New Resources]** section. Click the **[!UICONTROL Save & Build for Development]** button:
-
-![Click "Save & Build for Development](../assets/images/idservice-saveAndBuild.png)
-
 ## Validation Steps
 
-To validate your work, you will log into the We.Retail site to confirm the behavior of the new rule:
+To validate your work, you will log into the We.Retail site to confirm the behavior of the new rule.
+
+**To log into the We.Retail site**
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
@@ -189,7 +192,9 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 1. Return to the Homepage
 
-Now, confirm the customer id is sent to the Service using the Debugger extension:
+Now, confirm the customer id is sent to the Service using the Debugger extension.
+
+**To validate that the ID Service is passing the customer id**
 
 1. Go to the Experience Cloud ID Service tab
 1. Click on the cell with the `Customer ID - crm_id` value
@@ -210,14 +215,5 @@ Launch also has rich console logging features. To turn them on, go to the **[!UI
 This will turn on console logging both in your browser console and in the Logs tab of the Debugger. You should see the logging of all of the rules you have created so far!:
 
 ![Logs tab of the Debugger](../assets/images/idservice-debugger-loggingStatements.png)
-
-### What is different from DTM
-
-* You can exclude the ID Service from loading on specific URL paths
-* [ID Service configurations](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html "Documentation") are available as predefined dropdown options
-* There is no freeform option for [ID Service configurations](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html "Documentation")
-* Customer IDs are not set in the extension configuration—they are now set in rules
-* Analytics and Marketing Cloud tracking server configurations are in the Variables dropdown (these are not needed if you have already migrated your visitors to the Id Service)
-* You must use the VisitorAPI.js version that comes with the extension version
 
 [Next "Add Adobe Target" >](target.md)

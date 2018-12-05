@@ -21,7 +21,20 @@ The Target extension consists of two main parts:
     1. Add Params to Global Mbox
     1. Fire Global Mbox
 
-## Pre-requisites
+## Learning Objectives
+
+At the end of this lesson, you will be able to:
+
+* Add the pre-hiding snippet used to manage flicker when using Target with asynchronous Launch embed codes
+* Add the Target extension
+* Fire the global mbox using the Target extension actions
+* Add various types of parameters to the global mbox using the Target extension actions
+* Collect product entities for Adobe Target Recommendations
+* Fire the order confirmation mbox with required parameters using custom code
+* Add Library Header and Library Footer code sections to a Target implementation
+* Validate aspects of a Target implementation
+
+## Prerequisites
 
 To complete the lessons in this section, you must first complete the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md).
 
@@ -56,9 +69,11 @@ For more details and to obtain the un-minified pre-hiding snippet, please see [t
 
    ![Install the Target extension](../assets/images/target-installExtension.png)
 
-1. When you add the extension, it will import many of your at.js settings from the Target interface, as pictured below, although the Timeout will always be 3000ms. Leave the default settings. Note, that on the left hand side it will show the at.js version that ships with the current version of the extension.
+1. When you add the extension, it will import many but not all of your at.js settings from the Target interface, as pictured below, although the Timeout will always be 3000ms. Leave the default settings. Note, that on the left hand side it will show the at.js version that ships with the current version of the extension.
 
 1. Click **[!UICONTROL Save to Library and Build]** ![Save the extension](../assets/images/target-saveExtension.png)
+
+>[!NOTE] Each version of the Target extension comes with a specific version of at.js. You update the at.js version by updating the Target extension.
 
 ## Load Target and Add the Global Mbox
 

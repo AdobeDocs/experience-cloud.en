@@ -8,17 +8,26 @@ solution: Experience Cloud
 
 # Add the Launch Embed Code
 
-This lesson will introduce you to two of the main concepts of Launch&#8212;Environments and Embed Codes.
+In this lesson, you will implement the asynchronous embed code of your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&#8212;Environments and Embed Codes.
 
-New properties are created with three environments: one Development, one Staging, and one Production. These correspond to the typical stages in the code development and release process. If desired, you may add additional Development environments, which is common on larger teams with multiple developers working on different projects at the same time.
+## Learning Objectives
 
-The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`.
+At the end of this lesson, you will be able to:
 
-In this lesson, you will implement the asynchronous embed code of your Launch property's Development environment.
+* Obtain the embed code for your Launch property
+* Understand the difference between a Development, Staging, and Production environment
+* Add a Launch embed code to an html document
+* Explain the optimal location of the Launch embed code in relation to other code in the `<head>` of an html document
 
 ## Copy the Embed Code
 
+The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`.
+
 From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
+
+Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment where QA and other teams review their work. Once the QA and other teams are satisfied, the code is then pushed to the Production environment, which is the public-facing environment in which your visitors experience when they come to your website.
+
+Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
 
 ![Click Environments in the top nav](../assets/images/launch-environments.png)
 
