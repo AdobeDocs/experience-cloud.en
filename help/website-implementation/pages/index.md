@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 _Implementing the Experience Cloud in Websites with  Launch_ is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&#8212;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be comfortable implementing these solutions as well as non-Adobe marketing tags on your own website.
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&mdash;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be comfortable implementing these solutions as well as non-Adobe marketing tags on your own website.
 
 After completing this you will be able to:
 

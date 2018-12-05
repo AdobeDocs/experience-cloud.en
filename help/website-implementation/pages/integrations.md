@@ -18,7 +18,7 @@ These validation steps require that you have the appropriate level of access to 
 
 ## Analytics for Target (A4T)
 
-In addition to implementing the Experience Cloud Id Service, A4T requires that Target loads before Analytics. The lessons in this tutorial You should always see matching supplemental data ids (SDIDs) in both calls&#8212;these ids stitch hits together in the Analytics processing for A4T.
+In addition to implementing the Experience Cloud Id Service, A4T requires that Target loads before Analytics. The lessons in this tutorial You should always see matching supplemental data ids (SDIDs) in both calls&mdash;these ids stitch hits together in the Analytics processing for A4T.
 
 ### Validate the A4T Implementation
 

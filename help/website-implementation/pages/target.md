@@ -77,7 +77,7 @@ For more details and to obtain the un-minified pre-hiding snippet, please see [t
 
 ## Load Target and Add the Global Mbox
 
-Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role the final display of the page, Target should be loaded as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript SDK library&#8212;at.js&#8212;as well as fire the global mbox.
+Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role the final display of the page, Target should be loaded as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript SDK library&mdash;at.js&mdash;as well as fire the global mbox.
 
 You can use the `All Pages - Library Loaded` rule you created in the lesson "[Add Data Elements, Rules and Libraries](launch-data-elements-rules.md)" to implement Target because is triggered as early as possible on every page.
 

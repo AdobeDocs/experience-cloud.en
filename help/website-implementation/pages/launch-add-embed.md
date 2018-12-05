@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add the Launch Embed Code
 
-In this lesson, you will implement the asynchronous embed code of your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&#8212;Environments and Embed Codes.
+In this lesson, you will implement the asynchronous embed code of your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&mdash;Environments and Embed Codes.
 
 ## Learning Objectives
 
