@@ -74,7 +74,7 @@ In addition, you will need at least one report suite ID. If you don't have a tes
 * Custom Code: Option to load before or after the UI settings has been removed
 * Some options have been rearranged to more intuitive locations
 
-## Fire the Analytics Beacon
+## Send the Page View Beacon
 
 Now you will create a rule to fire the Analytics beacon, which will send the `Page Name` variable set in the extension configuration.
 
@@ -111,7 +111,7 @@ Now you will create a rule to fire the Analytics beacon, which will send the `Pa
 
   ![Click Save to Library and Build](../assets/images/analytics-saveToLibraryAndBuild.png)
 
-### Validate the Analytics Beacon
+### Validate the Page View Beacon
 
 Now that we have created a rule to send an Analytics beacon, we should be able to see the request in the Experience Cloud Debugger.
 
@@ -211,7 +211,7 @@ To implement plug-ins, there are basically three steps:
 1. Add the main function code for the plug-in
 1. Include the code that calls the function and sets variables, etc.
 
-### Make the Analytics "s" Object Globally Accessible
+### Make the Analytics Object Globally Accessible
 
 If you are going to add the doPlugins function (below) and use plug-ins, you need to check a box to make the Analytics "s" object available globally in the Analytics implementation.
 
@@ -315,9 +315,9 @@ Now let's make sure that the plug-ins are working the way that we expect.
 
    >[!NOTE] There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as we have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
 
-## Fire a Track Link (`s.tl()`) Beacon
+## Send a Track Link Beacon
 
-When a page loads, we typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
+When a page loads, your typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
 
 However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, we will use the `s.tl()` function, which is commonly referred to as a "track link" request or "hit". Even though it is referred to as a track link call, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you via in the Launch rule builder, including your own custom JavaScript.
 
@@ -374,7 +374,7 @@ For this use case, we want to know if people are scrolling down on our We.Retail
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-### Validate the Enters Viewport s.tl()
+### Validate the Track Link Beacon
 
 Now we will want to make sure that this hit goes in when we scroll down to the New Arrivals section of the Home Page of our site. When we first bring up our site, the values shouldn't be there, but as we scroll down and the section comes into view, the hit should fire with our new values.
 
