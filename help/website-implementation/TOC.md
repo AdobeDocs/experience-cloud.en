@@ -8,7 +8,7 @@ solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 solution-icon: assets/experience-cloud.png
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
-mini-toc-levels: 1
+mini-toc-levels: 3
 git-repo: https://git.corp.adobe.com/AdobeDocs/techmarketing-test.en
 ---
 
