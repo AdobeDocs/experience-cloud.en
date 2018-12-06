@@ -2,17 +2,19 @@
 cloud: experience-cloud
 product: multi-solution
 user-guide-title: Implementation Guides
-user-guide-url: implementation-guides-test
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 solution-icon: assets/experience-cloud.png
+getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
+tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/techmarketing-test.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
+index: no
 ---
 
-# implementing-the-experience-cloud-in-websites-with-launch
+# Implementing Experience Cloud in websites with Launch {#implementing-in-websites-with-launch}
 
 + [Overview](pages/index.md)
 + Configuring Launch{#configure-launch}
