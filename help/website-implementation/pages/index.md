@@ -52,7 +52,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 1. Add the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
 1. Download the [sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click "Save Link As")
 1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
-1. Bookmark [the We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Bookmark the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 Let's get started!
 

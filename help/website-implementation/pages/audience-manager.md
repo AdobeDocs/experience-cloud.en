@@ -22,7 +22,7 @@ You should know your “Audience Manager Subdomain” (also known as the “Part
 
 This tutorial provides basic information on how to set up a Server-Side forwarding implementation. For a complete description and requirements list for Server-Side forwarding, please review the [documentation](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) as well, so that you are familiar with how it works, what is required, and how to validate.
 
-### Enabling Server-Side Forwarding in the Analytics Admin Console
+### Enable Server-Side Forwarding in the Analytics Admin Console
 
 Launch will contain the code associated with SSF and the response from AAM back to the page, *but SSF also needs to be enabled in the Adobe Analytics Admin Console*.
 

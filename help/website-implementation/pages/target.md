@@ -75,7 +75,7 @@ For more details and to obtain the un-minified pre-hiding snippet, please see [t
 
 >[!NOTE] Each version of the Target extension comes with a specific version of at.js. You update the at.js version by updating the Target extension.
 
-## Load Target and Add the Global Mbox
+## Load Target and Fire the Global Mbox
 
 Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role the final display of the page, Target should be loaded as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript SDK library&mdash;at.js&mdash;as well as fire the global mbox.
 
