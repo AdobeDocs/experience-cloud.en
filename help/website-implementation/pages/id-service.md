@@ -8,8 +8,6 @@ solution: Experience Cloud
 
 # Add the Experience Cloud ID Service
 
-## Overview
-
 This lesson will guide your through the steps required to implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
 
 The ID Service sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
@@ -20,10 +18,10 @@ At the end of this lesson, you will be able to:
 
 * Add the ID Service extension
 * Create a data element to collect customer ids
-* Add a Launch embed code to an html document
-* Explain the optimal location of the Launch embed code in relation to other code in the `<head>` of an html document
+* Create a rules that uses the "Set Customer Ids" action to send the customer ids to Adobe
+* Use the rule ordering feature to sequence rules that fire on the same event
 
-## Add the Experience Cloud ID Service Extension
+## Add the ID Service Extension
 
 **To add the ID Service Extension**
 
@@ -47,13 +45,14 @@ That's it! You've added the ID Service. For more details on the  options, see th
 
 >[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
 
-## Add Data Elements for Customer IDs
+## Send Customer IDs
+Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This is an optional step which will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
-Next, let's send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This is an optional feature that will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
+In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and use it in a rule. Now, you will use those same techniques to send a Customer Id to the ID Service when the visitor is authenticated.  
 
-In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) we created a data element and use it in a rule. Now, we will use those same techniques to send a Customer Id to the ID Service when the visitor is authenticated.  
+### Create Data Elements for Customer IDs
 
-We will start by creating two data elements:
+Start by creating two data elements:
 
 1. `Authentication State`—to capture whether or not the visitor is logged in
 1. `Email (Hashed)`—to capture the hashed version of the email address (used as the customer ID) from the data layer
@@ -105,9 +104,9 @@ By knowing the authentication state of the user, you know when a customer id wou
 
    ![Save the data element](../assets/images/idservice-emailHashed.png)
 
-## Add a Rule to send the Customer IDs
+### Add a Rule to send the Customer IDs
 
-The Experience Cloud ID Service passes the Customer IDs using a Rule Action called “Set Customer IDs.”  We will now create a rule to trigger this action when the visitor is authenticated.
+The Experience Cloud ID Service passes the Customer IDs in rules using an action called “Set Customer IDs.”  You will now create a rule to trigger this action when the visitor is authenticated.
 
 **To create a rule to send the Customer IDs**
 
@@ -118,14 +117,14 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
 
 1. Name the rule `All Pages - Library Loaded - Authenticated - 10`
   
-    >[!TIP] This naming convention indicates we are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this--instead of naming it for the solutions triggered in the actions will allow us to minimize the overall number of rules needed by our implementation
+    >[!TIP] This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this--instead of naming it for the solutions triggered in the actions will allow you to minimize the overall number of rules needed by your implementation
 
 1. Under **[!UICONTROL Events]** click **[!UICONTROL Add]**
 
    ![Add an event](../assets/images/idservice-customerId-addEvent.png)
 
     1. For the **[!UICONTROL Event Type]** select **[!UICONTROL Library Loaded (Page Top)]**
-    1. For the  **[!UICONTROL Order]** enter `10` (we are lowering the order because we want to make sure we set the customer ID before some of the rules we are going to create later)
+    1. For the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, in the next lesson.
     1. Click the **[!UICONTROL Keep Changes]** button to return to the Rule Builder
 
     ![Save the event](../assets/images/idservice-customerId-saveEvent.png)
@@ -143,7 +142,7 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
 
         ![set the authentication state](../assets/images/idservice-customerId-authStateCondition.png)
 
-1. Type "logged in" in the `Equals` field, causing our rule fire whenever the Data Element “Authentication State” has has a value of “logged in”:
+1. Type "logged in" in the `Equals` field, causing the rule fire whenever the Data Element “Authentication State” has has a value of “logged in”:
 
 1. Click **[!UICONTROL Return trieKeep Changes]**
 
@@ -166,9 +165,9 @@ The Experience Cloud ID Service passes the Customer IDs using a Rule Action call
 
    ![Save the Rule](../assets/images/idservice-customerId-saveRule.png)
 
-You've now created a rule that will send the Customer Id as a variable `crm_id` when the visitor is Authenticated. Since we specified the Order as `10` this rule will fire before our `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
+You've now created a rule that will send the Customer Id as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
 
-## Validation Steps
+### Validation Steps
 
 To validate your work, you will log into the We.Retail site to confirm the behavior of the new rule.
 
