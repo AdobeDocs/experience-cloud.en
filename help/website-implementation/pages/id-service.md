@@ -46,6 +46,7 @@ That's it! You've added the ID Service. For more details on the  options, see th
 >[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
 
 ## Send Customer IDs
+
 Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This is an optional step which will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
 In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and use it in a rule. Now, you will use those same techniques to send a Customer Id to the ID Service when the visitor is authenticated.  
