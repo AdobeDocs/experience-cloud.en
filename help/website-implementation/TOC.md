@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: multi-solution
-user-guide-title: Implementation Guides
+user-guide-title: Implementing the Experience Cloud in Websites with Launch
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 solution-icon: assets/experience-cloud.png
@@ -14,7 +14,7 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 index: no
 ---
 
-# Implementing Experience Cloud in websites with Launch {#implementing-in-websites-with-launch}
+# Implementing the Experience Cloud in Websites with Launch {#implementing-in-websites-with-launch}
 
 + [Overview](pages/index.md)
 + Configuring Launch{#configure-launch}

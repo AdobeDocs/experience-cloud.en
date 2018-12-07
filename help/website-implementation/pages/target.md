@@ -8,18 +8,9 @@ solution: Experience Cloud
 
 # Adobe Target
 
-In this lesson, we will implement Adobe Target with a global mbox and custom parameters. There are  optional exercises for Target Premium customers seeking to implement Recommendations and Enterprise User permissions.
+In this lesson, we will implement Adobe Target with a global mbox and custom parameters. There are optional exercises for Target Premium customers seeking to implement Recommendations and Enterprise User permissions.
 
 The Adobe Target extension supports client-side implementations using Target's JavaScript SDK for the modern web, at.js. Customers still using Target's older library, mbox.js, [should upgrade to at.js](https://marketing.adobe.com/resources/help/en_US/target/ov2/t_target-migrate-atjs.html) in order to use Launch.
-
-The Target extension consists of two main parts:
-
-1. The extension configuration, which manages the core library settings
-1. Rule actions to do the following:
-    1. Load Target (at.js)
-    1. Add Params to All Mboxes
-    1. Add Params to Global Mbox
-    1. Fire Global Mbox
 
 ## Learning Objectives
 
@@ -62,6 +53,19 @@ Reload your sample page. You will notice that the page will be hidden for three 
 For more details and to obtain the un-minified pre-hiding snippet, please see [the Adobe Target extension with an asynchronous deployment​](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension#adobe-target-extension-with-an-asynchronous-deployment.)
 
 ## Add the Target Extension
+
+The Target extension consists of two main parts:
+
+1. The extension configuration, which manages the core library settings
+1. Rule actions to do the following:
+    1. Load Target (at.js)
+    1. Add Params to All Mboxes
+    1. Add Params to Global Mbox
+    1. Fire Global Mbox
+
+In this exercise we will add the extension and look at the configurations. In later exercises we will use the other actions.
+
+**To add the Extension**
 
 1. Go to **[!UICONTROL Extensions > Catalog]**
 1. Type `Target` in the filter to quickly locate the Adobe Target extension
