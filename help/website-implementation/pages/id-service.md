@@ -45,10 +45,43 @@ That's it! You've added the ID Service. For more details on the  options, see th
 
 >[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
 
+### Validate the Extension
+
+The ID Service extension is one of the few Launch extensions that makes a request without having to use a rule action to make the request. The extension will automatically make a request to the ID Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
+
+**To validate the ID Service extension**
+
+1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md).
+
+1. On the Summary tab of the Debugger, the Launch section should indicate that the Experience Cloud ID Service extension is implemented.
+
+   ![Check that the Experience Cloud ID Service extension is implemented](../assets/images/idservice-debugger-summary.png)
+
+1. Also, on the Summary tab, the ID Service section should populate with the same Org ID that was on your extension configuration screen in the Launch UI:
+
+   ![Confirm that the Org ID matches the Launch UI](../assets/images/idservice-debugger-idservice.png)
+
+1. The initial request to retrieve the Visitor ID appear in the ID Service tab of the Debugger. It might have already been requested, though, so don't worry if you don't see it:
+   ![Check to see if there is a request to the ID Service with your Org Id](../assets/images/idservice-idRequest.png)
+
+1. After the initial request to fetch the Visitor ID, the ID is stored in a cookie whose name begins with `AMCV_`. To confirm the ID has been set you can examine the cookie:
+    1. Open your browser's Developer Tools
+    1. Go to the `Application` tab
+    1. Expand `Cookies` on the left side
+    1. Click on the domain `https://aem100-us.adobevlab.com/`
+    1. Look for the AMCV_ cookie on the right hand side
+
+   ![Verify the AMCV_ cookie](../assets/images/idservice-AMCVCookie)
+
+Congratulations! You have implemented your first extension!
+
 ## Send Customer IDs
+
 Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This is an optional step which will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
-In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and use it in a rule. Now, you will use those same techniques to send a Customer Id to the ID Service when the visitor is authenticated.  
+In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and use it in a rule. Now, you will use those same techniques to send a Customer ID to the ID Service when the visitor is authenticated.  
 
 ### Create Data Elements for Customer IDs
 
@@ -165,7 +198,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
    ![Save the Rule](../assets/images/idservice-customerId-saveRule.png)
 
-You've now created a rule that will send the Customer Id as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
+You've now created a rule that will send the Customer ID as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
 
 ### Validation Steps
 
@@ -199,7 +232,7 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 1. Click on the cell with the `Customer ID - crm_id` value
 1. In the modal, note the customer id value and that the `AUTHENTICATED` state is reflected:
 
-   ![Confirm the Customer Id in the Debugger](../assets/images/idservice-debugger-confirmCustomerId.png)
+   ![Confirm the Customer ID in the Debugger](../assets/images/idservice-debugger-confirmCustomerId.png)
 
 1. Note that you can confirm the hashed email value by viewing the source code of the page and looking at the username property. It should match the value you see in the Debugger:
 

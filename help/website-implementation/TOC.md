@@ -23,7 +23,7 @@ index: no
   + [Add a Data Element, a Rule and a Library](pages/launch-data-elements-rules.md)
   + [Switch Environments with the Debugger](pages/launch-switch-environments.md)
 + Implementing Solutions{#implement-solutions}
-  + [Add the Experience Cloud ID Service](pages/id-service.md)
+  + [Add the ID Service](pages/id-service.md)
   + [Add Adobe Target](pages/target.md)
   + [Add Adobe Analytics](pages/analytics.md)
   + [Add Adobe Audience Manager](pages/audience-manager.md)
