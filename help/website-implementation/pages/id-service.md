@@ -73,7 +73,7 @@ The ID Service extension is one of the few Launch extensions that makes a reques
     1. Click on the domain `https://aem100-us.adobevlab.com/`
     1. Look for the AMCV_ cookie on the right hand side
 
-   ![Verify the AMCV_ cookie](../assets/images/idservice-AMCVCookie)
+   ![Verify the AMCV_ cookie](../assets/images/idservice-AMCVCookie.png)
 
 Congratulations! You have implemented your first extension!
 
@@ -224,7 +224,7 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 1. Return to the Homepage
 
-Now, confirm the customer id is sent to the Service using the Debugger extension.
+Now, confirm the customer id is sent to the ServiceA using the Debugger extension.
 
 **To validate that the ID Service is passing the customer id**
 
