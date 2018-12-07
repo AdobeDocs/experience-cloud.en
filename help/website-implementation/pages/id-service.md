@@ -17,8 +17,8 @@ The ID Service sets a common visitor id across all Adobe solutions in order to p
 At the end of this lesson, you will be able to:
 
 * Add the ID Service extension
-* Create a data element to collect customer ids
-* Create a rules that uses the "Set Customer Ids" action to send the customer ids to Adobe
+* Create a data element to collect your customer ids
+* Create a rule that uses the "Set Customer IDs" action to send the customer ids to Adobe
 * Use the rule ordering feature to sequence rules that fire on the same event
 
 ## Add the ID Service Extension
@@ -41,8 +41,6 @@ At the end of this lesson, you will be able to:
 
     ![Save the extension](../assets/images/idservice-save.png)
 
-That's it! You've added the ID Service. For more details on the  options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
-
 >[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
 
 ### Validate the Extension
@@ -61,7 +59,7 @@ The ID Service extension is one of the few Launch extensions that makes a reques
 
 1. Also, on the Summary tab, the ID Service section should populate with the same Org ID that was on your extension configuration screen in the Launch UI:
 
-   ![Confirm that the Org ID matches the Launch UI](../assets/images/idservice-debugger-idservice.png)
+   ![Confirm that the Org ID matches the Launch UI](../assets/images/idservice-debugger-summary.png)
 
 1. The initial request to retrieve the Visitor ID appear in the ID Service tab of the Debugger. It might have already been requested, though, so don't worry if you don't see it:
    ![Check to see if there is a request to the ID Service with your Org Id](../assets/images/idservice-idRequest.png)
@@ -75,7 +73,7 @@ The ID Service extension is one of the few Launch extensions that makes a reques
 
    ![Verify the AMCV_ cookie](../assets/images/idservice-AMCVCookie.png)
 
-Congratulations! You have implemented your first extension!
+That's it! You've added your first extension! For more details on the  options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
 
 ## Send Customer IDs
 
@@ -200,7 +198,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
 You've now created a rule that will send the Customer ID as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
 
-### Validation Steps
+### Validate the Customer IDs
 
 To validate your work, you will log into the We.Retail site to confirm the behavior of the new rule.
 
@@ -238,7 +236,7 @@ Now, confirm the customer id is sent to the ServiceA using the Debugger extensio
 
    ![hashed email in the source code](../assets/images/idservice-customerId-inSourceCode.png)
 
-### Additional Debugging Tips
+### Additional Validation Tips
 
 Launch also has rich console logging features. To turn them on, go to the **[!UICONTROL Tools]** tab in the Debugger and turn on the **[!UICONTROL Launch Console Logging Toggle]**.
 
