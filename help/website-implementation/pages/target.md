@@ -123,7 +123,7 @@ With the `Load Target` action added, at.js will load on the page. However, no Ta
 
 1. Click **[!UICONTROL Keep Changes]**
 
-1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` nees fire before the `Fire Global Mbox`.
+1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` needs fire before the `Fire Global Mbox`.
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -272,7 +272,7 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 
 ### Property Token Parameter for Enterprise User Permissions
 
->[!NOTE] This is an optional exercise for Target Premium customers. 
+>[!NOTE] This is an optional exercise for Target Premium customers.
 
 The property token is a reserved parameter used with the Target Premium [Enterprise User Permissions](https://marketing.adobe.com/resources/help/en_US/target/target/property_channel.html) feature. It is used to define different digital properties so that different members of an Experience Cloud Organization can be assigned different permissions to each property. For example, you might want one group of users to be able to set up Target activities on your web site, but not in your mobile application.
 
@@ -337,7 +337,7 @@ The order confirmation mbox is a special type of mbox used to define order submi
 1. Uses a different algorithm behind the scenes to calculate statistical confidence
 1. Creates a special, downloadable Audit report of individual order details
 
-The best practice is to use and order confirmation mbox in all order funnels, even on non-retail sites. For example, lead generation sites usually have lead funnels with a unique "lead id" generated at the end. These sites should implement an order mbox, using a static value (e.g. "1") for the orderTotal. 
+The best practice is to use and order confirmation mbox in all order funnels, even on non-retail sites. For example, lead generation sites usually have lead funnels with a unique "lead id" generated at the end. These sites should implement an order mbox, using a static value (e.g. "1") for the orderTotal.
 
 Customers using the Analytics for Target (A4T) integration for most of their reporting should also implement the order mbox, since A4T is not compatible with all activity types such as Auto Allocate, Automated Personalization and Auto Target. Additionally, the order mbox is a critical element in Recommendations implementations, powering algorithms based on purchase behavior.
 
