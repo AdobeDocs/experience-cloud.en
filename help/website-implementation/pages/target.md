@@ -270,7 +270,7 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 
 >[!WARNING] The Experience Cloud ID Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
 
-### Property Token Parameter for Enterprise User Permissions
+### Add the Property Token Parameter
 
 >[!NOTE] This is an optional exercise for Target Premium customers.
 
@@ -463,7 +463,7 @@ In these circumstances, use the Custom Code action in the Core extension to fire
 methods. This is very similar to what you just did in the [Order
 Confirmation mbox](#order-confirmation-mbox) exercise, but you will just use a different mbox name and will not use the special order parameters. Be sure to use the **[!UICONTROL Load Target]** action before making mbox calls from custom code.
 
-### Library Header and Library Footer replacements
+## Library Header and Library Footer
 
 The Edit at.js screen in the Target user interface has locations in which you can paste custom JavaScript that will execute immediately before or after the at.js file.
 
