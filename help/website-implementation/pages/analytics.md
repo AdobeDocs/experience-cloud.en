@@ -8,24 +8,39 @@ solution: Experience Cloud
 
 # Adobe Analytics
 
+Adobe Analytics is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+
 In this lesson, you will implement the Adobe Analytics extension and create rules to send data to Adobe Analytics.
 
-The Adobe Analytics extension supports client-side Analytics implementations using AppMeasurement.js.
+## Learning Objectives
 
-There are many things that could be implemented for Analytics in Launch, but this lesson will be limited to the implementation of the following items:
+At the end of this lesson, you will be able to:
 
-1. Setting `pageName` at a global level in the Analytics extension
-1. When Product Detail Pages are viewed, set an `eVar` and an `event`
-1. Tracking clicks on navigation links, populating an `eVar`, `prop`, and `event`
-1. Implementing a plug-in to help track marketing campaigns, and keep them from falsely duplicating `click-throughs`
+1. Set variables at a global level in the Analytics extension
+1. Add the page view beacon (s.t()) globally to the site
+1. Add additional variables under specific conditions in the page view beacon using rules
+1. Track clicks and other events (s.tl())
+1. Add Analytics plugins
+
+There are many things that could be implemented for Analytics in Launch. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own site.
 
 ## Prerequisites
 
-As noted in the Adobe Target section, to complete the lessons in this section, you should have already completed the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md). Implementing Analytics does not depend on having Target implemented, but for the purposes of this tutorial, we will assume that you did follow along and implement Target.
+You should have already completed the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md).
 
 In addition, you will need at least one report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html). Please also have your tracking server readily available. You can retrieve this from your current implementation, or talk to your Adobe Consultant or Customer Care representative to help you select one.
 
 ## Add the Analytics Extension
+
+The Analytics extension consists of two main parts:
+
+1. The extension configuration, which manages the core AppMeasurement.js library settings and can set global variables
+1. Rule actions to do the following:
+    1. Set Variables
+    1. Clear Variables
+    1. Send the Analytics Beacon
+
+**To add the Analytics extension**
 
 1. Go to **[!UICONTROL Extensions > Catalog]**
 1. Locate the Adobe Analytics extension
@@ -37,7 +52,7 @@ In addition, you will need at least one report suite ID. If you don't have a tes
 
    ![Enter the report suite ids](../assets/images/analytics-config-reportSuite.png)
 
-   >![TIP] We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
+   >[!TIP] We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
 
 1. Under `General > Tracking Server`, enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
 
@@ -56,23 +71,6 @@ In addition, you will need at least one report suite ID. If you don't have a tes
    ![Configure the Link Tracking section](../assets/images/analytics-config-linkTracking.png)
 
 >[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
-
-### What is different from DTM
-
-* Support for Server Side Forwarding to Audience Manager is built-in
-* Report Suites don't auto-populate---you have to know the specific report suite ids and manually enter them
-* The managed library option ships with a specific version of AppMeasurement.js
-
-* Multiple Analytics instances, like having two Analytics "Tools" in DTM, is not supported
-
-* General: New options for *Custom* Character Set and Currency Code
-* General: Data Center option has been removed
-* Global Variables: New options for Server, State, Zip
-
-* Global Variables: data elements must be defined before the Launch header embed code for variables set in the extension configuration (variables set in Rules can come from data elements set before the event)
-
-* Custom Code: Option to load before or after the UI settings has been removed
-* Some options have been rearranged to more intuitive locations
 
 ## Send the Page View Beacon
 
