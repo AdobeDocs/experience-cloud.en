@@ -16,8 +16,8 @@ Adobe Audience Manager (AAM) provides industry-leading services for online audie
 
 At the end of this lesson, you will be able to:
 
-1. Add Audience Manager using Server-Side Forwarding of the Analytics beacon
 1. Describe the two main ways to implement Audience Manager in a website
+1. Add Audience Manager using Server-Side Forwarding of the Analytics beacon
 1. Validate the Audience Manager implementation
 
 ## Prerequisites
@@ -39,8 +39,10 @@ There are two ways to implement Audience Manager in a website:
 * **Client-Side DIL**&mdash;This approach is for customers who do not have Adobe Analytics. DIL code (Data Integration Library Code) sends data directly from the web page into Audience Manager.
 
 Since you have already deployed Adobe Analytics in this tutorial, you will deploy Audience Manager using Server-Side Forwarding.
-  
-## Enable Server-Side Forwarding in the Analytics Admin Console
+
+## Enable Server-Side Forwarding
+
+### Enable Server-Side Forwarding in the Analytics Admin Console
 
 A configuration in the Adobe Analytics Admin Console is required to start forwarding  data from Adobe Analytics to Adobe Audience Manager. Since it can take up to four hours to start forwarding the data, you should do this step first.
 
@@ -56,7 +58,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 >[!NOTE] Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF on your actual site's report suite.
 
-## Enable Server-Side Forwarding in Launch
+### Enable Server-Side Forwarding in Launch
 
 Audience Manager Server-Side Forwarding is enabled in Launch by editing the configuration of the Adobe Analytics extension.
 
@@ -74,11 +76,13 @@ Audience Manager Server-Side Forwarding is enabled in Launch by editing the conf
 
    ![Enable Adobe Audience Manager in the Analytics extension](../assets/images/aam-analytics-addSSF.png)
 
-Server-Side forwarding code is now implemented!
+Adobe Audience Manager is now implemented!
 
 >[!NOTE] In Launch, you will not need to configure the AAM extension to enable Server-Side Forwarding, as it is only used for client-side DIL implementations.
 
-### Validation Steps
+### Validate the Implementation
+
+Doug, put steps here.
 
 For a complete description and requirements list for Server-Side forwarding, please review the [documentation](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html) as well, so that you are familiar with how it works, what is required, and how to validate.
 
