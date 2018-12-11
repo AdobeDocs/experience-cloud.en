@@ -73,6 +73,8 @@ Now you will create a rule to fire the Analytics beacon, which will send the [!U
 
 You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
+**To Send the Page View Beacon**
+
 1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
 
    ![Add Rule](../assets/images/target-addRule.png)
@@ -106,13 +108,17 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 ### Validate the Page View Beacon
 
-Now that we have created a rule to send an Analytics beacon, we should be able to see the request in the Experience Cloud Debugger.
+Now that you have created a rule to send an Analytics beacon, you should be able to see the request in the Experience Cloud Debugger.
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+
+   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+
 1. Click to open the Analytics tab
 1. Expand your Report Suite name to show all of the requests made to it
-1. Confirm the Page Name variable and value
+1. Confirm the request has fired with the Page Name variable and value
 
 ![Validate the page hit](../assets/images/analytics-validatePageHit.png)
 
@@ -120,13 +126,16 @@ Now that we have created a rule to send an Analytics beacon, we should be able t
 
 ## Add Variables with Rules
 
-When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other Analytics variables such as eVars and props, provided the value you are passing is available on the page before the Launch embed codes.
+When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other global variables such as eVars and props, provided the value is available on the page before the Launch embed code loads.
 
 A more flexible location to set variables&mdash;as well as events&mdash;is in rules using the `Set Variables` action. Rules allow you to set different Analytics variables and events under different conditions. For example, you could set the `prodView` only on product detail pages and the `purchase` event only on order confirmation pages. This section will teach you how to set variables using rules.
+
+### Use Case
 
 Product Detail Pages (PDP) are important points for data collection on retail sites. Typically, you want Analytics to register that a product view occurred and which product was viewed. This is helpful in understanding which products are popular with your customers. On a media site, article or video pages could use similar tracking techniques to the ones you will use in this section.  When we load a Product Detail Page, we would like to put that value into a "Page Type" `eVar`, as well as set an event. This will allow us to see the following in our analysis:
 
 1. How many times product detail pages are loaded
+1. Which products are viewed
 1. How other factors (campaigns, search, etc) affect how many PDP's people load.
 
 ### Create Data Element for Page Type
@@ -150,7 +159,7 @@ Product Detail Pages (PDP) are important points for data collection on retail si
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
-## Add the Adobe Analytics Product String Extension
+### Add the Adobe Analytics Product String Extension
 
    ![Add the Adobe Analytics Product String extension by Adobe Consulting](../assets/images/analytics-addProductStringExtension.png)
 

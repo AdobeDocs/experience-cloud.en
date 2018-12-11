@@ -22,7 +22,7 @@ At the end of this lesson, you will be able to:
 
  Now that you have created and validated your library in the Development environment, it is time to publish it to Staging.
 
-1. Go to the **[!UICONTROL Publishing] page
+1. Go to the **[!UICONTROL Publishing]** page
 
 1. Open the dropdown next to your library and select **[!UICONTROL Submit for Approval]**
 
