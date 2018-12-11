@@ -8,9 +8,9 @@ solution: Experience Cloud
 
 # Add Adobe Audience Manager
 
-This lesson will guide you through the steps to enable [Adobe Audience Manager](https://marketing.adobe.com/resources/help/en_US/aam/) using Server-Side Forwarding.
+This lesson will guide you through the steps to enable Adobe Audience Manager using Server-Side Forwarding.
 
-Adobe Audience Manager (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
+[Adobe Audience Manager](https://marketing.adobe.com/resources/help/en_US/aam/) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 
 ## Learning Objectives
 
@@ -23,6 +23,8 @@ At the end of this lesson, you will be able to:
 ## Prerequisites
 
 In order to complete this lesson, you will need:
+
+1. To have completed the lessons in [Configure Launch](launch.md), [Add Adobe Analytics](analytics.md), and [Add the ID Service](id-service.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 

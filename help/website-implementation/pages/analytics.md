@@ -49,30 +49,29 @@ The Analytics extension consists of two main parts:
 
    ![Install the Analytics extension](../assets/images/analytics-catalog-install.png)
 
-1. Under `Library Management > Report Suites`, enter the report suite ids you would like to use with each Launch environment (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
+1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](../assets/images/analytics-config-reportSuite.png)
 
-   >[!TIP] We recommend using the `Manage the library for me option` as the `Library Management` setting as it makes it much easier to keep the core `AppMeasurement.js` code up-to-date.
+   >[!TIP] We recommend using the [!UICONTROL Manage the library for me option] as the [!UICONTROL Library Management] setting as it makes it much easier to keep the `AppMeasurement.js` library up-to-date.
 
-1. Under `General > Tracking Server`, enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
+1. Under [!UICONTROL General > Tracking Server], enter your tracking server, e.g. "`tmd.sc.omtrdc.net`." Enter your SSL Tracking Server if your site supports `https://`
 
    ![Enter the tracking servers](../assets/images/analytics-config-trackingServer.png)
 
-1. In the Global Variables section, set the `Page Name` variable using your `Page Name` data element (click the ![data element icon](../assets/images/icon-dataElement.png) icon and choose the page Page Name element)
+1. In the [!UICONTROL Global Variables section], set the [!UICONTROL Page Name] variable using your `Page Name` data element. Click the ![data element icon](../assets/images/icon-dataElement.png) icon to open the modal and choose the page `Page Name` data element)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
    ![Set the page name variable](../assets/images/analytics-extension-pageName.png)
 
-
->[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables with the extension configuration, the data layer must be defined before the Launch embed codes.
+>[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined before the Launch embed codes.
 
 ## Send the Page View Beacon
 
-Now you will create a rule to fire the Analytics beacon, which will send the `Page Name` variable set in the extension configuration.
+Now you will create a rule to fire the Analytics beacon, which will send the [!UICONTROL Page Name] variable set in the extension configuration.
 
->[!NOTE] You have already created an "All Pages - Library Loaded" rule in the Target section of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this requires all data layer attributes that you would like to pass to Analytics to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
+You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
 1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
 
@@ -95,7 +94,7 @@ Now you will create a rule to fire the Analytics beacon, which will send the `Pa
 
 1. Select **[!UICONTROL Action Type > Send Beacon]**
 
-1. Leave Tracking set to `s.t()`. Note that if you wanted to make an `s.tl()` call in a click-event rule you could do that using the Send Beacon action, as well. However, in this case, we have set the action in this rule to "DOM Ready" so it won't require a click.
+1. Leave Tracking set to `s.t()`. Note that if you wanted to make an `s.tl()` call in a click-event rule you could do that using the Send Beacon action, as well.
 
 1. Click the **[!UICONTROL Keep Changes]** button
 
@@ -111,7 +110,7 @@ Now that we have created a rule to send an Analytics beacon, we should be able t
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
-1. Click to the Analytics tab
+1. Click to open the Analytics tab
 1. Expand your Report Suite name to show all of the requests made to it
 1. Confirm the Page Name variable and value
 
@@ -123,9 +122,9 @@ Now that we have created a rule to send an Analytics beacon, we should be able t
 
 When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other Analytics variables such as eVars and props, provided the value you are passing is available on the page before the Launch embed codes.
 
-A more flexible location to set variables&mdash;as well as events&mdash;is in rules using the `Set Variables` action. Using rules allows you to set different Analytics variables and events under different conditions. For example, you could set the `prodView` only on product detail pages and the `purchase` event only on order confirmation pages. This section will teach you how to set variables using rules.
+A more flexible location to set variables&mdash;as well as events&mdash;is in rules using the `Set Variables` action. Rules allow you to set different Analytics variables and events under different conditions. For example, you could set the `prodView` only on product detail pages and the `purchase` event only on order confirmation pages. This section will teach you how to set variables using rules.
 
-Product Detail Pages (PDP) are important points for data collection on retail sites. Typically, you want your analytics system to register that a product view occurred and which product was viewed. This is helpful in understanding which products are popular with your customers. On a media site, article or video pages could use similar tracking techniques to the ones you will use in this section.  When we load a Product Detail Page, we would like to put that value into a "Page Type" `eVar`, as well as set an event. This will allow us to see the following in our analysis:
+Product Detail Pages (PDP) are important points for data collection on retail sites. Typically, you want Analytics to register that a product view occurred and which product was viewed. This is helpful in understanding which products are popular with your customers. On a media site, article or video pages could use similar tracking techniques to the ones you will use in this section.  When we load a Product Detail Page, we would like to put that value into a "Page Type" `eVar`, as well as set an event. This will allow us to see the following in our analysis:
 
 1. How many times product detail pages are loaded
 1. How other factors (campaigns, search, etc) affect how many PDP's people load.
@@ -140,6 +139,21 @@ Product Detail Pages (PDP) are important points for data collection on retail si
 1. Use `digitalData.page.category.type` as the `Path to Variable`
 1. Click **[!UICONTROL Save to Library and Build]**
 
+### Create Data Element for Product Id
+
+1. Click **[!UICONTROL Data Elements]** in the top navigation
+1. Click **[!UICONTROL Add Data Element]**
+1. Name the data element `Product Id`
+1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
+1. Use `digitalData.product.0.productInfo.sku` as the `Path to Variable`
+1. Check the `Force lowercase value` option
+1. Check the `Clean text` option
+1. Click **[!UICONTROL Save to Library and Build]**
+
+## Add the Adobe Analytics Product String Extension
+
+   ![Add the Adobe Analytics Product String extension by Adobe Consulting](../assets/images/analytics-addProductStringExtension.png)
+
 ### Create the Rule for Product Detail Pages
 
 For this functionality, we will create another page load rule, triggered by DOM Ready again. However, this time, since we only want this to fire on PDP's and not on other page types, we will put a condition on the rule instead of having it fire every time any page loads.
@@ -148,13 +162,13 @@ For this functionality, we will create another page load rule, triggered by DOM 
 
    ![Add Rule](../assets/images/target-addRule.png)
 
-1. Name the rule `PDP Pages - DOM Ready - Analytics`
+1. Name the rule `Product Details - DOM Ready`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
    ![Name the rule and add the event](../assets/images/analytics-domReadyAddEvent.png)
 
 1. Select **[!UICONTROL Event Type > DOM Ready]**
-1. Set the **[!UICONTROL Order]** to 40, so that it will happen BEFORE the main Analytics rule runs. In this rule, we will set some variables, and then in the main Analytics rule the beacon sends them in (along with the normal every-page stuff).
+1. Set the **[!UICONTROL Order]** to 40, so that the rule will run BEFORE the rule containing the Analytics > Send Beacon action.
 1. Click **[!UICONTROL Keep Changes]**
    ![Configure the Event](../assets/images/analytics-configDOMReadyEvent.png)
 
@@ -180,6 +194,18 @@ For this functionality, we will create another page load rule, triggered by DOM 
 1. Click **[!UICONTROL Keep Changes]**
 
       ![Set Analytics Variables in PDP Rule](../assets/images/analytics-PDPsetVariables.png)
+
+1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add a new action
+
+      ![Add another Action for the Product String](../assets/images/analytics-PDPaddProductStringAction.png)
+
+1. Select **[!UICONTROL Extension > Adobe Analytics]**
+1. Select **[!UICONTROL Action Type > Set Variables]**
+1. Set **[!UICONTROL eVar2 Set as]** `product detail page`
+1. Set **[!UICONTROL event2]**, leaving the optional values blank
+1. Click **[!UICONTROL Keep Changes]**
+
+      ![Add the Product String Variable using the Adobe Analytics Product String extension](../assets/images/analytics-PDPaddProductString.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
