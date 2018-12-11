@@ -393,4 +393,4 @@ Now let's make sure that the plug-ins are working the way that we expect.
 
 Nice work! You have completed the Analytics section. Of course, there are many other things that we can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
-[Next "Add Adobe Audience Manager"](audience-manager.md)
+[Next "Add Adobe Audience Manager" >](audience-manager.md)
