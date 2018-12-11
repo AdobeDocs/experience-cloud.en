@@ -8,13 +8,9 @@ solution: Experience Cloud
 
 # Adobe Target
 
-Adobe Target is the Adobe Marketing Cloud solution that provides everything you need to tailor and personalize your
-customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital
-channels.
+In this lesson, we will implement the [Adobe Target extension](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension) with a global request and custom parameters.
 
-In this lesson, we will implement Adobe Target with a global mbox and custom parameters. There are optional exercises for Target Premium customers seeking to implement Recommendations and Enterprise User permissions.
-
-The Adobe Target extension supports client-side implementations using Target's JavaScript SDK for the modern web, at.js. Customers still using Target's older library, mbox.js, [should upgrade to at.js](https://marketing.adobe.com/resources/help/en_US/target/ov2/t_target-migrate-atjs.html) in order to use Launch.
+[Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) is the Adobe Marketing Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
 ## Learning Objectives
 
@@ -57,6 +53,8 @@ Reload your sample page. You will notice that the page will be hidden for three 
 For more details and to obtain the un-minified pre-hiding snippet, please see [the Adobe Target extension with an asynchronous deployment​](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension#adobe-target-extension-with-an-asynchronous-deployment.)
 
 ## Add the Target Extension
+
+The Adobe Target extension supports client-side implementations using Target's JavaScript SDK for the modern web, at.js. Customers still using Target's older library, mbox.js, [should upgrade to at.js](https://marketing.adobe.com/resources/help/en_US/target/ov2/t_target-migrate-atjs.html) in order to use Launch.
 
 The Target extension consists of two main parts:
 

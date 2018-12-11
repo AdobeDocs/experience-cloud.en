@@ -8,9 +8,9 @@ solution: Experience Cloud
 
 # Adobe Analytics
 
-Adobe Analytics is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+In this lesson, you will implement the [Adobe Analytics extension](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension) and create rules to send data to Adobe Analytics.
 
-In this lesson, you will implement the Adobe Analytics extension and create rules to send data to Adobe Analytics.
+[Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/reference/) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 ## Learning Objectives
 

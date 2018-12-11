@@ -8,9 +8,9 @@ solution: Experience Cloud
 
 # Add the Experience Cloud ID Service
 
-This lesson will guide your through the steps required to implement the [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+This lesson will guide your through the steps required to implement the [Experience Cloud ID Service extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) and send customer ids.
 
-The ID Service sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+The [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
 ## Learning Objectives
 
@@ -20,6 +20,10 @@ At the end of this lesson, you will be able to:
 * Create a data element to collect your customer ids
 * Create a rule that uses the "Set Customer IDs" action to send the customer ids to Adobe
 * Use the rule ordering feature to sequence rules that fire on the same event
+
+## Prerequisites
+
+None
 
 ## Add the ID Service Extension
 
