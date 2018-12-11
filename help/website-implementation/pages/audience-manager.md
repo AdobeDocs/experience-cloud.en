@@ -12,12 +12,6 @@ This lesson will guide you through the steps to enable [Adobe Audience Manager](
 
 Audience Manager provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 
-There are two ways to implement Audience Manager in a website:
-
-* **Server-Side Forwarding (SSF)** -- For customers with Adobe Analytics, this is the easiest and recommended way to implement. Adobe Analytics forwards data to AAM on Adobe's backend, allowing for one less request on the page. This enables key integration features and conforms with our best practices for Audience Manager code implementation and deployment.
-
-* **Client-Side DIL** -- This approach is for customers who do not have Adobe Analytics. DIL code (Data Integration Library Code) sends data directly from the web page into Audience Manager. This approach will not be covered in this lesson.
-
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
@@ -28,10 +22,18 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You should know your “Audience Manager Subdomain” (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”) before you begin.
+You should know your “Audience Manager Subdomain” (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”) before you begin. If you already have Audience Manager implemented on your real-life website, the easiest way to obtain it is to go to your own website and open the Debugger. The Subdomain is available on the Summary tab, in the Audience Manager section:
+
+   ![You can use the Debugger to find the Audience Manager Subdomain on your real-life website](../assets/images/aam-debugger-partner.png)
 
 ## Server-Side Forwarding (SSF)
 
+There are two ways to implement Audience Manager in a website:
+
+* **Server-Side Forwarding (SSF)** -- For customers with Adobe Analytics, this is the easiest and recommended way to implement. Adobe Analytics forwards data to AAM on Adobe's backend, allowing for one less request on the page. This enables key integration features and conforms with our best practices for Audience Manager code implementation and deployment.
+
+* **Client-Side DIL** -- This approach is for customers who do not have Adobe Analytics. DIL code (Data Integration Library Code) sends data directly from the web page into Audience Manager. This approach will not be covered in this lesson.
+  
 ### Enable Server-Side Forwarding in the Analytics Admin Console
 
 In order for the Analytics servers to start forwarding beacon data to Audience Manager, a configuration needs to made in the Adobe Analytics Admin Console. Since it can take up to four hours to start forwarding the data, you should do this first.
