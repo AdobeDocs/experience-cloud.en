@@ -37,7 +37,7 @@ The main requirements to implement A4T&mdash;which you have already done&mdash;a
 1. Implement Audience Manager
 1. Implement other solutions which you would like to receive or create audiences, such as Target and Analytics
 
-### Validate the Audience Sharing information
+### Validate the Audiences integration
 
 The best way to validate the Audiences integration is to actually build an audience, share it to another solution, and then fully use it in the other solution (e.g. confirm that a visitor who qualifies for an AAM segment can qualify for a Target activity targeted to that segment). However, this is beyond the scope of this tutorial.
 
