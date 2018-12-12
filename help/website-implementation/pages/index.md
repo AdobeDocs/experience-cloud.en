@@ -58,6 +58,8 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
 1. Bookmark the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
+>[!NOTE] You might find it easier to complete this tutorial with the We.Retail site open in Chrome, while you read this tutorial and complete the Launch interface steps in a different browser.
+
 Let's get started!
 
 [Next "Create a Launch Property" >](launch.md)
