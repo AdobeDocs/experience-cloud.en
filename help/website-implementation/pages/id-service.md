@@ -23,7 +23,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You should have already completed the lessons in [Configure Launch](launch.md) section.
+You should have already completed the lessons in the [Configure Launch](launch.md) section.
 
 ## Add the ID Service Extension
 
@@ -76,8 +76,8 @@ The ID Service extension is one of the few Launch extensions that makes a reques
     1. Open your browser's Developer Tools
     1. Go to the `Application` tab
     1. Expand `Cookies` on the left side
-    1. Click on the domain `https://aem100-us.adobevlab.com/`
-    1. Look for the AMCV_ cookie on the right hand side. You might see several since you have probably loaded the We.Retail site with both the default Launch property and Experience Cloud Organization as well as your own.
+    1. Click on the domain `https://aem.enablementadobe.com`
+    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the We.Retail site using both it's hardcoded Launch property as well as mapped to your own.
 
    ![Verify the AMCV_ cookie](../assets/images/idservice-AMCVCookie.png)
 
@@ -87,7 +87,7 @@ That's it! You've added your first extension! For more details on the configurat
 
 Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
-In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and use it in a rule. Now, you will use those same techniques to send a Customer ID to the ID Service when the visitor is authenticated.  
+In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
 
 ### Create Data Elements for Customer IDs
 
@@ -181,7 +181,8 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
         ![set the authentication state](../assets/images/idservice-customerId-authStateCondition.png)
 
-1. Type "logged in" in the `Equals` field, causing the rule fire whenever the Data Element “Authentication State” has has a value of “logged in”:
+1. Make sure `Equals` is the operator
+1. Type "logged in" in the text field, causing the rule fire whenever the Data Element “Authentication State” has has a value of “logged in”
 
 1. Click **[!UICONTROL Keep Changes]**
 
@@ -236,6 +237,7 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 
 1. Make sure the tab with the We.Retail site is in focus
 1. Go to the Experience Cloud ID Service tab
+1. Expand your Org ID
 1. Click on the cell with the `Customer ID - crm_id` value
 1. In the modal, note the customer id value and that the `AUTHENTICATED` state is reflected:
 
