@@ -23,9 +23,11 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-None
+You should have already completed the lessons in [Configure Launch](launch.md) section.
 
 ## Add the ID Service Extension
+
+Since this is the first extension you are adding, here is a quick overview of extensions. Extensions are one of the core features of Launch. An extension is an integration built by Adobe, an Adobe partner, or any Adobe customer that adds new and endless options for the tags that you can deploy to your website. If you think of Launch as an operating system, extensions are the apps that you install so Launch can do the things you need it to do.
 
 **To add the ID Service Extension**
 
@@ -35,21 +37,25 @@ None
 
     ![Go to the Extensions Catalog](../assets/images/extensions-goToExtensionsCatalog.png)
 
+1. Note the variety of extensions that are available in the Catalog
+
 1. In the filter at the top, type "id" to filter the Catalog
 
 1. On the card for the Experience Cloud ID Service, click **[!UICONTROL Install]**
 
     ![Install the ID Service Extension](../assets/images/idservice-install.png)
 
+1. Note that your Experience Cloud Organization ID has been auto-detected for you.
+
 1. Leave all of the default settings and click **[!UICONTROL Save to Library and Build]**
 
     ![Save the extension](../assets/images/idservice-save.png)
 
->[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js. You update the VisitorAPI.js version by updating the ID Service extension.
+>[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the ID Service extension.
 
 ### Validate the Extension
 
-The ID Service extension is one of the few Launch extensions that makes a request without having to use a rule action to make the request. The extension will automatically make a request to the ID Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
+The ID Service extension is one of the few Launch extensions that makes a request without having to use a rule action. The extension will automatically make a request to the ID Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
 
 **To validate the ID Service extension**
 
@@ -59,29 +65,27 @@ The ID Service extension is one of the few Launch extensions that makes a reques
 
 1. On the Summary tab of the Debugger, the Launch section should indicate that the Experience Cloud ID Service extension is implemented.
 
+1. Also, on the Summary tab, the ID Service section should populate with the same Org ID that was on your extension configuration screen in the Launch interface:
+
    ![Check that the Experience Cloud ID Service extension is implemented](../assets/images/idservice-debugger-summary.png)
 
-1. Also, on the Summary tab, the ID Service section should populate with the same Org ID that was on your extension configuration screen in the Launch UI:
-
-   ![Confirm that the Org ID matches the Launch UI](../assets/images/idservice-debugger-summary.png)
-
-1. The initial request to retrieve the Visitor ID appear in the ID Service tab of the Debugger. It might have already been requested, though, so don't worry if you don't see it:
+1. The initial request to retrieve the Visitor ID might appear in the ID Service tab of the Debugger. It might have already been requested, though, so don't worry if you don't see it:
    ![Check to see if there is a request to the ID Service with your Org Id](../assets/images/idservice-idRequest.png)
 
-1. After the initial request to fetch the Visitor ID, the ID is stored in a cookie whose name begins with `AMCV_`. To confirm the ID has been set you can examine the cookie:
+1. After the initial request to fetch the Visitor ID, the ID is stored in a cookie whose name begins with `AMCV_`. You can confirm that the cookie has been set by doing the following:
     1. Open your browser's Developer Tools
     1. Go to the `Application` tab
     1. Expand `Cookies` on the left side
     1. Click on the domain `https://aem100-us.adobevlab.com/`
-    1. Look for the AMCV_ cookie on the right hand side
+    1. Look for the AMCV_ cookie on the right hand side. You might see several since you have probably loaded the We.Retail site with both the default Launch property and Experience Cloud Organization as well as your own.
 
    ![Verify the AMCV_ cookie](../assets/images/idservice-AMCVCookie.png)
 
-That's it! You've added your first extension! For more details on the  options, see the [configuration options documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
+That's it! You've added your first extension! For more details on the configuration options of the ID Service, see [the documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
 
 ## Send Customer IDs
 
-Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This is an optional step which will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
+Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
 In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and use it in a rule. Now, you will use those same techniques to send a Customer ID to the ID Service when the visitor is authenticated.  
 
@@ -105,25 +109,25 @@ Start by creating two data elements:
 
    ![Open the Editor to add the Custom Code for the Data Element](../assets/images/idservice-authenticationState.png)
 
-1. In the **[!UICONTROL Edit Code] window, use the following, which will return values of "logged in" or "logged out" based on an attribute in the We.Retail site's data layer:
+1. In the [!UICONTROL Edit Code] window, use the following code to return values of "logged in" or "logged out" based on an attribute in the We.Retail site's data layer:
 
-        ``` javascript
-        if (digitalData.user[0].profile[0].attributes.loggedIn)
-            return "logged in"
-        else
-            return "logged out"
-        ```
+    ```javascript
+    if (digitalData.user[0].profile[0].attributes.loggedIn)
+        return "logged in"
+    else
+        return "logged out"
+    ```
 
 1. Click **[!UICONTROL Save]** to save the custom code
 
    ![Save the custom code](../assets/images/idservice-authenticationCode.png)
 
 1. Leave all of the other settings on their default values
-1. Click **[!UICONTROL Save]** to save the data element and return to the data elements page
+1. Click **[!UICONTROL Save to Library and Build]** to save the data element and return to the data elements page
 
    ![Save the data element](../assets/images/idservice-authenticationStateFinalSave.png)
 
-By knowing the authentication state of the user, you know when a customer id would exist on the page that you could send to the ID Service. The next step is to create a data element for the customer id you will send. On the We.Retail demo site, you will use the hashed version of the visitor's email address.
+By knowing the authentication state of the user, you know when a customer id should exist on the page to send to the ID Service. The next step is to create a data element for the customer id itself. On the We.Retail demo site, you will use the hashed version of the visitor's email address.
 
 **To add the data element for the hashed email**
 
@@ -135,7 +139,7 @@ By knowing the authentication state of the user, you know when a customer id wou
 1. For the **[!UICONTROL Data Element Type]**, select **[!UICONTROL JavaScript Variable]**
 1. As the **[!UICONTROL Path to variable]**, use the following pointer to a variable in the We.Retail site's data layer: `digitalData.user.0.profile.0.attributes.username`
 1. Leave all of the other settings on their default values
-1. Click **[!UICONTROL Save]** to save the data element
+1. Click **[!UICONTROL Save to Library and Build]** to save the data element
 
    ![Save the data element](../assets/images/idservice-emailHashed.png)
 
@@ -152,14 +156,14 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
 1. Name the rule `All Pages - Library Loaded - Authenticated - 10`
   
-    >[!TIP] This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this--instead of naming it for the solutions triggered in the actions will allow you to minimize the overall number of rules needed by your implementation
+    >[!TIP] This naming convention indicates you are firing this rule at the top of all pages when the user is authenticated and it will have an order of “10”. Using a naming convention like this&mdash;instead of naming it for the solutions triggered in the actions&mdash;will allow you to minimize the overall number of rules needed by your implementation.
 
 1. Under **[!UICONTROL Events]** click **[!UICONTROL Add]**
 
    ![Add an event](../assets/images/idservice-customerId-addEvent.png)
 
     1. For the **[!UICONTROL Event Type]** select **[!UICONTROL Library Loaded (Page Top)]**
-    1. For the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, in the next lesson.
+    1. For the  **[!UICONTROL Order]** enter `10`. The Order controls the sequence of rules that are triggered by the same event. Rules with a lower order will fire before rules with a higher order. In this case, you want to set the customer ID before you fire the Target request, which you will do in the next lesson with a rule with an order of `50` .
     1. Click the **[!UICONTROL Keep Changes]** button to return to the Rule Builder
 
     ![Save the event](../assets/images/idservice-customerId-saveEvent.png)
@@ -179,7 +183,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
 1. Type "logged in" in the `Equals` field, causing the rule fire whenever the Data Element “Authentication State” has has a value of “logged in”:
 
-1. Click **[!UICONTROL Return trieKeep Changes]**
+1. Click **[!UICONTROL Keep Changes]**
 
    ![Save the Condition](../assets/images/idservice-customerId-loggedIn.png)
 
@@ -196,7 +200,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
         ![Configure the action and save the changes](../assets/images/idservice-customerId-action.png)
 
-1. Click the **[!UICONTROL Save]** button to save the action
+1. Click the **[!UICONTROL Save to Library and Build]** button to save the rule
 
    ![Save the Rule](../assets/images/idservice-customerId-saveRule.png)
 
@@ -212,9 +216,9 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail-switched.png)
 
-1. Click the **[!UICONTROL LOGIN]** link in the top right corner
+1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the We.Retail site
 
    ![Click Login in the top navigation](../assets/images/idservice-loginNav.png)
 
@@ -230,6 +234,7 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 
 **To validate that the ID Service is passing the customer id**
 
+1. Make sure the tab with the We.Retail site is in focus
 1. Go to the Experience Cloud ID Service tab
 1. Click on the cell with the `Customer ID - crm_id` value
 1. In the modal, note the customer id value and that the `AUTHENTICATED` state is reflected:
