@@ -54,7 +54,7 @@ A property is basically a container that you fill with extensions, rules, data e
 
 ![Click New Property](../assets/images/launch-addNewProperty.png)
 
-1. Name your property (e.g. `Launch Tutorial`)
+1. Name your property (e.g. `Launch Tutorial` or `Daniel's Launch Tutorial`)
 1. As the domain, enter `enablementadobe.com` since you will be using this property in conjunction with the We.Retail demo site which is hosted on this domain
 1. Click the **[!UICONTROL Save]** button
 

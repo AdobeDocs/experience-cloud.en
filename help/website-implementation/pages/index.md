@@ -18,11 +18,11 @@ After completing this you will be able to:
 
 * Install a Launch Property on a website
 
-* Add the Adobe Experience Cloud solution extensions, including:
-  * **Experience Cloud ID Service**
-  * **Adobe Target**
-  * **Adobe Analytics**
-  * **Adobe Audience Manager**
+* Add the Adobe Experience Cloud solutions, including:
+  * **[Experience Cloud ID Service](id-service.md)**
+  * **[Adobe Target](target.md)**
+  * **[Adobe Analytics](analytics.md)**
+  * **[Adobe Audience Manager](audience-manager.md)**
 
 * Create rules and data elements to send data to the Adobe solutions
 

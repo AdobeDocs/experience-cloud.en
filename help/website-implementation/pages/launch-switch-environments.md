@@ -57,11 +57,11 @@ At the end of this lesson, you will be able to:
 
    ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debugger-save.png)
 
-1. Reload and check the Summary tab of the Debugger. Under the Launch section, you should now see your Development Property is implemented, showing your property name (I.e. "Launch Tutorial" or whatever you named your property)!
+1. Reload and check the Summary tab of the Debugger. Under the Launch section, you should now see your Development Property is being used. Confirm that both the Name of the property matches yours and that the Environment says "development."
 
-   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail-switched.png)
 
->[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the We.Retail site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the "X" next to the embed code in the Debugger. 
+>[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the We.Retail site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the "X" next to the embed code in the Debugger.
 
 As you continue the tutorial, you will use this technique of mapping the We.Retail site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes you make to your Development and Staging Environments before you publish them to Production.
 
