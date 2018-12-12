@@ -229,8 +229,8 @@ Now, you will use your new data elements and extension to build your Product Det
 
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
-1. Set **[!UICONTROL eVar2 Set as]** `product detail page`
-1. Set **[!UICONTROL event2]**, leaving the optional values blank
+1. Set **[!UICONTROL eVar1 Set as]** `product detail page`
+1. Set **[!UICONTROL event1]**, leaving the optional values blank
 1. Click **[!UICONTROL Keep Changes]**
 
       ![Set Analytics Variables in PDP Rule](../assets/images/analytics-PDPsetVariables.png)

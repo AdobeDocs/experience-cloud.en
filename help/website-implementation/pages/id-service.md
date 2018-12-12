@@ -226,7 +226,7 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 1. Return to the Homepage
 
-Now, confirm the customer id is sent to the ServiceA using the Debugger extension.
+Now, confirm the customer id is sent to the Service using the Debugger extension.
 
 **To validate that the ID Service is passing the customer id**
 
