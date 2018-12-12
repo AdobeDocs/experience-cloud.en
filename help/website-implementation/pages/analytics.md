@@ -63,7 +63,7 @@ The Analytics extension consists of two main parts:
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-   ![Set the page name variable](../assets/images/analytics-extension-pageName.png)
+   ![Set the page name variable and save](../assets/images/analytics-extension-pageName.png)
 
 >[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined before the Launch embed codes.
 
@@ -71,7 +71,7 @@ The Analytics extension consists of two main parts:
 
 Now you will create a rule to fire the Analytics beacon, which will send the [!UICONTROL Page Name] variable set in the extension configuration.
 
-You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
+You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
 **To Send the Page View Beacon**
 
@@ -84,7 +84,7 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
    ![Name the rule and add the event](../assets/images/analytics-domReady-nameAddAnalyticsEvent.png)
 
-1. Select **[!UICONTROL Event Type > DOM Ready]**
+1. Select **[!UICONTROL Event Type > DOM Ready]** (Note that the order of the rule is "50")
 1. Click **[!UICONTROL Keep Changes]**
    ![Configure the Event](../assets/images/analytics-configureEventDomReady.png)
 
@@ -132,26 +132,43 @@ A more flexible location to set variables&mdash;as well as events&mdash;is in ru
 
 ### Use Case
 
-Product Detail Pages (PDP) are important points for data collection on retail sites. Typically, you want Analytics to register that a product view occurred and which product was viewed. This is helpful in understanding which products are popular with your customers. On a media site, article or video pages could use similar tracking techniques to the ones you will use in this section.  When we load a Product Detail Page, we would like to put that value into a "Page Type" `eVar`, as well as set an event. This will allow us to see the following in our analysis:
+Product Detail Pages (PDP) are important points for data collection on retail sites. Typically, you want Analytics to register that a product view occurred and which product was viewed. This is helpful in understanding which products are popular with your customers. On a media site, article or video pages could use similar tracking techniques to the ones you will use in this section.  When you load a Product Detail Page, you might want to put that value into a "Page Type" `eVar`, as well as set some events and the product id. This will allow us to see the following in our analysis:
 
 1. How many times product detail pages are loaded
-1. Which products are viewed
-1. How other factors (campaigns, search, etc) affect how many PDP's people load.
+1. Which specific products are viewed and how many times
+1. How other factors (campaigns, search, etc) affect how many PDP's people load
 
 ### Create Data Element for Page Type
 
+First you need to identify which pages are the Product Detail pages. You will do that with a Data Element.
+
+**To Create the Data Element for Page Type**
+
 1. Click **[!UICONTROL Data Elements]** in the top navigation
 1. Click **[!UICONTROL Add Data Element]**
+
+   ![Add a new Data Element](../assets/images/analytics-addDataElement.png)
+
+
 1. Name the data element `Page Type`
 1. Check the `Clean text` and `Force Lower Case` options
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.page.category.type` as the `Path to Variable`
 1. Click **[!UICONTROL Save to Library and Build]**
 
+   ![Add a new Data Element for Page Type](../assets/images/analytics-PageTypeDataElement.png)
+
 ### Create Data Element for Product Id
+
+Next, you will collect the product id of the current Product Detail page with a Data Element
+
+**To Create the Data Element for Product Id**
 
 1. Click **[!UICONTROL Data Elements]** in the top navigation
 1. Click **[!UICONTROL Add Data Element]**
+
+   ![Add a new Data Element](../assets/images/analytics-addDataElement.png)
+
 1. Name the data element `Product Id`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.product.0.productInfo.sku` as the `Path to Variable`
@@ -159,13 +176,27 @@ Product Detail Pages (PDP) are important points for data collection on retail si
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
+   ![Add a new Data Element for Page Type](../assets/images/analytics-ProductIdDataElement.png)
+
 ### Add the Adobe Analytics Product String Extension
 
+If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://marketing.adobe.com/resources/help/en_US/sc/implement/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in Launch, three additional extensions have already been created in the Launch extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
+
+**To add the add the `Adobe Analytics Product String` extension**
+
+1. Go to the [!UICONTROL Extensions > Catalog] page
+1. Find the `Adobe Analytics Product String` extension by Adobe Consulting and click **[!UICONTROL Install]**
    ![Add the Adobe Analytics Product String extension by Adobe Consulting](../assets/images/analytics-addProductStringExtension.png)
+1. Take a moment to read the instructions
+1. Click **[!UICONTROL Save to Library and Build]**
+
+   ![Save the extension and build it to your library](../assets/images/analytics-addProductStringExtensionSave.png)
 
 ### Create the Rule for Product Detail Pages
 
-For this functionality, we will create another page load rule, triggered by DOM Ready again. However, this time, since we only want this to fire on PDP's and not on other page types, we will put a condition on the rule instead of having it fire every time any page loads.
+Now, you will use your new data elements and extension to build your Product Detail page rule. For this functionality, you will create another page load rule, triggered by DOM Ready, however, you will use a condition so that it only fires on the Product Detail pages and the order setting so that it fires _before_ the rule that sends the beacon.
+
+**To build the Product Detail page rule**
 
 1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
 
@@ -220,7 +251,7 @@ For this functionality, we will create another page load rule, triggered by DOM 
 
 ### Validate the Product Detail Page Data
 
-We have just created a rule that sets some variables (before the hit goes out). We should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
+You have just created a rule that sets some variables (before the beacon goes out). You should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser and navigate to any product detail page
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
@@ -234,13 +265,13 @@ We have just created a rule that sets some variables (before the hit goes out). 
 
 When a page loads, your typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
 
-However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, we will use the `s.tl()` function, which is commonly referred to as a "track link" request or "hit". Even though it is referred to as a track link call, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you via in the Launch rule builder, including your own custom JavaScript.
+However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request or "hit". Even though it is referred to as a track link call, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you via in the Launch rule builder, including your own custom JavaScript.
 
-In this tutorial, we will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
+In this tutorial, you will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
 
 ### The Use Case
 
-For this use case, we want to know if people are scrolling down on our We.Retail home page far enough to see the *New Arrivals* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so we want to use Analytics to determine the truth.
+For this use case, you want to know if people are scrolling down on our We.Retail home page far enough to see the *New Arrivals* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so you want to use Analytics to determine the truth.
 
 ### Create the Rule in Launch
 
@@ -253,7 +284,7 @@ For this use case, we want to know if people are scrolling down on our We.Retail
 
 1. Select **[!UICONTROL Event Type > Enters Viewport]**. This will bring up a field where you need to enter the CSS selector that will identify the item on your page that should trigger the rule when it enters view in the browser.
 1. Go back to the home page of we.retail and scroll down to the New Arrivals section.
-1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what we want. :)
+1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want. :)
 1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
 1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
 
@@ -291,7 +322,7 @@ For this use case, we want to know if people are scrolling down on our We.Retail
 
 ### Validate the Track Link Beacon
 
-Now we will want to make sure that this hit goes in when we scroll down to the New Arrivals section of the Home Page of our site. When we first bring up our site, the values shouldn't be there, but as we scroll down and the section comes into view, the hit should fire with our new values.
+Now you will want to make sure that this hit goes in when you scroll down to the New Arrivals section of the Home Page of our site. When you first bring up our site, the values shouldn't be there, but as you scroll down and the section comes into view, the hit should fire with our new values.
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
 1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
@@ -301,8 +332,8 @@ Now we will want to make sure that this hit goes in when we scroll down to the N
 
       ![Debugger with a Page View](../assets/images/analytics-debuggerPageView.png)
 
-1. Leaving the debugger open, scroll down on your site until you can see the New Arrivals section
-1. View the debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that we set up, namely:
+1. Leaving the Debugger open, scroll down on your site until you can see the New Arrivals section
+1. View the Debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that you set up, namely:
    1. `LinkType = "link_o"` (this means that the hit is a custom link hit, not a page view hit)
    1. `LinkName = "Scrolled down to New Items"`
    1. `prop3 = "Home Page - New Arrivals"`
@@ -332,11 +363,11 @@ If you are going to add the doPlugins function (below) and use plug-ins, you nee
 
       ![Configure Analytics](../assets/images/analytics-configureExtension.png)
 
-1. Under **[!UICONTROL Library Management]**, select the box labeled `Make tracker globally accessible`. As you can see in the help bubble, this will make the tracker be scoped globally under window.s, which will be important as we refer to it in our customer JavaScript.
+1. Under **[!UICONTROL Library Management]**, select the box labeled `Make tracker globally accessible`. As you can see in the help bubble, this will make the tracker be scoped globally under window.s, which will be important as you refer to it in your customer JavaScript.
 
 ### Including the doPlugins Function
 
-To add plug-ins, we need to add a function called doPlugins. This function is not added by default, but once added, is handled by the AppMeasurement library, and is called last when a hit is being sent into Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
+To add plug-ins, you need to add a function called doPlugins. This function is not added by default, but once added, is handled by the AppMeasurement library, and is called last when a hit is being sent into Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
 
 1. While still in the Analytics extension, scroll down and expand the section titled `Configure Tracking Using Custom Code.`
 1. Select **[!UICONTROL Open Editor]**
@@ -355,13 +386,13 @@ To add plug-ins, we need to add a function called doPlugins. This function is no
 
 ### Add Function Code for the Plug-in
 
-We are actually going to call two plug-ins in this code, but one of them is built into the AppMeasurement library, so for that one we do not need to add the function to call. However, for the second one, we do need to add the function code as well. This function is called getValOnce().
+You are actually going to call two plug-ins in this code, but one of them is built into the AppMeasurement library, so for that one you do not need to add the function to call. However, for the second one, you do need to add the function code as well. This function is called getValOnce().
 
 ### The getValOnce() Plug-in
 
 The purpose of this plug-in is to keep values from getting falsely duplicated in the code when a visitor refreshes a page or uses the browser's back button to go back to a page where a value was set. In this lesson, you will use it to keep the `clickthrough` event from being duplicated.
 
-The code for this plug-in is available in the [Analytics Documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/getValOnce.html), but we will include it here for your ease of copy/paste.
+The code for this plug-in is available in the [Analytics Documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/getValOnce.html), but it is included here for your ease of copy/paste.
 
 1. Copy the following code
 
@@ -383,7 +414,7 @@ You can now call this plug-in from within doPlugins.
 
 ### Calling Plug-ins from Within doPlugins
 
-Now that the code is there and can be referenced, we can make the calls to plug-ins within the doPlugins function.
+Now that the code is there and can be referenced, you can make the calls to plug-ins within the doPlugins function.
 
 First you will call a plug-in which has been incorporated into the AppMeasurement library, and so is known as a "utility." It is referred to as `s.Util.getQueryParam`, because it is part of the s object, is a built-in utility, and will grab values (based on a parameter) from the query string in the URL.
 
@@ -404,7 +435,9 @@ This code will make sure that the same value is not sent in more than once in a 
 
 ### Validate the Plug-ins
 
-Now let's make sure that the plug-ins are working the way that we expect.
+Now you can make sure that the plug-ins are working.
+
+**To validate the plugins**
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
@@ -424,8 +457,8 @@ Now let's make sure that the plug-ins are working the way that we expect.
 
    ![getQueryParam step 1](../assets/images/analytics-getQueryParam2.png)
 
-   >[!NOTE] There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as we have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
+   >[!NOTE] There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as you have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
 
-Nice work! You have completed the Analytics section. Of course, there are many other things that we can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
+Nice work! You have completed the Analytics section. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
 [Next "Add Adobe Audience Manager" >](audience-manager.md)
