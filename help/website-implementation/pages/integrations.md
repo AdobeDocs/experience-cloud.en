@@ -117,4 +117,4 @@ The main requirements to implement Customer Attributes&mdash;which you have alre
 
 You have already validated that the Customer IDs are passed to both the ID Service and to Target. No additional steps necessary!
 
-[Next "Publish your Property" >](publishing.md)
+[Next "Publish your Property" >](publish.md)
