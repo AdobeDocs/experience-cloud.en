@@ -8,7 +8,9 @@ solution: Experience Cloud
 
 # General Launch Configuration & Settings
 
-This lesson will introduce you to one of the main concepts of Launch&mdash;Properties
+In this lesson, you will create your first Launch property.
+
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site.
 
 ## Prerequisites
 
@@ -23,8 +25,6 @@ At the end of this lesson, you will be able to:
 * Configure a Launch property
 
 ## Go to Launch
-
-Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising integrations necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
 
 **To get to Launch**
 

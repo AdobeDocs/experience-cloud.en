@@ -21,15 +21,15 @@ At the end of this lesson, you will be able to:
 
 ## Copy the Embed Code
 
-The embed code is a `<script>` tag that you put on the pages of your site to load and execute the code you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`.
+The embed code is a `<script>` tag that you put on your webpages to load and execute the logic you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. (When Launch is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>`).
 
 From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
-Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment where QA and other teams review their work. Once the QA and other teams are satisfied, the code is then pushed to the Production environment, which is the public-facing environment in which your visitors experience when they come to your website.
+![Click Environments in the top nav](../assets/images/launch-environments.png)
+
+Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they come to your website.
 
 Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
-
-![Click Environments in the top nav](../assets/images/launch-environments.png)
 
 These are the only environments we need to complete the tutorial. Environments allow you to have different working versions of your Launch libraries hosted at different URLs, so you can safely add new features and make them available to the right users (e.g. developers, QA engineers, the public, etc.) at the right time.
 
@@ -37,9 +37,11 @@ Now let's copy the embed code:
 
 1. In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](../assets/images/launch-installIcon.png) to open the modal.
 
-2. Click the Copy icon ![Copy icon](../assets/images/launch-copyIcon.png) to copy the embed code to your clipboard.
+1. Note that Launch will default to the asynchronous embed codes
 
-3. Click **[!UICONTROL Close]** to close the modal.
+1. Click the Copy icon ![Copy icon](../assets/images/launch-copyIcon.png) to copy the embed code to your clipboard.
+
+1. Click **[!UICONTROL Close]** to close the modal.
 
    ![Install icon](../assets/images/launch-copyInstallCode.png)
 
@@ -49,7 +51,7 @@ The embed code should be implemented in the `<head>` element of all HTML pages t
 
 If you haven't already, download [the sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click “Save Link As”) and open it in a code editor. [Brackets](http://brackets.io/) is a free, open source editor if you need one.
 
-Replace the existing embed code on or around line 39 with your own and save the page. Now open the page in a web browser. If you are loading the page using the `file://` protocol, you will need to add "https:" at the beginning of the URL of the embed code). Lines 38-40 of your sample page might look something like this:
+Replace the existing embed code on or around line 34 with with the one on your clipboard and save the page. Now open the page in a web browser. If you are loading the page using the `file://` protocol, you will need to add "https:" at the beginning of the embed code URL in your code editor). Lines 33-36 of your sample page might look something like this:
 
 ```html
     <!--Launch Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -60,7 +62,7 @@ Replace the existing embed code on or around line 39 with your own and save the 
 Open your web browser's developer tools and go to the Network tab. At this point you should see a 404 error for the Launch environment URL:
 ![404 error](../assets/images/samplepage-404.png)
 
-The 404 error is expected because you haven't yet built a library in this Launch environment. We will get to that in the next lesson. If you see a "failed" message instead of a 404 error, you probably forgot to add the `https://` protocol in the embed code. Again, you only need to specify the `https://` protocol if you are loading the sample page using the `file://` protocol. Make that change and reload the page until the 404 error appears.
+The 404 error is expected because you haven't yet built a library in this Launch environment. You will do that in the next lesson. If you see a "failed" message instead of a 404 error, you probably forgot to add the `https://` protocol in the embed code. Again, you only need to specify the `https://` protocol if you are loading the sample page using the `file://` protocol. Make that change and reload the page until the 404 error appears.
 
 ## Launch Implementation Best Practices
 
@@ -74,11 +76,13 @@ Let's take a moment review some of the Launch implementation best practices whic
 
 * **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and Target
 
-* **HTML5 doctype**: The HTML5 doctype to required for Target implementations
+* **HTML5 doctype**: The HTML5 doctype is required by Target
 
 * **preconnect and dns-prefetch**: Use preconnect and dns-prefetch to improve the page load time. See also: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-Here is a summary what this these best practices look like in the suggested order. Placeholders are in ALL-CAPS for account specific details:  
+* **pre-hiding snippet for asynchronous Target implementations**: You will learn more about this in the Target lesson, but when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes in order to manage content flicker
+
+Here is a summary what this these best practices look like in the suggested order. Note that there are some placeholders for account specific details:  
 
 ```html
 <!doctype html>
@@ -128,5 +132,7 @@ Here is a summary what this these best practices look like in the suggested orde
 </body>
 </html>
 ```
+
+Now you know how to add the Launch embed code to your site!
 
 [Next "Add a Data Element, a Rule and a Library" >](launch-data-elements-rules.md)

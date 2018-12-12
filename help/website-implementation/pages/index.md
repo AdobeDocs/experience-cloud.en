@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 _Implementing the Experience Cloud in Websites with  Launch_ is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&mdash;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be comfortable implementing these solutions as well as non-Adobe marketing tags on your own website.
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&mdash;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
 
 After completing this you will be able to:
 
@@ -18,7 +18,7 @@ After completing this you will be able to:
 
 * Install a Launch Property on a website
 
-* Add the Adobe Experience Cloud solutions, including:
+* Add the following Adobe Experience Cloud solutions:
   * **[Experience Cloud ID Service](id-service.md)**
   * **[Adobe Target](target.md)**
   * **[Adobe Analytics](analytics.md)**
@@ -32,7 +32,7 @@ After completing this you will be able to:
 
 ## Prerequisites
 
-In these lessons, it is assumed that you have an Adobe Id and the required permissions in order to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
+In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
 * For Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/administration/user-permissions).
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
@@ -40,11 +40,15 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 
 Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be a master of these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
+## About Launch
+
+Launch, by Adobe is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
+
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called We.Retail. The We.Retail site has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted We.Retail site using the Experience Cloud Debugger.
+In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called We.Retail. The [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted We.Retail site using the Experience Cloud Debugger.
 
-![We.Retail](../assets/images/overview-weRetail.png)
+[![We.Retail](../assets/images/overview-weRetail.png)](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 ## Get the Tools
 
