@@ -42,10 +42,10 @@ This has already been done on the We.Retail site, but let's go ahead and do this
 </script>
 ```
 
-Open the sample page and paste it just before your Launch embed code as pictured below:
+Open the sample page and paste it just before your Launch embed code as pictured below (don't worry if the line numbers are different):
    ![Hover over the extension](../assets/images/target-prehidingSnippet.png)
 
-Reload your sample page. You will notice that the page will be hidden for three seconds before it shown. This behavior is temporary and will go away after you have deployed Target. This behavior is controlled by two configurations at the very end of the pre-hiding snippet, which can be customized but are usually best left on the default settings:
+Reload your sample page. You will notice that the page will be hidden for three seconds before it shown. This behavior is temporary and will go away after you have deployed Target. This pre-hiding behavior is controlled by two configurations at the very end of the snippet, which can be customized but are usually best left on the default settings:
 
 * `body {opacity: 0 !important}` specifies the css definition to use for the pre-hiding until Target loads. By default, the entire body will be hidden. If you have a consistent DOM structure with an easily identifiable container element wrapping all of the content below your navigation, for example, and you never wanted to test or personalize your navigation, you could use this setting to limit the pre-hiding to that container element.
 * `3E3` which specifies the timeout setting for the pre-hiding. By default, if Target hasn't loaded in three seconds the page will be shown. This should be extremely rare.
@@ -65,7 +65,7 @@ The Target extension consists of two main parts:
     1. Add Params to Global Mbox
     1. Fire Global Mbox
 
-In this exercise we will add the extension and look at the configurations. In later exercises we will use the other actions.
+In this first exercise we will add the extension and look at the configurations. In later exercises we will use the actions.
 
 **To add the Extension**
 
@@ -81,13 +81,13 @@ In this exercise we will add the extension and look at the configurations. In la
 
 At this point, Target isn't really doing anything, so there is nothing to validate.
 
->[!NOTE] Each version of the Target extension comes with a specific version of at.js. You update the at.js version by updating the Target extension.
+>[!NOTE] Each version of the Target extension comes with a specific version of at.js, which is listed in the extension description. You update the at.js version by updating the Target extension.
 
 ## Load Target and Fire the Global Mbox
 
 Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role in the display of the page, you should load Target as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript library&mdash;at.js&mdash;as well as fire the global mbox.
 
-You can use the `All Pages - Library Loaded` rule you created in the lesson "[Add Data Elements, Rules and Libraries](launch-data-elements-rules.md)" to implement Target because it is triggered as early as possible on every page.
+You can use the `All Pages - Library Loaded` rule you created in the lesson "[Add Data Elements, Rules and Libraries](launch-data-elements-rules.md)" to implement Target because it is already triggered on the first event that will fire on a page load&mdash;the Library Loaded event.
 
 **To Load Target**
 
@@ -121,21 +121,19 @@ With the `Load Target` action added, at.js will load on the page. However, no Ta
 
 1. There are some configurations available for the global mbox related to whether or not to hide the page and CSS selector to use for pre-hiding. These settings work in conjunction with the pre-hiding snippet hardcoded on the page. Leave the default settings.
 
-   ![Fire Global Mbox action](../assets/images/target-fireGlobalMbox.png)
-
 1. Click **[!UICONTROL Keep Changes]**
+
+   ![Fire Global Mbox action](../assets/images/target-fireGlobalMbox.png)
 
 1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` needs fire before the `Fire Global Mbox`.
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-1. Wait until the green dot appears next to your working library, indicating that the new version of the library has been built.
-
-   ![Wait until the library has built, as indicated by the green dot](../assets/images/target-libraryBuilt.png)
+   ![Fire Global Mbox action](../assets/images/target-fireGlobalMbox-saveAndBuild.png)
 
 ### Validate the Global Mbox
 
-Now that you have added the Target extension and fired the `Load Target` and `Fire Global Mbox` actions, there should now be a global mbox request made on all pages where your Launch property is used.
+Now that you have added the Target extension and fired the `Load Target` and `Fire Global Mbox` actions, there should be a global mbox request made on all pages where your Launch property is used.
 
 **To validate the Load Target and Global Mbox actions**
 
@@ -159,7 +157,7 @@ Now that you have added the Target extension and fired the `Load Target` and `Fi
 
    ![Confirm the global mbox request has been made](../assets/images/target-debugger-globalMbox.png)
 
-Congratulations! You've made your first solution request using a rule!
+Congratulations! 
 
 ## Add Parameters
 

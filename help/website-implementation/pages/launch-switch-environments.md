@@ -43,7 +43,7 @@ At the end of this lesson, you will be able to:
 
 1. Note that the currently implemented Launch property is shown on the Summary tab
 
-   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail-prod.png)
 
 1. Go to the Tools tab
 
@@ -61,7 +61,7 @@ At the end of this lesson, you will be able to:
 
 1. Reload the We.Retail site and check the Summary tab of the Debugger. Under the Launch section, you should now see your Development Property is being used. Confirm that both the Name of the property matches yours and that the Environment says "development."
 
-   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail-switched.png)
+   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
 
 >[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the We.Retail site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the "X" next to the embed code in the Tools tab of the Debugger.
 

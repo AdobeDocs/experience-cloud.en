@@ -236,24 +236,24 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 **To validate that the ID Service is passing the customer id**
 
 1. Make sure the tab with the We.Retail site is in focus
-1. Go to the Experience Cloud ID Service tab
+1. In the Debugger, go to the Experience Cloud ID Service tab
 1. Expand your Org ID
 1. Click on the cell with the `Customer ID - crm_id` value
 1. In the modal, note the customer id value and that the `AUTHENTICATED` state is reflected:
 
    ![Confirm the Customer ID in the Debugger](../assets/images/idservice-debugger-confirmCustomerId.png)
 
-1. Note that you can confirm the hashed email value by viewing the source code of the page and looking at the username property. It should match the value you see in the Debugger:
+1. Note that you can confirm the hashed email value by viewing the source code of the We.Retail page and looking at the username property. It should match the value you see in the Debugger:
 
    ![hashed email in the source code](../assets/images/idservice-customerId-inSourceCode.png)
 
 ### Additional Validation Tips
 
-Launch also has rich console logging features. To turn them on, go to the **[!UICONTROL Tools]** tab in the Debugger and turn on the **[!UICONTROL Launch Console Logging Toggle]**.
+Launch also has rich console logging features. To turn them on, go to the **[!UICONTROL Tools]** tab in the Debugger and turn on the **[!UICONTROL Launch Console Logging]** toggle.
 
 ![Toggle on Launch's Console Logging](../assets/images/idservice-debugger-logging.png)
 
-This will turn on console logging both in your browser console and in the Logs tab of the Debugger. You should see the logging of all of the rules you have created so far!:
+This will turn on console logging both in your browser console and in the Logs tab of the Debugger. You should see the logging of all of the rules you have created so far! Note that new log entries are added to the top of the list, so your rule "All Pages - Library Loaded - Authenticated - 10" should fire before the "All Pages - Library Loaded" rule and appear below it in the Debugger's Console Logging:
 
 ![Logs tab of the Debugger](../assets/images/idservice-debugger-loggingStatements.png)
 
