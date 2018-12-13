@@ -13,7 +13,7 @@ mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 ---
 
-# Implementing the Experience Cloud in Mobile iOS Applications {#implementing-in-websites-with-launch}
+# Implementing the Experience Cloud in Mobile iOS Applications {#implementing-in-mobile-ios-apps-with-launch}
 
 + [Overview](index.md)
 + Configuring Launch{#configure-launch}
