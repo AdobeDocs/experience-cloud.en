@@ -217,7 +217,7 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail-switched.png)
+   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the We.Retail site
 

@@ -25,7 +25,7 @@ You should complete all of the previous lessons in this tutorial before followin
 >
 > * Review the full requirements of the [Core Services integrations](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html)
 > * Review the full requirements of the [Analytics for Target integration](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html)
-> * Have an Administrator of your Experience Cloud Organization [request provisioning of these integrations](http://www.adobe.com/go/audiences)
+> * Have an Administrator of your Experience Cloud Organization [request provisioning of these integrations](https://www.adobe.com/go/audiences)
 
 ## Audiences
 
