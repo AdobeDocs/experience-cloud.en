@@ -65,7 +65,7 @@ The Analytics extension consists of two main parts:
 
    ![Set the page name variable and save](../assets/images/analytics-extension-pageName.png)
 
->[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined before the Launch embed codes.
+>[!NOTE] Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the Launch embed codes.
 
 ## Send the Page View Beacon
 
@@ -151,9 +151,9 @@ First you need to identify which pages are the Product Detail pages. You will do
 
 
 1. Name the data element `Page Type`
-1. Check the `Clean text` and `Force Lower Case` options
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.page.category.type` as the `Path to Variable`
+1. Check the `Clean text` and `Force Lower Case` options
 1. Click **[!UICONTROL Save to Library and Build]**
 
    ![Add a new Data Element for Page Type](../assets/images/analytics-PageTypeDataElement.png)
@@ -185,7 +185,7 @@ If you are already familiar with Adobe Analytics implementations, you are probab
 **To add the add the `Adobe Analytics Product String` extension**
 
 1. Go to the [!UICONTROL Extensions > Catalog] page
-1. Find the `Adobe Analytics Product String` extension by Adobe Consulting and click **[!UICONTROL Install]**
+1. Find the `Adobe Analytics Product String` extension by Adobe Consulting Services and click **[!UICONTROL Install]**
    ![Add the Adobe Analytics Product String extension by Adobe Consulting](../assets/images/analytics-addProductStringExtension.png)
 1. Take a moment to read the instructions
 1. Click **[!UICONTROL Save to Library and Build]**
@@ -208,7 +208,7 @@ Now, you will use your new data elements and extension to build your Product Det
    ![Name the rule and add the event](../assets/images/analytics-domReadyAddEvent.png)
 
 1. Select **[!UICONTROL Event Type > DOM Ready]**
-1. Set the **[!UICONTROL Order]** to 40, so that the rule will run BEFORE the rule containing the Analytics > Send Beacon action.
+1. Set the **[!UICONTROL Order]** to 40, so that the rule will run *before* the rule containing the Analytics > Send Beacon action
 1. Click **[!UICONTROL Keep Changes]**
    ![Configure the Event](../assets/images/analytics-configDOMReadyEvent.png)
 
@@ -239,10 +239,9 @@ Now, you will use your new data elements and extension to build your Product Det
 
       ![Add another Action for the Product String](../assets/images/analytics-PDPaddProductStringAction.png)
 
-1. Select **[!UICONTROL Extension > Adobe Analytics]**
+1. Select **[!UICONTROL Extension > Adobe Analytics Product String]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
-1. Set **[!UICONTROL eVar2 Set as]** `product detail page`
-1. Set **[!UICONTROL event2]**, leaving the optional values blank
+
 1. Click **[!UICONTROL Keep Changes]**
 
       ![Add the Product String Variable using the Adobe Analytics Product String extension](../assets/images/analytics-PDPaddProductString.png)

@@ -157,7 +157,7 @@ Now that you have added the Target extension and fired the `Load Target` and `Fi
 
    ![Confirm the global mbox request has been made](../assets/images/target-debugger-globalMbox.png)
 
-Congratulations! 
+Congratulations! You've implemented the global mbox!
 
 ## Add Parameters
 
@@ -165,10 +165,10 @@ Passing parameters in the Target request adds powerful capabilities to your targ
 
 1. `Add Params to Global Mbox`, which adds parameters to global mbox requests (equivalent to the [targetPageParams()](https://marketing.adobe.com/resources/help/en_US/target/ov2/cmp_at.js_Functions.html) method)
 
-1. `Add Params to All Mboxes`, which adds parameters in all mbox requests made in the scope of the page, e.g. additional mbox requests made from Custom Code actions or hardcoded on your site (equivalent to the [targetPageParamsAll()](https://marketing.adobe.com/resources/help/en_US/target/ov2/cmp_at.js_Functions.html) method)
+1. `Add Params to All Mboxes`, which adds parameters in all mbox requests, e.g. the global mbox plus additional mbox requests made from Custom Code actions or hardcoded on your site (equivalent to the [targetPageParamsAll()](https://marketing.adobe.com/resources/help/en_US/target/ov2/cmp_at.js_Functions.html) method)
 
-These actions can be used *before* the `Load Target` action and can set different parameters on different pages based on your rule configurations. Use the rule ordering feature you used when setting Customer IDs with the ID Service to set additional parameters on the `Library Loaded` event before the rule which uses the `Fire Global Mbox` action.
->[!NOTE] Since most implementations only use the global mbox for activity delivery, it usually sufficient to just use the `Add Params to Global Mbox` action.
+These actions can be used *before* the `Load Target` action and can set different parameters on different pages based on your rule configurations. Use the rule ordering feature you used when setting Customer IDs with the ID Service to set additional parameters on the `Library Loaded` event before the rule firing the global mbox.
+>[!TIP] Since most implementations use the global mbox for activity delivery, it usually sufficient to just use the `Add Params to Global Mbox` action.
 
 ### Add an Mbox Parameter
 
@@ -206,7 +206,7 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
    ![Click Keep Changes](../assets/images/target-addPageName-keepChanges.png)
 
-1. Click-and-drag on the left edge of the `Add Params to Global Mbox` action to rearrange the actions so that `Add Params to Global Mbox` is between `Load Target` and `Fire Global Mbox`
+1. Click-and-drag on the left edge of the `Add Params to Global Mbox` action to rearrange the actions so that `Add Params to Global Mbox` is before the `Fire Global Mbox` action (it can be before or after `Load Target`)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -220,7 +220,7 @@ Reload the We.Retail site with it mapped to your property with Experience Cloud 
 
 ### Profile Parameters
 
-Similar to mbox parameters, profile parameters are also passed through the Target request. However, profile parameters get stored in Target's visitor profile database and will persist for the [duration of the visitor's profile](https://marketing.adobe.com/resources/help/en_US/target/ov/c_visitor_profile_lifetime.html). You can set them on one page of your site and use them in Target activities on another page. Here is an example from an  automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter "profile.lastViewed=sportscar" to record their interest in that particular vehicle. When the visitor browses to other non-vehicle pages on your site you can target content based on their last vehicle viewed.  Profile parameters are ideal for attributes that rarely change or are only available on certain pages
+Similar to mbox parameters, profile parameters are also passed through the Target request. However, profile parameters get stored in Target's visitor profile database and will persist for the [duration of the visitor's profile](https://marketing.adobe.com/resources/help/en_US/target/ov/c_visitor_profile_lifetime.html). You can set them on one page of your site and use them in Target activities on another page. Here is an example from an  automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter "profile.lastViewed=sportscar" to record their interest in that particular vehicle. When the visitor browses to other, non-vehicle pages you can target content based on their last vehicle viewed.  Profile parameters are ideal for attributes that rarely change or are only available on certain pages
 
 You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you just did when passing the `pageName` mbox parameter. The one difference is  you need to give profile parameter names a `profile.` prefix. This is what a profile parameter called "userType" would look like in the `Pass Parameters to Global Mbox` action:
 
@@ -274,7 +274,7 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 
 >[!NOTE] This is an optional exercise for Target Premium customers.
 
-The property token is a reserved parameter used with the Target Premium [Enterprise User Permissions](https://marketing.adobe.com/resources/help/en_US/target/target/property_channel.html) feature. It is used to define different digital properties so that different members of an Experience Cloud Organization can be assigned different permissions to each property. For example, you might want one group of users to be able to set up Target activities on your web site, but not in your mobile application.
+The property token is a reserved parameter used with the Target Premium [Enterprise User Permissions](https://marketing.adobe.com/resources/help/en_US/target/target/property_channel.html) feature. It is used to define different digital properties so that different members of an Experience Cloud Organization can be assigned different permissions on each property. For example, you might want one group of users to be able to set up Target activities on your web site, but not in your mobile application.
 
 Target properties are analogous to Launch properties and Analytics report suites. An enterprise with multiple brands, websites, and marketing teams might use a different Target property, Launch property and Analytics report suite for each website or mobile app. Launch properties are differentiated by their embed codes, Analytics report suites are differentiated by their report suite id, and Target properties are differentiated by their property token parameter.
 
@@ -321,8 +321,8 @@ Here is an optional exercise, if you are a Target Premium customer and would lik
    ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
 1. Go to the `Target` tab
-1. Open your client code
-1. You should see the parameter for "at_property" in every global mbox request:
+1. Expand your client code
+1. You should see the parameter for "at_property" in every global mbox request as you browse the site:
 
 ![The Property Token should be visible as the at_property parameter in every global mbox request](../assets/images/target-debugger-atProperty.png)
 
@@ -333,15 +333,15 @@ Here is an optional exercise, if you are a Target Premium customer and would lik
 The order confirmation mbox is a special type of mbox used to define order submissions in Target. The inclusion of three specific mbox parameters&mdash;orderId, orderTotal, and productPurchasedId&mdash;is what turns an mbox into an order mbox. In addition to reporting revenue, the order mbox also does the following:
 
 1. De-duplicates accidental order resubmissions
-1. Filter extreme orders (any order whose total was more than three standard deviations from the mean)
+1. Filters extreme orders (any order whose total was more than three standard deviations from the mean)
 1. Uses a different algorithm behind the scenes to calculate statistical confidence
 1. Creates a special, downloadable Audit report of individual order details
 
 The best practice is to use and order confirmation mbox in all order funnels, even on non-retail sites. For example, lead generation sites usually have lead funnels with a unique "lead id" generated at the end. These sites should implement an order mbox, using a static value (e.g. "1") for the orderTotal.
 
-Customers using the Analytics for Target (A4T) integration for most of their reporting should also implement the order mbox, since A4T is not compatible with all activity types such as Auto Allocate, Automated Personalization and Auto Target. Additionally, the order mbox is a critical element in Recommendations implementations, powering algorithms based on purchase behavior.
+Customers using the Analytics for Target (A4T) integration for most of their reporting should also implement the order mbox, since A4T is not yet compatible with activity types like Auto Allocate, Automated Personalization and Auto Target. Additionally, the order mbox is a critical element in Recommendations implementations, powering algorithms based on purchase behavior.
 
-The order confirmation mbox should fire from a rule that is only triggered on your order confirmation page or event. Often, it can be combined in a rule that also sets the Adobe Analytics purchase event. It must be configured by using the Custom Code action of the Core extension, using the appropriate data elements to set the orderId, orderTotal, and productPurchasedId parameters.
+The order confirmation mbox should fire from a rule that is only triggered on your order confirmation page or event. Often, it can be combined with a rule setting the Adobe Analytics purchase event. It must be configured using the Custom Code action of the Core extension, using the appropriate data elements to set the orderId, orderTotal, and productPurchasedId parameters.
 
 Let's add the data elements and rule we need to fire an order confirmation mbox on the We.Retail site. Since you have already created several data elements, these instructions will be abbreviated.
 
@@ -350,26 +350,24 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
 1. Click **[!UICONTROL Data Elements]** in the top navigation
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Order Id`
-1. Check the `Clean text` option
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.cart.orderId` as the `Path to Variable`
+1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
 **To create the data element for the Cart Amount**
 
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Cart Amount`
-1. Check the `Clean text` option
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.cart.cartAmount` as the `Path to Variable`
+1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
 **To create the data element for Cart SKUs (Target)**
 
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Cart SKUs (Target)`
-1. Check the `Force lowercase value` option
-1. Check the `Clean text` option
 1. Select **[!UICONTROL Data Element Type > Custom Code]**
 1. For Target, the skus must be a comma separated list. This custom code will reformat the data layer array into the proper format. In the custom code editor, paste the following:
 
@@ -384,6 +382,8 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
    return targetProdSkus;
    ```
 
+1. Check the `Force lowercase value` option
+1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
 Now we need to create a rule to fire the global mbox with the order parameters on the order confirmation page.
@@ -443,10 +443,12 @@ Now we need to create a rule to fire the global mbox with the order parameters o
    ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Browse the site and add several products to your cart
+1. Continue to checkout
 1. During the checkout process the only required fields are `First Name` and `Last Name`
 
    ![Enter dummy values for first name and last name](../assets/images/target-testOrderCart.png)
 
+1. On the Review Order page, be sure to click the `Place Order` button
 1. Look in the Debugger
 1. Go to the Target tab
 1. Expand your client code
@@ -472,7 +474,7 @@ The Library Header is sometimes used to override at.js settings via the
 
 The Library Footer is sometimes used to add [at.js library extensions](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) or [at.js custom event](https://marketing.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-notification.html) listeners.
 
-To replicate this capability in Launch, just use the Custom Code action in the Core extension and sequence the action before (Library Header) or after (Library Footer) the Load Target action:
+To replicate this capability in Launch, just use the Custom Code action in the Core extension and sequence the action before (Library Header) or after (Library Footer) the Load Target action. This can be done in the same rule as the `Load Target` action (as pictured below) or in separate rules with events or order settings that will reliably fire before or after the rule containing `Load Target`:
 
 ![Library Header and Footer in the Actions sequence](../assets/images/target-libraryHeaderFooter.png)
 
