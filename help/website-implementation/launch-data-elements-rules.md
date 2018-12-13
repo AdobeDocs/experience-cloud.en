@@ -1,6 +1,6 @@
 ---
 title: Add a Data Element, a Rule and a Library
-description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the &quot;Implementing the Experience Cloud in Websites with Launch&quot; tutorial.
+description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 seo-description:
 seo-title: Add a Data Element, a Rule and a Library
 solution: Experience Cloud

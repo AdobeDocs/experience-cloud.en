@@ -1,6 +1,6 @@
 ---
 title: Add a Data Element, a Rule and a Library
-description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the &quot;Implementing the Experience Cloud in Websites with Launch&quot; tutorial.
+description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 seo-description:
 seo-title: Add a Data Element, a Rule and a Library
 solution: Experience Cloud
@@ -52,7 +52,7 @@ Data elements are Launch’s version of a data layer. They can store values from
    ![Create the Page Name data element](images/web-launch-dataElement.png).
 
 >[!NOTE]**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
-
+<!-- -->
 >[!NOTE]Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 ## Create a Rule

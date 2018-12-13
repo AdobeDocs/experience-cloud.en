@@ -1,6 +1,6 @@
 ---
 title: General Launch Configuration & Settings
-description: Learn how to log into the Launch interface and create a Launch property. This lesson is part of the &quot;Implementing the Experience Cloud in Websites with Launch&quot; tutorial.
+description: Learn how to log into the Launch interface and create a Launch property. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 seo-description:
 seo-title: General Adobe Launch Configuration & Settings
 solution: Experience Cloud
