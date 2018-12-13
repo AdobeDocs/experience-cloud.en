@@ -231,6 +231,8 @@ Now, you will use your new data elements and extension to build your Product Det
 1. Select **[!UICONTROL Action Type > Set Variables]**
 1. Set **[!UICONTROL eVar1 Set as]** `product detail page`
 1. Set **[!UICONTROL event1]**, leaving the optional values blank
+1. Under Events, click the **[!UICONTROL Add Another]** button
+1. Set the **[!UICONTROL prodView]** event, leaving the optional values blank
 1. Click **[!UICONTROL Keep Changes]**
 
       ![Set Analytics Variables in PDP Rule](../assets/images/analytics-PDPsetVariables.png)
@@ -240,7 +242,12 @@ Now, you will use your new data elements and extension to build your Product Det
       ![Add another Action for the Product String](../assets/images/analytics-PDPaddProductStringAction.png)
 
 1. Select **[!UICONTROL Extension > Adobe Analytics Product String]**
+1. Select **[!UICONTROL Action Type > Set s.products]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
+
+1. In the **[!UICONTROL Analytics E-commerce Event]** section, select **[!UICONTROL prodView]**
+
+1. In the **[!UICONTROL Data layer variables for product data]** section, use the Data Element picker to choose the `Product Id` data element
 
 1. Click **[!UICONTROL Keep Changes]**
 
@@ -248,23 +255,26 @@ Now, you will use your new data elements and extension to build your Product Det
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
+      ![Save the rule](../assets/images/analytics-PDP-saveRule.png)
+
 ### Validate the Product Detail Page Data
 
-You have just created a rule that sets some variables (before the beacon goes out). You should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
+You  just created a rule that sets variables before the beacon is sent. You should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser and navigate to any product detail page
+1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Navigate to any product detail page
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
-1. Expand your Report Suite's hit
-1. Notice the Product Detail Variables that are now in the debugger, namely that `eVar2` has been set to product detail page, and that the `Events` variable has been set to event2 (and that your Page Name is still set by the Analytics extension)
+1. Expand your Report Suite
+1. Notice the Product Detail Vcariables that are now in the debugger, namely that `eVar1` has been set to "product detail page", that the `Events` variable has been set to "event1" and "prodView", that the products variable is set with the product id of the product you are viewing, and that your Page Name is still set by the Analytics extension
 
 ![Validate the page hit](../assets/images/analytics-validatePDPvars.png)
 
 ## Send a Track Link Beacon
 
-When a page loads, your typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
+When a page loads, you typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
 
-However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request or "hit". Even though it is referred to as a track link call, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you via in the Launch rule builder, including your own custom JavaScript.
+However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you via in the Launch rule builder, including your own custom JavaScript.
 
 In this tutorial, you will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
 
@@ -282,7 +292,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
    ![Add New Arrivals Rule](../assets/images/analytics-newArrivalsRuleAdd.png)
 
 1. Select **[!UICONTROL Event Type > Enters Viewport]**. This will bring up a field where you need to enter the CSS selector that will identify the item on your page that should trigger the rule when it enters view in the browser.
-1. Go back to the home page of we.retail and scroll down to the New Arrivals section.
+1. Go back to the home page of We.Retail and scroll down to the New Arrivals section.
 1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want. :)
 1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
 1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
@@ -312,16 +322,16 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Send Beacon]**
 1. Choose the **[!UICONTROL s.tl()]** tracking option
-1. In the **[!UICONTROL Link Name]** field, enter `Scrolled down to New Arrivals'. This value will be placed into the Custom Links report in Analytics.
+1. In the **[!UICONTROL Link Name]** field, enter `Scrolled down to New Arrivals`. This value will be placed into the Custom Links report in Analytics.
 1. Click **[!UICONTROL Keep Changes]**
 
-![Config New Arrivals Beacon](../assets/images/analytics-configEntersViewportBeacon.png)
+      ![Config New Arrivals Beacon](../assets/images/analytics-configEntersViewportBeacon.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
 ### Validate the Track Link Beacon
 
-Now you will want to make sure that this hit goes in when you scroll down to the New Arrivals section of the Home Page of our site. When you first bring up our site, the values shouldn't be there, but as you scroll down and the section comes into view, the hit should fire with our new values.
+Now you will want to make sure that this hit goes in when you scroll down to the New Arrivals section of the Home Page of our site. When you first load the homepage, the request shouldn't be made, but as you scroll down and the section comes into view, the hit should fire with our new values.
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
 1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](../assets/images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
@@ -341,10 +351,9 @@ Now you will want to make sure that this hit goes in when you scroll down to the
 
 ![Debugger with a Page View](../assets/images/analytics-debuggerEntersViewport.png)
 
-
 ## Add a Plug-in
 
-A Plug-in is a piece of JavaScript code that you can add to your implementation to perform a specific function that is not built into the product. Plug-ins can be built by you, by other Adobe Customers/Partners, or by Adobe Consulting. Even if they are created by Adobe Consulting, they are always implemented on your site as-is, and you are responsible to do all of the testing on your site to make sure that they work correctly.
+A Plug-in is a piece of JavaScript code that you can add to your implementation to perform a specific function that is not built into the product. Plug-ins can be built by you, by other Adobe Customers/Partners, or by Adobe Consulting.
 
 To implement plug-ins, there are basically three steps:
 
@@ -369,7 +378,7 @@ If you are going to add the doPlugins function (below) and use plug-ins, you nee
 To add plug-ins, you need to add a function called doPlugins. This function is not added by default, but once added, is handled by the AppMeasurement library, and is called last when a hit is being sent into Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
 
 1. While still in the Analytics extension, scroll down and expand the section titled `Configure Tracking Using Custom Code.`
-1. Select **[!UICONTROL Open Editor]**
+1. Click **[!UICONTROL Open Editor]**
 1. Paste the following code into the code editor:
 
    ```javascript
@@ -419,12 +428,17 @@ First you will call a plug-in which has been incorporated into the AppMeasuremen
 
 1. Copy the following code:
 
-   `s.campaign = s.Util.getQueryParam("cid");`
+   ```javascript
+   s.campaign = s.Util.getQueryParam("cid");
+   ```
 
 1. Paste it into the doPlugins function. This will look for a parameter called `cid` in the current page URL and place it into the s.campaign variable.
 1. Now call the getValOnce function by copying the following code and pasting it in right below the call to getQueryParam:
 
-   `s.campaign=s.getValOnce(s.campaign,'s_cmp',30);`
+   ```javascript
+   s.campaign=s.getValOnce(s.campaign,'s_cmp',30);
+   ```
+
 This code will make sure that the same value is not sent in more than once in a row for 30 days (see the documentation for ways to customize this code to your needs).
 
       ![Call Plug-ins in doPlugins](../assets/images/analytics-doPluginsWithPlugins.png)
