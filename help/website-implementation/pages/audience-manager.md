@@ -1,6 +1,6 @@
 ---
 title: Implement Adobe Audience Manager with Launch
-description:
+description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Launch. This lesson is part of the "Implementing the Experience Cloud in Websites with Launch" tutorial.
 seo-description:
 seo-title: Implement Adobe Audience Manager with Launch
 solution: Experience Cloud
@@ -138,7 +138,7 @@ OK, this is the biggie. If you are not doing server-side forwarding of data from
 Unfortunately, at this time, the Experience Cloud debugger does not support showing the response to the beacons. Therefore, you should use another debugger/packet sniffer, like Charles Proxy or the browser's JavaScript console.
 In one of these debuggers, look for the following:
 
-* In the Analytics beacon (request), look for a "callback" parameter. It will be set to something like this: s_c_il[1].doPostbacks
+* In the Analytics beacon (request), look for a "callback" parameter. It will be set to something like this: `s_c_il[1].doPostbacks`
 
 ![AA request - callback param](../assets/images/aam-callbackParam.png)
 

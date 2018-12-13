@@ -1,6 +1,6 @@
 ---
 title: Implementing the Adobe Experience Cloud in Websites with Adobe Experience Platform Launch
-description:
+description: "Implementing the Experience Cloud in Websites with Launch" is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 seo-description:
 seo-title: Implementing the Adobe Experience Cloud in Websites with Adobe Experience Platform Launch
 solution: Experience Cloud

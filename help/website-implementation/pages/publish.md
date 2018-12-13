@@ -1,6 +1,6 @@
 ---
 title: Publish your changes
-description:
+description: Learn how to publish your Launch property from the Development environment to the Staging and Production environments. This lesson is part of the "Implementing the Experience Cloud in Websites with Launch" tutorial.
 seo-description:
 seo-title: Publish your changes
 solution: Experience Cloud

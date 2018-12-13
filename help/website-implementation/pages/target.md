@@ -6,7 +6,7 @@ seo-title: Implement Target with Launch
 solution: Experience Cloud
 ---
 
-# Adobe Target
+# Add Adobe Target
 
 In this lesson, we will implement the [Adobe Target extension](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension) with a global request and custom parameters.
 

@@ -1,6 +1,6 @@
 ---
 title: Add the Experience Cloud ID Service with Launch
-description:
+description: Learn how to add the Experience Cloud ID Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the "Implementing the Experience Cloud in Websites with Launch" tutorial.
 seo-description:
 seo-title: Add the Experience Cloud ID Service with Launch
 solution: Experience Cloud

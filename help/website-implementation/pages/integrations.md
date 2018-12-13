@@ -1,6 +1,6 @@
 ---
 title: Implement Experience Cloud Integrations with Launch
-description:
+description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the "Implementing the Experience Cloud in Websites with Launch" tutorial.
 seo-description:
 seo-title: Implement Experience Cloud Integrations with Launch
 solution: Experience Cloud
@@ -8,13 +8,13 @@ solution: Experience Cloud
 
 # Experience Cloud Integrations
 
-In this lesson, you will get a quick review of the key integrations between the solutions you have just implemented. The good news is that in this tutorial, you added the solutions in such a way so as to support the integrations. You don't need to do any additional work in this lesson besides reading and validating!
+In this lesson, you will review the key integrations between the solutions you  just implemented. The good news is that by completing the earlier lessons, you have already implemented the code-aspects of the integrations! You don't need to do any additional work in this lesson besides reading and validating.
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-1. Understand the basic use cases for Audience Sharing, Analytics for Target (A4T) and Customer Attributes integrations
+1. Explain the basic use cases for Audience Sharing, Analytics for Target (A4T) and Customer Attributes integrations
 1. Validate the basic client-side implementation aspects of these integrations
 
 ## Prerequisites

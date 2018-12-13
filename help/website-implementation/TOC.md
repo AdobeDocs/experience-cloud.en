@@ -11,7 +11,6 @@ tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
-index: no
 ---
 
 # Implementing the Experience Cloud in Websites with Launch {#implementing-in-websites-with-launch}

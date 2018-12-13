@@ -1,12 +1,12 @@
 ---
 title: Implement Adobe Analytics with Launch
-description:
+description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the "Implementing the Experience Cloud in Websites with Launch" tutorial.
 seo-description:
 seo-title: Implement Adobe Analytics with Launch
 solution: Experience Cloud
 ---
 
-# Adobe Analytics
+# Add Adobe Analytics
 
 In this lesson, you will implement the [Adobe Analytics extension](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension) and create rules to send data to Adobe Analytics.
 
