@@ -1,6 +1,6 @@
 ---
 title: Implement Target with Launch
-description:
+description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the &quot;Implementing the Experience Cloud in Websites with Launch&quot; tutorial.
 seo-description:
 seo-title: Implement Target with Launch
 solution: Experience Cloud
