@@ -36,7 +36,7 @@ In order to complete this lesson, you will need:
 
 There are two ways to implement Audience Manager in a website:
 
-* **Server-Side Forwarding (SSF)**&mdash;or customers with Adobe Analytics, this is the easiest and recommended way to implement. Adobe Analytics forwards data to AAM on Adobe's backend, allowing for one less request on the page. This also enables key integration features and conforms with our best practices for Audience Manager code implementation and deployment.
+* **Server-Side Forwarding (SSF)**&mdash;for customers with Adobe Analytics, this is the easiest and recommended way to implement. Adobe Analytics forwards data to AAM on Adobe's backend, allowing for one less request on the page. This also enables key integration features and conforms with our best practices for Audience Manager code implementation and deployment.
 
 * **Client-Side DIL**&mdash;This approach is for customers who do not have Adobe Analytics. DIL code (Data Integration Library Code, the AAM JavaScript configuration code) sends data directly from the web page into Audience Manager.
 
@@ -46,8 +46,8 @@ Since you have already deployed Adobe Analytics in this tutorial, you will deplo
 
 There are two main steps in doing a SSF implementation:
 
-1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager **per report suite**.
-1. Putting the code in place, which is done via Launch. In order for this to work correctly, you will need to have the Experience Cloud ID Service extension installed, as well as the Analytics extension (You will actually **not** need the AAM extension, which is explained below).
+1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager *per report suite*.
+1. Putting the code in place, which is done via Launch. In order for this to work correctly, you will need to have the Experience Cloud ID Service extension installed, as well as the Analytics extension (You will actually *not* need the AAM extension, which is explained below).
 
 ### Enable Server-Side Forwarding in the Analytics Admin Console
 
@@ -55,26 +55,29 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 #### To Enable SSF in the Analytics Admin Console
 
-1. Log into Analytics via the Experience Cloud UI. If you don't have access to Analytics, you will need to talk to your Experience Cloud admin or another person who has and can grant Analytics access.
+1. Log into Analytics via the Experience Cloud UI. If you don't have Admin access to Analytics, you will need to talk to your Experience Cloud or Analytics admin to assign you access or complete these steps for you.
 
-![Log into Adobe Analytics](../assets/images/aam-logIntoAnalytics.png)
+  ![Log into Adobe Analytics](../assets/images/aam-logIntoAnalytics.png)
 
-1. 1. From the top navigation in Analytics, choose **[!UICONTROL Admin > Report Suites]**, and from the list, select (multi-select) the report suite(s) that you want to forward to Audience Manager.
+1. From the top navigation in Analytics, choose **[!UICONTROL Admin > Report Suites]**, and from the list, select (multi-select) the report suite(s) that you want to forward to Audience Manager.
 
    ![Click to the Admin Console](../assets/images/aam-analyticsAdminConsoleReportSuites.png)
 
 1. From the Report Suites screen and with the report suite(s) selected, choose **[!UICONTROL Edit Settings > General > Server-Side Forwarding]**.
 
     ![Select the SSF Menu](../assets/images/aam-selectSSFmenu.png)
->[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
 
-1. Once in the Server-Side Forwarding UI, read the info and check the box to enable SSF for the report suite(s).
-1. Click `Save`.
+    >[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
+
+1. Once on the Server-Side Forwarding page, read the info and check the box to **[!UICONTROL Enable Server-Side Forwarding]** for the report suite(s).
+
+1. Click **[!UICONTROL Save]**
 
     ![Complete SSF setup](../assets/images/aam-enableSSFcomplete.png)
 
 >[!NOTE] Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF on your actual site's report suite.
->[!NOTE] If the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html).
+>
+>Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html).
 
 Once this step has been completed, and if you have the Experience Cloud ID Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must complete the following step in Launch as well. Don't worry, it's super easy.
 
@@ -102,14 +105,14 @@ This is the second of two steps for enabling SSF. You have already flipped the s
 
 Server-Side Forwarding code is now implemented!
 
-### Validate the Implementation
+### Validate the Server-Side Forwarding
 
-The main way to validate that the Server-Side Forwarding is up and running is by looking at the response to any of your Adobe Analytics hits. We'll get to that in a minute. In the mean time, let's check a couple other things that can help us make sure that it is working the way we want it to.
+The main way to validate that the Server-Side Forwarding is up and running is by looking at the response to any of your Adobe Analytics hits. We'll get to that in a minute. In the mean time, let's check a couple of other things that can help us make sure that it is working the way we want it to.
 
 #### Verify that the Code is Loading Correctly
 
 The code that Adobe Launch installs to handle the forwarding, and especially the response from AAM to the page, is called the Audience Manager
-'Module." We can use the Experience Cloud Debugger to ensure that it has loaded.
+"Module." We can use the Experience Cloud Debugger to ensure that it has loaded.
 
 1. Open the We.Retail site
 1. Click the debugger icon in your browser to open the Experience Cloud debugger
