@@ -48,7 +48,7 @@ Launch, by Adobe is the next generation of website tag and mobile SDK management
 
 In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called We.Retail. The [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted We.Retail site using the Experience Cloud Debugger.
 
-[![We.Retail](../assets/images/overview-weRetail.png)](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+[![We.Retail](images/overview-weRetail.png)](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 ## Get the Tools
 

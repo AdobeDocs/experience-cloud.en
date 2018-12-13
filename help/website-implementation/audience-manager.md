@@ -30,7 +30,7 @@ In order to complete this lesson, you will need:
 
 1. Your “Audience Manager Subdomain” (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”). If you already have Audience Manager implemented on your actual website, the easiest way to obtain it is to go to your actual website and open the Debugger. The subdomain is available on the Summary tab, in the Audience Manager section:
 
-   ![You can use the Debugger to find the Audience Manager Subdomain on your actual website](../assets/images/aam-debugger-partner.png)
+   ![You can use the Debugger to find the Audience Manager Subdomain on your actual website](images/aam-debugger-partner.png)
 
 ## Implementation Options
 
@@ -57,15 +57,15 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 1. Log into Analytics via the Experience Cloud UI. If you don't have Admin access to Analytics, you will need to talk to your Experience Cloud or Analytics admin to assign you access or complete these steps for you.
 
-  ![Log into Adobe Analytics](../assets/images/aam-logIntoAnalytics.png)
+  ![Log into Adobe Analytics](images/aam-logIntoAnalytics.png)
 
 1. From the top navigation in Analytics, choose **[!UICONTROL Admin > Report Suites]**, and from the list, select (multi-select) the report suite(s) that you want to forward to Audience Manager.
 
-   ![Click to the Admin Console](../assets/images/aam-analyticsAdminConsoleReportSuites.png)
+   ![Click to the Admin Console](images/aam-analyticsAdminConsoleReportSuites.png)
 
 1. From the Report Suites screen and with the report suite(s) selected, choose **[!UICONTROL Edit Settings > General > Server-Side Forwarding]**.
 
-    ![Select the SSF Menu](../assets/images/aam-selectSSFmenu.png)
+    ![Select the SSF Menu](images/aam-selectSSFmenu.png)
 
     >[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
 
@@ -73,7 +73,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 1. Click **[!UICONTROL Save]**
 
-    ![Complete SSF setup](../assets/images/aam-enableSSFcomplete.png)
+    ![Complete SSF setup](images/aam-enableSSFcomplete.png)
 
 >[!NOTE] Since SSF needs to be enabled per report suite, don't forget to repeat this step for your real report suites when you are deploying SSF on your actual site's report suite.
 >
@@ -91,7 +91,7 @@ This is the second of two steps for enabling SSF. You have already flipped the s
 
 1. Go to **[!UICONTROL Extensions > Installed]** and click to configure the Analytics extension.
 
-    ![Configure the Analytics Extension](../assets/images/aam-configAnalyticsExtension.png)
+    ![Configure the Analytics Extension](images/aam-configAnalyticsExtension.png)
 
 1. Expand the `Adobe Audience Manager` section
 
@@ -101,7 +101,7 @@ This is the second of two steps for enabling SSF. You have already flipped the s
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-    ![Configure SSF](../assets/images/aam-configLaunchSSF.png)
+    ![Configure SSF](images/aam-configLaunchSSF.png)
 
 Server-Side Forwarding code is now implemented!
 
@@ -119,7 +119,7 @@ The code that Adobe Launch installs to handle the forwarding, and especially the
 1. Staying on the Summary tab, scroll down to the Analytics section
 1. Verify that **AudienceManagement** is listed under the Modules section
 
-![Validate the AAM Module in the Debugger](../assets/images/aam-verifyAAMmodule.png)
+![Validate the AAM Module in the Debugger](images/aam-verifyAAMmodule.png)
 
 #### Verify the Partner ID in the Debugger
 
@@ -128,7 +128,7 @@ Next, we can also verify that the debugger is picking up the right "partner ID" 
 1. While still in the debugger, and still on the Summary tab, scroll down to the Audience Manager section
 1. Verify your Partner ID/Subdomain under "Partner"
 
-![Validate the Partner ID in the Debugger](../assets/images/aam-verifyPartnerID.png)
+![Validate the Partner ID in the Debugger](images/aam-verifyPartnerID.png)
 
 >[!WARNING] You may notice that the Audience Manager section of the debugger refers to "DIL", which is the "Data Integration Library," and typically refers to a client-side implementation, as opposed to the server-side approach that have here. The truth is that the AAM "Module" (used in this SSF approach) uses a lot of the same code as the client-side DIL library, and so this debugger is currently reporting it as such. If you have followed the steps in this tutorial, and the rest of the items in this validation section are correct, you may rest assured that server-side forwarding is working.
 
@@ -140,14 +140,14 @@ In one of these debuggers, look for the following:
 
 * In the Analytics beacon (request), look for a "callback" parameter. It will be set to something like this: `s_c_il[1].doPostbacks`
 
-![AA request - callback param](../assets/images/aam-callbackParam.png)
+![AA request - callback param](images/aam-callbackParam.png)
 
 * You will have a response to the Analytics beacon. It will contain references to doPostbacks, as called in the request, and most importantly, it should have a "stuff" object. This is where AAM segment IDs will be sent back to the browser. If you have the "stuff" object, SSF is working!
 
-![AA response - stuff object](../assets/images/aam-stuffObjectInResponse.png)
+![AA response - stuff object](images/aam-stuffObjectInResponse.png)
 
 * Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in Launch), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient. It should fix itself in a little while. :)
 
-![AA response - false success](../assets/images/aam-responseFalseSuccess.png)
+![AA response - false success](images/aam-responseFalseSuccess.png)
 
 [Next "Experience Cloud Integrations" >](integrations.md)

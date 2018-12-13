@@ -35,7 +35,7 @@ Data elements are Launch’s version of a data layer. They can store values from
 
 1. Click the **[!UICONTROL Create New Data Element]** button:
 
-   ![Click the Create New Data Element button](../assets/images/launch-newDataElement.png)
+   ![Click the Create New Data Element button](images/launch-newDataElement.png)
 
 1. Name the data element, e.g. `Page Name`
 
@@ -49,10 +49,10 @@ Data elements are Launch’s version of a data layer. They can store values from
 
 1. Click the **[!UICONTROL Save]** button to save the data element
 
-   ![Create the Page Name data element](../assets/images/launch-dataElement.png).
+   ![Create the Page Name data element](images/launch-dataElement.png).
 
 >[!NOTE]**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
-
+<!-- -->
 >[!NOTE]Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 ## Create a Rule
@@ -69,19 +69,19 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 1. Click the **[!UICONTROL Create New Rule]** button:
 
-   ![Click the Create New Rule button](../assets/images/launch-newRule.png)
+   ![Click the Create New Rule button](images/launch-newRule.png)
 
 1. Name the Rule `All Pages - Library Loaded`. This naming convention indicates where and when the rule will fire, making it easier to identify and re-use as your Launch property matures.
 
 1. Under Events, click **[!UICONTROL Add]**. The Event tells Launch when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, etc.
 
-   ![Name the Rule and Add an event](../assets/images/launch-addEventToRule.png)
+   ![Name the Rule and Add an event](images/launch-addEventToRule.png)
   
    1. As the Event Type, select **[!UICONTROL Library Loaded (Page Top)]**. Note that when you select the Event Type, Launch pre-populates a name for the event using your selection. Also note that the default order for the event is 50. Ordering is a powerful feature in Launch which gives you precise control over the sequence of actions when you have multiple rules that are triggered by the same event. You will use this feature later in the tutorial.
 
    1. Click the **[!UICONTROL Keep Changes]** button
   
-   ![Select an Event](../assets/images/launch-ruleSelectEvent.png)
+   ![Select an Event](images/launch-ruleSelectEvent.png)
 
 1. Since this rule should fire on all pages, leave **[!UICONTROL Conditions]** blank. If you open the Conditions modal, you will see that conditions can add both restrictions and exclusions based on a large variety of options including, URLs, data element values, date ranges, and more.
 
@@ -91,7 +91,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 1. Select **[!UICONTROL </> Open Editor]** to open the code editor
 
-   ![Select an Action](../assets/images/launch-selectAction.png)
+   ![Select an Action](images/launch-selectAction.png)
 
 1. Add the following to the code editor. This code will output the value of the Page Name data element to the browser console so you can confirm it's working:
 
@@ -101,7 +101,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 
 1. Save the code editor
 
-   ![Enter custom code](../assets/images/launch-customCodeAction.png)
+   ![Enter custom code](images/launch-customCodeAction.png)
 
 1. On the Action configuration screen click **[!UICONTROL Keep Changes]**
 
@@ -130,7 +130,7 @@ In an earlier lesson, you implemented the embed code of your development environ
 
 1. Click **[!UICONTROL Add New Library]**
 
-   ![Add New Library](../assets/images/launch-addNewLibrary.png)
+   ![Add New Library](images/launch-addNewLibrary.png)
 
 1. Name the Library "Initial Setup"
 
@@ -138,17 +138,17 @@ In an earlier lesson, you implemented the embed code of your development environ
 
 1. Click **[!UICONTROL Add All Changed Resources]**
 
-   ![Add All Changed Resources](../assets/images/launch-addAllChangedResources.png)
+   ![Add All Changed Resources](images/launch-addAllChangedResources.png)
 
 1. Note that after clicking **[!UICONTROL Add All Changed Resources]** Launch summarizes the changes you just made.
 
 1. Click **[!UICONTROL Save & Build for Development]**
 
-   ![Save and Build for Development](../assets/images/launch-saveAndBuild.png)
+   ![Save and Build for Development](images/launch-saveAndBuild.png)
 
 After a few moments, the status dot will turn green indicating the library successfully built.
 
-![Library Built](../assets/images/launch-libraryBuilt.png)
+![Library Built](images/launch-libraryBuilt.png)
 
 ## Validate Your Work
 
@@ -156,11 +156,11 @@ Now validate that your rule is working as expected.
 
 Reload your sample page. If you look at the Developer Tools -> Network tab, you should now see a 200 response for your Launch Library!
 
-![Library loads with 200 response](../assets/images/samplepage-200.png)
+![Library loads with 200 response](images/samplepage-200.png)
 
 If you look at the Developer Tools -> Console, you should see the text "The page name is home"
 
-![Console Message](../assets/images/samplepage-console.png)
+![Console Message](images/samplepage-console.png)
 
 Congratulations, you created your first data element and rule and built your first Launch library!
 
@@ -170,11 +170,11 @@ When you are making a lot of changes in Launch, it is inconvenient to have to co
 
 Make a small change to your "All Pages - Library Loaded" rule. In the top navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
 
-![Reopen the rule](../assets/images/launch-reopenRule.png)
+![Reopen the rule](images/launch-reopenRule.png)
 
 On the `Edit Rule` page, click the ***[!UICONTROL Working Library]*** dropdown and select your `Initial Setup` library.
 
-![Select Initial Setup as the Working Library](../assets/images/launch-setWorkingLibrary.png)
+![Select Initial Setup as the Working Library](images/launch-setWorkingLibrary.png)
 
 Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save and to Library and Build]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
 
@@ -186,10 +186,10 @@ Test it out. Open your Custom Code action and just add a colon after the text "T
 
 Save the code, keep the changes in the action, and now click the **[!UICONTROL Save to Library and Build]** button.
 
-![The Save and Build option now exists](../assets/images/launch-workingLibrary-saveAndBuild.png)
+![The Save and Build option now exists](images/launch-workingLibrary-saveAndBuild.png)
 
 Wait a moment until the green dot reappears next to the [!UICONTROL Working Library] dropdown. Now, reload your sample page and you should see your change reflected in the console message (you may have to clear your browser cache and reload, in order to see the change to the page):
-![Console Message with Colon](../assets/images/samplepage-consoleWithColon.png)
+![Console Message with Colon](images/samplepage-consoleWithColon.png)
 
 This is a much faster way of working and you will use this approach for the rest of the tutorial.
 

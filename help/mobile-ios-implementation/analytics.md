@@ -149,7 +149,6 @@ First you need to identify which pages are the Product Detail pages. You will do
 
    ![Add a new Data Element](images/web-analytics-addDataElement.png)
 
-
 1. Name the data element `Page Type`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.page.category.type` as the `Path to Variable`
@@ -266,7 +265,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/web-analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
 1. Expand your Report Suite
-1. Notice the Product Detail Vcariables that are now in the debugger, namely that `eVar1` has been set to "product detail page", that the `Events` variable has been set to "event1" and "prodView", that the products variable is set with the product id of the product you are viewing, and that your Page Name is still set by the Analytics extension
+1. Notice the Product Detail Variables that are now in the debugger, namely that `eVar1` has been set to "product detail page", that the `Events` variable has been set to "event1" and "prodView", that the products variable is set with the product id of the product you are viewing, and that your Page Name is still set by the Analytics extension
 
 ![Validate the page hit](images/web-analytics-validatePDPvars.png)
 

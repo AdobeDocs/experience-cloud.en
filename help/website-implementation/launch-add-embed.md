@@ -25,7 +25,7 @@ The embed code is a `<script>` tag that you put on your webpages to load and exe
 
 From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
-![Click Environments in the top nav](../assets/images/launch-environments.png)
+![Click Environments in the top nav](images/launch-environments.png)
 
 Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they come to your website.
 
@@ -35,15 +35,15 @@ These are the only environments we need to complete the tutorial. Environments a
 
 Now let's copy the embed code:
 
-1. In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](../assets/images/launch-installIcon.png) to open the modal.
+1. In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](images/launch-installIcon.png) to open the modal.
 
 1. Note that Launch will default to the asynchronous embed codes
 
-1. Click the Copy icon ![Copy icon](../assets/images/launch-copyIcon.png) to copy the embed code to your clipboard.
+1. Click the Copy icon ![Copy icon](images/launch-copyIcon.png) to copy the embed code to your clipboard.
 
 1. Click **[!UICONTROL Close]** to close the modal.
 
-   ![Install icon](../assets/images/launch-copyInstallCode.png)
+   ![Install icon](images/launch-copyInstallCode.png)
 
 ## Implement the Embed Code in the `<head>` of the Sample HTML Page
 
@@ -60,7 +60,7 @@ Replace the existing embed code on or around line 34 with with the one on your c
 ```
 
 Open your web browser's developer tools and go to the Network tab. At this point you should see a 404 error for the Launch environment URL:
-![404 error](../assets/images/samplepage-404.png)
+![404 error](images/samplepage-404.png)
 
 The 404 error is expected because you haven't yet built a library in this Launch environment. You will do that in the next lesson. If you see a "failed" message instead of a 404 error, you probably forgot to add the `https://` protocol in the embed code. Again, you only need to specify the `https://` protocol if you are loading the sample page using the `file://` protocol. Make that change and reload the page until the 404 error appears.
 

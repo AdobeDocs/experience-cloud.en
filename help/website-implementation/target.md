@@ -1,6 +1,6 @@
 ---
 title: Implement Target with Launch
-description:
+description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the "Implementing the Experience Cloud in Websites with Launch" tutorial.
 seo-description:
 seo-title: Implement Target with Launch
 solution: Experience Cloud
@@ -43,7 +43,7 @@ This has already been done on the We.Retail site, but let's go ahead and do this
 ```
 
 Open the sample page and paste it just before your Launch embed code as pictured below (don't worry if the line numbers are different):
-   ![Hover over the extension](../assets/images/target-prehidingSnippet.png)
+   ![Hover over the extension](images/target-prehidingSnippet.png)
 
 Reload your sample page. You will notice that the page will be hidden for three seconds before it shown. This behavior is temporary and will go away after you have deployed Target. This pre-hiding behavior is controlled by two configurations at the very end of the snippet, which can be customized but are usually best left on the default settings:
 
@@ -73,11 +73,11 @@ In this first exercise we will add the extension and look at the configurations.
 1. Type `target` in the filter to quickly locate the Adobe Target extension
 1. Click **[!UICONTROL Install]**
 
-   ![Install the Target extension](../assets/images/target-installExtension.png)
+   ![Install the Target extension](images/target-installExtension.png)
 
 1. When you add the extension, it will import many, but not all of your at.js settings from the Target interface, as pictured below. One setting that will not be imported is the Timeout, which will always be 3000ms after adding the extension. For the tutorial, leave the default settings. Note, that on the left hand side it will show the at.js version that ships with the current version of the extension.
 
-1. Click **[!UICONTROL Save to Library and Build]** ![Save the extension](../assets/images/target-saveExtension.png)
+1. Click **[!UICONTROL Save to Library and Build]** ![Save the extension](images/target-saveExtension.png)
 
 At this point, Target isn't really doing anything, so there is nothing to validate.
 
@@ -93,11 +93,11 @@ You can use the `All Pages - Library Loaded` rule you created in the lesson "[Ad
 
 1. Go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor
 
-   ![Open All Pages - Library Loaded Rule](../assets/images/target-editRule.png)
+   ![Open All Pages - Library Loaded Rule](images/target-editRule.png)
 
-1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add a new action
+1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
 
-   ![Click the Plus icon to add a new action](../assets/images/target-addLoadTargetAction.png)
+   ![Click the Plus icon to add a new action](images/target-addLoadTargetAction.png)
 
 1. Select **[!UICONTROL Extension > Adobe Target]**
 
@@ -105,15 +105,15 @@ You can use the `All Pages - Library Loaded` rule you created in the lesson "[Ad
 
 1. Click **[!UICONTROL Keep Changes]**
 
-   ![Click Keep Changes](../assets/images/target-addLoadTargetAction-keepChanges.png)
+   ![Click Keep Changes](images/target-addLoadTargetAction-keepChanges.png)
 
 With the `Load Target` action added, at.js will load on the page. However, no Target requests will fire until we add the `Fire Global Mbox` action.
 
 **To add the `Fire Global Mbox` action**
 
-1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) again to add another action
+1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) again to add another action
 
-   ![Click the Plus icon to add another action](../assets/images/target-addGlobalMboxAction.png)
+   ![Click the Plus icon to add another action](images/target-addGlobalMboxAction.png)
 
 1. Select **[!UICONTROL Extension > Adobe Target]**
 
@@ -123,13 +123,13 @@ With the `Load Target` action added, at.js will load on the page. However, no Ta
 
 1. Click **[!UICONTROL Keep Changes]**
 
-   ![Fire Global Mbox action](../assets/images/target-fireGlobalMbox.png)
+   ![Fire Global Mbox action](images/target-fireGlobalMbox.png)
 
 1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` needs fire before the `Fire Global Mbox`.
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-   ![Fire Global Mbox action](../assets/images/target-fireGlobalMbox-saveAndBuild.png)
+   ![Fire Global Mbox action](images/target-fireGlobalMbox-saveAndBuild.png)
 
 ### Validate the Global Mbox
 
@@ -143,7 +143,7 @@ Now that you have added the Target extension and fired the `Load Target` and `Fi
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Go to the Summary Tab of the Debugger
 
@@ -151,11 +151,11 @@ Now that you have added the Target extension and fired the `Load Target` and `Fi
 
 1. In the `Target` section, confirm that your client code, at.js library version, and your global mbox name appear
 
-   ![Confirm that Target appears in the Summary tab of the Debugger ](../assets/images/target-summaryTab.png)
+   ![Confirm that Target appears in the Summary tab of the Debugger ](images/target-summaryTab.png)
 
 1. Finally, go to the `Target` tab, expand your client code, and confirm that the request for your global mbox appears:
 
-   ![Confirm the global mbox request has been made](../assets/images/target-debugger-globalMbox.png)
+   ![Confirm the global mbox request has been made](images/target-debugger-globalMbox.png)
 
 Congratulations! You've implemented the global mbox!
 
@@ -180,11 +180,11 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
 1. Go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor.
 
-   ![Open All Pages - Library Loaded Rule](../assets/images/target-editRule.png)
+   ![Open All Pages - Library Loaded Rule](images/target-editRule.png)
 
-1. Under Actions, click the ![Click the Plus icon](../assets/images/icon-plus.png) to add a new action
+1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
 
-   ![Click the Plus icon to add a new action](../assets/images/target-addParamsAction.png)
+   ![Click the Plus icon to add a new action](images/target-addParamsAction.png)
 
 1. Select **[!UICONTROL Extension > Adobe Target]**
 
@@ -192,31 +192,31 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
 1. Enter `pageName` as the **[!UICONTROL Name]**
 
-1. Click the ![data element icon](../assets/images/icon-dataElement.png) to open the data element modal
+1. Click the ![data element icon](images/icon-dataElement.png) to open the data element modal
 
-   ![Click the data element icon to open the data element modal](../assets/images/target-addParamsActionOpenDataElement.png)
+   ![Click the data element icon to open the data element modal](images/target-addParamsActionOpenDataElement.png)
 
 1. Click the `Page Name` data element
 
 1. Click the **[!UICONTROL Select]** button
 
-  ![Click the 'Select' button](../assets/images/target-mboxParam-pageName.png)
+  ![Click the 'Select' button](images/target-mboxParam-pageName.png)
 
 1. Click **[!UICONTROL Keep Changes]**
 
-   ![Click Keep Changes](../assets/images/target-addPageName-keepChanges.png)
+   ![Click Keep Changes](images/target-addPageName-keepChanges.png)
 
 1. Click-and-drag on the left edge of the `Add Params to Global Mbox` action to rearrange the actions so that `Add Params to Global Mbox` is before the `Fire Global Mbox` action (it can be before or after `Load Target`)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-  ![Click Save to Library and Build](../assets/images/target-rearrangeActions.png)
+  ![Click Save to Library and Build](images/target-rearrangeActions.png)
 
 #### Validate the Mbox Parameter
 
 Reload the We.Retail site with it mapped to your property with Experience Cloud Debugger. Now go to the **[!UICONTROL Target]** tab in the Debugger. Expand your client code and look at the requests. You should see the new `pageName` parameter passed in the request:
 
-![Click Keep Changes](../assets/images/target-debugger-pageName.png)
+![Click Keep Changes](images/target-debugger-pageName.png)
 
 ### Profile Parameters
 
@@ -224,7 +224,7 @@ Similar to mbox parameters, profile parameters are also passed through the Targe
 
 You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you just did when passing the `pageName` mbox parameter. The one difference is  you need to give profile parameter names a `profile.` prefix. This is what a profile parameter called "userType" would look like in the `Pass Parameters to Global Mbox` action:
 
-![Setting a profile parameter](../assets/images/target-profileParameter.png)
+![Setting a profile parameter](images/target-profileParameter.png)
 
 ### Entity Parameters
 
@@ -236,7 +236,7 @@ Entity parameters are special parameters used in [Recommendations implementation
 
 You don't need to pass any profile parameters in this tutorial, but the workflow is identical to what you did earlier when passing the `pageName` mbox parameter&mdash;just give the parameter a name prefixed with "entity." and map it to the relevant data element. Note that some common entities have reserved names that must be used (e.g. entity.id for the product sku). This is what it would look like to set entity parameters in the `Pass Parameters to Global Mbox` action:
 
-![Adding Entity Parameters](../assets/images/target-entityParameters.png)
+![Adding Entity Parameters](images/target-entityParameters.png)
 
 ### Add Customer ID Parameters
 
@@ -257,7 +257,7 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Log into the We.Retail site using the credentials `test@adobe.com`/`test`
 1. Return to the [We.Retail homepage](https://aem.enablementadobe.com/content/we-retail/us/en.html)
@@ -266,7 +266,7 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 1. Expand your client code
 1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the ID Service configuration and must align with the key you use in your [Customer Attributes data file](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html):
 
-![The Customer Id details should be visible as custom parameters in the mbox call](../assets/images/target-debugger-customerId.png)
+![The Customer Id details should be visible as custom parameters in the mbox call](images/target-debugger-customerId.png)
 
 >[!WARNING] The Experience Cloud ID Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
 
@@ -290,41 +290,41 @@ Here is an optional exercise, if you are a Target Premium customer and would lik
 
 1. Copy the `at_property` value to your clipboard
 
-   ![Obtain the Property token from the Adobe Target interface](../assets/images/target-addATProperty-targetProperties.png)
+   ![Obtain the Property token from the Adobe Target interface](images/target-addATProperty-targetProperties.png)
 
 1. In your Launch tab, go to the **[!UICONTROL Rules]** in the top navigation and then click on `All Pages - Library Loaded` to open the rule editor.
 
-   ![Open All Pages - Library Loaded Rule](../assets/images/target-editRule.png)
+   ![Open All Pages - Library Loaded Rule](images/target-editRule.png)
 
 1. Under Actions, click the `Adobe Target - Add Params to Global Mbox` action to open the `Action Configuration`
 
-   ![Open the Add Params to Global Mbox action](../assets/images/target-openParamsAction.png)
+   ![Open the Add Params to Global Mbox action](images/target-openParamsAction.png)
 
 1. Under the `pageName` parameter, click the **[!UICONTROL Add]** button
 
-   ![Open the Add Params to Global Mbox action](../assets/images/target-addATProperty.png)
+   ![Open the Add Params to Global Mbox action](images/target-addATProperty.png)
 
 1. Name the parameter `at_property` and paste in the value you copied from the Target interface
 
 1. Click **[!UICONTROL Keep Changes]**
 
-   ![Click Keep Changes](../assets/images/target-addATProperty-keepChanges.png)
+   ![Click Keep Changes](images/target-addATProperty-keepChanges.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
-   ![Click Save and Build to Library](../assets/images/target-addATProperty-save.png)
+   ![Click Save and Build to Library](images/target-addATProperty-save.png)
 
 #### Validate the Property Token
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
 1. Go to the `Target` tab
 1. Expand your client code
 1. You should see the parameter for "at_property" in every global mbox request as you browse the site:
 
-![The Property Token should be visible as the at_property parameter in every global mbox request](../assets/images/target-debugger-atProperty.png)
+![The Property Token should be visible as the at_property parameter in every global mbox request](images/target-debugger-atProperty.png)
 
 ## Add Custom Mboxes
 
@@ -402,7 +402,7 @@ Now we need to create a rule to fire the global mbox with the order parameters o
    1. For `Path equals` enter `thank-you.html`
    1. Toggle on the Regex option to change the logic from `equals` to `contains` (you can use the `Test` feature to confirm the test will pass with the URL `https://aem.enablementadobe.com/content/we-retail/us/en/user/checkout/order/thank-you.html`
 
-      ![Enter dummy values for first name and last name](../assets/images/target-orderConfirm-test.png)
+      ![Enter dummy values for first name and last name](images/target-orderConfirm-test.png)
 
    1. Click **[!UICONTROL Keep Changes]**
 1. Click **[!UICONTROL Actions > Add]**
@@ -440,13 +440,13 @@ Now we need to create a rule to fire the global mbox with the order parameters o
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Browse the site and add several products to your cart
 1. Continue to checkout
 1. During the checkout process the only required fields are `First Name` and `Last Name`
 
-   ![Enter dummy values for first name and last name](../assets/images/target-testOrderCart.png)
+   ![Enter dummy values for first name and last name](images/target-testOrderCart.png)
 
 1. On the Review Order page, be sure to click the `Place Order` button
 1. Look in the Debugger
@@ -454,7 +454,7 @@ Now we need to create a rule to fire the global mbox with the order parameters o
 1. Expand your client code
 1. You should see the `orderConfirmPage` request as the latest Target request with the orderId, orderTotal, and productPurchasedId parameters populated with the details of your order
 
-   ![orderConfirmPage mbox with required parameters](../assets/images/target-debugger-orderConfirmPage.png)
+   ![orderConfirmPage mbox with required parameters](images/target-debugger-orderConfirmPage.png)
 
 ### Custom mboxes
 
@@ -476,7 +476,7 @@ The Library Footer is sometimes used to add [at.js library extensions](https://g
 
 To replicate this capability in Launch, just use the Custom Code action in the Core extension and sequence the action before (Library Header) or after (Library Footer) the Load Target action. This can be done in the same rule as the `Load Target` action (as pictured below) or in separate rules with events or order settings that will reliably fire before or after the rule containing `Load Target`:
 
-![Library Header and Footer in the Actions sequence](../assets/images/target-libraryHeaderFooter.png)
+![Library Header and Footer in the Actions sequence](images/target-libraryHeaderFooter.png)
 
 To learn more about use cases for custom headers and footers see the following resources:
 

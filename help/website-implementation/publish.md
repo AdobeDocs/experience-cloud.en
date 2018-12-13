@@ -26,17 +26,17 @@ At the end of this lesson, you will be able to:
 
 1. Open the dropdown next to your library and select **[!UICONTROL Submit for Approval]**
 
-   ![Submit for Approval](../assets/images/publishing-submitForApproval.png)
+   ![Submit for Approval](images/publishing-submitForApproval.png)
 
 1. Click the **[!UICONTROL Submit]** button in the dialog:
 
-   ![Click Submit in the Modal](../assets/images/publishing-submit.png)
+   ![Click Submit in the Modal](images/publishing-submit.png)
 
 1. Your library will now appear in the [!UICONTROL Submitted] column in an unbuilt state:
 
 1. Open the dropdown and select **[!UICONTROL Build for Staging]**:
 
-   ![Build for Staging](../assets/images/publishing-buildForStaging.png)
+   ![Build for Staging](images/publishing-buildForStaging.png)
 
 1. Once the green-dot icon appears, the library can be previewed in the Staging environment.
 
@@ -48,36 +48,36 @@ In a real-life scenario, the next step in the process would typically be to have
 
 1. In the [!UICONTROL Staging] row, click the Install icon
 
-   ![Install icon](../assets/images/launch-installIcon.png) to open the modal
-   ![Go to the Environments page and click to open the modal](../assets/images/publishing-getStagingCode.png)
+   ![Install icon](images/launch-installIcon.png) to open the modal
+   ![Go to the Environments page and click to open the modal](images/publishing-getStagingCode.png)
 
-1. Click the Copy icon ![Copy icon](../assets/images/launch-copyIcon.png) to copy the embed code to your clipboard
+1. Click the Copy icon ![Copy icon](images/launch-copyIcon.png) to copy the embed code to your clipboard
 
 1. Click **[!UICONTROL Close]** to close the modal
 
-   ![Install icon](../assets/images/publishing-copyStagingCode.png)
+   ![Install icon](images/publishing-copyStagingCode.png)
 
 1. Open the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 
-1. Open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](../assets/images/icon-debugger.png) icon
+1. Open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](images/icon-debugger.png) icon
 
-   ![Click the Debugger icon](../assets/images/switchEnvironments-openDebugger.png)
+   ![Click the Debugger icon](images/switchEnvironments-openDebugger.png)
 
 1. Go to the Tools Tab
 
 1. Click **[!UICONTROL Adobe Launch > Dynamically Insert Launch > Embed Code]** button to open the text input field (it might currently have the URL of your Development embed code):
 
-   ![Click the Adobe Launch > Dynamically Insert Launch > Embed Code button](../assets/images/switchEnvironments-debugger-editEmbedCode.png)
+   ![Click the Adobe Launch > Dynamically Insert Launch > Embed Code button](images/switchEnvironments-debugger-editEmbedCode.png)
 
 1. Paste the Staging embed code that is in your clipboard
 
 1. Click the disk icon to save
 
-   ![Launch environment shown in Debugger](../assets/images/switchEnvironments-debugger-save.png)
+   ![Launch environment shown in Debugger](images/switchEnvironments-debugger-save.png)
 
 1. Reload and check the Summary tab of the Debugger. Under the Launch section, you should now see your Staging Property is implemented, showing your property name (I.e. "Launch Tutorial" or whatever you named your property)!
 
-   ![Launch environment shown in Debugger](../assets/images/publishing-debugger-staging.png)
+   ![Launch environment shown in Debugger](images/publishing-debugger-staging.png)
 
 In real-life, once your QA team has signed off by reviewing the changes in the Staging environment it is time to publish to production.
 
@@ -87,24 +87,24 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
 1. From the dropdown, click **[!UICONTROL Approve for Publishing]**:
 
-   ![Approve for Publishing](../assets/images/publishing-approveForPublishing.png)
+   ![Approve for Publishing](images/publishing-approveForPublishing.png)
 
 1. Click the **[!UICONTROL Approve]** button in the dialog box:
 
-   ![Click Approve](../assets/images/publishing-approve.png)
+   ![Click Approve](images/publishing-approve.png)
 
 1. The library will now appear in the [!UICONTROL Approved] column in the unbuilt state (yellow dot):
 
 1. Open the dropdown and select **[!UICONTROL **Build and Publish to Production]**:
 
-   ![Click Build &amp; Publish to Production](../assets/images/publishing-buildAndPublishToProduction.png)
+   ![Click Build &amp; Publish to Production](images/publishing-buildAndPublishToProduction.png)
 
 1. Click the **[!UICONTROL Publish]** in the dialog box:
 
-   ![Click Publish](../assets/images/publishing-publish.png)
+   ![Click Publish](images/publishing-publish.png)
 
 1. The library will now appear in the [!UICONTROL Published] column:
 
-   ![Published](../assets/images/publishing-published.png)
+   ![Published](images/publishing-published.png)
 
 That’s it! You've completed the tutorial and published your first property in Launch!

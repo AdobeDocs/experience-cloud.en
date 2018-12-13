@@ -47,7 +47,7 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Go to the Network tab of the Debugger
 
@@ -61,7 +61,7 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Look in the row labeled "Experience Cloud Visitor ID." The IDs in every request by every solution should always be the same.
 
-   ![Confirm the matching SDIDs](../assets/images/integrations-matchingECIDs.png)
+   ![Confirm the matching SDIDs](images/integrations-matchingECIDs.png)
 
 1. The IDs are unique per visitor, which you can confirm by asking a co-worker to repeat these steps.
 
@@ -86,7 +86,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](../assets/images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Go to the Network tab of the Debugger
 
@@ -100,7 +100,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Look in the row labeled "Supplemental Data ID." The IDs from the first page load should match between Target and Analytics. The IDs from the second page load should also match, but be different from the first page load.
 
-   ![Confirm the matching SDIDs](../assets/images/integrations-matchingSDIDs.png)
+   ![Confirm the matching SDIDs](images/integrations-matchingSDIDs.png)
 
 If you make additional Target requests in the scope of a page load (not including single-page apps) that are part of A4T activities, it's good to them unique names (not target-global-mbox) so that they will continue to have the same SDIDs of the initial Target and Analytics requests.
 
