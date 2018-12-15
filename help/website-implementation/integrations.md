@@ -118,10 +118,12 @@ The main requirements to implement Customer Attributes&mdash;which you have alre
 You have already validated that the Customer IDs are passed to both the ID Service and to Target in earlier lessons. You can also validate the Customer ID in the Analytics hit as well.
 At this time, the Customer ID is one of the few parameters that does not show up in the Experience Cloud Debugger, so you will use the browser's JavaScript Console to view it.
 
-1. After opening the We.Retail site, open the JavaScript Console in your browser and go to the Network tab
+1. Open the We.Retail site
+1. Open your browser's Developer Tools
+1. Go to the Network tab
 1. In the filter field, type `b/ss` which will limit what you see to the Adobe Analytics requests
 
-![Open the JS Console](images/aam-openTheJSConsole.png)
+    ![Open the Developer Tools and filter the Network tab to show only the Analytics requests](images/aam-openTheJSConsole.png)
 
 1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the site
 
@@ -133,15 +135,14 @@ At this time, the Customer ID is one of the few parameters that does not show up
 
    ![Enter credentials and click login](images/idservice-login.png)
 
-1. It should return you to the Homepage, which will also trigger a beacon that you can see in the JS console
-1. Select the Headers tab in the JS Console and scroll down until you see some nested parameters
-   1. cid - Representing "Customer ID, this is the same for all customers
-   1. crm_id - The integration code, which would vary per customer, depending on how it is set up on the backend
-   1. id - The actual Customer ID or Login ID
-   1. as - Authentication Status, with "1" meaning logged in
+1. It should return you to the Homepage, which will also trigger a beacon that you can see in the Developer Tools
+1. Click on the request and select the Headers tab
+1. Scroll down until you see some nested parameters
+   1. cid - this is the standard delimiter for the Customer ID portion of the request
+   1. crm_id - This is the custom integration code, which you specified in the ID Service lesson
+   1. id - The Customer ID value coming from your `Email (Hashed)` data element
+   1. as - The Authentication State, with "1" meaning logged in
 
-Here is what you should see in the Analytics parameter list:
-
-![Analytics Customer ID Validation](images/integrations-analyticsCustomerIDValidation.png)
+    ![Analytics Customer ID Validation](images/integrations-analyticsCustomerIDValidation.png)
 
 [Next "Publish your Property" >](publish.md)

@@ -104,7 +104,7 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-  ![Click Save to Library and Build](images/analytics-saveToLibraryAndBuild.png)
+      ![Click Save to Library and Build](images/analytics-saveToLibraryAndBuild.png)
 
 ### Validate the Page View Beacon
 
@@ -120,7 +120,7 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 1. Expand your Report Suite name to show all of the requests made to it
 1. Confirm the request has fired with the Page Name variable and value
 
-![Validate the page hit](images/analytics-validatePageHit.png)
+      ![Validate the page hit](images/analytics-validatePageHit.png)
 
 >[!NOTE] If the Page Name is not showing up for you, go back through the steps in this page to make sure that you haven't missed anything.
 
@@ -260,6 +260,8 @@ Now, you will use your new data elements and extension to build your Product Det
 
 You  just created a rule that sets variables before the beacon is sent. You should now be able to see the new data going out in the hit in the Experience Cloud Debugger.
 
+**To validate the Product Detail page data**
+
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 1. Navigate to any product detail page
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
@@ -267,7 +269,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 1. Expand your Report Suite
 1. Notice the Product Detail Variables that are now in the debugger, namely that `eVar1` has been set to "product detail page", that the `Events` variable has been set to "event1" and "prodView", that the products variable is set with the product id of the product you are viewing, and that your Page Name is still set by the Analytics extension
 
-![Validate the page hit](images/analytics-validatePDPvars.png)
+      ![Validate the page hit](images/analytics-validatePDPvars.png)
 
 ## Send a Track Link Beacon
 
@@ -283,7 +285,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 
 ### Create the Rule in Launch
 
-1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
+1. Go to the **[!UICONTROL Rules]** section in the top navigation and then click **[!UICONTROL Add Rule]**
    ![Add Rule](images/target-addRule.png)
 1. Name the rule `Homepage - New Arrivals enters Viewport`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
@@ -296,7 +298,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
 1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
 
-![Configure the Enters Viewport Event](images/analytics-copyElementSelector.png)
+      ![Configure the Enters Viewport Event](images/analytics-copyElementSelector.png)
 
 1. Go back to Launch, and paste this value from the clipboard into the field labeled `Elements matching the CSS selector`.
    1. On a side note, it is up to you to decide how to identify CSS selectors. This method is a bit fragile, as certain changes on the page may break this selector. Please consider this when using any CSS selectors in Launch.
@@ -336,7 +338,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-![Save the rule and build](images/analytics-saveCustomLinkRule.png)
+      ![Save the rule and build](images/analytics-saveCustomLinkRule.png)
 
 ### Validate the Track Link Beacon
 
@@ -358,7 +360,7 @@ Now you will want to make sure that this hit goes in when you scroll down to the
    1. `eVar3 = "Home Page - New Arrivals"`
    1. `Events = "event3"`
 
-![Debugger with a Page View](images/analytics-debuggerEntersViewport.png)
+      ![Debugger with a Page View](images/analytics-debuggerEntersViewport.png)
 
 ## Add a Plug-in
 
@@ -425,7 +427,7 @@ The code for this plug-in is available in the [Analytics Documentation](https://
 
 1. Paste it into the code window in the Analytics extension (if you don't still have it open, re-open it as per the previous step), **completely below** the doPlugins function (not inside of it).
 
-![Add Plug-in Code](images/analytics-doPluginsAndGeValOnceCode.png)
+      ![Add Plug-in Code](images/analytics-doPluginsAndGeValOnceCode.png)
 
 You can now call this plug-in from within doPlugins.
 
@@ -448,14 +450,14 @@ First you will call a plug-in which has been incorporated into the AppMeasuremen
    s.campaign=s.getValOnce(s.campaign,'s_cmp',30);
    ```
 
-This code will make sure that the same value is not sent in more than once in a row for 30 days (see the documentation for ways to customize this code to your needs).
+      This code will make sure that the same value is not sent in more than once in a row for 30 days (see the documentation for ways to customize this code to your needs).
 
-![Call Plug-ins in doPlugins](images/analytics-doPluginsWithPlugins.png)
+      ![Call Plug-ins in doPlugins](images/analytics-doPluginsWithPlugins.png)
 
 1. Save the code window
 1. Click **[!UICONTROL Save to Library and Build]**
 
-![Call Plug-ins in doPlugins](images/analytics-saveExtensionAndBuild.png)
+      ![Call Plug-ins in doPlugins](images/analytics-saveExtensionAndBuild.png)
 
 ### Validate the Plug-ins
 
