@@ -136,17 +136,22 @@ Next, we can also verify that the debugger is picking up the right "partner ID" 
 
 OK, this is the biggie. If you are not doing server-side forwarding of data from Analytics to Audience Manager, then there is really no response to the Analytics beacon (besides a 2x2 pixel). However, if you are doing SSF, then there are items that you can verify in the Analytics request and response that will let you know that it is working correctly.
 Unfortunately, at this time, the Experience Cloud debugger does not support showing the response to the beacons. Therefore, you should use another debugger/packet sniffer, like Charles Proxy or the browser's JavaScript console.
-In one of these debuggers, look for the following:
 
-* In the Analytics beacon (request), look for a "callback" parameter. It will be set to something like this: `s_c_il[1].doPostbacks`
+1. Open the JavaScript Console in your browser and go to the Network tab
+1. In the filter field, type `b/ss` which will limit what you see to the Adobe Analytics requests
+1. Refresh the page to see the Analytics request
 
-![AA request - callback param](images/aam-callbackParam.png)
+![Open the JS Console](images/aam-openTheJSConsole.png)
 
-* You will have a response to the Analytics beacon. It will contain references to doPostbacks, as called in the request, and most importantly, it should have a "stuff" object. This is where AAM segment IDs will be sent back to the browser. If you have the "stuff" object, SSF is working!
+1. In the Analytics beacon (request), look for a "callback" parameter. It will be set to something like this: `s_c_il[1].doPostbacks`
 
-![AA response - stuff object](images/aam-stuffObjectInResponse.png)
+    ![AA request - callback param](images/aam-callbackParam.png)
 
-* Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in Launch), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient. It should fix itself in a little while. :)
+1. You will have a response to the Analytics beacon. It will contain references to doPostbacks, as called in the request, and most importantly, it should have a "stuff" object. This is where AAM segment IDs will be sent back to the browser. If you have the "stuff" object, SSF is working!
+
+    ![AA response - stuff object](images/aam-stuffObjectInResponse.png)
+
+>[!WARNING] Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in Launch), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient. It should fix itself in a little while. :)
 
 ![AA response - false success](images/aam-responseFalseSuccess.png)
 

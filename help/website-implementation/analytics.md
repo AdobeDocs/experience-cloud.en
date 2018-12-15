@@ -285,14 +285,14 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 
 1. Go to the **[!UICONTROL Rules]** section in the top navigation and then and then click **[!UICONTROL Add Rule]**
    ![Add Rule](images/target-addRule.png)
-1. Name the rule `View New Arrivals Section`
+1. Name the rule `Homepage - New Arrivals enters Viewport`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
-   ![Add New Arrivals Rule](images/analytics-newArrivalsRuleAdd.png)
+   ![Add New Arrivals Rule](images/analytics-newArrivalsRuleAdd2.png)
 
 1. Select **[!UICONTROL Event Type > Enters Viewport]**. This will bring up a field where you need to enter the CSS selector that will identify the item on your page that should trigger the rule when it enters view in the browser.
 1. Go back to the home page of We.Retail and scroll down to the New Arrivals section.
-1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want. :)
+1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want.
 1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
 1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
 
@@ -303,8 +303,16 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 1. Click **[!UICONTROL Keep Changes]**
    ![Configure the Enters Viewport Event](images/analytics-configEntersViewportEvent.png)
 
-1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
+1. Under Conditions, click the ![Click the Plus icon](images/icon-plus.png) to add a new condition
+1. Select **[!UICONTROL Condition Type > Value Comparison]**
+1. Use the data element picker, choose `Page Name` in the first field
+1. Select  **[!UICONTROL Equals]** from the comparison operator dropdown
+1. In the next field type `content:we-retail:us:en` (this is the page name of the home page as pulled from the data layer - we only want this rule to run on the home page)
+1. Click **[!UICONTROL Keep Changes]**
 
+      ![Configure the Homepage Condition](images/analytics-configHomepageCondition.png)
+
+1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add a new action
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
 1. Set `eVar3` to `Home Page - New Arrivals`
@@ -316,7 +324,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 
 1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) to add another new action
 
-      ![Add Send Beacon Action](images/analytics-newArrivalsSendBeacon1.png)
+      ![Add Send Beacon Action](images/analytics-newArrivalsSendBeacon2.png)
 
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Send Beacon]**
@@ -327,6 +335,8 @@ For this use case, you want to know if people are scrolling down on our We.Retai
       ![Config New Arrivals Beacon](images/analytics-configEntersViewportBeacon.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
+
+![Save the rule and build](images/analytics-saveCustomLinkRule.png)
 
 ### Validate the Track Link Beacon
 
@@ -440,10 +450,12 @@ First you will call a plug-in which has been incorporated into the AppMeasuremen
 
 This code will make sure that the same value is not sent in more than once in a row for 30 days (see the documentation for ways to customize this code to your needs).
 
-      ![Call Plug-ins in doPlugins](images/analytics-doPluginsWithPlugins.png)
+![Call Plug-ins in doPlugins](images/analytics-doPluginsWithPlugins.png)
 
 1. Save the code window
 1. Click **[!UICONTROL Save to Library and Build]**
+
+![Call Plug-ins in doPlugins](images/analytics-saveExtensionAndBuild.png)
 
 ### Validate the Plug-ins
 
@@ -465,9 +477,11 @@ Now you can make sure that the plug-ins are working.
       ![getQueryParam step 1](images/analytics-getQueryParam1.png)
 
 1. Go back and refresh the We.Retail page again, with the query string still in the URL
-1. Check the next hit in the Debugger, and the Campaign variable should not be present, because the getValOnce plug-in has made sure that it doesn't get duplicated and look like another person came in from the campaign tracking code.
+1. Check the next hit in the Debugger, and the Campaign variable should **not** be present, because the getValOnce plug-in has made sure that it doesn't get duplicated and look like another person came in from the campaign tracking code.
 
    ![getQueryParam step 1](images/analytics-getQueryParam2.png)
+
+1. BONUS: You can test this over and over by changing the value of the `cid` parameter in the query string. The Campaign variable should only be there if it is the **first** time you run the page with the value. If you are not seeing the Campaign value in the debugger, simply change the value of the `cid` in the query string of the URL, hit enter, and you should see it again in the debugger.
 
    >[!NOTE] There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as you have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
 
