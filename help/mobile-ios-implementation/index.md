@@ -1,14 +1,14 @@
 ---
-title: Implementing the Adobe Experience Cloud in Websites with Adobe Experience Platform Launch
-description: Implementing the Experience Cloud in Websites with Launch is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
+title: Implementing the Experience Cloud in Mobile iOS Applications with Adobe Experience Platform Launch
+description: Implementing the Experience Cloud in Websites with Launch is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile apps.
 seo-description:
-seo-title: Implementing the Adobe Experience Cloud in Websites with Adobe Experience Platform Launch
+seo-title: Implementing the Experience Cloud in Mobile iOS Applications with Adobe Experience Platform Launch
 solution: Experience Cloud
 ---
 
 # Overview
 
-_Implementing the Experience Cloud in Websites with  Launch_ is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
+_Implementing the Experience Cloud in Mobile iOS Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&mdash;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
 
