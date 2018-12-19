@@ -143,7 +143,7 @@ By knowing the authentication state of the user, you know when a customer id sho
 
    ![Save the data element](images/idservice-emailHashed.png)
 
-### Add a Rule to send the Customer IDs
+### Add a Rule to Send the Customer IDs
 
 The Experience Cloud ID Service passes the Customer IDs in rules using an action called “Set Customer IDs.”  You will now create a rule to trigger this action when the visitor is authenticated.
 
@@ -182,7 +182,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
         ![set the authentication state](images/idservice-customerId-authStateCondition.png)
 
 1. Make sure `Equals` is the operator
-1. Type "logged in" in the text field, causing the rule fire whenever the Data Element “Authentication State” has has a value of “logged in”
+1. Type "logged in" in the text field, causing the rule to fire whenever the Data Element “Authentication State” has a value of “logged in”
 
 1. Click **[!UICONTROL Keep Changes]**
 

@@ -66,7 +66,7 @@ The 404 error is expected because you haven't yet built a library in this Launch
 
 ## Launch Implementation Best Practices
 
-Let's take a moment review some of the Launch implementation best practices which are demonstrated in the sample page:
+Let's take a moment to review some of the Launch implementation best practices which are demonstrated in the sample page:
 
 * **Data Layer**:
 
@@ -82,7 +82,7 @@ Let's take a moment review some of the Launch implementation best practices whic
 
 * **pre-hiding snippet for asynchronous Target implementations**: You will learn more about this in the Target lesson, but when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes in order to manage content flicker
 
-Here is a summary what this these best practices look like in the suggested order. Note that there are some placeholders for account specific details:  
+Here is a summary what these best practices look like in the suggested order. Note that there are some placeholders for account specific details:  
 
 ```html
 <!doctype html>

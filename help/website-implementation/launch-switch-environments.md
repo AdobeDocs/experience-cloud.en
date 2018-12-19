@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) with your own property.
 
-This technique is called environment switching and will be helpful later, when you work with Launch own website. You will be able to load your production website in your browser, but with your *development* Launch environment. This enables you to confidently make and validate Launch changes independently from your regular code releases.  After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use Launch in the first place!
+This technique is called environment switching and will be helpful later, when you work with Launch on your own website. You will be able to load your production website in your browser, but with your *development* Launch environment. This enables you to confidently make and validate Launch changes independently from your regular code releases.  After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use Launch in the first place!
 
 ## Learning Objectives
 
@@ -23,9 +23,7 @@ At the end of this lesson, you will be able to:
 
 1. In your Launch property, open the `Environments` page
 
-1. In the **[!UICONTROL Development]** row, click the Install icon
-
-   ![Install icon](images/launch-installIcon.png) to open the modal
+1. In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](images/launch-installIcon.png) to open the modal
 
 1. Click the Copy icon ![Copy icon](images/launch-copyIcon.png) to copy the embed code to your clipboard
 

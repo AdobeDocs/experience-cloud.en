@@ -83,7 +83,7 @@ You are going to create a rule that outputs the Page Name data element value to 
   
    ![Select an Event](images/launch-ruleSelectEvent.png)
 
-1. Since this rule should fire on all pages, leave **[!UICONTROL Conditions]** blank. If you open the Conditions modal, you will see that conditions can add both restrictions and exclusions based on a large variety of options including, URLs, data element values, date ranges, and more.
+1. Since this rule should fire on all pages, leave **[!UICONTROL Conditions]** blank. If you open the Conditions modal, you will see that conditions can add both restrictions and exclusions based on a large variety of options, including URLs, data element values, date ranges, and more.
 
 1. Under Actions, click **[!UICONTROL Add]**
 
@@ -118,7 +118,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 > * Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
 > * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things    like setting Customer IDs, firing Analytics beacons, and firing the global mbox.
 
-## Save Your Changes a Library
+## Save Your Changes to a Library
 
 After configuring a collection of extensions, data elements, and rules in the Launch interface, you need to package these capabilities and logic into a set of JavaScript code that you can deploy on your website so that marketing tags will fire when visitors come to the site. A library is the set of JavaScript code that will do this.
 
@@ -176,7 +176,7 @@ On the `Edit Rule` page, click the ***[!UICONTROL Working Library]*** dropdown a
 
 ![Select Initial Setup as the Working Library](images/launch-setWorkingLibrary.png)
 
-Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save and to Library and Build]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
+Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library and Build]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and rebuild it.
 
 Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 
