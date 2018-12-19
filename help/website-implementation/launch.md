@@ -52,7 +52,7 @@ A property is basically a container that you fill with extensions, rules, data e
 
 1. Click the **[!UICONTROL New Property]** button:
 
-![Click New Property](images/launch-addNewProperty.png)
+    ![Click New Property](images/launch-addNewProperty.png)
 
 1. Name your property (e.g. `Launch Tutorial` or `Daniel's Launch Tutorial`)
 1. As the domain, enter `enablementadobe.com` since you will be using this property in conjunction with the We.Retail demo site which is hosted on this domain
@@ -60,7 +60,7 @@ A property is basically a container that you fill with extensions, rules, data e
 
    ![Create a new Property](images/launch-newProperty.png)
 
-Your new property should display on Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Launch Tutorial`) to open the `Overview` screen.
+Your new property should display on the Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Launch Tutorial`) to open the `Overview` screen.
 ![Click the name of the property to open it](images/launch-openProperty.png)
 
 [Next "Add the Launch Embed Code" >](launch-add-embed.md)
