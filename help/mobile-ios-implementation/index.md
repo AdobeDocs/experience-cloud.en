@@ -10,13 +10,13 @@ solution: Experience Cloud
 
 _Implementing the Experience Cloud in Mobile iOS Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&mdash;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our previous SDK. A demo app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
 
 After completing this you will be able to:
 
 * Create a Launch Property
 
-* Install a Launch Property on a website
+* Install a Launch Property in a mobile app
 
 * Add the following Adobe Experience Cloud solutions:
   * **[Experience Cloud ID Service](id-service.md)**
@@ -24,9 +24,9 @@ After completing this you will be able to:
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**
 
-* Create rules and data elements to send data to the Adobe solutions
+<!--* ??? Create rules and data elements to send data to the Adobe solutions-->
 
-* Validate the implementation using the Adobe Experience Cloud Debugger
+<!--* Validate the implementation using the Adobe Experience Cloud Debugger-->
 
 * Publish changes in Launch through development, staging, and production environments
 
@@ -35,6 +35,7 @@ After completing this you will be able to:
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
 * For Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/administration/user-permissions).
+* For Adobe Target, you must to know your client code
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 * For Audience Manager, you must know your Audience Manager Subdomain (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”)
 
@@ -42,23 +43,18 @@ Also, it is assumed that you are familiar with front-end development languages l
 
 ## About Launch
 
-Launch, by Adobe is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
+Launch, by Adobe is the next generation of mobile SDK and website tag management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called We.Retail. The [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted We.Retail site using the Experience Cloud Debugger.
+In these lessons, you will implement the Adobe Experience Cloud into a fake meal-tracking app called FoodTracker (from the Apple tutorial "[Start Developing iOS Apps (Swift)](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html)"). The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the FoodTracker app.
 
 [![We.Retail](images/web-overview-weRetail.png)](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 ## Get the Tools
 
-1. Because you will be using some browser-specific extensions, we recommend completing the tutorial using the [Chrome Web Browser](https://www.google.com/chrome/)
-1. Add the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
-1. Download the [sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click "Save Link As")
-1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
-1. Bookmark the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
-
->[!NOTE] You might find it easier to complete this tutorial with the We.Retail site open in Chrome, while you read this tutorial and complete the Launch interface steps in a different browser.
+1. Download [XCode](https://developer.apple.com/xcode/)
+1. Download the completed [FoodTracker app](https://developer.apple.com/sample-code/swift/downloads/09_PersistData.zip) (right-click on this link and click "Save Link As")
 
 Let's get started!
 
