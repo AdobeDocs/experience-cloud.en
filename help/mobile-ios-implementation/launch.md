@@ -6,11 +6,11 @@ seo-title: General Adobe Launch Configuration & Settings
 solution: Experience Cloud
 ---
 
-# General Launch Configuration & Settings
+# Create a Launch Property
 
 In this lesson, you will create your first Launch property.
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site.
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ If you use Launch frequently, you can also bookmark the following URL and log in
 
 ## Create a Property
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site. A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains. For more information on creating properties, see ["Create a Property"](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) in the product documentation.
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains. For more information on creating properties, see ["Create a Property"](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) in the product documentation.
 
 **To Create a Property**
 
@@ -54,13 +54,13 @@ A property is basically a container that you fill with extensions, rules, data e
 
 ![Click New Property](images/web-launch-addNewProperty.png)
 
-1. Name your property (e.g. `Launch Tutorial` or `Daniel's Launch Tutorial`)
-1. As the domain, enter `enablementadobe.com` since you will be using this property in conjunction with the We.Retail demo site which is hosted on this domain
+1. Name your property (e.g. `Mobile Tutorial`)
+1. As the platform, click **[!UICONTROL Mobile]**
 1. Click the **[!UICONTROL Save]** button
 
-   ![Create a new Property](images/web-launch-newProperty.png)
+   ![Create a new Property](images/mobile-launch-newProperty.png)
 
-Your new property should display on Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Launch Tutorial`) to open the `Overview` screen.
-![Click the name of the property to open it](images/web-launch-openProperty.png)
+Your new property should display on Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Mobile Tutorial`) to open the `Overview` screen.
+![Click the name of the property to open it](images/mobile-launch-openProperty.png)
 
 [Next "Add the Launch Embed Code" >](launch-add-embed.md)
