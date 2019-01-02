@@ -228,7 +228,7 @@ Now, you will use your new data elements and extension to build your Product Det
 
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
-1. Set **[!UICONTROL eVar1 Set as]**  `product detail page`
+1. Select **[!UICONTROL eVar1 > Set as]** and enter `product detail page`
 1. Set **[!UICONTROL event1]**, leaving the optional values blank
 1. Under Events, click the **[!UICONTROL Add Another]** button
 1. Set the **[!UICONTROL prodView]** event, leaving the optional values blank
