@@ -21,7 +21,7 @@ At the end of this lesson, you will be able to:
 
 You should complete all of the previous lessons in this tutorial before following the  instructions in this lesson.
 
->[!NOTE] There are many user-permissions requirements, account configurations, and provisioning steps are required to fully use these integrations and which are beyond the scope of this tutorial. If you are not already using these integrations in your current implementation of the Experience Cloud, you should consider the following:
+>[!NOTE] There are many user-permissions requirements, account configurations, and provisioning steps that are required to fully use these integrations and which are beyond the scope of this tutorial. If you are not already using these integrations in your current implementation of the Experience Cloud, you should consider the following:
 >
 > * Review the full requirements of the [Core Services integrations](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html)
 > * Review the full requirements of the [Analytics for Target integration](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html)
@@ -102,7 +102,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
    ![Confirm the matching SDIDs](images/integrations-matchingSDIDs.png)
 
-If you make additional Target requests in the scope of a page load (not including single-page apps) that are part of A4T activities, it's good to them unique names (not target-global-mbox) so that they will continue to have the same SDIDs of the initial Target and Analytics requests.
+If you make additional Target requests in the scope of a page load (not including single-page apps) that are part of A4T activities, it's good to give them unique names (not target-global-mbox) so that they will continue to have the same SDIDs of the initial Target and Analytics requests.
 
 ## Customer Attributes
 
@@ -135,7 +135,7 @@ At this time, the Customer ID is one of the few parameters that does not show up
 
    ![Enter credentials and click login](images/idservice-login.png)
 
-1. It should return you to the Homepage, which will also trigger a beacon that you can see in the Developer Tools
+1. It should return you to the Homepage, which will also trigger a beacon that you can see in the Developer Tools. If you are taken to the account info page, click on the WE.RETAIL logo to return to the homepage.
 1. Click on the request and select the Headers tab
 1. Scroll down until you see some nested parameters
    1. cid - this is the standard delimiter for the Customer ID portion of the request

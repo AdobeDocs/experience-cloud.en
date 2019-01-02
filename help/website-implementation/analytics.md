@@ -193,7 +193,7 @@ If you are already familiar with Adobe Analytics implementations, you are probab
 
 ### Create the Rule for Product Detail Pages
 
-Now, you will use your new data elements and extension to build your Product Detail page rule. For this functionality, you will create another page load rule, triggered by DOM Ready, however, you will use a condition so that it only fires on the Product Detail pages and the order setting so that it fires _before_ the rule that sends the beacon.
+Now, you will use your new data elements and extension to build your Product Detail page rule. For this functionality, you will create another page load rule, triggered by DOM Ready. However, you will use a condition so that it only fires on the Product Detail pages and the order setting so that it fires _before_ the rule that sends the beacon.
 
 **To build the Product Detail page rule**
 
@@ -228,7 +228,7 @@ Now, you will use your new data elements and extension to build your Product Det
 
 1. Select **[!UICONTROL Extension > Adobe Analytics]**
 1. Select **[!UICONTROL Action Type > Set Variables]**
-1. Set **[!UICONTROL eVar1 Set as]** `product detail page`
+1. Set **[!UICONTROL eVar1 Set as]**  `product detail page`
 1. Set **[!UICONTROL event1]**, leaving the optional values blank
 1. Under Events, click the **[!UICONTROL Add Another]** button
 1. Set the **[!UICONTROL prodView]** event, leaving the optional values blank
@@ -242,7 +242,6 @@ Now, you will use your new data elements and extension to build your Product Det
 
 1. Select **[!UICONTROL Extension > Adobe Analytics Product String]**
 1. Select **[!UICONTROL Action Type > Set s.products]**
-1. Select **[!UICONTROL Action Type > Set Variables]**
 
 1. In the **[!UICONTROL Analytics E-commerce Event]** section, select **[!UICONTROL prodView]**
 
@@ -275,7 +274,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 
 When a page loads, you typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
 
-However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you via in the Launch rule builder, including your own custom JavaScript.
+However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you in the Launch rule builder, including your own custom JavaScript.
 
 In this tutorial, you will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
 
@@ -355,7 +354,7 @@ Now you will want to make sure that this hit goes in when you scroll down to the
 1. Leaving the Debugger open, scroll down on your site until you can see the New Arrivals section
 1. View the Debugger again, and another Analytics hit should have appeared. This hit should have the params associated with the s.tl() hit that you set up, namely:
    1. `LinkType = "link_o"` (this means that the hit is a custom link hit, not a page view hit)
-   1. `LinkName = "Scrolled down to New Items"`
+   1. `LinkName = "Scrolled down to New Arrivals"`
    1. `prop3 = "Home Page - New Arrivals"`
    1. `eVar3 = "Home Page - New Arrivals"`
    1. `Events = "event3"`
@@ -388,7 +387,7 @@ If you are going to add the doPlugins function (below) and use plug-ins, you nee
 
 To add plug-ins, you need to add a function called doPlugins. This function is not added by default, but once added, is handled by the AppMeasurement library, and is called last when a hit is being sent into Adobe Analytics. Therefore, you can use this function to run some JavaScript to set variables that are easier set this way.
 
-1. While still in the Analytics extension, scroll down and expand the section titled `Configure Tracking Using Custom Code.`
+1. While still in the Analytics extension, scroll down and expand the section titled `Configure Tracker Using Custom Code.`
 1. Click **[!UICONTROL Open Editor]**
 1. Paste the following code into the code editor:
 

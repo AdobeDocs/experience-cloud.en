@@ -193,7 +193,7 @@ If you are already familiar with Adobe Analytics implementations, you are probab
 
 ### Create the Rule for Product Detail Pages
 
-Now, you will use your new data elements and extension to build your Product Detail page rule. For this functionality, you will create another page load rule, triggered by DOM Ready, however, you will use a condition so that it only fires on the Product Detail pages and the order setting so that it fires _before_ the rule that sends the beacon.
+Now, you will use your new data elements and extension to build your Product Detail page rule. For this functionality, you will create another page load rule, triggered by DOM Ready. However, you will use a condition so that it only fires on the Product Detail pages and the order setting so that it fires _before_ the rule that sends the beacon.
 
 **To build the Product Detail page rule**
 

@@ -57,7 +57,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 1. Log into Analytics via the Experience Cloud UI. If you don't have Admin access to Analytics, you will need to talk to your Experience Cloud or Analytics admin to assign you access or complete these steps for you.
 
-  ![Log into Adobe Analytics](images/aam-logIntoAnalytics.png)
+    ![Log into Adobe Analytics](images/aam-logIntoAnalytics.png)
 
 1. From the top navigation in Analytics, choose **[!UICONTROL Admin > Report Suites]**, and from the list, select (multi-select) the report suite(s) that you want to forward to Audience Manager.
 
@@ -130,7 +130,7 @@ Next, we can also verify that the debugger is picking up the right "partner ID" 
 
     ![Validate the Partner ID in the Debugger](images/aam-verifyPartnerID.png)
 
->[!WARNING] You may notice that the Audience Manager section of the debugger refers to "DIL", which is the "Data Integration Library," and typically refers to a client-side implementation, as opposed to the server-side approach that have here. The truth is that the AAM "Module" (used in this SSF approach) uses a lot of the same code as the client-side DIL library, and so this debugger is currently reporting it as such. If you have followed the steps in this tutorial, and the rest of the items in this validation section are correct, you may rest assured that server-side forwarding is working.
+>[!WARNING] You may notice that the Audience Manager section of the debugger refers to "DIL", which is the "Data Integration Library," and typically refers to a client-side implementation, as opposed to the server-side approach that we have implemented here. The truth is that the AAM "Module" (used in this SSF approach) uses a lot of the same code as the client-side DIL library, and so this debugger is currently reporting it as such. If you have followed the steps in this tutorial, and the rest of the items in this validation section are correct, you may rest assured that server-side forwarding is working.
 
 #### Verify the Analytics Request and Response
 

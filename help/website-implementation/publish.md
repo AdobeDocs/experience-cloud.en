@@ -46,9 +46,8 @@ In a real-life scenario, the next step in the process would typically be to have
 
 1. In your Launch property, open the [!UICONTROL Environments] page
 
-1. In the [!UICONTROL Staging] row, click the Install icon
+1. In the [!UICONTROL Staging] row, click the Install icon ![Install icon](images/launch-installIcon.png) to open the modal
 
-   ![Install icon](images/launch-installIcon.png) to open the modal
    ![Go to the Environments page and click to open the modal](images/publishing-getStagingCode.png)
 
 1. Click the Copy icon ![Copy icon](images/launch-copyIcon.png) to copy the embed code to your clipboard
