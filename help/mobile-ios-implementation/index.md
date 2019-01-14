@@ -59,4 +59,4 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake meal
 
 Let's get started!
 
-[Next "Create a Launch Property" >](launch.md)
+[Next "Create a Launch Property" >](launch-create-a-property.md)

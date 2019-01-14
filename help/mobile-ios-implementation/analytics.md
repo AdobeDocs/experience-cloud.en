@@ -27,7 +27,7 @@ There are many things that could be implemented for Analytics in Launch. This le
 
 ## Prerequisites
 
-You should have already completed the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md).
+You should have already completed the lessons in [Configure Launch](launch-create-a-property.md) and [Add the ID Service](id-service.md).
 
 Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 
@@ -71,7 +71,7 @@ The Analytics extension consists of two main parts:
 
 Now you will create a rule to fire the Analytics beacon, which will send the [!UICONTROL Page Name] variable set in the extension configuration.
 
-You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
+You have already created an "All Pages - Library Loaded" rule in the XXX lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
 **To Send the Page View Beacon**
 
@@ -112,7 +112,7 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/web-analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 

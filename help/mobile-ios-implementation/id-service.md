@@ -23,7 +23,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You should have already completed the lessons in the [Configure Launch](launch.md) section.
+You should have already completed the lessons in the [Configure Launch](launch-create-a-property.md) section.
 
 ## Add the ID Service Extension
 
@@ -61,7 +61,7 @@ The ID Service extension is one of the few Launch extensions that makes a reques
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md).
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ.
 
 1. On the Summary tab of the Debugger, the Launch section should indicate that the Experience Cloud ID Service extension is implemented.
 
@@ -87,7 +87,7 @@ That's it! You've added your first extension! For more details on the configurat
 
 Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
-In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
+In the earlier lesson, XYZ you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
 
 ### Create Data Elements for Customer IDs
 
@@ -205,7 +205,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
    ![Save the Rule](images/web-idservice-customerId-saveRule.png)
 
-You've now created a rule that will send the Customer ID as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
+You've now created a rule that will send the Customer ID as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the XYZ lesson which uses the default Order value of `50`.
 
 ### Validate the Customer IDs
 
@@ -215,7 +215,7 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 

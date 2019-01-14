@@ -137,4 +137,4 @@ Here is a summary what this these best practices look like in the suggested orde
 
 Now you know how to add the Launch embed code to your site!
 
-[Next "Add a Data Element, a Rule and a Library" >](launch-data-elements-rules.md)
+[Next "Add Target" >](target.md)

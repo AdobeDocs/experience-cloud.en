@@ -24,7 +24,7 @@ At the end of this lesson, you will be able to:
 
 In order to complete this lesson, you will need:
 
-1. To have completed the lessons in [Configure Launch](launch.md), [Add Adobe Analytics](analytics.md), and [Add the ID Service](id-service.md).
+1. To have completed the lessons in [Configure Launch](launch-create-a-property.md), [Add Adobe Analytics](analytics.md), and [Add the ID Service](id-service.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 

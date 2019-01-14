@@ -27,7 +27,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-To complete the lessons in this section, you must first complete the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md).
+To complete the lessons in this section, you must first complete the lessons in [Configure Launch](launch-create-a-property.md) and [Add the ID Service](id-service.md).
 
 ## Add the Target Pre-Hiding Snippet
 
@@ -87,7 +87,7 @@ At this point, Target isn't really doing anything, so there is nothing to valida
 
 Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role in the display of the page, you should load Target as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript library&mdash;at.js&mdash;as well as fire the global mbox.
 
-You can use the `All Pages - Library Loaded` rule you created in the lesson "[Add Data Elements, Rules and Libraries](launch-data-elements-rules.md)" to implement Target because it is already triggered on the first event that will fire on a page load&mdash;the Library Loaded event.
+You can use the `All Pages - Library Loaded` rule you created in the lesson XYZ to implement Target because it is already triggered on the first event that will fire on a page load&mdash;the Library Loaded event.
 
 **To Load Target**
 
@@ -141,7 +141,7 @@ Now that you have added the Target extension and fired the `Load Target` and `Fi
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 
@@ -174,7 +174,7 @@ These actions can be used *before* the `Load Target` action and can set differen
 
 Mbox parameters are used to pass custom data to Target, enriching your personalization capabilities. They are ideal for attributes that change frequently during a browsing session such as the page name, template, etc. and do not persist.
 
-Let's add the `Page Name` data element that we created earlier in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson as an mbox parameter.
+Let's add the `Page Name` data element that we created earlier in the XYZ lesson as an mbox parameter.
 
 **To add the mbox parameter**
 
@@ -255,7 +255,7 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 
@@ -316,7 +316,7 @@ Here is an optional exercise, if you are a Target Premium customer and would lik
 #### Validate the Property Token
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
@@ -438,7 +438,7 @@ Now we need to create a rule to fire the global mbox with the order parameters o
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 
