@@ -45,7 +45,7 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
 
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 
