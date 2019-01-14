@@ -84,8 +84,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
-
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the XYZ
    ![Your Launch development environment shown in Debugger](images/web-switchEnvironments-debuggerOnWeRetail.png)
 
 1. Go to the Network tab of the Debugger
