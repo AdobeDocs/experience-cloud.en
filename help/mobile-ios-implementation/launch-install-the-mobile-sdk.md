@@ -21,29 +21,31 @@ At the end of this lesson, you will be able to:
 
 ## Copy the Embed Code
 
-The embed code is a `<script>` tag that you put on your webpages to load and execute the logic you build in Launch. If you load the library asynchronously, the browser continues to load the page, retrieves the Launch library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. (When Launch is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>`).
+The embed code for mobile Launch properties is a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
 
 From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
-![Click Environments in the top nav](images/web-launch-environments.png)
+![Click Environments in the top nav](images/mobile-launch-environments.png)
 
 Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they come to your website.
 
 Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
 
-These are the only environments we need to complete the tutorial. Environments allow you to have different working versions of your Launch libraries hosted at different URLs, so you can safely add new features and make them available to the right users (e.g. developers, QA engineers, the public, etc.) at the right time.
+These are the only environments we need to complete the tutorial. Environments allow you to have different working versions of your Launch libraries with different embed codes, so you can safely add new features and make them available to the right users (e.g. developers, QA engineers, the public, etc.) at the right time.
 
 Now let's copy the embed code:
 
 1. In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](images/web-launch-installIcon.png) to open the modal.
 
-1. Note that Launch will default to the asynchronous embed codes
+1. If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web Launch properties.
 
-1. Click the Copy icon ![Copy icon](images/web-launch-copyIcon.png) to copy the embed code to your clipboard.
+   ![Install icon](images/mobile-launch-openEmbedCode.png)
 
-1. Click **[!UICONTROL Close]** to close the modal.
+Next, we will go through the instructions one-by-one.
 
-   ![Install icon](images/web-launch-copyInstallCode.png)
+### The Environment Id
+
+This value corresponds to the 
 
 ## Implement the Embed Code in the `<head>` of the Sample HTML Page
 

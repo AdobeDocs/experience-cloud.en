@@ -10,15 +10,15 @@ solution: Experience Cloud
 
 _Implementing the Experience Cloud in Mobile iOS Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our previous SDK. A demo app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch in your own iOS app!
 
-After completing this you will be able to:
+After completing this tutorial you will be able to:
 
-* Create a Launch Property
+* Create a mobile Launch Property
 
 * Install a Launch Property in a mobile app
 
-* Add the following Adobe Experience Cloud solutions:
+* Implement the following Adobe Experience Cloud solutions:
   * **[Experience Cloud ID Service](id-service.md)**
   * **[Adobe Target](target.md)**
   * **[Adobe Analytics](analytics.md)**
@@ -39,11 +39,11 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 * For Audience Manager, you must know your Audience Manager Subdomain (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”)
 
-Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be a master of these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
+Also, it is assumed that you are familiar with iOS development in Swift. You do not need to be a master of Swift to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
 ## About Launch
 
-Launch, by Adobe is the next generation of mobile SDK and website tag management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
+Launch, by Adobe is the next generation of mobile SDK and website tag management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
 
 ## About the Lessons
 
@@ -54,7 +54,8 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake meal
 ## Get the Tools
 
 1. Download [XCode](https://developer.apple.com/xcode/)
-1. Download the completed [FoodTracker app](https://developer.apple.com/sample-code/swift/downloads/09_PersistData.zip) (right-click on this link and click "Save Link As")
+1. Download the [Bus Booking app](https://git.corp.adobe.com/target-mobile/qa-automation/tree/master/MobileApps/iOS_Standalone/Bus%20Booking) 
+1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 Let's get started!
 

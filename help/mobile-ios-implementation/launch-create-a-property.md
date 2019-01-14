@@ -46,7 +46,7 @@ If you use Launch frequently, you can also bookmark the following URL and log in
 
 ## Create a Property
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains. For more information on creating properties, see ["Create a Property"](https://docs.adobelaunch.com/administration/companies-and-properties#create-a-property) in the product documentation.
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple apps based on one template, and you want to track the same assets on all of them. You can apply one property to multiple apps built for different operating systems. For more information on creating properties, see ["Create a Property"](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property) in the product documentation.
 
 **To Create a Property**
 
@@ -63,4 +63,4 @@ A property is basically a container that you fill with extensions, rules, data e
 Your new property should display on Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Mobile Tutorial`) to open the `Overview` screen.
 ![Click the name of the property to open it](images/mobile-launch-openProperty.png)
 
-[Next "Add the Launch Embed Code" >](launch-add-embed.md)
+[Next "Add Extensions" >](launch-add-extensions.md)

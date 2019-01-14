@@ -17,10 +17,10 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 
 + [Overview](index.md)
 + Configuring Launch{#configure-launch}
-  + [Create a Launch Property](launch.md)
-  + [Add the Launch Embed Code](launch-add-embed.md)
-  + [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md)
-  + [Switch Environments with the Debugger](launch-switch-environments.md)
+  + [Create a Launch Property](launch-create-a-property.md)
+  + [Add Extensions](launch-add-extensions.md)
+  + [Add a Library](launch-add-a-library.md)
+  + [Install the Mobile SDK](launch-install-the-mobile-sdk.md)
 + Implementing Solutions{#implement-solutions}
   + [Add the ID Service](id-service.md)
   + [Add Adobe Target](target.md)
