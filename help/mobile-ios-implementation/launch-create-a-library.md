@@ -20,7 +20,7 @@ At the end of this lesson, you will be able to:
 
 ## Save Your Changes to a Library
 
-After configuring your extensions, you need to package them into a library that you can deploy in your app so you can leverage your marketing solutions. 
+After configuring your extensions, you need to package them into a library that you can deploy in your app so you can leverage your marketing solutions.
 
 **To add and build a library**
 

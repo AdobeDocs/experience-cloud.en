@@ -101,12 +101,12 @@ Now it's time to update the App to import the SDK
 
 1. In the Launch interface, copy the two lines related to the Core extension, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
    ![Copy the Core statements to your clipboard](images/mobile-launch-install-copyCore.png)
-1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application` function:
+1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
    ![Paste the Core statements into your AppDelegate file](images/mobile-launch-install-pasteCore.png)
 
 1. In the Launch interface, copy the extension statements, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
    ![Copy the Extension statements to your clipboard](images/mobile-launch-install-copyExtensions.png)
-1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application` function
+1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
    ![Paste the Extension statements into your AppDelegate file](images/mobile-launch-install-pasteExtension.png)
 
 ## Verify the implementation
@@ -130,7 +130,7 @@ Here are examples of some specific calls you can look for:
 
 1. Request to the ID Service. In this example, the ID (`d_mid`)has already been set and is just being reported up again)
 
-    ```swift 
+    ```swift
     2019-01-15 12:11:45.164590-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: Sending request (https://dpm.demdex.net/id?d_rtbd=json&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61@AdobeOrg&d_mid=17179986463578698626041670574784107777&d_blob=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&dcs_region=9)
     ```
 
@@ -141,7 +141,7 @@ Here are examples of some specific calls you can look for:
     ```
 1. Analytics request
 
-    ```swift 
+    ```swift
     2019-01-15 12:11:45.828465-0500 BusDemoSwift[52399:5056336] [AMSDK DEBUG <AnalyticsHitDatabase>]: Analytics request was sent with body (ndh=1&c.&a.&AppID=BusDemoSwift%201%20%281.0%29&CarrierName=%28null%29&DayOfWeek=3&DaysSinceFirstUse=0&DaysSinceLastUse=0&DeviceName=x86_64&HourOfDay=12&LaunchEvent=LaunchEvent&Launches=3&OSVersion=iOS%2012.1&Resolution=828x1792&RunMode=Application&TimeSinceLaunch=0&ignoredSessionLength=-1547572244&internalaction=Lifecycle&locale=en-US&.a&.c&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&aamlh=9&ce=UTF-8&cp=foreground&mid=17179986463578698626041670574784107777&pageName=BusDemoSwift%201%20%281.0%29&pe=lnk_o&pev2=ADBINTERNAL%3ALifecycle&t=00%2F00%2F0000%2000%3A00%3A00%200%20300&ts=1547572305)
     ```
 
