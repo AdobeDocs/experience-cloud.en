@@ -48,7 +48,7 @@ Let's go through the instructions step-by-step.
 
 ## Create the Podfile
 
-The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have CocoaPods installed in your development environment, [you need to install it first](https://cocoapods.org/).
+The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have [CocoaPods](https://cocoapods.org/) installed in your development environment, follow the installation instructions on their website. Also, if you haven't already downloaded the [Bus Booking app](assets/iOS_Standalone.zip), save it to your local machine and extract the zip archive to your desktop.
 
 **To create the Podfile**
 
