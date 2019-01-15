@@ -47,14 +47,15 @@ Launch, by Adobe is the next generation of mobile SDK and website tag management
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake meal-tracking app called FoodTracker (from the Apple tutorial "[Start Developing iOS Apps (Swift)](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html)"). The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the FoodTracker app.
+In these lessons, you will implement the Adobe Experience Cloud into a fake meal-tracking app called Bus Booking. The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the Bus Booking app.
 
 [![We.Retail](images/web-overview-weRetail.png)](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 ## Get the Tools
 
+1. You must be use a Mac to complete this tutorial
 1. Download [XCode](https://developer.apple.com/xcode/)
-1. Download the [Bus Booking app](https://git.corp.adobe.com/target-mobile/qa-automation/tree/master/MobileApps/iOS_Standalone/Bus%20Booking) 
+1. Download the [Bus Booking app](https://git.corp.adobe.com/target-mobile/qa-automation/tree/master/MobileApps/iOS_Standalone/Bus%20Booking)
 1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 Let's get started!

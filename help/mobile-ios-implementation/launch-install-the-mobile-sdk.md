@@ -6,22 +6,23 @@ seo-title: Implement the Launch Embed Code
 solution: Experience Cloud
 ---
 
-# Add the Launch Embed Code
+# Install the Mobile SDK
 
-In this lesson, you will implement the asynchronous embed code of your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&mdash;Environments and Embed Codes.
+In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&mdash;Environments and Embed Codes.
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Obtain the embed code for your Launch property
+* Obtain the installation instructions for your mobile Launch property
 * Understand the difference between a Development, Staging, and Production environment
-* Add a Launch embed code to an html document
-* Explain the optimal location of the Launch embed code in relation to other code in the `<head>` of an html document
+* Create and edit the Podfile
+* Import the Mobile SDK into your AppDelegate file
+* Verify that the SDK has been implemented successfully
 
-## Copy the Embed Code
+## Get the Installation Instructions
 
-The embed code for mobile Launch properties is a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
+The Installation Instructions for mobile Launch properties is a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
 
 From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
@@ -41,100 +42,77 @@ Now let's copy the embed code:
 
    ![Install icon](images/mobile-launch-openEmbedCode.png)
 
-Next, we will go through the instructions one-by-one.
+Let's go through the instructions step-by-step.
 
-### The Environment Id
+## Create the Podfile
 
-This value corresponds to the 
+The Adobe Mobile SDK for iOS uses the CocoaPods dependency manager to manage dependencies between its various components. If you don't already have CocoaPods installed in your development environment, [you need to install it first](https://cocoapods.org/).
 
-## Implement the Embed Code in the `<head>` of the Sample HTML Page
+**To create the Podfile**
 
-The embed code should be implemented in the `<head>` element of all HTML pages that will share the property. You might have one or several template files which control the `<head>` globally across the site, making it a straightforward process to add Launch.
+1. Open the `Terminal` app in your mac
+1. Navigate to the project folder where you saved the Bus Booking app (e.g. `cd Desktop/BusBooking/Swift`)
+   ![navigate to the project directory](images/mobile-launch-goToProjectDirectory.png)
+1. In the Launch interface, copy the first iOS instruction `pod init`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+   ![Copy pod init to your clipboard in the Launch interface](images/mobile-launch-install-copyPodInit.png)
 
-If you haven't already, download [the sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click “Save Link As”) and open it in a code editor. [Brackets](http://brackets.io/) is a free, open source editor if you need one.
+1. In your Terminal app, run the `pod init` command and wait for it to complete
+   ![Run pod init](images/mobile-launch-install-runPodInit.png)
+1. In your Terminal app, open the podfile with the `open podfile` command
+   ![Run open podfile](images/mobile-launch-install-openPodfile.png)
+1. Your computer may open a dialog asking which application you would like to open the podfile with. Choose any text editor, like `TextEdit`
 
-Replace the existing embed code on or around line 34 with with the one on your clipboard and save the page. Now open the page in a web browser. If you are loading the page using the `file://` protocol, you will need to add "https:" at the beginning of the embed code URL in your code editor). Lines 33-36 of your sample page might look something like this:
+1. In the Launch interface, copy the list of dependencies by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon. Note how there is a line corresponding to each one of the extensions you added in the earlier lesson. Each extension has its own set of code which builds on the Mobile Core extension and can only be added or removed with an app update:
+   ![Copy dependencies to your clipboard in the Launch interface](images/mobile-launch-install-copyDependencies.png)
 
-```html
-    <!--Launch Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
-    <script src="https://assets.adobedtm.com/launch-ENa21cfed3f06f4ddf9690de8077b39e81-development.min.js" async></script>
-    <!--/Launch Header Embed Code-->
-```
+1. In your text editor, add paste the dependencies from your clipboard right after the  line `# Pods for BusDemoSwift`
+1. Save the updates to the podfile in your text editor
+   ![Add dependencies and save](images/mobile-launch-install-addDependenciesAndSave.png)
 
-Open your web browser's developer tools and go to the Network tab. At this point you should see a 404 error for the Launch environment URL:
-![404 error](images/web-samplepage-404.png)
+1. In the Launch interface, copy the next iOS instruction `pod repo update`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+   ![Copy pod repo update](images/mobile-launch-install-copyPodRepoUpdate.png)
 
-The 404 error is expected because you haven't yet built a library in this Launch environment. You will do that in the next lesson. If you see a "failed" message instead of a 404 error, you probably forgot to add the `https://` protocol in the embed code. Again, you only need to specify the `https://` protocol if you are loading the sample page using the `file://` protocol. Make that change and reload the page until the 404 error appears.
+1. In your Terminal app, run the `pod repo update` command and wait for it to complete
+   ![Run pod repo update](images/mobile-launch-install-podRepoUpdate.png)
 
-## Launch Implementation Best Practices
+1. In the Launch interface, copy the next iOS instruction `pod install`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+   ![Copy pod install to your clipboard in the Launch interface](images/mobile-launch-install-copyPodInstall.png)
 
-Let's take a moment review some of the Launch implementation best practices which are demonstrated in the sample page:
+1. In your Terminal app, run the `pod install` command and wait for it to complete
+   ![Run pod install](images/mobile-launch-install-podInstall.png)
 
-* **Data Layer**:
+1. Open a Finder window, navigate to the folder where you saved the Bus Booking app, and confirm that the podfile as well as a pods folder has been created
+   ![Confirm pods in the finder](images/mobile-launch-install-podsInFinder.png)
 
-  * We *strongly* recommend creating a digital data layer on your site containing all of the attributes needed to populate variables in Analytics, Target, and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, please see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+## Update the AppDelegate
 
-  * Define your data layer before the Launch embed code, in order to maximize what you can do in Target, Customer Attributes, and Analytics.
+Now it's time to update the App to import the SDK
 
-* **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before Launch in order to leverage its syntax in Launch and Target
+1. Open the `BusDemoSwift.xcworkspace` file in XCode
+1. Open the AppDelegate.swift file
+   ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-openAppDelegate.png)
+1. In the Launch interface, choose which iOS language you are using. The Bus Booking app uses Swift, so choose Swift.
+1. Copy the import statements, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+   ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-copyImports.png)
+1. In XCode, paste these import statements into the AppDelegate file after the import for the `UIKit`
+   ![Paste the Swift import statements into your AppDelegate file](images/mobile-launch-install-pasteImports.png)
 
-* **HTML5 doctype**: The HTML5 doctype is required by Target
+1. In the Launch interface, copy the two lines related to the Core extension, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+   ![Copy the Core statements to your clipboard](images/mobile-launch-install-copyCore.png)
+1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application` function:
+   ![Paste the Core statements into your AppDelegate file](images/mobile-launch-install-pasteCore.png)
 
-* **preconnect and dns-prefetch**: Use preconnect and dns-prefetch to improve the page load time. See also: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
+1. In the Launch interface, copy the extension statements, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+   ![Copy the Extension statements to your clipboard](images/mobile-launch-install-copyExtensions.png)
+1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application` function
+   ![Paste the Extension statements into your AppDelegate file](images/mobile-launch-install-pasteExtension.png)
 
-* **pre-hiding snippet for asynchronous Target implementations**: You will learn more about this in the Target lesson, but when Target is deployed via asynchronous Launch embed codes, you should hardcode a pre-hiding snippet on your pages before the Launch embed codes in order to manage content flicker
+## Verify the implementation
 
-Here is a summary what this these best practices look like in the suggested order. Note that there are some placeholders for account specific details:  
+1. Build the app
+1. Launch it in the emulator
+1. Check for stuff in the console
 
-```html
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Basic Demo</title>
-    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
-    <link rel="preconnect" href="//dpm.demdex.net">
-    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
-    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
-    <link rel="preconnect" href="//cm.everesttech.net">
-    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
-    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
-    <link rel="dns-prefetch" href="//dpm.demdex.net">
-    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
-    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
-    <link rel="dns-prefetch" href="//cm.everesttech.net">
-    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
-    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
-    <!--/Preconnect and DNS-Prefetch-->
-    <!--Data Layer to enable rich data collection and targeting-->
-    <script>
-    var digitalData = {
-        "page": {
-            "pageInfo" : {
-                "pageName": "Home"
-                }
-            }
-    };
-    </script>
-    <!--/Data Layer-->
-    <!--jQuery or other helper libraries-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <!--/jQuery-->
-    <!--prehiding snippet for Adobe Target with asynchronous Launch deployment-->
-    <script>
-        (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
-    </script>
-    <!--/prehiding snippet for Adobe Target with asynchronous Launch deployment-->
-    <!--Launch Header Embed Code: REPLACE LINE 39 WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
-    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Launch Header Embed Code-->
-</head>
-<body>
-    <h1>Launch by Adobe: Basic Demo</h1>
-    <p>This is a very simple page to demonstrate basic concepts of Launch by Adobe</p>
-</body>
-</html>
-```
-
-Now you know how to add the Launch embed code to your site!
+Now you know how to add the the SDK to your site!
 
 [Next "Add Target" >](target.md)

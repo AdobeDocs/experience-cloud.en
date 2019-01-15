@@ -12,9 +12,11 @@ In this lesson, you will add extensions to your Launch property.
 
 An extension is a packaged set of code that extends the Launch interface and the library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app.
 
+>[!NOTE] Adding and removing Extensions in mobile Launch properties requires you to update the embed codes in your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+
 ## Prerequisites
 
-In order to Manage Extensions in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/administration/user-permissions).
+In order to complete this lesson, you must have permission to Manage Extensions in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/administration/user-permissions).
 
 You will also need the following account details for the solutions you will be implementing:
 
@@ -107,6 +109,6 @@ Now it's time to get to the fun part and start adding the extensions for the sol
   
     ![Configure the Target VEC settings](images/mobile-extensions-targetVEC-settings.png)
 
-That's it! Now that we
+That's it! Now that you have added the extensions to your property, you can add them to a library:
 
-[Next "Add Extensions" >](launch-add-a-library.md)
+[Next "Create a Library" >](create-a-library.md)
