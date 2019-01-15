@@ -28,7 +28,7 @@ From the property Overview screen, click on the `Environments` tab to go to the 
 
 ![Click Environments in the top nav](images/mobile-launch-environments.png)
 
-Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they come to your website.
+Development, Staging, and Production environments correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.
 
 Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
 
@@ -40,19 +40,21 @@ Now let's copy the embed code:
 
 1. If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web Launch properties.
 
+1. Now, beneath the `Environment ID`, change the operating system to `iOS`
+
    ![Install icon](images/mobile-launch-openEmbedCode.png)
 
 Let's go through the instructions step-by-step.
 
 ## Create the Podfile
 
-The Adobe Mobile SDK for iOS uses the CocoaPods dependency manager to manage dependencies between its various components. If you don't already have CocoaPods installed in your development environment, [you need to install it first](https://cocoapods.org/).
+The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have CocoaPods installed in your development environment, [you need to install it first](https://cocoapods.org/).
 
 **To create the Podfile**
 
-1. Open the `Terminal` app in your mac
-1. Navigate to the project folder where you saved the Bus Booking app (e.g. `cd Desktop/BusBooking/Swift`)
-   ![navigate to the project directory](images/mobile-launch-goToProjectDirectory.png)
+1. Open the `Terminal` Application on your Mac
+1. Navigate to the project folder where you saved the Bus Booking app (e.g. `cd Desktop/iOS_Standalone/BusDemoSwift/`)
+   ![navigate to the project directory](images/mobile-launch-install-goToProjectDirectory.png)
 1. In the Launch interface, copy the first iOS instruction `pod init`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
    ![Copy pod init to your clipboard in the Launch interface](images/mobile-launch-install-copyPodInit.png)
 
@@ -72,7 +74,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods dependency manager to manage dep
 1. In the Launch interface, copy the next iOS instruction `pod repo update`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
    ![Copy pod repo update](images/mobile-launch-install-copyPodRepoUpdate.png)
 
-1. In your Terminal app, run the `pod repo update` command and wait for it to complete
+1. In your Terminal app, run the `pod repo update` command and wait for it to complete (this might take a few minutes)
    ![Run pod repo update](images/mobile-launch-install-podRepoUpdate.png)
 
 1. In the Launch interface, copy the next iOS instruction `pod install`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
@@ -81,7 +83,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods dependency manager to manage dep
 1. In your Terminal app, run the `pod install` command and wait for it to complete
    ![Run pod install](images/mobile-launch-install-podInstall.png)
 
-1. Open a Finder window, navigate to the folder where you saved the Bus Booking app, and confirm that the podfile as well as a pods folder has been created
+1. Open a Finder window, navigate to the folder where you saved the Bus Booking app, and confirm that the BusDemoSwift.xcworkspace file, the Podfile, the Podfile.lock file, as well as the Pods folder have been created
    ![Confirm pods in the finder](images/mobile-launch-install-podsInFinder.png)
 
 ## Update the AppDelegate
@@ -91,7 +93,7 @@ Now it's time to update the App to import the SDK
 1. Open the `BusDemoSwift.xcworkspace` file in XCode
 1. Open the AppDelegate.swift file
    ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-openAppDelegate.png)
-1. In the Launch interface, choose which iOS language you are using. The Bus Booking app uses Swift, so choose Swift.
+1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Swift]** as the iOS language you are using.
 1. Copy the import statements, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
    ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-copyImports.png)
 1. In XCode, paste these import statements into the AppDelegate file after the import for the `UIKit`
@@ -109,10 +111,40 @@ Now it's time to update the App to import the SDK
 
 ## Verify the implementation
 
-1. Build the app
-1. Launch it in the emulator
-1. Check for stuff in the console
+1. Run the app and launch it in the emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running iOS 10+ (in the screenshots below, the app will launch in an iPhone XR emulator)
+   ![Run the app and launch it in the emulator](images/mobile-launch-install-buildAndLaunch.png)
+1. Wait for the emulator to launch and fully open the app to the booking screen
 
-Now you know how to add the the SDK to your site!
+   ![Wait for the app to full open](images/mobile-launch-install-simulator.png)
+  
+1. Confirm that calls are being made to the Adobe servers in the XCode Console
+   ![Wait for the app to full open](images/mobile-launch-install-console.png)
 
-[Next "Add Target" >](target.md)
+Here are examples of some specific calls you can look for:
+
+1. **Calls to retrieve the Launch configuration** (filter your console to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in Launch and changed at any time:
+    ```swift
+    2019-01-15 12:11:44.518220-0500 BusDemoSwift[52399:5056293] [AMSDK DEBUG <RulesDownloader>]: Successfully downloaded Rules from 'https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip'
+    {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","target.clientCode":"techmarketingdemos","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.autoFetch":true,"target.fetchBackground":true,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
+    ```
+
+1. Request to the ID Service. In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+
+    ```swift 
+    2019-01-15 12:11:45.164590-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: Sending request (https://dpm.demdex.net/id?d_rtbd=json&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61@AdobeOrg&d_mid=17179986463578698626041670574784107777&d_blob=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&dcs_region=9)
+    ```
+
+1. Response from the ID Service. Note how the `mid` value matches the `d_mid` value in the request above:
+
+    ```swift
+    2019-01-15 12:11:45.681821-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: ID Service - Got ID Response (mid: 17179986463578698626041670574784107777, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
+    ```
+1. Analytics request
+
+    ```swift 
+    2019-01-15 12:11:45.828465-0500 BusDemoSwift[52399:5056336] [AMSDK DEBUG <AnalyticsHitDatabase>]: Analytics request was sent with body (ndh=1&c.&a.&AppID=BusDemoSwift%201%20%281.0%29&CarrierName=%28null%29&DayOfWeek=3&DaysSinceFirstUse=0&DaysSinceLastUse=0&DeviceName=x86_64&HourOfDay=12&LaunchEvent=LaunchEvent&Launches=3&OSVersion=iOS%2012.1&Resolution=828x1792&RunMode=Application&TimeSinceLaunch=0&ignoredSessionLength=-1547572244&internalaction=Lifecycle&locale=en-US&.a&.c&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&aamlh=9&ce=UTF-8&cp=foreground&mid=17179986463578698626041670574784107777&pageName=BusDemoSwift%201%20%281.0%29&pe=lnk_o&pev2=ADBINTERNAL%3ALifecycle&t=00%2F00%2F0000%2000%3A00%3A00%200%20300&ts=1547572305)
+    ```
+
+Congratulations, you've added the SDK an app!
+
+[Next "Add the Experience Cloud ID Service" >](target.md)
