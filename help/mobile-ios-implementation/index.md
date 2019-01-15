@@ -47,9 +47,9 @@ Launch, by Adobe is the next generation of mobile SDK and website tag management
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake bus company app called "Bus Booking". The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the Bus Booking app.
+In these lessons, you will implement the Adobe Experience Cloud into a fake bus company app called "[Bus Booking](assets/iOS_Standalone.zip)". The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the Bus Booking app.
 
-[![Bus Booking App](images/mobile-busBookingApp.png)]()
+[![Bus Booking App](images/mobile-busBookingApp.png)](assets/iOS_Standalone.zip)
 
 ## Get the Tools
 
