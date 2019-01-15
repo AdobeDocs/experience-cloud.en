@@ -51,7 +51,7 @@ In a real-life scenario, the next step in the process would typically be to have
    ![Install icon](images/web-launch-installIcon.png) to open the modal
    ![Go to the Environments page and click to open the modal](images/web-publishing-getStagingCode.png)
 
-1. Click the Copy icon ![Copy icon](images/web-launch-copyIcon.png) to copy the embed code to your clipboard
+1. Click the Copy icon ![Copy icon](images/mobile-launch-copyIcon.png) to copy the embed code to your clipboard
 
 1. Click **[!UICONTROL Close]** to close the modal
 

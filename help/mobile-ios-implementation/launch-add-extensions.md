@@ -111,4 +111,4 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 That's it! Now that you have added the extensions to your property, you can add them to a library:
 
-[Next "Create a Library" >](create-a-library.md)
+[Next "Create a Library" >](launch-create-a-library.md)
