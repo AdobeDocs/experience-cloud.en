@@ -32,6 +32,8 @@ In order to complete this lesson, you will need:
 
    ![You can use the Debugger to find the Audience Manager Subdomain on your actual website](images/aam-debugger-partner.png)
 
+If you don't already have Audience Manager implemented, please follow these instructions to [obtain your Audience Manager Subdomain](https://helpx.adobe.com/audience-manager/kt/using/identify-partner-subdomain-audience-manager-technical-video-implement.html).
+
 ## Implementation Options
 
 There are two ways to implement Audience Manager in a website:
@@ -97,7 +99,7 @@ This is the second of two steps for enabling SSF. You have already flipped the s
 
 1. Check the box to **[!UICONTROL Automatically share Analytics Data with Audience Manager]**. This will add the Audience Manager "Module" (code) to the Analytics `AppMeasurement.js` implementation.
 
-1. Add your “Audience Manager Subdomain” (also known as the “Partner Name,” “Partner ID,” or “Partner Subdomain”)
+1. Add your “Audience Manager Subdomain” (also known as the “Partner Name,” “Partner ID,” or “Partner Subdomain”). Follow these instructions to [obtain your Audience Manager Subdomain](https://helpx.adobe.com/audience-manager/kt/using/identify-partner-subdomain-audience-manager-technical-video-implement.html).
 
 1. Click **[!UICONTROL Save to Library and Build]**
 

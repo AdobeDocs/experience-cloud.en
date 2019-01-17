@@ -24,7 +24,7 @@ At the end of this lesson, you will be able to:
 
 The Installation Instructions for mobile Launch properties is a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
 
-From the property Overview screen, click on the `Environments` tab to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
+Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
 ![Click Environments in the top nav](images/mobile-launch-environments.png)
 
@@ -84,6 +84,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
    ![Run pod install](images/mobile-launch-install-podInstall.png)
 
 1. Open a Finder window, navigate to the folder where you saved the Bus Booking app, and confirm that the BusDemoSwift.xcworkspace file, the Podfile, the Podfile.lock file, as well as the Pods folder have been created
+
    ![Confirm pods in the finder](images/mobile-launch-install-podsInFinder.png)
 
 ## Update the AppDelegate
@@ -94,23 +95,24 @@ Now it's time to update the App to import the SDK
 1. Open the AppDelegate.swift file
    ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-openAppDelegate.png)
 1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Swift]** as the iOS language you are using.
-1. Copy the import statements, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
    ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-copyImports.png)
 1. In XCode, paste these import statements into the AppDelegate file after the import for the `UIKit`
    ![Paste the Swift import statements into your AppDelegate file](images/mobile-launch-install-pasteImports.png)
 
-1. In the Launch interface, copy the two lines related to the Core extension, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
    ![Copy the Core statements to your clipboard](images/mobile-launch-install-copyCore.png)
 1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
    ![Paste the Core statements into your AppDelegate file](images/mobile-launch-install-pasteCore.png)
 
-1. In the Launch interface, copy the extension statements, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+1. In the Launch interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
    ![Copy the Extension statements to your clipboard](images/mobile-launch-install-copyExtensions.png)
 1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
    ![Paste the Extension statements into your AppDelegate file](images/mobile-launch-install-pasteExtension.png)
 
 ## Verify the implementation
 
+1. Save your XCode project
 1. Run the app and launch it in the emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running iOS 10+ (in the screenshots below, the app will launch in an iPhone XR emulator)
    ![Run the app and launch it in the emulator](images/mobile-launch-install-buildAndLaunch.png)
 1. Wait for the emulator to launch and fully open the app to the booking screen
@@ -128,23 +130,23 @@ Here are examples of some specific calls you can look for:
     {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","target.clientCode":"techmarketingdemos","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.autoFetch":true,"target.fetchBackground":true,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
     ```
 
-1. Request to the ID Service. In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+1. **Request to the ID Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
 
     ```swift
     2019-01-15 12:11:45.164590-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: Sending request (https://dpm.demdex.net/id?d_rtbd=json&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61@AdobeOrg&d_mid=17179986463578698626041670574784107777&d_blob=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&dcs_region=9)
     ```
 
-1. Response from the ID Service. Note how the `mid` value matches the `d_mid` value in the request above:
+1. **Response from the ID Service** (filter your console to `ID Service`). Note how the `mid` value matches the `d_mid` value in the request above:
 
     ```swift
     2019-01-15 12:11:45.681821-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: ID Service - Got ID Response (mid: 17179986463578698626041670574784107777, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
     ```
-1. Analytics request
+1. **Analytics request** (filter your console to `Analytics request`)
 
     ```swift
     2019-01-15 12:11:45.828465-0500 BusDemoSwift[52399:5056336] [AMSDK DEBUG <AnalyticsHitDatabase>]: Analytics request was sent with body (ndh=1&c.&a.&AppID=BusDemoSwift%201%20%281.0%29&CarrierName=%28null%29&DayOfWeek=3&DaysSinceFirstUse=0&DaysSinceLastUse=0&DeviceName=x86_64&HourOfDay=12&LaunchEvent=LaunchEvent&Launches=3&OSVersion=iOS%2012.1&Resolution=828x1792&RunMode=Application&TimeSinceLaunch=0&ignoredSessionLength=-1547572244&internalaction=Lifecycle&locale=en-US&.a&.c&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&aamlh=9&ce=UTF-8&cp=foreground&mid=17179986463578698626041670574784107777&pageName=BusDemoSwift%201%20%281.0%29&pe=lnk_o&pev2=ADBINTERNAL%3ALifecycle&t=00%2F00%2F0000%2000%3A00%3A00%200%20300&ts=1547572305)
     ```
 
-Congratulations, you've added the SDK an app!
+Congratulations, you've added the SDK to a mobile app!
 
-[Next "Add the Experience Cloud ID Service" >](target.md)
+[Next "Add the Experience Cloud ID Service" >](id-service.md)

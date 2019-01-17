@@ -10,9 +10,9 @@ solution: Experience Cloud
 
 In this lesson, you will add extensions to your Launch property.
 
-An extension is a packaged set of code that extends the Launch interface and the library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app.
+An extension is a packaged set of code that extends the Launch interface and the library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app. Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
->[!NOTE] Adding and removing Extensions in mobile Launch properties requires you to update the embed codes in your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+>[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update the embed codes in your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
@@ -31,6 +31,10 @@ You will also need the following account details for the solutions you will be i
 At the end of this lesson, you will be able to:
 
 * Add Extensions to your a mobile Launch property
+* Add the Analytics extension
+* Add the Target and Target VEC extensions
+
+>[!NOTE] Adobe Audience Manager is implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
 
 ## Review the Pre-installed extensions
 
@@ -58,6 +62,8 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add the Adobe Analytics extension
 
+>[!NOTE] If you do not have a license for Adobe Analytics, you can skip this section
+
 **To add the extension**
 
 1. Click on the Catalog tab to see the _uninstalled_ extensions
@@ -77,6 +83,8 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add The Target extension
 
+>[!NOTE] If you do not have a license for Adobe Target, you can skip this section
+
 **To add the extension**
 
 1. Click on the Catalog tab to see the _uninstalled_ extensions
@@ -93,6 +101,8 @@ Now it's time to get to the fun part and start adding the extensions for the sol
     ![Configure the Target settings](images/mobile-extensions-target-settings.png)
 
 ### Add The Target VEC extension
+
+>[!NOTE] If you do not have a license for Adobe Target, you can skip this section
 
 **To add the extension**
 
