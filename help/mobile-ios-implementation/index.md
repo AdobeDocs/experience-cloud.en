@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 _Implementing the Experience Cloud in Mobile iOS Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch in your own iOS app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch in your own iOS app!
 
 After completing this tutorial you will be able to:
 
