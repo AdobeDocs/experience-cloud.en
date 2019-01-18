@@ -93,33 +93,47 @@ Now it's time to update the App to import the SDK
 
 1. Open the `BusDemoSwift.xcworkspace` file in XCode
 1. Open the AppDelegate.swift file
+
    ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-openAppDelegate.png)
+
 1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Swift]** as the iOS language you are using.
 1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
+
    ![Copy the Swift import statements to your clipboard](images/mobile-launch-install-copyImports.png)
+
 1. In XCode, paste these import statements into the AppDelegate file after the import for the `UIKit`
+
    ![Paste the Swift import statements into your AppDelegate file](images/mobile-launch-install-pasteImports.png)
 
 1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+
    ![Copy the Core statements to your clipboard](images/mobile-launch-install-copyCore.png)
+
 1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
+
    ![Paste the Core statements into your AppDelegate file](images/mobile-launch-install-pasteCore.png)
 
 1. In the Launch interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
+
    ![Copy the Extension statements to your clipboard](images/mobile-launch-install-copyExtensions.png)
+
 1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
+
    ![Paste the Extension statements into your AppDelegate file](images/mobile-launch-install-pasteExtension.png)
 
 ## Verify the implementation
 
 1. Save your XCode project
 1. Run the app and launch it in the emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running iOS 10+ (in the screenshots below, the app will launch in an iPhone XR emulator)
+
    ![Run the app and launch it in the emulator](images/mobile-launch-install-buildAndLaunch.png)
+
 1. Wait for the emulator to launch and fully open the app to the booking screen
 
    ![Wait for the app to full open](images/mobile-launch-install-simulator.png)
   
 1. Confirm that calls are being made to the Adobe servers in the XCode Console
+
    ![Wait for the app to full open](images/mobile-launch-install-console.png)
 
 Here are examples of some specific calls you can look for:
