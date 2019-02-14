@@ -65,9 +65,9 @@ The primary tool for debugging and validating Target implementations is the [Exp
 
 at.js 2.x versions use Target's new Delivery API and have a significantly different structure from previous versions. Feel free to inspect the request details. Some details:
 
-  * Uses cross-domain XHR requests with CORS (like 1.x versions)
-  * POST method is always used, so look for request parameters in the Request Payload section of the headers
-  * Many name value pairs have been relabeled
+* Uses cross-domain XHR requests with CORS (like 1.x versions)
+* POST method is always used, so look for request parameters in the Request Payload section of the headers
+* Many name value pairs have been relabeled
 
 ## Exercise 3: Implement Target Views
 
