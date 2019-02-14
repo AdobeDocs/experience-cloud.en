@@ -21,7 +21,7 @@ Adobe Target makes it easy to test and personalize in your single page applicati
 
 Target's JavaScript SDK at.js can easily be implemented in a single page application. You can add it as a standalone JavaScript file, using our tag manager Launch, by Adobe, or using a third-party tag manager.
 
-**To download at.js from the Target interface**
+### To download at.js from the Target interface**
 
 1. From the top navigation, click **[UICONTROL Setup]**
 1. From the left navigation, click **[UICONTROL Implementation]**
@@ -32,7 +32,7 @@ Target's JavaScript SDK at.js can easily be implemented in a single page applica
 
 Now you are ready to implement at.js on your website.
 
-**To implement at.js on your website**
+### To implement at.js on your website**
 
 Implement at.js in the `<head>` of all of your HTML pages, including both single-page applications and traditional web pages. Be sure the pages are using the HTML5 doctype `<!doctype html>` as pictured below:
 
@@ -65,9 +65,9 @@ The primary tool for debugging and validating Target implementations is the [Exp
 
 at.js 2.x versions use Target's new Delivery API and have a significantly different structure from previous versions. Feel free to inspect the request details. Some details:
 
- * Uses cross-domain XHR requests with CORS (like 1.x versions)
- * POST method is always used, so look for request parameters in the Request Payload section of the headers
- * Many name value pairs have been relabeled
+  * Uses cross-domain XHR requests with CORS (like 1.x versions)
+  * POST method is always used, so look for request parameters in the Request Payload section of the headers
+  * Many name value pairs have been relabeled
 
 ## Exercise 3: Implement Target Views
 
@@ -98,7 +98,6 @@ This rule will not be triggered by the very first view that loads in the app. Fo
 ### Validation Steps
 
 ## Exercise 4: Create activities in the VEC
-
 
 ### Validation Steps
 
