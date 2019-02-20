@@ -24,6 +24,7 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 + Implementing Solutions{#implement-solutions}
   + [Add the ID Service](id-service.md)
   + [Add Adobe Target](target.md)
+  + [Add Adobe Target Standalone](target-standalone.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)
   + [Experience Cloud Integrations](integrations.md)

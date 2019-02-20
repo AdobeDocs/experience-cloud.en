@@ -46,6 +46,12 @@ Also, it is assumed that you are familiar with front-end development languages l
 
 Launch, by Adobe is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
 
+Launch for websites allows you to centrally manage all of the JavaScript related to analytics, marketing, and advertising solutions used on your desktop and mobile sites. For example, if you deploy Adobe Analytics, Launch will manage the AppMeasurement JavaScript library, populate variables, and fire requests.
+
+The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
+
+Launch is also a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code (JavaScript, HTML, and CSS) that extends the Launch UI and client functionality. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+
 ## About the Lessons
 
 In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called We.Retail. The [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted We.Retail site using the Experience Cloud Debugger.

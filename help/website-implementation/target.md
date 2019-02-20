@@ -77,7 +77,9 @@ In this first exercise we will add the extension and look at the configurations.
 
 1. When you add the extension, it will import many, but not all of your at.js settings from the Target interface, as pictured below. One setting that will not be imported is the Timeout, which will always be 3000ms after adding the extension. For the tutorial, leave the default settings. Note, that on the left hand side it will show the at.js version that ships with the current version of the extension.
 
-1. Click **[!UICONTROL Save to Library and Build]** ![Save the extension](images/target-saveExtension.png)
+1. Click **[!UICONTROL Save to Library and Build]**
+
+    ![Save the extension](images/target-saveExtension.png)
 
 At this point, Target isn't really doing anything, so there is nothing to validate.
 
@@ -351,7 +353,7 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Order Id`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.cart.orderId` as the `Path to Variable`
+1. Use `digitalData.cart.orderId` as the `JavaScript variable name`
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -360,7 +362,7 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Cart Amount`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.cart.cartAmount` as the `Path to Variable`
+1. Use `digitalData.cart.cartAmount` as the `JavaScript variable name`
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 

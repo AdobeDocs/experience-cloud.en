@@ -351,7 +351,7 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Order Id`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.cart.orderId` as the `Path to Variable`
+1. Use `digitalData.cart.orderId` as the `JavaScript variable name`
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -360,7 +360,7 @@ Let's add the data elements and rule we need to fire an order confirmation mbox 
 1. Click **[!UICONTROL Add Data Element]**
 1. Name the data element `Cart Amount`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.cart.cartAmount` as the `Path to Variable`
+1. Use `digitalData.cart.cartAmount` as the `JavaScript variable name`
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**
 

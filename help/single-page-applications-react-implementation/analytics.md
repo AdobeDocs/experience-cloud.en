@@ -151,7 +151,7 @@ First you need to identify which pages are the Product Detail pages. You will do
 
 1. Name the data element `Page Type`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.page.category.type` as the `Path to Variable`
+1. Use `digitalData.page.category.type` as the `JavaScript variable name`
 1. Check the `Clean text` and `Force Lower Case` options
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -170,7 +170,7 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 1. Name the data element `Product Id`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
-1. Use `digitalData.product.0.productInfo.sku` as the `Path to Variable`
+1. Use `digitalData.product.0.productInfo.sku` as the `JavaScript variable name`
 1. Check the `Force lowercase value` option
 1. Check the `Clean text` option
 1. Click **[!UICONTROL Save to Library and Build]**

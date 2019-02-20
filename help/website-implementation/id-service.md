@@ -137,7 +137,7 @@ By knowing the authentication state of the user, you know when a customer id sho
 
 1. Name the data element `Email (Hashed)`
 1. For the **[!UICONTROL Data Element Type]**, select **[!UICONTROL JavaScript Variable]**
-1. As the **[!UICONTROL Path to variable]**, use the following pointer to a variable in the We.Retail site's data layer: `digitalData.user.0.profile.0.attributes.username`
+1. As the **[!UICONTROL JavaScript variable name]**, use the following pointer to a variable in the We.Retail site's data layer: `digitalData.user.0.profile.0.attributes.username`
 1. Leave all of the other settings on their default values
 1. Click **[!UICONTROL Save to Library and Build]** to save the data element
 
