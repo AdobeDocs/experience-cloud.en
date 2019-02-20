@@ -55,7 +55,7 @@ A property is basically a container that you fill with extensions, rules, data e
     ![Click New Property](images/launch-addNewProperty.png)
 
 1. Name your property (e.g. `Launch Tutorial` or `Daniel's Launch Tutorial`)
-1. As the domain, enter `enablementadobe.com` since you will be using this property in conjunction with the We.Retail demo site which is hosted on this domain
+1. As the domain, enter `enablementadobe.com` since this is the domain where the We.Retail demo site is hosted. Although the "Domain" field is required, the Launch property will work on any domain where it's implemented. The main purpose of this field is to pre-populate menu options in the Rule builder.
 1. Click the **[!UICONTROL Save]** button
 
    ![Create a new Property](images/launch-newProperty.png)
