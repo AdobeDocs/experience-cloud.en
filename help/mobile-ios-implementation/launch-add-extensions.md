@@ -12,7 +12,7 @@ In this lesson, you will add extensions to your Launch property.
 
 An extension is a packaged set of code that extends the Launch interface and the library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app. Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
->[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update the embed codes in your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+>[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
@@ -23,8 +23,6 @@ You will need the following solution details:
 * One Analytics report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html).
 
 * Your Analytics tracking server. You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
-  
-* Your Target client code.
 
 ## Learning Objectives
 
@@ -83,7 +81,7 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add The Target extension
 
-Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension requires the Adobe Target extension and adds support for Target's Visual Experience Composer, which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both.
+Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer (currently in Beta), which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both.
 
 >[!NOTE] If you do not have a license for Adobe Target, you can skip this section
 
@@ -95,7 +93,7 @@ Adobe Target has two official extensions, the Adobe Target extension and the Ado
   
    ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTarget.png)
 
-1. Enter your **[!UICONTROL Client Code]**
+1. Your **[!UICONTROL Client Code]** will auto-populate.
 1. Enter `busbookingapp` as the **[!UICONTROL Environment Id]** (this will create a new `host` in Target for the app)
 1. Leave the **[!UICONTROL Timeout]** set to 5 seconds
 1. Click the **[!UICONTROL Save]** button
@@ -117,7 +115,7 @@ Now that the Target extension has been added, you can add the Target VEC extensi
    ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTargetVEC.png)
 
 1. Turn on **[!UICONTROL Auto-Fetch Target Campaigns]**. This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
-1. Leave the **[!UICONTROL Fetch In Background]** option off. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting off will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `off` when you are running activities on the home screen and toggle it `on` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
+1. Leave the **[!UICONTROL Fetch In Background]** option `OFF`. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
 1. Leave the **[!UICONTROL Target Workspace Property]** blank
 1. Click the **[!UICONTROL Save]** button
   

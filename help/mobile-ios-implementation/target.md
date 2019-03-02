@@ -40,7 +40,7 @@ This is an optional step that will turn on special console logging specific to t
 1. Open the AppDelegate.swift file
 1. Add the line of code `ACPTargetVEC.allowDebugLogging(true)` just below the line where you register the Target VEC Extension
 
-   ![Enable Target VEC Logging](images/mobile-targetvec-enableLogging.png)
+   ![Enable Target VEC Logging](images/ios/mobile-targetvec-enableLogging.png)
 
 Now that you've enabled the logging, it's time to confirm that it is working.
 
@@ -62,7 +62,7 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 **To add custom parameters**
 
 1. In XCode, open the `BookingViewController.swift` file
-1. Import the Target VEC extension by adding `import ACPTargetVEC_iOS` beneath the existing import:
+1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import:
 1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values:
 
 ```swift
@@ -74,7 +74,7 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
         ACPTargetVEC.setGlobalRequest(targetParams)
 ```
 
-   ![Add Parameters to the TargetVEC request](images/mobile-targetvec-addParameters.png)
+   ![Add Parameters to the TargetVEC request](images/ios/swift/mobile-targetvec-addParameters.png)
 
 Now that you've added parameters to the app, it's time to confirm they are being passed in the request.
 
@@ -184,13 +184,13 @@ Now let's create an activity in the Target UI.
 
    ![Copy the URL](images/mobile-targetvec-pasteURL.png)
 
-    >![TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator try one of the following tricks:
+    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
     >
-    >   1. **If your Desktop's clipboard is not synced with your Simulator's clipboard** this will prevent you from copy-and-pasting the URL from the Target UI into the Simulator's Safari browser. If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again
+    >   1. **The URL copied from the Target interface doesn't paste into the Simulator** This happens when the Desktop and Simulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again:
     >
     >      ![Toggle the Simulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
     >
-    >   1. **If going to your URL keeps performing a search instead of opening the app**, and you were successful opening a deep link earlier, you won't be able to complete the pairing. Try repasting the deep link URL into the address bar and hitting `Enter` a few times.
+    >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
 
 1. After the App has loaded, switch back to your browser tab where you have Target opened. You should see your app loaded in the VEC.
 1. Click on text and image assets in your app and you should see options to edit and replace them!
@@ -206,10 +206,27 @@ Now let's create an activity in the Target UI.
 
 ## Building Audiences based on Lifecyle metrics
 
-You can easily build Target Audiences based on Lifecycle metrics. Look for all of the Lifecycle metric parameters in the **[!UICONTROL Custom]** selection of the Audience builder:
+Lifecycle metrics built-in metrics about the visitor's usage of your app that are automatically included in calls made by the Adobe Mobile SDK. You can easily build audiences in Target based on these metrics.
 
-   ![Select the Custom option](images/mobile-targetvec-buildingAudiencesCustom.png)
+**To create an audience**
 
-   ![App loads in the VEC](images/mobile-targetvec-buildingAudiences.png)
+1. In the Target interface, click **Audiences** in the top navigation
+1. Click the **Create Audience** button
+
+   ![Create a new audience](images/mobile-targetvec-audienceList.png)
+
+1. Name the Audience `Launches < 5 `
+1. Click **Add Rule > Custom**
+
+   ![Select the Custom option](images/mobile-targetvec-custom.png)
+
+1. In the first dropdown, select the **a.Launches** parameter. All of the Lifecycle metric parameters begin with the "a." prefix. We will Target content based on the number of app Launches the user has, which is an excellent way to target first time users of your app with an instructional, first-time-user-experience (FTUE).
+1. In the next dropdown, select **is less than**
+1. In the third dropdown, enter **5**
+1. Click **Save**
+
+   ![Audience for Launches <= 4](images/mobile-targetvec-LaunchesLessThan5.png)
+
+Note that there are a huge variety of out-of-the-box audience building options in Target. Additionally, you can send up custom data in the Target request for audience-building (which we will look at in Lesson 3), use audiences shared from other Experience Cloud solutions such as Audience Manager and Analytics, and CRM data shared to Target using the Customer Attributes feature of the People Core Service.
   
 [Next "Add Adobe Analytics" >](analytics.md)
