@@ -31,6 +31,7 @@ After completing this tutorial you will be able to:
 <!--* ??? Create rules and data elements to send data to the Adobe solutions-->
 
 <!--* Validate the implementation using the Adobe Experience Cloud Debugger-->
+
 * Publish changes in Launch through development, staging, and production environments
 
 ## Prerequisites

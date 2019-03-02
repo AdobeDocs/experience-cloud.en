@@ -215,7 +215,7 @@ Lifecycle metrics built-in metrics about the visitor's usage of your app that ar
 
    ![Create a new audience](images/mobile-targetvec-audienceList.png)
 
-1. Name the Audience `Launches < 5 `
+1. Name the Audience `Launches < 5`
 1. Click **Add Rule > Custom**
 
    ![Select the Custom option](images/mobile-targetvec-custom.png)
