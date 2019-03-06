@@ -49,4 +49,4 @@ In these lessons, you will implement Adobe Target Recommendations into a fake re
 
 Let's get started!
 
-[Next "Planning your Recommendations Implementation" >](implementation/product-pages.md)
+[Next "Planning your Recommendations Implementation" >](implementation/overview-and-planning.md)

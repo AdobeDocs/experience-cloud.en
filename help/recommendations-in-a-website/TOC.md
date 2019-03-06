@@ -7,7 +7,7 @@ solution-hub-url: https://helpx.adobe.com/support/target.html
 solution-icon: assets/target.png
 getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
-tutorials-title: Tutorials and Videos
+tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/target/kt/index/target-videos.html
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
@@ -25,7 +25,7 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
   + [Add to Cart Modals](implementation/add-to-cart-modals.md)
   + [Cart Page](implementation/cart-page.md)
   + [Order Confirmation Page](implementation/order-confirmation-page.md)
-+ Recommendations Use cases{#use-cases}
++ Set up Recommendations Activities{#use-cases}
   + [Overview and Planning](use-cases/overview-and-planning.md)
   + [Concepts](use-cases/concepts.md)
   + [Home Page](use-cases/home-page.md)
