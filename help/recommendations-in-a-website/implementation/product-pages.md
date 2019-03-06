@@ -1,4 +1,12 @@
-# Implementing for Recommendations on  Product Pages
+---
+title: Implement Recommendations on Product Pages
+description: Learn how to implement Adobe Target Recommendations on Product Pages
+seo-description:
+seo-title: Implement Adobe Target Recommendations on Product Pages
+solution: Adobe Target
+---
+
+# Implement Recommendations on Product Pages
 
 ## Add Entity Parameters for Recommendations (Target Premium)
 
