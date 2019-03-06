@@ -13,7 +13,7 @@ mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 ---
 
-# Implementing the Experience Cloud in Websites with Launch {#recommendations-in-a-website}
+# Implementing Recommendations in Websites{#recommendations-in-a-website}
 
 + [Overview](index.md)
 + [Planning](implementation/product-pages.md)
