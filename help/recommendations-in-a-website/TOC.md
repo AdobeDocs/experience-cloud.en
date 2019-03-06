@@ -28,6 +28,6 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
   + [Home Page](implementation/product-pages.md)
   + [Product Pages](implementation/product-pages.md)
   + [Category Pages](implementation/product-pages.md)
-  + [Add to Cart Modal](launch-switch-environments.md)
+  + [Add to Cart Modal](implementation/product-pages.md)
   + [Cart Page](implementation/product-pages.md)
   + [Order Confirmation Page](implementation/product-pages.md)

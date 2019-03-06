@@ -136,7 +136,7 @@ Typically, you would set up a similar rule on the product category pages that wo
 ### Validate the Entity Parameters
 
 1. Open the We.Retail site to a [product details page](https://aem.enablementadobe.com/content/we-retail/us/en/products/men/coats/portland-hooded-jacket.html#meotwipot-S)
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the earlier lesson
 
    ![Your Launch development environment shown in Debugger](../images/switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
@@ -278,7 +278,7 @@ A few things to note:
 ### Validate the Custom Mbox and Parameters
 
 1. Open the We.Retail site to a [product details page](https://aem.enablementadobe.com/content/we-retail/us/en/products/men/coats/portland-hooded-jacket.html#meotwipot-S)
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the earlier lesson
 
    ![Your Launch development environment shown in Debugger](../images/switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
