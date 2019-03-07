@@ -24,4 +24,4 @@ You should have already completed the lessons in the [Configure Launch](launch-c
 
 ## Steps
 
-[Next "Add Adobe Target" >](target.md)
+[Next "Add Adobe Target" >](target-vec.md)
