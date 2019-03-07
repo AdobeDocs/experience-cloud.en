@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: multi-solution
-user-guide-title: Implementing the Experience Cloud in Mobile iOS Applications
+user-guide-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 solution-icon: assets/experience-cloud.png

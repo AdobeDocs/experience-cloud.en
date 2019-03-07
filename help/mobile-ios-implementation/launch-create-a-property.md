@@ -1,16 +1,18 @@
 ---
-title: General Launch Configuration & Settings
+title: Create a Launch Property for Mobile Apps
 description: Learn how to log into the Launch interface and create a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: General Adobe Launch Configuration & Settings
+seo-title: Create a Launch Property for Mobile Apps
 solution: Experience Cloud
 ---
 
 # Create a Launch Property
 
-In this lesson, you will create your first Launch property.
+Launch, by Adobe is the next generation of mobile SDK and website tag management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app.
+Launch is also a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch UI and client functionality. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+
+In this lesson, you will create a Launch property for mobile apps.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
-title: Create a Library
-description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
+title: Create a Library in Launch, by Adobe
+description: Learn how to create a library in Launch, by Adobe. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
 seo-title: Create a Library in Launch, by Adobe
 solution: Experience Cloud

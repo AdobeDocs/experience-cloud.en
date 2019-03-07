@@ -1,8 +1,8 @@
 ---
-title: General Launch Configuration & Settings
-description: Learn how to log into the Launch interface and create a Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
+title: Add Extensions to a mobile Launch property
+description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: General Adobe Launch Configuration & Settings
+seo-title: Add Extensions to a mobile Launch property
 solution: Experience Cloud
 ---
 

@@ -8,9 +8,9 @@ solution: Experience Cloud
 
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Swift Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
+_Implementing the Experience Cloud in Mobile iOS Swift Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch in your own iOS app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch in your own iOS Swift app!
 
 After completing this tutorial you will be able to:
 
@@ -35,25 +35,17 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 
 Also, it is assumed that you are familiar with iOS development in Swift. You do not need to be a master of Swift to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
-## About Launch
-
-Launch, by Adobe is the next generation of mobile SDK and website tag management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
-
-Launch for websites allows you to centrally manage all of the libraries related to analytics, marketing, and advertising solutions used in your mobile apps. 
-
-Launch is also a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch UI and client functionality. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
-
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake bus app called "[Bus Booking](assets/iOS_Standalone.zip)". The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the Bus Booking app.
+In these lessons, you will implement the Adobe Experience Cloud into a demo app called "[Bus Booking](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)". The App has some simple capabilities that will allow you to complete a basic Experience Cloud mobile implementation before you do so in your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the Bus Booking app.
 
-[![Bus Booking App](images/mobile-busBookingApp.png)](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps/tree/master/Swift)
+[![Bus Booking App](images/mobile-busBookingApp.png)](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
 
 ## Get the Tools
 
 1. You must be use a Mac to complete this tutorial
 1. Download [XCode](https://developer.apple.com/xcode/)
-1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps/tree/master/Swift)
+1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
 1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 Let's get started!
