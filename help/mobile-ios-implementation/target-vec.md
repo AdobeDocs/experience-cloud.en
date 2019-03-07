@@ -1,12 +1,12 @@
 ---
-title: Implement Target with Launch
-description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+title: Add Adobe Target's Visual Experience Composer (VEC)
+description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: Implement Target with Launch
+seo-title: Add Adobe Target's Visual Experience Composer (VEC)
 solution: Experience Cloud
 ---
 
-# Add Adobe Target Visual Experience Composer (VEC)
+# Add Adobe Target's Visual Experience Composer (VEC)
 
 In this lesson, we will enable the Target Visual Experience Composer (VEC) for Mobile apps.
 

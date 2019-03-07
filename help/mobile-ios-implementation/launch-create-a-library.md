@@ -1,8 +1,8 @@
 ---
-title: Add a Data Element, a Rule and a Library
-description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+title: Create a Library
+description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: Add a Data Element, a Rule and a Library
+seo-title: Create a Library in Launch, by Adobe
 solution: Experience Cloud
 ---
 

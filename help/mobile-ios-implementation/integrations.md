@@ -1,8 +1,8 @@
 ---
-title: Implement Experience Cloud Integrations with Launch
-description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+title: Implement Experience Cloud Integrations
+description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: Implement Experience Cloud Integrations with Launch
+seo-title: Implement Experience Cloud Integrations in Mobile Apps
 solution: Experience Cloud
 ---
 

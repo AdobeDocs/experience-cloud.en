@@ -1,18 +1,14 @@
 ---
-title: Implementing the Experience Cloud in Mobile iOS Applications with Adobe Experience Platform Launch
-description: Implementing the Experience Cloud in Websites with Launch is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile apps.
+title: Implementing the Experience Cloud in Mobile iOS Swift Applications
+description: Implementing the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
 seo-description:
-seo-title: Implementing the Experience Cloud in Mobile iOS Applications with Adobe Experience Platform Launch
+seo-title: Implementing the Experience Cloud in Mobile iOS Swift Applications 
 solution: Experience Cloud
 ---
-<!-- update any references to iOS, Swift-->
-<!-- host bus booking apps on public github-->
-<!-- Update Get the Tools-->
-<!-- remove UICONTROL-->
 
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
+_Implementing the Experience Cloud in Mobile iOS Swift Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS apps.
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch in your own iOS app!
 
@@ -27,10 +23,6 @@ After completing this tutorial you will be able to:
   * **[Adobe Target](target.md)**
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**
-
-<!--* ??? Create rules and data elements to send data to the Adobe solutions-->
-
-<!--* Validate the implementation using the Adobe Experience Cloud Debugger-->
 
 * Publish changes in Launch through development, staging, and production environments
 
@@ -55,13 +47,13 @@ Launch is also a platform that allows third-party vendors to create extensions t
 
 In these lessons, you will implement the Adobe Experience Cloud into a fake bus app called "[Bus Booking](assets/iOS_Standalone.zip)". The App has some simple capabilities that will allow you to complete an Experience Cloud mobile implementation before you move on to your own app. You will build your own Launch property, in your own Experience Cloud organization, and implement in a local copy of the Bus Booking app.
 
-[![Bus Booking App](images/mobile-busBookingApp.png)](assets/iOS_Standalone.zip)
+[![Bus Booking App](images/mobile-busBookingApp.png)](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps/tree/master/Swift)
 
 ## Get the Tools
 
 1. You must be use a Mac to complete this tutorial
 1. Download [XCode](https://developer.apple.com/xcode/)
-1. Download the [Bus Booking app](assets/iOS_Standalone.zip)
+1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps/tree/master/Swift)
 1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
 Let's get started!

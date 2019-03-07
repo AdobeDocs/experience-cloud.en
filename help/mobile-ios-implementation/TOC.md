@@ -13,7 +13,7 @@ mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 ---
 
-# Implementing the Experience Cloud in Mobile iOS Applications {#implementing-in-mobile-ios-apps-with-launch}
+# Implementing the Experience Cloud in Mobile iOS Swift Applications {#implementing-in-mobile-ios-swift-apps-with-launch}
 
 + [Overview](index.md)
 + Configuring Launch{#configure-launch}
@@ -23,7 +23,7 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
   + [Install the Mobile SDK](launch-install-the-mobile-sdk.md)
 + Implementing Solutions{#implement-solutions}
   + [Add the ID Service](id-service.md)
-  + [Add Adobe Target](target.md)
+  + [Add Adobe Target's VEC](target-vec.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)
   + [Add Adobe Campaign](campaign.md)
