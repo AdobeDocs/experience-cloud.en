@@ -38,9 +38,7 @@ In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](
 
 Let's go through the instructions step-by-step.
 
-## Implementation Instructions
-
-### Create the Podfile
+## Create the Podfile and Install the Pods
 
 If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
 

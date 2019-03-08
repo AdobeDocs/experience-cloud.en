@@ -57,7 +57,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
 1. Log into Analytics via the Experience Cloud UI. If you don't have Admin access to Analytics, you will need to talk to your Experience Cloud or Analytics admin to assign you access or complete these steps for you.
 
-  ![Log into Adobe Analytics](images/mobile-aam-logIntoAnalytics.png)
+     ![Log into Adobe Analytics](images/mobile-aam-logIntoAnalytics.png)
 
 1. From the top navigation in Analytics, choose **[!UICONTROL Admin > Report Suites]**, and from the list, select (multi-select) the report suite(s) that you want to forward to Audience Manager.
 
