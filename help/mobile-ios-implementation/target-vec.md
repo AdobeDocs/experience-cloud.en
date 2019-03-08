@@ -30,6 +30,7 @@ At the end of this lesson, you will be able to:
 ## Prerequisites
 
 To complete the lessons in this section, you must:
+
 * Complete the lessons in [Configure Launch](launch-create-a-property.md) section.
 * Have Approver-level access to the Adobe Target interface
 
