@@ -1,8 +1,8 @@
 ---
-title: Add Extensions to a mobile Launch property
+title: Add Extensions to a Mobile Launch property
 description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
-seo-title: Add Extensions to a mobile Launch property
+seo-title: Add Extensions to a Mobile Launch property
 solution: Experience Cloud
 ---
 
@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 In this lesson, you will add extensions to your Launch property.
 
-An extension is a packaged set of code that extends the Launch interface and the library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app. Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
+An extension is a packaged set of code that extends the Launch interface and  library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app. Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
 >[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
@@ -29,10 +29,10 @@ You will need the following solution details:
 At the end of this lesson, you will be able to:
 
 * Add Extensions to a mobile Launch property
-* Add the Analytics extension
-* Add the Target and Target VEC extensions
+* Configure the Analytics extension
+* Configure the Target and Target VEC extensions
 
->[!NOTE] Adobe Audience Manager is implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
+>[!NOTE] Adobe Audience Manager can be implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
 
 ## Review the Pre-installed extensions
 
@@ -46,17 +46,17 @@ At the end of this lesson, you will be able to:
 
    1. Note that your Experience Cloud Org ID is detected automatically and pre-populated
    1. The Experience Cloud Server field allows you to specify a custom endpoint for Visitor ID Service requests. Keep the field blank for this tutorial.
-   1. The Session Timeout field allows you to specify when new an app session should timeout. By default, if the app is in the background for 300 seconds or more, the Lifecycle session will timeout. Use the default setting for this tutorial.
+   1. The Session Timeout field allows you to specify when an app Lifecycle session should timeout. By default, it will timeout if the app is in the background for 300 seconds. Use the default setting for this tutorial.
 
 1. Since you haven't changed any of the settings, click **[!UICONTROL Cancel]** to leave the extension configuration and **[!UICONTROL Discard Changes]** in the modal
 
     ![Click Cancel to leave the configuration](images/mobile-extensions-core-cancel.png)
 
-1. The Profile extension allows the SDK to store data in a client-side profile. It has no configurations, so there is nothing to look at. For more information on the Mobile Core extension, see [the documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile).
+1. The Profile extension allows the SDK to store data in a client-side profile. It has no configurations, so there is nothing to look at. For more information on the Profile extension, see [the documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/profile).
 
 ## Add the Solution Extensions
 
-Now it's time to get to the fun part and start adding the extensions for the solutions you will be implementing in this tutorial. When using Launch with mobile applications, the app must be updated every time an extension is added or removed. So, in order to save time later, we will add all of the extensions now. Just skip any extensions which your company has not licensed.
+Now it's time to get to the fun part and start adding the extensions for the solutions you will be implementing in this tutorial. When using Launch with mobile applications, the app must be updated every time an extension is added or removed. In order to save time later, we will add all of the extensions in this lesson. Just skip any solutions which your company has not licensed.
 
 ### Add the Adobe Analytics extension
 
@@ -93,9 +93,9 @@ Adobe Target has two official extensions, the Adobe Target extension and the Ado
   
    ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTarget.png)
 
-1. Your **[!UICONTROL Client Code]** will auto-populate.
+1. Your **[!UICONTROL Client Code]** will pre-populate.
 1. Enter `busbookingapp` as the **[!UICONTROL Environment Id]** (this will create a new `host` in Target for the app)
-1. Leave the **[!UICONTROL Timeout]** set to 5 seconds
+1. Leave the **[!UICONTROL Timeout]** set to 5 seconds. If the Target response hasn't been received in the time specified in this field, the visitor will see default content.
 1. Click the **[!UICONTROL Save]** button
   
     ![Configure the Target settings](images/mobile-extensions-target-settings.png)
@@ -114,9 +114,9 @@ Now that the Target extension has been added, you can add the Target VEC extensi
   
    ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTargetVEC.png)
 
-1. Turn on **[!UICONTROL Auto-Fetch Target Campaigns]**. This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
-1. Leave the **[!UICONTROL Fetch In Background]** option `OFF`. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
-1. Leave the **[!UICONTROL Target Workspace Property]** blank
+1. Turn `ON` **[!UICONTROL Auto-Fetch Target Campaigns]**. This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
+1. Leave `OFF` **[!UICONTROL Fetch In Background]**. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
+1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the Target Premium Enterprise User Permissions feature.
 1. Click the **[!UICONTROL Save]** button
   
     ![Configure the Target VEC settings](images/mobile-extensions-targetVEC-settings.png)

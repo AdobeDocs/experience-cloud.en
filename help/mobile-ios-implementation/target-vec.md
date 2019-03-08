@@ -29,7 +29,9 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-To complete the lessons in this section, you must first complete the lessons in [Configure Launch](launch-create-a-property.md) section.
+To complete the lessons in this section, you must:
+* Complete the lessons in [Configure Launch](launch-create-a-property.md) section.
+* Have Approver-level access to the Adobe Target interface
 
 ## Enable logging for the Target VEC extension
 
@@ -89,13 +91,13 @@ Now that you've added parameters to the app, it's time to confirm they are being
 
    ![Verify Parameters to the TargetVEC request](images/mobile-targetvec-verifyParams.png)
 
-## Pairing the Mobile App with the Target UI
+## Pairing the Mobile App with the Target Interface
 
 In order to create VEC activities in the Target interface, you must first pair Target with your app. This pairing is achieved with the use of deep links.
 
 ### Creating the Deep Link Scheme
 
-iOS supports the use of [Universal Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) and [custom URL schemes](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app) to create deep links to your app. You are probably already using custom URL schemes in your app already. If so, you can use these existing links to pair with Target. For this tutorial using the sample app in the simulator, you must create a custom URL scheme.
+iOS supports the use of [Universal Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) and [custom URL schemes](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app) to create deep links to your app. You are probably already using custom URL schemes in your own app already. If so, you can use these existing links to pair with Target when you implement Target in your app. For this tutorial using the sample app in the simulator, you must create a custom URL scheme.
 
 **To register your URL Scheme**
 

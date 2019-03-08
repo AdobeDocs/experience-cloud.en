@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add a Library
 
-In this lesson, you will create your first Library.
+In this lesson, you will create a library for your new Launch property.
 
 ## Learning Objectives
 
@@ -16,7 +16,7 @@ At the end of this lesson, you will be able to:
 
 * Create a library
 * Add changes to a library
-* Build a Library
+* Build a library
 
 ## Save Your Changes to a Library
 

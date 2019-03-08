@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Install the Mobile SDK
 
-In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment. Along the way, you will learn about two main concepts of Launch&mdash;Environments and Embed Codes.
+In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment.
 
 ## Learning Objectives
 
@@ -22,7 +22,7 @@ At the end of this lesson, you will be able to:
 
 ## Get the Installation Instructions
 
-The Installation Instructions for mobile Launch properties is a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
+The Installation Instructions for mobile Launch properties are a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
 
 Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you. These correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.  
 
@@ -42,16 +42,16 @@ Let's go through the instructions step-by-step.
 
 ### Create the Podfile
 
-If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web Launch properties.
+If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
 
-The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have [CocoaPods](https://cocoapods.org/) installed in your development environment, follow the installation instructions on their website. Also, if you haven't already downloaded the [Bus Booking app](assets/iOS_Standalone.zip), save it to your local machine and extract the zip archive to your desktop.
+The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have [CocoaPods](https://cocoapods.org/) installed in your development environment, follow the installation instructions on their website. Also, if you haven't already downloaded the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps), save it to your local machine and extract the zip archive to your desktop.
 
 **To create the Podfile**
 
 1. Change the operating system to `iOS`
 1. Open the `Terminal` Application on your Mac
 
-1. Navigate to the project folder where you saved the Bus Booking app (e.g. `cd Desktop/iOS_Standalone/BusDemoSwift/`)
+1. Navigate to the project folder where you saved the Bus Booking Swift app (e.g. `cd Desktop/busbooking-mobileapps/Swift/`)
 
    ![navigate to the project directory](images/ios/mobile-launch-install-goToProjectDirectory.png)
 
@@ -112,17 +112,17 @@ Now it's time to update the App to import the SDK
    ![Copy the Swift import statements to your clipboard](images/ios/swift/mobile-launch-install-openAppDelegate.png)
 
 1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Swift]** as the iOS language you are using.
-1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
+1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section:
 
    ![Copy the Swift import statements to your clipboard](images/ios/swift/mobile-launch-install-copyImports.png)
 
 1. In XCode, paste these import statements into the AppDelegate file after the import for the `UIKit`
 
->[!NOTE If the import for the Target VEC extension was `import ACPTargetVEC_iOS/ACPTargetVEC_iOS` please update it to `import ACPTargetVEC`]
+        >[!NOTE If the import for the Target VEC extension was `import ACPTargetVEC_iOS/ACPTargetVEC_iOS` please update it to `import ACPTargetVEC`]
 
    ![Paste the Swift import statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteImports.png)
 
-1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Copy the Core statements to your clipboard](images/ios/swift/mobile-launch-install-copyCore.png)
 
