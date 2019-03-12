@@ -30,7 +30,7 @@ You will use this to set the reserved `entity.id` parameter to key recommendatio
 
 1. Click **[!UICONTROL Data Elements]** in the top navigation
 1. Click **[!UICONTROL Add Data Element]**
-1. Name the data element `Product SKU (Target)`
+1. Name the data element `Product ID`
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.product.0.productInfo.sku` as the `Path to Variable`
 1. Check the `Force lowercase value` option
@@ -115,7 +115,7 @@ Now that you have created all of the data elements you need to add them to the g
     ![Configure the event](../images/target-recs-prodDetail-addCondition.png)
 
    1. Select **[!UICONTROL Condition Type > Value Comparison]**
-   1. Use the data element picker, choose `Product SKU (Target)`
+   1. Use the data element picker, choose `Product ID`
    1. Select  **[!UICONTROL Is Truthy]** from the comparison operator dropdown
    1. Click **[!UICONTROL Keep Changes]**
 
@@ -226,7 +226,7 @@ You will use this to set the reserved `entity.message` parameter to populate the
     ![Configure the event](../images/target-recs-prodDetail-addCondition-windowLoaded.png)
 
    1. Select **[!UICONTROL Condition Type > Value Comparison]**
-   1. Use the data element picker, choose `Product SKU (Target)`
+   1. Use the data element picker, choose `Product ID`
    1. Select  **[!UICONTROL Is Truthy]** from the comparison operator dropdown
    1. Click **[!UICONTROL Keep Changes]**
 
@@ -248,7 +248,7 @@ You will use this to set the reserved `entity.message` parameter to populate the
       adobe.target.getOffer({
         "mbox": "recs-entities",
         "params": {
-          "entity.id": _satellite.getVar('Product SKU (Target)'),
+          "entity.id": _satellite.getVar('Product ID'),
           "entity.value": _satellite.getVar('Product Price'),
           "entity.message": _satellite.getVar('Product Description'),
           "entity.event.detailsOnly":"true"

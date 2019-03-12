@@ -39,7 +39,7 @@ At the end of this lesson, you will be able to:
    ![Build for Staging](images/mobile-publishing-buildForStaging.png)
 1. Once the green-dot icon appears, the library can be previewed in the Staging environment.
 
-In a real-life scenario, the next step in the process would typically be to have your QA team validate the changes in the Staging library. They can do this using the Debugger.
+In a real-life scenario, the next step in the process would typically be to have your QA team validate the changes in the Staging library.
 
 **To Validate the Changes in the Staging Library**
 
@@ -49,6 +49,8 @@ In a real-life scenario, the next step in the process would typically be to have
 
    ![Install icon](images/mobile-launch-installIcon.png) to open the modal
    ![Go to the Environments page and click to open the modal](images/mobile-publishing-getStagingCode.png)
+
+If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial. At this point, the only difference in the installation instructions from your development environment is the Launch reference in the Core Configuration, as highlighted in the screenshot above
 
 In real-life, once your QA team has signed off by reviewing the changes in the Staging environment it is time to publish to production.
 
@@ -78,4 +80,8 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
    ![Published](images/mobile-publishing-published.png)
 
-That’s it! You've completed the tutorial and published your first property in Launch!
+>[!WARNING] With this publish, the only thing different in the installation instructions is the Launch environment reference. Make sure that your production app includes the Production environment Launch reference and not your Development environment's reference!
+
+>[!TIP] The next time you make changes to your Launch configuration you will need to create a new Library in the Development environment. Remember, that adding and removing extensions will require updates to the app itself. Be careful about keeping your Launch environments and app code in sync with each other to avoid issues.
+
+That’s it! You've completed the tutorial and published your first mobile property in Launch!
