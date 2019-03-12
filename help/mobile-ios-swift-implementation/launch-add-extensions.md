@@ -10,7 +10,9 @@ solution: Experience Cloud
 
 In this lesson, you will add extensions to your Launch property.
 
-An extension is a packaged set of code that extends the Launch interface and  library functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app. Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
+Launch is a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform SDK that you need for your specific app.  You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+
+Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
 >[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
@@ -37,7 +39,7 @@ At the end of this lesson, you will be able to:
 ## Review the Pre-installed extensions
 
 1. Click the **[!UICONTROL Extensions]** tab to go to the extensions page
-1. Note that the `Mobile Core` and `Profile` are pre-installed in every mobile property
+1. Note that the `Mobile Core` and `Profile` extensions are pre-installed in your new mobile property
 1. Click the **[!UICONTROL Configure]** button on the Core extension to examine its settings
 
    ![Go to the extensions tab](images/mobile-extensions-installed-default.png)
@@ -114,8 +116,8 @@ Now that the Target extension has been added, you can add the Target VEC extensi
   
    ![Go to the Extensions catalog and click Install to add the Target extension](images/mobile-extensions-catalog-installTargetVEC.png)
 
-1. Turn **[!UICONTROL Auto-Fetch Target Campaigns]** `ON` . This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
-1. Leave **[!UICONTROL Fetch In Background]** `OFF`. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
+1. Turn **[!UICONTROL Auto-Fetch Target Campaigns]**&nbsp;&nbsp;`ON` . This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
+1. Leave **[!UICONTROL Fetch In Background]**&nbsp;&nbsp;`OFF`. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
 1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the Target Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature.
 1. Click the **[!UICONTROL Save]** button
   

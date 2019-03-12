@@ -10,8 +10,6 @@ solution: Experience Cloud
 
 Launch, by Adobe is the next generation of mobile SDK and website tag management capabilities. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
 
-Launch is also a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch UI and client functionality. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
-
 In this lesson, you will create a Launch property for mobile apps.
 
 ## Prerequisites
@@ -48,7 +46,7 @@ If you use Launch frequently, you can also bookmark the following URL and log in
 
 ## Create a Property
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A single mobile property can be used across multiple app platforms (e.g. iOS and Android) provided the apps contain similar functionality and similar solutions are being implemented.  For more information on creating properties, see ["Set up a mobile property"](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property) in the product documentation.
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A single mobile property can be used across multiple app platforms (e.g. iOS and Android) provided the apps contain similar functionality and require the same solutions to be implemented.  For more information on creating properties, see ["Set up a mobile property"](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property) in the product documentation.
 
 **To Create a Property**
 

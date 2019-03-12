@@ -40,7 +40,7 @@ This is an optional step that will turn on special console logging specific to t
 
 **To enable logging**
 
-1. Open the AppDelegate.swift file
+1. Open the `AppDelegate.swift` file in XCode
 1. Add the line of code `ACPTargetVEC.allowDebugLogging(true)` just below the line where you register the Target VEC Extension
 
    ![Enable Target VEC Logging](images/ios/mobile-targetvec-enableLogging.png)
@@ -50,13 +50,17 @@ Now that you've enabled the logging, it's time to confirm that it is working.
 **To verify the logging**
 
 1. Save the XCode project
-1. Rebuild the app
-1. When the app has opened successfully click in the Console pane of XCode
+1. Rebuild the app and wait for it to reopen in the Simulator
+1. Click in the Console pane of XCode
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters are automatically included):
 
    ![Verify Target VEC Logging](images/mobile-targetvec-requestInConsole.png)
+
+Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
+
+Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be Targeted to these properties.
 
 ## Add Parameters
 
@@ -64,9 +68,9 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 
 **To add custom parameters**
 
-1. In XCode, open the `BookingViewController.swift` file
-1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import:
-1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values:
+1. In XCode, open the `BookingViewController.swift` file. This file is used by the Home screen.
+1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import
+1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
 ```swift
         let mboxParams = ["mboxparam1":"mboxvalue1"]
@@ -84,11 +88,11 @@ Now that you've added parameters to the app, it's time to confirm they are being
 **To verify the parameters**
 
 1. Save the XCode project
-1. Rebuild the app
-1. When the app has opened successfully click in the Console pane of XCode
+1. Rebuild the app and wait for it to reopen in the Simulator
+1. Click in the Console pane of XCode
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
-1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters are automatically included):
+1. Hit `Enter` to jump to the Target request and Post body. Locate the custom parameters you just added to the request:
 
    ![Verify Parameters to the TargetVEC request](images/mobile-targetvec-verifyParams.png)
 
@@ -98,44 +102,52 @@ In order to create VEC activities in the Target interface, you must first pair T
 
 ### Creating the Deep Link Scheme
 
-iOS supports the use of [Universal Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) and [custom URL schemes](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app) to create deep links to your app. You are probably already using custom URL schemes in your own app already. If so, you can use these existing links to pair with Target when you implement Target in your app. For this tutorial using the sample app in the simulator, you must create a custom URL scheme.
+iOS supports the use of [Universal Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) and [custom URL schemes](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app) to create deep links to your app. You probably already use custom URL schemes in your app. If so, you can use these existing links to pair with Target. For this tutorial, you must create a custom URL scheme.
 
 **To register your URL Scheme**
 
-1. In XCode, click on your app to open the Settings screen
+1. In XCode, double-click on your app to open the Settings screen
 1. On the Settings screen, click the `Info` tab
-1. Enter a **[!UICONTROL Identifier]** (e.g. `com.danielwright.BusDemo` substituting your name for `danielwright`)
-1. Enter the **[!UICONTROL URL Scheme]** (e.g. `danielwrightBusDemo` substituting your name for `danielwright`)
+1. Expand the URL Types section
+1. Note that the **[!UICONTROL Identifier]** is set to `com.adobetarget.BusBookingSwift`. You can use this identifier or change it if you like.
+1. Note that the **[!UICONTROL URL Scheme]** is `BusBookingSwift`. You can use this scheme or change it if you like.
 1. Make sure  **[!UICONTROL Editor]** is selected as the **[!UICONTROL Role]**
 
    ![Register the URL Scheme](images/mobile-targetvec-registerScheme.png)
 
-1. Click on the `General` tab so the scheme will save
-1. Click back on the `Info` tab, expand the `URL type` section and verify that your URL type saved
+1. If you updated the identifier or scheme, click on the `General` tab so the scheme will save.  Click back on the `Info` tab, expand the `URL type` section and verify that your identifier or scheme and saved.
   
 The next step is to add a handler to the deep link.
 
 **To handle the deep links**
 
-1. Open the AppDelegate.swift file
+1. Open the `AppDelegate.swift` file
 1. Add the line `ACPTargetVEC.handleDeepLink(url)` to the `AppDelegate:application:openURL` section as pictured below
    ![Update the AppDelegate file](images/mobile-targetvec-appDelegate.png)
 
 ### Verify the deep link
 
-Now, when a user with your app installed opens the URL `danielwrightBusDemo://com.danielwright.BusDemo` (or whatever scheme you defined) it will open your application.
+Now, when a user with your app installed opens a URL like `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) in the Simulator it will open your application.
 
 **To verify the deep link scheme**
 
 1. Save the XCode project
 1. Rebuild the app
-1. In the simulator, open Safari
-1. Enter the url scheme you just defined into the address bar, e.g. `danielwrightBusDemo://com.danielwright.BusDemo`
-1. You should get prompted with a modal to "Open this page in "BusDemoSwift" (if you get a Google search results page, try reentering the deep link into the address bar)
+1. In the Simulator, open Safari
+1. Enter the url `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) into the address bar. If you have any difficulties, see the Tip section below.
+1. You should get prompted with a modal to "Open this page in "BusBookingSwift." If you have any difficulties, see the Tip section below.
 1. Click `Open`
-1. This should open the sample application
+1. This should open the Bus Booking app!
 
    ![Verify the deep link](images/mobile-targetvec-verifyDeepLink.png)
+  
+    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
+    >
+    >   1. **The URL copied from the Target interface doesn't paste into the Simulator** This happens when the Desktop and Simulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again:
+    >
+    >      ![Toggle the Simulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
+    >
+    >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
 
 Now that your deep link structure is set up, you are ready to use the Target VEC to set up activities!
 

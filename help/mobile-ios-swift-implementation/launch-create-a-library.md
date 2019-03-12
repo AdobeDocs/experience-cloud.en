@@ -46,6 +46,6 @@ After configuring your extensions, you need to package them into a library that 
 
 1. After a few moments, the status dot will turn green indicating the library successfully built.
 
-  ![Library Built](images/mobile-launch-libraryBuilt.png)
+    ![Library Built](images/mobile-launch-libraryBuilt.png)
 
 [Next "Install the Launch Property and the SDK" >](launch-install-the-mobile-sdk.md)

@@ -28,7 +28,7 @@ Click on the `Environments` tab in the top navigation to go to the environments 
 
 Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
 
-These are the only environments we need to complete the tutorial.  
+Development, Staging, and Production are the only environments we need to complete the tutorial.  
 
 ![Click Environments in the top nav](images/mobile-launch-environments.png)
 
@@ -106,7 +106,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 Now it's time to update the App to import the SDK
 
 1. Open the `BusBookingSwift.xcworkspace` file in XCode
-1. Open the AppDelegate.swift file
+1. Open the `AppDelegate.swift` file
 
    ![Copy the Swift import statements to your clipboard](images/ios/swift/mobile-launch-install-openAppDelegate.png)
 
@@ -115,7 +115,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Swift import statements to your clipboard](images/ios/swift/mobile-launch-install-copyImports.png)
 
-1. In XCode, paste these import statements into the AppDelegate file after the import for the `UIKit`
+1. In XCode, paste these import statements into the `AppDelegate.swift` file after the import for the `UIKit`
 
    ![Paste the Swift import statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteImports.png)
 
@@ -142,7 +142,7 @@ Now it's time to update the App to import the SDK
 
    ![Run the app and launch it in the emulator](images/ios/swift/mobile-launch-install-buildAndLaunch.png)
 
-1. Wait for the emulator to launch and fully open the app to the booking screen
+1. Wait for the Simulator to launch and fully open the app to the booking screen (this may take a few minutes)
 
    ![Wait for the app to full open](images/ios/mobile-launch-install-simulator.png)
   
