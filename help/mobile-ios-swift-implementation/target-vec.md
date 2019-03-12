@@ -137,7 +137,7 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
 1. Enter the url `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) into the address bar. If you have any difficulties, see the Tip section below.
 1. You should get prompted with a modal to "Open this page in "BusBookingSwift." If you have any difficulties, see the Tip section below.
 1. Click `Open`
-1. This should open the Bus Booking app!
+1. This should open the Bus Booking app
 
    ![Verify the deep link](images/mobile-targetvec-verifyDeepLink.png)
   
@@ -177,14 +177,14 @@ Now let's create an activity in the Target UI.
 
    ![Add a new app](images/mobile-targetvec-addNewApp.png)
 
-1. Enter the url scheme you just defined in the  **[!UICONTROL Enter URL scheme]** field, e.g. `danielwrightBusDemo://com.danielwright.BusDemo`
+1. Enter the url scheme you just defined in the  **[!UICONTROL Enter URL scheme]** field, e.g. `BusBookingSwift://com.adobetarget.BusBookingSwift`
 1. Click **[!UICONTROL Create Deep Link]**
 
    ![Enter your URL Scheme and Create the Deep Link](images/mobile-targetvec-enterURLScheme.png)
 
-    >![NOTE] You have a few options to send the deep link to the app. You can:
+    >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
-    >   1. Take a photo of the QR code if you have an iOS device linked to XCode
+    >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to XCode)
     >   1. Copy the deep link from the Target interface and send it to the device however you would like
     >   1. Email the deep link to a valid email address and then open the link with an email application on the device
 
@@ -216,8 +216,8 @@ Now let's create an activity in the Target UI.
 1. Now position the Simulator next to the browser with the VEC open
 1. Navigate to a different screen in the app and notice how the VEC updates with the Simulator!
 1. You can make updates to multiple views in your app, in a single activity!
-   ![App loads in the VEC](images/mobile-targetvec-navigateTheApp.png)
 1. You can also visually add click-tracking metrics!
+   ![App loads in the VEC](images/mobile-targetvec-navigateTheApp.png)
 
 ## Building Audiences based on Lifecyle metrics
 
