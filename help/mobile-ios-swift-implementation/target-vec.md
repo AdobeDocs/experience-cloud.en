@@ -1,6 +1,6 @@
 ---
 title: Add Adobe Target's Visual Experience Composer (VEC)
-description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
+description: Learn how to implement Target's Visual Experience Composer (VEC) with custom parameters, pair it with your device, and build an activity. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
 seo-title: Add Adobe Target's Visual Experience Composer (VEC)
 solution: Experience Cloud
@@ -8,11 +8,13 @@ solution: Experience Cloud
 
 # Add Adobe Target's Visual Experience Composer (VEC)
 
-In this lesson, we will enable the Target Visual Experience Composer (VEC) for Mobile apps.
+In this lesson, you will enable the Target Visual Experience Composer (VEC) for Mobile apps.
 
 [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
 The Visual Experience Composer (VEC) for Native Mobile Apps lets you create activities and personalize content on native mobile apps in a do-it-yourself fashion without continuous development dependencies and app-release cycles.
+
+>[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
 
 In the lesson [Add Extensions](launch-add-extensions.md), you added the Target VEC extension to your Launch property. In the lesson [Install the Mobile SDK](launch-install-the-mobile-sdk.md) you imported the extension into the sample application. Only a few minor updates are required to start setting up activities in Target's mobile visual experience composer!
 
@@ -250,4 +252,4 @@ Lifecycle metrics built-in metrics about the visitor's usage of your app that ar
 
 Note that there are a huge variety of out-of-the-box audience building options in Target. Additionally, you can send up custom data in the Target request for audience-building (which we will look at in Lesson 3), use audiences shared from other Experience Cloud solutions such as Audience Manager and Analytics, and CRM data shared to Target using the Customer Attributes feature of the People Core Service.
   
-[Next "Add Adobe Analytics" >](analytics.md)
+[Next "Add Adobe Target" >](target.md)
