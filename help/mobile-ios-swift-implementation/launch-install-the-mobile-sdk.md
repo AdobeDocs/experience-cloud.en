@@ -50,7 +50,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 1. Navigate to the project folder where you saved the Bus Booking Swift app (e.g. `cd Desktop/busbooking-mobileapps-master/Swift/`)
 
-   ![navigate to the project directory](images/ios/mobile-launch-install-goToProjectDirectory.png)
+   ![navigate to the project directory](images/ios/swift/mobile-launch-install-goToProjectDirectory.png)
 
 1. In the Launch interface, change the operating system to `iOS`
 
@@ -60,11 +60,11 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 1. In your Terminal app, run the `pod init` command and wait for it to complete
 
-   ![Run pod init](images/ios/mobile-launch-install-runPodInit.png)
+   ![Run pod init](images/ios/swift/mobile-launch-install-runPodInit.png)
 
 1. In your Terminal app, open the podfile with the `open podfile` command
 
-   ![Run open podfile](images/ios/mobile-launch-install-openPodfile.png)
+   ![Run open podfile](images/ios/swift/mobile-launch-install-openPodfile.png)
 
 1. Your computer may open a dialog asking with which application you would like to open the podfile. Choose any text editor, like `TextEdit`
 
@@ -76,7 +76,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 1. Save the updates to the podfile in your text editor
 
-   ![Add dependencies and save](images/ios/mobile-launch-install-addDependenciesAndSave.png)
+   ![Add dependencies and save](images/ios/swift/mobile-launch-install-addDependenciesAndSave.png)
 
 1. You can now close your text editor
 
@@ -93,13 +93,13 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
    ![Copy pod install to your clipboard in the Launch interface](images/ios/mobile-launch-install-copyPodInstall.png)
 
 1. In your Terminal app, run the `pod install` command and wait for it to complete
-   ![Run pod install](images/ios/mobile-launch-install-podInstall.png)
+   ![Run pod install](images/ios/swift/mobile-launch-install-podInstall.png)
 
 1. You can now close your Terminal window
 
 1. Open a Finder window, navigate to the folder where you saved the Bus Booking app, and confirm that the BusDemoSwift.xcworkspace file, the Podfile, the Podfile.lock file, as well as the Pods folder have been created
 
-   ![Confirm pods in the finder](images/ios/mobile-launch-install-podsInFinder.png)
+   ![Confirm pods in the finder](images/ios/swift/mobile-launch-install-podsInFinder.png)
 
 ## Update the AppDelegate
 
@@ -148,7 +148,7 @@ Now it's time to update the App to import the SDK
   
 1. Confirm that calls are being made to the Adobe servers in the XCode Console
 
-   ![Wait for the app to full open](images/ios/mobile-launch-install-console.png)
+   ![Wait for the app to fully open](images/ios/swift/mobile-launch-install-console.png)
 
 Here are examples of some specific calls you can look for:
 

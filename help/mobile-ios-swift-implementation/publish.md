@@ -10,12 +10,16 @@ solution: Experience Cloud
 
 Now that you have implemented some key solutions of the Adobe Experience Cloud in your Development environment, it's time to learn the publishing workflow.
 
+## Prerequisites
+
+Your Launch user account needs permission to "Approve" and "Publish" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/launch-reference/administration/user-permissions).
+
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
 1. Publish a Development library to the Staging environment
-1. Map a Staging library to your production website using the Debugger
+1. Update your app to load different Launch environments
 1. Publish a Staging library to the Production environment
 
 ## Publish to Staging
@@ -50,7 +54,7 @@ In a real-life scenario, the next step in the process would typically be to have
    ![Install icon](images/mobile-launch-installIcon.png) to open the modal
    ![Go to the Environments page and click to open the modal](images/mobile-publishing-getStagingCode.png)
 
-If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial. At this point, the only difference in the installation instructions from your development environment is the Launch reference in the Core Configuration, as highlighted in the screenshot above
+If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial. At this point, the only difference in the installation instructions from your development environment is the Launch reference in the Core Configuration, as highlighted in the screenshot above. You would need to update the corresponding line in your AppDelegate.swift file and rebuild your app.
 
 In real-life, once your QA team has signed off by reviewing the changes in the Staging environment it is time to publish to production.
 
@@ -68,7 +72,7 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
 1. The library will now appear in the [!UICONTROL Approved] column in the unbuilt state (yellow dot):
 
-1. Open the dropdown and select **[!UICONTROL **Build and Publish to Production]**:
+1. Open the dropdown and select **[!UICONTROL Build and Publish to Production]**:
 
    ![Click Build &amp; Publish to Production](images/mobile-publishing-buildAndPublishToProduction.png)
 
@@ -80,8 +84,9 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
    ![Published](images/mobile-publishing-published.png)
 
->[!WARNING] With this publish, the only thing different in the installation instructions is the Launch environment reference. Make sure that your production app includes the Production environment Launch reference and not your Development environment's reference!
+Again, notice that the Production environment uses a Launch reference in the Core Configuration, as highlighted in the screenshot below.  If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial.
+   ![Go to the Environments page and click to open the modal](images/ios/swift/mobile-publishing-getProductionCode.png)
 
->[!TIP] The next time you make changes to your Launch configuration you will need to create a new Library in the Development environment. Remember, that adding and removing extensions will require updates to the app itself. Be careful about keeping your Launch environments and app code in sync with each other to avoid issues.
+>[!WARNING] The next time you make changes to your Launch configuration you will need to create a new Library in the Development environment. Remember, that adding and removing extensions will require updates to the app itself. Be careful about keeping your Launch environments and app code in sync with each other to avoid issues.
 
 That’s it! You've completed the tutorial and published your first mobile property in Launch!

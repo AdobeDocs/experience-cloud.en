@@ -44,7 +44,7 @@ After configuring your extensions, you need to package them into a library that 
 
    ![Save and Build for Development](images/mobile-launch-saveAndBuild.png)
 
-1. After a few moments, the status dot will turn green indicating the library successfully built.
+1. After a few moments, the status dot will turn green indicating the library built successfully.
 
     ![Library Built](images/mobile-launch-libraryBuilt.png)
 
