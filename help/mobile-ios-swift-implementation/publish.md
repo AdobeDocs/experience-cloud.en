@@ -52,7 +52,7 @@ In a real-life scenario, the next step in the process would typically be to have
 1. In the [!UICONTROL Staging] row, click the Install icon
 
    ![Install icon](images/mobile-launch-installIcon.png) to open the modal
-   ![Go to the Environments page and click to open the modal](images/mobile-publishing-getStagingCode.png)
+   ![Go to the Environments page and click to open the modal](images/ios/swift/mobile-publishing-getStagingCode.png)
 
 If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial. At this point, the only difference in the installation instructions from your development environment is the Launch reference in the Core Configuration, as highlighted in the screenshot above. You would need to update the corresponding line in your AppDelegate.swift file and rebuild your app.
 
