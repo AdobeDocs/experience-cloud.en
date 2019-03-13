@@ -1,22 +1,22 @@
 ---
-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
-description: Implementing the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
+title: Implementing the Experience Cloud in Mobile Android Applications
+description: Implementing the Experience Cloud in Mobile Android Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile Android apps.
 seo-description:
-seo-title: Implementing the Experience Cloud in Mobile iOS Swift Applications 
+seo-title: Implementing the Experience Cloud in Mobile Android Applications 
 solution: Experience Cloud
 ---
 
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Swift Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
+_Implementing the Experience Cloud in Mobile Android Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their Android apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Android app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own Android app!
 
 After completing this tutorial you will be able to:
 
 * Create a mobile Launch property
 
-* Install a Launch property in a Swift app
+* Install a Launch property in a Android app
 
 * Implement the following Adobe Experience Cloud solutions:
   * **[Experience Cloud ID Service](id-service.md)**
@@ -44,10 +44,9 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 
 ## Get the Tools
 
-1. You must use a Mac to complete this tutorial
-1. Download [XCode](https://developer.apple.com/xcode/)
+1. Download [Android Studio](https://developer.android.com/studio)
 1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
-1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
+1. Install [Gradle](https://gradle.org/)
 
 Let's get started!
 

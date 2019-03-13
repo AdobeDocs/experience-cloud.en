@@ -1,22 +1,22 @@
 ---
-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
-description: Implementing the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
+title: Implementing the Experience Cloud in Mobile iOS Objective-C Applications
+description: Implementing the Experience Cloud in Mobile iOS Objective-C Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Objective-C apps.
 seo-description:
-seo-title: Implementing the Experience Cloud in Mobile iOS Swift Applications 
+seo-title: Implementing the Experience Cloud in Mobile iOS Objective-C Applications 
 solution: Experience Cloud
 ---
 
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Swift Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
+_Implementing the Experience Cloud in Mobile iOS Objective-C Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Objective-C apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Objective-C app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Objective-C app!
 
 After completing this tutorial you will be able to:
 
 * Create a mobile Launch property
 
-* Install a Launch property in a Swift app
+* Install a Launch property in a Objective-C app
 
 * Implement the following Adobe Experience Cloud solutions:
   * **[Experience Cloud ID Service](id-service.md)**
@@ -34,7 +34,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 * For Target, you must have approver-level access to the Adobe Target interface
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 
-Also, it is assumed that you are familiar with iOS development in Swift. You do not need to be a master of Swift to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
+Also, it is assumed that you are familiar with iOS development in Objective-C. You do not need to be a master of Objective-C to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
 ## About the Lessons
 
