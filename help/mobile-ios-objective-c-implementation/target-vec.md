@@ -17,7 +17,6 @@ The Visual Experience Composer (VEC) for Native Mobile Apps lets you create acti
 In the lesson [Add Extensions](launch-add-extensions.md), you added the Target VEC extension to your Launch property. In the lesson [Install the Mobile SDK](launch-install-the-mobile-sdk.md) you imported the extension into the sample application. Only a few minor updates are required to start setting up activities in Target's mobile visual experience composer!
 
 >[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
-
 >[!NOTE] Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
 
 ## Learning Objectives
@@ -75,15 +74,15 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 1. In the `viewDidLoad` function, after the line with `super.viewDidLoad` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
     ```objective-c
-    NSDictionary *mboxParams = @{@"mboxparam1":@"mboxvalue1"}; //mbox or view params 
-    NSDictionary *profileParams = @{@"profilekey1":@"profilevalue1"}; //profile params 
+    NSDictionary *mboxParams = @{@"mboxparam1":@"mboxvalue1"}; //mbox or view params
+    NSDictionary *profileParams = @{@"profilekey1":@"profilevalue1"}; //profile params
 
-    TargetProduct *product = [[TargetProduct alloc] initWithProductId:@"1234" categoryId:@"furniture"]; 
-    TargetOrder *order = [[TargetOrder alloc] initWithOrderId:@"12343" total:@(123.45) purchasedProductIds:@[@"100",@"200"]]; 
-    TargetParameters *targetParams = [[TargetParameters alloc] initWithParameters:mboxParams 
-                                                                profileParameters:profileParams 
-                                                                        product:product 
-                                                                            order:order]; 
+    TargetProduct *product = [[TargetProduct alloc] initWithProductId:@"1234" categoryId:@"furniture"];
+    TargetOrder *order = [[TargetOrder alloc] initWithOrderId:@"12343" total:@(123.45) purchasedProductIds:@[@"100",@"200"]];
+    TargetParameters *targetParams = [[TargetParameters alloc] initWithParameters:mboxParams
+                                                                profileParameters:profileParams
+                                                                        product:product
+                                                                            order:order];
     [ACPTargetVEC setGlobalRequestParameters:targetParams];
     ```
 
