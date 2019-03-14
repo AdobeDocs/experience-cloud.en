@@ -17,7 +17,6 @@ The Visual Experience Composer (VEC) for Native Mobile Apps lets you create acti
 In the lesson [Add Extensions](launch-add-extensions.md), you added the Target VEC extension to your Launch property. In the lesson [Install the Mobile SDK](launch-install-the-mobile-sdk.md) you imported the extension into the sample application. Only a few minor updates are required to start setting up activities in Target's mobile visual experience composer!
 
 >[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
-
 >[!NOTE] Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
 
 ## Learning Objectives
@@ -44,9 +43,11 @@ This is an optional step that will turn on special console logging specific to t
 
 1. Open the `AppDelegate.swift` file in XCode
 1. Add the line of code `ACPTargetVEC.allowDebugLogging(true)` just below the line where you register the Target VEC Extension
- <!--
+
+<!--
    ![Enable Target VEC Logging](images/android/mobile-targetvec-enableLogging.png)
 -->
+
 Now that you've enabled the logging, it's time to confirm that it is working.
 
 **To verify the logging**
@@ -57,9 +58,11 @@ Now that you've enabled the logging, it's time to confirm that it is working.
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters are automatically included):
- <!--
+
+<!--
    ![Verify Target VEC Logging](images/android/mobile-targetvec-requestInConsole.png)
 -->
+
 Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
 
 Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be Targeted to these properties.
@@ -82,9 +85,11 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
         let targetParams : TargetParameters = TargetParameters.init(parameters: mboxParams, profileParameters: profileParams, product: product, order: order)
         ACPTargetVEC.setGlobalRequest(targetParams)
 ```
- <!--
+
+<!--
    ![Add Parameters to the TargetVEC request](images/android/mobile-targetvec-addParameters.png)
 -->
+
 Now that you've added parameters to the app, it's time to confirm they are being passed in the request.
 
 **To verify the parameters**
@@ -95,9 +100,11 @@ Now that you've added parameters to the app, it's time to confirm they are being
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body. Locate the custom parameters you just added to the request:
- <!--
+
+<!--
    ![Verify Parameters to the TargetVEC request](images/android/mobile-targetvec-verifyParams.png)
 -->
+
 ## Pairing the Mobile App with the Target Interface
 
 In order to create VEC activities in the Target interface, you must first pair Target with your app. This pairing is achieved with the use of deep links.
@@ -125,9 +132,11 @@ The next step is to add a handler to the deep link.
 
 1. Open the `AppDelegate.swift` file
 1. Add the line `ACPTargetVEC.handleDeepLink(url)` to the `AppDelegate:application:openURL` section as pictured below
+
 <!--
    ![Update the AppDelegate file](images/android/mobile-targetvec-appDelegate.png)
 -->
+
 ### Verify the deep link
 
 Now, when a user with your app installed opens a URL like `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) in the Simulator it will open your application.
@@ -141,9 +150,11 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
 1. You should get prompted with a modal to "Open this page in "BusBookingSwift." If you have any difficulties, see the Tip section below.
 1. Click `Open`
 1. This should open the Bus Booking app
- <!--
+
+<!--
    ![Verify the deep link](images/android/mobile-targetvec-verifyDeepLink.png)
   -->
+
     > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
     >
     >   1. **The URL copied from the Target interface doesn't paste into the Simulator** This happens when the Desktop and Simulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again:
@@ -182,9 +193,11 @@ Now let's create an activity in the Target UI.
 
 1. Enter the url scheme you just defined in the  **[!UICONTROL Enter URL scheme]** field, e.g. `BusBookingSwift://com.adobetarget.BusBookingSwift`
 1. Click **[!UICONTROL Create Deep Link]**
- <!--
+
+<!--
    ![Enter your URL Scheme and Create the Deep Link](images/android/mobile-targetvec-enterURLScheme.png)
 -->
+
     >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
     >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to XCode)
@@ -192,16 +205,20 @@ Now let's create an activity in the Target UI.
     >   1. Email the deep link to a valid email address and then open the link with an email application on the device
 
 1. Click on the **[!UICONTROL Copy & Send Link]** tab.
- <!--
+
+<!--
    ![Copy the URL](images/android/mobile-targetvec-copyURL.png)
 -->
+
 1. Switch back to the Simulator
 1. Open Safari in the Simulator
 1. Paste the deep link URL into the address bar
 1. Click to open the app
- <!--
+
+<!--
    ![Copy the URL](images/android/mobile-targetvec-pasteURL.png)
 -->
+
     > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
     >
     >   1. **The URL copied from the Target interface doesn't paste into the Simulator** This happens when the Desktop and Simulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again:
@@ -212,15 +229,19 @@ Now let's create an activity in the Target UI.
 
 1. After the App has loaded, switch back to your browser tab where you have Target opened. You should see your app loaded in the VEC.
 1. Click on text and image assets in your app and you should see options to edit and replace them!
- <!--
+
+<!--
    ![App loads in the VEC](images/android/mobile-targetvec-devicePaired.png)
 -->
+
 1. Make some changes to the first screen in your app
 1. Now position the Simulator next to the browser with the VEC open
 1. Navigate to a different screen in the app and notice how the VEC updates with the Simulator!
 1. You can make updates to multiple views in your app, in a single activity!
-    <!--![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)
+
+<!--![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)
     -->
+
 1. You can also visually add click-tracking metrics!
 1. Save and Approve your activity and verify that you can see it in the sample app
 
