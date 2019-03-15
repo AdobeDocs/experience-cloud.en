@@ -38,124 +38,103 @@ In the **[!UICONTROL Development]** row, click the Install icon ![Install icon](
 
 Let's go through the instructions step-by-step.
 
-## Create the Podfile and Install the Pods
+## Update the build.gradle file
 
-If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
+If you have previously used Launch in websites, one of the first things you will notice is that there are a lot more installation instructions for mobile apps than for websites.
 
-The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have [CocoaPods](https://cocoapods.org/) installed in your development environment, follow the installation instructions on their website. Also, if you haven't already downloaded the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps), save it to your local machine and extract the zip archive to your desktop.
+The Adobe Mobile SDK for Android uses the Gradle to manage dependencies between its various components. If you haven't already downloaded the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps), save it to your local machine and extract the zip archive to your desktop.
 
-**To create the Podfile**
+**To update the build.gradle file**
 
-1. Navigate to the folder where you saved the Bus Booking Android app
+1. Open Android Studio
+1. Select "Open an existing Android Studio Project"
+   ![Select "Open an existing Android Studio Project"](images/android/mobile-launch-install-openProject.png)
+1. Open the dropdown and switch to the Project view
+   ![Select "Project" from the dropdown](images/android/mobile-launch-install-openProjectView.png)
 
-1. Open the the `bus\build.gradle` file in a text editor
+1. Open the **Android > bus > build.gradle** file
 
-   ![Open the bus/build.gradle file in a text editor](images/android/mobile-launch-install-openGradle.png)
+   ![Open Android > bus > build.gradle](images/android/mobile-launch-install-openGradle.png)
 
 1. In the Launch interface, make sure the operating system to `Android`
 
    ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-copyDependencies.png)
 
-1. In your text editor, paste the dependencies from your clipboard right after the other dependencies
-
-1. Save the updates to the podfile in your text editor
-
-   ![Add dependencies and save](images/android/mobile-launch-install-addDependenciesAndSave.png)
-
-1. You can now close your text editor
+1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies
+1. Click the "Sync Now" link to sync the project
+   ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-pasteDependencies.png)
 
 ## Update the AppDelegate
 
 Now it's time to update the App to import the SDK
 
-1. Open Android Studio
-1. Select "Open an existing Android Studio Project"
-   ![Select "Open an existing Android Studio Project"](images/android/mobile-launch-install-openProject.png)
-1. Navigate to the folder where you saved the Bus Booking Android app and select the `build.gradle` file at the top level of the `Android` folder
+**To import the SDK**
 
-   ![Open build.gradle](images/android/mobile-launch-install-openProjectBuildGradle.png)
+1. Open the **Android > bus > src > main > java > com.adobe.busbooking > DemoApplication** file
 
-1. Open the `AppDelegate.swift` file
+   ![Open DemoApplication](images/android/mobile-launch-install-openDemoApplication.png)
 
- <!--
-   ![Copy the Swift import statements to your clipboard](images/android/mobile-launch-install-openAppDelegate.png)
--->
-
-1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Swift]** as the iOS language you are using.
+1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section.
 1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section:
 
-   ![Copy the Swift import statements to your clipboard](images/android/mobile-launch-install-copyImports.png)
+   ![Copy the import statements to your clipboard](images/android/mobile-launch-install-copyImports.png)
 
-1. In XCode, paste these import statements into the `AppDelegate.swift` file after the import for the `UIKit`
+1. In Android Studio, paste these import statements *before* the existing imports in the `DemoApplication` file
 
- <!--  ![Paste the Swift import statements into your AppDelegate file](images/android/mobile-launch-install-pasteImports.png)
--->
+    ![Paste the import statements into your DemoApplication file](images/android/mobile-launch-install-pasteImports.png)
 
-1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The second line turns on console logging statements (available options are "DEBUG", "VERBOSE", "WARNING", and "ERROR").
 
    ![Copy the Core statements to your clipboard](images/android/mobile-launch-install-copyCore.png)
 
-1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
+1. In Android Studio, paste these Core statements into the `DemoApplication` file right after `super.onCreate()`:
 
- <!--
-   ![Paste the Core statements into your AppDelegate file](images/android/mobile-launch-install-pasteCore.png)
--->
+   ![Paste the Core statements into your DemoApplication file](images/android/mobile-launch-install-pasteCore.png)
 
-1. In the Launch interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
+1. In the Launch interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section.
 
    ![Copy the Extension statements to your clipboard](images/android/mobile-launch-install-copyExtensions.png)
 
-1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
+1. In Android Studio, paste these extension statements into the `DemoApplication` file just after the Core statements. Note that `MobileCore.configureWithAppID` contains the identifier of the Launch development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
-<!--
-   ![Paste the Extension statements into your AppDelegate file](images/android/mobile-launch-install-pasteExtension.png)
--->
+   ![Paste the Extension statements into your DemoApplication file](images/android/mobile-launch-install-pasteExtensions.png)
+
+>[!IMPORTANT] Add "this" as an argument to `TargetVEC.registerExtension(this)` if it is not already in the implementation instructions.
 
 ## Verify the implementation
 
-1. Save your XCode project
-1. Run the app and launch it in the Simulator. If you don't have any simulator devices configured, configure one now, being sure to configure a device running iOS 10+. We like to use an iPhone 8 simulator because it is easy to click the `Home` button with a mouse.
+1. Save your Android Studio project
+1. Run the app and launch it in the Emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running Android 4.0 (API 14) or later. In this screenshots, we are emulating a Pixel 2.
 
- <!--
    ![Run the app and launch it in the emulator](images/android/mobile-launch-install-buildAndLaunch.png)
--->
 
-1. Wait for the Simulator to launch and fully open the app to the booking screen (this may take a few minutes)
+1. Wait for the Emulator to launch and fully open the app to the booking screen (this may take a few minutes)
 
-<!--
-   ![Wait for the app to full open](images/android/mobile-launch-install-simulator.png)
-  -->
+   ![Wait for the app to fully open](images/android/mobile-launch-install-simulator.png)
 
-1. Confirm that calls are being made to the Adobe servers in the XCode Console
+1. Confirm that calls are being made to the Adobe servers in the Android Studio Logcat
 
-<!--
    ![Wait for the app to fully open](images/android/mobile-launch-install-console.png)
--->
+
 Here are examples of some specific calls you can look for:
 
-1. **Calls to retrieve the Launch configuration** (filter your console to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in Launch and changed at any time:
+1. **Calls to retrieve the Launch configuration** (filter Logcat to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in Launch and changed at any time:
 
     ```java
-    2019-01-15 12:11:44.518220-0500 BusDemoSwift[52399:5056293] [AMSDK DEBUG <RulesDownloader>]: Successfully downloaded Rules from 'https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip'
-    {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","target.clientCode":"techmarketingdemos","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.autoFetch":true,"target.fetchBackground":true,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
+    03-14 16:30:29.484 24869-24930/com.adobe.busbooking D/ADBMobile: ConfigurationExtension - Cached configuration loaded. 
+     {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.clientCode":"techmarketingdemos","target.autoFetch":true,"target.fetchBackground":false,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
     ```
 
-1. **Request to the ID Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+1. **Request to the ID Service** (filter Logcat to `IdentityExtension`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
 
     ```java
-    2019-01-15 12:11:45.164590-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: Sending request (https://dpm.demdex.net/id?d_rtbd=json&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61@AdobeOrg&d_mid=17179986463578698626041670574784107777&d_blob=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&dcs_region=9)
+   03-14 17:01:18.526 7743-7803/com.adobe.busbooking D/ADBMobile: IdentityExtension - Sending request (https://dpm.demdex.net/id?d_mid=59651426340521082405908216148091920022&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61%40AdobeOrg)
     ```
 
-1. **Response from the ID Service** (filter your console to `ID Service`). Note how the `mid` value matches the `d_mid` value in the request above:
+1. **Analytics request** (filter Logcat to `AnalyticsExtension`)
 
     ```java
-    2019-01-15 12:11:45.681821-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: ID Service - Got ID Response (mid: 17179986463578698626041670574784107777, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
-    ```
-
-1. **Analytics request** (filter your console to `Analytics request`)
-
-    ```java
-    2019-01-15 12:11:45.828465-0500 BusDemoSwift[52399:5056336] [AMSDK DEBUG <AnalyticsHitDatabase>]: Analytics request was sent with body (ndh=1&c.&a.&AppID=BusDemoSwift%201%20%281.0%29&CarrierName=%28null%29&DayOfWeek=3&DaysSinceFirstUse=0&DaysSinceLastUse=0&DeviceName=x86_64&HourOfDay=12&LaunchEvent=LaunchEvent&Launches=3&OSVersion=iOS%2012.1&Resolution=828x1792&RunMode=Application&TimeSinceLaunch=0&ignoredSessionLength=-1547572244&internalaction=Lifecycle&locale=en-US&.a&.c&aamb=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&aamlh=9&ce=UTF-8&cp=foreground&mid=17179986463578698626041670574784107777&pageName=BusDemoSwift%201%20%281.0%29&pe=lnk_o&pev2=ADBINTERNAL%3ALifecycle&t=00%2F00%2F0000%2000%3A00%3A00%200%20300&ts=1547572305)
+   03-14 17:01:18.509 7743-7777/com.adobe.busbooking D/ADBMobile: AnalyticsExtension - Sending Analytics ID call (https://tmd.sc.omtrdc.net/id?mcorgid=7ABB3E6A5A7491460A495D61%40AdobeOrg&mid=59651426340521082405908216148091920022)
     ```
 
 Congratulations, you've added the SDK to a mobile app!

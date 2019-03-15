@@ -14,17 +14,18 @@ The ID Service is part of the Mobile Core extension, so you have already impleme
 
 ## Validation Steps
 
-To validate the calls to the ID Service, run the sample app in XCode or Developer Studio, open the Debug Console and look for the request and the response:
+To validate the calls to the ID Service, run the sample app in Android Studio, open the Debug Console and look for the request and the response:
 
-1. **Request to the ID Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+1. **Request to the ID Service** (filter Logcat to `IdentityExtension`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
 
     ```java
-    2019-01-15 12:11:45.164590-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: Sending request (https://dpm.demdex.net/id?d_rtbd=json&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61@AdobeOrg&d_mid=17179986463578698626041670574784107777&d_blob=j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI&dcs_region=9)
+    03-14 17:01:18.526 7743-7803/com.adobe.busbooking D/ADBMobile: IdentityExtension - Sending request (https://dpm.demdex.net/id?d_mid=59651426340521082405908216148091920022&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61%40AdobeOrg)
     ```
 
-1. **Response from the ID Service** (filter your console to `ID Service`). Note how the `mid` value matches the `d_mid` value in the request above:
+1. **Response from the ID Service** (filter Logcat to `IdentityExtension`). Note how the `mid` value matches the `d_mid` value in the request above:
 
     ```java
-    2019-01-15 12:11:45.681821-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]: ID Service - Got ID Response (mid: 17179986463578698626041670574784107777, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: "604800000 ms")
+    03-14 17:01:19.033 7743-7803/com.adobe.busbooking D/ADBMobile: IdentityExtension - Received ID response (mid: 59651426340521082405908216148091920022, blob: j8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI, hint: 9, ttl: 604800
+    ```
 
 [Next "Add Adobe Target VEC Support" >](target-vec.md)

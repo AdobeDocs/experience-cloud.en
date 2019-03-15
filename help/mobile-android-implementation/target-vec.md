@@ -35,33 +35,7 @@ To complete the lessons in this section, you must:
 * Complete the lessons in [Configure Launch](launch-create-a-property.md) section.
 * Have Approver-level access to the Adobe Target interface
 
-## Enable logging for the Target VEC extension
 
-This is an optional step that will turn on special console logging specific to the VEC extension.
-
-**To enable logging**
-
-1. Open the `AppDelegate.swift` file in XCode
-1. Add the line of code `ACPTargetVEC.allowDebugLogging(true)` just below the line where you register the Target VEC Extension
-
-<!--
-   ![Enable Target VEC Logging](images/android/mobile-targetvec-enableLogging.png)
--->
-
-Now that you've enabled the logging, it's time to confirm that it is working.
-
-**To verify the logging**
-
-1. Save the XCode project
-1. Rebuild the app and wait for it to reopen in the Simulator
-1. Click in the Console pane of XCode
-1. Use ⌘-F to open the Find box
-1. Search for `targetvec` in the Find box
-1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters are automatically included):
-
-<!--
-   ![Verify Target VEC Logging](images/android/mobile-targetvec-requestInConsole.png)
--->
 
 Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
 
@@ -73,7 +47,7 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 
 **To add custom parameters**
 
-1. In XCode, open the `BookingViewController.swift` file. This file is used by the Home screen.
+1. In Android Studio, open the `BookingViewController.swift` file. This file is used by the Home screen.
 1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import
 1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
@@ -94,9 +68,9 @@ Now that you've added parameters to the app, it's time to confirm they are being
 
 **To verify the parameters**
 
-1. Save the XCode project
-1. Rebuild the app and wait for it to reopen in the Simulator
-1. Click in the Console pane of XCode
+1. Save the Android Studio project
+1. Rebuild the app and wait for it to reopen in the Emulator
+1. Click in the Console pane of Android Studio
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body. Locate the custom parameters you just added to the request:
@@ -115,7 +89,7 @@ iOS supports the use of [Universal Links](https://developer.apple.com/documentat
 
 **To register your URL Scheme**
 
-1. In XCode, double-click on your app to open the Settings screen
+1. In Android Studio, double-click on your app to open the Settings screen
 1. On the Settings screen, click the `Info` tab
 1. Expand the URL Types section
 1. Note that the **[!UICONTROL Identifier]** is set to `com.adobetarget.BusBookingSwift`. You can use this identifier or change it if you like.
@@ -139,13 +113,13 @@ The next step is to add a handler to the deep link.
 
 ### Verify the deep link
 
-Now, when a user with your app installed opens a URL like `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) in the Simulator it will open your application.
+Now, when a user with your app installed opens a URL like `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) in the Emulator it will open your application.
 
 **To verify the deep link scheme**
 
-1. Save the XCode project
+1. Save the Android Studio project
 1. Rebuild the app
-1. In the Simulator, open Safari
+1. In the Emulator, open Safari
 1. Enter the url `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) into the address bar. If you have any difficulties, see the Tip section below.
 1. You should get prompted with a modal to "Open this page in "BusBookingSwift." If you have any difficulties, see the Tip section below.
 1. Click `Open`
@@ -155,11 +129,11 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
    ![Verify the deep link](images/android/mobile-targetvec-verifyDeepLink.png)
   -->
 
-    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
+    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Emulator it's usually for one of these two reasons:
     >
-    >   1. **The URL copied from the Target interface doesn't paste into the Simulator** This happens when the Desktop and Simulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again:
+    >   1. **The URL copied from the Target interface doesn't paste into the Emulator** This happens when the Desktop and Emulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Emulator and copy/pasting again:
     >
-    >      ![Toggle the Simulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
+    >      ![Toggle the Emulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
     >
     >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
 
@@ -200,7 +174,7 @@ Now let's create an activity in the Target UI.
 
     >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
-    >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to XCode)
+    >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to Android Studio)
     >   1. Copy the deep link from the Target interface and send it to the device however you would like
     >   1. Email the deep link to a valid email address and then open the link with an email application on the device
 
@@ -210,8 +184,8 @@ Now let's create an activity in the Target UI.
    ![Copy the URL](images/android/mobile-targetvec-copyURL.png)
 -->
 
-1. Switch back to the Simulator
-1. Open Safari in the Simulator
+1. Switch back to the Emulator
+1. Open Safari in the Emulator
 1. Paste the deep link URL into the address bar
 1. Click to open the app
 
@@ -219,11 +193,11 @@ Now let's create an activity in the Target UI.
    ![Copy the URL](images/android/mobile-targetvec-pasteURL.png)
 -->
 
-    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
+    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Emulator it's usually for one of these two reasons:
     >
-    >   1. **The URL copied from the Target interface doesn't paste into the Simulator** This happens when the Desktop and Simulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Simulator and copy/pasting again:
+    >   1. **The URL copied from the Target interface doesn't paste into the Emulator** This happens when the Desktop and Emulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Emulator and copy/pasting again:
     >
-    >      ![Toggle the Simulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
+    >      ![Toggle the Emulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
     >
     >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
 
@@ -235,8 +209,8 @@ Now let's create an activity in the Target UI.
 -->
 
 1. Make some changes to the first screen in your app
-1. Now position the Simulator next to the browser with the VEC open
-1. Navigate to a different screen in the app and notice how the VEC updates with the Simulator!
+1. Now position the Emulator next to the browser with the VEC open
+1. Navigate to a different screen in the app and notice how the VEC updates with the Emulator!
 1. You can make updates to multiple views in your app, in a single activity!
 
 <!--![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)
