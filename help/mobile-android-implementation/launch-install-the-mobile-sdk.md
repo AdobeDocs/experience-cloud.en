@@ -10,6 +10,14 @@ solution: Experience Cloud
 
 In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment.
 
+## Prerequisites
+
+In this lesson we will start adding code to the Bus Booking app, so if you haven't already done so:
+
+1. Download [Android Studio](https://developer.android.com/studio)
+1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
+1. Install [Gradle](https://gradle.org/)
+
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
@@ -17,12 +25,12 @@ At the end of this lesson, you will be able to:
 * Obtain the installation instructions for your mobile Launch property
 * Understand the difference between a Development, Staging, and Production environment
 * Update your `build.gradle` file to add the Mobile SDK
-* Import the Mobile SDK into your AppDelegate file
+* Import the Mobile SDK into your app
 * Verify that the SDK has been implemented successfully
 
 ## Get the Installation Instructions
 
-The Installation Instructions for mobile Launch properties are a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
+The Installation Instructions for mobile Launch properties are a collection of code snippets that you add to specific locations in your mobile app.
 
 Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you. These correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.  
 
@@ -42,14 +50,21 @@ Let's go through the instructions step-by-step.
 
 If you have previously used Launch in websites, one of the first things you will notice is that there are a lot more installation instructions for mobile apps than for websites.
 
-The Adobe Mobile SDK for Android uses the Gradle to manage dependencies between its various components. If you haven't already downloaded the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps), save it to your local machine and extract the zip archive to your desktop.
+The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its various components. One of the first things we will do is add the Adobe Mobile SDK dependencies to the Bus Booking app's build.gradle file.
 
 **To update the build.gradle file**
 
 1. Open Android Studio
 1. Select "Open an existing Android Studio Project"
+
    ![Select "Open an existing Android Studio Project"](images/android/mobile-launch-install-openProject.png)
+
+1. Open the build.gradle file at the root of the Bus Booking Android folder:
+
+   ![Open the build.gradle file at the root of the Bus Booking Android folder](images/android/mobile-launch-install-openApp.png)
+
 1. Open the dropdown and switch to the Project view
+
    ![Select "Project" from the dropdown](images/android/mobile-launch-install-openProjectView.png)
 
 1. Open the **Android > bus > build.gradle** file
@@ -62,6 +77,7 @@ The Adobe Mobile SDK for Android uses the Gradle to manage dependencies between 
 
 1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies
 1. Click the "Sync Now" link to sync the project
+
    ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-pasteDependencies.png)
 
 ## Update the AppDelegate
