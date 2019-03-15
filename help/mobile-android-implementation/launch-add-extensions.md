@@ -14,7 +14,9 @@ Launch is a platform that allows Adobe and third-party vendors to create extensi
 
 Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
->[!WARNING] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+>[!CAUTION] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+
+>[!NOTE] Currently, Launch is used only to manage the extension configurations of the Adobe Experience Cloud solutions you will be implementing. Launch will not be used to create Data Elements or fire Rules associated with these solutions at this time.
 
 ## Prerequisites
 
@@ -35,8 +37,6 @@ At the end of this lesson, you will be able to:
 * Configure the Target and Target VEC extensions
 
 >[!NOTE] Adobe Audience Manager can be implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
-
->[!INFO] Currently, Launch is used only to manage the extension configurations of the Adobe Experience Cloud solutions you will be implementing. Launch will not be used to create Data Elements or fire Rules associated with these solutions at this time.
 
 ## Review the Pre-installed extensions
 
