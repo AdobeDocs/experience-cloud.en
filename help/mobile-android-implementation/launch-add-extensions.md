@@ -36,6 +36,8 @@ At the end of this lesson, you will be able to:
 
 >[!NOTE] Adobe Audience Manager can be implemented via a configuration in the Analytics extension and thus you will not need to add the Audience Manager extension in this tutorial
 
+>[!INFO] Currently, Launch is used only to manage the extension configurations of the Adobe Experience Cloud solutions you will be implementing. Launch will not be used to create Data Elements or fire Rules associated with these solutions at this time.
+
 ## Review the Pre-installed extensions
 
 1. Click the **[!UICONTROL Extensions]** tab to go to the extensions page
