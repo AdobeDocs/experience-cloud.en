@@ -18,7 +18,7 @@ In the lesson [Add Extensions](launch-add-extensions.md), you added the Target V
 
 >[!IMPORTANT] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
 >
->[!NOTE] Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
+>Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
 
 ## Learning Objectives
 
@@ -40,7 +40,7 @@ To complete the lessons in this section, you must:
 
 Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
 
-Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be Targeted to these properties.
+Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be targeted to these properties.
 
 ## Add Parameters
 
