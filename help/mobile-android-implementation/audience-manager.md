@@ -65,7 +65,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 
     ![Select the SSF Menu](images/mobile-aam-selectSSFmenu.png)
 
-    >[!WARNING] As stated above, you will need to have administrator privileges to see this menu item.
+    >[!IMPORTANT] As stated above, you will need to have administrator privileges to see this menu item.
 
 1. Once on the Server-Side Forwarding page, read the info and check the box to **[!UICONTROL Enable Server-Side Forwarding]** for the report suite(s).
 
@@ -95,7 +95,7 @@ Since the Xcode console does not show the response to the beacons, you should us
 
     ![AA response - stuff object](images/mobile-aam-analyticsResponseSSF.png)
 
->[!WARNING] Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed the step in Launch to forward to AAM, but that the forwarding in the Analytics Admin Console has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
+>[!IMPORTANT] Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed the step in Launch to forward to AAM, but that the forwarding in the Analytics Admin Console has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
 
 ![AA response - false success](images/mobile-aam-unsuccessful-SSF.png)
 

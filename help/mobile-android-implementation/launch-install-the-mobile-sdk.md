@@ -80,7 +80,7 @@ The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its 
 
    ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-pasteDependencies.png)
 
-## Update the AppDelegate
+## Update the Application
 
 Now it's time to update the App to import the SDK
 
@@ -95,7 +95,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the import statements to your clipboard](images/android/mobile-launch-install-copyImports.png)
 
-1. In Android Studio, paste these import statements *before* the existing imports in the `DemoApplication` file
+1. In Android Studio, paste these import statements *before* the existing imports in the `DemoApplication` file. Note that the Core extension includdes libraries to support callbacks, the identity service, lifecycle metrics, and console logging among other features.
 
     ![Paste the import statements into your DemoApplication file](images/android/mobile-launch-install-pasteImports.png)
 
@@ -103,7 +103,8 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Core statements to your clipboard](images/android/mobile-launch-install-copyCore.png)
 
-1. In Android Studio, paste these Core statements into the `DemoApplication` file right after `super.onCreate()`:
+1. In Android Studio, paste these Core statements into the `DemoApplication` file right after `super.onCreate()`
+1. Remove the `//` comments before the `try` and `catch` lines
 
    ![Paste the Core statements into your DemoApplication file](images/android/mobile-launch-install-pasteCore.png)
 
@@ -111,7 +112,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Extension statements to your clipboard](images/android/mobile-launch-install-copyExtensions.png)
 
-1. In Android Studio, paste these extension statements into the `DemoApplication` file just after the Core statements. Note that `MobileCore.configureWithAppID` contains the identifier of the Launch development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In Android Studio, paste these extension statements into the `try` section. Note that `MobileCore.configureWithAppID` contains the identifier of the Launch development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Paste the Extension statements into your DemoApplication file](images/android/mobile-launch-install-pasteExtensions.png)
 

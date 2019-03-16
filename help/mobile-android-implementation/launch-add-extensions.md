@@ -16,8 +16,6 @@ Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and 
 
 >[!CAUTION] Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
 
->[!NOTE] Currently, Launch is used only to manage the extension configurations of the Adobe Experience Cloud solutions you will be implementing. Launch can not be used to create Data Elements or fire Rules associated with these solutions at this time.
-
 ## Prerequisites
 
 Your Launch user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/launch-reference/administration/user-permissions).
