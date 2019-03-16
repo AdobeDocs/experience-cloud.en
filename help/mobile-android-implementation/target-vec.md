@@ -36,11 +36,14 @@ To complete the lessons in this section, you must:
 * Complete the lessons in [Configure Launch](launch-create-a-property.md) section.
 * Have Approver-level access to the Adobe Target interface
 
+## The App Load request
 
+Target will fire an "app load" request when the app first loads because of the settings we selected when we configured the Target VEC extension. This request prefetches all Target VEC activities that you  created for your app.
 
-Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
-
+In Android studio, filter Logcat to "Target r" to show the Target requests and responses.
 Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be targeted to these properties.
+
+   ![View Target VEC requests](images/android/mobile-targetvec-viewLogs.png)
 
 ## Add Parameters
 
@@ -84,11 +87,11 @@ Now that you've added parameters to the app, it's time to confirm they are being
 
 In order to create VEC activities in the Target interface, you must first pair Target with your app. This pairing is achieved with the use of deep links.
 
-### Creating the Deep Link Scheme
+### Creating the Deep Link
 
-iOS supports the use of [Universal Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) and [custom URL schemes](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app) to create deep links to your app. You probably already use custom URL schemes in your app. If so, you can use these existing links to pair with Target. For this tutorial, you must create a custom URL scheme.
+Android supports the use of [Deep links and Android App Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) to create URLs that go directly to specific locations in your app. You probably already use these in your app. If so, you can use these existing links to pair with Target. For this tutorial, you must create an intent filter in the AndroidManifest.XML file to create your deep link.
 
-**To register your URL Scheme**
+**To create your deep link**
 
 1. In Android Studio, double-click on your app to open the Settings screen
 1. On the Settings screen, click the `Info` tab
@@ -130,7 +133,7 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
    ![Verify the deep link](images/android/mobile-targetvec-verifyDeepLink.png)
   -->
 
-    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Emulator it's usually for one of these two reasons:
+    >[!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Emulator it's usually for one of these two reasons:
     >
     >   1. **The URL copied from the Target interface doesn't paste into the Emulator** This happens when the Desktop and Emulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Emulator and copy/pasting again:
     >
