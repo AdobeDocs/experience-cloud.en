@@ -201,7 +201,7 @@ Now, you will use your new data elements and extension to build your Product Det
 
    ![Add Rule](images/target-addRule.png)
 
-1. Name the rule `Product Details - DOM Ready`
+1. Name the rule `Product Details - DOM Ready - 40`
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
    ![Name the rule and add the event](images/analytics-domReadyAddEvent.png)

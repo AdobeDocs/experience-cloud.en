@@ -31,13 +31,14 @@ After completing this tutorial you will be able to:
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
 * For Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Launch permissions, see [the documentation](https://docs.adobelaunch.com/launch-reference/administration/user-permissions).
+* For Target, you must have approver-level access to the Adobe Target interface
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 
 Also, it is assumed that you are familiar with iOS development in Swift. You do not need to be a master of Swift to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a demo app called "[Bus Booking](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)". The App has some simple capabilities that will allow you to complete a basic Experience Cloud mobile implementation before you do so in your own app. You will build your own Launch property using your own Experience Cloud organization, and implement it in a local copy of the Bus Booking app.
+In these lessons, you will implement the Adobe Experience Cloud into a demo app called "[Bus Booking](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)" using your own Experience Cloud Organization. The App has some simple capabilities that will allow you to complete a basic Experience Cloud mobile implementation before you do so in your own app.
 
 [![Bus Booking App](images/mobile-busBookingApp.png)](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
 

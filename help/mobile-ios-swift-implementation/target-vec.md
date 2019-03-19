@@ -1,6 +1,6 @@
 ---
 title: Add Adobe Target's Visual Experience Composer (VEC)
-description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
+description: Learn how to implement Target's Visual Experience Composer (VEC) with custom parameters, pair it with your device, and build an activity. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
 seo-description:
 seo-title: Add Adobe Target's Visual Experience Composer (VEC)
 solution: Experience Cloud
@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add Adobe Target's Visual Experience Composer (VEC)
 
-In this lesson, we will enable the Target Visual Experience Composer (VEC) for Mobile apps.
+In this lesson, you will enable the Target Visual Experience Composer (VEC) for Mobile apps.
 
 [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
@@ -16,7 +16,9 @@ The Visual Experience Composer (VEC) for Native Mobile Apps lets you create acti
 
 In the lesson [Add Extensions](launch-add-extensions.md), you added the Target VEC extension to your Launch property. In the lesson [Install the Mobile SDK](launch-install-the-mobile-sdk.md) you imported the extension into the sample application. Only a few minor updates are required to start setting up activities in Target's mobile visual experience composer!
 
->[!NOTE] Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
+>[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
+>
+> Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
 
 ## Learning Objectives
 
@@ -43,7 +45,7 @@ This is an optional step that will turn on special console logging specific to t
 1. Open the `AppDelegate.swift` file in XCode
 1. Add the line of code `ACPTargetVEC.allowDebugLogging(true)` just below the line where you register the Target VEC Extension
 
-   ![Enable Target VEC Logging](images/ios/mobile-targetvec-enableLogging.png)
+   ![Enable Target VEC Logging](images/ios/swift/mobile-targetvec-enableLogging.png)
 
 Now that you've enabled the logging, it's time to confirm that it is working.
 
@@ -56,7 +58,7 @@ Now that you've enabled the logging, it's time to confirm that it is working.
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters are automatically included):
 
-   ![Verify Target VEC Logging](images/mobile-targetvec-requestInConsole.png)
+   ![Verify Target VEC Logging](images/ios/swift/mobile-targetvec-requestInConsole.png)
 
 Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
 
@@ -94,7 +96,7 @@ Now that you've added parameters to the app, it's time to confirm they are being
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body. Locate the custom parameters you just added to the request:
 
-   ![Verify Parameters to the TargetVEC request](images/mobile-targetvec-verifyParams.png)
+   ![Verify Parameters to the TargetVEC request](images/ios/swift/mobile-targetvec-verifyParams.png)
 
 ## Pairing the Mobile App with the Target Interface
 
@@ -108,12 +110,12 @@ iOS supports the use of [Universal Links](https://developer.apple.com/documentat
 
 1. In XCode, double-click on your app to open the Settings screen
 1. On the Settings screen, click the `Info` tab
-1. Expand the URL Types section
+1. Expand the `URL Types` section
 1. Note that the **[!UICONTROL Identifier]** is set to `com.adobetarget.BusBookingSwift`. You can use this identifier or change it if you like.
 1. Note that the **[!UICONTROL URL Scheme]** is `BusBookingSwift`. You can use this scheme or change it if you like.
 1. Make sure  **[!UICONTROL Editor]** is selected as the **[!UICONTROL Role]**
 
-   ![Register the URL Scheme](images/mobile-targetvec-registerScheme.png)
+   ![Register the URL Scheme](images/ios/swift/mobile-targetvec-registerScheme.png)
 
 1. If you updated the identifier or scheme, click on the `General` tab so the scheme will save.  Click back on the `Info` tab, expand the `URL type` section and verify that your identifier or scheme and saved.
   
@@ -123,7 +125,7 @@ The next step is to add a handler to the deep link.
 
 1. Open the `AppDelegate.swift` file
 1. Add the line `ACPTargetVEC.handleDeepLink(url)` to the `AppDelegate:application:openURL` section as pictured below
-   ![Update the AppDelegate file](images/mobile-targetvec-appDelegate.png)
+   ![Update the AppDelegate file](images/ios/swift/mobile-targetvec-appDelegate.png)
 
 ### Verify the deep link
 
@@ -138,8 +140,6 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
 1. You should get prompted with a modal to "Open this page in "BusBookingSwift." If you have any difficulties, see the Tip section below.
 1. Click `Open`
 1. This should open the Bus Booking app
-
-   ![Verify the deep link](images/mobile-targetvec-verifyDeepLink.png)
   
     > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
     >
@@ -148,6 +148,8 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
     >      ![Toggle the Simulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
     >
     >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
+
+    ![Verify the deep link](images/ios/swift/mobile-targetvec-verifyDeepLink.png)
 
 Now that your deep link structure is set up, you are ready to use the Target VEC to set up activities!
 
@@ -180,7 +182,7 @@ Now let's create an activity in the Target UI.
 1. Enter the url scheme you just defined in the  **[!UICONTROL Enter URL scheme]** field, e.g. `BusBookingSwift://com.adobetarget.BusBookingSwift`
 1. Click **[!UICONTROL Create Deep Link]**
 
-   ![Enter your URL Scheme and Create the Deep Link](images/mobile-targetvec-enterURLScheme.png)
+   ![Enter your URL Scheme and Create the Deep Link](images/ios/swift/mobile-targetvec-enterURLScheme.png)
 
     >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
@@ -189,15 +191,14 @@ Now let's create an activity in the Target UI.
     >   1. Email the deep link to a valid email address and then open the link with an email application on the device
 
 1. Click on the **[!UICONTROL Copy & Send Link]** tab.
+1. Click anywhere on the link to automatically copy the link to your clipboard
 
-   ![Copy the URL](images/mobile-targetvec-copyURL.png)
+   ![Copy the URL](images/ios/swift/mobile-targetvec-copyURL.png)
 
 1. Switch back to the Simulator
 1. Open Safari in the Simulator
 1. Paste the deep link URL into the address bar
-1. Click to open the app
-
-   ![Copy the URL](images/mobile-targetvec-pasteURL.png)
+1. Click the `Open` button to open the app
 
     > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Simulator it's usually for one of these two reasons:
     >
@@ -207,17 +208,25 @@ Now let's create an activity in the Target UI.
     >
     >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
 
+   ![Paste the URL into Safari](images/ios/swift/mobile-targetvec-pasteURL.png)
+
 1. After the App has loaded, switch back to your browser tab where you have Target opened. You should see your app loaded in the VEC.
 1. Click on text and image assets in your app and you should see options to edit and replace them!
 
-   ![App loads in the VEC](images/mobile-targetvec-devicePaired.png)
+   ![App loads in the VEC](images/ios/swift/mobile-targetvec-devicePaired.png)
 
 1. Make some changes to the first screen in your app
 1. Now position the Simulator next to the browser with the VEC open
 1. Navigate to a different screen in the app and notice how the VEC updates with the Simulator!
 1. You can make updates to multiple views in your app, in a single activity!
+   ![App loads in the VEC](images/ios/swift/mobile-targetvec-navigateTheApp.png)
 1. You can also visually add click-tracking metrics!
-   ![App loads in the VEC](images/mobile-targetvec-navigateTheApp.png)
+1. Save and Approve your activity and verify that you can see it in the sample app
+
+Pairing the device with the VEC is a one-time action. When you create more activities in the future on the same device, you will just be able to select the device from a list, as pictured below:
+   ![Using a saved Device](images/ios/swift/mobile-targetvec-useSavedApp.png)
+
+>[!TIP] If you have a device open, but it is "Unavailable" in the selection menu, background the app by returning to the Home screen and then move the app back into the foreground to make it "Available" again.
 
 ## Building Audiences based on Lifecyle metrics
 
@@ -242,6 +251,6 @@ Lifecycle metrics built-in metrics about the visitor's usage of your app that ar
 
    ![Audience for Launches <= 4](images/mobile-targetvec-LaunchesLessThan5.png)
 
-Note that there are a huge variety of out-of-the-box audience building options in Target. Additionally, you can send up custom data in the Target request for audience-building (which we will look at in Lesson 3), use audiences shared from other Experience Cloud solutions such as Audience Manager and Analytics, and CRM data shared to Target using the Customer Attributes feature of the People Core Service.
+Note that there are a huge variety of out-of-the-box audience building options in Target. Additionally, you can send up custom data in the Target request for audience-building, use audiences shared from other Experience Cloud solutions such as Audience Manager and Analytics, and CRM data shared to Target using the Customer Attributes feature of the People Core Service.
   
-[Next "Add Adobe Analytics" >](analytics.md)
+[Next "Add Adobe Target" >](target.md)
