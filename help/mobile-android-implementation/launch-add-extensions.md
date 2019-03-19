@@ -39,12 +39,12 @@ At the end of this lesson, you will be able to:
 ## Review the Pre-installed extensions
 
 1. Click the **[!UICONTROL Extensions]** tab to go to the extensions page
-1. Note that the `Mobile Core` and `Profile` extensions are pre-installed in your new mobile property
+1. Note that the Mobile Core and `Profile` extensions are pre-installed in your new mobile property
 1. Click the **[!UICONTROL Configure]** button on the Core extension to examine its settings
 
    ![Go to the extensions tab](images/mobile-extensions-installed-default.png)
 
-1. The `Mobile Core` extension represents the core Adobe Experience Platform SDK required for any app implementation. The core contains common set of functionality and frameworks such as a Experience Cloud Identity services, data event hub, rules engine, reusable networking, disk access routines, etc., which is required by all Adobe and third-party extensions.  For more information on the Mobile Core extension, see [the documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core).
+1. The Mobile Core extension represents the core Adobe Experience Platform SDK required for any app implementation. The core contains common set of functionality and frameworks such as a Experience Cloud Identity services, data event hub, rules engine, reusable networking, disk access routines, etc., which is required by all Adobe and third-party extensions.  For more information on the Mobile Core extension, see [the documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core).
 
    1. Note that your Experience Cloud Org ID is detected automatically and pre-populated
    1. The Experience Cloud Server field allows you to specify a custom endpoint for Visitor ID Service requests. Use the default setting (leave it blank) for this tutorial.
@@ -75,13 +75,13 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 1. Enter your **[!UICONTROL Report Suite ID]**. This is the Report Suite to which the app will send data. At the moment, only one report suite can be specified per property.
 1. Enter your **[!UICONTROL Analytics Tracking Server]**. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
 1. Check the box for **[!UICONTROL Offline Enabled]**.
-1. Check the Box for **[!UICONTROL Audience Manager Forwarding]**. This will allow for forwarding of Analytics data to Audience Manager, so you won't have to make a separate call to Audience Manager. This setting is used by both Audience Manager and the People Core Service, so check the box even if you haven't licensed Audience Manager.
+1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an additional call from the app to Audience Manager. This setting is used by both Audience Manager and the People Core Service, so check the box even if you haven't licensed Audience Manager.
 1. Check the box to **[!UICONTROL Backdate Previous Session Info]**
 1. Click the **[!UICONTROL Save]** button
   
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-analytics-settings.png)
 
-### Add The Target extension
+### Add the Target extension
 
 Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer (currently in Beta), which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both.
 
@@ -102,7 +102,7 @@ Adobe Target has two official extensions, the Adobe Target extension and the Ado
   
     ![Configure the Target settings](images/mobile-extensions-target-settings.png)
 
-### Add The Target VEC extension
+### Add the Target VEC extension
 
 Now that the Target extension has been added, you can add the Target VEC extension. At this time, the Target VEC extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
 

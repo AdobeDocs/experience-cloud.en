@@ -38,7 +38,7 @@ Lifecycle metrics are enabled by the Core extension, which you added to the app 
 
 Although you can see the Lifecycle hits in any debugging program/packet sniffer, we will simply show them in the Xcode debugging console.
 
-1. Having added your Lifecycle code in the previous section of the tutorial, build and run your project in Xcode so that it launches the simulator
+1. Having added your Lifecycle code in the Launch section of the tutorial, build and run your project in Xcode so that it launches the simulator
 1. In the Xcode debugging console, type `lifecycle` into the filter at the bottom to limit what shows up, and then scroll to the bottom of the entries
 1. Notice the `Analytics request was sent with body` section
 1. See values in the hit, including things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the documentation
@@ -47,12 +47,14 @@ Although you can see the Lifecycle hits in any debugging program/packet sniffer,
 
 ## Import the ACPCore Library
 
-In the next sections, we will use APIs to track screen loads ("trackState") or actions ("trackAction") in your app. Therefore, we need to import the library for the files that reference these APIs. In this sample app tutorial, we will only need to do this for one file, namely "BookingViewController.swift". However, in your app, you will likely need to do this for multiple files.
+In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app. In ordet to use these APIs, you need to import the library which contains them.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.  
 
-In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, so they can be used to send data to other solutions in addition to Analytics. In this section of the tutorial, we will continue to focus on iOS and Swift.
+In this tutorial, you will only track one state, however in your actual app, you will want to track multiple states.
+
+**To import the ACPCore Library**
 
 1. Open BookingViewController.swift in Xcode
-1. At the top of the file (typically alongside other import statements) add `import ACPCore` to the file
+1. At the top of the file &mdash;typically alongside other import statements&mdash;add `import ACPCore`
 1. Save
 1. You are now ready to use trackState or trackAction APIs in this file
 
@@ -62,7 +64,7 @@ In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction 
 
 In your app, you may have many different screens of content that you are providing for your users. These are the equivalent of pages on a website. Adobe Analytics provides a method for you to send in these "page view hits" and view them in the same reports that you are used to for your web properties. This method is called "trackState."
 
-In this tutorial we will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app. We will also explore a few different ways of sending data (key/value pairs) with the hit.
+In this tutorial you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app. You will also explore a few different ways of sending data (key/value pairs) with the hit.
 
 Below is syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
 
@@ -74,7 +76,7 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 
 ### Track a State without Data
 
->[!NOTE] If you have followed the steps in this tutorial to implement Target, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this section. This is expected, and is meant to provide focus on the task at hand.
+>[!NOTE] If you have followed the steps in this tutorial to implement Target, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected, and is meant to provide focus on the task at hand.
 
 1. With the sample app open in Xcode, go to BookingViewController.swift, and in the viewDidLoad() function, add a trackState method call
 1. Set the `state name` to "Home Screen"
@@ -118,7 +120,7 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 
 ### Additional Data-Sending Options
 
-In the previous two sections you have made two requests, one with additional data and one without. However, what if you want to send multiple data points to Analytics with a screen or state load? Below are two options.
+In the previous two exercises you made two requests, one with additional data and one without. However, what if you want to send multiple data points to Analytics with a screen or state load? Below are two options.
 
 #### Option 1: Multiple Key/Value Pairs
 
@@ -185,12 +187,12 @@ The function now looks like this:
 
 ![trackAction Result in Debugger](images/ios/swift/mobile-analytics-trackActionResult1.png)
 
-Nice work! You have completed the Analytics section. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
+Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
-### Additional Benefits of trackState and trackAction
+## Additional Benefits of trackState and trackAction
 
 In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform SDK is rooted in Launch, there are many more things that you can do in the Launch interface leveraging the code you just added.
 
-In Launch you are able to create Rules triggered by the trackState and trackAction APIs, and have them trigger additional actions, like executing URLs to other Adobe solutions or external partners.
+In Launch you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
 
 [Next "Add Adobe Audience Manager" >](audience-manager.md)
