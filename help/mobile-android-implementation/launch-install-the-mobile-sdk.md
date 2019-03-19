@@ -14,9 +14,8 @@ In this lesson, you will implement the Mobile SDK with the extensions and settin
 
 In this lesson we will start adding code to the Bus Booking app, so if you haven't already done so:
 
-1. Download [Android Studio](https://developer.android.com/studio)
+1. Download and Install [Android Studio](https://developer.android.com/studio)
 1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
-1. Install [Gradle](https://gradle.org/)
 
 ## Learning Objectives
 
@@ -86,7 +85,7 @@ Now it's time to update the App to import the SDK
 
 **To import the SDK**
 
-1. Open the **Android > bus > src > main > java > com.adobe.busbooking > DemoApplication** file
+1. Open the Main Application file in the Bus Booking app, which is located at **Android > bus > src > main > java > com.adobe.busbooking > DemoApplication**
 
    ![Open DemoApplication](images/android/mobile-launch-install-openDemoApplication.png)
 
@@ -95,7 +94,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the import statements to your clipboard](images/android/mobile-launch-install-copyImports.png)
 
-1. In Android Studio, paste these import statements *before* the existing imports in the `DemoApplication` file. Note that the Core extension includdes libraries to support callbacks, the identity service, lifecycle metrics, and console logging among other features.
+1. In Android Studio, paste these import statements *before* the existing imports in the `DemoApplication` file. Note that the Core extension includes libraries to support callbacks, the identity service, lifecycle metrics, and console logging among other features.
 
     ![Paste the import statements into your DemoApplication file](images/android/mobile-launch-install-pasteImports.png)
 
@@ -116,12 +115,12 @@ Now it's time to update the App to import the SDK
 
    ![Paste the Extension statements into your DemoApplication file](images/android/mobile-launch-install-pasteExtensions.png)
 
->[!IMPORTANT] Add "this" as an argument to `TargetVEC.registerExtension(this)` if it is not already in the implementation instructions.
+>[!IMPORTANT] During the Target VEC Beta, you may need to add "this" as an argument to `TargetVEC.registerExtension(this)`.
 
 ## Verify the implementation
 
 1. Save your Android Studio project
-1. Run the app and launch it in the Emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running Android 4.0 (API 14) or later. In this screenshots, we are emulating a Pixel 2.
+1. Run the app and launch it in the Emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running Android 4.1 (API 16) or later. 
 
    ![Run the app and launch it in the emulator](images/android/mobile-launch-install-buildAndLaunch.png)
 

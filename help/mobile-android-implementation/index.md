@@ -44,9 +44,8 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 
 ## Get the Tools
 
-1. Download [Android Studio](https://developer.android.com/studio)
+1. Download and Install [Android Studio](https://developer.android.com/studio)
 1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
-1. Install [Gradle](https://gradle.org/)
 
 Let's get started!
 
