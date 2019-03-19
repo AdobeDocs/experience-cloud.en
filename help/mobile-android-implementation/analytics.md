@@ -8,17 +8,17 @@ solution: Experience Cloud
 
 # Add Adobe Analytics
 
-In this lesson, you will enable Adobe Analytics tracking in your app. You will collect "Lifecycle" metrics (environment-based information), track screen loads and track user actions.
+In this lesson, you will enable Adobe Analytics tracking in your app.
 
 [Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/reference/) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
-In the lesson [Add Extensions](launch-add-extensions.md), you added the Adobe Analytics extension to your Launch property. In the lesson [Install the Mobile SDK](launch-install-the-mobile-sdk.md) you imported the extension into the sample application. These steps have prepared you to track your app in Adobe Analytics. Now all you have to do is add code to track the states and actions in your app!
+In the [Add Extensions](launch-add-extensions.md) and [Install the Mobile SDK](launch-install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your Launch property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Verify that Lifecycle metrics are being sent to Adobe Analytics, after the basic SDK implementation
+* Verify that Lifecycle metrics are being sent to Adobe Analytics
 * Add code to track states in your app with additional data
 * Add code to track actions in your app with additional data
 
@@ -26,22 +26,22 @@ There are many things that could be implemented for Analytics in Launch. This le
 
 ## Prerequisites
 
-You should have already completed the lessons in the [Configure Launch](launch-create-a-property.md) section. In that section, you already configured your tracking server and report suite ID(s).
+You should have already completed the lessons in the [Configure Launch](launch-create-a-property.md) section. In that section, you added the Analytics extension and  configured your tracking server and report suite ID(s).
 
 ## Lifecycle Metrics and Adobe Analytics
 
-Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK. A quick line of code nets you a host of information, as described in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
+Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK.
 
-Lifecycle metrics are enabled by the Core extension, which you added to the app in the earlier lessons. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports.
+Lifecycle metrics are enabled by the Core extension, which you added to the app in the earlier lessons. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
 
-### Viewing the Analytics LifeCycle Hit
+### Viewing the Analytics Lifecycle Hit
 
-Although you can see the Lifecycle hits in any debugging program/packet sniffer, we will simply show them in the Android Studio debugging console.
+Although you can see the Lifecycle hits in any debugging program/packet sniffer, we will simply show them in the Android Studio debugging console. In fact, you've already added them!
 
-1. Having added your Lifecycle code in the Launch section of the tutorial, build and run your project in Android Studio so that it launches the simulator
-1. In the Android Studio debugging console, type `lifecycle` into the filter at the bottom to limit what shows up, and then scroll to the bottom of the entries
+1. Build and run your project in Xcode so that it launches the simulator
+1. In the Xcode debugging console, type `lifecycle` into the filter at the bottom to limit what shows up, and then scroll to the bottom of the entries
 1. Notice the `Analytics request was sent with body` section
-1. See values in the hit, including things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the documentation
+1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html)
 
 <!--![Lifecycle Hit Debugging](images/android/mobile-analytics-lifecycleHitDebugging.png)-->
 
@@ -69,10 +69,16 @@ In this tutorial you will place the code for a trackState call into only one scr
 Below is syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
 
 **Syntax:**
-`+ (void) trackState: (nullable NSString*) state data: (nullable NSDictionary*) data;`
+
+```swift
++ (void) trackState: (nullable NSString*) state data: (nullable NSDictionary*) data;
+```
 
 **Example:**
+
+```swift
 `ACPCore.trackState("state name", data: ["key": "value"])`
+```
 
 ### Track a State without Data
 
@@ -83,7 +89,9 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 1. Instead of adding any extra data, add `nil` as a placeholder in the method call
 1. Or copy and paste in the following:
 
-`ACPCore.trackState("Home Screen", data: nil)`
+    ```swift
+    ACPCore.trackState("Home Screen", data: nil)`
+    ```
 
 <!--![Basic trackState Call](images/android/mobile-analytics-basicTrackState2.png)-->
 
@@ -103,7 +111,9 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 1. Leave the `state name` as "Home Screen"
 1. Or copy and paste in:
 
-`ACPCore.trackState("Home Screen", data: ["key1": "value1"])`
+    ```swift
+    ACPCore.trackState("Home Screen", data: ["key1": "value1"])
+    ```
 
 <!--![Basic trackState Call](images/android/mobile-analytics-trackStateWithData2.png)-->
 
@@ -125,13 +135,19 @@ In the previous two exercises you made two requests, one with additional data an
 #### Option 1: Multiple Key/Value Pairs
 
 In the trackState call, you have the option of sending multiple key/value pairs, simply by comma separating them in the data set. For example:
-`ACPCore.trackState("Home Screen", data: ["key1": "value1", "key2": "value2"])`
+
+```swift
+ACPCore.trackState("Home Screen", data: ["key1": "value1", "key2": "value2"])
+```
 
 #### Option 2: Dictionary Object
 
 You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you. For example:
-`let screenInfo = ["key1":"value1", "key2":"value2", "key3":"value3"]`
- `ACPCore.trackState("Home Screen", data: screenInfo)`
+
+```swift
+let screenInfo = ["key1":"value1", "key2":"value2", "key3":"value3"]
+ACPCore.trackState("Home Screen", data: screenInfo)
+```
 
 **Extra Credit**
 Go ahead and try these two options out in your code, viewing the results in the Android Studio debugging console. You can use the same filter as before, and check the results to make sure that you have the variables and values coming through
@@ -143,10 +159,16 @@ Similar to tracking non-page-load actions on a website, you often want to track 
 Below is syntax and a code example from the documentation that you can copy-and-paste in this tutorial or in your own app.
 
 **Syntax:**
-`+ (void) trackAction: (nullable NSString*) action data: (nullable NSDictionary*) data;`
+
+```swift
++ (void) trackAction: (nullable NSString*) action data: (nullable NSDictionary*) data;
+```
 
 **Example:**
-`ACPCore.trackAction("action name", data: ["key": "value"])`
+
+```swift
+ACPCore.trackAction("action name", data: ["key": "value"])
+```
 
 ### Track Interaction with the 'No Stops' Checkbox
 
@@ -161,11 +183,15 @@ This checkbox is controlled in the BookingViewController.swift file in the sampl
 1. With the sample project open in Android Studio, go to BookingViewController.swift, and locate the "nonStopButtonToggled" function
 1. In the `if` statement, the first section deselects the box if it is already selected. In this scenario, you want to send in a hit with a value "off", using the following code:
 
-    `ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "off"])`
+    ```swift
+    ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "off"])
+    ```
 
 1. In the next section (the "else" section), it checks the box if it isn't already checked. In this scenario, you want to send in a hit with a value "on", using the following code:
 
-    `ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "on"])`
+    ```swift  
+    ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "on"])
+    ```
 
 Notice the other customizations in the code:
 
