@@ -72,10 +72,10 @@ Now it's time to get to the fun part and start adding the extensions for the sol
   
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-catalog-installAnalytics.png)
 
-1. Enter your **[!UICONTROL Report Suite ID]**
-1. Enter your **[!UICONTROL Analytics Tracking Server]**
-1. Check the box for **[!UICONTROL Offline Enabled]**
-1. Check the Box for **[!UICONTROL Audience Manager Forwarding]**, even if you have not licensed Audience Manager
+1. Enter your **[!UICONTROL Report Suite ID]**. This is the Report Suite to which the app will send data. At the moment, only one report suite can be specified per property.
+1. Enter your **[!UICONTROL Analytics Tracking Server]**. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
+1. Check the box for **[!UICONTROL Offline Enabled]**.
+1. Check the Box for **[!UICONTROL Audience Manager Forwarding]**. This will allow for forwarding of Analytics data to Audience Manager, so you won't have to make a separate call to Audience Manager. This setting is used by both Audience Manager and the People Core Service, so check the box even if you haven't licensed Audience Manager.
 1. Check the box to **[!UICONTROL Backdate Previous Session Info]**
 1. Click the **[!UICONTROL Save]** button
   
