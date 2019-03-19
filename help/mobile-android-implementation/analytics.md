@@ -82,8 +82,6 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
 ### Track a State without Data
 
->[!NOTE] If you completed the lessons to implement Target's VEC, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected and meant to provide focus on the task at hand.
-
 1. With the sample app open in Android Studio, go to BookingViewController.swift, and in the viewDidLoad() function, add a trackState method call
 1. Set the `state name` to "Home Screen"
 1. Instead of adding any extra data, add `nil` as a placeholder in the method call
@@ -95,10 +93,12 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
     <!--![Basic trackState Call](images/android/mobile-analytics-basicTrackState2.png)-->
 
-**To validate the screen vew hit**
+>[!NOTE] If you completed the lessons to implement Target's VEC, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected and meant to provide focus on the task at hand.
+
+**To validate the trackState**
 
 1. Save, build and run the project
-1. When the simulator runs and opens the main home screen of the app, view the Android Studio console
+1. When the simulator runs and opens the home screen of the app, view the Android Studio console
 1. Filter the console to entries with "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Note that pageName variable is set to `Home Screen`, and there are no other custom data pairs. Although technically you are setting a "state name" and not a "page name," the parameter name used is `pageName` in order to provide consistency with website implementations.
 
@@ -117,10 +117,10 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
     <!--![Basic trackState Call](images/android/mobile-analytics-trackStateWithData2.png)-->
 
-**To validate the screen view hit with data**
+**To validate the trackState with data**
 
 1. Save, build and run the project again
-1. When the simulator runs and opens the main home screen of the app, view the Android Studio console
+1. When the simulator runs and opens the home screen of the app, view the Android Studio console
 1. Leave the filter as "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Now see that in addition to the pageName being set, you also have the key/value pair that was sent in on the hit
 
@@ -178,7 +178,7 @@ In this sample bus booking app, there is a checkbox that let's users decide if t
 
 This checkbox is controlled in the BookingViewController.swift file in the sample project. In this exercise, you will send a trackAction hit whenever people check or uncheck the box.
 
-#### Setting the trackAction Code
+#### To add the trackAction code
 
 1. With the sample project open in Android Studio, go to BookingViewController.swift, and locate the "nonStopButtonToggled" function
 1. In the `if` statement, the first section deselects the box if it is already selected. In this scenario, you want to send in a hit with a value "off", using the following code:
@@ -202,7 +202,7 @@ The function now looks like this:
 
 <!--![NonStop Checkbox](images/android/mobile-analytics-nonStopButtonCode2.png)-->
 
-#### See the Code in Action
+#### To validate the trackAction code
 
 1. After adding the code, save the project, run and build
 1. Click the garbage icon to clear the console
