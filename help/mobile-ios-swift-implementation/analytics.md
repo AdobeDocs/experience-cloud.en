@@ -43,7 +43,7 @@ Although you can see the Lifecycle hits in any debugging program/packet sniffer,
 1. Notice that the `Analytics request was sent with body`
 1. See values in the hit, including things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the documentation
 
-![Lifecycle Hit Debugging](images/mobile-analytics-lifecycleHitDebugging.png)
+![Lifecycle Hit Debugging](images/ios/swift/mobile-analytics-lifecycleHitDebugging.png)
 
 ## Import ACPCore Library
 
@@ -56,7 +56,7 @@ The reason that we are talking about the Core library here (as opposed to the An
 1. Save
 1. You are now ready to use trackState or trackAction APIs in this file
 
-![Import ACPCore to File](images/mobile-analytics-importACPCoreToFile.png)
+![Import ACPCore to File](images/ios/swift/mobile-analytics-importACPCoreToFile.png)
 
 ## Track Screen Views in Your App
 
@@ -83,7 +83,7 @@ Following is syntax and a code example from the documentation that you can use a
 
 `ACPCore.trackState("Home Screen", data: nil)`
 
-![Basic trackState Call](images/mobile-analytics-basicTrackState2.png)
+![Basic trackState Call](images/ios/swift/mobile-analytics-basicTrackState2.png)
 
 **See the Results**
 
@@ -92,7 +92,7 @@ Following is syntax and a code example from the documentation that you can use a
 1. Filter the console to entries with "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Note that pageName variable is set to Home Screen, and there are no other custom data pairs. Even though you are setting the "state name" in trackState and technically not a "page name," the code uses the pageName variable to track state name, in order to provide consistency with the same kind of construct in a Web site implementation.
 
-![Basic trackState Result](images/mobile-analytics-basicTrackStateResult1.png)
+![Basic trackState Result](images/ios/swift/mobile-analytics-basicTrackStateResult1.png)
 
 ### Send a Screen View Hit With Data
 
@@ -103,7 +103,7 @@ Following is syntax and a code example from the documentation that you can use a
 
 `ACPCore.trackState("Home Screen", data: ["key1": "value1"])`
 
-![Basic trackState Call](images/mobile-analytics-trackStateWithData2.png)
+![Basic trackState Call](images/ios/swift/mobile-analytics-trackStateWithData2.png)
 
 **See the Results**
 
@@ -112,7 +112,7 @@ Following is syntax and a code example from the documentation that you can use a
 1. Leave the filter as "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Now see that in addition to the pageName being set, you also have the key/value pair that was sent in on the hit
 
-![Basic trackState Result](images/mobile-analytics-trackStateWithDataResult1.png)
+![Basic trackState Result](images/ios/swift/mobile-analytics-trackStateWithDataResult1.png)
 
 >[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://marketing.adobe.com/resources/help/en_US/reference/processing_rules.html) in the Analytics UI.
 
@@ -172,7 +172,7 @@ Notice the other customizations in the code:
 
 The function now looks like this:
 
-![NonStop Checkbox](images/mobile-analytics-nonStopButtonCode2.png)
+![NonStop Checkbox](images/ios/swift/mobile-analytics-nonStopButtonCode2.png)
 
 #### See the Code in Action
 
@@ -183,7 +183,7 @@ The function now looks like this:
 1. Notice that the "NonStop=on" key/value pair are present, and can then be assigned to a prop/eVar in Processing Rules
 1. Notice the "pe=lnk_o" key/value, showing that this is a "custom link" hit, triggered by trackAction
 
-![trackAction Result in Debugger](images/mobile-analytics-trackActionResult1.png)
+![trackAction Result in Debugger](images/ios/swift/mobile-analytics-trackActionResult1.png)
 
 Nice work! You have completed the Analytics section. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
