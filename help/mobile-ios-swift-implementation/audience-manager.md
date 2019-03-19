@@ -38,7 +38,7 @@ There are two ways to implement Audience Manager in an app:
 
 * Client-Side DIL&mdash;This approach is for customers who do not have Adobe Analytics. Audience Manager methods in the app send data directly into Audience Manager. In this case you would use the Audience Manager extension in Launch when you are setting up your mobile Launch property.
 
-When you set up the Analytics extension in the [Add Extensions](launch-add-extensions.md) section of this tutorial, you checked the box to initiate server-side forwarding of data from Analytics to Audience Manager. This will insert the code needed to handle the response of Audience Manager segments back into your app. We will not be adding the Audience Manager extension in this tutorial, because again, this is only for the use case of when you do NOT have Adobe Analytics.
+When you previously set up the Analytics extension in the [Add Extensions](launch-add-extensions.md) section of this tutorial, you checked the box to initiate server-side forwarding of data from Analytics to Audience Manager. This will dynamically insert the code needed to handle the response of Audience Manager segments back into your app. We will not be adding the Audience Manager extension in this tutorial, because again, this is only for the use case of when you do NOT have Adobe Analytics.
 
 ## Enable Server-Side Forwarding
 
@@ -49,7 +49,7 @@ There are two main steps in doing a SSF implementation:
 
 ### Enable Server-Side Forwarding in the Analytics Admin Console
 
-A configuration in the Adobe Analytics Admin Console is required to start forwarding  data from Adobe Analytics to Adobe Audience Manager. Be advised that it can take up to four hours to start forwarding the data, so keep that in mind as you are troubleshooting the forwarding.
+A configuration in the Adobe Analytics Admin Console is required to start forwarding  data from Adobe Analytics to Adobe Audience Manager. Be advised that it can take the system up to four hours to start forwarding the data, so keep that in mind as you are troubleshooting the forwarding.
 
 #### To Enable SSF in the Analytics Admin Console
 
@@ -77,23 +77,21 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html).
 
-Once this step has been completed, and if you have the Experience Cloud ID Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must have also completed the setup in Launch as well (which you did earlier).
-
->[!NOTE] To implement Server-Side Forwarding of Analytics data into AAM, we actually configured the Analytics extension in Launch, **not** the AAM extension (I know, you already know this). The AAM extension is used exclusively for "Client-Side" (or in-app) implementations, for those who do not have Adobe Analytics.
+This switch will start the actual forwarding of data to AAM, as long as you have the Experience Cloud ID service implemented. The rest of SSF implementation happens in the code, which was handled in Launch when you checked the box in the Analytics extension to forward to AAM.
 
 Server-Side Forwarding code is now implemented for your app!
 
 ### Validate the Server-Side Forwarding
 
 The main way to validate that the Server-Side Forwarding is up and running is by looking at the response to any of your Adobe Analytics hits coming from the app.
-If you are not doing server-side forwarding (SSF) of data from Analytics to Audience Manager, then there is really no response to the Analytics beacon (besides a 2x2 pixel). However, if you are doing SSF, then there are items that you can verify in the Analytics request and response that will let you know that it is working correctly.
+If you are not doing server-side forwarding (SSF) of data from Analytics to Audience Manager, then there is really no response to the Analytics beacon (besides a 2x2 pixel). However, once we enable SSF, then there are items that you can verify in the Analytics request and response that will let you know that it is working correctly.
 Since the Xcode console does not show the response to the beacons, you should use another debugger/packet sniffer that does show the response, like Charles Proxy, for example (which is what I will show in my screenshot below).
 
 1. Open your debugger and filter for `b/ss`, which will limit what you see to the Adobe Analytics requests
 1. Build and Run your sample app from the previous exercises
 1. For any of your Analytics requests, look at the response. It should contain a `dcs_region` parameter, a `uuid` parameter, and should also have a "stuff" object. This object is where AAM segment IDs will be sent back to the browser (for any segments the user belongs to, which are assigned in AAM to a cookie destination). If you have the "stuff" object, SSF is working!
 
-    ![AA response - stuff object](images/mobile-aam-analyticsResponseSSF.png)
+    ![AA response - stuff object](images/mobile-aam-AAresponseCharles.png)
 
 >[!WARNING] Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed the step in Launch to forward to AAM, but that the forwarding in the Analytics Admin Console has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
 
