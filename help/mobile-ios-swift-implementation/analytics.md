@@ -135,6 +135,7 @@ In the previous two exercises you made two requests, one with additional data an
 #### Option 1: Multiple Key/Value Pairs
 
 In the trackState call, you have the option of sending multiple key/value pairs, simply by comma separating them in the data set. For example:
+
 ```swift
 ACPCore.trackState("Home Screen", data: ["key1": "value1", "key2": "value2"])
 ```
@@ -165,7 +166,7 @@ Below is syntax and a code example from the documentation that you can copy-and-
 
 **Example:**
 
-```swift 
+```swift
 ACPCore.trackAction("action name", data: ["key": "value"])
 ```
 
