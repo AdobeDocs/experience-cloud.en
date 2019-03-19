@@ -14,7 +14,7 @@ The ID Service is part of the Mobile Core extension, so you have already impleme
 
 ## Validation Steps
 
-To validate the calls to the ID Service, run the sample app in XCode or Developer Studio, open the Debug Console and look for the request and the response:
+To validate the calls to the ID Service, run the sample app in Xcode or Developer Studio, open the Debug Console and look for the request and the response:
 
 1. **Request to the ID Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
 

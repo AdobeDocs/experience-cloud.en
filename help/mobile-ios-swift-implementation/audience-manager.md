@@ -84,7 +84,9 @@ Server-Side Forwarding code is now implemented for your app!
 ### Validate the Server-Side Forwarding
 
 The main way to validate that the Server-Side Forwarding is up and running is by looking at the response to any of your Adobe Analytics hits coming from the app.
+
 If you are not doing server-side forwarding (SSF) of data from Analytics to Audience Manager, then there is really no response to the Analytics beacon (besides a 2x2 pixel). However, once we enable SSF, then there are items that you can verify in the Analytics request and response that will let you know that it is working correctly.
+
 Since the Xcode console does not show the response to the beacons, you should use another debugger/packet sniffer that does show the response, like Charles Proxy, for example (which is what I will show in my screenshot below).
 
 1. Open your debugger and filter for `b/ss`, which will limit what you see to the Adobe Analytics requests

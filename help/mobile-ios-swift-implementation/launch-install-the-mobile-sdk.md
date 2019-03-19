@@ -105,7 +105,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 Now it's time to update the App to import the SDK
 
-1. Open the `BusBookingSwift.xcworkspace` file in XCode
+1. Open the `BusBookingSwift.xcworkspace` file in Xcode
 1. Open the `AppDelegate.swift` file
 
    ![Open the AppDelegate file](images/ios/swift/mobile-launch-install-openAppDelegate.png)
@@ -115,7 +115,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Swift import statements to your clipboard](images/ios/swift/mobile-launch-install-copyImports.png)
 
-1. In XCode, paste these import statements into the `AppDelegate.swift` file after the import for the `UIKit`
+1. In Xcode, paste these import statements into the `AppDelegate.swift` file after the import for the `UIKit`
 
    ![Paste the Swift import statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteImports.png)
 
@@ -123,7 +123,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Core statements to your clipboard](images/ios/swift/mobile-launch-install-copyCore.png)
 
-1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
+1. In Xcode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
 
    ![Paste the Core statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteCore.png)
 
@@ -131,13 +131,13 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Extension statements to your clipboard](images/ios/swift/mobile-launch-install-copyExtensions.png)
 
-1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
+1. In Xcode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
 
    ![Paste the Extension statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteExtension.png)
 
 ## Verify the implementation
 
-1. Save your XCode project
+1. Save your Xcode project
 1. Run the app and launch it in the Simulator. If you don't have any simulator devices configured, configure one now, being sure to configure a device running iOS 10+. We like to use an iPhone 8 simulator because it is easy to click the `Home` button with a mouse.
 
    ![Run the app and launch it in the emulator](images/ios/swift/mobile-launch-install-buildAndLaunch.png)
@@ -146,7 +146,7 @@ Now it's time to update the App to import the SDK
 
    ![Wait for the app to full open](images/ios/mobile-launch-install-simulator.png)
   
-1. Confirm that calls are being made to the Adobe servers in the XCode Console
+1. Confirm that calls are being made to the Adobe servers in the Xcode Console
 
    ![Look for calls in the console](images/ios/swift/mobile-launch-install-console.png)
 

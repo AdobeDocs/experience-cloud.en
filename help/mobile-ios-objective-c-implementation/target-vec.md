@@ -42,7 +42,7 @@ This is an optional step that will turn on special console logging specific to t
 
 **To enable logging**
 
-1. Open the `AppDelegate.m` file in XCode
+1. Open the `AppDelegate.m` file in Xcode
 1. Add the line of code `[ACPTargetVEC allowDebugLogging:YES];` just below the line where you register the Target VEC Extension
 
    ![Enable Target VEC Logging](images/ios/objective-c/mobile-targetvec-enableLogging.png)
@@ -51,9 +51,9 @@ Now that you've enabled the logging, it's time to confirm that it is working.
 
 **To verify the logging**
 
-1. Save the XCode project
+1. Save the Xcode project
 1. Rebuild the app and wait for it to reopen in the Simulator
-1. Click in the Console pane of XCode
+1. Click in the Console pane of Xcode
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters&mdash;which all begin with `a.`&mdash; are automatically included):
@@ -70,7 +70,7 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 
 **To add custom parameters**
 
-1. In XCode, open the `BookingViewController.m` file. This file is used by the Home screen.
+1. In Xcode, open the `BookingViewController.m` file. This file is used by the Home screen.
 1. Import the Target VEC extension by adding `#import "ACPTargetVEC.h"` beneath the existing import
 1. In the `viewDidLoad` function, after the line with `super.viewDidLoad` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
@@ -93,9 +93,9 @@ Now that you've added parameters to the app, it's time to confirm they are being
 
 **To verify the parameters**
 
-1. Save the XCode project
+1. Save the Xcode project
 1. Rebuild the app and wait for it to reopen in the Simulator
-1. Click in the Console pane of XCode
+1. Click in the Console pane of Xcode
 1. Use ⌘-F to open the Find box
 1. Search for `targetvec` in the Find box
 1. Hit `Enter` to jump to the Target request and Post body. Locate the custom parameters you just added to the request:
@@ -112,7 +112,7 @@ iOS supports the use of [Universal Links](https://developer.apple.com/documentat
 
 **To register your URL Scheme**
 
-1. In XCode, double-click on your app to open the Settings screen
+1. In Xcode, double-click on your app to open the Settings screen
 1. On the Settings screen, click the `Info` tab
 1. Expand the `URL Types` section
 1. Note that the **[!UICONTROL Identifier]** is set to `com.adobetarget.BusBookingObjectiveC`. You can use this identifier or change it if you like.
@@ -137,7 +137,7 @@ Now, when a user with your app installed opens a URL like `BusBookingObjectiveC:
 
 **To verify the deep link scheme**
 
-1. Save the XCode project
+1. Save the Xcode project
 1. Rebuild the app
 1. In the Simulator, open Safari
 1. Enter the url `BusBookingObjectiveC://com.adobetarget.BusBookingObjectiveC` (or whatever scheme you defined) into the address bar. If you have any difficulties, see the Tip section below.
@@ -190,7 +190,7 @@ Now let's create an activity in the Target UI.
 
     >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
-    >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to XCode)
+    >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to Xcode)
     >   1. Copy the deep link from the Target interface and send it to the device however you would like
     >   1. Email the deep link to a valid email address and then open the link with an email application on the device
 

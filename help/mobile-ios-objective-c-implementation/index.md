@@ -45,7 +45,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 ## Get the Tools
 
 1. You must use a Mac to complete this tutorial
-1. Download [XCode](https://developer.apple.com/xcode/)
+1. Download [Xcode](https://developer.apple.com/xcode/)
 1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
 1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
 
