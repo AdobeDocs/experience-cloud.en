@@ -228,7 +228,8 @@ Now let's create an activity in the Target UI.
 1. Save and Approve your activity and verify that you can see it in the sample app
 
 Pairing the device with the VEC is a one-time action. When you create more activities in the future on the same device, you will just be able to select the device from a list, as pictured below:
-   ![Using a saved Device](images/ios/objective-c/mobile-targetvec-useSavedApp.png)
+
+![Using a saved Device](images/ios/objective-c/mobile-targetvec-useSavedApp.png)
 
 >[!TIP] If you have a device open, but it is "Unavailable" in the selection menu, background the app by returning to the Home screen and then move the app back into the foreground to make it "Available" again.
 

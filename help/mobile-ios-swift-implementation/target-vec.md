@@ -74,14 +74,14 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import
 1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
-```swift
-        let mboxParams = ["mboxparam1":"mboxvalue1"]
-        let profileParams = ["profilekey1":"profilevalue1"]
-        let product : TargetProduct = TargetProduct.init(productId: "1234", categoryId: "furniture")
-        let order : TargetOrder = TargetOrder.init(orderId: "12345", total: 123.45, purchasedProductIds: ["100", "200"])
-        let targetParams : TargetParameters = TargetParameters.init(parameters: mboxParams, profileParameters: profileParams, product: product, order: order)
-        ACPTargetVEC.setGlobalRequest(targetParams)
-```
+    ```swift
+    let mboxParams = ["mboxparam1":"mboxvalue1"]
+    let profileParams = ["profilekey1":"profilevalue1"]
+    let product : TargetProduct = TargetProduct.init(productId: "1234", categoryId: "furniture")
+    let order : TargetOrder = TargetOrder.init(orderId: "12345", total: 123.45, purchasedProductIds: ["100", "200"])
+    let targetParams : TargetParameters = TargetParameters.init(parameters: mboxParams, profileParameters: profileParams, product: product, order: order)
+    ACPTargetVEC.setGlobalRequest(targetParams)
+    ```
 
    ![Add Parameters to the TargetVEC request](images/ios/swift/mobile-targetvec-addParameters.png)
 
@@ -224,7 +224,8 @@ Now let's create an activity in the Target UI.
 1. Save and Approve your activity and verify that you can see it in the sample app
 
 Pairing the device with the VEC is a one-time action. When you create more activities in the future on the same device, you will just be able to select the device from a list, as pictured below:
-   ![Using a saved Device](images/ios/swift/mobile-targetvec-useSavedApp.png)
+
+![Using a saved Device](images/ios/swift/mobile-targetvec-useSavedApp.png)
 
 >[!TIP] If you have a device open, but it is "Unavailable" in the selection menu, background the app by returning to the Home screen and then move the app back into the foreground to make it "Available" again.
 
