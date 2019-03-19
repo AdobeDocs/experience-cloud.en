@@ -10,7 +10,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
 mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
+git-repo: https://github.com/AdobeDocs/experience-cloud.en
 ---
 
 # Implementing the Experience Cloud in Mobile Android Applications {#implementing-in-mobile-android-apps-with-launch}
