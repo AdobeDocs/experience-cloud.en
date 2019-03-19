@@ -43,7 +43,7 @@ Although you can see the Lifecycle hits in any debugging program/packet sniffer,
 1. Notice the `Analytics request was sent with body` section
 1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html)
 
-<!--![Lifecycle Hit Debugging](images/android/mobile-analytics-lifecycleHitDebugging.png)-->
+    <!--![Lifecycle Hit Debugging](images/android/mobile-analytics-lifecycleHitDebugging.png)-->
 
 ## Import the ACPCore Library
 
@@ -58,7 +58,7 @@ In this tutorial, you will only track one state, however in your actual app, you
 1. Save
 1. You are now ready to use trackState or trackAction APIs in this file
 
-<!--![Import ACPCore to File](images/android/mobile-analytics-importACPCoreToFile.png)-->
+    <!--![Import ACPCore to File](images/android/mobile-analytics-importACPCoreToFile.png)-->
 
 ## Track States
 
@@ -77,12 +77,12 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 **Example:**
 
 ```swift
-`ACPCore.trackState("state name", data: ["key": "value"])`
+ACPCore.trackState("state name", data: ["key": "value"])
 ```
 
 ### Track a State without Data
 
->[!NOTE] If you have followed the steps in this tutorial to implement Target, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected, and is meant to provide focus on the task at hand.
+>[!NOTE] If you completed the lessons to implement Target's VEC, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected and meant to provide focus on the task at hand.
 
 1. With the sample app open in Android Studio, go to BookingViewController.swift, and in the viewDidLoad() function, add a trackState method call
 1. Set the `state name` to "Home Screen"
@@ -93,7 +93,7 @@ Below is syntax and a code example from the documentation you can copy-and-paste
     ACPCore.trackState("Home Screen", data: nil)`
     ```
 
-<!--![Basic trackState Call](images/android/mobile-analytics-basicTrackState2.png)-->
+    <!--![Basic trackState Call](images/android/mobile-analytics-basicTrackState2.png)-->
 
 **To validate the screen vew hit**
 
@@ -102,7 +102,7 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 1. Filter the console to entries with "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Note that pageName variable is set to `Home Screen`, and there are no other custom data pairs. Although technically you are setting a "state name" and not a "page name," the parameter name used is `pageName` in order to provide consistency with website implementations.
 
-<!--![Basic trackState Result](images/android/mobile-analytics-basicTrackStateResult1.png)-->
+    <!--![Basic trackState Result](images/android/mobile-analytics-basicTrackStateResult1.png)-->
 
 ### Track a State with Data
 
@@ -115,7 +115,7 @@ Below is syntax and a code example from the documentation you can copy-and-paste
     ACPCore.trackState("Home Screen", data: ["key1": "value1"])
     ```
 
-<!--![Basic trackState Call](images/android/mobile-analytics-trackStateWithData2.png)-->
+    <!--![Basic trackState Call](images/android/mobile-analytics-trackStateWithData2.png)-->
 
 **To validate the screen view hit with data**
 
@@ -124,7 +124,7 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 1. Leave the filter as "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Now see that in addition to the pageName being set, you also have the key/value pair that was sent in on the hit
 
-<!--![Basic trackState Result](images/android/mobile-analytics-trackStateWithDataResult1.png)-->
+    <!--![Basic trackState Result](images/android/mobile-analytics-trackStateWithDataResult1.png)-->
 
 >[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://marketing.adobe.com/resources/help/en_US/reference/processing_rules.html) in the Analytics UI.
 
@@ -211,7 +211,7 @@ The function now looks like this:
 1. Notice that the "NonStop=on" key/value pair are present, and can then be assigned to a prop/eVar in Processing Rules
 1. Notice the "pe=lnk_o" key/value, showing that this is a "custom link" hit, triggered by trackAction
 
-<!--![trackAction Result in Debugger](images/android/mobile-analytics-trackActionResult1.png)-->
+    <!--![trackAction Result in Debugger](images/android/mobile-analytics-trackActionResult1.png)-->
 
 Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 
