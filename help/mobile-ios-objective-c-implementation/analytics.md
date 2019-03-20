@@ -142,7 +142,7 @@ In the trackState call, you have the option of sending multiple key/value pairs,
 
 #### Option 2: Dictionary Object
 
-You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you. 
+You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you.
 
 <!--For example:
 
