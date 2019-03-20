@@ -146,7 +146,7 @@ You can also define a dictionary in your code and then send that in with the tra
 
 ```objective-c
 NSDictionary *theStuff = @{@"key1": @"value1",@"key2": @"value2"};
-    [ACPCore trackState:@"Home Screen" data:theStuff];
+[ACPCore trackState:@"Home Screen" data:theStuff];
 ```
 
 **Extra Credit**
