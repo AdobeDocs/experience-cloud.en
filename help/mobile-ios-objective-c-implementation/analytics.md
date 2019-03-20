@@ -142,16 +142,12 @@ In the trackState call, you have the option of sending multiple key/value pairs,
 
 #### Option 2: Dictionary Object
 
-You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you.
-
-<!--For example:
+You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you. For example:
 
 ```objective-c
-HashMap<String, Object> exampleContextData = new HashMap<String, Object>();
-exampleContextData.put("myapp.login.LoginStatus", "logged in");
-[ACPCore trackState:@"Home Screen" data:@exampleContextData];
+NSDictionary *theStuff = @{@"key1": @"value1",@"key2": @"value2"};
+    [ACPCore trackState:@"Home Screen" data:theStuff];
 ```
--->
 
 **Extra Credit**
 Go ahead and try these two options out in your code, viewing the results in the Xcode debugging console. You can use the same filter as before, and check the results to make sure that you have the variables and values coming through
