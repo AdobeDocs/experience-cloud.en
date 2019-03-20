@@ -1,6 +1,6 @@
 ---
 title: Implement Adobe Analytics with Launch
-description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
+description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 seo-description:
 seo-title: Implement Adobe Analytics with Launch
 solution: Experience Cloud
@@ -43,18 +43,18 @@ Although you can see the Lifecycle hits in any debugging program/packet sniffer,
 1. Notice the `Analytics request was sent with body` section
 1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/ios/metrics.html)
 
-    <!--![Lifecycle Hit Debugging](images/ios/objective-c/mobile-analytics-lifecycleHitDebugging.png)-->
+    ![Lifecycle Hit Debugging](images/ios/objective-c/mobile-analytics-lifecycleHitDebugging.png)
 
 ## Import the ACPCore Library
 
-In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app. In ordet to use these APIs, you need to import the library which contains them.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.  
+In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app. In order to use these APIs, you need to import the library which contains them.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.  
 
 In this tutorial, you will only track one state, however in your actual app, you will want to track multiple states.
 
 **To import the ACPCore Library**
 
-1. Open BookingViewController.swift in Xcode
-1. At the top of the file &mdash;typically alongside other import statements&mdash;add `import ACPCore`
+1. Open BookingViewController.m file in Xcode
+1. At the top of the file &mdash;typically alongside other import statements&mdash;add `#import "ACPCore.h"`
 1. Save
 1. You are now ready to use trackState or trackAction APIs in this file
 
@@ -70,28 +70,28 @@ Below is syntax and a code example from the documentation you can copy-and-paste
 
 **Syntax:**
 
-```swift
+```objective-c
 + (void) trackState: (nullable NSString*) state data: (nullable NSDictionary*) data;
 ```
 
 **Example:**
 
-```swift
-ACPCore.trackState("state name", data: ["key": "value"])
+```objective-c
+[ACPCore trackState:@"state name" data:@{@"key":@"value"}];
 ```
 
 ### Track a State without Data
 
-1. With the sample app open in Xcode, go to BookingViewController.swift, and in the viewDidLoad() function, add a trackState method call
+1. With the sample app open in Xcode, go to BookingViewController.m, and in the `viewDidLoad()` function, add a trackState method call
 1. Set the `state name` to "Home Screen"
-1. Instead of adding any extra data, add `nil` as a placeholder in the method call
+1. Instead of adding any extra data, add `null` as a placeholder in the method call
 1. Or copy and paste in the following:
 
-    ```swift
-    ACPCore.trackState("Home Screen", data: nil)
+    ```objective-c
+    [ACPCore trackState:@"Home Screen" data:nil];
     ```
 
-    <!--![Basic trackState Call](images/ios/objective-c/mobile-analytics-basicTrackState2.png)-->
+    ![Basic trackState Call](images/ios/objective-c/mobile-analytics-basicTrackState2.png)
 
 >[!NOTE] If you completed the lessons to implement Target's VEC, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected and meant to provide focus on the task at hand.
 
@@ -102,20 +102,20 @@ ACPCore.trackState("state name", data: ["key": "value"])
 1. Filter the console to entries with "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Note that pageName variable is set to `Home Screen`, and there are no other custom data pairs. Although technically you are setting a "state name" and not a "page name," the parameter name used is `pageName` in order to provide consistency with website implementations.
 
-    <!--![Basic trackState Result](images/ios/objective-c/mobile-analytics-basicTrackStateResult1.png)-->
+    ![Basic trackState Result](images/ios/objective-c/mobile-analytics-basicTrackStateResult1.png)
 
 ### Track a State with Data
 
-1. Go back into BookingViewController.swift, and in the "super.viewDidLoad()" function, comment out (or delete) the basic (no data added) trackState call from the last exercise
+1. Go back into BookingViewController.m, and in the `viewDidLoad()` function, comment out (or delete) the basic (no data added) trackState call from the last exercise
 1. Add a new trackState method call, this time with data, using `key1` as the key and `value1` as the value
 1. Leave the `state name` as "Home Screen"
 1. Or copy and paste in:
 
-    ```swift
-    ACPCore.trackState("Home Screen", data: ["key1": "value1"])
+    ```objective-c
+    [ACPCore trackState:@"Home Screen" data:@{@"key1":@"value1"}];
     ```
 
-    <!--![Basic trackState Call](images/ios/objective-c/mobile-analytics-trackStateWithData2.png)-->
+    ![Basic trackState Call](images/ios/objective-c/mobile-analytics-trackStateWithData2.png)
 
 **To validate the trackState with data**
 
@@ -124,7 +124,7 @@ ACPCore.trackState("state name", data: ["key": "value"])
 1. Leave the filter as "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
 1. Now see that in addition to the pageName being set, you also have the key/value pair that was sent in on the hit
 
-    <!--![Basic trackState Result](images/ios/objective-c/mobile-analytics-trackStateWithDataResult1.png)-->
+    ![Basic trackState Result](images/ios/objective-c/mobile-analytics-trackStateWithDataResult1.png)
 
 >[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://marketing.adobe.com/resources/help/en_US/reference/processing_rules.html) in the Analytics UI.
 
@@ -136,18 +136,22 @@ In the previous two exercises you made two requests, one with additional data an
 
 In the trackState call, you have the option of sending multiple key/value pairs, simply by comma separating them in the data set. For example:
 
-```swift
-ACPCore.trackState("Home Screen", data: ["key1": "value1", "key2": "value2"])
+```objective-c
+[ACPCore trackState:@"Home Screen" data:@{@"key1":@"value1",@"key2":@"value2",@"key3":@"value3"}];
 ```
 
 #### Option 2: Dictionary Object
 
-You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you. For example:
+You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you. 
 
-```swift
-let screenInfo = ["key1":"value1", "key2":"value2", "key3":"value3"]
-ACPCore.trackState("Home Screen", data: screenInfo)
+<!--For example:
+
+```objective-c
+HashMap<String, Object> exampleContextData = new HashMap<String, Object>();
+exampleContextData.put("myapp.login.LoginStatus", "logged in");
+[ACPCore trackState:@"Home Screen" data:@exampleContextData];
 ```
+-->
 
 **Extra Credit**
 Go ahead and try these two options out in your code, viewing the results in the Xcode debugging console. You can use the same filter as before, and check the results to make sure that you have the variables and values coming through
@@ -160,37 +164,37 @@ Below is syntax and a code example from the documentation that you can copy-and-
 
 **Syntax:**
 
-```swift
+```objective-c
 + (void) trackAction: (nullable NSString*) action data: (nullable NSDictionary*) data;
 ```
 
 **Example:**
 
-```swift
-ACPCore.trackAction("action name", data: ["key": "value"])
+```objective-c
+[ACPCore trackAction:@"action name" data:@{@"key":@"value"}];
 ```
 
 ### Track Interaction with the 'No Stops' Checkbox
 
 In this sample bus booking app, there is a checkbox that let's users decide if they want to limit their search results to  options. You've decided that you want to track the interaction with that checkbox in Adobe Analytics.
 
-    <!--![NonStop Checkbox](images/mobile-analytics-nonstopCheckbox.png)-->
+![NonStop Checkbox](images/mobile-analytics-nonstopCheckbox.png)
 
-This checkbox is controlled in the BookingViewController.swift file in the sample project. In this exercise, you will send a trackAction hit whenever people check or uncheck the box.
+This checkbox is controlled in the BookingViewController.m file in the sample project. In this exercise, you will send a trackAction hit whenever people check or uncheck the box.
 
 #### Setting the trackAction Code
 
-1. With the sample project open in Xcode, go to BookingViewController.swift, and locate the "nonStopButtonToggled" function
+1. With the sample project open in Xcode, go to BookingViewController.m, and locate the "nonStopButtonToggled" function
 1. In the `if` statement, the first section deselects the box if it is already selected. In this scenario, you want to send in a hit with a value "off", using the following code:
 
-    ```swift  
-    ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "off"])
+    ```objective-c  
+    [ACPCore trackAction:@"NonStop Button Interaction" data:@{@"NonStop":@"off"}];
     ```
 
 1. In the next section (the "else" section), it checks the box if it isn't already checked. In this scenario, you want to send in a hit with a value "on", using the following code:
 
-    ```swift  
-    ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "on"])
+    ```objective-c
+    [ACPCore trackAction:@"NonStop Button Interaction" data:@{@"NonStop":@"on"}];
     ```
 
 Notice the other customizations in the code:
@@ -200,7 +204,7 @@ Notice the other customizations in the code:
 
 The function now looks like this:
 
-    <!--![NonStop Checkbox](images/ios/objective-c/mobile-analytics-nonStopButtonCode2.png)-->
+![NonStop Checkbox](images/ios/objective-c/mobile-analytics-nonStopButtonCode2.png)
 
 #### To validate the trackAction code
 
@@ -211,7 +215,7 @@ The function now looks like this:
 1. Notice that the "NonStop=on" key/value pair are present, and can then be assigned to a prop/eVar in Processing Rules
 1. Notice the "pe=lnk_o" key/value, showing that this is a "custom link" hit, triggered by trackAction
 
-    <!--![trackAction Result in Debugger](images/ios/objective-c/mobile-analytics-trackActionResult1.png)-->
+    ![trackAction Result in Debugger](images/ios/objective-c/mobile-analytics-trackActionResult1.png)
 
 Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
 

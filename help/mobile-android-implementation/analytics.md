@@ -106,7 +106,7 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
 ### Track a State with Data
 
-1. Go back into BookingViewController.swift, and in the "super.viewDidLoad()" function, comment out (or delete) the basic (no data added) trackState call from the last exercise
+1. Go back into BookingViewController.swift, and in the `viewDidLoad()` function, comment out (or delete) the basic (no data added) trackState call from the last exercise
 1. Add a new trackState method call, this time with data, using `key1` as the key and `value1` as the value
 1. Leave the `state name` as "Home Screen"
 1. Or copy and paste in:
