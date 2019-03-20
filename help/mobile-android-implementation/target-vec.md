@@ -153,6 +153,8 @@ Now that your deep link structure is set up, you are ready to use the Target VEC
 
 Now let's create an activity in the Target UI.
 
+>[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
+
 **To Create an Activity with the Target VEC**
 
 1. Log into the [Adobe Experience Cloud](https://experiencecloud.adobe.com)
