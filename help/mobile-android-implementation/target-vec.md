@@ -153,7 +153,7 @@ Now that your deep link structure is set up, you are ready to use the Target VEC
 
 Now let's create an activity in the Target UI.
 
->[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
+>[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account.  Even if you have been able to complete all of the steps thus far, you may not see the Mobile VEC option in the Target interface when you try to create an activity.
 
 **To Create an Activity with the Target VEC**
 
@@ -169,6 +169,9 @@ Now let's create an activity in the Target UI.
 1. Click the **[!UICONTROL Create Activity]** button and select **[!UICONTROL A/B Test]**
 1. Select **[!UICONTROL Mobile App]**
 1. Make sure **[!UICONTROL Visual]** is selected under **[!UICONTROL Choose Experience Composer]**
+
+   >[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account.  Even if you have been able to complete all of the steps thus far, you may not see the Mobile VEC option as pictured below.
+
 1. Click the **[!UICONTROL Next]** button
   
    ![Create an A/B Activity using the Mobile VEC](images/mobile-targetvec-createActivity.png)
