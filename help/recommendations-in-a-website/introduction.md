@@ -66,9 +66,20 @@ Then, suppose that you have an experience without recommendations and an experie
 
 | Recommendation Type  | Examples |  Location  | Purpose  |
 |---|---|---|---|
+| Similar Items | &diams; People who viewed this viewed that<br/>&diams; Last product you viewed/purchased | &diams; Product page<br/>&diams; Article page | &diams; Related<br/>&diams;  Similar<br/>&diams;  Publisher<br/>&diams;  Helpful Articles  |
+| Alternative Items | &diams; People who viewed this bought that | &diams; Product page<br/>&diams; Article page<br/>&diams; Email  |  &diams; Alternatives substitution<br/>&diams;  Similar<br/>&diams;  Selection/Decision |
+| Complementary Items | &diams; People who bought this bought that  | &diams; Shopping cart<br/>&diams;  Checkout (funnel)<br/>&diams;  Email  | &diams; Cross-sell  |
+| High Affinity Items | &diams; May we suggest<br/>&diams; Suggested products  | &diams; Product page<br/>&diams; Article page<br/>&diams;  Checkout  | &diams; Conversion-focused<br/>&diams;  Expert  |
+| Searched Items | &diams; People who searched for this bought that  | &diams; Search results page  | &diams; Cross-sell<br/>&diams;  Related<br/>&diams;  Complementary  |
+| Most Popular Items | &diams; Best-selling products<br/>&diams; Top viewed  | &diams; Homepage<br/>&diams;  Product page<br/>&diams;  Email  | &diams; Engagement<br/>&diams;  Cross-sell |
+
+<!--
+| Recommendation Type  | Examples |  Location  | Purpose  |
+|---|---|---|---|
 | Similar Items | <ul><li>People who viewed this viewed that</li><li>Last product you viewed/purchased</li></ul> | <ul><li>Product page</li><li>Article page</li></ul> | <ul><li>Related</li><li> Similar</li><li> Publisher</li><li> Helpful Articles</li></ul>  |
 | Alternative Items | <ul><li>People who viewed this bought that</li></ul> | <ul><li>Product page</li><li>Article page</li><li>Email</li></ul>  |  <ul><li>Alternatives substitution</li><li> Similar</li><li> Selection/Decision</li></ul> |
 | Complementary Items | <ul><li>People who bought this bought that</li></ul>  | <ul><li>Shopping cart</li><li> Checkout (funnel)</li><li> Email</li></ul>  | <ul><li>Cross-sell</li></ul>  |
 | High Affinity Items | <ul><li>May we suggest</li><li>Suggested products</li></ul>  | <ul><li>Product page</li><li>Article page</li><li> Checkout</li></ul>  | <ul><li>Conversion-focused</li><li> Expert</li></ul>  |
 | Searched Items | <ul><li>People who searched for this bought that</li></ul>  | <ul><li>Search results page</li></ul>  | <ul><li>Cross-sell</li><li> Related</li><li> Complementary</li></ul>  |
 | Most Popular Items | <ul><li>Best-selling products</li><li>Top viewed</li></ul>  | <ul><li>Homepage</li><li> Product page</li><li> Email</li></ul>  | <ul><li>Engagement</li><li>Cross-sell</li></ul> |
+-->
