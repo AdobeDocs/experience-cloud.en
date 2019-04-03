@@ -74,7 +74,7 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 1. Enter your **[!UICONTROL Report Suite ID]**. This is the Report Suite to which the app will send data. At the moment, only one report suite can be specified per property.
 1. Enter your **[!UICONTROL Analytics Tracking Server]**. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
-1. Check the box for **[!UICONTROL Offline Enabled]**.
+1. Check the box for **[!UICONTROL Offline Enabled]**. When the Offline Enabled check box is selected, Analytics hits are queued when your device is offline and are sent later when your device is back online. To use offline tracking, **ensure** that your report suite is timestamp enabled. For more information, see the [documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/offline_tracking.html).
 1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an additional call from the app to Audience Manager. This setting is used by both Audience Manager and the People Core Service, so check the box even if you haven't licensed Audience Manager.
 1. Check the box to **[!UICONTROL Backdate Previous Session Info]**
 1. Click the **[!UICONTROL Save]** button
