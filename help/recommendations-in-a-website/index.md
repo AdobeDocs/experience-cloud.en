@@ -2,8 +2,8 @@
 title: Implementing and Using Adobe Target Recommendations in a Website
 description: Implementing and Using Adobe Target Recommendations in a Website is the perfect starting point for marketers who want to learn how to implement and use the Adobe Target Recommendations in their website.
 seo-description:
-seo-title: Implementing the Adobe Experience Cloud in Websites with Adobe Experience Platform Launch
-solution: Experience Cloud
+seo-title: Implementing and Using Adobe Target Recommendations in a Website
+solution: Adobe Target
 ---
 
 # Overview
