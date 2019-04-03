@@ -19,7 +19,7 @@ And if you think about your own shopping behavior, these kinds of recommendation
 
 Nearly everyone among us has bought a product we saw first in a recommendation somewhere.
 
-### Digital-first experiences are raising the bar for personalization.
+### Digital-first experiences are raising the bar for personalization
 
 ![2](./images/image2.png)
 
@@ -29,7 +29,7 @@ Think about the first thing you see when you open up Netflix, Spotify or YouTube
 
 In a world where more alternatives are available than ever, it’s critical that you can identify the most relevant content for your customer at the point of interaction.
 
-### Adobe Target delivers recommendations for any use case or channel.
+### Adobe Target delivers recommendations for any use case or channel
 
 ![3](./images/image3.png)
 
@@ -38,11 +38,11 @@ Marketers use Adobe Target to drive personalized experiences across a wide varie
 - Publishing: Web publishers use Adobe Target Recommendations to recommend articles to site visitors and drive increased engagement.
 - Video Tutorials: Adobe Creative Cloud uses Target to recommend video tutorials to Photoshop users in-app.
 - Gaming: Gaming companies use Target to recommend games and content to users on their consoles.
-- B2B Sales: Intel uses Target to recommend videos, whitepapers and blog posts to B2B prospects and driver downloads and help to existing customers. (https://theblog.adobe.com/testing-shifts-high-gear-intel)
-- Travel: Der Touristik, a German travel booker, uses Target to recommend hotels and more to travelers (https://2017.summit.adobe.com/na/sessions/summit-online/online-2017/#17608)
-- Retail: Grainger, a leading B2B retailer, uses Target to recommend top categories and products to return visitors in the browser and in their mobile app (https://theblog.adobe.com/optimization-personalization-b2b-powerhouse-grainger/)
+- B2B Sales: [Intel uses Target to recommend videos, whitepapers and blog posts to B2B prospects and driver downloads and help to existing customers](https://theblog.adobe.com/testing-shifts-high-gear-intel)
+- Travel: [Der Touristik, a German travel booker, uses Target to recommend hotels and more to travelers](https://2017.summit.adobe.com/na/sessions/summit-online/online-2017/#17608)
+- Retail: [Grainger, a leading B2B retailer, uses Target to recommend top categories and products to return visitors in the browser and in their mobile app](https://theblog.adobe.com/optimization-personalization-b2b-powerhouse-grainger/)
 
-### Adobe Target powers personalized recommendations.
+### Adobe Target powers personalized recommendations
 
 Great recommendations should be relevant and personalized. This means you need these three things:
 
@@ -64,55 +64,11 @@ Then, suppose that you have an experience without recommendations and an experie
 
 ![4](./images/image4.png)
 
-<table>
-<thead>
-<tr>
-<th><strong>Recommendation Type</strong></th>
-<th><strong>Location</strong></th>
-<th><strong>Purpose</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Similar Items</p>
-<p>(e.g. ‘people who viewed this viewed that’; ‘last</p>
-<p>product you viewed/purchased’)</p></td>
-<td>Product page</td>
-<td><p>Related; similar; publisher;</p>
-<p>helpful articles</p></td>
-</tr>
-<tr>
-<td><p>Alternative Items</p>
-<p>(e.g. ‘people who viewed this bought that’)</p></td>
-<td>Product page; email</td>
-<td><p>Alternatives; substitution;</p>
-<p>similar; selection/decision</p></td>
-</tr>
-<tr>
-<td><p>Complementary Items</p>
-<p>(e.g. ‘people who bought this bought that’)</p></td>
-<td><p>Shopping cart; checkout</p>
-<p>(funnel); email</p></td>
-<td>Cross-sell</td>
-</tr>
-<tr>
-<td><p>High Affinity Items</p>
-<p>(e.g. ‘may we suggest’; ‘suggested products)</p></td>
-<td>Product page; checkout</td>
-<td>Conversion-focused; expert</td>
-</tr>
-<tr>
-<td><p>Searched Items</p>
-<p>(e.g. ‘people who searched for this bought that’)</p></td>
-<td>Search results page</td>
-<td><p>Cross-sell; related;</p>
-<p>complementary</p></td>
-</tr>
-<tr>
-<td><p>Most Popular Items</p>
-<p>(e.g. ‘’best-selling products’; ‘top viewed’)</p></td>
-<td>Homepage; product page; email</td>
-<td>Engagement; cross-sell</td>
-</tr>
-</tbody>
-</table>
+| Recommendation Type  | Examples |  Location  | Purpose  |
+|---|---|---|---|
+| Similar Items | <ul><li>People who viewed this viewed that</li><li>Last product you viewed/purchased</li></ul> | <ul><li>Product page</li><li>Article page</li></ul> | <ul><li>Related</li><li> Similar</li><li> Publisher</li><li> Helpful Articles</li></ul>  |
+| Alternative Items | <ul><li>People who viewed this bought that</li></ul> | <ul><li>Product page</li><li>Article page</li><li>Email</li></ul>  |  <ul><li>Alternatives substitution</li><li> Similar</li><li> Selection/Decision</li></ul> |
+| Complementary Items | <ul><li>People who bought this bought that</li></ul>  | <ul><li>Shopping cart</li><li> Checkout (funnel)</li><li> Email</li></ul>  | <ul><li>Cross-sell</li></ul>  |
+| High Affinity Items | <ul><li>May we suggest</li><li>Suggested products</li></ul>  | <ul><li>Product page</li><li>Article page</li><li> Checkout</li></ul>  | <ul><li>Conversion-focused</li><li> Expert</li></ul>  |
+| Searched Items | <ul><li>People who searched for this bought that</li></ul>  | <ul><li>Search results page</li></ul>  | <ul><li>Cross-sell</li><li> Related</li><li> Complementary</li></ul>  |
+| Most Popular Items | <ul><li>Best-selling products</li><li>Top viewed</li></ul>  | <ul><li>Homepage</li><li> Product page</li><li> Email</li></ul>  | <ul><li>Engagement</li><li>Cross-sell</li></ul> |
