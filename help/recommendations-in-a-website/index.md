@@ -8,6 +8,8 @@ solution: Adobe Target
 
 # Overview
 
+Recommendations are everywhere—and they aren't just for products anymore. With Adobe Target Recommendations, you can deliver personalized products, articles, videos, downloads, songs, content, and more with sophisticated algorithms and complete marketer control.
+
 _Implementing and Using Adobe Target Recommendations in a Website_ is the perfect starting point for marketers who want to learn how to implement and use the Adobe Target Recommendations in their website.
 
 Each lesson contains how-to exercises and foundational information to help you implement and use Adobe Target Recommendations.
@@ -30,8 +32,6 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 This tutorial uses Launch as the deployment mechanism for Adobe Target and assumes you have already completed the Configuring Launch and Add Adobe Target sections of the [Implementing the Experience Cloud in Websites with Launch](/help/website-implementation/index.md) tutorial.
 
 Also, for the Implementation portion, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be a master of these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
-
-## About Adobe Target Recommendations
 
 ## About the Lessons
 
