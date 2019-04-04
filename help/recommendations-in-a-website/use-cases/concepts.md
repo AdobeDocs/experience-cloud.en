@@ -134,7 +134,7 @@ The **Recommendation Logic** determines **how** the unique set of recommendation
 
 |Logic|Description|
 |--- |--- |
-|Items/Media with Similar Attributes|Recommends items or media similar to items or media based on current page activity or past visitor behavior.<br/><br/>**Note:** If you select **Items/Media with Similar Attributes**, you will have the option to set [content similarity rules.](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/create-new-algorithm.html#concept_5402DAFA279C4E46A9A449526889A0CB")|
+|Items/Media with Similar Attributes|Recommends items or media similar to items or media based on current page activity or past visitor behavior.<br/><br/>**Note:** If you select **Items/Media with Similar Attributes**, you will have the option to set [content similarity rules.](https://docs.adobe.com/content/help/en/target/using/recommendations/criteria/create-new-algorithm.html#concept_5402DAFA279C4E46A9A449526889A0CB)|
 |People Who Viewed This, Viewed That|Recommends items that are most often viewed in the same session that the specified item is viewed.|
 |People Who Viewed This, Bought That|Recommends items that are most often purchased in the same session that the specified item is viewed. This criteria returns other products people purchased after viewing this one, the specified product is not included in the results set.|
 |People Who Bought This, Bought That|Recommends items that are most often purchased by customers at the same time as the specified item.|
