@@ -100,7 +100,7 @@ Entity parameters are used in [Recommendations implementations](https://marketin
 
 Just give the parameter a name prefixed with "entity." and map it to the relevant data element. Note that some common entities have reserved names that must be used (e.g. entity.id for the product sku).
 
-![Adding Entity Parameters](.../images/target-entityParameters.png)
+![Adding Entity Parameters](../images/target-entityParameters.png)
 
 Below is an optional exercise for Target Premium customers to add the `entity.id` and `entity.categoryId` parameters to relevant pages in the global mbox request. In order to deliver recommendations without flicker, it is critical to pass the `entity.id` and `entity.categoryId` parameters at the top of the page, in the global mbox. If your data layer id defined before the Launch embed codes, you can pass the other catalog entities here, too. Since you have already created multiple data elements in this tutorial, screenshots are not included for every step.
 
@@ -176,13 +176,13 @@ Now that you have created all of the data elements you need to add them to the g
 
 1. Go to the **[!UICONTROL Rules]** in the top navigation and then click **[!UICONTROL Add Rule]**
 
-    ![Add a new rule](.../images/target-recs-addRuleProdDetails.png)
+    ![Add a new rule](../images/target-recs-addRuleProdDetails.png)
 
 1. Name the rule `Product Details - Library Loaded - 40`
 
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
-    ![Name the rule and add the event](.../images/target-recs-prodDetail-nameAddEvent.png)
+    ![Name the rule and add the event](../images/target-recs-prodDetail-nameAddEvent.png)
 
    1. Select **[!UICONTROL Event Type > Library Loaded]**
 
@@ -190,22 +190,22 @@ Now that you have created all of the data elements you need to add them to the g
 
    1. Click **[!UICONTROL Keep Changes]**
   
-    ![Configure the event](.../images/target-recs-prodDetail-event.png)
+    ![Configure the event](../images/target-recs-prodDetail-event.png)
 
 1. Click **[!UICONTROL Conditions > Add]** to open the `Condition Configuration` screen
 
-    ![Configure the event](.../images/target-recs-prodDetail-addCondition.png)
+    ![Configure the event](../images/target-recs-prodDetail-addCondition.png)
 
    1. Select **[!UICONTROL Condition Type > Value Comparison]**
    1. Use the data element picker, choose `Product ID`
    1. Select  **[!UICONTROL Is Truthy]** from the comparison operator dropdown
    1. Click **[!UICONTROL Keep Changes]**
 
-   ![Define the condition](.../images/target-recs-prodDetail-condition.png)
+   ![Define the condition](../images/target-recs-prodDetail-condition.png)
 
 1. Click **[!UICONTROL Actions > Add]** to open the `Action Configuration` screen
 
-   ![Add a new action](.../images/target-recs-prodDetail-addAction.png)
+   ![Add a new action](../images/target-recs-prodDetail-addAction.png)
 
    1. Select **[!UICONTROL Extension > Adobe Target]**
 
@@ -215,11 +215,11 @@ Now that you have created all of the data elements you need to add them to the g
 
    1. Click  **[!UICONTROL Keep Changes]**
 
-   ![Add a new action](.../images/target-recs-prodDetail-action.png)
+   ![Add a new action](../images/target-recs-prodDetail-action.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-   ![Click Save to Library and Build](.../images/target-recs-prodDetail-save.png)
+   ![Click Save to Library and Build](../images/target-recs-prodDetail-save.png)
 
 Typically, you would set up a similar rule on the product category pages that would that would pass the `entity.categoryId` to Target on the category pages. You could then deliver category-based recommendations to these pages.
 
@@ -228,21 +228,21 @@ Typically, you would set up a similar rule on the product category pages that wo
 1. Open the We.Retail site to a [product details page](https://aem.enablementadobe.com/content/we-retail/us/en/products/men/coats/portland-hooded-jacket.html#meotwipot-S)
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the earlier lesson
 
-   ![Your Launch development environment shown in Debugger](.../images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](../images/switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
 1. Go to the Target tab
 1. Open your client code
 1. You should see the entity parameters in every global mbox request on a product detail page:
 
-   ![The Entity Parameters should be visible in the global mbox request on product detail pages](.../images/target-debugger-recs.png)
+   ![The Entity Parameters should be visible in the global mbox request on product detail pages](../images/target-debugger-recs.png)
 
 1. Also, if you turn on console logging for Launch on the `Tools` tab
 
-   ![The Entity Parameters should be visible in the global mbox request on product detail pages](.../images/target-debugger-consoleLogging.png)
+   ![The Entity Parameters should be visible in the global mbox request on product detail pages](../images/target-debugger-consoleLogging.png)
 
 1. You should see that the rule fires
 
-   ![The Entity Parameters should be visible in the global mbox request on product detail pages](.../images/target-recs-consoleLogMet.png)
+   ![The Entity Parameters should be visible in the global mbox request on product detail pages](../images/target-recs-consoleLogMet.png)
 
 1. Now go to some pages that are not Product Detail pages. Do the Debugger logs show that the rule fires? Are the entity parameters added to the global mbox request?
 
@@ -289,40 +289,40 @@ You will use this to set the reserved `entity.message` parameter to populate the
 
 1. Go to the **[!UICONTROL Rules]** in the top navigation and then click **[!UICONTROL Add Rule]**
 
-    ![Add a new rule](.../images/target-recs-addRuleProdDetails-windowLoaded.png)
+    ![Add a new rule](../images/target-recs-addRuleProdDetails-windowLoaded.png)
 
 1. Name the rule `Product Details - Window Loaded`
 
 1. Click **[!UICONTROL Events > Add]** to open the `Event Configuration` screen
 
-   ![Name the rule and add the event](.../images/target-recs-prodDetail-nameAddEvent-windowLoaded.png)
+   ![Name the rule and add the event](../images/target-recs-prodDetail-nameAddEvent-windowLoaded.png)
 
    1. Select **[!UICONTROL Event Type > Window Loaded]**
 
    1. Click **[!UICONTROL Keep Changes]**
   
-       ![Configure the event](.../images/target-recs-prodDetail-event-windowLoaded.png)
+       ![Configure the event](../images/target-recs-prodDetail-event-windowLoaded.png)
 
 1. Click **[!UICONTROL Conditions > Add]** to open the `Condition Configuration` screen
 
-    ![Configure the event](.../images/target-recs-prodDetail-addCondition-windowLoaded.png)
+    ![Configure the event](../images/target-recs-prodDetail-addCondition-windowLoaded.png)
 
    1. Select **[!UICONTROL Condition Type > Value Comparison]**
    1. Use the data element picker, choose `Product ID`
    1. Select  **[!UICONTROL Is Truthy]** from the comparison operator dropdown
    1. Click **[!UICONTROL Keep Changes]**
 
-      ![Define the condition](.../images/target-recs-prodDetail-condition-windowLoaded.png)
+      ![Define the condition](../images/target-recs-prodDetail-condition-windowLoaded.png)
 
 1. Click **[!UICONTROL Actions > Add]** to open the `Action Configuration` screen
 
-   ![Add a new action](.../images/target-recs-prodDetail-addAction-windowLoaded.png)
+   ![Add a new action](../images/target-recs-prodDetail-addAction-windowLoaded.png)
 
    1. Select **[!UICONTROL Action Type > Custom Code]**
 
    1. Click the **[!UICONTROL </> Open Editor]** button to open the `Code Editor`
 
-      ![Use a Custom Code action](.../images/target-recs-prodDetail-actionCustom-windowLoaded.png)
+      ![Use a Custom Code action](../images/target-recs-prodDetail-actionCustom-windowLoaded.png)
 
    1. Paste the following code into the `Code Editor`. Note that we are are going to add one more parameter `entity.event.detailsOnly:true` to indicate that this request is simply for the collection of catalog data and should not increment a view for the product in the Recommendations algorithms.
 
@@ -345,15 +345,15 @@ You will use this to set the reserved `entity.message` parameter to populate the
 
    1. Click the **[!UICONTROL Save]** button
 
-      ![Save the Custom](.../images/target-recs-prodDetail-customCode-windowLoaded.png)
+      ![Save the Custom](../images/target-recs-prodDetail-customCode-windowLoaded.png)
 
    1. Click  **[!UICONTROL Keep Changes]**
 
-      ![Click Keep Changes](.../images/target-recs-prodDetail-keepChanges-windowLoaded.png)
+      ![Click Keep Changes](../images/target-recs-prodDetail-keepChanges-windowLoaded.png)
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-   ![Click Save to Library and Build](.../images/target-recs-prodDetail-save.png)
+   ![Click Save to Library and Build](../images/target-recs-prodDetail-save.png)
 
 A few things to note:
 
@@ -369,10 +369,10 @@ A few things to note:
 1. Open the We.Retail site to a [product details page](https://aem.enablementadobe.com/content/we-retail/us/en/products/men/coats/portland-hooded-jacket.html#meotwipot-S)
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the earlier lesson
 
-   ![Your Launch development environment shown in Debugger](.../images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your Launch development environment shown in Debugger](../images/switchEnvironments-debuggerOnWeRetail.png)
 1. Open the Debugger
 1. Go to the Target tab
 1. Open your client code
 1. You should see the new `recs-entities` request with the `entity.id`, `entity.value`, and `entity.message` parameters fire on all product detail pages:
 
-   ![The new mbox and its Entity Parameters should be visible on product detail pages](.../images/target-debugger-recsEntities.png)
+   ![The new mbox and its Entity Parameters should be visible on product detail pages](../images/target-debugger-recsEntities.png)
