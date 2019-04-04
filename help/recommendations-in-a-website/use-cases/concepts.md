@@ -64,8 +64,6 @@ Note that the Activity status changes to **Syncing** as the changes are publishe
 
 > **Tip:** In a real-world scenario, we usually wouldn’t recommend make changes to a live activity on the fly without any testing (to avoid a mistake causing a disruption to your site) – but this is acceptable for the purposes of a lab. If you are willing to have reporting on the activity start from scratch after your changes and want to avoid any period of time without active recommendations, the most foolproof method is to copy the activity (we cover this topic below), edit the copy, QA the copy, deactivate the original activity, and activate the copy. Alternatively, if you need to retain historical reporting information in the activity and are willing to accept a brief period without active recommendations, then deactivate the activity, make the changes, QA the changes, and then re-activate the activity.
 
-
-
 # Lesson 4: Creating Advanced Algorithms and Criteria Sequences
 
 ## Objectives
@@ -122,15 +120,13 @@ The **Recommendation Logic** determines **how** the unique set of recommendation
 
 |Key|Description|Logic Available|
 |--- |--- |--- |
-|Current Item|The recommendation is determined by the item the visitor is currently viewing. Recommendations display other items that might interest visitors who are interested in the specified item.<br/><br/>When this option is selected, the entity.id value must be passed as a parameter in the display mbox.<br/><br/>Commonly used on product detail pages, article view pages, etc.|Items with Similar Attributes<br/>People Who Viewed This, Viewed That<br/>People Who Viewed This, Bought That<br/>People Who Bought This, Bought That<br/>
-Site Affinity|
+|Current Item|The recommendation is determined by the item the visitor is currently viewing. Recommendations display other items that might interest visitors who are interested in the specified item.<br/><br/>When this option is selected, the entity.id value must be passed as a parameter in the display mbox.<br/><br/>Commonly used on product detail pages, article view pages, etc.|Items with Similar Attributes<br/>People Who Viewed This, Viewed That<br/>People Who Viewed This, Bought That<br/>People Who Bought This, Bought That<br/>Site Affinity|
 |Current Category|The recommendation is determined by the product category that the visitor is currently viewing. Recommendations display items in the specified product category. When this option is selected, the entity.categoryId value must be passed as a parameter to the display mbox. Commonly used on category view pages.|Top Sellers<br/>Most Viewed|
 |Last Purchased Item|The recommendation is determined by the last item that was purchased by each unique visitor. This is captured automatically, so no values need to be passed on the page. Commonly used on home pages or order confirmation pages. Do not use on product detail pages or earlier checkout flow pages.|Items with Similar Attributes<br/><br/>People Who Viewed This, Viewed That<br/>PeopleWho Viewed This, Bought That<br/>People Who Bought This, Bought That<br/>Site Affinity|
 |Last Viewed Item|The recommendation is determined by the last item that was viewed by each unique visitor. This is captured automatically, so no values need to be passed on the page. Commonly used on home pages, “my account” page, etc. Do not use on product detail pages or checkout flow pages.|Items with Similar Attributes<br/>People Who Viewed This, Viewed That<br/>People Who Viewed This, Bought That<br/>People Who Bought This, Bought That<br/>Site Affinity|
 |Most Viewed Item|The recommendation is determined by the item that has been viewed most often, using a weighting formula. Useful when users may view items more than once (e.g. media/content use cases.)|Items with Similar Attributes<br/>People Who Viewed This, Viewed That<br/>People Who Viewed This, Bought That<br/>People Who Bought This, Bought That<br/>Site Affinity|
 |Favorite Category|The recommendation is determined by the category that has been viewed most often, using a weighting formula.
-Useful when category is predictive of subsequent behavior.|Top Sellers
-Most Viewed|
+Useful when category is predictive of subsequent behavior.|Top Sellers<br/>Most Viewed|
 |Popularity|The recommendation is determined by the popularity of items on your site. Popularity includes top sellers and top viewed by mbox data and, if you use Adobe Analytics, all of the metrics available in the product report. Items are ranked based on the Recommendation Logic you select.|Top Sellers<br/>Most Viewed<br/>Product report metrics (if using Adobe Analytics)|
 |Recently Viewed Items|Uses the visitor's history (spanning sessions) to present the last x items the visitor has viewed, based on the number of slots in the design.|None|
 |Custom Key|Recommendation is determined by an custom key that is stored in a visitor's profile.|People Who Viewed This, Viewed That<br/>People Who Viewed This, Bought That<br/>People Who Bought This, Bought That<br/>Site Affinity<br/>Most Viewed<br/>Top Sellers|
