@@ -16,7 +16,7 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
 # Implementing and Using Recommendations in a Website{#recommendations-in-a-website}
 
 + [Overview](index.md)
-+ Introduction to Recommendations(introduction.md)
++ [Introduction to Recommendations](introduction.md)
 + Implementing Recommendations{#implementation}
   + [Overview and Planning](implementation/overview-and-planning.md)
   + [Importing Your Catalog](implementation/catalog.md)

@@ -73,7 +73,6 @@ Then, suppose that you have an experience without recommendations and an experie
 | Searched Items | &diams; People who searched for this bought that  | &diams; Search results page  | &diams; Cross-sell<br/>&diams;  Related<br/>&diams;  Complementary  |
 | Most Popular Items | &diams; Best-selling products<br/>&diams; Top viewed  | &diams; Homepage<br/>&diams;  Product page<br/>&diams;  Email  | &diams; Engagement<br/>&diams;  Cross-sell |
 
-
 | Recommendation Type  | Examples |  Location  | Purpose  |
 |---|---|---|---|
 | Similar Items | <ul><li>People who viewed this viewed that</li><li>Last product you viewed/purchased</li></ul> | <ul><li>Product page</li><li>Article page</li></ul> | <ul><li>Related</li><li> Similar</li><li> Publisher</li><li> Helpful Articles</li></ul>  |
