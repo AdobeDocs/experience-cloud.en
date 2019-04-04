@@ -11,7 +11,7 @@ solution: Adobe Target
 
 **Customers expect recommendations.**
 
-![1](./images/image1.png)
+![1](images/image1.png)
 
 Most of us are familiar with recommendations in retail. Increasingly, customers expect recommendations and use them as a jumping off point to explore the available options.
 
@@ -21,7 +21,7 @@ Nearly everyone among us has bought a product we saw first in a recommendation s
 
 ### Digital-first experiences are raising the bar for personalization
 
-![2](./images/image2.png)
+![2](images/image2.png)
 
 Increasingly, the way we consume media and content is driven by personalized recommendations.
 
@@ -31,7 +31,7 @@ In a world where more alternatives are available than ever, it’s critical that
 
 ### Adobe Target delivers recommendations for any use case or channel
 
-![3](./images/image3.png)
+![3](images/image3.png)
 
 Marketers use Adobe Target to drive personalized experiences across a wide variety of industries, customer types and channels:
 
@@ -62,22 +62,13 @@ Then, suppose that you have an experience without recommendations and an experie
 
 ## Sample recommendations strategy
 
-![4](./images/image4.png)
+![4](images/image4.png)
 
 | Recommendation Type  | Examples |  Location  | Purpose  |
 |---|---|---|---|
-| Similar Items | &diams; People who viewed this viewed that<br/>&diams; Last product you viewed/purchased | &diams; Product page<br/>&diams; Article page | &diams; Related<br/>&diams;  Similar<br/>&diams;  Publisher<br/>&diams;  Helpful Articles  |
-| Alternative Items | &diams; People who viewed this bought that | &diams; Product page<br/>&diams; Article page<br/>&diams; Email  |  &diams; Alternatives substitution<br/>&diams;  Similar<br/>&diams;  Selection/Decision |
-| Complementary Items | &diams; People who bought this bought that  | &diams; Shopping cart<br/>&diams;  Checkout (funnel)<br/>&diams;  Email  | &diams; Cross-sell  |
-| High Affinity Items | &diams; May we suggest<br/>&diams; Suggested products  | &diams; Product page<br/>&diams; Article page<br/>&diams;  Checkout  | &diams; Conversion-focused<br/>&diams;  Expert  |
-| Searched Items | &diams; People who searched for this bought that  | &diams; Search results page  | &diams; Cross-sell<br/>&diams;  Related<br/>&diams;  Complementary  |
-| Most Popular Items | &diams; Best-selling products<br/>&diams; Top viewed  | &diams; Homepage<br/>&diams;  Product page<br/>&diams;  Email  | &diams; Engagement<br/>&diams;  Cross-sell |
-
-| Recommendation Type  | Examples |  Location  | Purpose  |
-|---|---|---|---|
-| Similar Items | <ul><li>People who viewed this viewed that</li><li>Last product you viewed/purchased</li></ul> | <ul><li>Product page</li><li>Article page</li></ul> | <ul><li>Related</li><li> Similar</li><li> Publisher</li><li> Helpful Articles</li></ul>  |
-| Alternative Items | <ul><li>People who viewed this bought that</li></ul> | <ul><li>Product page</li><li>Article page</li><li>Email</li></ul>  |  <ul><li>Alternatives substitution</li><li> Similar</li><li> Selection/Decision</li></ul> |
-| Complementary Items | <ul><li>People who bought this bought that</li></ul>  | <ul><li>Shopping cart</li><li> Checkout (funnel)</li><li> Email</li></ul>  | <ul><li>Cross-sell</li></ul>  |
-| High Affinity Items | <ul><li>May we suggest</li><li>Suggested products</li></ul>  | <ul><li>Product page</li><li>Article page</li><li> Checkout</li></ul>  | <ul><li>Conversion-focused</li><li> Expert</li></ul>  |
-| Searched Items | <ul><li>People who searched for this bought that</li></ul>  | <ul><li>Search results page</li></ul>  | <ul><li>Cross-sell</li><li> Related</li><li> Complementary</li></ul>  |
-| Most Popular Items | <ul><li>Best-selling products</li><li>Top viewed</li></ul>  | <ul><li>Homepage</li><li> Product page</li><li> Email</li></ul>  | <ul><li>Engagement</li><li>Cross-sell</li></ul> |
+| Similar Items | &middot; People who viewed this viewed that<br/>&middot; Last product you viewed/purchased | &middot; Product page<br/>&middot; Article page | &middot; Related<br/>&middot;  Similar<br/>&middot;  Publisher<br/>&middot;  Helpful Articles  |
+| Alternative Items | &middot; People who viewed this bought that | &middot; Product page<br/>&middot; Article page<br/>&middot; Email  |  &middot; Alternatives substitution<br/>&middot;  Similar<br/>&middot;  Selection/Decision |
+| Complementary Items | &middot; People who bought this bought that  | &middot; Shopping cart<br/>&middot;  Checkout (funnel)<br/>&middot;  Email  | &middot; Cross-sell  |
+| High Affinity Items | &middot; May we suggest<br/>&middot; Suggested products  | &middot; Product page<br/>&middot; Article page<br/>&middot;  Checkout  | &middot; Conversion-focused<br/>&middot;  Expert  |
+| Searched Items | &middot; People who searched for this bought that  | &middot; Search results page  | &middot; Cross-sell<br/>&middot;  Related<br/>&middot;  Complementary  |
+| Most Popular Items | &middot; Best-selling products<br/>&middot; Top viewed  | &middot; Homepage<br/>&middot;  Product page<br/>&middot;  Email  | &middot; Engagement<br/>&middot;  Cross-sell |
