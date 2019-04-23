@@ -28,8 +28,6 @@ In order to complete this lesson, you will need:
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
-If you don't already have Audience Manager implemented, please follow these instructions to [obtain your Audience Manager Subdomain](https://helpx.adobe.com/audience-manager/kt/using/identify-partner-subdomain-audience-manager-technical-video-implement.html).
-
 ## Implementation Options
 
 There are two ways to implement Audience Manager in an app:
@@ -80,23 +78,5 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 This switch will start the actual forwarding of data to AAM, as long as you have the Experience Cloud ID service implemented. The rest of SSF implementation happens in the code, which was handled in Launch when you checked the box in the Analytics extension to forward to AAM.
 
 Server-Side Forwarding code is now implemented for your app!
-
-### Validate the Server-Side Forwarding
-
-The main way to validate that the Server-Side Forwarding is up and running is by looking at the response to any of your Adobe Analytics hits coming from the app.
-
-If you are not doing server-side forwarding (SSF) of data from Analytics to Audience Manager, then there is really no response to the Analytics beacon (besides a 2x2 pixel). However, once we enable SSF, then there are items that you can verify in the Analytics request and response that will let you know that it is working correctly.
-
-Since the Android Studio console does not show the response to the beacons, you should use another debugger/packet sniffer that does show the response, like Charles Proxy, for example (which is what I will show in my screenshot below).
-
-1. Open your debugger and filter for `b/ss`, which will limit what you see to the Adobe Analytics requests
-1. Build and Run your sample app from the previous exercises
-1. For any of your Analytics requests, look at the response. It should contain a `dcs_region` parameter, a `uuid` parameter, and should also have a "stuff" object. This object is where AAM segment IDs will be sent back to the browser (for any segments the user belongs to, which are assigned in AAM to a cookie destination). If you have the "stuff" object, SSF is working!
-
-    ![AA response - stuff object](images/mobile-aam-AAresponseCharles.png)
-
->[!WARNING] Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed the step in Launch to forward to AAM, but that the forwarding in the Analytics Admin Console has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
-
-![AA response - false success](images/mobile-aam-unsuccessful-SSF.png)
 
 [Next "Publish your Property" >](publish.md)

@@ -32,184 +32,138 @@ You should have already completed the lessons in the [Configure Launch](launch-c
 
 Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK.
 
-Lifecycle metrics are enabled by the Core extension, which you added to the app in the earlier lessons. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
+Lifecycle metrics are enabled by the Core extension, which you added to the app in the earlier lesson called ["Install the Mobile SDK"](launch-install-the-mobile-sdk.html). These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
 
-### Viewing the Analytics Lifecycle Hit
+## Importing the ACPCore Library
 
-Although you can see the Lifecycle hits in any debugging program/packet sniffer, we will simply show them in the Android Studio debugging console. In fact, you've already added them!
-
-1. Build and run your project in Xcode so that it launches the simulator
-1. In the Xcode debugging console, type `lifecycle` into the filter at the bottom to limit what shows up, and then scroll to the bottom of the entries
-1. Notice the `Analytics request was sent with body` section
-1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html)
-
-    <!--![Lifecycle Hit Debugging](images/android/mobile-analytics-lifecycleHitDebugging.png)-->
-
-## Import the ACPCore Library
-
-In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app. In ordet to use these APIs, you need to import the library which contains them.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.  
-
-In this tutorial, you will only track one state, however in your actual app, you will want to track multiple states.
-
-**To import the ACPCore Library**
-
-1. Open BookingViewController.swift in Android Studio
-1. At the top of the file &mdash;typically alongside other import statements&mdash;add `import ACPCore`
-1. Save
-1. You are now ready to use trackState or trackAction APIs in this file
-
-    <!--![Import ACPCore to File](images/android/mobile-analytics-importACPCoreToFile.png)-->
+In the earlier lesson called ["Install the Mobile SDK"](launch-install-the-mobile-sdk.html), you added an import statement to make the AdobeCore library available in the BusBookingActivity file. This same library will be used for additional API calls in the activities in this lesson. In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app, which are defined in the AdobeCore library.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.
 
 ## Track States
 
 In your app, you may have many different screens of content that you are providing for your users. These are the equivalent of pages on a website. Adobe Analytics provides a method for you to send in these "page view hits" and view them in the same reports that you are used to for your web properties. This method is called "trackState."
 
-In this tutorial you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app. You will also explore a few different ways of sending data (key/value pairs) with the hit.
+In this tutorial you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app.
 
 Below is syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
 
 **Syntax:**
 
-```swift
-+ (void) trackState: (nullable NSString*) state data: (nullable NSDictionary*) data;
+```java
+public static void trackState(final String state, final Map<String, String> contextData)
 ```
 
 **Example:**
 
-```swift
-ACPCore.trackState("state name", data: ["key": "value"])
+```java
+HashMap cData = new HashMap<String, String>();
+contextData.put(“key”, “value”);
+MobileCore.trackState(“state name”,contextData);
 ```
 
 ### Track a State without Data
 
-1. With the sample app open in Android Studio, go to BookingViewController.swift, and in the viewDidLoad() function, add a trackState method call
-1. Set the `state name` to "Home Screen"
-1. Instead of adding any extra data, add `nil` as a placeholder in the method call
+1. With the sample app open in Android Studio, go to BusBookingActivity, and scroll down near the bottom to the onResume function
+1. Add a trackState method call
+1. Set the `state name` to "Booking Screen"
+1. Instead of adding any extra data, add `null` as a placeholder in the API call
 1. Or copy and paste in the following:
 
-    ```swift
-    ACPCore.trackState("Home Screen", data: nil)`
+    ```java
+    MobileCore.trackState(“Booking Screen”, null);
     ```
 
-    <!--![Basic trackState Call](images/android/mobile-analytics-basicTrackState2.png)-->
-
->[!NOTE] If you completed the lessons to implement Target's VEC, you will have some additional code in the viewDidLoad() function which is not shown in the screenshots of this exercise. This is expected and meant to provide focus on the task at hand.
+![Basic trackState Call](images/android/mobile-analytics-basicTrackStateCall2.png)
 
 **To validate the trackState**
 
 1. Save, build and run the project
-1. When the simulator runs and opens the home screen of the app, view the Android Studio console
-1. Filter the console to entries with "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
-1. Note that pageName variable is set to `Home Screen`, and there are no other custom data pairs. Although technically you are setting a "state name" and not a "page name," the parameter name used is `pageName` in order to provide consistency with website implementations.
+1. When the simulator runs and opens the home screen of the app, view the Android Studio Logcat debugging console
+1. Search the console for `pageName=Booking%20Screen`
+1. Note that pageName variable is set to `Booking Screen` (with the %20 as an encoded space), and there are no other custom data pairs. Although technically you are setting a "state name" and not a "page name," the parameter name used is `pageName` in order to provide consistency with website implementations.
 
-    <!--![Basic trackState Result](images/android/mobile-analytics-basicTrackStateResult1.png)-->
+    ![Basic trackState Result](images/android/mobile-analytics-basicTrackStateResult.png)
 
 ### Track a State with Data
 
-1. Go back into BookingViewController.swift, and in the `viewDidLoad()` function, comment out (or delete) the basic (no data added) trackState call from the last exercise
-1. Add a new trackState method call, this time with data, using `key1` as the key and `value1` as the value
-1. Leave the `state name` as "Home Screen"
+1. Go back into BusBookingActivity, and in the `onResume()` function, comment out (or delete) the basic (no data added) trackState call from the last exercise
+1. Add a new trackState method call, this time with data by creating and naming a HashMap, using the "put" command to include some key/value pairs, and then calling that HashMap in the call to trackState
+1. Leave the `state name` as "Booking Screen"
 1. Or copy and paste in:
 
-    ```swift
-    ACPCore.trackState("Home Screen", data: ["key1": "value1"])
+    ```java
+        HashMap cData = new HashMap<String, String>();
+        cData.put("cd.section", "Bus Booking");
+        cData.put("cd.subSection", "Booking");
+        cData.put("cd.conversionType", "Landing");
+        MobileCore.trackState("Booking Screen", cData);
     ```
 
-    <!--![Basic trackState Call](images/android/mobile-analytics-trackStateWithData2.png)-->
+    ![trackState Call with Data](images/android/mobile-analytics-trackStateWithData.png)
 
 **To validate the trackState with data**
 
 1. Save, build and run the project again
-1. When the simulator runs and opens the home screen of the app, view the Android Studio console
-1. Leave the filter as "home" and look at the bottom entry which shows that the `Analytics request was sent with body`
-1. Now see that in addition to the pageName being set, you also have the key/value pair that was sent in on the hit
+1. When the simulator runs and opens the home screen of the app, view the Android Studio Logcat debugging console
+1. Search for `subSection` (or any of the keys or values that you entered into the code)
+1. Now see that in addition to the pageName being set, you also have the key/value pairs that were sent in on the hit
 
-    <!--![Basic trackState Result](images/android/mobile-analytics-trackStateWithDataResult1.png)-->
+    ![trackState with data result](images/android/mobile-analytics-trackStateWithDataResult.png)
 
 >[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://marketing.adobe.com/resources/help/en_US/reference/processing_rules.html) in the Analytics UI.
-
-### Additional Data-Sending Options
-
-In the previous two exercises you made two requests, one with additional data and one without. However, what if you want to send multiple data points to Analytics with a screen or state load? Below are two options.
-
-#### Option 1: Multiple Key/Value Pairs
-
-In the trackState call, you have the option of sending multiple key/value pairs, simply by comma separating them in the data set. For example:
-
-```swift
-ACPCore.trackState("Home Screen", data: ["key1": "value1", "key2": "value2"])
-```
-
-#### Option 2: Dictionary Object
-
-You can also define a dictionary in your code and then send that in with the trackState as well. Of course, if you have already defined some dictionary objects in your code, and want to send them into Analytics, this can be the perfect option for you. For example:
-
-```swift
-let screenInfo = ["key1":"value1", "key2":"value2", "key3":"value3"]
-ACPCore.trackState("Home Screen", data: screenInfo)
-```
-
-**Extra Credit**
-Go ahead and try these two options out in your code, viewing the results in the Android Studio debugging console. You can use the same filter as before, and check the results to make sure that you have the variables and values coming through
 
 ## Track Actions
 
 Similar to tracking non-page-load actions on a website, you often want to track an action that a user takes in your app, E.g. clicks on things that don't load another screen. This is handled very similarly to the trackState you used above, except that this method is called `trackAction`.
 
-Below is syntax and a code example from the documentation that you can copy-and-paste in this tutorial or in your own app.
+Below is syntax and a code example from the documentation.
 
 **Syntax:**
 
-```swift
-+ (void) trackAction: (nullable NSString*) action data: (nullable NSDictionary*) data;
+```java
+public static void trackAction(final String action, final Map<String, String> contextData) data;
 ```
 
 **Example:**
 
-```swift
-ACPCore.trackAction("action name", data: ["key": "value"])
+```java
+HashMap<String, String> contextData = new HashMap<String, String>();
+contextData.put("key", "value");
+MobileCore.trackAction("action taken", contextData);
 ```
 
-### Track Interaction with the 'No Stops' Checkbox
+### Track Interaction with the Destination Switcher
 
-In this sample bus booking app, there is a checkbox that let's users decide if they want to limit their search results to  options. You've decided that you want to track the interaction with that checkbox in Adobe Analytics.
+In this sample bus booking app, you can switch the origin city with the destination city by clicking on the arrow between these two values. You've decided that you want to track the interaction with this feature in Adobe Analytics.
 
-![NonStop Checkbox](images/mobile-analytics-nonstopCheckbox.png)
+![Destination Switcher](images/android/mobile-analytics-destinationSwitcher.png)
 
-This checkbox is controlled in the BookingViewController.swift file in the sample project. In this exercise, you will send a trackAction hit whenever people check or uncheck the box.
+This switcher is controlled in the BusBookingActivity file in the sample project. In this exercise, you will send a trackAction hit whenever people click on it.
 
 #### To add the trackAction code
 
-1. With the sample project open in Android Studio, go to BookingViewController.swift, and locate the "nonStopButtonToggled" function
-1. In the `if` statement, the first section deselects the box if it is already selected. In this scenario, you want to send in a hit with a value "off", using the following code:
+1. With the sample project open in Android Studio, go to BusBookingActivity
+1. Locate the "mBtnFlip.setOnClickListener" function, on or around line 57
+1. Expand the function if needed, so that you can see all of the code
+1. In the onClick function, under the call to `flipSourceDesti()`, add a `trackAction()` call
+1. Set the action name to "Flip Destination", and add "null" for the contextData parameter (as we don't really need to send in any additional info this time)
+1. You can copy and paste the following code
 
-    ```swift
-    ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "off"])
+    ```java
+    MobileCore.trackAction("Flip Destination", null);
     ```
-
-1. In the next section (the "else" section), it checks the box if it isn't already checked. In this scenario, you want to send in a hit with a value "on", using the following code:
-
-    ```swift  
-    ACPCore.trackAction("NonStop Button Interaction", data: ["NonStop": "on"])
-    ```
-
-Notice the other customizations in the code:
-
-* You are setting the `action name` to "NonStop Button Interaction." This value will populate the "action" parameter of the request and the custom link report/dimension in Adobe Analytics
-* The name of the `key` you are using is "NonStop." This is the key name that you can look for in Processing Rules in the Analytics Admin Console, so that you can map these values to a prop or eVar.
 
 The function now looks like this:
 
-<!--![NonStop Checkbox](images/android/mobile-analytics-nonStopButtonCode2.png)-->
+![Destination Switcher Code](images/android/mobile-analytics-destinationSwitcherCode.png)
 
 #### To validate the trackAction code
 
 1. After adding the code, save the project, run and build
-1. Click the garbage icon to clear the console
-1. Check the box in the simulator, noticing that two requests in the console appear. The last one is the sending of the data to Adobe Analytics from the code you just added.
-1. Notice that both the action and pev2 parameters are set to "NonStop Button Interaction" (with encoded spaces)
-1. Notice that the "NonStop=on" key/value pair are present, and can then be assigned to a prop/eVar in Processing Rules
-1. Notice the "pe=lnk_o" key/value, showing that this is a "custom link" hit, triggered by trackAction
+1. Click the garbage icon to clear the Logcat console
+1. Click the Destination Switcher arrow in the simulator, noticing that a new request (or more) in the console appears.
+1. Search for `Flip%20Destination` in Logcat
+1. Notice that both the action and pev2 parameters Flip%20Destination (with encoded space)
+1. Notice the `pe=lnk_o` key/value on the same line, showing that this is a "custom link" hit, triggered by trackAction
 
     <!--![trackAction Result in Debugger](images/android/mobile-analytics-trackActionResult1.png)-->
 

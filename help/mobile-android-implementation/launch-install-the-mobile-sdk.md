@@ -26,6 +26,7 @@ At the end of this lesson, you will be able to:
 * Update your `build.gradle` file to add the Mobile SDK
 * Import the Mobile SDK into your app
 * Verify that the SDK has been implemented successfully
+* Enable Lifecycle Metrics in the app
 
 ## Get the Installation Instructions
 
@@ -154,5 +155,46 @@ Here are examples of some specific calls you can look for:
     ```
 
 Congratulations, you've added the SDK to a mobile app!
+
+## Enable Lifecycle Metrics in the App
+
+Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK. Since they can be used by several Experience Cloud solutions, we will enable them here, before we move into the individual solutions and how to add their code to your app. This is as simple as adding a couple lines of code to our app in the right place.
+
+### Import the Core Library into the BusBookingActivity File
+
+In order to make API calls via the AEP SDK, you need to import the libraries into the appropriate files. In this case, to utilize the Lifecycle API call, we need to import the Core library.
+
+1. With your app open in Android Studio, open the BusBookingActivity file, which is in the same directory as the DemoApplication file that you've been working in.
+1. At the top of the file, add the following MobileCore import statement so that you can use the associated API calls
+    `import com.adobe.marketing.mobile.MobileCore;`
+
+![Import the Mobile Core Library](images/android/mobile-launch-install-importMobileCore.png)
+
+### Adding the Lifecycle Code
+
+You will now add the Lifecycle code to the main onResume() function in the app, in order to trigger the Lifecycle functions.
+
+1. Open the BusBookingActivity file
+1. Scroll down near the bottom of the file and locate the onResume() function
+1. Add the following two lines of code under the `super.onResume()` line:
+    ```java
+     MobileCore.setApplication(getApplication());
+     MobileCore.lifecycleStart(null);
+     ```
+
+![Insert Lifecycle Code](images/android/mobile-launch-install-lifecycle.png)
+
+### Validating the Lifecycle Hit
+
+When you run your app, you should now get one or more Lifecycle messages in the debug section of Android Studio.
+
+1. Run a build, and choose a simulator to run the app
+1. After the simulator is up and running, click to the "Run" section of the debugger in Android Studio
+1. Do a search for `internalaction=Lifecycle`
+1. See that there are lines that include this key/value pair, as well as the other Lifecycle metrics.
+
+Note that lines you'll see are actually Analytics calls with Lifecycle metrics. We chose to put this validation of Lifecycle here in this section simply to keep the validation next to the setup. 
+
+![Validate Lifecycle](images/android/mobile-launch-install-validateLifecycle.png)
 
 [Next "Add the Experience Cloud ID Service" >](id-service.md)
