@@ -52,7 +52,7 @@ Select the new custom audience and click **Done**.
 
 ![55](../images/image55.png)
 
-> **Tip:** You can also create custom audiences here based on any profile attribute by using the + Create Audience link. More information on audiences is available at <https://docs.adobe.com/content/help/en/target/using/audiences/target.html>.
+> [!TIP] You can also create custom audiences here based on any profile attribute by using the + Create Audience link. More information on audiences is available at <https://docs.adobe.com/content/help/en/target/using/audiences/target.html>.
 
 Observe that the selected **Audience** for the activity has been changed to **YOURNUMBER Repeat Visitors**. Click **Save & Close**.
 
@@ -62,9 +62,9 @@ Note that the Activity status changes to **Syncing** as the changes are publishe
 
 ![57](../images/image57.png)
 
-> **Tip:** In a real-world scenario, we usually wouldn’t recommend make changes to a live activity on the fly without any testing (to avoid a mistake causing a disruption to your site) – but this is acceptable for the purposes of a lab. If you are willing to have reporting on the activity start from scratch after your changes and want to avoid any period of time without active recommendations, the most foolproof method is to copy the activity (we cover this topic below), edit the copy, QA the copy, deactivate the original activity, and activate the copy. Alternatively, if you need to retain historical reporting information in the activity and are willing to accept a brief period without active recommendations, then deactivate the activity, make the changes, QA the changes, and then re-activate the activity.
+> [!TIP] In a real-world scenario, we usually wouldn’t recommend make changes to a live activity on the fly without any testing (to avoid a mistake causing a disruption to your site) – but this is acceptable for the purposes of a lab. If you are willing to have reporting on the activity start from scratch after your changes and want to avoid any period of time without active recommendations, the most foolproof method is to copy the activity (we cover this topic below), edit the copy, QA the copy, deactivate the original activity, and activate the copy. Alternatively, if you need to retain historical reporting information in the activity and are willing to accept a brief period without active recommendations, then deactivate the activity, make the changes, QA the changes, and then re-activate the activity.
 
-# Lesson 4: Creating Advanced Algorithms and Criteria Sequences
+## Lesson 4: Creating Advanced Algorithms and Criteria Sequences {#lesson-4}
 
 ## Objectives
 
@@ -207,7 +207,7 @@ Leave these default values selected.
 
 1. When finished, click **Save**.
 
-# Lesson 5: Customizing Recommendations with Design Templates
+## Lesson 5: Customizing Recommendations with Design Templates {#lesson-5}
 
 ## Objectives
 
@@ -286,4 +286,4 @@ When you have finished, click **Save** to save your updated template. Then, retu
 
 **Extra Credit:** Add a 5th item to the display template.
 
-> **Tip:** If you change the number of items displayed in a design template, Target Recommendations needs to re-compute the algorithm to ensure a sufficient number recommendations are available, and Criteria status will change from Results Ready to Results Not Ready.
+> [!TIP] If you change the number of items displayed in a design template, Target Recommendations needs to re-compute the algorithm to ensure a sufficient number recommendations are available, and Criteria status will change from Results Ready to Results Not Ready.
