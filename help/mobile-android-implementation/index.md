@@ -40,7 +40,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 * For Target, you must have approver-level access to the Adobe Target interface
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 
-Also, it is assumed that you are familiar with iOS development in Swift. You do not need to be a master of Swift to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
+Also, it is assumed that you are familiar with Android development in Java. You do not need to be a master of Java to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
 ## About the Lessons
 
