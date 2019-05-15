@@ -71,11 +71,13 @@ The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its 
 
    ![Open Android > bus > build.gradle](images/android/mobile-launch-install-openGradle.png)
 
-1. In the Launch interface, make sure the operating system to `Android`
+1. In the Launch interface, make sure the operating system is set to `Android`
+
+1. Copy the dependencies to your clipboard, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
 
    ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-copyDependencies.png)
 
-1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies
+1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies (but before the closing `}`)
 1. Click the "Sync Now" link to sync the project
 
    ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-pasteDependencies.png)
@@ -115,8 +117,6 @@ Now it's time to update the App to import the SDK
 1. In Android Studio, paste these extension statements into the `try` section. Note that `MobileCore.configureWithAppID` contains the identifier of the Launch development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Paste the Extension statements into your DemoApplication file](images/android/mobile-launch-install-pasteExtensions.png)
-
->[!IMPORTANT] During the Target VEC Beta, you may need to add "this" as an argument to `TargetVEC.registerExtension(this)`.
 
 ## Verify the implementation
 
@@ -158,11 +158,11 @@ Congratulations, you've added the SDK to a mobile app!
 
 ## Enable Lifecycle Metrics in the App
 
-Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK. Since they can be used by several Experience Cloud solutions, we will enable them here, before we move into the individual solutions and how to add their code to your app. This is as simple as adding a couple lines of code to our app in the right place.
+Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK. Since they can be used by multiple Experience Cloud solutions, we will enable them here, before we move deeper into the individual solutions. This is as simple as adding a couple lines of code to our app in the right place.
 
 ### Import the Core Library into the BusBookingActivity File
 
-In order to make API calls via the AEP SDK, you need to import the libraries into the appropriate files. In this case, to utilize the Lifecycle API call, we need to import the Core library.
+In order to make API calls via the Adobe Experience Platform Mobile SDK, you need to import the libraries into the appropriate files. In this case, to utilize the Lifecycle API call, we need to import the Core library.
 
 1. With your app open in Android Studio, open the BusBookingActivity file, which is in the same directory as the DemoApplication file that you've been working in.
 1. At the top of the file, add the following MobileCore import statement so that you can use the associated API calls
@@ -193,7 +193,7 @@ When you run your app, you should now get one or more Lifecycle messages in the 
 1. Do a search for `internalaction=Lifecycle`
 1. See that there are lines that include this key/value pair, as well as the other Lifecycle metrics.
 
-Note that lines you'll see are actually Analytics calls with Lifecycle metrics. We chose to put this validation of Lifecycle here in this section simply to keep the validation next to the setup. 
+Note that lines you'll see are actually Analytics calls with Lifecycle metrics.
 
 ![Validate Lifecycle](images/android/mobile-launch-install-validateLifecycle.png)
 

@@ -16,9 +16,7 @@ The Visual Experience Composer (VEC) for Native Mobile Apps lets you create acti
 
 In the lesson [Add Extensions](launch-add-extensions.md), you added the Target VEC extension to your Launch property. In the lesson [Install the Mobile SDK](launch-install-the-mobile-sdk.md) you imported the extension into the sample application. Only a few minor updates are required to start setting up activities in Target's mobile visual experience composer!
 
->[!IMPORTANT] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account. You are encouraged to evaluate its capabilities, but we do not recommend launching real activities in your production app at this time.
->
->Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
+>[!IMPORTANT] Both the Target and Target VEC Launch extensions are required to use the Target VEC in your mobile application.
 
 ## Learning Objectives
 
