@@ -32,7 +32,7 @@ At the end of this lesson, you will be able to:
 
 1. Click the ![Solution Switcher Icon](images/mobile-launch-solutionSwitcher.png) icon to open the solution switcher
 
-1. Select **[!UICONTROL Activation]** from the menu 
+1. Select **[!UICONTROL Launch]** from the menu
 
     ![Open the solution switcher using the icon and click Activation](images/mobile-launch-solutionSwitcherActivation.png)
 
