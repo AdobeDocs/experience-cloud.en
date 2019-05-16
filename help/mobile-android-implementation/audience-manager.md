@@ -40,10 +40,11 @@ When you previously set up the Analytics extension in the [Add Extensions](launc
 
 ## Enable Server-Side Forwarding
 
-There are two main steps in doing a SSF implementation:
+There are three main steps to implement SSF :
 
-1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager *per report suite*.
-1. Putting the SDK code in place, **which you have done** via Launch simply by checking the box in the Analytics extension to forward data to AAM.
+1. Adding the Experience Cloud Mobile SDK and Analytics extension to the app, ***which you have already done** in the Configuring Launch lessons
+1. Enabling Audience Manager Forwarding in the Analytics extension configuration, ***which you have have already done*** during the [Add Extensions lesson](launch-add-extensions.md) simply by checking a box.
+1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager *per report suite*, which we will review in the rest of this lesson.
 
 ### Enable Server-Side Forwarding in the Analytics Admin Console
 
