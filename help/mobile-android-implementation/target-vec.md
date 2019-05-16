@@ -50,27 +50,31 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 
 1. In Android Studio, open `DemoApplication` file.
 1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import
-1. Add the following sample code in the `onCreate()` function, before the extensions are registered. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are relevant to all views:
+1. Add the following sample code in the `onCreate()` function, before the extensions are registered. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would likely want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are relevant to all views:
 
    ```java
+   Map<String, String>targetParams = new HashMap<>(); //params
+   targetParams.put( "param1", "value1");
+   Map<String, String>taregtProfileParams = new HashMap<>(); //profile params
+   taregtProfileParams.put("profilekey1","profilevalue1");
+
    TargetVEC.setGlobalRequestParameters(new TargetParameters.Builder()
-      .parameters(mboxParams)
-      .profileParameters(profileParams)
-      .product(new TargetProduct("1234", "furniture"))
-      .order(new TargetOrder("12343",
-            new BigDecimal(123.45).setScale(2, BigDecimal.ROUND_UP),
-            Arrays.asList("100", "200")))
-      .build());
+            .parameters(targetParams)
+            .profileParameters(taregtProfileParams)
+            .product(new TargetProduct("1234", "furniture"))
+            .order(new TargetOrder("12343", 123.45, Arrays.asList("100", "200")))
+            .build());
    ```
 
-1. You may notice errors in Android Studio, since the parameter code above requires the following imports, which you need to add:
+1. You may notice errors in Android Studio, since the parameter code above requires the following imports, which you need to add to the file:
 
    ```java
-   import com.adobe.target.mobile.TargetOrder;
-   import com.adobe.target.mobile.TargetProduct;
-   import com.adobe.target.mobile.TargetParameters;
+   import com.adobe.marketing.mobile.TargetOrder;
+   import com.adobe.marketing.mobile.TargetProduct;
+   import com.adobe.marketing.mobile.TargetParameters;
    import java.util.Arrays;
-   import java.math.BigDecimal;
+   import java.util.Map;
+   import java.util.HashMap;
    ```
 
    ![Add Parameters to the TargetVEC request](images/android/mobile-targetvec-addParameters.png)
@@ -83,9 +87,11 @@ Now that you've added parameters to the app, it's time to confirm they are being
 1. Rebuild the app and wait for it to reopen in the Emulator
 1. Open the Logcat pane of Android Studio
 1. Filter to show all statements with "Target r"
-1. The custom parameters you just added should be visible in both the prefetch and notifications request
+1. The custom parameters you just added should be visible in the request
 
    ![Verify Parameters to the TargetVEC request](images/android/mobile-targetvec-verifyParams.png)
+
+For more information, and details on how to pass parameters with specific views, see [the documentation](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/composer/mobile-visual-experience-composer-android.html#parameters).
 
 ## Pairing the Mobile App with the Target Interface
 
@@ -93,43 +99,29 @@ In order to create VEC activities in the Target interface, you must first pair T
 
 ### Creating the Deep Link
 
-Android supports the use of [Deep links and Android App Links](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content) to create URLs that go directly to specific locations in your app. You probably already use these in your app. If so, you can use these existing links to pair with Target. For this tutorial, you must create an intent filter in the AndroidManifest.XML file to create your deep link.
+Android supports the use of [Deep links and Android App Links](https://developer.android.com/training/app-links/deep-linking) to create URLs that go directly to specific locations in your app. You probably already use these in your app. If so, you can use these existing links to pair with Target. For this tutorial, you will review the deep link scheme already defined in the Bus Booking app so you have a sense of what you will need to have in your own app.
 
-**To create your deep link**
+**To verify the Intent Filter**
 
-1. In Android Studio, double-click on your app to open the Settings screen
-1. On the Settings screen, click the `Info` tab
-1. Expand the URL Types section
-1. Note that the **[!UICONTROL Identifier]** is set to `com.adobetarget.BusBookingSwift`. You can use this identifier or change it if you like.
-1. Note that the **[!UICONTROL URL Scheme]** is `http`. You can use this scheme or change it if you like.
-1. Make sure  **[!UICONTROL Editor]** is selected as the **[!UICONTROL Role]**
+1. In Android Studio, open the AndroidManifest.xml file
+1. Note that there is already an Intent Filter configured for the deep link scheme of the Bus Booking app
+1. Note that the `Host` and `Scheme` are already set to `com.adobe.example.busbooking` and `http`, respectively. This means that a url like `http://busboooking.example.adobe.com` when opened in the Simulator should automatically open the sample app
 
-   ![Register the URL Scheme](images/mobile-targetvec-registerScheme.png)
+   ![Register the URL Scheme](images/android/mobile-targetvec-registerScheme.png)
 
-1. If you updated the identifier or scheme, click on the `General` tab so the scheme will save.  Click back on the `Info` tab, expand the `URL type` section and verify that your identifier or scheme and saved.
-  
-The next step is to add a handler to the deep link.
-
-**To handle the deep links**
-
-1. Open the `AppDelegate.swift` file
-1. Add the line `ACPTargetVEC.handleDeepLink(url)` to the `AppDelegate:application:openURL` section as pictured below
-
-<!--
-   ![Update the AppDelegate file](images/android/mobile-targetvec-appDelegate.png)
--->
+The next step is to confirm that the deep link scheme is working
 
 ### Verify the deep link
 
-Now, when a user with your app installed opens a URL like `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) in the Emulator it will open your application.
+Because of the way the Intent Filter is configured, when a user with your app installed opens a URL like `http://busboooking.example.adobe.com` in the Emulator it will open your application.
 
 **To verify the deep link scheme**
 
 1. Save the Android Studio project
 1. Rebuild the app
-1. In the Emulator, open Safari
-1. Enter the url `BusBookingSwift://com.adobetarget.BusBookingSwift` (or whatever scheme you defined) into the address bar. If you have any difficulties, see the Tip section below.
-1. You should get prompted with a modal to "Open this page in "BusBookingSwift." If you have any difficulties, see the Tip section below.
+1. In the Emulator, open Chrome
+1. Enter the url `http://busboooking.example.adobe.com` into the address bar. If you have any difficulties, see the Tip section below.
+1. You should get prompted with a modal to "Open this page in "DemoApplication."
 1. Click `Open`
 1. This should open the Bus Booking app
 
@@ -137,21 +129,11 @@ Now, when a user with your app installed opens a URL like `BusBookingSwift://com
    ![Verify the deep link](images/android/mobile-targetvec-verifyDeepLink.png)
   -->
 
-    >[!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Emulator it's usually for one of these two reasons:
-    >
-    >   1. **The URL copied from the Target interface doesn't paste into the Emulator** This happens when the Desktop and Emulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Emulator and copy/pasting again:
-    >
-    >      ![Toggle the Emulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
-    >
-    >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
-
 Now that your deep link structure is set up, you are ready to use the Target VEC to set up activities!
 
 ## Create an activity in the Mobile VEC
 
 Now let's create an activity in the Target UI.
-
->[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account.  Even if you have been able to complete all of the steps thus far, you may not see the Mobile VEC option in the Target interface when you try to create an activity.
 
 **To Create an Activity with the Target VEC**
 
