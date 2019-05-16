@@ -53,10 +53,9 @@ In a real-life scenario, the next step in the process would typically be to have
 
    ![Install icon](images/mobile-launch-installIcon.png) to open the modal
 
- <!--  ![Go to the Environments page and click to open the modal](images/mobile-publishing-getStagingCode.png)
--->
+![Go to the Environments page and click to open the modal](images/android/mobile-publishing-getStagingCode.png)
 
-If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial. At this point, the only difference in the installation instructions from your development environment is the Launch reference in the Core Configuration, as highlighted in the screenshot above. You would need to update the corresponding line in your AppDelegate.swift file and rebuild your app.
+At this point, the only difference between the installation instructions in your Development and Staging environments is the Launch reference in the Initialization Code, as highlighted in the screenshot above.   All you need to do is update the corresponding line in your DemoApplication file and rebuild your app. If you use a different project for your Staging app, you would need to make sure that this project has all of the other app updates that you made throughout this tutorial.
 
 In real-life, once your QA team has signed off by reviewing the changes in the Staging environment it is time to publish to production.
 
@@ -86,9 +85,10 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
    ![Published](images/mobile-publishing-published.png)
 
-Again, notice that the Production environment uses a Launch reference in the Core Configuration, as highlighted in the screenshot below.  If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial.
-  <!-- ![Go to the Environments page and click to open the modal](images/android/mobile-publishing-getProductionCode.png)
--->
+Again, notice that the Production environment uses a Launch reference in the Core Configuration, as highlighted in the screenshot below.  If you use a different project for your Production app, you would need to make sure that this project has all of the app updates that you made throughout this tutorial.
+  
+  ![Go to the Environments page and click to open the modal](images/android/mobile-publishing-getProductionCode.png)
+
 >[!IMPORTANT] The next time you make changes to your Launch configuration you will need to create a new Library in the Development environment. Remember, that adding and removing extensions will require updates to the app itself. Be careful about keeping your Launch environments and app code in sync with each other to avoid issues.
 
 That’s it! You've completed the tutorial and published your first mobile property in Launch!
