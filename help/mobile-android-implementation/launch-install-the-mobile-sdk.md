@@ -158,7 +158,7 @@ Congratulations, you've added the SDK to a mobile app!
 
 ## Enable Lifecycle Metrics in the App
 
-Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK. Since they can be used by multiple Experience Cloud solutions, we will enable them here, before we move deeper into the individual solutions. This is as simple as adding a couple lines of code to our app in the right place.
+Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform Mobile SDK. Since they can be used by multiple Experience Cloud solutions, we will enable them here, before we move deeper into the individual solutions. This is as simple as adding a couple lines of code to our app in the right place.
 
 ### Import the Core Library into the BusBookingActivity File
 
@@ -170,7 +170,7 @@ In order to make API calls via the Adobe Experience Platform Mobile SDK, you nee
 
 ![Import the Mobile Core Library](images/android/mobile-launch-install-importMobileCore.png)
 
-### Adding the Lifecycle Code
+### Add the Lifecycle Code
 
 You will now add the Lifecycle code to the main onResume() function in the app, in order to trigger the Lifecycle functions.
 
@@ -184,7 +184,7 @@ You will now add the Lifecycle code to the main onResume() function in the app, 
 
 ![Insert Lifecycle Code](images/android/mobile-launch-install-lifecycle.png)
 
-### Validating the Lifecycle Hit
+### Validate the Lifecycle Hit
 
 When you run your app, you should now get one or more Lifecycle messages in the debug section of Android Studio.
 

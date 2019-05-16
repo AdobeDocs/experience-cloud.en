@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add Adobe Audience Manager
 
-This lesson will guide you through the steps to implement Adobe Audience Manager into the Experience Platform SDK using Server-Side Forwarding.
+This lesson will guide you through the steps to implement Adobe Audience Manager into the Experience Platform Mobile SDK using Server-Side Forwarding.
 
 [Adobe Audience Manager](https://marketing.adobe.com/resources/help/en_US/aam/) (AAM) provides industry-leading services for online audience data management, giving digital advertisers and publishers the tools they need to control and leverage their data assets to help drive sales success.
 

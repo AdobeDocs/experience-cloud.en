@@ -30,7 +30,7 @@ You should have already completed the lessons in the [Configure Launch](launch-c
 
 ## Lifecycle Metrics and Adobe Analytics
 
-Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform SDK.
+Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform Mobile SDK.
 
 Lifecycle metrics are enabled by the Core extension, which you added to the app in the earlier lesson called ["Install the Mobile SDK"](launch-install-the-mobile-sdk.md). These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
 
@@ -171,7 +171,7 @@ Nice work! You have completed the Analytics lesson. Of course, there are many ot
 
 ## Additional Benefits of trackState and trackAction
 
-In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform SDK is rooted in Launch, there are many more things that you can do in the Launch interface leveraging the code you just added.
+In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in Launch, there are many more things that you can do in the Launch interface leveraging the code you just added.
 
 In Launch you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
 
