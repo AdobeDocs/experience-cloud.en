@@ -44,7 +44,7 @@ In your app, you may have many different screens of content that you are providi
 
 In this tutorial you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app.
 
-Below is syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
+Below are syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
 
 **Syntax:**
 
@@ -56,8 +56,8 @@ public static void trackState(final String state, final Map<String, String> cont
 
 ```java
 HashMap cData = new HashMap<String, String>();
-contextData.put(“key”, “value”);
-MobileCore.trackState(“state name”,contextData);
+contextData.put("key", "value");
+MobileCore.trackState("state name",contextData);
 ```
 
 ### Track a State without Data
@@ -69,7 +69,7 @@ MobileCore.trackState(“state name”,contextData);
 1. Or copy and paste in the following:
 
     ```java
-    MobileCore.trackState(“Booking Screen”, null);
+    MobileCore.trackState("Booking Screen", null);
     ```
 
 ![Basic trackState Call](images/android/mobile-analytics-basicTrackStateCall2.png)
@@ -85,17 +85,18 @@ MobileCore.trackState(“state name”,contextData);
 
 ### Track a State with Data
 
-1. Go back into BusBookingActivity, and in the `onResume()` function, comment out (or delete) the basic (no data added) trackState call from the last exercise
+1. Go back into BusBookingActivity, and add an import to the top of the file `import java.util.HashMap;` beneath the existing imports
+1. In the `onResume()` function, comment out (or delete) the basic trackState call from the last exercise
 1. Add a new trackState method call, this time with data by creating and naming a HashMap, using the "put" command to include some key/value pairs, and then calling that HashMap in the call to trackState
 1. Leave the `state name` as "Booking Screen"
 1. Or copy and paste in:
 
     ```java
-        HashMap cData = new HashMap<String, String>();
-        cData.put("cd.section", "Bus Booking");
-        cData.put("cd.subSection", "Booking");
-        cData.put("cd.conversionType", "Landing");
-        MobileCore.trackState("Booking Screen", cData);
+    HashMap cData = new HashMap<String, String>();
+    cData.put("cd.section", "Bus Booking");
+    cData.put("cd.subSection", "Booking");
+    cData.put("cd.conversionType", "Landing");
+    MobileCore.trackState("Booking Screen", cData);
     ```
 
     ![trackState Call with Data](images/android/mobile-analytics-trackStateWithData.png)
@@ -115,7 +116,7 @@ MobileCore.trackState(“state name”,contextData);
 
 Similar to tracking non-page-load actions on a website, you often want to track an action that a user takes in your app, E.g. clicks on things that don't load another screen. This is handled very similarly to the trackState you used above, except that this method is called `trackAction`.
 
-Below is syntax and a code example from the documentation.
+Below are syntax and a code example from the documentation.
 
 **Syntax:**
 
