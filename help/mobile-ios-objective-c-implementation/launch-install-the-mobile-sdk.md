@@ -93,6 +93,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
    ![Copy pod install to your clipboard in the Launch interface](images/ios/mobile-launch-install-copyPodInstall.png)
 
 1. In your Terminal app, run the `pod install` command and wait for it to complete
+
    ![Run pod install](images/ios/objective-c/mobile-launch-install-podInstall.png)
 
 1. You can now close your Terminal window
@@ -105,7 +106,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 Now it's time to update the App to import the SDK
 
-1. Open the `BusBookingObjectiveC.xcworkspace` file in Android Studio
+1. Open the `BusBookingObjectiveC.xcworkspace` file in XCode
 1. Open the `AppDelegate.m` file
 
    ![Open the AppDelegate file](images/ios/objective-c/mobile-launch-install-openAppDelegate.png)
@@ -115,7 +116,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the import statements to your clipboard](images/ios/objective-c/mobile-launch-install-copyImports.png)
 
-1. In Android Studio, paste these import statements into the `AppDelegate.m` file after the import for the `AppDelegate.h`
+1. In XCode, paste these import statements into the `AppDelegate.m` file after the import for the `AppDelegate.h`
 
    ![Paste the import statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteImports.png)
 
@@ -123,7 +124,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Core statements to your clipboard](images/ios/objective-c/mobile-launch-install-copyCore.png)
 
-1. In Android Studio, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
+1. In XCode, paste these Core statements into the AppDelegate file at the top of the `application(_:didFinishLaunchingWithOptions:)` method:
 
    ![Paste the Core statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteCore.png)
 
@@ -131,13 +132,13 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Extension statements to your clipboard](images/ios/objective-c/mobile-launch-install-copyExtensions.png)
 
-1. In Android Studio, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
+1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
 
    ![Paste the Extension statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteExtension.png)
 
 ## Verify the implementation
 
-1. Save your Android Studio project
+1. Save your XCode project
 1. Run the app and launch it in the Simulator. If you don't have any simulator devices configured, configure one now, being sure to configure a device running iOS 10+. We like to use an iPhone 8 simulator because it is easy to click the `Home` button with a mouse.
 
    ![Run the app and launch it in the emulator](images/ios/objective-c/mobile-launch-install-buildAndLaunch.png)
@@ -146,7 +147,7 @@ Now it's time to update the App to import the SDK
 
    ![Wait for the app to full open](images/ios/mobile-launch-install-simulator.png)
   
-1. Confirm that calls are being made to the Adobe servers in the Android Studio Console
+1. Confirm that calls are being made to the Adobe servers in the XCode Console
 
    ![Look for calls in the console](images/ios/objective-c/mobile-launch-install-console.png)
 
@@ -183,8 +184,6 @@ Here are examples of some specific calls you can look for:
 
     (ndh=1&c.&a.&AppID=BusBookingObjectiveC%201%20%281.0%29&CarrierName=%28null%29&DailyEngUserEvent=DailyEngUserEvent&DayOfWeek=4&DeviceName=x86_64&HourOfDay=16&InstallDate=3%2F13%2F2019&InstallEvent=InstallEvent&LaunchEvent=LaunchEvent&Launches=1&MonthlyEngUserEvent=MonthlyEngUserEvent&OSVersion=iOS%2012.1&Resolution=750x1334&RunMode=Application&TimeSinceLaunch=1&internalaction=Lifecycle&locale=en-US&.a&.c&ce=UTF-8&cp=foreground&mid=67027929491180584128922600814231770586&pageName=BusBookingObjectiveC%201%20%281.0%29&pe=lnk_o&pev2=ADBINTERNAL%3ALifecycle&t=00%2F00%2F0000%2000%3A00%3A00%200%20240&ts=1552510406)
     ```
-
-1. **Target request** A request associated with the Target VEC extension was sent, too, but we won't be able to see it in the console until we add another debugging line in the Target VEC lesson.
 
 Congratulations, you've added the SDK to a mobile app!
 

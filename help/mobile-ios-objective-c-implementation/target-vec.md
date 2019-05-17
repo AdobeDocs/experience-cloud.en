@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 In this lesson, you will enable the Target Visual Experience Composer (VEC) for Mobile apps.
 
-[Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
+[Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
 The Visual Experience Composer (VEC) for Native Mobile Apps lets you create activities and personalize content on native mobile apps in a do-it-yourself fashion without continuous development dependencies and app-release cycles.
 
@@ -34,34 +34,6 @@ To complete the lessons in this section, you must:
 * Complete the lessons in [Configure Launch](launch-create-a-property.md) section.
 * Have Approver-level access to the Adobe Target interface
 
-## Enable logging for the Target VEC extension
-
-This is an optional step that will turn on special console logging specific to the VEC extension.
-
-**To enable logging**
-
-1. Open the `AppDelegate.m` file in Xcode
-1. Add the line of code `[ACPTargetVEC allowDebugLogging:YES];` just below the line where you register the Target VEC Extension
-
-   ![Enable Target VEC Logging](images/ios/objective-c/mobile-targetvec-enableLogging.png)
-
-Now that you've enabled the logging, it's time to confirm that it is working.
-
-**To verify the logging**
-
-1. Save the Xcode project
-1. Rebuild the app and wait for it to reopen in the Simulator
-1. Click in the Console pane of Xcode
-1. Use ⌘-F to open the Find box
-1. Search for `targetvec` in the Find box
-1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters&mdash;which all begin with `a.`&mdash; are automatically included):
-
-   ![Verify Target VEC Logging](images/ios/objective-c/mobile-targetvec-requestInConsole.png)
-
-Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
-
-Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be Targeted to these properties.
-
 ## Add Parameters
 
 As you just saw in the last exercise, app Lifecycle metrics are automatically included as parameters in the Target VEC request. You can also add custom parameters to the requests.
@@ -69,19 +41,24 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 **To add custom parameters**
 
 1. In Xcode, open the `BookingViewController.m` file. This file is used by the Home screen.
-1. Import the Target VEC extension by adding `#import "ACPTargetVEC.h"` beneath the existing import
-1. In the `viewDidLoad` function, after the line with `super.viewDidLoad` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
+1. Import the Target and Target VEC extensions beneath the existing imports
+  
+    ```swift
+    #import "ACPTarget.h"
+    #import "ACPTargetVEC.h"
+    ```
+
+1. In the `viewDidLoad` function, after the line with `super.viewDidLoad` add the following code. This example code shows how parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
     ```objective-c
-    NSDictionary *mboxParams = @{@"mboxparam1":@"mboxvalue1"}; //mbox or view params
-    NSDictionary *profileParams = @{@"profilekey1":@"profilevalue1"}; //profile params
-
-    TargetProduct *product = [[TargetProduct alloc] initWithProductId:@"1234" categoryId:@"furniture"];
-    TargetOrder *order = [[TargetOrder alloc] initWithOrderId:@"12343" total:@(123.45) purchasedProductIds:@[@"100",@"200"]];
-    TargetParameters *targetParams = [[TargetParameters alloc] initWithParameters:mboxParams
-                                                                profileParameters:profileParams
-                                                                        product:product
-                                                                            order:order];
+    NSDictionary *params = @{@"param1":@"value1"};
+    NSDictionary *profileParams = @{@"profilekey1":@"profilevalue1"};
+    ACPTargetProduct *product = [ACPTargetProduct targetProductWithId:@"1234" categoryId:@"furniture"];
+    ACPTargetOrder *order = [ACPTargetOrder targetOrderWithId:@"12343" total:@(123.45) purchasedProductIds:@[@"100",@"200"]];
+    ACPTargetParameters *targetParams = [ACPTargetParameters targetParametersWithParameters:params
+                                                                          profileParameters:profileParams
+                                                                                    product:product
+                                                                                      order:order];
     [ACPTargetVEC setGlobalRequestParameters:targetParams];
     ```
 

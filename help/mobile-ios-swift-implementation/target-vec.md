@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 In this lesson, you will enable the Target Visual Experience Composer (VEC) for Mobile apps.
 
-[Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
+[Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) is the Adobe Experience Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
 The Visual Experience Composer (VEC) for Native Mobile Apps lets you create activities and personalize content on native mobile apps in a do-it-yourself fashion without continuous development dependencies and app-release cycles.
 
@@ -34,34 +34,6 @@ To complete the lessons in this section, you must:
 * Complete the lessons in [Configure Launch](launch-create-a-property.md) sections
 * Have Approver-level access to the Adobe Target interface
 
-## Enable logging for the Target VEC extension
-
-This is an optional step that will turn on special console logging specific to the VEC extension.
-
-**To enable logging**
-
-1. Open the `AppDelegate.swift` file in Xcode
-1. Add the line of code `ACPTargetVEC.allowDebugLogging(true)` just below the line where you register the Target VEC Extension
-
-   ![Enable Target VEC Logging](images/ios/swift/mobile-targetvec-enableLogging.png)
-
-Now that you've enabled the logging, it's time to confirm that it is working.
-
-**To verify the logging**
-
-1. Save the Xcode project
-1. Rebuild the app and wait for it to reopen in the Simulator
-1. Click in the Console pane of Xcode
-1. Use ⌘-F to open the Find box
-1. Search for `targetvec` in the Find box
-1. Hit `Enter` to jump to the Target request and Post body (Note that the Lifecycle parameters are automatically included):
-
-   ![Verify Target VEC Logging](images/ios/swift/mobile-targetvec-requestInConsole.png)
-
-Because of the settings we selected when we configured the Target VEC extension, this request will fire whenever the app first loads. It will prefetch all of the Target VEC activities that you have created for your app.
-
-Notice the parameters for the application name and version. All Target VEC activities that you create will automatically be Targeted to these properties.
-
 ## Add Parameters
 
 As you just saw in the last exercise, app Lifecycle metrics are automatically included as parameters in the Target VEC request. You can also add custom parameters to the requests.
@@ -69,15 +41,21 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 **To add custom parameters**
 
 1. In Xcode, open the `BookingViewController.swift` file. This file is used by the Home screen.
-1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import
-1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
+1. Import the Target and Target VEC extensions beneath the existing imports
+  
+    ```swift
+    import ACPTarget
+    import ACPTargetVEC
+    ```
+
+1. In the `viewDidLoad()` function, after the line with `super.viewDidLoad()` add the following code. This example code shows how parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are related to the view:
 
     ```swift
-    let mboxParams = ["mboxparam1":"mboxvalue1"]
+    let params = ["param1":"value1"]
     let profileParams = ["profilekey1":"profilevalue1"]
-    let product : TargetProduct = TargetProduct.init(productId: "1234", categoryId: "furniture")
-    let order : TargetOrder = TargetOrder.init(orderId: "12345", total: 123.45, purchasedProductIds: ["100", "200"])
-    let targetParams : TargetParameters = TargetParameters.init(parameters: mboxParams, profileParameters: profileParams, product: product, order: order)
+    let product : ACPTargetProduct = ACPTargetProduct.init(id: "1234", categoryId: "furniture")
+    let order : ACPTargetOrder = ACPTargetOrder.init(id: "12345", total: 123.45, purchasedProductIds: ["100", "200"])
+    let targetParams : ACPTargetParameters = ACPTargetParameters.init(parameters: params, profileParameters: profileParams, product: product, order: order)
     ACPTargetVEC.setGlobalRequest(targetParams)
     ```
 
@@ -111,7 +89,7 @@ iOS supports the use of [Universal Links](https://developer.apple.com/documentat
 1. Expand the `URL Types` section
 1. Note that the **[!UICONTROL Identifier]** is set to `com.adobetarget.BusBookingSwift`. You can use this identifier or change it if you like.
 1. Note that the **[!UICONTROL URL Scheme]** is `BusBookingSwift`. You can use this scheme or change it if you like.
-1. Make sure  **[!UICONTROL Editor]** is selected as the **[!UICONTROL Role]**
+1. Make sure **[!UICONTROL Role]** is set to **[!UICONTROL Editor]**
 
    ![Register the URL Scheme](images/ios/swift/mobile-targetvec-registerScheme.png)
 
@@ -184,9 +162,9 @@ Now let's create an activity in the Target UI.
 
     >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
+    >   1. Email the deep link to a valid email address and then open the link with an email application on the device
     >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to Xcode)
     >   1. Copy the deep link from the Target interface and send it to the device however you would like
-    >   1. Email the deep link to a valid email address and then open the link with an email application on the device
 
 1. Click on the **[!UICONTROL Copy & Send Link]** tab.
 1. Click anywhere on the link to automatically copy the link to your clipboard

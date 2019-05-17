@@ -24,7 +24,7 @@ You should complete all of the previous lessons in this tutorial before followin
 >[!NOTE] There are many user-permissions requirements, account configurations, and provisioning steps that are required to fully use these integrations and which are beyond the scope of this tutorial. If you are not already using these integrations in your current implementation of the Experience Cloud, you should consider the following:
 >
 > * Review the full requirements of the [Core Services integrations](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html)
-> * Review the full requirements of the [Analytics for Target integration](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html)
+> * Review the full requirements of the [Analytics for Target integration](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)
 > * Have an Administrator of your Experience Cloud Organization [request provisioning of these integrations](https://www.adobe.com/go/audiences)
 
 ## Audiences
