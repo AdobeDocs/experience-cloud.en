@@ -95,20 +95,17 @@ For more information, and details on how to pass parameters with specific views,
 
 ## Pairing the Mobile App with the Target Interface
 
-In order to create VEC activities in the Target interface, you must first pair Target with your app. This pairing is achieved with the use of deep links. 
+In order to create VEC activities in the Target interface, you must first pair Target with your app. This pairing is achieved with the use of deep links.
 
-We will expand this tutorial in the future to show how to pair your Android app with the VEC and create an activity in the Target VEC. Until then, please see the [Android - set up the mobile app](https://docs.adobe.com/content/help/en/target/using/implement-target/mobile-apps/composer/mobile-visual-experience-composer-android.html)
-
-<!--
 ### Creating the Deep Link
 
-Android supports the use of [Deep links and Android App Links](https://developer.android.com/training/app-links/deep-linking) to create URLs that go directly to specific locations in your app. You probably already use these in your app. If so, you can use these existing links to pair with Target. For this tutorial, you will review the deep link scheme already defined in the Bus Booking app so you have a sense of what you will need to have in your own app.
+Android supports the use of [Deep links and Android App Links](https://developer.android.com/training/app-links/deep-linking) to create URLs that go directly to specific locations in your app. You probably already use these in your app. If so, you can use your existing URL structure to pair with Target. In this tutorial, you will review the deep link pre-defined in the Bus Booking app, confirm that it is working, and then use it to pair your app with the Target VEC for Mobile Apps.
 
-**To verify the Intent Filter**
+**To review the Deep link setup**
 
 1. In Android Studio, open the AndroidManifest.xml file
 1. Note that there is already an Intent Filter configured for the deep link scheme of the Bus Booking app
-1. Note that the `Host` and `Scheme` are already set to `com.adobe.example.busbooking` and `http`, respectively. This means that a url like `http://busboooking.example.adobe.com` when opened in the Simulator should automatically open the sample app
+1. Note that the `Host` and `Scheme` are already set to `com.adobe.example.busbooking` and `http`, respectively. This means that a url like `http://com.adobe.example.busbooking` when opened in the Emulator should automatically open the sample app
 
    ![Register the URL Scheme](images/android/mobile-targetvec-registerScheme.png)
 
@@ -116,17 +113,18 @@ The next step is to confirm that the deep link scheme is working
 
 ### Verify the deep link
 
-Because of the way the Intent Filter is configured, when a user with your app installed opens a URL like `http://busboooking.example.adobe.com` in the Emulator it will open your application.
+Now let's make sure that the deep link will open the app in the emulator. You may have your preferred way of running adb commands which you can certainly use.
 
-**To verify the deep link scheme**
+**To verify the deep link using adb (MAC)**
 
-1. Save the Android Studio project
-1. Rebuild the app
-1. In the Emulator, open Chrome
-1. Enter the url `http://busboooking.example.adobe.com` into the address bar
-1. You should get prompted with a modal to "Open this page in "DemoApplication"
-1. Click `Open`
-1. This should open the Bus Booking app
+1. Make sure the Android emulator is running
+1. Close the Bus Booking app if it is already open
+1. Open a Terminal window
+1. Navigate to your Android platform-tools directory: `cd Library/Android/sdk/platform-tools/`
+1. Confirm that your emulator is attached: `./adb devices`
+1. Open the adb shell: `./adb shell`
+1. In the adb shell test the deep link: `am start -W -a android.intent.action.VIEW -d "http://com.adobe.example.busbooking" "com.adobe.busbooking"`
+1. Confirm that the Bus Booking app has launched in the emulator
 
    ![Verify the deep link](images/android/mobile-targetvec-verifyDeepLink.png)
 
@@ -134,7 +132,7 @@ Now that your deep link structure is set up, you are ready to use the Target VEC
 
 ## Create an activity in the Mobile VEC
 
-Now let's create an activity in the Target UI.
+Now let's create an activity in the Target interface.
 
 **To Create an Activity with the Target VEC**
 
@@ -150,9 +148,6 @@ Now let's create an activity in the Target UI.
 1. Click the **[!UICONTROL Create Activity]** button and select **[!UICONTROL A/B Test]**
 1. Select **[!UICONTROL Mobile App]**
 1. Make sure **[!UICONTROL Visual]** is selected under **[!UICONTROL Choose Experience Composer]**
-
-   >[!WARNING] The Visual Experience Composer for mobile apps is currently in Beta and may not be available in your Target account.  Even if you have been able to complete all of the steps thus far, you may not see the Mobile VEC option as pictured below.
-
 1. Click the **[!UICONTROL Next]** button
   
    ![Create an A/B Activity using the Mobile VEC](images/mobile-targetvec-createActivity.png)
@@ -161,54 +156,45 @@ Now let's create an activity in the Target UI.
 
    ![Add a new app](images/mobile-targetvec-addNewApp.png)
 
-1. Enter the url scheme you just defined in the  **[!UICONTROL Enter URL scheme]** field, e.g. `http://busboooking.example.adobe.com`
+1. Enter the url scheme you just defined in the  **[!UICONTROL Enter URL scheme]** field, e.g. `http://com.adobe.example.busbooking/`
 1. Click **[!UICONTROL Create Deep Link]**
 
    ![Enter your URL Scheme and Create the Deep Link](images/android/mobile-targetvec-enterURLScheme.png)
 
     >[!NOTE] You have a few options to send the deep link to the app. You can:
     >
-    >   1. Take a photo of the QR code from your iOS Device (in our tutorial, the device would have to be linked to Android Studio)
-    >   1. Copy the deep link from the Target interface and send it to the device however you would like
     >   1. Email the deep link to a valid email address and then open the link with an email application on the device
+    >   1. Take a photo of the QR code from your Android Device (in our tutorial, the device would have to be linked to Android Studio)
+    >   1. Copy the deep link from the Target interface and send it to the device however you would like
 
 1. Click on the **[!UICONTROL Copy & Send Link]** tab.
+1. Click on the generated URL (note that clicking on the URL will automatically copy it to your clipboard)
 
    ![Copy the URL](images/android/mobile-targetvec-copyURL.png)
 
-1. Switch back to the Emulator
-1. Open Safari in the Emulator
-1. Paste the deep link URL into the address bar
-1. Click to open the app
-
-   ![Copy the URL](images/android/mobile-targetvec-pasteURL.png)
-
-    > [!TIP] If you are unsuccessful when copy-and-pasting the URL from your Desktop to the Emulator it's usually for one of these two reasons:
-    >
-    >   1. **The URL copied from the Target interface doesn't paste into the Emulator** This happens when the Desktop and Emulator clipboards are not synced.  If this happens, try toggling off and on the `Automatically Sync Pasteboard` setting in the Emulator and copy/pasting again:
-    >
-    >      ![Toggle the Emulator's clipboard setting](images/mobile-targetvec-toggleClipboard.png)
-    >
-    >   1. **Pasting the URL lands on the Google Search results page** Try repasting the deep link URL into the address bar and hitting `Enter`. You might need to repeat this a few times.
-
+1. Open a Terminal window (or switch back to it if you still have it open)
+1. Navigate to your Android platform-tools directory (you may already be here): `cd Library/Android/sdk/platform-tools/`
+1. Confirm that your emulator is attached: `./adb devices`
+1. Open the adb shell: `./adb shell`
+1. In the adb shell, replace [YOUR_TARGET_URL_WITH_TOKEN] in the following command with the URL you just copied to your clipboard: `am start -W -a android.intent.action.VIEW -d "[YOUR_TARGET_URL_WITH_TOKEN]" "com.adobe.busbooking"`
 1. After the App has loaded, switch back to your browser tab where you have Target opened. You should see your app loaded in the VEC.
 1. Click on text and image assets in your app and you should see options to edit and replace them!
 
-   ![App loads in the VEC](images/android/mobile-targetvec-devicePaired.png)
+<!--   ![App loads in the VEC](images/android/mobile-targetvec-devicePaired.png)-->
 
 1. Make some changes to the first screen in your app
 1. Now position the Emulator next to the browser with the VEC open
 1. Navigate to a different screen in the app and notice how the VEC updates with the Emulator!
 1. You can make updates to multiple views in your app, in a single activity!
 
-![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)
+<!--![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)-->
 
 1. You can also visually add click-tracking metrics!
 1. Save and Approve your activity and verify that you can see it in the sample app
 
 Pairing the device with the VEC is a one-time action. When you create more activities in the future on the same device, you will just be able to select the device from a list, as pictured below:
 
-   ![Using a saved Device](images/android/mobile-targetvec-useSavedApp.png)
+ <!--  ![Using a saved Device](images/android/mobile-targetvec-useSavedApp.png)-->
 
 >[!TIP] If you have a device open, but it is "Unavailable" in the selection menu, background the app by returning to the Home screen and then move the app back into the foreground to make it "Available" again.
 
@@ -236,5 +222,5 @@ Lifecycle metrics built-in metrics about the visitor's usage of your app that ar
    ![Audience for Launches <= 4](images/mobile-targetvec-LaunchesLessThan5.png)
 
 Note that there are a huge variety of out-of-the-box audience building options in Target. Additionally, you can send up custom data in the Target request for audience-building, use audiences shared from other Experience Cloud solutions such as Audience Manager and Analytics, and CRM data shared to Target using the Customer Attributes feature of the People Core Service.
-  -->
+  
 [Next "Add Adobe Target" >](target.md)
