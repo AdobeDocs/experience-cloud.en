@@ -33,7 +33,8 @@ After completing this you will be able to:
 >[!NOTE] Similar multi-solution tutorials are also available for the following platforms:
 >
 > * [Implementing the Experience Cloud in Mobile iOS Swift Applications](/help/mobile-ios-swift-implementation/index.md)
-> * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)<!-- * [Implementing the Experience Cloud in Mobile Android Applications](/help/mobile-android-implementation/index.md -->
+> * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/mobile-ios-objective-c-implementation/index.md)
+> * [Implementing the Experience Cloud in Mobile Android Applications](/help/mobile-android-implementation/index.md)
 
 ## Prerequisites
 
