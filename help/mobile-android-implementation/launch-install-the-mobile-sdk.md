@@ -78,9 +78,20 @@ The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its 
    ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-copyDependencies.png)
 
 1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies (but before the closing `}`)
-1. Click the "Sync Now" link to sync the project
+1. Additionally, if you are installing the Adobe Target VEC extension, you need to add these additional dependencies:
 
-   ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-pasteDependencies.png)
+```java
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'io.github.sac:SocketclusterClientJava:1.7.5'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+```
+
+   1. Click the "Sync Now" link to sync the project
+
+   ![Paste dependencies in to build.gradle](images/android/mobile-launch-install-pasteDependencies.png)
 
 ## Update the Application
 
