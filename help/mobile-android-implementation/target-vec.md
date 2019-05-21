@@ -180,33 +180,35 @@ Now let's create an activity in the Target interface.
 1. After the App has loaded, switch back to your browser tab where you have Target opened. You should see your app loaded in the VEC.
 1. Click on text and image assets in your app and you should see options to edit and replace them!
 
+    ![App loads in the VEC](images/android/mobile-targetvec-devicePaired.png)
+
     > [!TIP] If you don't see the Mobile VEC automatically open in the Target interface after opening the deep link in the mobile device, here are some things to try:
     >
-    >   1. Make sure you are using the exact same URL in the Target interface and didn't accidentally clip off any characters. When runningt the command in the adb shell, make sure the URL is in quotation marks
+    >   1. Make sure you are using the exact same URL in the Target interface and didn't accidentally clip off any characters. When running the command in the adb shell, make sure the URL is in quotation marks
     >
     >
     >   1. Confirm that you added the additional dependencies to the build.gradle file that are required by the Target VEC. These dependencies should have been added during the [Install the Mobile SDK lesson](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-install-the-mobile-sdk.html#update-the-buildgradle-file)
     >
     >
-    >   1. Try clearing the Data stored in the app as pictured below
-
-![App loads in the VEC](images/android/mobile-targetvec-pairing-clearData.png)
+    >   1. Try clearing the Data stored in the app detailed in the picture below
+    >
+    >       ![App loads in the VEC](images/android/mobile-targetvec-pairing-clearData.png)
 
 1. Make some changes to the first screen in your app
 1. Now position the Emulator next to the browser with the VEC open
 1. Navigate to a different screen in the app and notice how the VEC updates with the Emulator!
 1. You can make updates to multiple views in your app, in a single activity!
 
-<!--![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)-->
+    ![App loads in the VEC](images/android/mobile-targetvec-navigateTheApp.png)
 
 1. You can also visually add click-tracking metrics!
 1. Save and Approve your activity and verify that you can see it in the sample app
 
 Pairing the device with the VEC is a one-time action. When you create more activities in the future on the same device, you will just be able to select the device from a list, as pictured below:
 
- <!--  ![Using a saved Device](images/android/mobile-targetvec-useSavedApp.png)-->
+ ![Using a saved Device](images/android/mobile-targetvec-useSavedApp.png)
 
->[!TIP] If you have a device open, but it is "Unavailable" in the selection menu, background the app by returning to the Home screen and then move the app back into the foreground to make it "Available" again.
+>[!TIP] If you have a device open, but it is "Unavailable" in the selection menu, try closing and reopening the app on the emulator or device.
 
 ## Building Audiences based on Lifecyle metrics
 
