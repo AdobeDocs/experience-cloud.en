@@ -182,7 +182,7 @@ Now let's create an activity in the Target interface.
 
 <!--   ![App loads in the VEC](images/android/mobile-targetvec-devicePaired.png)-->
 
-    > [!TIP] If you don't see the Mobile VEC automatically open in the Target interface after opening the deep link in the mobile device, here are some things to try:
+    >[!TIP] If you don't see the Mobile VEC automatically open in the Target interface after opening the deep link in the mobile device, here are some things to try:
     >
     >   1. Make sure you are using the exact same URL in the Target interface and didn't accidentally clip off any characters. When runningt the command in the adb shell, make sure the URL is in quotation marks
     >
