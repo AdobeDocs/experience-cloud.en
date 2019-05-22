@@ -8,7 +8,9 @@ solution: Experience Cloud
 
 # Overview
 
-_Implementing the Experience Cloud in Mobile Android Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their Android apps.
+_Implementing the Experience Cloud in Mobile Android&trade; Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their Android apps.
+
+![Android logo](images/android/Android_Robot.png)
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Android app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own Android app!
 
@@ -56,3 +58,5 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 Let's get started!
 
 [Next "Create a Launch Property" >](launch-create-a-property.md)
+
+_Android is a trademark of Google LLC._
