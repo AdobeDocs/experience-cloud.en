@@ -8,7 +8,9 @@ solution: Experience Cloud
 
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Swift Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
+_Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
+
+![Swift logo](images/ios/swift/Swift_logo_horz_lockup_color_rgb.png)
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
 
@@ -50,7 +52,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 
 ## Get the Tools
 
-1. You must use a Mac to complete this tutorial
+1. You must use a Mac&reg; to complete this tutorial
 1. Download [Xcode](https://developer.apple.com/xcode/)
 1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
 1. Install [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
@@ -58,3 +60,5 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 Let's get started!
 
 [Next "Create a Launch Property" >](launch-create-a-property.md)
+
+_Apple, the Apple logo, iPad, iPhone, iPod, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. Swift and the Swift logo are trademarks of Apple Inc._

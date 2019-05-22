@@ -115,7 +115,7 @@ The next step is to confirm that the deep link scheme is working
 
 Now let's make sure that the deep link will open the app in the emulator. You may have your preferred way of running adb commands which you can certainly use.
 
-**To verify the deep link using adb (MAC)**
+**To verify the deep link using adb (Mac&reg;)**
 
 1. Make sure the Android emulator is running
 1. Close the Bus Booking app if it is already open

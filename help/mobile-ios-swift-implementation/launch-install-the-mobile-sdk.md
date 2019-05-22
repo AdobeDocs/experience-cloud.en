@@ -46,7 +46,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 **To create the Podfile**
 
-1. Open the `Terminal` Application on your Mac
+1. Open the `Terminal` Application on your Mac&reg;
 
 1. Navigate to the project folder where you saved the Bus Booking Swift app (e.g. `cd Desktop/busbooking-mobileapps-master/Swift/`)
 
