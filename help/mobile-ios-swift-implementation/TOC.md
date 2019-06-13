@@ -1,16 +1,6 @@
 ---
-cloud: experience-cloud
-product: multi-solution
 user-guide-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
-solution-title: Experience Cloud
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
-solution-icon: assets/experience-cloud.png
-getting-started-title: Experience League
-getting-started-url: https://landing.adobe.com/experience-league/
-tutorials-title: Tutorials
-tutorials-url: https://helpx.adobe.com/experience-cloud/tutorials.html
-mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-cloud.en
+user-guide-url: /content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html
 ---
 
 # Implementing the Experience Cloud in Mobile iOS Swift Applications {#implementing-in-mobile-ios-swift-apps-with-launch}
