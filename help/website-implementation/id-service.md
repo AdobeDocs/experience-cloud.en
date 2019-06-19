@@ -1,22 +1,22 @@
 ---
-title: Implement the Experience Cloud ID Service with Launch
-description: Learn how to add the Experience Cloud ID Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+title: Implement the Adobe Experience Platform Identity Service with Launch
+description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 seo-description:
-seo-title: Implement the Experience Cloud ID Service with Launch
+seo-title: Implement the Adobe Experience Platform Identity Service with Launch
 solution: Experience Cloud
 ---
 
-# Add the Experience Cloud ID Service
+# Add the Adobe Experience Platform Identity Service
 
-This lesson will guide your through the steps required to implement the [Experience Cloud ID Service extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) and send customer ids.
+This lesson will guide your through the steps required to implement the [Adobe Experience Platform Identity Service extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) and send customer ids.
 
-The [Experience Cloud ID Service](https://marketing.adobe.com/resources/help/en_US/mcvid/) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+The [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Add the ID Service extension
+* Add the Identity Service extension
 * Create a data element to collect your customer ids
 * Create a rule that uses the "Set Customer IDs" action to send the customer ids to Adobe
 * Use the rule ordering feature to sequence rules that fire on the same event
@@ -25,11 +25,11 @@ At the end of this lesson, you will be able to:
 
 You should have already completed the lessons in the [Configure Launch](launch.md) section.
 
-## Add the ID Service Extension
+## Add the Identity Service Extension
 
 Since this is the first extension you are adding, here is a quick overview of extensions. Extensions are one of the core features of Launch. An extension is an integration built by Adobe, an Adobe partner, or any Adobe customer that adds new and endless options for the tags that you can deploy to your website. If you think of Launch as an operating system, extensions are the apps that you install so Launch can do the things you need it to do.
 
-**To add the ID Service Extension**
+**To add the Identity Service Extension**
 
 1. In the top navigation, click **[!UICONTROL Extensions]**
 
@@ -41,9 +41,9 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
 1. In the filter at the top, type "id" to filter the Catalog
 
-1. On the card for the Experience Cloud ID Service, click **[!UICONTROL Install]**
+1. On the card for the Adobe Experience Platform Identity Service, click **[!UICONTROL Install]**
 
-    ![Install the ID Service Extension](images/idservice-install.png)
+    ![Install the Identity Service Extension](images/idservice-install.png)
 
 1. Note that your Experience Cloud Organization ID has been auto-detected for you.
 
@@ -51,26 +51,26 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
     ![Save the extension](images/idservice-save.png)
 
->[!NOTE] Each version of the ID Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the ID Service extension.
+>[!NOTE] Each version of the Identity Service extension comes with a specific version of VisitorAPI.js which is noted in the extension description. You update the VisitorAPI.js version by updating the Identity Service extension.
 
 ### Validate the Extension
 
-The ID Service extension is one of the few Launch extensions that makes a request without having to use a rule action. The extension will automatically make a request to the ID Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
+The Identity Service extension is one of the few Launch extensions that makes a request without having to use a rule action. The extension will automatically make a request to the Identity Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
 
-**To validate the ID Service extension**
+**To validate the Identity Service extension**
 
 1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md).
 
-1. On the Summary tab of the Debugger, the Launch section should indicate that the Experience Cloud ID Service extension is implemented.
+1. On the Summary tab of the Debugger, the Launch section should indicate that the Adobe Experience Platform Identity Service extension is implemented.
 
-1. Also, on the Summary tab, the ID Service section should populate with the same Org ID that was on your extension configuration screen in the Launch interface:
+1. Also, on the Summary tab, the Identity Service section should populate with the same Org ID that was on your extension configuration screen in the Launch interface:
 
-   ![Check that the Experience Cloud ID Service extension is implemented](images/idservice-debugger-summary.png)
+   ![Check that the Adobe Experience Platform Identity Service extension is implemented](images/idservice-debugger-summary.png)
 
-1. The initial request to retrieve the Visitor ID might appear in the ID Service tab of the Debugger. It might have already been requested, though, so don't worry if you don't see it:
-   ![Check to see if there is a request to the ID Service with your Org Id](images/idservice-idRequest.png)
+1. The initial request to retrieve the Visitor ID might appear in the Identity Service tab of the Debugger. It might have already been requested, though, so don't worry if you don't see it:
+   ![Check to see if there is a request to the Identity Service with your Org Id](images/idservice-idRequest.png)
 
 1. After the initial request to fetch the Visitor ID, the ID is stored in a cookie whose name begins with `AMCV_`. You can confirm that the cookie has been set by doing the following:
     1. Open your browser's Developer Tools
@@ -81,11 +81,11 @@ The ID Service extension is one of the few Launch extensions that makes a reques
 
    ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
 
-That's it! You've added your first extension! For more details on the configuration options of the ID Service, see [the documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
+That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
 
 ## Send Customer IDs
 
-Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the ID Service. This will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
+Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the Identity Service. This will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
 In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
 
@@ -127,7 +127,7 @@ Start by creating two data elements:
 
    ![Save the data element](images/idservice-authenticationStateFinalSave.png)
 
-By knowing the authentication state of the user, you know when a customer id should exist on the page to send to the ID Service. The next step is to create a data element for the customer id itself. On the We.Retail demo site, you will use the hashed version of the visitor's email address.
+By knowing the authentication state of the user, you know when a customer id should exist on the page to send to the Identity Service. The next step is to create a data element for the customer id itself. On the We.Retail demo site, you will use the hashed version of the visitor's email address.
 
 **To add the data element for the hashed email**
 
@@ -145,7 +145,7 @@ By knowing the authentication state of the user, you know when a customer id sho
 
 ### Add a Rule to Send the Customer IDs
 
-The Experience Cloud ID Service passes the Customer IDs in rules using an action called “Set Customer IDs.”  You will now create a rule to trigger this action when the visitor is authenticated.
+The Adobe Experience Platform Identity Service passes the Customer IDs in rules using an action called “Set Customer IDs.”  You will now create a rule to trigger this action when the visitor is authenticated.
 
 **To create a rule to send the Customer IDs**
 
@@ -192,7 +192,7 @@ The Experience Cloud ID Service passes the Customer IDs in rules using an action
 
    ![Add a new Action](images/idservice-customerId-addAction.png)
 
-    1. For the **[!UICONTROL Extension]** select **[!UICONTROL Experience Cloud ID Service]**
+    1. For the **[!UICONTROL Extension]** select **[!UICONTROL Adobe Experience Platform Identity Service]**
     1. For the **[!UICONTROL Action Type]** select **[!UICONTROL Set Customer IDs]**
     1. For the **[!UICONTROL Integration Code]** enter `crm_id`
     1. For the **[!UICONTROL Value]** enter open the Data Element selector modal and select the `Email (Hashed)`
@@ -233,10 +233,10 @@ To validate your work, you will log into the We.Retail site to confirm the behav
 
 Now, confirm the customer id is sent to the Service using the Debugger extension.
 
-**To validate that the ID Service is passing the customer id**
+**To validate that the Identity Service is passing the customer id**
 
 1. Make sure the tab with the We.Retail site is in focus
-1. In the Debugger, go to the Experience Cloud ID Service tab
+1. In the Debugger, go to the Adobe Experience Platform Identity Service tab
 1. Expand your Org ID
 1. Click on the cell with the `Customer ID - crm_id` value
 1. In the modal, note the customer id value and that the `AUTHENTICATED` state is reflected:

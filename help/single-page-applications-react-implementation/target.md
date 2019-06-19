@@ -27,7 +27,7 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-To complete the lessons in this section, you must first complete the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md).
+To complete the lessons in this section, you must first complete the lessons in [Configure Launch](launch.md) and [Add the Identity Service](id-service.md).
 
 ## Add the Target Pre-Hiding Snippet
 
@@ -167,7 +167,7 @@ Passing parameters in the Target request adds powerful capabilities to your targ
 
 1. `Add Params to All Mboxes`, which adds parameters in all mbox requests, e.g. the global mbox plus additional mbox requests made from Custom Code actions or hardcoded on your site (equivalent to the [targetPageParamsAll()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/targetpageparamsall.html) method)
 
-These actions can be used *before* the `Load Target` action and can set different parameters on different pages based on your rule configurations. Use the rule ordering feature you used when setting Customer IDs with the ID Service to set additional parameters on the `Library Loaded` event before the rule firing the global mbox.
+These actions can be used *before* the `Load Target` action and can set different parameters on different pages based on your rule configurations. Use the rule ordering feature you used when setting Customer IDs with the Identity Service to set additional parameters on the `Library Loaded` event before the rule firing the global mbox.
 >[!TIP] Since most implementations use the global mbox for activity delivery, it usually sufficient to just use the `Add Params to Global Mbox` action.
 
 ### Add an Mbox Parameter
@@ -240,16 +240,16 @@ You don't need to pass any profile parameters in this tutorial, but the workflow
 
 ### Add Customer ID Parameters
 
-The collection of customer ids with the Experience Cloud ID Service makes it easy to import CRM data into Target using the [Customer Attributes](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) feature of the Adobe Experience Cloud. It also enables [cross-device visitor stitching](https://docs.adobe.com/content/help/en/target/using/integrate/experience-cloud-device-co-op.html), allowing you to maintain a consistent user experience as your customers switch between say a laptop and their mobile device.
+The collection of customer ids with the Adobe Experience Platform Identity Service makes it easy to import CRM data into Target using the [Customer Attributes](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) feature of the Adobe Experience Cloud. It also enables [cross-device visitor stitching](https://docs.adobe.com/content/help/en/target/using/integrate/experience-cloud-device-co-op.html), allowing you to maintain a consistent user experience as your customers switch between say a laptop and their mobile device.
 
-It is imperative that the Customer ID is set in the ID Service's `Set Customer IDs` action before firing the global mbox. To that end, make sure you have the following capabilities on your site:
+It is imperative that the Customer ID is set in the Identity Service's `Set Customer IDs` action before firing the global mbox. To that end, make sure you have the following capabilities on your site:
 
 * The customer ID must be available on the page before the Launch Embed Code
-* The Experience Cloud ID Service extension must be installed
+* The Adobe Experience Platform Identity Service extension must be installed
 * You must use the "Set Customer IDs" action in a rule that fires at the "Library Loaded (Page Top)" event
 * Use the "Fire global mbox" action in a rule that fires *after* the "Set Customer IDs" action
 
-In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), you created the `All Pages - Library Loaded - Authenticated - 10` rule to fire the "Set Customer ID" action. Because this rule has an  `Order` setting of `10`, the customer ids are set before our our global mbox fires from the `All Pages - Library Loaded` rule with its `Order` setting of `50`. So, you have already implemented the collection of customer ids for Target!
+In the previous lesson, [Add the Adobe Experience Platform Identity Service](id-service.md), you created the `All Pages - Library Loaded - Authenticated - 10` rule to fire the "Set Customer ID" action. Because this rule has an  `Order` setting of `10`, the customer ids are set before our our global mbox fires from the `All Pages - Library Loaded` rule with its `Order` setting of `50`. So, you have already implemented the collection of customer ids for Target!
 
 #### Validate the Customer ID
 
@@ -264,11 +264,11 @@ In the previous lesson, [Add the Experience Cloud ID Service](id-service.md), yo
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the ID Service configuration and must align with the key you use in your [Customer Attributes data file](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://marketing.adobe.com/resources/help/en_US/mcloud/t_crs_usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the mbox call](images/target-debugger-customerId.png)
 
->[!WARNING] The Experience Cloud ID Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
+>[!WARNING] The Adobe Experience Platform Identity Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
 
 ### Add the Property Token Parameter
 

@@ -24,7 +24,7 @@ At the end of this lesson, you will be able to:
 
 In order to complete this lesson, you will need:
 
-1. To have completed the lessons in [Configure Launch](launch.md), [Add Adobe Analytics](analytics.md), and [Add the ID Service](id-service.md).
+1. To have completed the lessons in [Configure Launch](launch.md), [Add Adobe Analytics](analytics.md), and [Add the Identity Service](id-service.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
@@ -49,7 +49,7 @@ Since you have already deployed Adobe Analytics in this tutorial, you will deplo
 There are two main steps in doing a SSF implementation:
 
 1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager *per report suite*.
-1. Putting the code in place, which is done via Launch. In order for this to work correctly, you will need to have the Experience Cloud ID Service extension installed, as well as the Analytics extension (You will actually *not* need the AAM extension, which is explained below).
+1. Putting the code in place, which is done via Launch. In order for this to work correctly, you will need to have the Adobe Experience Platform Identity Service extension installed, as well as the Analytics extension (You will actually *not* need the AAM extension, which is explained below).
 
 ### Enable Server-Side Forwarding in the Analytics Admin Console
 
@@ -81,7 +81,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html).
 
-Once this step has been completed, and if you have the Experience Cloud ID Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must complete the following step in Launch as well. Don't worry, it's super easy.
+Once this step has been completed, and if you have the Adobe Experience Platform Identity Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must complete the following step in Launch as well. Don't worry, it's super easy.
 
 ### Enable Server-Side Forwarding in Launch
 

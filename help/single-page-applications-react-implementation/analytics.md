@@ -27,7 +27,7 @@ There are many things that could be implemented for Analytics in Launch. This le
 
 ## Prerequisites
 
-You should have already completed the lessons in [Configure Launch](launch.md) and [Add the ID Service](id-service.md).
+You should have already completed the lessons in [Configure Launch](launch.md) and [Add the Identity Service](id-service.md).
 
 Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 

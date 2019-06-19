@@ -12,7 +12,7 @@ user-guide-url: /content/help/en/experience-cloud/implementing-in-mobile-ios-swi
   + [Create a Library](launch-create-a-library.md)
   + [Install the Mobile SDK](launch-install-the-mobile-sdk.md)
 + Implementing Solutions{#implement-solutions}
-  + [Add the ID Service](id-service.md)
+  + [Add the Identity Service](id-service.md)
   + [Add Adobe Target's VEC](target-vec.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Analytics](analytics.md)

@@ -21,7 +21,7 @@ After completing this you will be able to:
 * Install a Launch Property on a website
 
 * Add the following Adobe Experience Cloud solutions:
-  * **[Experience Cloud ID Service](id-service.md)**
+  * **[Adobe Experience Platform Identity Service](id-service.md)**
   * **[Adobe Target](target.md)**
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**
@@ -44,7 +44,7 @@ Also, it is assumed that you are familiar with front-end development languages l
 
 ## About Launch
 
-Launch, by Adobe is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
+Adobe Experience Platform Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
 
 Launch for websites allows you to centrally manage all of the JavaScript related to analytics, marketing, and advertising solutions used on your desktop and mobile sites. For example, if you deploy Adobe Analytics, Launch will manage the AppMeasurement JavaScript library, populate variables, and fire requests.
 

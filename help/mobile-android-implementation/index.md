@@ -21,7 +21,7 @@ After completing this tutorial you will be able to:
 * Install a Launch property in a Android app
 
 * Implement the following Adobe Experience Cloud solutions:
-  * **[Experience Cloud ID Service](id-service.md)**
+  * **[Adobe Experience Platform Identity Service](id-service.md)**
   * **[Adobe Target](target-vec.md)**
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**

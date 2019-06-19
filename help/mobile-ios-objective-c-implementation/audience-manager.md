@@ -77,7 +77,7 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html).
 
-This switch will start the actual forwarding of data to AAM, as long as you have the Experience Cloud ID service implemented. The rest of SSF implementation happens in the code, which was handled in Launch when you checked the box in the Analytics extension to forward to AAM.
+This switch will start the actual forwarding of data to AAM, as long as you have the Adobe Experience Platform Identity Service implemented. The rest of SSF implementation happens in the code, which was handled in Launch when you checked the box in the Analytics extension to forward to AAM.
 
 Server-Side Forwarding code is now implemented for your app!
 

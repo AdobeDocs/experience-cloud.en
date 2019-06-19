@@ -19,7 +19,7 @@ Adobe Target makes it easy to test and personalize in your single page applicati
 
 ## Exercise 2: Implement Target's JavaScript SDK&mdash;at.js
 
-Target's JavaScript SDK at.js can easily be implemented in a single page application. You can add it as a standalone JavaScript file, using our tag manager Launch, by Adobe, or using a third-party tag manager.
+Target's JavaScript SDK at.js can easily be implemented in a single page application. You can add it as a standalone JavaScript file, using our tag manager Adobe Experience Platform Launch, or using a third-party tag manager.
 
 ### To download at.js from the Target interface**
 

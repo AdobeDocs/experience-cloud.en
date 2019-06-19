@@ -33,7 +33,7 @@ You should complete all of the previous lessons in this tutorial before followin
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
-1. Implement the Experience Cloud Id Service
+1. Implement the Adobe Experience Platform Identity Service
 1. Implement Audience Manager
 1. Implement other solutions which you would like to receive or create audiences, such as Target and Analytics
 
@@ -71,7 +71,7 @@ The [Analytics for Target (A4T)](https://marketing.adobe.com/resources/help/en_U
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
-1. Implement the Experience Cloud Id Service
+1. Implement the Adobe Experience Platform Identity Service
 1. Fire the global mbox before the Analytics page view beacon
 
 A4T works by stitching together a server-side request from Target to Analytics with the Analytics page view beacon, which we call "hit-stitching."  Hit-stitching requires that the Target request which delivers the activity (or increments a Target-based goal metric) have a parameter which matches a parameter in the Analytics page view beacon. This parameter is called the supplemental data id (SDIDs).
@@ -110,12 +110,12 @@ If you make additional Target requests in the scope of a page load (not includin
 
 The main requirements to implement Customer Attributes&mdash;which you have already done&mdash;are to:
 
-1. Implement the Experience Cloud Id Service
+1. Implement the Adobe Experience Platform Identity Service
 1. Set Customer Ids via the Id Service *before* Target and Analytics fire their requests (which you accomplished using the rule ordering feature in Launch)
 
 ### Validate the Customer Attributes Implementation
 
-You have already validated that the Customer IDs are passed to both the ID Service and to Target in earlier lessons. You can also validate the Customer ID in the Analytics hit as well.
+You have already validated that the Customer IDs are passed to both the Identity Service and to Target in earlier lessons. You can also validate the Customer ID in the Analytics hit as well.
 At this time, the Customer ID is one of the few parameters that does not show up in the Experience Cloud Debugger, so you will use the browser's JavaScript Console to view it.
 
 1. Open the We.Retail site
@@ -139,7 +139,7 @@ At this time, the Customer ID is one of the few parameters that does not show up
 1. Click on the request and select the Headers tab
 1. Scroll down until you see some nested parameters
    1. cid - this is the standard delimiter for the Customer ID portion of the request
-   1. crm_id - This is the custom integration code, which you specified in the ID Service lesson
+   1. crm_id - This is the custom integration code, which you specified in the Identity Service lesson
    1. id - The Customer ID value coming from your `Email (Hashed)` data element
    1. as - The Authentication State, with "1" meaning logged in
 

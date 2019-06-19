@@ -22,7 +22,7 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-cloud.en
   + [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md)
   + [Switch Environments with the Debugger](launch-switch-environments.md)
 + Implementing Solutions{#implement-solutions}
-  + [Add the ID Service](id-service.md)
+  + [Add the Identity Service](id-service.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Target Standalone](target-standalone.md)
   + [Add Adobe Analytics](analytics.md)

@@ -65,4 +65,4 @@ At the end of this lesson, you will be able to:
 
 As you continue the tutorial, you will use this technique of mapping the We.Retail site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes you make to your Development and Staging Environments before you publish them to Production.
 
-[Next "Add the Experience Cloud ID Service" >](id-service.md)
+[Next "Add the Adobe Experience Platform Identity Service" >](id-service.md)
