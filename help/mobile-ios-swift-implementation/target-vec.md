@@ -36,7 +36,7 @@ To complete the lessons in this section, you must:
 
 ## Add Parameters
 
-As you just saw in the last exercise, app Lifecycle metrics are automatically included as parameters in the Target VEC request. You can also add custom parameters to the requests.
+Lifecycle metrics are automatically included as parameters in the Target VEC request. You can also add custom parameters to the requests.
 
 **To add custom parameters**
 
@@ -100,7 +100,7 @@ The next step is to add a handler to the deep link.
 **To handle the deep links**
 
 1. Open the `AppDelegate.swift` file
-1. Add the line `ACPTargetVEC.handleDeepLink(url)` to the `AppDelegate:application:openURL` section as pictured below
+1. Add the line `ACPCore.collectLaunchInfo(["adb_deeplink": url.absoluteString])` to the `AppDelegate:application:openURL` section as pictured below
    ![Update the AppDelegate file](images/ios/swift/mobile-targetvec-appDelegate.png)
 
 ### Verify the deep link
