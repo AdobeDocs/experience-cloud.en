@@ -72,8 +72,8 @@ Now it's time to get to the fun part and start adding the extensions for the sol
   
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-catalog-installAnalytics.png)
 
-1. Select your **[!UICONTROL Report Suites]**. These are the Report Suite to which the app will send data. You can send.
-1. Enter your **[!UICONTROL Analytics Tracking Server]**. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
+1. Select your **[!UICONTROL Report Suites]** from the pre-populated lists. These are the Report Suites to which the app will send data. You can select different report suites for your Development, Staging, and Production Environments.
+1. Your **[!UICONTROL Analytics Tracking Server]** may be pre-populated or you may need to select it from a pre-populated list. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
 1. Check the box for **[!UICONTROL Offline Enabled]**. When the Offline Enabled check box is selected, Analytics hits are queued when your device is offline and are sent later when your device is back online. To use offline tracking, **ensure** that your report suite is timestamp enabled. For more information, see the [documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/offline_tracking.html).
 1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an additional call from the app to Audience Manager. In this exercise we will assume that you have Audience Manager, and are therefore forwarding the data from Analytics. If you do not have Audience Manager, do not check this box as you set up Analytics for your own implementation.
 1. Check the box to **[!UICONTROL Backdate Previous Session Info]**
@@ -83,9 +83,9 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add the Target extension
 
-Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer, which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both. At this time, both Target extensions for mobile properties are used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
+Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer, which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both.
 
->[!NOTE] If you do not have a license for Adobe Target, you can skip this section.
+>[!NOTE] If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
 
 **To add the extension**
 
@@ -107,7 +107,7 @@ Adobe Target has two official extensions, the Adobe Target extension and the Ado
 
 Now that the Target extension has been added, you can add the Target VEC extension.
 
->[!NOTE] If you do not have a license for Adobe Target, you can skip this section.
+>[!NOTE] If you do not have a license for Adobe Target, you can skip this section. At this time, the Target VEC extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
 
 **To add the extension**
 
