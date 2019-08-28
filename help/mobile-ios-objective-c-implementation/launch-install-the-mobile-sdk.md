@@ -104,7 +104,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 ## Update the AppDelegate
 
-Now it's time to update the App to import the SDK
+Now it's time to update the App to import the SDK:
 
 1. Open the `BusBookingObjectiveC.xcworkspace` file in XCode
 1. Open the `AppDelegate.m` file
@@ -135,6 +135,10 @@ Now it's time to update the App to import the SDK
 1. In XCode, paste these extension statements into the AppDelegate file just before the `return true` line of the `application(_:didFinishLaunchingWithOptions:)` method:
 
    ![Paste the Extension statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteExtension.png)
+
+>[!NOTE] The Mobile Install Instructions include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These are considered part of the Core extension in the Launch interface. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these Install Instructions.
+>
+> Also, there are additional implementation considerations which should be considered when using these extensions (for example, you should pause and restart Lifecycle collection when the user backgrounds/foregrounds the app) which you can read about in [the documentation of the Core extension](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)
 
 ## Verify the implementation
 

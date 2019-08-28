@@ -72,7 +72,7 @@ Now it's time to get to the fun part and start adding the extensions for the sol
   
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-catalog-installAnalytics.png)
 
-1. Enter your **[!UICONTROL Report Suite ID]**. This is the Report Suite to which the app will send data. At the moment, only one report suite can be specified per property.
+1. Select your **[!UICONTROL Report Suites]**. These are the Report Suite to which the app will send data. You can send.
 1. Enter your **[!UICONTROL Analytics Tracking Server]**. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
 1. Check the box for **[!UICONTROL Offline Enabled]**. When the Offline Enabled check box is selected, Analytics hits are queued when your device is offline and are sent later when your device is back online. To use offline tracking, **ensure** that your report suite is timestamp enabled. For more information, see the [documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/offline_tracking.html).
 1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an additional call from the app to Audience Manager. In this exercise we will assume that you have Audience Manager, and are therefore forwarding the data from Analytics. If you do not have Audience Manager, do not check this box as you set up Analytics for your own implementation.
@@ -83,9 +83,9 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 
 ### Add the Target extension
 
-Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer, which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both.
+Adobe Target has two official extensions, the Adobe Target extension and the Adobe Target VEC extension. The Adobe Target supports all of the API familiar to users of our earlier mobile SDKs. The Adobe Target VEC extension adds support for Target's Visual Experience Composer, which allows marketers to build simple activities that change image and text elements on the page in a What-You-See-Is-What-You-Get (WYSIWYG) interface. In this tutorial, you will use both. At this time, both Target extensions for mobile properties are used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
 
->[!NOTE] If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
+>[!NOTE] If you do not have a license for Adobe Target, you can skip this section.
 
 **To add the extension**
 
@@ -105,9 +105,9 @@ Adobe Target has two official extensions, the Adobe Target extension and the Ado
 
 ### Add the Target VEC extension
 
-Now that the Target extension has been added, you can add the Target VEC extension. At this time, the Target VEC extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
+Now that the Target extension has been added, you can add the Target VEC extension.
 
->[!NOTE] If you do not have a license for Adobe Target, you can skip this section
+>[!NOTE] If you do not have a license for Adobe Target, you can skip this section.
 
 **To add the extension**
 
@@ -119,7 +119,6 @@ Now that the Target extension has been added, you can add the Target VEC extensi
 
 1. Turn **[!UICONTROL Auto-Fetch Target Campaigns]**&nbsp;&nbsp;`ON` . This will pre-fetch all of the Target activities when the app first loads, reducing the number of requests that need to be made.
 1. Leave **[!UICONTROL Fetch In Background]**&nbsp;&nbsp;`OFF`. This setting only appears when `Auto-Fetch Target Campaigns` is used.  Leaving this setting `OFF` will allow you to run VEC activities on the home screen of the app, but will also add a delay to the app start up to ensure that the Target request has completed or timed out before the home screen displays. We recommend that you leave this setting `OFF` when you are running activities on the home screen and toggle it `ON` when you are not.  This setting can be changed at any time in the Launch interface without updating your app.
-1. Leave the **[!UICONTROL Target Workspace Property]** blank. This setting is used in conjunction with the Target Premium [Enterprise User Permissions](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/property-channel.html) feature.
 1. Click the **[!UICONTROL Save]** button
   
     ![Configure the Target VEC settings](images/mobile-extensions-targetVEC-settings.png)
