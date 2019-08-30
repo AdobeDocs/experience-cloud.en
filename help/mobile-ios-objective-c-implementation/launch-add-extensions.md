@@ -22,7 +22,7 @@ Your Launch user account needs permission to "Manage Extensions" in order to com
 
 You will need the following solution details:
 
-* One Analytics report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html).
+* At least one Analytics report suite ID. The report suite should have [App Reports  enabled](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/mobile-management.html). If you don't have a test/dev report suite that you can use for this tutorial, please [create one](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html). One report suite is sufficient for this tutorial, but in the real world you would want to use different report suites for your Development, Staging, and Production environments.
 
 * Your Analytics tracking server. You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 
@@ -73,7 +73,7 @@ Now it's time to get to the fun part and start adding the extensions for the sol
     ![Go to the Extensions catalog and click Install to add the Analytics extension](images/mobile-extensions-catalog-installAnalytics.png)
 
 1. Select your **[!UICONTROL Report Suites]** from the pre-populated lists. These are the Report Suites to which the app will send data. You can select different report suites for your Development, Staging, and Production Environments.
-1. Your **[!UICONTROL Analytics Tracking Server]** may be pre-populated or you may need to select it from a pre-populated list. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
+1. Your **[!UICONTROL Analytics Tracking Server]** may be pre-populated or you may need to select it from a pre-populated list or enter it manually. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
 1. Check the box for **[!UICONTROL Offline Enabled]**. When the Offline Enabled check box is selected, Analytics hits are queued when your device is offline and are sent later when your device is back online. To use offline tracking, **ensure** that your report suite is timestamp enabled. For more information, see the [documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/offline_tracking.html).
 1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an additional call from the app to Audience Manager. In this exercise we will assume that you have Audience Manager, and are therefore forwarding the data from Analytics. If you do not have Audience Manager, do not check this box as you set up Analytics for your own implementation.
 1. Check the box to **[!UICONTROL Backdate Previous Session Info]**
