@@ -136,6 +136,10 @@ Now it's time to update the App to import the SDK
 
    ![Paste the Extension statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteExtension.png)
 
+>[!NOTE] The Mobile Install Instructions provided in the Launch interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
+>
+> Also, there are additional implementation options which should be considered when using these extensions (for example, you could pause/restart Lifecycle collection when the user backgrounds/foregrounds the app). You can read more about this in [the Mobile Core extension documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)
+
 ## Verify the implementation
 
 1. Save your Xcode project

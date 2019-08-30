@@ -32,7 +32,7 @@ You should have already completed the lessons in the [Configure Launch](launch-c
 
 Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform Mobile SDK.
 
-Lifecycle metrics are enabled by the Core extension, which you added to the app in the earlier lesson called ["Install the Mobile SDK"](launch-install-the-mobile-sdk.md). These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
+You already enabled Lifecycle metrics when you added the Core extension to your property and followed the Mobile Install Instructions provided in the interface. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html).
 
 ## Importing the ACPCore Library
 

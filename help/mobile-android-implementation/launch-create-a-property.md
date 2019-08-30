@@ -36,7 +36,7 @@ At the end of this lesson, you will be able to:
 
     ![Open the solution switcher using the icon and click Activation](images/mobile-launch-solutionSwitcherActivation.png)
 
-1. Under **[!UICONTROL Launch, by Adobe]**, click the **[!UICONTROL Go to Launch]** button
+1. Under **[!UICONTROL Adobe Experience Cloud Launch]**, click the **[!UICONTROL Go to Launch]** button
 
    ![Click the Launch button](images/mobile-launch-goToLaunch.png)
 
