@@ -43,7 +43,7 @@ The best way to validate the Audiences integration is to actually build an audie
 
 These validation steps will focus on the critical part visible in the client-side implementation--the Visitor ID.
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
@@ -53,9 +53,9 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Click **[!UICONTROL Clear All Requests]** just to clean things up
 
-1. Reload the We.Retail page, making sure that you see both the Target and Analytics requests in the Debugger
+1. Reload the Luma page, making sure that you see both the Target and Analytics requests in the Debugger
 
-1. Reload the We.Retail page again
+1. Reload the Luma page again
   
 1. You should now see four requests in the Network tab of the Debugger&mdash;two for Target and two for Analytics
 
@@ -82,7 +82,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 **To validate the SDIDs**
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
@@ -92,9 +92,9 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Click **[!UICONTROL Clear All Requests]** just to clean things up
 
-1. Reload the We.Retail page, making sure that you see both the Target and Analytics requests in the Debugger
+1. Reload the Luma page, making sure that you see both the Target and Analytics requests in the Debugger
 
-1. Reload the We.Retail page again
+1. Reload the Luma page again
   
 1. You should now see four requests in the Network tab of the Debugger&mdash;two for Target and two for Analytics
 
@@ -118,7 +118,7 @@ The main requirements to implement Customer Attributes&mdash;which you have alre
 You have already validated that the Customer IDs are passed to both the Identity Service and to Target in earlier lessons. You can also validate the Customer ID in the Analytics hit as well.
 At this time, the Customer ID is one of the few parameters that does not show up in the Experience Cloud Debugger, so you will use the browser's JavaScript Console to view it.
 
-1. Open the We.Retail site
+1. Open the Luma site
 1. Open your browser's Developer Tools
 1. Go to the Network tab
 1. In the filter field, type `b/ss` which will limit what you see to the Adobe Analytics requests

@@ -59,7 +59,7 @@ The Identity Service extension is one of the few Launch extensions that makes a 
 
 **To validate the Identity Service extension**
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md).
 
@@ -77,7 +77,7 @@ The Identity Service extension is one of the few Launch extensions that makes a 
     1. Go to the `Application` tab
     1. Expand `Cookies` on the left side
     1. Click on the domain `https://aem.enablementadobe.com`
-    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the We.Retail site using both it's hardcoded Launch property as well as mapped to your own.
+    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded Launch property as well as mapped to your own.
 
    ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
 
@@ -109,7 +109,7 @@ Start by creating two data elements:
 
    ![Open the Editor to add the Custom Code for the Data Element](images/idservice-authenticationState.png)
 
-1. In the [!UICONTROL Edit Code] window, use the following code to return values of "logged in" or "logged out" based on an attribute in the We.Retail site's data layer:
+1. In the [!UICONTROL Edit Code] window, use the following code to return values of "logged in" or "logged out" based on an attribute in the Luma site's data layer:
 
     ```javascript
     if (digitalData.user[0].profile[0].attributes.loggedIn)
@@ -127,7 +127,7 @@ Start by creating two data elements:
 
    ![Save the data element](images/idservice-authenticationStateFinalSave.png)
 
-By knowing the authentication state of the user, you know when a customer id should exist on the page to send to the Identity Service. The next step is to create a data element for the customer id itself. On the We.Retail demo site, you will use the hashed version of the visitor's email address.
+By knowing the authentication state of the user, you know when a customer id should exist on the page to send to the Identity Service. The next step is to create a data element for the customer id itself. On the Luma demo site, you will use the hashed version of the visitor's email address.
 
 **To add the data element for the hashed email**
 
@@ -137,7 +137,7 @@ By knowing the authentication state of the user, you know when a customer id sho
 
 1. Name the data element `Email (Hashed)`
 1. For the **[!UICONTROL Data Element Type]**, select **[!UICONTROL JavaScript Variable]**
-1. As the **[!UICONTROL JavaScript variable name]**, use the following pointer to a variable in the We.Retail site's data layer: `digitalData.user.0.profile.0.attributes.username`
+1. As the **[!UICONTROL JavaScript variable name]**, use the following pointer to a variable in the Luma site's data layer: `digitalData.user.0.profile.0.attributes.username`
 1. Leave all of the other settings on their default values
 1. Click **[!UICONTROL Save to Library and Build]** to save the data element
 
@@ -209,17 +209,17 @@ You've now created a rule that will send the Customer ID as a variable `crm_id` 
 
 ### Validate the Customer IDs
 
-To validate your work, you will log into the We.Retail site to confirm the behavior of the new rule.
+To validate your work, you will log into the Luma site to confirm the behavior of the new rule.
 
-**To log into the We.Retail site**
+**To log into the Luma site**
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
    ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the We.Retail site
+1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the Luma site
 
    ![Click Login in the top navigation](images/idservice-loginNav.png)
 
@@ -235,7 +235,7 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 
 **To validate that the Identity Service is passing the customer id**
 
-1. Make sure the tab with the We.Retail site is in focus
+1. Make sure the tab with the Luma site is in focus
 1. In the Debugger, go to the Adobe Experience Platform Identity Service tab
 1. Expand your Org ID
 1. Click on the cell with the `Customer ID - crm_id` value
@@ -243,7 +243,7 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 
    ![Confirm the Customer ID in the Debugger](images/idservice-debugger-confirmCustomerId.png)
 
-1. Note that you can confirm the hashed email value by viewing the source code of the We.Retail page and looking at the username property. It should match the value you see in the Debugger:
+1. Note that you can confirm the hashed email value by viewing the source code of the Luma page and looking at the username property. It should match the value you see in the Debugger:
 
    ![hashed email in the source code](images/idservice-customerId-inSourceCode.png)
 

@@ -56,7 +56,7 @@ In a real-life scenario, the next step in the process would typically be to have
 
    ![Install icon](images/publishing-copyStagingCode.png)
 
-1. Open the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
 
 1. Open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](images/icon-debugger.png) icon
 

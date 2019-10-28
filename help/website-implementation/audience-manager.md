@@ -116,7 +116,7 @@ The main way to validate that the Server-Side Forwarding is up and running is by
 The code that Adobe Launch installs to handle the forwarding, and especially the response from AAM to the page, is called the Audience Manager
 "Module." We can use the Experience Cloud Debugger to ensure that it has loaded.
 
-1. Open the We.Retail site
+1. Open the Luma site
 1. Click the debugger icon in your browser to open the Experience Cloud debugger
 1. Staying on the Summary tab, scroll down to the Analytics section
 1. Verify that **AudienceManagement** is listed under the Modules section
