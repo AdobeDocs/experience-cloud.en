@@ -59,7 +59,7 @@ The Identity Service extension is one of the few Launch extensions that makes a 
 
 **To validate the Identity Service extension**
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md).
 
@@ -213,7 +213,7 @@ To validate your work, you will log into the Luma site to confirm the behavior o
 
 **To log into the Luma site**
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 

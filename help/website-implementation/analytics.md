@@ -110,7 +110,7 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 Now that you have created a rule to send an Analytics beacon, you should be able to see the request in the Experience Cloud Debugger.
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
@@ -261,7 +261,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 
 **To validate the Product Detail page data**
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Navigate to any product detail page
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
@@ -343,7 +343,7 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 
 Now you will want to make sure that this hit goes in when you scroll down to the New Arrivals section of the Home Page of our site. When you first load the homepage, the request shouldn't be made, but as you scroll down and the section comes into view, the hit should fire with our new values.
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
 1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
 1. Click to the Analytics tab
 1. Expand your Report Suite's hit
@@ -464,7 +464,7 @@ Now you can make sure that the plug-ins are working.
 
 **To validate the plugins**
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
 1. Expand your Report Suite

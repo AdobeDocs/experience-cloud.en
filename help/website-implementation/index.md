@@ -58,9 +58,9 @@ Launch is also a platform that allows third-party vendors to create extensions t
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
+In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
 
-[![Luma website](images/overview-luma.png)](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+[![Luma website](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## Get the Tools
 
@@ -68,7 +68,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 1. Add the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
 1. Download the [sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click "Save Link As")
 1. Get a text editor in which you can make changes to the sample html page. (If you don't have one, we recommend trying [Brackets](http://brackets.io/))
-1. Bookmark the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Bookmark the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 >[!NOTE] You might find it easier to complete this tutorial with the Luma site open in Chrome, while you read this tutorial and complete the Launch interface steps in a different browser.
 

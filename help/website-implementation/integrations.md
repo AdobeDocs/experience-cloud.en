@@ -43,7 +43,7 @@ The best way to validate the Audiences integration is to actually build an audie
 
 These validation steps will focus on the critical part visible in the client-side implementation--the Visitor ID.
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
@@ -82,7 +82,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 **To validate the SDIDs**
 
-1. Open the [Luma site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 

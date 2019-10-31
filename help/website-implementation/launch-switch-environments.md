@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Switch Launch Environments with the Experience Cloud Debugger
 
-In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [Luma demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) with your own property.
+In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
 
 This technique is called environment switching and will be helpful later, when you work with Launch on your own website. You will be able to load your production website in your browser, but with your *development* Launch environment. This enables you to confidently make and validate Launch changes independently from your regular code releases.  After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use Launch in the first place!
 
@@ -33,7 +33,7 @@ At the end of this lesson, you will be able to:
 
 ## Replace the Launch URL on the Luma Demo Site
 
-1. Open the [Luma demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 
 1. Open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](images/icon-debugger.png) icon
 
