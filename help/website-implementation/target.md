@@ -33,7 +33,7 @@ To complete the lessons in this section, you must first complete the lessons in 
 
 Before we get started, we need to make a slight update to the Launch embed codes. When the Launch embed codes are loaded asynchronously, the page may finish rendering before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where  default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we strongly recommend hardcoding a special pre-hiding snippet immediately before Launch's asynchronous embed codes.
 
-This has already been done on the We.Retail site, but let's go ahead and do this on the sample page so you understand the implementation. Copy the following lines of code:
+This has already been done on the Luma site, but let's go ahead and do this on the sample page so you understand the implementation. Copy the following lines of code:
 
 ```html
 <script>
@@ -141,7 +141,7 @@ Now that you have added the Target extension and fired the `Load Target` and `Fi
 
 1. Reload your sample page. You should no longer see a delay of three seconds before the page is visible. If you are loading the sample page using the `file://` protocol, you should do this step in Firefox or Safari browsers since Chrome will not fire a Target request when using the `file://` protocol.
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
@@ -216,7 +216,7 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
 #### Validate the Mbox Parameter
 
-Reload the We.Retail site with it mapped to your property with Experience Cloud Debugger. Now go to the **[!UICONTROL Target]** tab in the Debugger. Expand your client code and look at the requests. You should see the new `pageName` parameter passed in the request:
+Reload the Luma site with it mapped to your property with Experience Cloud Debugger. Now go to the **[!UICONTROL Target]** tab in the Debugger. Expand your client code and look at the requests. You should see the new `pageName` parameter passed in the request:
 
 ![Click Keep Changes](images/target-debugger-pageName.png)
 
@@ -255,14 +255,14 @@ In the previous lesson, [Add the Adobe Experience Platform Identity Service](id-
 
 #### Validate the Customer ID
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
    ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. Log into the We.Retail site using the credentials `test@adobe.com`/`test`
-1. Return to the [We.Retail homepage](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Log into the Luma site using the credentials `test@adobe.com`/`test`
+1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
@@ -317,7 +317,7 @@ Here is an optional exercise, if you are a Target Premium customer and would lik
 
 #### Validate the Property Token
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
    ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
@@ -345,7 +345,7 @@ Customers using the Analytics for Target (A4T) integration for most of their rep
 
 The order confirmation mbox should fire from a rule that is only triggered on your order confirmation page or event. Often, it can be combined with a rule setting the Adobe Analytics purchase event. It must be configured using the Custom Code action of the Core extension, using the appropriate data elements to set the orderId, orderTotal, and productPurchasedId parameters.
 
-Let's add the data elements and rule we need to fire an order confirmation mbox on the We.Retail site. Since you have already created several data elements, these instructions will be abbreviated.
+Let's add the data elements and rule we need to fire an order confirmation mbox on the Luma site. Since you have already created several data elements, these instructions will be abbreviated.
 
 **To create the data element for Order Id**
 
@@ -438,7 +438,7 @@ Now we need to create a rule to fire the global mbox with the order parameters o
 
 #### Validate the Order Confirmation Mbox
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html)
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 

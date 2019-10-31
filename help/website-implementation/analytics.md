@@ -110,7 +110,7 @@ You have already created an "All Pages - Library Loaded" rule in the [Add a Data
 
 Now that you have created a rule to send an Analytics beacon, you should be able to see the request in the Experience Cloud Debugger.
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
 
@@ -261,7 +261,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 
 **To validate the Product Detail page data**
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Navigate to any product detail page
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
@@ -280,7 +280,7 @@ In this tutorial, you will trigger an `s.tl()` call using one of the coolest Jav
 
 ### The Use Case
 
-For this use case, you want to know if people are scrolling down on our We.Retail home page far enough to see the *New Arrivals* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so you want to use Analytics to determine the truth.
+For this use case, you want to know if people are scrolling down on our Luma home page far enough to see the *New Arrivals* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so you want to use Analytics to determine the truth.
 
 ### Create the Rule in Launch
 
@@ -292,7 +292,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
    ![Add New Arrivals Rule](images/analytics-newArrivalsRuleAdd2.png)
 
 1. Select **[!UICONTROL Event Type > Enters Viewport]**. This will bring up a field where you need to enter the CSS selector that will identify the item on your page that should trigger the rule when it enters view in the browser.
-1. Go back to the home page of We.Retail and scroll down to the New Arrivals section.
+1. Go back to the home page of Luma and scroll down to the New Arrivals section.
 1. Right-click on the space between the "NEW ARRIVALS" title and the items in this section, and select `Inspect` from the right-click menu. This will get you close to what you want.
 1. Right around there, possibly right under the selected section, you are looking for a div with `class="we-productgrid aem-GridColumn aem-GridColumn--default--12"`. Locate this element.
 1. Right-click on this element and select **[!UICONTROL Copy > Copy Selector]**
@@ -343,7 +343,7 @@ For this use case, you want to know if people are scrolling down on our We.Retai
 
 Now you will want to make sure that this hit goes in when you scroll down to the New Arrivals section of the Home Page of our site. When you first load the homepage, the request shouldn't be made, but as you scroll down and the section comes into view, the hit should fire with our new values.
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser and make sure you are at the top of the home page.
 1. Click the **[!UICONTROL debugger icon]** ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open your [!UICONTROL Adobe Experience Cloud Debugger]
 1. Click to the Analytics tab
 1. Expand your Report Suite's hit
@@ -464,12 +464,12 @@ Now you can make sure that the plug-ins are working.
 
 **To validate the plugins**
 
-1. Open the [We.Retail site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Click to the Analytics tab
 1. Expand your Report Suite
 1. Notice the Analytics hit does not have a Campaign variable
-1. Leaving the Debugger open, go back to the We.Retail site and add  `?cid=1234` to the URL and hit Enter to refresh the page with that query string included
+1. Leaving the Debugger open, go back to the Luma site and add  `?cid=1234` to the URL and hit Enter to refresh the page with that query string included
 
    ![Add a Query String](images/analytics-cidAdded.png)
 
@@ -477,7 +477,7 @@ Now you can make sure that the plug-ins are working.
 
       ![getQueryParam step 1](images/analytics-getQueryParam1.png)
 
-1. Go back and refresh the We.Retail page again, with the query string still in the URL
+1. Go back and refresh the Luma page again, with the query string still in the URL
 1. Check the next hit in the Debugger, and the Campaign variable should **not** be present, because the getValOnce plug-in has made sure that it doesn't get duplicated and look like another person came in from the campaign tracking code.
 
    ![getQueryParam step 1](images/analytics-getQueryParam2.png)

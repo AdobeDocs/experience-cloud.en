@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Switch Launch Environments with the Experience Cloud Debugger
 
-In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) with your own property.
+In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the Launch property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
 
 This technique is called environment switching and will be helpful later, when you work with Launch on your own website. You will be able to load your production website in your browser, but with your *development* Launch environment. This enables you to confidently make and validate Launch changes independently from your regular code releases.  After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use Launch in the first place!
 
@@ -31,9 +31,9 @@ At the end of this lesson, you will be able to:
 
    ![Install icon](images/launch-copyInstallCode.png)
 
-## Replace the Launch URL on the We.Retail Demo Site
+## Replace the Launch URL on the Luma Demo Site
 
-1. Open the [We.Retail demo site](https://aem.enablementadobe.com/content/we-retail/us/en.html) in your Chrome browser
+1. Open the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 
 1. Open the [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) by clicking the ![Debugger Icon](images/icon-debugger.png) icon
 
@@ -49,7 +49,7 @@ At the end of this lesson, you will be able to:
 
    ![Click the Adobe Launch > Dynamically Insert Launch > Embed Code button](images/switchEnvironments-debugger-editEmbedCode.png)
 
-1. Before you paste your embed code, make sure the Chrome tab with the We.Retail site the one in focus behind the Debugger (not the tab with this tutorial or the tab with the Launch interface)
+1. Before you paste your embed code, make sure the Chrome tab with the Luma site the one in focus behind the Debugger (not the tab with this tutorial or the tab with the Launch interface)
 
 1. Paste the embed code that is in your clipboard into the input field
 
@@ -57,12 +57,12 @@ At the end of this lesson, you will be able to:
 
    ![Launch environment shown in Debugger](images/switchEnvironments-debugger-save.png)
 
-1. Reload the We.Retail site and check the Summary tab of the Debugger. Under the Launch section, you should now see your Development Property is being used. Confirm that both the Name of the property matches yours and that the Environment says "development."
+1. Reload the Luma site and check the Summary tab of the Debugger. Under the Launch section, you should now see your Development Property is being used. Confirm that both the Name of the property matches yours and that the Environment says "development."
 
    ![Launch environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
->[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the We.Retail site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the "X" next to the embed code in the Tools tab of the Debugger.
+>[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the Luma site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the "X" next to the embed code in the Tools tab of the Debugger.
 
-As you continue the tutorial, you will use this technique of mapping the We.Retail site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes you make to your Development and Staging Environments before you publish them to Production.
+As you continue the tutorial, you will use this technique of mapping the Luma site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes you make to your Development and Staging Environments before you publish them to Production.
 
 [Next "Add the Adobe Experience Platform Identity Service" >](id-service.md)
