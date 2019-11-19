@@ -13,7 +13,8 @@ description: Links to all the Experience Cloud user guides
 
 | User Guides | Implementation and Development |
 |--- |--- |
-|<ul><li>[Analytics Main Guide](https://docs.adobe.com/content/help/en/analytics/landing/home.html)</li><li>[Analytics Analyze Guide](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)</li><li>[Admin Guide](https://docs.adobe.com/content/help/en/analytics/admin/home.html)</li><li>[Components Guide](https://docs.adobe.com/content/help/en/analytics/components/home.html)</li><li>[Export Guide](https://docs.adobe.com/content/help/en/analytics/export/home.html)</li><li>[Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)</li><li>[Import Guide](https://docs.adobe.com/content/help/en/analytics/import/home.html)</li><li>[Integration Guide](https://docs.adobe.com/content/help/en/analytics/integration/home.html)</li></ul>|<ul><li>[Analytics Learn Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics APIs](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)</li></ul>|
+|<ul><li>[Analytics Main Guide](https://docs.adobe.com/content/help/en/analytics/landing/home.html)</li><li>[Analytics Analyze Guide](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)</li><li>[Admin Guide](https://docs.adobe.com/content/help/en/analytics/admin/home.html)</li><li>[Components Guide](https://docs.adobe.com/content/help/en/analytics/components/home.html)</li><li>[Export Guide](https://docs.adobe.com/content/help/en/analytics/export/home.html)</li><li>[Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)</li><li>[Import Guide](https://docs.adobe.com/content/help/en/analytics/import/home.html)</li><li>[Integration Guide](https://docs.adobe.com/content/help/en/analytics/integration/home.html)</li><li>[Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
+</li></ul>|<ul><li>[Analytics Learn Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics APIs](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)</li></ul>|
 
 ## ![Icon](/help/assets/target.png) Target Help
 
@@ -44,28 +45,34 @@ description: Links to all the Experience Cloud user guides
 
 ## ![Icon](/help/assets/aem.png) Adobe Experience Manager Help
 
-* [AEM Version Guides](#aem-version-guides)
-* [AEM Non-Version Guides](#aem-non-version-guides)
-* [AEM Learn Tutorials](#aem-learn-tutorials)
+### AEM User Guides
 
-### ![Icon](/help/assets/aem.png) AEM Version Guides {#aem-version-guides}
+**AEM 6.5**
+
+[AEM 6.5 Learn & Support](https://helpx.adobe.com/support/experience-manager/6-5.html)
 
 **AEM 6.4**
 
-* [Sites Authoring](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/home.html)
-* [Sites Developing](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-* [Sites Administering](https://docs.adobe.com/content/help/en/experience-manager-64/administering/home.html)
-* [Sites Deploying](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/home.html)
-* [Assets](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
-* [Communities](https://docs.adobe.com/content/help/en/experience-manager-64/communities/home.html)
-* [Mobile](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/home.html)
-* [Screens](https://docs.adobe.com/content/help/en/experience-manager-64/screens/home.html)
-* [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/home.html)
-* [Forms](https://docs.adobe.com/content/help/en/experience-manager-64/forms/home.html)
-* [Managing](https://docs.adobe.com/content/help/en/experience-manager-64/managing/home.html)
-* [Classic UI Authoring](https://docs.adobe.com/content/help/en/experience-manager-64/classic-ui/home.html)
+* [Sites Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/home.html)
+* [6.4 Sites Developing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
+* [Sites Administering (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/administering/home.html)
+* [Sites Deploying (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/home.html)
+* [Assets (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
+* [Communities (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/communities/home.html)
+* [Mobile (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/home.html)
+* [Screens (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/screens/home.html)
+* [Release Notes (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/home.html)
+* [Forms (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/forms/home.html)
+* [Managing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/managing/home.html)
+* [Classic UI Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/classic-ui/home.html)
 
-### ![Icon](/help/assets/aem.png) AEM Non-Version Guides {#aem-non-version-guides}
+<!--
+| AEM 6.5 | AEM 6.4 |
+|--- |--- |
+|<ul><li>[Managing AEM Projects (AEM 6.5)](https://helpx.adobe.com/experience-manager/6-5/managing/user-guide.html)</li><li>[Analytics Analyze Guide](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)</li><li>[Admin Guide](https://docs.adobe.com/content/help/en/analytics/admin/home.html)</li><li>[Components Guide](https://docs.adobe.com/content/help/en/analytics/components/home.html)</li><li>[Export Guide](https://docs.adobe.com/content/help/en/analytics/export/home.html)</li><li>[Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)</li><li>[Import Guide](https://docs.adobe.com/content/help/en/analytics/import/home.html)</li><li>[Integration Guide](https://docs.adobe.com/content/help/en/analytics/integration/home.html)</li></ul>|<ul><li>[Analytics Learn Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics APIs](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)</li></ul>|
+-->
+
+### Additional AEM Guides
 
 * [AEM HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
@@ -77,7 +84,7 @@ description: Links to all the Experience Cloud user guides
 * [Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 * [Dynamic Media Developer Guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/landing/home.html)
 
-### ![Icon](/help/assets/aem.png) AEM Learn Tutorials {#aem-learn-tutorials}
+### AEM Learn Tutorials
 
 * [AEM Assets Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html)
 * [AEM Forms Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/overview.html)
