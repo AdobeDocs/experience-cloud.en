@@ -7,20 +7,20 @@ description: Links to all the Experience Cloud tutorials and learning guides
 
 ## Analytics
 
-[Analytics Learn](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)
+[Analytics Learn Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)
 
 ## Target
 
-[Target Learn](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
+[Target Learn Tutorials](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
 
 ## Audience Manager
 
-[Audience Manager Learn](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)
+[Audience Manager Learn Tutorials](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)
 
 ## Core Services and Platform Services
 
-* [Core Services Learn](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)
-* [Platform Learn](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)
+* [Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)
+* [Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)
 * [Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)
 * [Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
 * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
@@ -28,16 +28,16 @@ description: Links to all the Experience Cloud tutorials and learning guides
 
 ## Campaign
 
-* [Campaign Classic Learn](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
-* [Campaign Standard Learn](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/overview.html)
+* [Campaign Classic Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
+* [Campaign Standard Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/overview.html)
 
 ## Adobe Experience Manager
 
-* [AEM Assets Learn](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html)
-* [AEM Forms Learn](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/overview.html)
-* [AEM Sites Learn](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [AEM Assets Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html)
+* [AEM Forms Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/overview.html)
+* [AEM Sites Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
 * [AEM Sites WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [AEM Foundation Learn](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html)
+* [AEM Foundation Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html)
 * [AEM Dispatcher Cache Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/dispatcher-tutorial/overview.html)
 * [AEM Headless Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
