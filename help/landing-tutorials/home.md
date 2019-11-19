@@ -7,15 +7,15 @@ description: Links to all the Experience Cloud tutorials and learning guides
 
 ## Analytics
 
-* [Analytics Learn](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)
+[Analytics Learn](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)
 
 ## Target
 
-* [Target Learn](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
+[Target Learn](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
 
 ## Audience Manager
 
-* [Audience Manager Learn](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)
+[Audience Manager Learn](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)
 
 ## Core Services and Platform Services
 
@@ -43,10 +43,13 @@ description: Links to all the Experience Cloud tutorials and learning guides
 
 ## Additional Resources
 
-* [Experience Cloud Learn & Support](https://helpx.adobe.com/support/experience-cloud.html)
-* [Experience League](https://experienceleague.adobe.com/)
-* [Community Forums](https://forums.adobe.com/community/experience-cloud/)
-* [Adobe Training and Tutorials](https://helpx.adobe.com/learning.html?promoid=KAUDK)
+> [!MORELIKETHIS]
+>
+>* [Experience Cloud Documentation](https://docs.adobe.com/content/help/en/experience-cloud/user-guides/home.html)
+>* [Experience Cloud Learn & Support](https://helpx.adobe.com/support/experience-cloud.html)
+>* [Experience League](https://experienceleague.adobe.com/)
+>* [Community Forums](https://forums.adobe.com/community/experience-cloud/)
+>* [Adobe Training and Tutorials](https://helpx.adobe.com/learning.html?promoid=KAUDK)
 
 <!--
 <table>
