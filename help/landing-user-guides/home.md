@@ -35,7 +35,7 @@ description: Links to all the Experience Cloud user guides
 
 * [Audience Manager User Guide](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)
 
-## ![Icon](/help/assets/experience-cloud.png) Core Services
+## ![Icon](/help/assets/experience-cloud.png) Core Services User Guides
 
 * [Core Services Guide](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)
 * [ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)
@@ -123,3 +123,40 @@ description: Links to all the Experience Cloud user guides
 * [Experience League](https://experienceleague.adobe.com/)
 * [Community Forums](https://forums.adobe.com/community/experience-cloud/)
 * [Adobe Training and Tutorials](https://helpx.adobe.com/learning.html?promoid=KAUDK)
+
+<!--
+<table>
+<tr>
+  <td>
+    <a href="https://helpx.adobe.com/support/experience-cloud.html">
+    <img alt="Learn & Support" src="/assets/roles.png"/>
+    </a>
+    <div>
+    <a href="https://helpx.adobe.com/support/experience-cloud.html"><strong>Learn & Support</strong></a>
+    </div>
+    <em>Discover resources for learning Experience Cloud solutions.</em>
+    <br>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/">
+      <img alt="experience league" src="/assets/design.png">
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/"><strong>Experience League</strong></a>
+    </div>
+    <em>Learn about key learning resources and upcoming events.</em>
+    <br>
+  </td>
+  <td>
+    <a href="https://forums.adobe.com/community/experience-cloud/">
+      <img alt="form" src="/assets/dev.png">
+    </a>
+    <div>
+    <a href="https://forums.adobe.com/community/experience-cloud/"><strong>Community Forums</strong></a>
+    </div>
+    <em>Interact with the Experience Cloud community.</em>
+    <br>
+  </td>
+</tr>
+</table>
+-->
