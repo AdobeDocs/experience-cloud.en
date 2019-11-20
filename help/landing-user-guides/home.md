@@ -17,8 +17,9 @@ description: Links to all the Experience Cloud user guides
 
 ## ![Icon](/help/assets/target.png) Target Help
 
-* [Target Guide](https://docs.adobe.com/content/help/en/target/using/target-home.html)
-* [Target Learn Tutorials](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
+| User Guide | Tutorials |
+|--- |--- |
+|<ul><li>[Target Guide](https://docs.adobe.com/content/help/en/target/using/target-home.html)</li></ul>|<ul><li>[Target Learn Tutorials](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)</li></ul>|
 
 ## ![Icon](/help/assets/campaign.png) Campaign Help
 
@@ -28,48 +29,29 @@ description: Links to all the Experience Cloud user guides
 
 ## ![Icon](/help/assets/audience-manager.png) Audience Manager Help
 
-* [Audience Manager User Guide](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)
-* [Audience Manager Learn Tutorials](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)
+| User Guide | Tutorials |
+|--- |--- |
+|<ul><li>[Audience Manager User Guide](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)</li></ul>|<ul><li>[Audience Manager Learn Tutorials](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)</li></ul>|
 
 ## ![Icon](/help/assets/experience-cloud.png) Core Services Help
 
 | User Guides | Implemenation Tutorials |
 |--- |--- |
-|<ul><li>[Core Services Guide](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services User Guide](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Launch Guide](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
+|<ul><li>[Core Services Guide](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services User Guide](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Location Services (Places) Guide](https://docs.adobe.com/content/help/en/places/using/home.html)</li><li>[Launch Guide](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
 
 ## ![Icon](/help/assets/experience-cloud.png) Platform Services Help
 
-* [Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)
-* [Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)
+| User Guides | Tutorials |
+|--- |--- |
+|<ul><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li></ul>|<ul><li>[Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li></ul>|
 
 ## ![Icon](/help/assets/aem.png) Adobe Experience Manager Help
 
 ### AEM User Guides
 
-**AEM 6.5**
-
-[AEM 6.5 Learn & Support](https://helpx.adobe.com/support/experience-manager/6-5.html)
-
-**AEM 6.4**
-
-* [Sites Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/home.html)
-* [6.4 Sites Developing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-* [Sites Administering (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/administering/home.html)
-* [Sites Deploying (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/home.html)
-* [Assets (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)
-* [Communities (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/communities/home.html)
-* [Mobile (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/home.html)
-* [Screens (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/screens/home.html)
-* [Release Notes (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/home.html)
-* [Forms (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/forms/home.html)
-* [Managing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/managing/home.html)
-* [Classic UI Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/classic-ui/home.html)
-
-<!--
 | AEM 6.5 | AEM 6.4 |
 |--- |--- |
-|<ul><li>[Managing AEM Projects (AEM 6.5)](https://helpx.adobe.com/experience-manager/6-5/managing/user-guide.html)</li><li>[Analytics Analyze Guide](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)</li><li>[Admin Guide](https://docs.adobe.com/content/help/en/analytics/admin/home.html)</li><li>[Components Guide](https://docs.adobe.com/content/help/en/analytics/components/home.html)</li><li>[Export Guide](https://docs.adobe.com/content/help/en/analytics/export/home.html)</li><li>[Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)</li><li>[Import Guide](https://docs.adobe.com/content/help/en/analytics/import/home.html)</li><li>[Integration Guide](https://docs.adobe.com/content/help/en/analytics/integration/home.html)</li></ul>|<ul><li>[Analytics Learn Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics APIs](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)</li></ul>|
--->
+|<ul><li>[AEM 6.5 Learn & Support](https://helpx.adobe.com/support/experience-manager/6-5.html)</li></ul>|<ul><li>[Sites Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/home.html)</li><li>[Sites Developing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)</li><li>[Sites Administering (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/administering/home.html)</li><li>[Sites Deploying (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/home.html)</li><li>[Assets (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)</li><li>[Communities (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/communities/home.html)</li><li>[Mobile (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/home.html)</li><li>[Screens (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/screens/home.html)</li><li>[Release Notes (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/home.html)</li><li>[Forms (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/forms/home.html)</li><li>[Managing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/managing/home.html)</li><li>[Classic UI Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/classic-ui/home.html)</li></ul>|
 
 ### Additional AEM Guides
 
@@ -108,7 +90,6 @@ description: Links to all the Experience Cloud user guides
 
 ## ![Icon](/help/assets/experience-cloud.png) Additional Experience Cloud Guides
 
-* [Location Services (Places) Guide](https://docs.adobe.com/content/help/en/places/using/home.html)
 * [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)
 * [Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)
 * [Livefyre User Guide](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
