@@ -1,9 +1,11 @@
 ---
 title: Adobe Experience Cloud Documentation
-description: Links to all the Experience Cloud user guides
+description: This page includes a comprehensive list of all Adobe Experience Cloud documentation and enablement user guides and tutorials.
 ---
 
 # Adobe Experience Cloud Documentation
+
+This page includes a comprehensive list of all Adobe Experience Cloud documentation and enablement user guides and tutorials.
 
 ## ![Icon](/help/assets/experience-cloud.png) Release Notes
 
