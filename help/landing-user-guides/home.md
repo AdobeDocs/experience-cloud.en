@@ -37,7 +37,7 @@ description: Links to all the Experience Cloud user guides
 
 ## ![Icon](/help/assets/experience-cloud.png) Core Services Help
 
-| User Guides | Implemenation Tutorials |
+| User Guides | Implementation Tutorials |
 |--- |--- |
 |<ul><li>[Core Services Guide](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services User Guide](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Location Services (Places) Guide](https://docs.adobe.com/content/help/en/places/using/home.html)</li><li>[Launch Guide](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
 
@@ -94,10 +94,10 @@ description: Links to all the Experience Cloud user guides
 
 * [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)
 * [Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)
+* [Search&Promote](https://docs.adobe.com/content/help/en/search-promote/using/sp-home.html)
 * [Livefyre User Guide](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 * [Livefyre Implementation Guide](https://docs.adobe.com/content/help/en/livefyre/implementation/home.html)
 * [Social](https://docs.adobe.com/content/help/en/social/using/home.html)
-* [Search&Promote](https://docs.adobe.com/content/help/en/search-promote/using/sp-home.html)
 
 > [!MORELIKETHIS]
 >
