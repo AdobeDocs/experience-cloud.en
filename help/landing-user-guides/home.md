@@ -13,43 +13,31 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 |--- |--- |
 |<ul><li>[Release Notes Guide](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)</li></ul>||
 
-## ![Icon](/help/assets/analytics.png) Analytics Help
+## ![Icon](/help/assets/analytics.png) Adobe Analytics
 
 | User Guides | Implementation and Development |
 |--- |--- |
 |<ul><li>[Analytics Main Guide](https://docs.adobe.com/content/help/en/analytics/landing/home.html)</li><li>[Analytics Analyze Guide](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)</li><li>[Admin Guide](https://docs.adobe.com/content/help/en/analytics/admin/home.html)</li><li>[Components Guide](https://docs.adobe.com/content/help/en/analytics/components/home.html)</li><li>[Export Guide](https://docs.adobe.com/content/help/en/analytics/export/home.html)</li><li>[Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)</li><li>[Import Guide](https://docs.adobe.com/content/help/en/analytics/import/home.html)</li><li>[Integration Guide](https://docs.adobe.com/content/help/en/analytics/integration/home.html)</li><li>[Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)</li></ul>|<ul><li>[Analytics Learn Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics APIs](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)</li></ul>|
 
-## ![Icon](/help/assets/target.png) Target Help
+## ![Icon](/help/assets/target.png) Adobe Target
 
 | User Guide | Tutorials |
 |--- |--- |
 |<ul><li>[Target Guide](https://docs.adobe.com/content/help/en/target/using/target-home.html)</li></ul>|<ul><li>[Target Learn Tutorials](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)</li></ul>|
 
-## ![Icon](/help/assets/campaign.png) Campaign Help
+## ![Icon](/help/assets/campaign.png) Adobe Campaign
 
 | User Guides | Tutorials |
 |--- |--- |
 |<ul><li>[Campaign Standard](https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html)</li><li>[Campaign Classic](https://docs.adobe.com/content/help/en/campaign-classic/using/campaign-classic-home.html)</li></ul>|<ul><li>[Campaign Classic Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)</li><li>[Campaign Standard Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/overview.html)</li></ul>|
 
-## ![Icon](/help/assets/audience-manager.png) Audience Manager Help
+## ![Icon](/help/assets/audience-manager.png) Adobe Audience Manager
 
 | User Guide | Tutorials |
 |--- |--- |
 |<ul><li>[Audience Manager User Guide](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)</li></ul>|<ul><li>[Audience Manager Learn Tutorials](https://docs.adobe.com/content/help/en/audience-manager-learn/tutorials/overview.html)</li></ul>|
 
-## ![Icon](/help/assets/experience-cloud.png) Core Services Help
-
-| User Guides | Implementation Tutorials |
-|--- |--- |
-|<ul><li>[Core Services Guide](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services User Guide](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Location Services (Places) Guide](https://docs.adobe.com/content/help/en/places/using/home.html)</li><li>[Launch Guide](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
-
-## ![Icon](/help/assets/experience-cloud.png) Platform Services Help
-
-| User Guides | Tutorials |
-|--- |--- |
-|<ul><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li></ul>|<ul><li>[Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li></ul>|
-
-## ![Icon](/help/assets/aem.png) Adobe Experience Manager Help
+## ![Icon](/help/assets/aem.png) Adobe Experience Manager
 
 ### AEM User Guides
 
@@ -83,7 +71,7 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 ## ![Icon](/help/assets/advertising-cloud.png) Advertising Cloud Guide
 -->
 
-## ![Icon](/help/assets/primetime.png) Primetime Help
+## ![Icon](/help/assets/primetime.png) Adobe Primetime
 
 * [Primetime Programming Guide](https://docs.adobe.com/content/help/en/primetime/programming/home.html)
 * [Primetime Digital Rights Management](https://docs.adobe.com/content/help/en/primetime/drm/home.html)
@@ -92,10 +80,26 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 * [Primetime Migration Guide](https://docs.adobe.com/content/help/en/primetime/migration/home.html)
 * [Primetime Release Notes](https://docs.adobe.com/content/help/en/primetime/release-notes/home.html)
 
+## ![Icon](/help/assets/marketo.png) Adobe Marketo
+
+* [Marketo Product (Classic)](https://docs.marketo.com/)
+* [Marketo Sky](https://help.marketo.com/hc/en-us)
+* [Bizible Docs](https://docs.marketo.com/display/BIZ/Bizible)
+
+## ![Icon](/help/assets/magento.png) Adobe Magento
+
+* [Magento Documentation](https://magento.com/technical-resources)
+* [Magentio Business Intelligence (MBI) User Guide](https://docs.magento.com/mbi/)
+
+## ![Icon](/help/assets/experience-cloud.png) Implementation, Management, and Administration
+
+| User Guides | Tutorials |
+|--- |--- |
+|<ul><li>[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)</li><li>[Core Services Interface](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Location Services (Places)](https://docs.adobe.com/content/help/en/places/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li><li>[Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Experience Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
+
 ## ![Icon](/help/assets/experience-cloud.png) Additional Experience Cloud Guides
 
-* [Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)
-* [Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)
+* [Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)
 * [Search&Promote](https://docs.adobe.com/content/help/en/search-promote/using/sp-home.html)
 * [Livefyre User Guide](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 * [Livefyre Implementation Guide](https://docs.adobe.com/content/help/en/livefyre/implementation/home.html)
