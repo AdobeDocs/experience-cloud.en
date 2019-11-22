@@ -9,6 +9,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 git-repo: https://github.com/AdobeDocs/experience-cloud.en
 index: yes
 mini-toc-levels: 2
+product: experience cloud
 ---
 
 # Metadata for internal use
