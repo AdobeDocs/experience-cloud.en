@@ -76,16 +76,15 @@ The Identity Service extension is one of the few Launch extensions that makes a 
     1. Open your browser's Developer Tools
     1. Go to the `Application` tab
     1. Expand `Cookies` on the left side
-    1. Click on the domain `https://aem.enablementadobe.com`
+    1. Click on the domain `https://luma.enablementadobe.com`
     1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded Launch property as well as mapped to your own.
+    ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
 
-   ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
-
-That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-function-vars.html).
+That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/function-vars.html).
 
 ## Send Customer IDs
 
-Next, you will send a [Customer ID](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-authenticated-state.html) to the Identity Service. This will allow you to [integrate your CRM](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) with the Experience Cloud as well as track visitors across devices.
+Next, you will send a [Customer ID](https://docs.adobe.com/content/help/en/id-service/using/reference/authenticated-state.html) to the Identity Service. This will allow you to [integrate your CRM](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
 In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
 

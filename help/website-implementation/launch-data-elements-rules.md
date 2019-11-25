@@ -96,7 +96,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 1. Add the following to the code editor. This code will output the value of the Page Name data element to the browser console so you can confirm it's working:
 
     ```javascript
-      console.log('The page name is '+_satellite.getVar('Page Name'));
+    console.log('The page name is '+_satellite.getVar('Page Name'));
     ```
 
 1. Save the code editor
@@ -181,7 +181,7 @@ Once you've selected the library, you should see that the **[!UICONTROL Save]** 
 Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 
 ```javascript
-  console.log('The page name is: '+_satellite.getVar('Page Name'));
+console.log('The page name is: '+_satellite.getVar('Page Name'));
 ```
 
 Save the code, keep the changes in the action, and now click the **[!UICONTROL Save to Library and Build]** button.
@@ -189,6 +189,7 @@ Save the code, keep the changes in the action, and now click the **[!UICONTROL S
 ![The Save and Build option now exists](images/launch-workingLibrary-saveAndBuild.png)
 
 Wait a moment until the green dot reappears next to the [!UICONTROL Working Library] dropdown. Now, reload your sample page and you should see your change reflected in the console message (you may have to clear your browser cache and reload, in order to see the change to the page):
+
 ![Console Message with Colon](images/samplepage-consoleWithColon.png)
 
 This is a much faster way of working and you will use this approach for the rest of the tutorial.
