@@ -23,7 +23,7 @@ At the end of this lesson, you will be able to:
 * Validate that your library is loading in your web browser
 * Use the "Working Library" feature to work more efficiently
 
-## Data Element for Page Name
+## Create a Data Element for Page Name
 
 Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, you will create a data element for Page Name, which you will use later in your Target and Analytics implementations.
 
@@ -116,7 +116,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 > * There is a new "Custom Code" event-type
 > * Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://marketing.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-notification.html), so custom code wouldn't be needed to use this feature.
 > * Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
-> * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things    like setting Customer IDs, firing Analytics beacons, and firing the global mbox.
+> * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing Target requests.
 
 ## Save Your Changes to a Library
 

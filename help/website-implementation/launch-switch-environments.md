@@ -45,15 +45,13 @@ At the end of this lesson, you will be able to:
 
 1. Go to the Tools tab
 
-1. Click **[!UICONTROL Adobe Launch > Dynamically Insert Launch > Embed Code]** button to open the text input field:
+1. Scroll to the section **[!UICONTROL Replace Launch Embed Code]**
 
-   ![Click the Adobe Launch > Dynamically Insert Launch > Embed Code button](images/switchEnvironments-debugger-editEmbedCode.png)
+1. Make sure the Chrome tab with the Luma site is in focus behind the Debugger (not the tab with this tutorial or the tab with the Launch interface).  Paste the embed code that is in your clipboard into the input field
 
-1. Before you paste your embed code, make sure the Chrome tab with the Luma site the one in focus behind the Debugger (not the tab with this tutorial or the tab with the Launch interface)
+1. Toggle on the "Apply across luma.enablementadobe.com" feature so that all pages on the Luma site will map to your Launch property
 
-1. Paste the embed code that is in your clipboard into the input field
-
-1. Click the disk icon to save
+1. Click the **[!UICONTROL Save]** button
 
    ![Launch environment shown in Debugger](images/switchEnvironments-debugger-save.png)
 
@@ -61,8 +59,8 @@ At the end of this lesson, you will be able to:
 
    ![Launch environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
->[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the Luma site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the "X" next to the embed code in the Tools tab of the Debugger.
+>[!NOTE] The Debugger will save this configuration and replace the Launch embed codes whenever you come back to the Luma site. It will not impact other sites you visit in other open tabs. To stop the Debugger from replacing the embed code, click the **[!UICONTROL Remove]** button next to the embed code in the Tools tab of the Debugger.
 
-As you continue the tutorial, you will use this technique of mapping the Luma site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes you make to your Development and Staging Environments before you publish them to Production.
+As you continue the tutorial, you will use this technique of mapping the Luma site to your own Launch property to validate your Launch implementation. When you start using Launch on your production website, you can use this same technique to validate changes.
 
 [Next "Add the Adobe Experience Platform Identity Service" >](id-service.md)

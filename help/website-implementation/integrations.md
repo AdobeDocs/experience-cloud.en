@@ -72,7 +72,7 @@ The [Analytics for Target (A4T)](https://marketing.adobe.com/resources/help/en_U
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
 1. Implement the Adobe Experience Platform Identity Service
-1. Fire the global mbox before the Analytics page view beacon
+1. Fire the Target page load request before the Analytics page view beacon
 
 A4T works by stitching together a server-side request from Target to Analytics with the Analytics page view beacon, which we call "hit-stitching."  Hit-stitching requires that the Target request which delivers the activity (or increments a Target-based goal metric) have a parameter which matches a parameter in the Analytics page view beacon. This parameter is called the supplemental data id (SDIDs).
 

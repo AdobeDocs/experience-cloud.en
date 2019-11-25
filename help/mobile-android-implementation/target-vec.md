@@ -50,7 +50,7 @@ As you just saw in the last exercise, app Lifecycle metrics are automatically in
 
 1. In Android Studio, open `DemoApplication` file.
 1. Import the Target VEC extension by adding `import ACPTargetVEC` beneath the existing import
-1. Add the following sample code in the `onCreate()` function, before the extensions are registered. This example code shows how mbox parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would likely want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are relevant to all views:
+1. Add the following sample code in the `onCreate()` function, before the extensions are registered. This example code shows how regular parameters, profile parameters, product (or entity) parameters, and order parameters can be added to the TargetVEC request. This example uses static values, while in your actual app you would likely want to use dynamic variables to populate the values. And of course, you would only want to populate the parameters that are relevant to all views:
 
    ```java
    Map<String, String>targetParams = new HashMap<>(); //params
