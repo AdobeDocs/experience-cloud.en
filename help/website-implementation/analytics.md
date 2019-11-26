@@ -49,7 +49,7 @@ The Analytics extension consists of two main parts:
 
    ![Install the Analytics extension](images/analytics-catalog-install.png)
 
-1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
+1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment. Note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](images/analytics-config-reportSuite.png)
 
