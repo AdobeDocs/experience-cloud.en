@@ -71,6 +71,18 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 ## ![Icon](/help/assets/advertising-cloud.png) Advertising Cloud Guide
 -->
 
+## ![Icon](/help/assets/experience-cloud.png) Adobe Experience Platform
+
+| User Guides | Tutorials |
+|--- |--- |
+|<ul><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li><li>[Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)</li><li>[Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)</li></ul>|<ul><li>[Experience Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li></ul>|
+
+## ![Icon](/help/assets/experience-cloud.png) Administration, Implementation, and Core Services
+
+| User Guides | Tutorials |
+|--- |--- |
+|<ul><li>[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)</li><li>[Core Services Interface](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services v4 SDKs](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
+
 ## ![Icon](/help/assets/experience-cloud.png) Adobe Location Services
 
 * [Location Services Help](https://docs.adobe.com/content/help/en/places/using/home.html)
@@ -95,15 +107,8 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 * [Magento Documentation](https://magento.com/technical-resources)
 * [Magentio Business Intelligence (MBI) User Guide](https://docs.magento.com/mbi/)
 
-## ![Icon](/help/assets/experience-cloud.png) Implementation, Management, and Administration
-
-| User Guides | Tutorials |
-|--- |--- |
-|<ul><li>[Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html)</li><li>[Core Services Interface](https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html)</li><li>[ECID Service Guide](https://docs.adobe.com/content/help/en/id-service/using/home.html)</li><li>[Mobile Services v4 SDKs](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)</li><li>[Device Co-op Guide](https://docs.adobe.com/content/help/en/device-co-op/using/home.html)</li><li>[Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li><li>[DTM Guide](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)</li><li>[Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)</li></ul>|<ul><li>[Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)</li><li>[Experience Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)</li><li>[Implementing the Experience Cloud in Mobile Android Apps](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html)</li></ul>|
-
 ## ![Icon](/help/assets/experience-cloud.png) Additional Experience Cloud Guides
 
-* [Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)
 * [Search&Promote](https://docs.adobe.com/content/help/en/search-promote/using/sp-home.html)
 * [Livefyre User Guide](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
 * [Livefyre Implementation Guide](https://docs.adobe.com/content/help/en/livefyre/implementation/home.html)
