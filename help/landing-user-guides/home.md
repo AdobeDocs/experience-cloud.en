@@ -73,9 +73,9 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 
 ## ![Icon](/help/assets/experience-cloud.png) Adobe Experience Platform
 
-| User Guides | Tutorials |
+| User Guides | Tutorials and Development|
 |--- |--- |
-|<ul><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li><li>[Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)</li><li>[Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)</li></ul>|<ul><li>[Experience Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li></ul>|
+|<ul><li>[Real-time Customer Data Platform Guide](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html)</li><li>[Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)</li><li>[Auditor](https://docs.adobe.com/content/help/en/auditor/using/overview.html)</li><li>[Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)</li></ul>|<ul><li>[Experience Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)</li><li>[Launch Implementation Guide](https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html)</li><li>[Experience Platform Developer APIs](https://www.adobe.io/apis/experienceplatform/home/)</li></ul>|
 
 ## ![Icon](/help/assets/experience-cloud.png) Administration, Implementation, and Core Services
 
