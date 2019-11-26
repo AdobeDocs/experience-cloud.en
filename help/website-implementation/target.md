@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add Adobe Target
 
-In this lesson, we will implement the [Adobe Target extension](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension) with a global request and custom parameters.
+In this lesson, we will implement the [Adobe Target extension](https://docs.adobelaunch.com/extension-reference/web/adobe-target-extension) with a page load request and custom parameters.
 
 [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) is the Adobe Marketing Cloud solution that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, social media, and other digital channels.
 
@@ -18,7 +18,7 @@ At the end of this lesson, you will be able to:
 
 * Add the pre-hiding snippet used to manage flicker when using Target with asynchronous Launch embed codes
 * Add the Target v2 extension
-* Fire the page load request (formerly the global mbox)
+* Fire the page load request (formerly called the "global mbox")
 * Add parameters to the page load request
 * Explain how profile and entity parameters can be added to the page load request
 * Fire the order confirmation request with required parameters
@@ -56,21 +56,21 @@ For more details and to obtain the un-minified pre-hiding snippet, please see [t
 
 The Adobe Target extension supports client-side implementations using Target's JavaScript SDK for the modern web, at.js. Customers still using Target's older library, mbox.js, [should upgrade to at.js 2.x](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) in order to use Launch.
 
-The Target extension consists of two main parts:
+The Target v2 extension consists of two main parts:
 
 1. The extension configuration, which manages the core library settings
 1. Rule actions to do the following:
-    1. Load Target (at.js)
-    1. Add Params to All Mboxes
-    1. Add Params to Global Mbox
-    1. Fire Global Mbox
+    1. Load Target (at.js 2.x)
+    1. Add Params to Page Load Requests
+    1. Add Params to All Requests
+    1. Fire Page Load Request
 
 In this first exercise we will add the extension and look at the configurations. In later exercises we will use the actions.
 
 **To add the Extension**
 
 1. Go to **[!UICONTROL Extensions > Catalog]**
-1. Type `target` in the filter to quickly locate the Adobe Target extensions. There are two extensions&mdash;Adobe Target and Adobe Target v2. This tutorial will use the v2 version of the extension which uses the latest version of at.js (currently 2.x) which is ideal for both traditional websites and single-page applications (SPA).
+1. Type `target` in the filter to quickly locate the Adobe Target extensions. There are two extensions&mdash;Adobe Target and Adobe Target v2. This tutorial will use the v2 version of the extension which uses the latest version of at.js (currently 2.x) which is ideal for both traditional websites and single-page applications (SPA). 
 1. Click **[!UICONTROL Install]**
 
    ![Install the Target v2 extension](images/target-installExtension.png)
@@ -85,11 +85,11 @@ At this point, Target isn't really doing anything, so there is nothing to valida
 
 >[!NOTE] Each version of the Target extension comes with a specific version of at.js, which is listed in the extension description. You update the at.js version by updating the Target extension.
 
-## Load Target and Fire the Global Mbox
+## Load Target and Fire the Page Load Request
 
-Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role in the display of the page, you should load Target as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript library&mdash;at.js&mdash;as well as fire the global mbox.
+Marketers use Target to control the visitor experience on the page when testing and targeting content. Because of this important role in the display of the page, you should load Target as early as possible to minimize the impact on page visibility. In this section, we will load the Target JavaScript library&mdash;at.js&mdash;as well as fire the page load request (referred to as the "global mbox" in earlier versions of at.js).
 
-You can use the `All Pages - Library Loaded` rule you created in the lesson "[Add Data Elements, Rules and Libraries](launch-data-elements-rules.md)" to implement Target because it is already triggered on the first event that will fire on a page load&mdash;the Library Loaded event.
+You can use the `All Pages - Library Loaded` rule you created in the lesson "[Add Data Elements, Rules and Libraries](launch-data-elements-rules.md)" to implement Target because it is already triggered as early as possible on page loads.
 
 **To Load Target**
 
@@ -111,7 +111,7 @@ You can use the `All Pages - Library Loaded` rule you created in the lesson "[Ad
 
 With the `Load Target` action added, at.js will load on the page. However, no Target requests will fire until we add the `Fire Page Load Request` action.
 
-**To add the `Fire Page Load Request` action**
+**To Fire Page Load Request**
 
 1. Under Actions, click the ![Click the Plus icon](images/icon-plus.png) again to add another action
 
@@ -127,7 +127,7 @@ With the `Load Target` action added, at.js will load on the page. However, no Ta
 
    ![Fire Global Mbox action](images/target-fireGlobalMbox.png)
 
-1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` needs fire before the `Fire Global Mbox`.
+1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` needs to be before  `Fire Page Load Request`.
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
@@ -161,7 +161,7 @@ Now that you have added the Target v2 extension and fired the `Load Target` and 
 
 Congratulations! You've implemented Target!
 
-## Request (mbox) Parameters
+## Add Parameters
 
 Passing parameters in the Target request adds powerful capabilities to your targeting, testing, and personalization activities. The Launch extension provides two actions to pass parameters:
 
@@ -172,11 +172,11 @@ Passing parameters in the Target request adds powerful capabilities to your targ
 These actions can be used *before* the `Load Target` action and can set different parameters on different pages based on your rule configurations. Use the rule ordering feature you used when setting Customer IDs with the Identity Service to set additional parameters on the `Library Loaded` event before the rule firing the page load request.
 >[!TIP] Since most implementations use the page load request for activity delivery, it usually sufficient to just use the `Add Params to Page Load Requests` action.
 
-### Add Request (mbox) Parameters
+### Request (mbox) Parameters
 
 Parameters are used to pass custom data to Target, enriching your personalization capabilities. They are ideal for attributes that change frequently during a browsing session such as the page name, template, etc. and do not persist.
 
-Let's add the `Page Name` data element that we created earlier in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson as an mbox parameter.
+Let's add the `Page Name` data element that we created earlier in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson as a request parameter.
 
 **To add the request parameter**
 
@@ -200,7 +200,7 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
 1. Click the **[!UICONTROL Select]** button
 
-  ![Click the 'Select' button](images/target-mboxParam-pageName.png)
+    ![Click the 'Select' button](images/target-mboxParam-pageName.png)
 
 1. Click **[!UICONTROL Keep Changes]**
 
@@ -210,7 +210,7 @@ Let's add the `Page Name` data element that we created earlier in the [Add Data 
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-  ![Click Save to Library and Build](images/target-rearrangeActions.png)
+    ![Click Save to Library and Build](images/target-rearrangeActions.png)
 
 #### Validate Request Parameters
 
@@ -245,7 +245,7 @@ Entity parameters are special parameters used in [Recommendations implementation
 1. To collect visitor behavior to power recommendations algorithms, such as "Recently Viewed Products" or "Most Viewed Products"
 1. To populate the Recommendations catalog. Recommendations contains a database of all of the products or articles on your website, so they can be served in the recommendation offer. For example, when recommending products, you typically want to display attributes like the product name (`entity.name`) and image (`entity.thumbnailUrl`). Some customers populate their catalog using backend feeds, but they can also be populated using entity parameters in Target requests.
 
-You don't need to pass any profile parameters in this tutorial, but the workflow is identical to what you did earlier when passing the `pageName` request parameter&mdash;just give the parameter a name prefixed with "entity." and map it to the relevant data element. Note that some common entities have reserved names that must be used (e.g. entity.id for the product sku). This is what it would look like to set entity parameters in the `Pass Parameters to Global Mbox` action:
+You don't need to pass any profile parameters in this tutorial, but the workflow is identical to what you did earlier when passing the `pageName` request parameter&mdash;just give the parameter a name prefixed with "entity." and map it to the relevant data element. Note that some common entities have reserved names that must be used (e.g. entity.id for the product sku). This is what it would look like to set entity parameters in the `Add Params to Page Load Request` action:
 
 ![Adding Entity Parameters](images/target-entityParameters.png)
 
@@ -257,10 +257,10 @@ It's imperative to set the Customer ID in the Identity Service's `Set Customer I
 
 * The customer ID must be available on the page before the Launch Embed Code
 * The Adobe Experience Platform Identity Service extension must be installed
-* You must use the "Set Customer IDs" action in a rule that fires at the "Library Loaded (Page Top)" event
-* Use the "Fire page load request" action in a rule that fires *after* the "Set Customer IDs" action
+* You must use the `Set Customer IDs` action in a rule that fires at the "Library Loaded (Page Top)" event
+* Use the `Fire Page Load Request` action in a rule that fires *after* the "Set Customer IDs" action
 
-In the previous lesson, [Add the Adobe Experience Platform Identity Service](id-service.md), you created the `All Pages - Library Loaded - Authenticated - 10` rule to fire the "Set Customer ID" action. Because this rule has an  `Order` setting of `10`, the customer ids are set before our our global mbox fires from the `All Pages - Library Loaded` rule with its `Order` setting of `50`. So, you have already implemented the collection of customer ids for Target!
+In the previous lesson, [Add the Adobe Experience Platform Identity Service](id-service.md), you created the `All Pages - Library Loaded - Authenticated - 10` rule to fire the "Set Customer ID" action. Because this rule has an  `Order` setting of `10`, the customer ids are set before our our page load request fires from the `All Pages - Library Loaded` rule with its `Order` setting of `50`. So, you have already implemented the collection of customer ids for Target!
 
 #### Validate the Customer ID
 
@@ -361,7 +361,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 ## Add Custom Requests
 
-### Add an Order Confirmation request (mbox)
+### Add an Order Confirmation request
 
 The order confirmation request is a special type of request used to send order details to Target. The inclusion of three specific request parameters&mdash;orderId, orderTotal, and productPurchasedId&mdash;is what turns a regular Target request into an order request. In addition to reporting revenue, the order request also does the following:
 
@@ -386,7 +386,8 @@ Let's add the data elements and rule we need to fire an order confirmation reque
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.cart.orderId` as the `JavaScript variable name`
 1. Check the `Clean text` option
-1. Click **[!UICONTROL Save to Library]**
+1. Click **[!UICONTROL Save to Library]** 
+  (We won't Build the library until we've made all of the changes for the order confirmation request)
 
 **To create the data element for the Cart Amount**
 
@@ -395,7 +396,7 @@ Let's add the data elements and rule we need to fire an order confirmation reque
 1. Select **[!UICONTROL Data Element Type > JavaScript Variable]**
 1. Use `digitalData.cart.cartAmount` as the `JavaScript variable name`
 1. Check the `Clean text` option
-1. Click **[!UIONTROL Save to Libray]**
+1. Click **[!UICONTROL Save to Libray]**
 
 **To create the data element for Cart SKUs (Target)**
 
@@ -509,12 +510,8 @@ Confirmation request](#order-confirmation-request) exercise, but you will just u
 
 ## Library Header and Library Footer
 
-The Edit at.js screen in the Target user interface has locations in which you can paste custom JavaScript that will execute immediately before or after the at.js file.
-
-The Library Header is sometimes used to override at.js settings via the
-[targetGlobalSettings()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) function or pass data from third parties using the [Data Providers](https://docs.adobe.com/content/help/en/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) feature
-
-The Library Footer is sometimes used to add [at.js custom event](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html) listeners.
+The Edit at.js screen in the Target user interface has locations in which you can paste custom JavaScript that will execute immediately before or after the at.js file. The Library Header is sometimes used to override at.js settings via the
+[targetGlobalSettings()](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) function or pass data from third parties using the [Data Providers](https://docs.adobe.com/content/help/en/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) feature. The Library Footer is sometimes used to add [at.js custom event](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html) listeners.
 
 To replicate this capability in Launch, just use the Custom Code action in the Core extension and sequence the action before (Library Header) or after (Library Footer) the Load Target action. This can be done in the same rule as the `Load Target` action (as pictured below) or in separate rules with events or order settings that will reliably fire before or after the rule containing `Load Target`:
 
