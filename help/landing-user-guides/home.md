@@ -85,7 +85,11 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 
 ## ![Icon](/help/assets/experience-cloud.png) Adobe Location Service
 
-* [Location Services Help](https://docs.adobe.com/content/help/en/places/using/home.html)
+* [Location Service Help](https://docs.adobe.com/content/help/en/places/using/home.html)
+
+## ![Icon](/help/assets/experience-cloud.png) Adobe Journey Orchestration
+
+* [Journey Orchestration Help](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)
 
 ## ![Icon](/help/assets/primetime.png) Adobe Primetime
 
