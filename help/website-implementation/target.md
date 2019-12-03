@@ -1,7 +1,6 @@
 ---
 title: Implement Target with Launch
-description: Learn how to implement Adobe Target using Launch with at.js, a global mbox, parameters, an order mbox, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-seo-description:
+description: Learn how to implement Adobe Target using Launch with at.js, a page load request, parameters, an order request, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 seo-title: Implement Target with Launch
 solution: Experience Cloud
 ---
@@ -125,13 +124,13 @@ With the `Load Target` action added, at.js will load on the page. However, no Ta
 
 1. Click **[!UICONTROL Keep Changes]**
 
-   ![Fire Global Mbox action](images/target-fireGlobalMbox.png)
+   ![Fire Page Load Request action](images/target-fireGlobalMbox.png)
 
 1. The new action is added in sequence after the `Load Target` action and the actions will execute in this order. You can drag-and-drop the actions to rearrange the order, but in this scenario, `Load Target` needs to be before  `Fire Page Load Request`.
 
 1. Click **[!UICONTROL Save to Library and Build]**
 
-   ![Fire Global Mbox action](images/target-fireGlobalMbox-saveAndBuild.png)
+   ![Save and build](images/target-fireGlobalMbox-saveAndBuild.png)
 
 ### Validate the Page Load Request
 
@@ -233,7 +232,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 Similar to request parameters, profile parameters are also passed through the Target request. However, profile parameters get stored in Target's visitor profile database and will persist for the [duration of the visitor's profile](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html). You can set them on one page of your site and use them in Target activities on another page. Here is an example from an  automobile website. When a visitor goes to a vehicle page, you could pass a profile parameter "profile.lastViewed=sportscar" to record their interest in that particular vehicle. When the visitor browses to other, non-vehicle pages you can target content based on their last vehicle viewed.  Profile parameters are ideal for attributes that rarely change or are only available on certain pages
 
-You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you just did when passing the `pageName` mbox parameter. The one difference is  you need to give profile parameter names a `profile.` prefix. This is what a profile parameter called "userType" would look like in the `Pass Parameters to Global Mbox` action:
+You won't pass any profile parameters in this tutorial, but the workflow is almost identical to what you just did when passing the `pageName` parameter. The one difference is  you need to give profile parameter names a `profile.` prefix. This is what a profile parameter called "userType" would look like in the `Add Params to Page Load Request` action:
 
 ![Setting a profile parameter](images/target-profileParameter.png)
 
@@ -288,7 +287,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Expand your client code
 1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/t-crs-usecase.html):
 
-![The Customer Id details should be visible as custom parameters in the mbox call](images/target-debugger-customerId.png)-->
+![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)-->
 
 >[!WARNING] The Adobe Experience Platform Identity Service will allow you to send multiple ids to the Service, however, only the first one will be sent to Target.
 
@@ -300,7 +299,7 @@ The property token is a reserved parameter used with the Target Premium [Enterpr
 
 Target properties are analogous to Launch properties and Analytics report suites. An enterprise with multiple brands, websites, and marketing teams might use a different Target property, Launch property and Analytics report suite for each website or mobile app. Launch properties are differentiated by their embed codes, Analytics report suites are differentiated by their report suite id, and Target properties are differentiated by their property token parameter.
 
-The property token is implemented just like an mbox parameter. Just name the parameter "at_property" and paste in the value provided in the Target interface.  If you are implementing multiple sites with a single Launch property, you could manage the at_property value via a data element.
+The property token is implemented just like a request parameter. Just name the parameter "at_property" and paste in the value provided in the Target interface.  If you are implementing multiple sites with a single Launch property, you could manage the at_property value via a data element.
 
 Here is an optional exercise, if you are a Target Premium customer and would like to implement a property token in your Tutorial property:
 
@@ -324,7 +323,7 @@ Here is an optional exercise, if you are a Target Premium customer and would lik
 
 1. Under the `pageName` parameter, click the **[!UICONTROL Add]** button
 
-   ![Open the Add Params to Global Mbox action](images/target-addATProperty.png)
+   ![Open the Add Params to Page Load Request action](images/target-addATProperty.png)
 
 1. Name the parameter `at_property` and paste in the value you copied from the Target interface
 
@@ -355,7 +354,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 <!--
 1. Go to the `Target` tab
 1. Expand your client code
-1. You should see the parameter for "at_property" in every global mbox request as you browse the site:
+1. You should see the parameter for "at_property" in every page load request request as you browse the site:
 
 ![The Property Token should be visible as the at_property parameter in every request](images/target-debugger-atProperty.png)-->
 
@@ -468,7 +467,7 @@ Now we need to create a rule to fire the order confirmation request with these d
    1. Click **[!UICONTROL Keep Changes]** to keep the action
 1. Click **[!UICONTROL Save to Library and Build]**
 
-#### Validate the Order Confirmation Mbox
+#### Validate the Order Confirmation request
 
 For the time-being, custom parameters passed with at.js 2.x requests are not easily visible in the Debugger, so we will utilize the browser's developer tools.
 
@@ -497,7 +496,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 1. Expand your client code
 1. You should see the `orderConfirmPage` request as the latest Target request with the orderId, orderTotal, and productPurchasedId parameters populated with the details of your order
 
-   ![orderConfirmPage mbox with required parameters](images/target-debugger-orderConfirmPage.png)-->
+   ![orderConfirmPage request with required parameters](images/target-debugger-orderConfirmPage.png)-->
 
 ### Custom requests
 
