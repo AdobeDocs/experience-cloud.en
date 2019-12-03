@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 In this lesson, you will enable Adobe Analytics tracking in your app.
 
-[Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/reference/) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+[Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 In the [Add Extensions](launch-add-extensions.md) and [Install the Mobile SDK](launch-install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your Launch property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
 
@@ -32,7 +32,7 @@ You should have already completed the lessons in the [Configure Launch](launch-c
 
 Lifecycle metrics are environment-based metrics and dimensions that can be easily enabled in an app using the Experience Platform Mobile SDK. In fact, you've already added them!
 
-You already enabled Lifecycle metrics when you added the Core extension to your property and followed the Mobile Install Instructions provided in the interface. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/ios/metrics.html).
+You already enabled Lifecycle metrics when you added the Core extension to your property and followed the Mobile Install Instructions provided in the interface. These metrics and dimensions, including environment- and app-specific metrics like app version, number of engaged users, OS version, time parting, days since last use, etc. can be very helpful in the analysis of your app, especially as you build Analytics segments from them to apply to all of your reports. The full list of metrics is available in the [documentation](https://docs.adobe.com/content/help/en/mobile-services/ios/metrics.html).
 
 ### Viewing the Analytics Lifecycle Hit
 
@@ -41,7 +41,7 @@ Although you can see the Lifecycle hits in any debugging program/packet sniffer,
 1. Build and run your project in Xcode so that it launches the simulator
 1. In the Xcode debugging console, type `lifecycle` into the filter at the bottom to limit what shows up, and then scroll to the bottom of the entries
 1. Notice the `Analytics request was sent with body` section
-1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://marketing.adobe.com/resources/help/en_US/mobile/ios/metrics.html)
+1. Lifecycle metrics include things like AppID, CarrierName, DayOfWeek, DaysSinceFirstUse, and other metrics/dimensions listed in the [documentation](https://docs.adobe.com/content/help/en/mobile-services/ios/metrics.html)
 
     ![Lifecycle Hit Debugging](images/ios/swift/mobile-analytics-lifecycleHitDebugging.png)
 
@@ -126,7 +126,7 @@ ACPCore.trackState("state name", data: ["key": "value"])
 
     ![Basic trackState Result](images/ios/swift/mobile-analytics-trackStateWithDataResult1.png)
 
->[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://marketing.adobe.com/resources/help/en_US/reference/processing_rules.html) in the Analytics UI.
+>[!NOTE] In case you are familiar with "props and eVars" in Analytics, you will notice that these variable names are not in the SDK. All key/value data coming from the SDK will be sent as [contextData variables](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html), and as such will need to be mapped to props or eVars (or other variables) by using [Processing Rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) in the Analytics UI.
 
 ### Additional Data-Sending Options
 

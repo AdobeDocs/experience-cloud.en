@@ -10,7 +10,7 @@ solution: Experience Cloud
 
 In this lesson, you will implement the [Adobe Analytics extension](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension) and create rules to send data to Adobe Analytics.
 
-[Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/reference/) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+[Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 ## Learning Objectives
 
@@ -29,7 +29,7 @@ There are many things that could be implemented for Analytics in Launch. This le
 
 You should have already completed the lessons in [Configure Launch](launch.md) and [Add the Identity Service](id-service.md).
 
-Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
+Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 
 ## Add the Analytics Extension
 
@@ -49,7 +49,7 @@ The Analytics extension consists of two main parts:
 
    ![Install the Analytics extension](images/analytics-catalog-install.png)
 
-1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
+1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment. Note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](images/analytics-config-reportSuite.png)
 
@@ -179,7 +179,7 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 ### Add the Adobe Analytics Product String Extension
 
-If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://marketing.adobe.com/resources/help/en_US/sc/implement/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in Launch, three additional extensions have already been created in the Launch extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
+If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in Launch, three additional extensions have already been created in the Launch extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
 
 **To add the add the `Adobe Analytics Product String` extension**
 
@@ -410,7 +410,7 @@ You are actually going to call two plug-ins in this code, but one of them is bui
 
 The purpose of this plug-in is to keep values from getting falsely duplicated in the code when a visitor refreshes a page or uses the browser's back button to go back to a page where a value was set. In this lesson, you will use it to keep the `clickthrough` event from being duplicated.
 
-The code for this plug-in is available in the [Analytics Documentation](https://marketing.adobe.com/resources/help/en_US/sc/implement/getValOnce.html), but it is included here for your ease of copy/paste.
+The code for this plug-in is available in the [Analytics Documentation](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/plugins/getvalonce.html), but it is included here for your ease of copy/paste.
 
 1. Copy the following code
 

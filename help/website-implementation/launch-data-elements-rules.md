@@ -23,7 +23,7 @@ At the end of this lesson, you will be able to:
 * Validate that your library is loading in your web browser
 * Use the "Working Library" feature to work more efficiently
 
-## Data Element for Page Name
+## Create a Data Element for Page Name
 
 Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, you will create a data element for Page Name, which you will use later in your Target and Analytics implementations.
 
@@ -96,7 +96,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 1. Add the following to the code editor. This code will output the value of the Page Name data element to the browser console so you can confirm it's working:
 
     ```javascript
-      console.log('The page name is '+_satellite.getVar('Page Name'));
+    console.log('The page name is '+_satellite.getVar('Page Name'));
     ```
 
 1. Save the code editor
@@ -114,9 +114,9 @@ You are going to create a rule that outputs the Page Name data element value to 
 >
 > * There is just one Rule builder. DTM rule-types like "Page Bottom", "Click", and "Direct Call" are all just event-types in the Rule builder. This makes it much easier to update a rule should you need to change the trigger from, say, a DOM Ready event to a custom event.
 > * There is a new "Custom Code" event-type
-> * Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://marketing.adobe.com/resources/help/en_US/target/ov2/r_target-atjs-notification.html), so custom code wouldn't be needed to use this feature.
+> * Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html), so custom code wouldn't be needed to use this feature.
 > * Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
-> * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things    like setting Customer IDs, firing Analytics beacons, and firing the global mbox.
+> * Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing Target requests.
 
 ## Save Your Changes to a Library
 
@@ -181,7 +181,7 @@ Once you've selected the library, you should see that the **[!UICONTROL Save]** 
 Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 
 ```javascript
-  console.log('The page name is: '+_satellite.getVar('Page Name'));
+console.log('The page name is: '+_satellite.getVar('Page Name'));
 ```
 
 Save the code, keep the changes in the action, and now click the **[!UICONTROL Save to Library and Build]** button.
@@ -189,6 +189,7 @@ Save the code, keep the changes in the action, and now click the **[!UICONTROL S
 ![The Save and Build option now exists](images/launch-workingLibrary-saveAndBuild.png)
 
 Wait a moment until the green dot reappears next to the [!UICONTROL Working Library] dropdown. Now, reload your sample page and you should see your change reflected in the console message (you may have to clear your browser cache and reload, in order to see the change to the page):
+
 ![Console Message with Colon](images/samplepage-consoleWithColon.png)
 
 This is a much faster way of working and you will use this approach for the rest of the tutorial.

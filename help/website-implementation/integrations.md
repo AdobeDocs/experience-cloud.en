@@ -23,13 +23,13 @@ You should complete all of the previous lessons in this tutorial before followin
 
 >[!NOTE] There are many user-permissions requirements, account configurations, and provisioning steps that are required to fully use these integrations and which are beyond the scope of this tutorial. If you are not already using these integrations in your current implementation of the Experience Cloud, you should consider the following:
 >
-> * Review the full requirements of the [Core Services integrations](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html)
+> * Review the full requirements of the [Core Services integrations](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)
 > * Review the full requirements of the [Analytics for Target integration](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)
 > * Have an Administrator of your Experience Cloud Organization [request provisioning of these integrations](https://www.adobe.com/go/audiences)
 
 ## Audiences
 
-[Audiences](https://marketing.adobe.com/resources/help/en_US/mcloud/audience_library.html) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
+[Audiences](https://docs.adobe.com/content/help/en/core-services/interface/audiences/audience-library.htm) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
@@ -67,12 +67,12 @@ These validation steps will focus on the critical part visible in the client-sid
 
 ## Analytics for Target (A4T)
 
-The [Analytics for Target (A4T)](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) integration allows you to leverage your Analytics data as the source for reporting metrics in Target.  
+The [Analytics for Target (A4T)](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) integration allows you to leverage your Analytics data as the source for reporting metrics in Target.  
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
 1. Implement the Adobe Experience Platform Identity Service
-1. Fire the global mbox before the Analytics page view beacon
+1. Fire the Target page load request before the Analytics page view beacon
 
 A4T works by stitching together a server-side request from Target to Analytics with the Analytics page view beacon, which we call "hit-stitching."  Hit-stitching requires that the Target request which delivers the activity (or increments a Target-based goal metric) have a parameter which matches a parameter in the Analytics page view beacon. This parameter is called the supplemental data id (SDIDs).
 
@@ -106,7 +106,7 @@ If you make additional Target requests in the scope of a page load (not includin
 
 ## Customer Attributes
 
-[Customer Attributes](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) is a part of the People Core Service that allows you to upload data from your customer relationship management (CRM) database and leverage it in Adobe Analytics and Adobe Target.
+[Customer Attributes](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) is a part of the People Core Service that allows you to upload data from your customer relationship management (CRM) database and leverage it in Adobe Analytics and Adobe Target.
 
 The main requirements to implement Customer Attributes&mdash;which you have already done&mdash;are to:
 

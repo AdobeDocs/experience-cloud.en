@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add the Adobe Experience Platform Identity Service
 
-The [Adobe Experience Platform Identity Service](https://marketing.adobe.com/resources/help/en_US/mcvid/) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+The [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
 The Identity Service is part of the Mobile Core extension, ***so you have already implemented it when you installed the Mobile SDK***! At present time, this tutorial does not include instructions for setting Customer Ids. Please see the documentation for details on [how to set Customer Ids](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/identity/identity-api-reference).
 
