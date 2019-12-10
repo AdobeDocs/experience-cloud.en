@@ -41,6 +41,12 @@ description: Links to all the Experience Cloud tutorials and learning guides
 * [AEM Dispatcher Cache Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/dispatcher-tutorial/overview.html)
 * [AEM Headless Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 
+## Advertising Cloud
+
+Help for the Advertising Cloud is available in the product by clicking the Help icon (?) at the top of any page. 
+	 
+* [Advertising Cloud Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html#adcloud)
+
 ## Additional Resources
 
 > [!MORELIKETHIS]
