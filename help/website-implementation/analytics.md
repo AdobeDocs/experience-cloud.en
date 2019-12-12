@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add Adobe Analytics
 
-In this lesson, you will implement the [Adobe Analytics extension](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension) and create rules to send data to Adobe Analytics.
+In this lesson, you will implement the [Adobe Analytics extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) and create rules to send data to Adobe Analytics.
 
 [Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
