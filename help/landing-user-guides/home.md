@@ -101,6 +101,7 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 ## ![Icon](/help/assets/advertising-cloud.png) Adobe Advertising Cloud
 
 * [Advertising Cloud Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html#adcloud)
+* [Advertising Cloud Learn & Support](https://helpx.adobe.com/support/advertising-cloud.html)
 
 ## ![Icon](/help/assets/marketo.png) Adobe Marketo
 
