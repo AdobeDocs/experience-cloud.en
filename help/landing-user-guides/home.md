@@ -43,10 +43,14 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 
 | AEM 6.5 | AEM 6.4 |
 |--- |--- |
-|<ul><li>[AEM 6.5 Learn & Support](https://helpx.adobe.com/support/experience-manager/6-5.html)</li></ul>|<ul><li>[Sites Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/home.html)</li><li>[Sites Developing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)</li><li>[Sites Administering (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/administering/home.html)</li><li>[Sites Deploying (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/home.html)</li><li>[Assets (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)</li><li>[Communities (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/communities/home.html)</li><li>[Mobile (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/home.html)</li><li>[Screens (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/screens/home.html)</li><li>[Release Notes (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/home.html)</li><li>[Forms (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/forms/home.html)</li><li>[Managing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/managing/home.html)</li><li>[Classic UI Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/classic-ui/home.html)</li></ul>|
+|<ul><li>[AEM 6.5 User Guide Hub](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)</li><li>[Sites Authoring (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html)</li><li>[Sites Developing (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)</li><li>[Sites Administering (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/administering/home.html)</li><li>[Sites Deploying (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/home.html)</li><li>[Assets (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html)</li><li>[Communities (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/communities/home.html)</li><li>[Mobile (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/mobile/home.html)</li><li>[Release Notes (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/home.html)</li><li>[Forms (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/forms/home.html)</li><li>[Managing (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/managing/home.html)</li><li>[Classic UI Authoring (AEM 6.5)](https://docs.adobe.com/content/help/en/experience-manager-65/classic-ui/home.html)</li></ul>|<ul><li>[AEM 6.4 User Guide Hub](https://docs.adobe.com/content/help/en/experience-manager-64/user-guide/home.html)</li><li>[Sites Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/authoring/home.html)</li><li>[Sites Developing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)</li><li>[Sites Administering (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/administering/home.html)</li><li>[Sites Deploying (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/home.html)</li><li>[Assets (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/assets/home.html)</li><li>[Communities (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/communities/home.html)</li><li>[Mobile (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/home.html)</li><li>[Release Notes (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/home.html)</li><li>[Forms (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/forms/home.html)</li><li>[Managing (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/managing/home.html)</li><li>[Classic UI Authoring (AEM 6.4)](https://docs.adobe.com/content/help/en/experience-manager-64/classic-ui/home.html)</li></ul>|
+
+[User guides for previous AEM versions](https://helpx.adobe.com/support/experience-manager/6-3.html)
 
 ### Additional AEM Guides
 
+* [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Best Practices Guide for AEM Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/using/about-guide.html)
 * [AEM HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [AEM Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
@@ -66,10 +70,6 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 * [AEM Foundation Learn Tutorials](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html)
 * [AEM Dispatcher Cache Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/dispatcher-tutorial/overview.html)
 * [AEM Headless Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-
-<!--
-## ![Icon](/help/assets/advertising-cloud.png) Advertising Cloud Guide
--->
 
 ## ![Icon](/help/assets/experience-cloud.png) Adobe Experience Platform
 
@@ -99,6 +99,13 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 * [Primetime Ad Insertion](https://docs.adobe.com/content/help/en/primetime/ad-insertion/home.html)
 * [Primetime Migration Guide](https://docs.adobe.com/content/help/en/primetime/migration/home.html)
 * [Primetime Release Notes](https://docs.adobe.com/content/help/en/primetime/release-notes/home.html)
+
+## ![Icon](/help/assets/advertising-cloud.png) Adobe Advertising Cloud
+
+Help for the Advertising Cloud is available in the product by clicking the Help icon (?) at the top of any page.
+
+* [Advertising Cloud Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html#adcloud)
+* [Advertising Cloud Learn & Support](https://helpx.adobe.com/support/advertising-cloud.html)
 
 ## ![Icon](/help/assets/marketo.png) Adobe Marketo
 
