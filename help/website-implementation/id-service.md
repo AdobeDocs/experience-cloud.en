@@ -8,7 +8,7 @@ solution: Experience Cloud
 
 # Add the Adobe Experience Platform Identity Service
 
-This lesson will guide your through the steps required to implement the [Adobe Experience Platform Identity Service extension](https://docs.adobelaunch.com/extension-reference/web/experience-cloud-id-service-extension) and send customer ids.
+This lesson will guide your through the steps required to implement the [Adobe Experience Platform Identity Service extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) and send customer ids.
 
 The [Adobe Experience Platform Identity Service](https://docs.adobe.com/content/help/en/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
