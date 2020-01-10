@@ -5,7 +5,9 @@ description: This page includes a comprehensive list of all Adobe Experience Clo
 
 # Adobe Experience Cloud Documentation
 
-This page includes a comprehensive list of all Adobe Experience Cloud documentation and enablement user guides and tutorials.
+![Banner](/help/assets/experience-cloud-banner-notext.png)
+
+This page includes a comprehensive list of Adobe Experience Cloud user guides and tutorials.
 
 ## ![Icon](/help/assets/experience-cloud.png) Release Notes
 
