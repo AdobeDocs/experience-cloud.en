@@ -203,7 +203,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/experience-cloud.png) Adobe Experience Platform
+## ![Icon](/help/assets/platform.png) Adobe Experience Platform
 
 <table>
 <thead>
