@@ -294,18 +294,21 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
 <table>
 <thead>
   <tr>
-    <th>User Guide</th>
-    <th></th>
+    <th>User Guides</th>
+    <th>Tutorials</th>
   </tr>
 </thead>
 <tbody>
 <tr>
   <td>
     <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html"> Journey Orchestration Help</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html"> Journey Orchestration User Guide</a></li>
     </ul>
   </td>
   <td>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html"> Journey Orchestration Tutorials</a></li>
+    </ul>
   </td>
 </tr>
 </tbody>
