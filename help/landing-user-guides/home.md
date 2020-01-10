@@ -250,7 +250,7 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
       <li><a href="https://docs.adobe.com/content/help/en/id-service/using/home.html"> ECID Service Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/mobile-services/using/home.html"> Mobile Services v4 SDKs</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html"> Device Co-op Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li><li></li>
+      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html"> DTM Guide</a></li>
     </ul>
   </td>
