@@ -254,6 +254,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
       <li><a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html"> Device Co-op Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html"> DTM Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/places/using/home.html"> Location Service</a></li>
     </ul>
   </td>
   <td>
