@@ -5,7 +5,9 @@ description: This page includes a comprehensive list of all Adobe Experience Clo
 
 # Adobe Experience Cloud Documentation
 
-This page includes a comprehensive list of all Adobe Experience Cloud documentation and enablement user guides and tutorials.
+![Banner](/help/assets/experience-cloud-banner-notext.png)
+
+This page includes a comprehensive list of Adobe Experience Cloud user guides and tutorials.
 
 ## ![Icon](/help/assets/experience-cloud.png) Release Notes
 
@@ -252,6 +254,7 @@ This page includes a comprehensive list of all Adobe Experience Cloud documentat
       <li><a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html"> Device Co-op Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html"> DTM Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/places/using/home.html"> Location Service</a></li>
     </ul>
   </td>
   <td>
