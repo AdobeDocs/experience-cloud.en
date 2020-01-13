@@ -173,6 +173,10 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-64/user-guide/home.html"> AEM 6.4 User Guide Hub</a></li>
       <li><a href="https://helpx.adobe.com/support/experience-manager/6-3.html"> User guides for previous AEM versions</a></li>
     </ul>
+    <p><strong>AEM as a Cloud Service</strong></p>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html"> Experience Manager as a Cloud Service User Guides</a></li>
+    </ul>
     <p><strong>Additional AEM Guides</strong></p>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html"> AEM Screens User Guide</a></li>
@@ -197,37 +201,6 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html"> AEM Foundation Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/dispatcher-tutorial/overview.html"> AEM Dispatcher Cache Tutorial</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html"> AEM Headless Tutorial</a></li>
-    </ul>
-  </td>
-</tr>
-</tbody>
-</table>
-
-## ![Icon](/help/assets/platform.png) Adobe Experience Platform
-
-<table>
-<thead>
-  <tr>
-    <th>User Guides</th>
-    <th>Tutorials and Development</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html"> Real-time Customer Data Platform Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/auditor/using/overview.html"> Auditor</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html"> Debugger</a></li>
-    </ul>
-  </td>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html"> Experience Platform Tutorials</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
-      <li><a href="https://www.adobe.io/apis/experienceplatform/home/"> Experience Platform Developer APIs</a></li>
-      <li><a href="https://www.adobe.io/apis/experienceplatform/home/services/web-sdk.html"> Experience Platform Web SDK</a></li>
     </ul>
   </td>
 </tr>
@@ -270,6 +243,65 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
+## ![Icon](/help/assets/platform.png) Experience Platform
+
+<table>
+<thead>
+  <tr>
+    <th>User Guides</th>
+    <th>Tutorials and Development</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html"> Real-time Customer Data Platform Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/auditor/using/overview.html"> Auditor</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html"> Debugger</a></li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html"> Experience Platform Tutorials</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
+      <li><a href="https://www.adobe.io/apis/experienceplatform/home/"> Experience Platform Developer APIs</a></li>
+      <li><a href="https://www.adobe.io/apis/experienceplatform/home/services/web-sdk.html"> Experience Platform Web SDK</a></li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+
+## ![Icon](/help/assets/experience-cloud.png) Application services powered by Experience Platform
+
+<table>
+<thead>
+  <tr>
+    <th>User Guides</th>
+    <th>Tutorials</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html"> Customer Journey Analytics</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html"> Real-time Customer Data Platform Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html"> Journey Orchestration User Guide</a></li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html"> Journey Orchestration Tutorials</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html"> Experience Platform Tutorials</a></li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+
 ## ![Icon](/help/assets/experience-cloud.png) Location Service
 
 <table>
@@ -287,31 +319,6 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
     </ul>
   </td>
   <td>
-  </td>
-</tr>
-</tbody>
-</table>
-
-## ![Icon](/help/assets/experience-cloud.png) Journey Orchestration
-
-<table>
-<thead>
-  <tr>
-    <th>User Guides</th>
-    <th>Tutorials</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html"> Journey Orchestration User Guide</a></li>
-    </ul>
-  </td>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html"> Journey Orchestration Tutorials</a></li>
-    </ul>
   </td>
 </tr>
 </tbody>
