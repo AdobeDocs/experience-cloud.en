@@ -154,6 +154,10 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 <tbody>
 <tr>
   <td>
+    <p><strong>AEM as a Cloud Service</strong></p>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html"> Experience Manager as a Cloud Service User Guides</a></li>
+    </ul>
     <p><strong>AEM 6.5</strong></p>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html"> AEM 6.5 User Guide Hub</a></li>
@@ -172,10 +176,6 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-64/user-guide/home.html"> AEM 6.4 User Guide Hub</a></li>
       <li><a href="https://helpx.adobe.com/support/experience-manager/6-3.html"> User guides for previous AEM versions</a></li>
-    </ul>
-    <p><strong>AEM as a Cloud Service</strong></p>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html"> Experience Manager as a Cloud Service User Guides</a></li>
     </ul>
     <p><strong>Additional AEM Guides</strong></p>
     <ul>
@@ -274,7 +274,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/experience-cloud.png) Application services powered by Experience Platform
+## ![Icon](/help/assets/experience-cloud.png) Application Services Powered by Experience Platform
 
 <table>
 <thead>
