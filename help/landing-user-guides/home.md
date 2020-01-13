@@ -158,22 +158,9 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html"> Experience Manager as a Cloud Service User Guides</a></li>
     </ul>
-    <p><strong>AEM 6.5</strong></p>
+    <p><strong>AEM Versions</strong></p>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html"> AEM 6.5 User Guide Hub</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html"> Sites Authoring (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html"> Sites Developing (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/home.html"> Sites Administering (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/home.html"> Sites Deploying (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/assets/home.html"> Assets (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/communities/home.html"> Communities (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/mobile/home.html"> Mobile (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/home.html"> Release Notes (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/home.html"> Forms (AEM 6.5)</a></li><li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/managing/home.html"> Managing (AEM 6.5)</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/classic-ui/home.html"> Classic UI Authoring (AEM 6.5)</a></li>
-    </ul>
-    <p><strong>Previous AEM Versions</strong></p>
-    <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-64/user-guide/home.html"> AEM 6.4 User Guide Hub</a></li>
       <li><a href="https://helpx.adobe.com/support/experience-manager/6-3.html"> User guides for previous AEM versions</a></li>
     </ul>
@@ -194,6 +181,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
   </td>
   <td>
     <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html"> AEM as a Cloud Service Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html"> AEM Assets Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/forms/overview.html"> AEM Forms Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html"> AEM Sites Tutorials</a></li>
@@ -207,7 +195,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/experience-cloud.png) Administration, Implementation, and Core Services
+## ![Icon](/help/assets/experience-cloud.png) Core Services, Administration, and Implementation
 
 <table>
 <thead>
@@ -220,8 +208,8 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 <tr>
   <td>
     <ul>
-      <li><a href="https://helpx.adobe.com/enterprise/using/admin-console.html"> Admin Console</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html"> Core Services Interface</a></li>
+      <li><a href="https://helpx.adobe.com/enterprise/using/admin-console.html"> Admin Console</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/id-service/using/home.html"> ECID Service Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/mobile-services/using/home.html"> Mobile Services v4 SDKs</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html"> Device Co-op Guide</a></li>
@@ -255,11 +243,18 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 <tbody>
 <tr>
   <td>
+    <p><strong>Experience Platform</strong></p>
     <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html"> Real-time Customer Data Platform Guide</a></li>
+      <li><a href="https://www.adobe.io/apis/experienceplatform/home/overview.html"> Experience Platform Documentation</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/auditor/using/overview.html"> Auditor</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html"> Debugger</a></li>
+    </ul>
+    <p><strong>Application Services Powered by Experience Platform</strong></p>
+    <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html"> Customer Journey Analytics</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html"> Real-time Customer Data Platform Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html"> Journey Orchestration User Guide</a></li>
     </ul>
   </td>
   <td>
@@ -268,12 +263,14 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
       <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
       <li><a href="https://www.adobe.io/apis/experienceplatform/home/"> Experience Platform Developer APIs</a></li>
       <li><a href="https://www.adobe.io/apis/experienceplatform/home/services/web-sdk.html"> Experience Platform Web SDK</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html"> Journey Orchestration Tutorials</a></li>
     </ul>
   </td>
 </tr>
 </tbody>
 </table>
 
+<!-- Trying out as subsection of Platform above
 ## ![Icon](/help/assets/experience-cloud.png) Application Services Powered by Experience Platform
 
 <table>
@@ -323,6 +320,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tr>
 </tbody>
 </table>
+-->
 
 ## ![Icon](/help/assets/primetime.png) Primetime
 
