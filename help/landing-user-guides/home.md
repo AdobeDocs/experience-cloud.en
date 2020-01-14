@@ -45,7 +45,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
   <td>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/analytics/landing/home.html">Analytics Main Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics/analyze/home.html"> Analytics Analyze Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics/analyze/home.html"> Analytics Tools Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics/admin/home.html"> Admin Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics/components/home.html"> Components Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics/export/home.html"> Export Guide</a></li>
