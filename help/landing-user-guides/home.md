@@ -221,10 +221,10 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
   <td>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html"> Core Services Tutorials</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-swift-apps-with-launch/index.html"> Implementing the Experience Cloud in Mobile iOS Swift Applications</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html"> Implementing the Experience Cloud in Mobile iOS Objective-C Applications</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-mobile-android-apps-with-launch/index.html"> Implementing the Experience Cloud in Mobile Android Apps</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html"> Implementing the Experience Cloud in Mobile iOS Swift Applications</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html"> Implementing the Experience Cloud in Mobile iOS Objective-C Applications</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-android-apps-with-launch/index.html"> Implementing the Experience Cloud in Mobile Android Apps</a></li>
     </ul>
   </td>
 </tr>
@@ -260,7 +260,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
   <td>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html"> Experience Platform Tutorials</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html"> Launch Implementation Guide</a></li>
       <li><a href="https://www.adobe.io/apis/experienceplatform/home/"> Experience Platform Developer APIs</a></li>
       <li><a href="https://www.adobe.io/apis/experienceplatform/home/services/web-sdk.html"> Experience Platform Web SDK</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html"> Journey Orchestration Tutorials</a></li>
@@ -269,58 +269,6 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tr>
 </tbody>
 </table>
-
-<!-- Trying out as subsection of Platform above
-## ![Icon](/help/assets/experience-cloud.png) Application Services Powered by Experience Platform
-
-<table>
-<thead>
-  <tr>
-    <th>User Guides</th>
-    <th>Tutorials</th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html"> Customer Journey Analytics</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/overview.html"> Real-time Customer Data Platform Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html"> Journey Orchestration User Guide</a></li>
-    </ul>
-  </td>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/journey-orchestration/introduction.html"> Journey Orchestration Tutorials</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html"> Experience Platform Tutorials</a></li>
-    </ul>
-  </td>
-</tr>
-</tbody>
-</table>
-
-## ![Icon](/help/assets/experience-cloud.png) Location Service
-
-<table>
-<thead>
-  <tr>
-    <th>User Guide</th>
-    <th></th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-  <td>
-    <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/places/using/home.html"> Location Service Help</a></li>
-    </ul>
-  </td>
-  <td>
-  </td>
-</tr>
-</tbody>
-</table>
--->
 
 ## ![Icon](/help/assets/primetime.png) Primetime
 
