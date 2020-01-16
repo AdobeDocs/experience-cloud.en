@@ -17,14 +17,3 @@ tutorials-url: https://docs.adobe.com/content/help/en/experience-cloud/tutorials
 + [Experience League](https://experienceleague.adobe.com/)
 + [Community Forums](https://forums.adobe.com/community/experience-cloud/)
 + [Adobe Training and Tutorials](https://helpx.adobe.com/learning.html?promoid=KAUDK)
-
-<!-- commenting out in case we want to switch back to displaying main solution user guides
-
-+ [Analytics User Guides](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
-+ [Target User Guide](https://docs.adobe.com/content/help/en/target/using/target-home.html)
-+ [Campaign Standard User Guide](https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html)
-+ [Campaign Classic User Guide](https://docs.adobe.com/content/help/en/campaign-classic/using/campaign-classic-home.html)
-+ [Audience Manager User Guide](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html)
-+ [AEM 6.5 User Guides](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
-
--->
