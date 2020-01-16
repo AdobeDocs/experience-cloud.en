@@ -71,7 +71,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 <thead>
   <tr>
     <th>User Guides</th>
-    <th>Tutorials</th>
+    <th>Tutorials and Development</th>
   </tr>
 </thead>
 <tbody>
@@ -84,6 +84,11 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
   <td>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html"> Target Tutorials</a></li>
+      <li><a href="https://developers.adobetarget.com/api/delivery-api/"> Target Server-Side APIs</a></li>
+      <li><a href="https://github.com/adobe/target-nodejs-sdk"> Target NodeJS SDK</a></li>
+      <li><a href="https://github.com/adobe/target-java-sdk"> Target Java SDK</a></li>
+      <li><a href="https://developers.adobetarget.com/api/recommendations/"> Target Recommendations API</a></li>
+      <li><a href="http://developers.adobetarget.com/api/#introduction"> Target Adobe.IO documentation</a></li>
     </ul>
   </td>
 </tr>
