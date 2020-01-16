@@ -13,7 +13,7 @@ tutorials-url: https://docs.adobe.com/content/help/en/experience-cloud/tutorials
 
 + [Experience Cloud Documentation](home.md)
 + [Release Notes](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
-+ [Experience Cloud Learn & Support](https://helpx.adobe.com/support/experience-cloud.html)
++ [Experience Cloud Learn and Support](https://helpx.adobe.com/support/experience-cloud.html)
 + [Experience League](https://experienceleague.adobe.com/)
 + [Community Forums](https://forums.adobe.com/community/experience-cloud/)
 + [Adobe Training and Tutorials](https://helpx.adobe.com/learning.html?promoid=KAUDK)
