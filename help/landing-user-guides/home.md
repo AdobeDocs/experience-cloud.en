@@ -37,7 +37,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 <thead>
   <tr>
     <th>User Guides</th>
-    <th>Tutorials and Development</th>
+    <th>Tutorials and Resources</th>
   </tr>
 </thead>
 <tbody>
@@ -52,12 +52,15 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
       <li><a href="https://docs.adobe.com/content/help/en/analytics/implementation/home.html"> Implementation Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics/import/home.html"> Import Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics/integration/home.html"> Integration Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html"> Media Analytics Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/data-workbench/using/home.html"> Data Workbench Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html"> Customer Journey Analytics</a></li>
     </ul>
   </td>
   <td>
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html"> Analytics Tutorials</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/analytics/technotes/home.html"> Analytics Tech Notes</a></li>
       <li><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"> Analytics APIs</a></li>
     </ul>
   </td>
