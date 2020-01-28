@@ -218,12 +218,12 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html"> Core Services Interface</a></li>
       <li><a href="https://helpx.adobe.com/enterprise/using/admin-console.html"> Admin Console</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/id-service/using/home.html"> ECID Service Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/id-service/using/home.html"> Experience Cloud ID Service Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/mobile-services/using/home.html"> Mobile Services Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/mobile-services/using/home.html#section_3A500233347C4305AB545E298A827CEA"> Mobile Services v4 SDKs</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/device-co-op/using/home.html"> Device Co-op Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html"> DTM Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Experience Platform Launch</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html"> Dynamic Tag Managment Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/places/using/home.html"> Places Service (previously Location Service)</a></li>
     </ul>
   </td>
@@ -256,7 +256,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
     <ul>
       <li><a href="https://docs.adobe.com/content/help/en/experience-platform/landing/home.html"> Experience Platform Documentation</a></li>
       <li><a href="https://www.adobe.io/apis/experienceplatform/home/services/release-notes.html"> Platform Release Notes</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Launch</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/launch/using/overview.html"> Experience Platform Launch</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/auditor/using/overview.html"> Auditor</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html"> Debugger</a></li>
     </ul>
