@@ -164,7 +164,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
   <td>
     <p><strong>AEM as a Cloud Service</strong></p>
     <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html"> Experience Manager as a Cloud Service User Guides</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html"> AEM as a Cloud Service User Guides</a></li>
     </ul>
     <p><strong>AEM Versions</strong></p>
     <ul>
