@@ -168,8 +168,8 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
     </ul>
     <p><strong>AEM Versions</strong></p>
     <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html"> AEM 6.5 User Guide Hub</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-64/user-guide/home.html"> AEM 6.4 User Guide Hub</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html"> AEM 6.5 User Guides</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-64/user-guide/home.html"> AEM 6.4 User Guides</a></li>
       <li><a href="https://helpx.adobe.com/support/experience-manager/6-3.html"> User guides for previous AEM versions</a></li>
     </ul>
     <p><strong>Additional AEM Guides</strong></p>
