@@ -181,7 +181,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html"> AEM Cloud Manager</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html"> AEM Core Components</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/exc/using/overview.html"> Adobe Experience Cloud Library</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html"> AEM Desktop App</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html"> AEM desktop app</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html"> AEM Forms Automated Conversion Service</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html"> Dynamic Media Classic</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/landing/home.html"> Dynamic Media Developer Guide</a></li>
