@@ -28,8 +28,8 @@ description: Links to all the Experience Cloud tutorials and learning guides
 
 ## Campaign
 
-* [Campaign Classic Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html)
-* [Campaign Standard Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/overview.html)
+* [Campaign Classic Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/overview.html)
+* [Campaign Standard Learn Tutorials](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/overview.html)
 
 ## Adobe Experience Manager
 
