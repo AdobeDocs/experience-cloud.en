@@ -11,7 +11,9 @@ description: Links to all the Experience Cloud tutorials and learning guides
 
 ## Target
 
-[Target Learn Tutorials](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
+* [Target Learn Tutorials](https://docs.adobe.com/content/help/en/target-learn/tutorials/overview.html)
+* [Using Recommendations in a Website](https://docs.adobe.com/content/help/en/target-learn/recommendations-in-a-website/overview.html)
+* [Adobe Target with Adobe Mobile Services SDK v4 for Android](https://docs.adobe.com/content/help/en/target-learn/mobile-sdk-v4-android/overview.html)
 
 ## Audience Manager
 
