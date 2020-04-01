@@ -22,7 +22,8 @@ description: Links to all the Experience Cloud tutorials and learning guides
 ## Core Services and Platform Services
 
 * [Core Services Learn Tutorials](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html)
-* [Platform Learn Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)
+* [Platform Video Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/overview.html)
+* [Platform Tutorials](https://docs.adobe.com/content/help/en/experience-platform/tutorials/home.html)
 * [Launch Implementation Guide](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
 * [Implementing the Experience Cloud in Mobile iOS Swift Applications](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
 * [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
