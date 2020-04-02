@@ -5,7 +5,7 @@ description: This page includes a comprehensive list of all Adobe Experience Clo
 
 # Adobe Experience Cloud Documentation
 
-![Banner](/help/assets/experience-cloud-banner-3.png)
+![Banner](/help/assets/experience-cloud-banner-4.png)
 
 This page includes a comprehensive list of Adobe Experience Cloud user guides and tutorials.
 
@@ -31,7 +31,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/analytics.png) Analytics
+## Analytics
 
 <table>
 <thead>
@@ -68,7 +68,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/target.png) Target
+## Target
 
 <table>
 <thead>
@@ -98,7 +98,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/campaign.png) Campaign
+## Campaign
 
 <table>
 <thead>
@@ -125,7 +125,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/audience-manager.png) Audience Manager
+## Audience Manager
 
 <table>
 <thead>
@@ -150,7 +150,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/aem.png) Adobe Experience Manager
+## Adobe Experience Manager
 
 <table>
 <thead>
@@ -203,7 +203,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/experience-cloud.png) Core Services, Administration, and Implementation
+## Core Services, Administration, and Implementation
 
 <table>
 <thead>
@@ -240,7 +240,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/platform.png) Experience Platform
+## Experience Platform
 
 <table>
 <thead>
@@ -282,7 +282,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/primetime.png) Primetime
+## Primetime
 
 <table>
 <thead>
@@ -309,7 +309,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 </tbody>
 </table>
 
-## ![Icon](/help/assets/advertising-cloud.png) Advertising Cloud
+## Advertising Cloud
 
 Help for the Advertising Cloud is available in the product by clicking the Help icon (?) at the top of any page.
 
@@ -334,7 +334,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
 </tbody>
 </table>
 
-## ![Icon](/help/assets/marketo.png) Marketo
+## Marketo
  
 <table>
 <thead>
@@ -358,7 +358,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
 </tbody>
 </table>
 
-## ![Icon](/help/assets/magento.png) Magento
+## Magento
 
 <table>
 <thead>
@@ -381,7 +381,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
 </tbody>
 </table>
 
-## ![Icon](/help/assets/experience-cloud.png) Additional Experience Cloud Guides
+## Additional Experience Cloud Guides
 
 <table>
 <thead>
