@@ -9,7 +9,7 @@ description: This page includes a comprehensive list of all Adobe Experience Clo
 
 This page includes a comprehensive list of Adobe Experience Cloud user guides and tutorials.
 
-## ![Icon](/help/assets/experience-cloud.png) Release Notes
+## Release Notes
 
 <table>
 <thead>
