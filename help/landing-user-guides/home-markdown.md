@@ -99,7 +99,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
 * [Livefyre Implementation Guide](https://docs.adobe.com/content/help/en/livefyre/implementation/home.html)
 * [Social](https://docs.adobe.com/content/help/en/social/using/home.html)
 
-> [!MORELIKETHIS]
+>[!MORELIKETHIS]
 >
 >* [Experience Cloud Learn & Support](https://helpx.adobe.com/support/experience-cloud.html)
 >* [Experience League](https://experienceleague.adobe.com/)

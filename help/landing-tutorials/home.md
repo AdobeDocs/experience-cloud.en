@@ -52,7 +52,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
 
 ## Additional Resources
 
-> [!MORELIKETHIS]
+>[!MORELIKETHIS]
 >
 >* [Experience Cloud Documentation](https://docs.adobe.com/content/help/en/experience-cloud/user-guides/home.html)
 >* [Experience Cloud Learn & Support](https://helpx.adobe.com/support/experience-cloud.html)
