@@ -295,12 +295,14 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 <tr>
   <td>
     <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/primetime/programming/home.html"> Primetime Programming Guide</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/primetime/drm/home.html"> Primetime Digital Rights Management</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/primetime/video-playback/home.html"> Primetime Video Playback</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/primetime/ad-insertion/home.html"> Primetime Ad Insertion</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/primetime/migration/home.html"> Primetime Migration Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/primetime/release-notes/home.html"> Primetime Release Notes</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/primetime/programming/home.html"> Primetime Programming Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/primetime/migration/home.html"> Primetime Migration & Conversion Guide</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/primetime/reference-implementation/home.html"> Primetime Reference Implementation</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/primetime/ad-insertion/home.html"> Primetime Dynamic Ad Insertion</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/primetime/drm/home.html"> Primetime Digital Rights Management</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/primetime/reference/api-references.html"> Primetime API References</a></li>
+      <li><a href="https://helpx.adobe.com/primetime/archives.html"> Primetime Archived Documentation</a></li>
     </ul>
   </td>
   <td>
