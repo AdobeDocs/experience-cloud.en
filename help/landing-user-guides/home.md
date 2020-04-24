@@ -9,6 +9,12 @@ description: This page includes a comprehensive list of all Adobe Experience Clo
 
 This page includes a comprehensive list of Adobe Experience Cloud user guides and tutorials.
 
+>[!NOTE]
+>
+>Using the Search feature on this page is limited to a small set of content. We recommend that you go to a specific user guide (such as Analytics or Target) to search that area. We will improve the Search feature with the upcoming move to Experience League.
+>
+>To see a preview of our documentation staged on Experience League, see [About Moving to Experience League](/help/landing-user-guides/experience-league-preview.md) (in-progress).
+
 ## Release Notes
 
 <table>
