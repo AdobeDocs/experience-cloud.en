@@ -11,7 +11,7 @@ This page includes a comprehensive list of Adobe Experience Cloud user guides an
 
 >[!NOTE]
 >
->For the best search experience while we’re migrating documentation content, we recommend navigating through the below product sections and conducting a search at the guide level
+>For the best search experience while we’re migrating documentation content, we recommend navigating through the below product sections and conducting a search at the guide level.
 
 <!--
 To see a preview of our documentation staged on Experience League, see [About Moving to Experience League](/help/landing-user-guides/experience-league-preview.md) (in-progress).
