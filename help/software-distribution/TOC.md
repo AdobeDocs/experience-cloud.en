@@ -1,6 +1,6 @@
 ---
 user-guide-title: Adobe Experience Cloud User Guides
-index: n
+index: y
 ---
 
 # Experience Cloud Software Distribution {#software-distribution}
