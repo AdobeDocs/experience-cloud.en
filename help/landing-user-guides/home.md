@@ -404,6 +404,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
 <tr>
   <td>
     <ul>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html"> Software Distribution</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/search-promote/using/sp-home.html"> Search&Promote</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/livefyre/using/home.html"> Livefyre User Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/livefyre/implementation/home.html"> Livefyre Implementation Guide</a></li>
