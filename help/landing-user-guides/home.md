@@ -211,7 +211,7 @@ To see a preview of our documentation staged on Experience League, see [About Mo
 </tbody>
 </table>
 
-## Core Services, Administration, and Implementation
+## Experience Cloud Interface, Administration, and Implementation
 
 <table>
 <thead>
@@ -224,7 +224,7 @@ To see a preview of our documentation staged on Experience League, see [About Mo
 <tr>
   <td>
     <ul>
-      <li><a href="https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html"> Core Services Interface</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html"> Experience Cloud Interface</a></li>
       <li><a href="https://helpx.adobe.com/enterprise/using/admin-console.html"> Admin Console</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/id-service/using/home.html"> Experience Cloud ID Service Guide</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/mobile-services/using/home.html"> Mobile Services Guide</a></li>
