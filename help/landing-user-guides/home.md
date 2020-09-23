@@ -359,7 +359,7 @@ Help for the Advertising Cloud is available in the product by clicking the Help 
   <td>
     <ul>
       <li><a href="https://docs.marketo.com/"> Marketo Product (Classic)</a></li>
-      <li><a href="https://help.marketo.com/hc/en-us"> Marketo Sky</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/marketo/sky/home.html"> Marketo Sky</a></li>
       <li><a href="https://docs.marketo.com/display/BIZ/Bizible"> Bizible Docs</a></li>
     </ul>
   </td>
