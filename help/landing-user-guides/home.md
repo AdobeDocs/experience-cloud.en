@@ -202,7 +202,7 @@ To see a preview of our documentation staged on Experience League, see [About Mo
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/forms/overview.html"> AEM Forms Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html"> AEM Sites Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html"> AEM Sites WKND Tutorial</a></li>
-      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html"> AEM Foundation Tutorials</a></li>
+      <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/overview.html"> AEM Foundation Tutorials</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/dispatcher-tutorial/overview.html"> AEM Dispatcher Cache Tutorial</a></li>
       <li><a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html"> AEM Headless Tutorial</a></li>
     </ul>
