@@ -1,8 +1,8 @@
 ---
 title: Software Distribution
 description: How to use Adobe Experience Cloud Software Distribution
+exl-id: ac559a28-4444-4326-ba92-78afd10ed9ab
 ---
-
 # Software Distribution
 
 ## Introduction
