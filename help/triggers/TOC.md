@@ -4,6 +4,6 @@ user-guide-description: Adobe Experience Cloud Triggers
 breadcrumb-title: Adobe Experience Cloud Triggers
 solution: Experience Cloud
 ---
-# Unknown {#unknown}
+# Triggers {#triggers}
 
 * [Home](home.md)
