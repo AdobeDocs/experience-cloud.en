@@ -16,20 +16,35 @@ Create a trigger and configure the conditions for the trigger. For example, you 
 
     *  **[!UICONTROL Session Start and Session End]**: Create a trigger for session start and session end events.
 
+    ![](assets/triggers_1.png)
+
 1. Add a **[!UICONTROL Name]** and a **[!UICONTROL Description]** to your trigger.
 
-1. Select the Analytics **[!UICONTROL Report Suite]** used for this trigger. This setting identifies the reporting data to use.
+1. Select the Analytics **[!UICONTROL Report Suite]** used for this trigger. This setting identifies the reporting data to use. 
+    
+    [Learn more on Report suite](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
-1. Choose the  * **[!UICONTROL Trigger after no action for]**: 10 minutes.
+1. Choose the **[!UICONTROL Trigger after no action for]** duration.
 
-1. From the **[!UICONTROL Visit must include]** and **[!UICONTROL Visit must not include]** categories, you can define criteria or visitor behaviors that you want to occur, and behaviors that you do not want to occur. You can specify **And** or **Or** logic within or between conditions, depending on the criteria you determine are important for the rule.
+1. From the **[!UICONTROL Visit must include]** and **[!UICONTROL Visit must not include]** categories, you can define criteria or visitor behaviors that you want or do not want to occur. You can specify **And** or **Or** logic within or between conditions, depending on the criteria you determine.
 
     For example, rules for a simple cart abandonment trigger can be:
 
-    * **[!UICONTROL Visit must include]**: Cart Addition (metric) and Exists. (You can further refine the rule with a specific product view or with dimensions like Browser Types.)
-    * **[!UICONTROL Visit must not include]**: Checkout.
+    * **[!UICONTROL Visit must include]**: `Carts (metric) Is greater or equal to 1` to target visitors with at least one item in their carts.
+    * **[!UICONTROL Visit must not include]**: `Checkout (metric) Exists.` to remove visitors who bought the items in their carts.
 
-1. From the **[!UICONTROL Include Meta Data]** field, choose a particular Campaign dimension or variables that are relevant to a visitor’s behavior.
+    ![](assets/triggers_2.png)
 
-1. Select **[!UICONTROL Save]**.
+1. From the **[!UICONTROL Meta Data]** field, click **[!UICONTROL + Dimension]** to choose a particular Campaign dimension or variables that are relevant to a visitor’s behavior.
 
+    ![](assets/triggers_3.png)
+
+1. Click **[!UICONTROL Save]**.
+
+1. Select your newly created **[!UICONTROL Trigger]** from the list to access the detail report of your trigger.
+
+    ![](assets/triggers_4.png)
+
+1. From the detailed view of your trigger, you can access the reports on how many Triggers were fired. If needed, you can edit your trigger with the pencil icon.
+
+    ![](assets/triggers_5.png)
