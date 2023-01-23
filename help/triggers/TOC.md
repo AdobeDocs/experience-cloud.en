@@ -8,3 +8,4 @@ hide: yes
 # Triggers {#triggers}
 
 * [Home](home.md)
+* [Create an Experience Cloud trigger](create.md)

@@ -24,7 +24,7 @@ Create a trigger and configure the conditions for the trigger. For example, you 
     
     [Learn more on Report suite](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
-1. Choose the **[!UICONTROL Trigger after no action for]** duration.
+1. Choose the **[!UICONTROL Trigger after no action for]** validity period.
 
 1. From the **[!UICONTROL Visit must include]** and **[!UICONTROL Visit must not include]** categories, you can define criteria or visitor behaviors that you want or do not want to occur. You can specify **And** or **Or** logic within or between conditions, depending on the criteria you determine.
 
