@@ -1,9 +1,9 @@
 ---
-title: Create and manager Experience Cloud Triggers
-description: Discover Adobe Experience Cloud Triggers UI
+title: Adobe Deliverability Service Manager
+description: Discover Adobe Deliverability Services
 hide: yes
 ---
-# Adobe Experience Cloud Triggers{#triggers-home}
+# Adobe Deliverability Services {#deliv-home}
 
 Discover the new triggers UI and learn how to use it.
 

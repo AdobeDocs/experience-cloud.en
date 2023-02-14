@@ -1,10 +1,10 @@
 ---
-user-guide-title: Adobe Experience Cloud Triggers
-user-guide-description: Adobe Experience Cloud Triggers
-breadcrumb-title: Adobe Experience Cloud Triggers
+user-guide-title: Adobe Deliverability Service Management
+user-guide-description: Adobe Deliverability Service
+breadcrumb-title: Adobe Deliverability Service
 solution: Experience Cloud
 hide: yes
 ---
-# Triggers {#triggers}
+# Adobe Deliverability Service {#deliverability-server}
 
 * [Home](home.md)
