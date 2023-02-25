@@ -2,7 +2,7 @@
 title: Global suppression list
 description: Discover the global suppression list
 hide: yes
-
+exl-id: 40aef987-52a3-470b-88ca-c716a116bdfc
 ---
 # Global suppression list {#global-suppression-list}
 
@@ -103,4 +103,3 @@ To remove an address from the gloabl suppression list, use the **[!UICONTROL Del
 >[!CAUTION]
 >
 >Addresses or domains automatically added by the third-party service provider Blackbox cannot be removed by consultants through the interface. This can be done via a backend ticket only.
-
