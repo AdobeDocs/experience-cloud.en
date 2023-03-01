@@ -6,6 +6,10 @@ description: Discover Adobe Experience Cloud Triggers UI
 
 Create a trigger and configure the conditions for the trigger. For example, you can specify the criteria for a trigger's rules during a visit, such as metrics like Cart Abandon, or dimensions like the product name. When the rules are met, the trigger runs.
 
+1. In the Experience Cloud, select the advanced menu, then Triggers.
+
+    ![](assets/triggers_7.png)
+
 1. From your Trigger homepage, click **[!UICONTROL Create Trigger]**, then specify the type of trigger.
 
     Three types of triggers are available:
@@ -35,7 +39,11 @@ Create a trigger and configure the conditions for the trigger. For example, you 
 
     ![](assets/triggers_2.png)
 
-1. From the **[!UICONTROL Meta Data]** field, click **[!UICONTROL + Dimension]** to choose a particular Campaign dimension or variables that are relevant to a visitor’s behavior.
+1. Click **[!UICONTROL Container]** to establish and save rules, conditions, or filters that define a trigger. To make events happen at the same time, you should place them in the same container. 
+
+    Each container processes independently at the hit level, meaning that if two containers are joined with the **[!UICONTROL And]** operator, the rules will only qualify when two hits meet the requirements.
+
+1. From the **[!UICONTROL Metadata]** field, click **[!UICONTROL + Dimension]** to choose a particular Campaign dimension or variables that are relevant to a visitor’s behavior.
 
     ![](assets/triggers_3.png)
 
