@@ -1,8 +1,10 @@
 ---
 title: Create and manager Experience Cloud Triggers
 description: Discover Adobe Experience Cloud Triggers UI
+hide: yes
+hidefromtoc: yes
 ---
-# Triggers Overview {#}
+# Triggers Overview {#overview}
 
 Experience Cloud Triggers provides a comprehensive solution for identifying, defining, and monitoring critical consumer behaviors. With these triggers, you can generate cross-application communications to re-engage visitors, resulting in a more personalized and engaging user experience. 
 You can use triggers in real-time decisions and personalization, for example:
