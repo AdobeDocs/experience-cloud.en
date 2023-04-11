@@ -10,13 +10,6 @@ hidefromtoc: yes
 >
 > The new user interface for Experience Cloud Triggers offers an intuitive experience to manage consumer behaviors and personalize user experiences. To switch back to the previous interface, click the **[!UICONTROL Go to classic mode]** button.
 
-Experience Cloud Triggers provides a comprehensive solution for identifying, defining, and monitoring critical consumer behaviors. With these triggers, you can generate cross-application communications to re-engage visitors, resulting in a more personalized and engaging user experience. 
-You can use triggers in real-time decisions and personalization, for example:
-
-* Configure fast re-marketing campaigns for cart abandonments or cart abandonments with products removed, helping to increase conversions and revenue.
-* Identify incomplete forms and applications, enabling you to follow up with personalized communications to encourage completion and reduce abandonment rates.
-* Monitor any actions or sequences of actions on your site that you want to track, providing valuable insights into user behavior and enabling you to optimize the user experience based on their actions.
-
 Create a trigger and configure the conditions for the trigger. For example, you can specify the criteria for a trigger's rules during a visit, such as metrics like Cart Abandon, or dimensions like the product name. When the rules are met, the trigger runs.
 
 1. In the Experience Cloud, select the advanced menu, then Triggers.

@@ -4,11 +4,12 @@ description: Discover Adobe Experience Cloud Triggers UI
 ---
 # Triggers Overview {#}
 
-You can use triggers in real-time decisions and personalization. For example:
+Experience Cloud Triggers provides a comprehensive solution for identifying, defining, and monitoring critical consumer behaviors. With these triggers, you can generate cross-application communications to re-engage visitors, resulting in a more personalized and engaging user experience. 
+You can use triggers in real-time decisions and personalization, for example:
 
-* Configure fast re-marketing for cart abandons or cart abandons with products removed
-* Incomplete forms and applications
-* Any actions or sequence of actions on site
+* Configure fast re-marketing campaigns for cart abandonments or cart abandonments with products removed, helping to increase conversions and revenue.
+* Identify incomplete forms and applications, enabling you to follow up with personalized communications to encourage completion and reduce abandonment rates.
+* Monitor any actions or sequences of actions on your site that you want to track, providing valuable insights into user behavior and enabling you to optimize the user experience based on their actions.
 
 ## Types of Triggers
 
