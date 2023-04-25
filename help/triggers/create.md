@@ -13,7 +13,7 @@ exl-id: c0d04e95-2bac-41c7-8ce4-28282695abc8
 
 Create a trigger and configure the conditions for the trigger. For example, you can specify the criteria for a trigger's rules during a visit, such as metrics like Cart Abandon, or dimensions like the product name. When the rules are met, the trigger runs.
 
-1. In the Experience Cloud, select the advanced menu, then Triggers.
+1. In the Experience Cloud, select the solution switcher menu, then **[!UICONTROL Triggers]**.
 
     ![](assets/triggers_7.png)
 
@@ -33,7 +33,7 @@ Create a trigger and configure the conditions for the trigger. For example, you 
 
 1. Select the Analytics **[!UICONTROL Report Suite]** used for this trigger. This setting identifies the reporting data to use. 
     
-    [Learn more on Report suite](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
+    [Learn more on Report suite](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html){target="_blank"}.
 
 1. Choose the **[!UICONTROL Trigger after no action for]** validity period.
 
