@@ -1,6 +1,7 @@
 ---
 title: Create and manager Experience Cloud Triggers
 description: Discover Adobe Experience Cloud Triggers UI
+exl-id: 2c8f58aa-cade-46c1-beaa-cfe7720e4e90
 ---
 # About Experience Cloud Triggers {#overview}
 
@@ -19,4 +20,3 @@ Generally, a trigger can take 15-90 minutes to launch a marketing campaign. This
 * **Abandonment:** You can create a trigger to fire when a visitor views a product but does not add anything to the cart.
 * **Action:** You can create triggers, for example, to fire after newsletter sign-ups, email subscriptions, or applications for credit cards (confirmations). If you are a retailer, you can create a trigger for a visitor who signs up for a loyalty program. In media and entertainment, create triggers for visitors who watch a certain show, and perhaps you want to respond with a survey.
 * **Session Start and Session End:** Create a trigger for session start and session end events.
-
