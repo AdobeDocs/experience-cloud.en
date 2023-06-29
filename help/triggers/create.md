@@ -1,8 +1,6 @@
 ---
 title: Create and manager Experience Cloud Triggers
 description: Discover Adobe Experience Cloud Triggers UI
-hide: yes
-hidefromtoc: yes
 exl-id: c0d04e95-2bac-41c7-8ce4-28282695abc8
 ---
 # Create an Experience Cloud trigger {#create-triggers}
