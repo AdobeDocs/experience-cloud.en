@@ -5,11 +5,15 @@ exl-id: c0d04e95-2bac-41c7-8ce4-28282695abc8
 ---
 # Create an Experience Cloud trigger {#create-triggers}
 
+>[!AVAILABILITY]
+>
+>Adobe Experience Cloud Triggers new user interface is progressively rolled out to all customers. For more info, contact your Adobe representative.
+
+Create a trigger and configure the conditions for the trigger. For example, you can specify the criteria for a trigger's rules during a visit, such as metrics like Cart Abandon, or dimensions like the product name. When the rules are met, the trigger runs.
+
 >[!NOTE]
 >
 > The new user interface for Experience Cloud Triggers offers an intuitive experience to manage consumer behaviors and personalize user experiences. To switch back to the previous interface, click the **[!UICONTROL Go to classic mode]** button.
-
-Create a trigger and configure the conditions for the trigger. For example, you can specify the criteria for a trigger's rules during a visit, such as metrics like Cart Abandon, or dimensions like the product name. When the rules are met, the trigger runs.
 
 1. In the Experience Cloud, select the solution switcher menu, then **[!UICONTROL Triggers]**.
 

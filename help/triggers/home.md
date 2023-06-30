@@ -5,6 +5,10 @@ exl-id: aad9c013-6671-4e3b-adfc-fab79f2a3ef7
 ---
 # Adobe Experience Cloud Triggers{#triggers-home}
 
+>[!AVAILABILITY]
+>
+>Adobe Experience Cloud Triggers new user interface is progressively rolled out to all customers. For more info, contact your Adobe representative.
+
 The new user interface for Experience Cloud Triggers offers an intuitive experience to manage consumer behaviors and personalize user experiences.
 
 You can use Experience Cloud Triggers to connect data between Adobe Campaign and Adobe Analytics using the pipeline. The pipeline retrieves user’s actions or triggers from your website. A cart abandonment is an example of trigger. Triggers are processed in Adobe Campaign to send emails in near real-time.
