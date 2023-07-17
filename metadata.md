@@ -1,10 +1,7 @@
 ---
 cloud: Experience Cloud
-solution-title: Experience Cloud
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
-solution-icon: assets/experience-cloud.png
-getting-started-title: Experience League
-getting-started-url: https://landing.adobe.com/experience-league/
+solution: Experience Cloud
+type: Documentation
 git-repo: https://github.com/AdobeDocs/experience-cloud.en
 index: yes
 mini-toc-levels: 2
