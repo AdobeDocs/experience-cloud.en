@@ -3,6 +3,8 @@ user-guide-title: Adobe Experience Cloud Triggers
 user-guide-description: Adobe Experience Cloud Triggers
 breadcrumb-title: Adobe Experience Cloud Triggers
 solution: Experience Cloud
+feature: Triggers
+role: User
 ---
 # Experience Cloud Triggers {#triggers}
 
