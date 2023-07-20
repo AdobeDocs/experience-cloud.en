@@ -25,9 +25,9 @@ Create a trigger and configure the conditions for the trigger. For example, you 
 
     * **[!UICONTROL Abandonment]**: You can create a trigger to fire when a visitor views a product but does not add anything to the cart.
 
-    *  **[!UICONTROL Action]**: You can create triggers, for example, to fire after newsletter sign-ups, email subscriptions, or applications for credit cards (confirmations). If you are a retailer, you can create a trigger for a visitor who signs up for a loyalty program. In media and entertainment, create triggers for visitors who watch a certain show, and perhaps you want to respond with a survey.
+    * **[!UICONTROL Action]**: You can create triggers, for example, to fire after newsletter sign-ups, email subscriptions, or applications for credit cards (confirmations). If you are a retailer, you can create a trigger for a visitor who signs up for a loyalty program. In media and entertainment, create triggers for visitors who watch a certain show, and perhaps you want to respond with a survey.
 
-    *  **[!UICONTROL Session Start and Session End]**: Create a trigger for session start and session end events.
+    * **[!UICONTROL Session Start and Session End]**: Create a trigger for session start and session end events.
 
     ![](assets/triggers_1.png)
 
@@ -52,7 +52,7 @@ Create a trigger and configure the conditions for the trigger. For example, you 
 
     Each container processes independently at the hit level, meaning that if two containers are joined with the **[!UICONTROL And]** operator, the rules will only qualify when two hits meet the requirements.
 
-1. From the **[!UICONTROL Metadata]** field, click **[!UICONTROL + Dimension]** to choose a particular Campaign dimension or variables that are relevant to a visitor’s behavior.
+1. From the **[!UICONTROL Metadata]** field, click **[!UICONTROL + Dimension]** to choose a particular Campaign dimension or variables that are relevant to a visitor's behavior.
 
     ![](assets/triggers_3.png)
 

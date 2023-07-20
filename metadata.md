@@ -1,6 +1,7 @@
 ---
 cloud: Experience Cloud
 solution: Experience Cloud
+feature-set: Experience Cloud Services
 type: Documentation
 git-repo: https://github.com/AdobeDocs/experience-cloud.en
 index: yes
