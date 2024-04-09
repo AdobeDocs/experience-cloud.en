@@ -12,8 +12,6 @@ audience: end-user
 
 The **Push notification** report provides details of marketing performance of push notifications in Adobe Campaign. This out-of-the-box report helps you understand how users interact with push notifications, mobile applications and deliveries.
 
-Some configuration is required in the mobile application to implement push tracking, refer to this [page](../../administration/using/push-tracking.md) for the detailed steps.
-
 ![](assets/dynamic_report_push.png)
 
 Each table is represented by summary numbers and charts. You can change how the details are shown in their respective visualization settings.

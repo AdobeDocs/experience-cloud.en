@@ -31,10 +31,9 @@ The **Insert** table lets you customize your reports by adding graphs and tables
 
 **Related topics:**
 
-* [Adding panels](../../reporting/using/adding-panels.md)
-* [Adding visualizations](../../reporting/using/adding-visualizations.md)
-* [Adding components](../../reporting/using/adding-components.md)
-* [Sharing reports automatically with stakeholders through email](https://helpx.adobe.com/campaign/kb/simplify-campaign-management.html#Reportandshareinsightswithallstakeholders)
+* [Adding panels](adding-panels.md)
+* [Adding visualizations](adding-visualizations.md)
+* [Adding components](adding-components.md)
 
 ## Tabs {#tabs}
 
@@ -56,9 +55,9 @@ The toolbar can be found above your workspace. Composed of different tabs, it al
 
 **Related topics:**
 
-* [Adding panels](../../reporting/using/adding-panels.md)
-* [Adding visualizations](../../reporting/using/adding-visualizations.md)
-* [Adding components](../../reporting/using/adding-components.md)
+* [Adding panels](adding-panels.md)
+* [Adding visualizations](adding-visualizations.md)
+* [Adding components](adding-components.md)
 
 ### Project tab {#project-tab}
 
@@ -133,7 +132,3 @@ The **[!UICONTROL Share]** tab allows you to send your reports with Adobe Campai
     1. The **[!UICONTROL Edit scheduled report]** window appears, you can now change the recipients or frequency of your email if needed.
 
 The targeted users will then receive an email with your report attached directly in their inboxes. Users can always decide to stop receiving recurring emails using an unsubscription link available in each recurring email.
-
-**Related topic:**
-
-* [Sharing reports automatically with stakeholders through email](https://helpx.adobe.com/campaign/kb/simplify-campaign-management.html#Reportandshareinsightswithallstakeholders)

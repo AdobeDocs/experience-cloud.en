@@ -40,5 +40,5 @@ You can drag and drop as many components as needed and compare them to one anoth
 
 **Related topics:**
 
-* [List of components](../../reporting/using/list-of-components.md)
-* [List of reports](../../reporting/using/defining-the-report-period.md)
+* [List of components](list-of-components.md)
+* [List of reports](defining-the-report-period.md)

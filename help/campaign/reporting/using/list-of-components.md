@@ -6,9 +6,7 @@ audience: end-user
 ---
 # List of components {#list-of-components}
 
-To learn more on compatibility between dimensions and metrics, refer to this [table](/help/reporting/using/assets/dynamic_report_compatibility.pdf). If two components are not compatible, the cell will display the value **None**.
-
-[![image](assets/dynamic_report_compatibility.png)](https://experienceleague.adobe.com/docs/campaign-standard/assets/dynamic_report_compatibility.pdf)
+Note that if two components are not compatible, the cell will display the value **None**.
 
 ## Dimensions {#dimensions}
 
