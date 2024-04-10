@@ -6,13 +6,6 @@ level: Beginner
 ---
 # Get started with dynamic reporting {#get-started-reporting}
 
-<table>
-<tr>
-<td><img src="assets/do-not-localize/icon_manage.svg" width="60px"><p><a href="#manage-share-reports">Manage and share dynamic reports</a></p></td>
-<td><img src="assets/do-not-localize/icon_build.svg" width="60px"><p><a href="#build-reports">Build your reports</a></p></td>
-<td><img src="assets/do-not-localize/icon_customize.svg" width="60px"><p><a href="#customize-reports">Customize your reports</a></p></td></tr>
-</table>
-
 Dynamic Reporting provides fully customizable and real-time reports to measure the impact of your marketing activities. It adds access to profile data, enabling demographic analysis by profile dimensions such as gender, city and age in addition to functional email campaign data like opens and clicks.
 
 ## Manage and share reports {#manage-share-reports}
@@ -49,8 +42,6 @@ Read more:
 **Customize your reports** by leverage dynamic reporting designing capabilities: add as many components as you need (panels and freeform tables) to analyze your data using the available metric and dimensions.
 
 Drag and drop **visualization items** to add graphical representations of your data into your reports and configure them according to your needs.
-
-Create reports based on **custom profile data** created during the Profile resource extension, and **reports based on segments** defined in targeting workflows.
 
 Read more:
 

@@ -10,11 +10,9 @@ Dynamic Reporting provides fully customizable and real-time reports. It adds acc
 
 ## Accessing dynamic reports {#accessing-dynamic-reports}
 
-Reports can be accessed:
+Reports can be accessed in each campaign and delivery by clicking **Reports**. A popup window will appear, informing you that you will be redirected to the **Dynamic Report** page in a new browser tab.
 
-* From the home page by selecting **[!UICONTROL Reports]** tab in the top bar or the **[!UICONTROL Reports]** card to access reports for all deliveries.
-
-* In each program, campaign, and message, from the **Reports** button by clicking **Dynamic Reports** to only view the reports specific to the delivery.
+![](assets/campaign_reports_access.png)
 
 Certain reports cannot be available immediately after a delivery, depending on the time it takes to collect and process information.
 
