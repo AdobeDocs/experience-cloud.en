@@ -25,4 +25,4 @@ The second table, **Tracking statistics**, contains the available data for recip
 * **Click**: The number of times content was clicked in a delivery.
 * **Unsubscribed**: The number of clicks on the subscription link.
 * **Mirror Page**: The number of clicks on the mirror page link.
-* **On denylist**: The number of recipients who have declared an email as spam or junk. [Learn more](../../audiences/using/about-opt-in-and-opt-out-in-campaign.md)
+* **On denylist**: The number of recipients who have declared an email as spam or junk.
