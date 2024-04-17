@@ -13,49 +13,43 @@ level: Experienced
 >
 >Brands cannot be created or modified by end-users: these operations have to be performed by Adobe Campaign technical administrator. For any request, contact Adobe Customer care.
 
-Brands can be found in the **[!UICONTROL Administration > Instance settings > Brand configuration]** menu.
+In Adobe Campaign V8, Brands can be found in the **[!UICONTROL Administration > Platform > Branding]** menu.
 
-By default, a newly created brand is visible only to users assigned with the corresponding rights by the administrator.
+A **[!UICONTROL Brand]** is defined by the following characteristics:
 
-A **Brand** is defined by the following characteristics:
+* An **[!UICONTROL Identity]**, which defines and personalizes your brand. This section contains the following fields:
 
-* An **Identity**, which defines and personalizes your brand. This section contains the following fields:
-
-  ![](assets/branding_01.png)
-
-    * **Label** visible in the interface
-    * **Brand name**
-    * **Website URL** and **Website label** of the brand
-    * **Brand logo**
+    * **[!UICONTROL Label]** visible in the interface
+    * **[!UICONTROL ID]**
+    * **[!UICONTROL Brand name]**
+    * **[!UICONTROL Website URL]** and **[!UICONTROL Website label]** of the brand
+    * **[!UICONTROL Brand logo]**
 
 * **[!UICONTROL Header parameters of sent emails]** which personalizes what the recipients of your campaigns will see. This section contains the following fields:
 
-  ![](assets/branding_04_header.png)
-
-    * **Sender (email address)** with the brand's email address.
-    * **Sender (name)** with the brand's name.
-    * **Reply to (email address)** with the email address the customer can reply to.
-    * **Reply to (name)** with the brand's name.
-    * **Error (email address)** with the email address to use in case of an error.
+    * **[!UICONTROL Sender (email address)]** with the brand's email address.
+    * **[!UICONTROL Sender (name)]** with the brand's name.
+    * **[!UICONTROL Reply to (email address)]** with the email address the customer can reply to.
+    * **[!UICONTROL Reply to (name)]** with the brand's name.
+    * **[!UICONTROL Error (email address)]** with the email address to use in case of an error.
 
   >[!IMPORTANT]
   >
   >After having updated the header parameters of the emails, if the name and email address of the sender have not changed in the email created from the template, check the template's advanced settings.
 
-* **Server(s) exposed on the internet** defines the servers used for tracking but also for landing page access. This section contains the following fields:
+* **[!UICONTROL Brand configs]** defines the servers used for tracking but also for landing page access. This section contains the following fields:
 
-  ![](assets/configure_branding_04.png)
+    * **[!UICONTROL Brand subdomain]** used for hosting and accessing the different landing pages you create.
+    * **[!UICONTROL Tracking URL]** of the tracking server used as the tracked URL during the deliveries.
+    * **[!UICONTROL Mirror URL]** of the mirror page server used as the default mirror page in your deliveries.
+    * **[!UICONTROL Application URL]** of the application server used for hosting and accessing the different landing pages you create.
 
-    * **External URL of the application server** used for hosting and accessing the different landing pages you create.
-    * **External URL of the tracking server** used as the tracked URL during the deliveries.
-    * **External URL of the mirror page server** used as the default mirror page in your deliveries.
+  Note that configuration for tracking, mirror, and application servers is stored in separate external accounts associated with routing. These settings are applied during provisioning and should not be modified. To display URLs, access the **[!UICONTROL Branding prefixes]** tab from your external account.
 
-    >[!NOTE]
-    >
-    >To display the landing page preview and the mirror page rendering in the Campaign user interface, the application server and mirror page server URLs must be secure. In that case, use https:// rather than http:// when setting up these URLs.
+![](assets/branding_05.png)
 
-* **[!UICONTROL Tracking URL configuration (Web Analytics)]**, which defines the configuration of the URLs tracking for your brand.
+<!--
+* **[!UICONTROL Tracking URL configs]**, which defines the configuration of the URLs tracking for your brand.
 
   The additional parameters that allow the links to be tracked on external systems such as Web Analytics tools like Adobe Analytics or Google Analytics are defined here.
-
-  ![](assets/branding_05.png)
+-->
