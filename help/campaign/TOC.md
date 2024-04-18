@@ -38,5 +38,5 @@ role: User
 + Branding {#branding}
   + [About Branding](branding/using/branding-gs.md)
   + [Create a new brand](branding/using/branding-create.md)
-  + [Configure brands](branding/using/branding-configure.md)
-  + [Assign your brand](branding/using/branding-assign.md)
+  + [Configure a brand](branding/using/branding-configure.md)
+  + [Assign a brand](branding/using/branding-assign.md)
