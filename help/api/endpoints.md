@@ -4,8 +4,6 @@ description: Learn more about the APIs endpoints.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-
-
 role: Data Engineer
 level: Experienced
 exl-id: 9f6d3da6-374d-47f5-bc8f-b31b19cbb5ca

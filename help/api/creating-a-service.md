@@ -1,7 +1,6 @@
 ---
 title: Creating a service with APIs
 description: Learn how to create a service with APIs
-
 role: Data Engineer
 level: Experienced
 exl-id: 91bbce9e-a618-4be2-840b-c7d021271f4e
