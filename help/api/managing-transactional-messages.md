@@ -40,6 +40,7 @@ POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
   Note that the transactional messages API endpoint is also visible during the API preview.
 
 * **&lt;eventID&gt;**: the type of event you want to send. This ID is generated when creating the event configuration
+
 ### POST request header
 
 The request must contain a "Content-Type: application/json" header.
