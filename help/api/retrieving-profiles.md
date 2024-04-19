@@ -10,7 +10,7 @@ exl-id: 19679804-f728-49fa-b26e-8f31b67c29bf
 
 Retrieving profiles is performed with a **GET** request.
 
-You can then refine your search by using filters, ordering and pagination. For more on this, refer to the [Additional operations](../../api/using/sorting.md) section.
+You can then refine your search by using filters, ordering and pagination. For more on this, refer to the [Additional operations](sorting.md) section.
 
 Additionally, Campaign Standard APIs allow you to search for profiles based on one of these fields: email, first name, last name or any custom field. For more on this, refer to [this section](#searching-field).
 

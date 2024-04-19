@@ -14,7 +14,7 @@ exl-id: cdb050b7-d327-42f7-b534-d32d988c8ffb
 
 ## Retrieving filters metadata
   
-Filters are available for each resource. To identify the filters associated to a resource, you need to perform a GET request on the resource metadata. This request returns the URL where all of the filters are defined for a given resource. For more on metadata, refer to [this section](../../api/using/metadata-mechanism.md).
+Filters are available for each resource. To identify the filters associated to a resource, you need to perform a GET request on the resource metadata. This request returns the URL where all of the filters are defined for a given resource. For more on metadata, refer to [this section](metadata-mechanism.md).
   
 To identify the metadata of a filter and determine how to use it, you have to perform a GET request on the previously returned URL.
 
