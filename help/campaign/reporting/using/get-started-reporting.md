@@ -8,13 +8,13 @@ level: Beginner
 
 Dynamic Reporting provides fully customizable and real-time reports to measure the impact of your marketing activities. It adds access to profile data, enabling demographic analysis by profile dimensions such as gender, city and age in addition to functional email campaign data like opens and clicks.
 
-## Manage and share reports {#manage-share-reports}
+## Manage reports {#manage-share-reports}
 
 <img src="assets/do-not-localize/icon_manage.svg" width="60px">
 
 With Dynamic reporting **drag-and-drop interface**, you can explore data, determine how your email campaigns performed against your most important customer segments and measure their impact on recipients from one single place.
 
-**Manage your dynamic reports** thanks to various functionalities: refresh the data in real-time, print your reports, or export them as CSV files. You can also share your reports with users through one-shot or recurring emails.
+**Manage your dynamic reports** thanks to various functionalities: refresh the data in real-time, print your reports, or export them as CSV files.
 
 Read more:
 
