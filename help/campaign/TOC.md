@@ -35,3 +35,8 @@ role: User
        + [Adding panels](reporting/using/adding-panels.md)
        + [Adding visualizations](reporting/using/adding-visualizations.md)
        + [Adding components](reporting/using/adding-components.md)
++ Branding {#branding}
+  + [About Branding](branding/using/branding-gs.md)
+  + [Create a new brand](branding/using/branding-create.md)
+  + [Configure a brand](branding/using/branding-configure.md)
+  + [Assign a brand](branding/using/branding-assign.md)
