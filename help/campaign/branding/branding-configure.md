@@ -45,8 +45,6 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
 
   Note that configuration for tracking, mirror, and application servers is stored in separate external accounts associated with routing. These settings are applied during provisioning and should not be modified. To display URLs, access the **[!UICONTROL Branding prefixes]** tab from your external account.
 
-![](assets/branding_05.png)
-
 <!--
 * **[!UICONTROL Tracking URL configs]**, which defines the configuration of the URLs tracking for your brand.
 
