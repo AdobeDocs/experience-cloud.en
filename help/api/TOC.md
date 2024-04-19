@@ -1,10 +1,7 @@
 ---
-user-guide-title: Adobe Experience Cloud Triggers
-user-guide-description: Adobe Experience Cloud Triggers
-breadcrumb-title: Adobe Experience Cloud Triggers
-solution: Experience Cloud
-feature: Triggers
-role: User
+user-guide-title: Adobe Campaign Standard APIs
+user-guide-description: Adobe Campaign Standard APIs
+breadcrumb-title: Adobe Campaign Standard APIs
 ---
 # Adobe Campaign Standard APIs {#campaign-standard-apis}
 
