@@ -4,8 +4,6 @@ description: Learn how to set up access to Campaign Standard APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-
-
 role: Data Engineer
 level: Experienced
 exl-id: efbbd0cd-9c56-4ad0-8bcb-efba4b63c28b

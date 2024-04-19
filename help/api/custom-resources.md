@@ -4,8 +4,6 @@ description: Learn more about custom resources management with APIs/
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-
-
 role: Data Engineer
 level: Experienced
 exl-id: d7b2231d-46ff-4966-9ea7-27a775e5236b

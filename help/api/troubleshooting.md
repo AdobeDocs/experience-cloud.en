@@ -1,7 +1,6 @@
 ---
 title: API Troubleshooting
 description: Learn more about common issues related Campaign Standard APIs
-
 role: Data Engineer
 level: Experienced
 exl-id: 404356cd-021f-4739-a88f-b8b1b79e19bc

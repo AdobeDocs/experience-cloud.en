@@ -4,8 +4,6 @@ description: Must-read before using APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-
-
 role: Data Engineer
 level: Experienced
 exl-id: 9e2d1b59-55a5-4715-adfb-35191a9df536
