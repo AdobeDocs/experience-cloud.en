@@ -3,7 +3,6 @@ title: Branding
 description: Discover all the tools available to manage your branding identities
 audience: administration
 context-tags: branding,overview;branding,main
-feature: Instance Settings
 role: Admin
 level: Experienced
 ---
