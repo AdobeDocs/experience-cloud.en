@@ -1,7 +1,7 @@
 ---
 title: Performing subscriptions
 description: Learn how to perform subscriptions with APIs
-feature: API
+
 role: Data Engineer
 level: Experienced
 exl-id: 64f321a3-436a-4b7c-99d8-0c006203012e

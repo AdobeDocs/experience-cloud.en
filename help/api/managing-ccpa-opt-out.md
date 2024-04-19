@@ -5,7 +5,7 @@ audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
 
-feature: API
+
 role: Data Engineer
 level: Experienced
 exl-id: bfc52511-f66f-4948-a939-d0d77e8ef03c

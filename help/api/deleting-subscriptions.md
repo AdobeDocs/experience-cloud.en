@@ -1,7 +1,7 @@
 ---
 title: Deleting subscriptions
 description: Learn how to delete subscriptions with APIs
-feature: API
+
 role: Data Engineer
 level: Experienced
 exl-id: 76e2d102-c877-41a6-af87-2f407201a572

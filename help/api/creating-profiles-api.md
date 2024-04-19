@@ -4,7 +4,7 @@ description: Learn more how to create profiles with APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-feature: API
+
 role: Data Engineer
 level: Experienced
 exl-id: 69e8d034-6bdd-4b82-bcd7-1ef4be0a59b3
