@@ -3,7 +3,6 @@ title: Branding
 description: Discover how to assign your brand
 audience: administration
 context-tags: branding,overview;branding,main
-feature: Instance Settings
 role: Admin
 level: Experienced
 ---
