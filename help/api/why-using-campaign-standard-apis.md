@@ -55,7 +55,7 @@ The steps below describe a step-by-step use case to import and use the collectio
 
     ![alt text](assets/postman_collection.png)
 
-1. Select the **Creating a profile** request, then update the POST request and the **Headers** tab with your own information (&lt;ORGANIZATION&gt;, &lt;API_KEY&gt;, &lt;ACCESS_TOKEN&gt;). For more on this, refer to [this section](../../api/using/setting-up-api-access.md).
+1. Select the **Creating a profile** request, then update the POST request and the **Headers** tab with your own information (&lt;ORGANIZATION&gt;, &lt;API_KEY&gt;, &lt;ACCESS_TOKEN&gt;). For more on this, refer to [this section](setting-up-api-access.md).
 
     ![alt text](assets/postman_uc1.png)
 

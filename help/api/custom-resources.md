@@ -70,9 +70,3 @@ It returns the list of all linked custom resources. You can then use the resourc
 }
 
 ```
-
-For more information on data model extension, refer to the Campaign documentation:
-
-* [Data model concepts](../../developing/using/data-model-concepts.md)
-* [Extending the API](../../developing/using/about-extending-the-api.md)
-* [Defining links with other resources](https://helpx.adobe.com/campaign/standard/developing/using/configuring-the-resource-s-data-structure.html#defining-links-with-other-resources)

@@ -14,7 +14,7 @@ exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
 
 Sorting is available by default in ascending order. To sort in descending order, append **%20desc** to the **_order** parameter's value.
 
-To know if a field can be sorted, check the "sortable" parameter into the resource metadata. For more on this, refer to [this section](../../api/using/metadata-mechanism.md).
+To know if a field can be sorted, check the "sortable" parameter into the resource metadata. For more on this, refer to [this section](metadata-mechanism.md).
 
 <br/>
 
