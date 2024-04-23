@@ -40,3 +40,32 @@ role: User
   + [Create a new brand](branding/branding-create.md)
   + [Configure a brand](branding/branding-configure.md)
   + [Assign a brand](branding/branding-assign.md)
++ Adobe Campaign Standard {#apis}
+  + [Get started with Campaign Standard APIs](api/get-started-apis.md)
+  + [Why use Campaign Standard APIs](api/why-using-campaign-standard-apis.md)
+  + [Setting up API access](api/setting-up-api-access.md)
+  + Global concepts {#global-concepts}
+     + [Must-read](api/must-read.md)
+     + [Endpoints](api/endpoints.md)
+     + [Metadata mechanism](api/metadata-mechanism.md)
+     + [Verbs](api/verbs.md)
+     + Additional operations {#additional-operations}
+          + [Sorting](api/sorting.md)
+          + [Filtering](api/filtering.md)
+          + [Counting](api/counting.md)
+          + [Pagination](api/pagination.md)
+     + [Custom resources](api/custom-resources.md)
+  + [Interacting with custom resources](api/interacting-with-custom-resources.md)  
+  + Managing profiles {#managing-profiles}
+     + [Retrieving profiles](api/retrieving-profiles.md)
+     + [Updating profiles](api/updating-profiles.md)
+     + [Creating profiles](api/creating-profiles-api.md)
+  + Managing services and subscription {#managing-services-and-subscriptiopns}
+     + [Creating a service](api/creating-a-service.md)
+     + [Retrieving subscriptions](api/retrieving-subscriptions.md)
+     + [Perform subscriptions](api/perform-subscriptions.md)
+     + [Deleting subscriptions](api/deleting-subscriptions.md)
+  + [Managing transactional messages](api/managing-transactional-messages.md)
+  + Managing workflows {#managing-workflows}
+     + [Controlling a workflow](api/controlling-a-workflow.md)
+     + [Triggering a signal activity](api/triggering-a-signal-activity.md)
