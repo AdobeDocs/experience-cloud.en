@@ -36,7 +36,7 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
   >
   >After having updated the header parameters of the emails, if the name and email address of the sender have not changed in the email created from the template, check the template's advanced settings.
 
-* **[!UICONTROL Brand configs]** defines the servers used for tracking. This section contains the following fields:
+* **[!UICONTROL Brand configs]** defines the servers used for tracking also for landing page access. This section contains the following fields:
 
     * **[!UICONTROL Brand subdomain]** used for hosting and accessing the different landing pages you create.
     * **[!UICONTROL Tracking URL]** of the tracking server used as the tracked URL during the deliveries.
