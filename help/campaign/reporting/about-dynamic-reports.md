@@ -22,5 +22,3 @@ Dynamic reports are divided into two categories:
 * **Custom reports** (identified in blue), which can be directly created by clicking the **Create New Project** button on the **Reports** home page.
 
 ![](assets/dynamic_report_overview.png)
-
-

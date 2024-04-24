@@ -1,11 +1,11 @@
 ---
-user-guide-title: Adobe Campaign Web User interface
-user-guide-description:  Adobe Campaign Web User interface
-breadcrumb-title:  Adobe Campaign Web User interface
+user-guide-title: Adobe Campaign v8
+user-guide-description:  Adobe Campaign v8
+breadcrumb-title: Adobe Campaign v8
 solution: Experience Cloud
 role: User
 ---
-# Adobe Campaign Web User interface {#campaign}
+# Adobe Campaign v8 {#campaign}
 
 + [Home](home.md)
 + Dynamic reporting {#reporting}
@@ -40,9 +40,9 @@ role: User
   + [Create a new brand](branding/branding-create.md)
   + [Configure a brand](branding/branding-configure.md)
   + [Assign a brand](branding/branding-assign.md)
-+ Adobe Campaign Standard {#apis}
-  + [Get started with Campaign Standard APIs](api/get-started-apis.md)
-  + [Why use Campaign Standard APIs](api/why-using-campaign-standard-apis.md)
++ REST APIs {#apis}
+  + [Get started with REST APIs](api/get-started-apis.md)
+  + [Why use REST APIs](api/why-using-campaign-standard-apis.md)
   + [Setting up API access](api/setting-up-api-access.md)
   + Global concepts {#global-concepts}
      + [Must-read](api/must-read.md)
