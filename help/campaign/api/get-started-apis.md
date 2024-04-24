@@ -12,13 +12,13 @@ exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
 
 >[!CAUTION]
 >
->This documentation is intended for Adobe Campaign Standard customers migrating to Campaign Web User Interface.
+>This documentation is intended for Adobe Campaign Standard customers migrating to Campaign v8.
 >
 >Before performing API calls, please check the scale limitations corresponding to your license agreement. For more on this, refer to [this page](https://helpx.adobe.com/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers).
 
-Campaign Standard APIs are aimed at letting you **create integrations** for Adobe Campaign Standard and **build your own ecosystem** by interfacing Adobe Campaign Standard with the panel of technologies that you use.
+Campaign REST APIs are aimed at letting you **create integrations** for Adobe Campaign and **build your own ecosystem** by interfacing Adobe Campaign with the panel of technologies that you use.
 
-With the Adobe Campaign Standard APIs, you get access to the following functionalities:
+With the Adobe Campaign REST APIs, you get access to the following functionalities:
 
 <table><tr>
  <td valign="top"><a href="retrieving-profiles.md"><img width="60px" alt="conditions" src="assets/icon_profile.svg"/></a><p><a href="retrieving-profiles.md">Profiles</a></p></td>
@@ -27,7 +27,7 @@ With the Adobe Campaign Standard APIs, you get access to the following functiona
 <td valign="top"><a href="controlling-a-workflow.md"><img width="60px" alt="conditions" src="assets/icon_workflows.svg"/></a><p><a href="controlling-a-workflow.md">Workflows</a></p></td>
 </tr></table>
 
-To use the Campaign Standard API, you need an Adobe I/O account. This is a mandatory first step to go forward and discover the API features. 
+To use the Campaign REST APIs, you need an Adobe I/O account. This is a mandatory first step to go forward and discover the API features. 
 For more on this, refer to [this section](setting-up-api-access.md).
 
 The APIs we provide use **standard concepts** with a REST interface and JSON payloads.
