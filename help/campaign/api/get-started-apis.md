@@ -1,5 +1,5 @@
 ---
-title: Get started with Campaign Standard APIs
+title: Get started with Campaign REST APIs
 description: Create integrations and build your own ecosystem by interfacing Campaign with a panel of technologies.
 audience: developing
 content-type: reference
@@ -8,7 +8,7 @@ role: Data Engineer
 level: Experienced
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
 ---
-# Get started with Campaign Standard APIs {#get-started-apis}
+# Get started with Campaign REST APIs {#get-started-apis}
 
 >[!CAUTION]
 >
