@@ -1,6 +1,7 @@
 ---
 title: Adobe Campaign Web User interface
 description: Discover Adobe Campaign Web User interface
+badge: label="LIMITED AVAILABILITY" type="Informative" url="hhttps://experienceleague-review.corp.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Campaign Standard transition to Campaign v8 {#triggers-home}
 
