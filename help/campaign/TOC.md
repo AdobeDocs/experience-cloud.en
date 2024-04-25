@@ -7,7 +7,7 @@ role: User
 ---
 # Adobe Campaign v8 {#campaign}
 
-+ [Home](home.md)
++ [Home](campaign-standard-migration-home.md)
 + Dynamic reporting {#reporting}
   + [Get started with dynamic reports](reporting/get-started-reporting.md)
   + About reporting {#about-reporting}
