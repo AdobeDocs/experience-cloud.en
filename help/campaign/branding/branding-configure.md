@@ -5,7 +5,7 @@ audience: administration
 context-tags: branding,overview;branding,main
 role: Admin
 level: Experienced
-badge: label="LIMITED AVAILABILITY" type="Informative" url="https://experienceleague-review.corp.adobe.com/docs/experience-cloud/campaign/campaign-standard-migration-home.html" tooltip="Restricted to Campaign Standard migrated users"
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Configure brands {#branding-configure}
 
