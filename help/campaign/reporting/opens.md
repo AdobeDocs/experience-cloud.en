@@ -3,6 +3,7 @@ title: Opens
 description: With the Opens report, learn which delivery was the most viewed according to various criteria.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Opens{#opens}
 

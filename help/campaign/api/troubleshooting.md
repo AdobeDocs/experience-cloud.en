@@ -3,6 +3,7 @@ title: API Troubleshooting
 description: Learn more about common issues related Campaign Standard APIs
 role: Data Engineer
 level: Experienced
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 404356cd-021f-4739-a88f-b8b1b79e19bc
 ---
 # API troubleshooting {#troubleshooting}

@@ -3,6 +3,7 @@ title: Delivery summary
 description: With the Delivery summary out-of-the-box report, learn about your deliveries statistics, such as number of sends, bounces and opens.
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Delivery summary{#delivery-summary}
 

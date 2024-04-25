@@ -3,6 +3,7 @@ title: Get started with dynamic reporting
 description: Analyze the success of your campaigns in build-in or customized dynamic reports.
 audience: end-user
 level: Beginner
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Get started with dynamic reporting {#get-started-reporting}
 

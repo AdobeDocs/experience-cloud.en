@@ -3,6 +3,7 @@ title: SMS report
 description: With the SMS out-of-the-box report, learn about the success of your SMS deliveries. 
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # SMS report{#sms-report}
 

@@ -2,6 +2,7 @@
 title: Adding panels
 description: Dynamic report allows you to add panel to better filter your data depending on the chosen time period.
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 level: Intermediate
 ---
 # Adding panels{#adding-panels}

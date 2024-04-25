@@ -3,6 +3,7 @@ title: Retrieving subscriptions
 description: Learn how to retrieve subscriptions with APIs
 role: Data Engineer
 level: Experienced
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 6d935074-3196-45c5-97cd-ccb7c80bbba8
 ---
 # Retrieving subscriptions with APIs {#retrieving-subscriptions-api}

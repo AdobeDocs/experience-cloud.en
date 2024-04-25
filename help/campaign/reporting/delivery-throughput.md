@@ -3,6 +3,7 @@ title: Delivery throughput
 description: With the Delivery throughput out-of-the-box report, learn about the success of your delivery.
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Delivery throughput{#delivery-throughput}
 

@@ -6,6 +6,7 @@ content-type: reference
 topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
 ---
 # Get started with Campaign REST APIs {#get-started-apis}

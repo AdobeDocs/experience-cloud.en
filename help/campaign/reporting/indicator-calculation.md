@@ -3,6 +3,7 @@ title: Indicator calculation
 description: Understand the results of your reports with a list of every metric's formula.
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Indicator calculation{#indicator-calculation}
 

@@ -3,6 +3,7 @@ title: Unsubscriptions
 description: With the Unsubscriptions out-of-the-box report, learn how many times customers unsubscribed to your deliveries.
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Unsubscriptions{#unsubscriptions}
 

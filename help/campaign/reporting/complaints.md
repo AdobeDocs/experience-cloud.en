@@ -3,6 +3,7 @@ title: Complaints
 description: With the Complaints out-of-the-box report, learn how many time delivery was declared as spam.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Complaints{#complaints}
 

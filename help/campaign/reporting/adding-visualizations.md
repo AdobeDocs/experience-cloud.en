@@ -2,6 +2,7 @@
 title: Adding visualizations
 description: Dynamic reports offer a set of visualizations to add a graphical representation to your report.
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 audience: end-user
 ---
 # Adding visualizations{#adding-visualizations}

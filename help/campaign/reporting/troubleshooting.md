@@ -3,6 +3,7 @@ title: Troubleshooting Dynamic reporting
 description: Find here common questions related to Dynamic reporting.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Troubleshooting{#troubleshooting}
 

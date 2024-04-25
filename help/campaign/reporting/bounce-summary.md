@@ -3,6 +3,7 @@ title: Bounce summary
 description: With the Bounce summary out-of-the-box report, learn about the status of your sent campaigns and errors they may have encountered.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Bounce summary{#bounce-summary}
 

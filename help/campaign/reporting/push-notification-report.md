@@ -3,6 +3,7 @@ title: Push notification report
 description: With the Push notification out-of-the-box report, learn about the success of your push notifications.
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Push notification report{#push-notification-report}
 

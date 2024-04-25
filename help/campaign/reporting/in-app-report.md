@@ -3,6 +3,7 @@ title: In-App report
 description: With the In-App out-of-the-box report, learn about the success of your In-App messages.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # In-App report{#in-app-report}
 

@@ -3,6 +3,7 @@ title: Non-deliverables and bounces
 description: With the Non-deliverables and bounces out-of-the-box report, learn about the errors that may occurred to your delivery. 
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Non-deliverables and bounces{#non-deliverables-and-bounces}
 

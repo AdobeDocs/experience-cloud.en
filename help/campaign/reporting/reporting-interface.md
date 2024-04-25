@@ -3,6 +3,7 @@ title: Reporting interface
 description: Learn more about Dynamic report interface basis and how to navigate through the different tabs and menus.
 level: Beginner
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Reporting interface{#reporting-interface}
 

@@ -3,6 +3,7 @@ title: Tracking indicators
 description: With the Tracking indicators out-of-the-box report, learn about the behavior of your customers when they receive email messages.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Tracking indicators{#tracking-indicators}
 

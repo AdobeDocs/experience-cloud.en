@@ -3,6 +3,7 @@ title: URLs and click streams
 description: With the URLs and click streams out-of-the-box report, learn about the success of the URLs in your deliveries.
 level: Intermediate
 audience: end-user
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # URLs and click streams{#urls-and-click-streams}
 

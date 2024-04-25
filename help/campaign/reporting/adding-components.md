@@ -3,6 +3,7 @@ title: Adding components
 description: Drag and drop components to your freeform table to start filtering your data and building your report.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Adding components{#adding-components}
 

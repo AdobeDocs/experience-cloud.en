@@ -2,6 +2,7 @@
 title: Get started with dynamic reports
 description: With dynamic reports, drag and drop variables and dimensions into your freeform environment and analyze the success of your campaigns.
 level: Beginner
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 audience: end-user
 ---
 # Get started with dynamic reports {#about-dynamic-reports}

@@ -3,6 +3,7 @@ title: Defining the report period
 description: The time period of your report allows you to filter your data depending on the chosen dates.
 audience: end-user
 level: Intermediate
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Defining the report period{#defining-the-report-period}
 
