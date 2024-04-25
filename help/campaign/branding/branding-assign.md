@@ -5,7 +5,7 @@ audience: administration
 context-tags: branding,overview;branding,main
 role: Admin
 level: Experienced
-badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md tooltip="Restricted to Campaign Standard migrated users"
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 # Assign your brand {#branding-assign}
 
