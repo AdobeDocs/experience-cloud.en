@@ -34,7 +34,6 @@ role: User
        + [Adding components](reporting/adding-components.md)
 + Branding {#branding}
   + [About Branding](branding/branding-gs.md)
-  + [Create a new brand](branding/branding-create.md)
   + [Configure a brand](branding/branding-configure.md)
   + [Assign a brand](branding/branding-assign.md)
 + REST APIs {#apis}

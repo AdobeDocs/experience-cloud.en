@@ -25,6 +25,8 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
     * **[!UICONTROL Website URL]** and **[!UICONTROL Website label]** of the brand
     * **[!UICONTROL Brand logo]**
 
+  ![](assets/branding_1.png)
+
 * **[!UICONTROL Header parameters of sent emails]** which personalizes what the recipients of your campaigns will see. This section contains the following fields:
 
     * **[!UICONTROL Sender (email address)]** with the brand's email address.
@@ -37,7 +39,9 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
   >
   >After having updated the header parameters of the emails, if the name and email address of the sender have not changed in the email created from the template, check the template's advanced settings.
 
-* **[!UICONTROL Brand configs]** defines the servers used for tracking also for landing page access.. This section contains the following fields:
+  ![](assets/branding_2.png)
+
+* **[!UICONTROL Brand configs]** defines the servers used for tracking also for landing page access. This section contains the following fields:
 
     * **[!UICONTROL Brand subdomain]** used for hosting and accessing the different landing pages you create.
     * **[!UICONTROL Tracking URL]** of the tracking server used as the tracked URL during the deliveries.
@@ -45,6 +49,8 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
     * **[!UICONTROL Application URL]** of the application server used for hosting and accessing the different landing pages you create.
 
   Note that configuration for tracking, mirror, and application servers is stored in separate external accounts associated with routing. These settings are applied during provisioning and should not be modified. To display URLs, access the **[!UICONTROL Branding prefixes]** tab from your external account.
+
+  ![](assets/branding_3.png)
 
 <!--![](assets/branding_05.png)-->
 
