@@ -42,32 +42,8 @@ The table below gives you the list of dimensions used in reports and their defin
    <td> Types of errors that caused bounces for each delivery e.g. user unknown, invalid domain or mailbox full.<br/> </td> 
   </tr> 
   <tr> 
-   <td> In-App message actions<br/> </td> 
-   <td> Actions on the In-App message delivered, e.g. actions on button 1 or 2 or dismissals.<br/> </td> 
-  </tr> 
-  <tr> 
-   <td> Message type<br/> </td> 
-   <td> Channel used for the delivery, such as email, SMS, push notification or In-App.<br/> </td> 
-  </tr> 
-  <tr> 
    <td> Mobile App name<br/> </td> 
    <td> Name of the mobile application<br/> </td> 
-  </tr>
-  <tr> 
-   <td> Offer<br/> </td> 
-   <td> <br/> </td> 
-  </tr>
-  <tr> 
-   <td> Offer eligibility rule<br/> </td> 
-   <td> <br/> </td> 
-  </tr>
-  <tr> 
-   <td> Offer filter<br/> </td> 
-   <td> <br/> </td> 
-  </tr>
-  <tr> 
-   <td> Offer placement<br/> </td> 
-   <td> <br/> </td> 
   </tr>
   <tr> 
    <td> Platform<br/> </td> 
@@ -76,10 +52,6 @@ The table below gives you the list of dimensions used in reports and their defin
   <tr> 
    <td> Profile<br/> </td> 
    <td> Regroups out-of-the-box and custom profile fields created during the profile resource extension.<br/> </td> 
-  </tr> 
-  <tr> 
-   <td> Push platform<br/> </td> 
-   <td> Platform of the device from which the push notification was opened, such as iOS or Android.<br/> </td> 
   </tr> 
   <tr> 
    <td> Recipient domain<br/> </td> 
@@ -124,7 +96,7 @@ The table below gives you the list of dimensions used in reports and their defin
 
 The tables below give you the list of metrics used in reports and their definitions depending on the delivery type.
 
-### Email and SMS metrics {#email-and-sms-metrics}
+### Email metrics {#email-and-sms-metrics}
 
 <table> 
  <thead> 
@@ -249,6 +221,7 @@ The tables below give you the list of metrics used in reports and their definiti
  </tbody> 
 </table>
 
+<!--
 ### Push notification metrics {#push-notification-metrics}
 
 <table> 
@@ -366,7 +339,7 @@ The tables below give you the list of metrics used in reports and their definiti
   </tr> 
  </tbody> 
 </table>
-
+-->
 ## Segments {#segments}
 
 The table below gives you the list of segments used in reports and their definitions.

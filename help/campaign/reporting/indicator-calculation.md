@@ -214,6 +214,7 @@ The tables below give you the list of indicators used in the different reports a
  </tbody> 
 </table>
 
+<!--
 ## Push notification delivery {#push-notification-delivery}
 
 <table> 
@@ -362,3 +363,4 @@ The tables below give you the list of indicators used in the different reports a
   </tr> 
  </tbody> 
 </table>
+-->
