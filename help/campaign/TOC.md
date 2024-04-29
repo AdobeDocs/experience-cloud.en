@@ -42,6 +42,7 @@ role: User
   + [Assign a brand](branding/branding-assign.md)
 + REST APIs {#apis}
   + [Get started with REST APIs](api/get-started-apis.md)
+  + [Recommendations & limitations](api/limitations.md)
   + [Why use REST APIs](api/why-using-campaign-standard-apis.md)
   + [Setting up API access](api/setting-up-api-access.md)
   + Global concepts {#global-concepts}
