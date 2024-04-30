@@ -43,10 +43,7 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
 
 * **[!UICONTROL Brand configs]** defines the servers used for tracking also for landing page access. This section contains the following fields:
 
-    * **[!UICONTROL Brand subdomain]** used for hosting and accessing the different landing pages you create.
-    * **[!UICONTROL Tracking URL]** of the tracking server used as the tracked URL during the deliveries.
-    * **[!UICONTROL Mirror URL]** of the mirror page server used as the default mirror page in your deliveries.
-    * **[!UICONTROL Application URL]** of the application server used for hosting and accessing the different landing pages you create.
+    * **[!UICONTROL Brand subdomain]** refers to the designated subdomain URL specific to this brand, requested for delegation from Adobe.
 
   Note that configuration for tracking, mirror, and application servers is stored in separate external accounts associated with routing. These settings are applied during provisioning and should not be modified. To display URLs, access the **[!UICONTROL Branding prefixes]** tab from your external account.
 
