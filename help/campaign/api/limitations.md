@@ -34,7 +34,7 @@ Management of PKey values differs between Campaign Standard and Campaign v8. If 
 
 Some fields from the database are being dropped during migration. When using a dropped field, REST APIs will return blank values. In the future, all dropped fields will be deprecated and removed.
 
-<!-->= https://wiki.corp.adobe.com/display/MSE/REST+API+Migration+%3A%3A+Profile#RESTAPIMigration::Profile-ProfilefieldspresentinCampaign StandardbutmissinginCampaign v8
+<!--= https://wiki.corp.adobe.com/display/MSE/REST+API+Migration+%3A%3A+Profile#RESTAPIMigration::Profile-ProfilefieldspresentinCampaign StandardbutmissinginCampaign v8
 on doit les lister ? lesquels sont dropped ou pas ?-->
 
 ## PATCH operations

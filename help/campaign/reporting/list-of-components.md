@@ -340,6 +340,7 @@ The tables below give you the list of metrics used in reports and their definiti
  </tbody> 
 </table>
 -->
+
 ## Segments {#segments}
 
 The table below gives you the list of segments used in reports and their definitions.
