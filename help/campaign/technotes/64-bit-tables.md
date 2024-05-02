@@ -12,7 +12,7 @@ In order to facilite the transition from Campaign Standard to Campaign v8, sever
 
 * This technical implementation only applies to customers migrating from Campaign Standard. 
 * Schema and broadlog extentions are not supported. They will remain in 32 bits. 
-* Be aware that logs related to deliveries send to technical users will not be available in Campaign v8. 
+* Be aware that logs related to deliveries sent to technical users will not be available in Campaign v8. 
 * Only PostgreSQL is suppored.
 
 ## Migrated schemas
@@ -21,7 +21,23 @@ Here is the list of extended schemas and their modified attributes.
 
 | Header | Another header |
 |--- |--- |--- |
-| row 1 | row 1 column 2 | 
-| row 2 | row 2 column 2 | 
+| nms:broadLogRcp | id | 
+| nms:trackingLogRcp | id | 
+| nms:excludeLogRcp | id | 
+| nms:broadLogVisitor | id | 
+| nms:trackingLogVisitor | id | 
+| nms:propositionRcp | interactionId | 
+| nms:propositionVisitor | interactionId | 
+| nms:webTrackingLog | id | 
+| nms:tmpBroadcast | message-id | 
+| nms:tmpMarketingPressure | message-id | 
+| nms:tmpBroadcastExclusion | message-id | 
+| nms:tmpBroadcastPaper | message-id | 
+| nms:broadLogAppSubRcp | id | 
+| nms:trackingLogAppSubRcp | id | 
+| nms:excludeLogAppSubRcp | id | 
+| nms:webEvent | broadLogSrc-id, broadLogRemkt-id | 
+| nms:broadLogMid | mktBroadLogId | 
+| nms:mirrorPageSearch | remoteMessageId | 
 
 
