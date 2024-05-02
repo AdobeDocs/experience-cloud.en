@@ -3,7 +3,6 @@ title: Creating a custom profile dimension
 description: Learn how to create a custom profile dimension based on custom profile data.
 audience: reporting
 content-type: reference
-feature: Reporting
 level: Intermediate
 ---
 # Creating a custom profile dimension{#creating-a-custom-profile-dimension}
