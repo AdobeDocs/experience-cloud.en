@@ -19,25 +19,33 @@ To add a new profile field, you need to extend your schema, follow the steps bel
 
 1. Navigate to the **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** folder in the Explorer.
 
-1. Identify your cus:recipient schema and select it. If you have not yet extended the built-in recipient schema, refer to [this procedure](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
+   ![](assets/custom_field_1.png)
+
+1. Identify your custom recipient schema and select it. If you have not yet extended the built-in nms:recipient schema, refer to [this procedure](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
 
 1. Add your custom field to the schema editor.
 
    For example, to add a Loyalty custom field in your recipient schema: 
 
    ```
-   <attribute label="Loyalty" length="255" name="loyalty" type="string"/>
+   <attribute label="Loyalty" name="loyalty" type="string"/>
    ```
 
-1. Click Save.
+   ![](assets/custom_field_2.png)
 
-1. Identify your cus:broadLogRcp and select it. If you have not yet extended the built-in Delivery log schema, refer to [this procedure](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
+1. Click **[!UICONTROL Save]**.
+
+1. Then, identify your custom broadLogRcp schema and select it. If you have not yet extended the built-in Delivery log schema, refer to [this procedure](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
 
 1. Add the same custom field as your Recipient schema to the schema editor.
 
-1. Click Save.
+   ![](assets/custom_field_3.png)
+
+1. Click **[!UICONTROL Save]**.
 
 1. To apply the modifications made to the schemas, launch the Database update wizard via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure]** and run the Update the database structure. [Learn more](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/update-database-structure)
+
+   ![](assets/custom_field_4.png)
 
 Your new profile field is now ready to be used and selected by your recipients.
 
@@ -51,13 +59,19 @@ Now that your profile field is created, we need to link it to the corresponding 
 
 1. Navigate to the **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** > **[!UICONTROL Additional reporting field]** folder in the Explorer.
 
+   ![](assets/custom_field_5.png)
+
 1. Click **[!UICONTROL New]** to create your corresponding Dynamic reporting dimension.
 
 1. Select **[!UICONTROL Edit expression]** and browse through the Recipient schema to find your previously created custom profile field.
 
+   ![](assets/custom_field_6.png)
+
 1. Click **[!UICONTROL Finish]**.
 
 1. Type-in your dimension **[!UICONTROL Label]**, visible in Dynamic reporting, and click **[!UICONTROL Save]**.
+
+   ![](assets/custom_field_7.png)
 
 Your custom profile field is now available as a custom profile dimension in your reports. To delete your custom profile dimension, you can select it and click the **[!UICONTROL Delete]** icon. 
 
@@ -65,12 +79,16 @@ Now that recipient schema has been extended with this profile field and your cus
 
 ## Step 3: Create a dynamic report to filter recipients with the custom profile dimension {#create-report}
 
-After sending your delivery, you can breakdown reports using your custom profile dimension from the **[!UICONTROL Profile]** table.
+After sending your delivery, you can breakdown reports using your custom profile dimension.
 
 1. From the **[!UICONTROL Reports]** tab, select an out-of-the-box report or click the **[!UICONTROL Create]** button to start one from scratch.
 
+   ![](assets/custom_field_8.png)
+
 1. In the **[!UICONTROL Dimensions]** category, click **[!UICONTROL Profile]** then drag and drop your custom profile dimension to your freeform table.
 
-1. Drag and drop the any metrics to start filtering your data.
+   ![](assets/custom_field_9.png)
+
+1. Drag and drop any metrics to start filtering your data.
 
 1. Drag and drop a visualization in your workspace if needed.
