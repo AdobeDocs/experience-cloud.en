@@ -1,7 +1,7 @@
 ---
 title: Adobe Campaign Web User interface
-description: Discover Adobe Campaign Web User interface
-badge: label="LIMITED AVAILABILITY" type="Informative" url="campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+description: 64-bit tables
+badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 ---
 
 # 64-bit tables {#64-bit-tables}
@@ -15,9 +15,9 @@ In order to facilite the transition from Campaign Standard to Campaign v8, sever
 * Be aware that logs related to deliveries sent to technical users will not be available in Campaign v8. 
 * Only PostgreSQL is suppored.
 
-## Migrated schemas
+## Modified schemas
 
-Here is the list of extended schemas and their modified attributes. 
+Here is the list of schemas changed to 64 bits and their modified attributes. 
 
 | Header | Another header |
 |--- |--- |
