@@ -20,7 +20,7 @@ In order to facilite the transition from Campaign Standard to Campaign v8, sever
 Here is the list of extended schemas and their modified attributes. 
 
 | Header | Another header |
-|--- |--- |--- |
+|--- |--- |
 | nms:broadLogRcp | id | 
 | nms:trackingLogRcp | id | 
 | nms:excludeLogRcp | id | 
