@@ -19,7 +19,7 @@ In order to facilite the transition from Campaign Standard to Campaign v8, sever
 
 Here is the list of schemas changed to 64 bits and their modified attributes. 
 
-| Header | Another header |
+| Schema name | Atribute name |
 |--- |--- |
 | nms:broadLogRcp | id | 
 | nms:trackingLogRcp | id | 
