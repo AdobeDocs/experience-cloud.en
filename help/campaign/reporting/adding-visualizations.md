@@ -4,6 +4,7 @@ description: Dynamic reports offer a set of visualizations to add a graphical re
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 audience: end-user
+exl-id: 87b53a84-498e-430b-a3ed-22a3a9422dae
 ---
 # Adding visualizations{#adding-visualizations}
 

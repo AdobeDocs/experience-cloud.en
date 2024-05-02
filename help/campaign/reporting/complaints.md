@@ -4,6 +4,7 @@ description: With the Complaints out-of-the-box report, learn how many time deli
 audience: end-user
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: dbbced99-85b3-4f88-b0cd-1fe1abc6bca8
 ---
 # Complaints{#complaints}
 

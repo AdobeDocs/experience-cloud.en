@@ -6,6 +6,7 @@ context-tags: branding,overview;branding,main
 role: Admin
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: f6438303-5ae8-47c6-8c34-8e586f4b6fe7
 ---
 # Get started with branding {#branding-gs}
 
@@ -28,4 +29,3 @@ You can add new entities of your organization in Campaign, or create a new type 
 1. **Create a delivery template** - Once the new brand is available, best practice is to create at least one new blank delivery template which reference this new brand. [Learn more](branding-assign.md).
 
 1. **Check deliverability guidelines** - Before starting using the new domain, the strategy should be discussed with Adobe Deliverability team. They will help to define the best practices, if a new affinity should be created to split the IPs between domains for example, and/or if a ramp up plan should be defined.
-

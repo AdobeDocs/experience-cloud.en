@@ -4,6 +4,7 @@ description: With the URLs and click streams out-of-the-box report, learn about 
 level: Intermediate
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: bccd04f1-d4f2-474c-89eb-c0b1087a3946
 ---
 # URLs and click streams{#urls-and-click-streams}
 

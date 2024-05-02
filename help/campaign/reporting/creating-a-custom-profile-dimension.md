@@ -4,6 +4,7 @@ description: Learn how to create a custom profile dimension based on custom prof
 audience: reporting
 content-type: reference
 level: Intermediate
+exl-id: a12dc772-13c7-45ff-9fbf-3dfdd3801eae
 ---
 # Creating a custom profile dimension{#creating-a-custom-profile-dimension}
 

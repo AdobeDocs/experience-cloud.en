@@ -1,9 +1,10 @@
 ---
-title: List of components 
+title: List of components
 description: Find here the list of every components available in     Dynamic reports as well as their definitions.
 level: Beginner
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 5c58db92-7878-4c70-b076-a393f1cda8b7
 ---
 # List of components {#list-of-components}
 

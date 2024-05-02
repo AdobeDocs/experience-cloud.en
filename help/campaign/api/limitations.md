@@ -8,6 +8,7 @@ role: Data Engineer
 level: Experienced
 mini-toc-levels: 1
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
 ---
 # Recommendations & limitations {#limitations}
 

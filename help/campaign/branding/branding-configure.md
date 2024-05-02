@@ -6,6 +6,7 @@ context-tags: branding,overview;branding,main
 role: Admin
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 7afc802d-e90c-48c8-aa04-3ea543dfdfbc
 ---
 # Configure brands {#branding-configure}
 

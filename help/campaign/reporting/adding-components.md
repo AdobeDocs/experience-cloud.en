@@ -4,6 +4,7 @@ description: Drag and drop components to your freeform table to start filtering 
 audience: end-user
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 2b22f147-ed75-40ca-8859-8f4b23bca7c3
 ---
 # Adding components{#adding-components}
 

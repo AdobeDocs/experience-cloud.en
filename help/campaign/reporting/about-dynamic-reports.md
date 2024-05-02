@@ -4,6 +4,7 @@ description: With dynamic reports, drag and drop variables and dimensions into y
 level: Beginner
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 audience: end-user
+exl-id: d79f8a07-2322-4bc7-9d74-446db24a8d70
 ---
 # Get started with dynamic reports {#about-dynamic-reports}
 

@@ -4,6 +4,7 @@ description: With the Breakdown by domains out-of-the-box report, learn about th
 level: Intermediate
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 9b6126b7-3f9c-4810-9288-33a3f0a034d8
 ---
 # Breakdown by domains{#breakdown-by-domains}
 

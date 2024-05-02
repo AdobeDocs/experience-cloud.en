@@ -4,6 +4,7 @@ description: Understand the results of your reports with a list of every metric'
 level: Intermediate
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 06fb21a5-ae98-4c14-97f0-7f851d60ae7d
 ---
 # Indicator calculation{#indicator-calculation}
 

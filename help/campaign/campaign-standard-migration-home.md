@@ -2,8 +2,8 @@
 title: Adobe Campaign Web User interface
 description: Discover Adobe Campaign Web User interface
 badge: label="LIMITED AVAILABILITY" type="Informative" url="campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: eecf4e13-820d-4454-9f11-f50be565bb79
 ---
-
 # Campaign Standard transition to Campaign v8 {#triggers-home} 
 
 As a Campaign Standard user transitioning to Campaign v8, you can now benefit from the new version of Adobe Campaign Web User Interface and well as the powerful v8 console. The transition is seemless and will allow you to use all the intuitive features designed to simplify the creation of personalized cross-channel campaigns. Campaign Web User Interface also brings a connected canvas with Adobe Experience Platform for a unified experience.

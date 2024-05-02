@@ -4,6 +4,7 @@ description: With the Delivery summary out-of-the-box report, learn about your d
 level: Intermediate
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 6c5c013c-014f-4d0c-9967-32ac0fbab4af
 ---
 # Delivery summary{#delivery-summary}
 

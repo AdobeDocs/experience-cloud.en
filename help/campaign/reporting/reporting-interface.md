@@ -4,6 +4,7 @@ description: Learn more about Dynamic report interface basis and how to navigate
 level: Beginner
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 9b5a8b5f-2258-4861-b5c2-feefef67ccb3
 ---
 # Reporting interface{#reporting-interface}
 

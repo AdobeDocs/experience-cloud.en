@@ -4,6 +4,7 @@ description: With the Bounce summary out-of-the-box report, learn about the stat
 audience: end-user
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: b341edad-aa82-43d8-a5a1-b33a19973a1a
 ---
 # Bounce summary{#bounce-summary}
 

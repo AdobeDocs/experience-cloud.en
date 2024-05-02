@@ -4,6 +4,7 @@ description: With the Opens report, learn which delivery was the most viewed acc
 audience: end-user
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: dcd794bb-05be-430f-868e-b63d242debc6
 ---
 # Opens{#opens}
 

@@ -4,6 +4,7 @@ description: Dynamic report allows you to add panel to better filter your data d
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 level: Intermediate
+exl-id: c87f6155-821d-422d-86e5-4f5533d62fda
 ---
 # Adding panels{#adding-panels}
 

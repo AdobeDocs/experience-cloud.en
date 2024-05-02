@@ -4,6 +4,7 @@ description: With the Delivery throughput out-of-the-box report, learn about the
 level: Intermediate
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: cf086a57-dd70-41bc-a039-4070cecc3a66
 ---
 # Delivery throughput{#delivery-throughput}
 

@@ -4,6 +4,7 @@ description: The time period of your report allows you to filter your data depen
 audience: end-user
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 36506f7d-aeeb-41cf-b971-6e42e1c7cdc8
 ---
 # Defining the report period{#defining-the-report-period}
 

@@ -4,6 +4,7 @@ description: With the Tracking indicators out-of-the-box report, learn about the
 audience: end-user
 level: Intermediate
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: cdb41d18-7d92-4128-a29b-70e17b6a3358
 ---
 # Tracking indicators{#tracking-indicators}
 
