@@ -67,5 +67,5 @@ role: User
      + [Controlling a workflow](api/controlling-a-workflow.md)
      + [Triggering a signal activity](api/triggering-a-signal-activity.md)
 + Technotes {#technotes}
-  + [64-bit tables](technotes/64-bit-tables.md)
+  + [64-bit schemas](technotes/64-bit-tables.md)
 
