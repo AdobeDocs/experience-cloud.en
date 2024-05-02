@@ -104,7 +104,7 @@ The section below lists the differences between Campaign Standard and Campaign v
 |Using two different raw Pkeys in the URI and request body|500 - RST-360011 An error has occurred - please contact your administrator. RST-360012 Inconsistent operation on resource 'service' – Cannot update key 'SVC3' to 'SVC4'.|500 - An error has occurred - please contact your administrator.|
 |Using PKey in the URI and a different raw PKey in the request body|500 - A 'Service' with the same key 'SVC4' already exists. PGS-220000 PostgreSQL error: ERROR:  duplicate key value violates unique constraint "nmsservice_name" DETAIL:  Key (sname)=(SVC4) already exists.|500 - An error has occurred - please contact your administrator.|
 |Using non-existing raw-id in URI|404 - RST-360011 An error has occurred - please contact your administrator. Unable to find document with path 'Service' from key 'adobe_nl:0' (document with schema 'service' and name 'adobe_nl')|404 - Unable to find document with path 'Service' from key 'adobe_nl' (document with schema 'service' and name 'adobe_nl')|
-|Using non-existing raw-id in request body	|404 - RST-360011 An error has occurred - please contact your administrator. Unable to find document with path 'Service' from key 'adobe_nl' (document with schema 'service' and name 'adobe_nl')|404 - Unable to find document with path 'Service' from key 'adobe_nl' (document with schema 'service' and name 'adobe_nl')|
+|Using non-existing raw-id in request body|404 - RST-360011 An error has occurred - please contact your administrator. Unable to find document with path 'Service' from key 'adobe_nl' (document with schema 'service' and name 'adobe_nl')|404 - Unable to find document with path 'Service' from key 'adobe_nl' (document with schema 'service' and name 'adobe_nl')|
 |-|500 - RST-360011 An error has occurred - please contact your administrator.|500 - An error has occurred - please contact your administrator.|
 |Insert a profile/service with invalid gender (or anything) enum value|500 - RST-360011 An error has occurred - please contact your administrator. The value 'invalid' is not valid for the 'nms:recipient:gender' enumeration of the '@gender' field|500 -An error has occurred - please contact your administrator.|
 
@@ -116,7 +116,7 @@ With Campaign v8, timezone is only shown to user as part of **profileAndServices
 
 ## Workflows - External Signal triggering
 
-Campaign Standard Workflow GET API returns parameter names such as the workflow instance variables and their data types (boolean, string, etc.). This is used to create appropriately formatted JSON request body when triggering the signal via a POST API call.	
+Campaign Standard Workflow GET API returns parameter names such as the workflow instance variables and their data types (boolean, string, etc.). This is used to create appropriately formatted JSON request body when triggering the signal via a POST API call.
 
 Campaign v8 does not support advertising workflow instance variables, but expects developers to know what those are. As such, post-migration, parameters information in POST request body will need to be constructed without the availability of parameters information in GET API response. 
 
