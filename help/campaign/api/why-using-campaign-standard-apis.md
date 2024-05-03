@@ -7,7 +7,6 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
-exl-id: ef045e5d-cd02-44a0-9a1e-d468483a38d9
 ---
 # Why using Campaign Standard APIs {#why-using-campaign-standard-apis}
 
@@ -22,7 +21,7 @@ Here are some examples:
 * Event based transactional communication triggering – order confirmation, booking Itinerary, password reset, etc.
 * Even cart abandonment email communication.
 
-Sign up landing pages provide a way for customers or prospects to register their name and email address. Once Campaign Standard captures the profile information and preferences, it can send personalized messages based on the person’s interests.
+Sign up landing pages provide a way for customers or prospects to register their name and email address. Once Campaign Standard captures the profile information and preferences, it can send personalized messages based on the person's interests.
 
 They are built with the elements below:
 
@@ -30,11 +29,11 @@ They are built with the elements below:
 
     ![alt text](assets/apis_uc1.png)
 
-1. Custom actions to be taken based on checkboxes. A customer selecting “Email Special Offers” would be sent a different custom mail with a gift coupon compared to normal registration process.
+1. Custom actions to be taken based on checkboxes. A customer selecting "Email Special Offers" would be sent a different custom mail with a gift coupon compared to normal registration process.
 
     ![alt text](assets/apis_uc2.png)
 
-1. A profile may change their details after clicking the “Update Details” link in the email. This brings the profile to the “Update your Profile and Preference Details” page. To perform the operation, the profile details (Pkey) are passed to the Campaign server and the profile is retrieved and represented. Once the profile clicks the “Update” button, the information is updated into the system (via a PATCH command).
+1. A profile may change their details after clicking the "Update Details" link in the email. This brings the profile to the "Update your Profile and Preference Details" page. To perform the operation, the profile details (Pkey) are passed to the Campaign server and the profile is retrieved and represented. Once the profile clicks the "Update" button, the information is updated into the system (via a PATCH command).
 
     ![alt text](assets/apis_uc3.png)
 

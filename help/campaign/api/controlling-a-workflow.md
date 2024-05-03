@@ -4,12 +4,9 @@ description: Learn how to control a workflow with APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-
-
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
-exl-id: 79eacc31-d5a2-4e13-aa0b-744d7ab7004f
 ---
 # Controlling a workflow {#controlling-a-workflow}
 

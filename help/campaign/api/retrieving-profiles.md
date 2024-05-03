@@ -4,7 +4,6 @@ description: Learn more how to retrieve profiles with APIs
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
-exl-id: 19679804-f728-49fa-b26e-8f31b67c29bf
 ---
 # Retrieving profiles with APIs {#retrieving-profiles}
 

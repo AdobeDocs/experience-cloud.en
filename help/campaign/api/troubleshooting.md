@@ -4,7 +4,6 @@ description: Learn more about common issues related Campaign Standard APIs
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
-exl-id: 404356cd-021f-4739-a88f-b8b1b79e19bc
 ---
 # API troubleshooting {#troubleshooting}
 
@@ -88,7 +87,7 @@ Either your token is invalid (improper IMS call used to generate a token) or you
 
 Depending on the instance configuration, the created profile needs to be associated to an **orgUnit**. To understand how to add this field in your creation, consult [this section](creating-profiles-api.md).
 
-<!-- * (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu’un POST)
+<!-- * (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu'un POST)
 
 With Curl
 List all profiles

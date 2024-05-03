@@ -7,7 +7,6 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
-exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48
 ---
 # Sorting
 
