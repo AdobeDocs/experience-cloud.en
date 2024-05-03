@@ -7,6 +7,7 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: ef045e5d-cd02-44a0-9a1e-d468483a38d9
 ---
 # Why using Campaign Standard APIs {#why-using-campaign-standard-apis}
 

@@ -9,6 +9,7 @@ hide: yes
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 ---
 # Managing transactional messages {#managing-transactional-messages}
 

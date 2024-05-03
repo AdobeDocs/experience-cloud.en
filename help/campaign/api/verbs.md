@@ -7,6 +7,7 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
+exl-id: de97a194-d497-4665-906e-53178fd3b119
 ---
 # GET / POST / PATCH / DELETE verbs {#verbs}
 
