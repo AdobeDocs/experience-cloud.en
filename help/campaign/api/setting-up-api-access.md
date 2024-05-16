@@ -19,7 +19,7 @@ Adobe Campaign Standard API access is set up through the steps below. Each of th
 
 1. **Check you have a digital certificate**, or create one if necessary. The public and private keys provided with the certificate are needed in the following steps.
 1. **Create a new integration to Adobe Campaign Service** in [Adobe Developer](https://developer.adobe.com/) and configure it. Your credentials will then be generated (API Key, Client secret...).
-1. **Create a JSON Web Token (JWT)** from the credentials previously generated and sign it with your private key. The JWT encodes all of the identity and security information that is needed by Adobe to verify your identity and grant you access to the API.
+1. **Create an OAuth Server-to-Server** credential by following these [implementation steps](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
     >[!IMPORTANT]
     >
@@ -27,8 +27,6 @@ Adobe Campaign Standard API access is set up through the steps below. Each of th
     >* [Migration](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
     >* [Implementation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
     >* [Deprecation JWT FAQ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)
-
-1. **Exchange your JWT for an Access Token** through a POST request. This Access Token will have to be used in each header of your API requests.
 
 To establish a secure service-to-service Adobe I/O API session, every request to an Adobe service must include in the Authorization header the information below.
 
