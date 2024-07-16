@@ -1,18 +1,18 @@
 ---
-title: Creating a custom profile dimension
-description: Learn how to create a custom profile dimension based on custom profile data.
+title: Creating a profile dimension
+description: Learn how to create a profile dimension based on profile data.
 audience: reporting
 content-type: reference
 level: Intermediate
 exl-id: a12dc772-13c7-45ff-9fbf-3dfdd3801eae
 ---
-# Creating a custom profile dimension{#creating-a-custom-profile-dimension}
+# Creating a profile dimension{#creating-a-custom-profile-dimension}
 
-Reports can also be created and managed based on custom profile data created during the recipient schema extension.
+Reports can also be created and managed based on profile data created during the recipient schema extension.
 
 * [Step 1: Extend your recipient schema](##extend-schema)
 * [Step 2: Link your new custom field](#link-custom)
-* [Step 3: Create a dynamic report to filter recipients with the custom profile dimension](#create-report)
+* [Step 3: Create a dynamic report to filter recipients with the profile dimension](#create-report)
 
 ## Step 1: Extend your recipient schema {#extend-schema}
 
@@ -58,13 +58,15 @@ Your new profile field is now ready to be used and selected by your recipients.
 
 Now that your profile field is created, we need to link it to the corresponding Dynamic reporting dimension.
 
+Before extending the log with our profile field, make sure that the PII window was accepted to be able to send PII data to dynamic report. For more on this, refer to this [page](pii-agreement.md).
+
 1. Navigate to the **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]** > **[!UICONTROL Additional reporting field]** folder in the Explorer.
 
    ![](assets/custom_field_5.png)
 
 1. Click **[!UICONTROL New]** to create your corresponding Dynamic reporting dimension.
 
-1. Select **[!UICONTROL Edit expression]** and browse through the Recipient schema to find your previously created custom profile field.
+1. Select **[!UICONTROL Edit expression]** and browse through the Recipient schema to find your previously created profile field.
 
    ![](assets/custom_field_6.png)
 
@@ -74,22 +76,23 @@ Now that your profile field is created, we need to link it to the corresponding 
 
    ![](assets/custom_field_7.png)
 
-Your custom profile field is now available as a custom profile dimension in your reports. To delete your custom profile dimension, you can select it and click the **[!UICONTROL Delete]** icon. 
+Your profile field is now available as a profile dimension in your reports. To delete your profile dimension, you can select it and click the **[!UICONTROL Delete]** icon. 
 
 Now that recipient schema has been extended with this profile field and your custom dimension created, you can start targeting recipients in deliveries.
 
-## Step 3: Create a dynamic report to filter recipients with the custom profile dimension {#create-report}
+## Step 3: Create a dynamic report to filter recipients with the profile dimension {#create-report}
 
-After sending your delivery, you can breakdown reports using your custom profile dimension.
+After sending your delivery, you can breakdown reports using your profile dimension.
 
 1. From the **[!UICONTROL Reports]** tab, select an out-of-the-box report or click the **[!UICONTROL Create]** button to start one from scratch.
 
    ![](assets/custom_field_8.png)
 
-1. In the **[!UICONTROL Dimensions]** category, click **[!UICONTROL Profile]** then drag and drop your custom profile dimension to your freeform table.
+1. In the **[!UICONTROL Dimensions]** category, click **[!UICONTROL Profile]** then drag and drop your profile dimension to your freeform table.
 
    ![](assets/custom_field_9.png)
 
 1. Drag and drop any metrics to start filtering your data.
 
 1. Drag and drop a visualization in your workspace if needed.
+

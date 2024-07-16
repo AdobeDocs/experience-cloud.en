@@ -33,6 +33,7 @@ role: User
        + [Adding visualizations](reporting/adding-visualizations.md)
        + [Adding components](reporting/adding-components.md)
        + [Creating a custom profile dimension](reporting/creating-a-custom-profile-dimension.md)
+       + [Dynamic reporting usage agreement](reporting/pii-agreement.md)
 + Branding {#branding}
   + [About Branding](branding/branding-gs.md)
   + [Configure a brand](branding/branding-configure.md)
