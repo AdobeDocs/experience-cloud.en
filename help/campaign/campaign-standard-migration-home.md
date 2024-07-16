@@ -15,7 +15,7 @@ In addition, this transition will bring many benefits:
 * Integration with Adobe Experience Platform
 * Consistent User Interface and Experience
 
-For more information on key capabilities and concept differences, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration).
+For more information on key capabilities and concept differences, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration).
 
 ## What's New
 
