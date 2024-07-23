@@ -4,8 +4,8 @@ description: WLearn more on Dynamic reporting usage agreement
 level: Beginner
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 audience: end-user
+exl-id: 9fcef466-f306-480e-b42e-d18daa8bcf06
 ---
-
 # Dynamic reporting usage agreement {#pii-agreement}
 
 The Dynamic reporting usage agreement's purpose is to function as a pop-up consent for data processing. By default, the agreement is only visible and can only be accepted or declined by users assigned with administration rights.
