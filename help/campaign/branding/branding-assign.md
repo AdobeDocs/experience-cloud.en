@@ -10,10 +10,6 @@ exl-id: 8f6a5255-0245-497b-880f-d91ea82ee19e
 ---
 # Assign your brand {#branding-assign}
 
->[!IMPORTANT]
->
->Branding options are currently limited to email and push deliveries.
-
 ## Link a brand to a template {#linking-a-brand-to-a-template}
 
 To use the parameters defined for a brand, it must be linked to a delivery template. To do this, you have to create or edit a template.

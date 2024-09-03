@@ -50,10 +50,8 @@ A **[!UICONTROL Brand]** is defined by the following characteristics:
 
   ![](assets/branding_3.png)
 
-<!--![](assets/branding_05.png)-->
+* **[!UICONTROL Tracking URL configs]** menu enables you to enhance URL tracking by defining additional parameters for integration with Web analytics tools such as Adobe Analytics and Google Analytics. 
 
-<!--
-* **[!UICONTROL Tracking URL configs]**, which defines the configuration of the URLs tracking for your brand.
+  Use the **[!UICONTROL Additional URL Parameters]** menu to create additional parameters as key-value pairs along with their applicability conditions. Each parameter name must be unique and non-empty, and each parameter value must be non-empty. The applicability condition can be empty, but none of these values can include JST tags.
 
-  The additional parameters that allow the links to be tracked on external systems such as Web Analytics tools like Adobe Analytics or Google Analytics are defined here.
--->
+  These parameters will be applied to tracked URLs that match any domain name specified in the **[!UICONTROL List of Domain Names]**, which can include regular expressions.
