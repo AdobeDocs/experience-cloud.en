@@ -122,10 +122,10 @@ Campaign Standard Workflow GET API returns parameter names such as the workflow 
 
 Campaign v8 does not support advertising workflow instance variables, but expects developers to know what those are. As such, post-migration, parameters information in POST request body will need to be constructed without the availability of parameters information in GET API response. 
 
-## Transactional messages
+<!--## Transactional messages
 
 * With Campaign Standard, a POST request returns empty fields for elements and attributes in the request body. With Campaign v8, the response returns values that match the ones in the request body instead.
 
 * When publishing an event configuration, the API preview panel displays the REST URL alongside the request body syntax.
 
-    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.
+    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.-->

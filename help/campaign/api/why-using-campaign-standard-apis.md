@@ -19,7 +19,7 @@ Here are some examples:
 
 * Prospects online registration.
 * Existing customer profile and marketing communication preference management.
-* Event based transactional communication triggering – order confirmation, booking Itinerary, password reset, etc.
+<!--* Event based transactional communication triggering – order confirmation, booking Itinerary, password reset, etc.-->
 * Even cart abandonment email communication.
 
 Sign up landing pages provide a way for customers or prospects to register their name and email address. Once Campaign Standard captures the profile information and preferences, it can send personalized messages based on the person's interests.
