@@ -36,6 +36,7 @@ For now, the REST APIs listed below are available for use:
 * **Services & subscriptions**
 * **Custom resources**
 * **Workflows**
+* **Transactional messages**
 
 >[!AVAILABILITY]
 >
