@@ -26,6 +26,7 @@ With the Adobe Campaign REST APIs, you get access to the following functionaliti
 <td valign="top"><a href="creating-a-service.md"><img width="60px" alt="conditions" src="assets/icon_services.svg"/></a><p><a href="creating-a-service.md">Services & subscriptions</a></p></td>
 <td valign="top"><a href="interacting-with-custom-resources.md"><img width="60px" alt="conditions" src="assets/icon_customresources.svg"/></a><p><a href="interacting-with-custom-resources.md">Custom resources</a></p></td>
 <td valign="top"><a href="controlling-a-workflow.md"><img width="60px" alt="conditions" src="assets/icon_workflows.svg"/></a><p><a href="controlling-a-workflow.md">Workflows</a></p></td>
+<td valign="top"><a href="managing-transactional-messages.md"><img width="60px" alt="conditions" src="assets/icon_transactionalmessage.svg"/></a><p><a href="managing-transactional-messages.md">Transactional messages</a></p></td>
 </tr></table>
 
 To use the Campaign REST APIs, you need an Adobe I/O account. This is a mandatory first step to go forward and discover the API features. 
