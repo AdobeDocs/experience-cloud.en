@@ -4,14 +4,16 @@ description: Learn how to manage transactional messages with APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-hidefromtoc: yes
-hide: yes
 role: Data Engineer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 ---
 # Managing transactional messages {#managing-transactional-messages}
+
+>[!AVAILABILITY]
+>
+>For now, transactional messaging using REST APIs is only available for the email channel and for transactional events (enrichment data is available via payload only, similar to how Adobe Campaign V8 operates).
 
 Once you have created and published a transactional event, you need to integrate the triggering of this event into your website.
 
@@ -142,4 +144,3 @@ In the response, the "status" field allows you to know whether the event has bee
 * **deliveryFailed**: a delivery error occurred while the event was being processed.
 * **routingFailed**: the routing phase failed - this may occur for example when the type of event specified cannot be found.
 * **tooOld**: the event expired before it was able to be processed - this can happen for various reasons, for example, when a send fails several times (this results in the event no longer being up to date) or when the server can no longer process events after becoming overloaded.
-* **targetingFailed**: Campaign Standard failed to enrich a link that is being used for message targeting.
