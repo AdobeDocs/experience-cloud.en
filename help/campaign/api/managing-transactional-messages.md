@@ -13,7 +13,7 @@ exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
 
 >[!AVAILABILITY]
 >
->For now, transactional messaging using REST APIs is only available for the email channel and for transactional events (enrichment data is available via payload only, similar to how Adobe Campaign V8 operates).
+>For now, transactional messaging using REST APIs is available for the email and SMS channels. It is only available for transactional events (enrichment data is available via payload only, similar to how Adobe Campaign V8 operates).
 
 Once you have created and published a transactional event, you need to integrate the triggering of this event into your website.
 
@@ -40,8 +40,6 @@ POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 
   `POST https://mc.adobe.io/geometrixx/campaign/mcgeometrixx/<eventID>`
 
-  Note that the transactional messages API endpoint is also visible during the API preview.
-
 * **&lt;eventID&gt;**: the type of event you want to send. This ID is generated when creating the event configuration
 
 ### POST request header
@@ -63,7 +61,7 @@ You must add a charset, for example **utf-8**. Note that this value depends on t
 
 ### POST request body
 
-The event data are contained inside the JSON POST body. The event structure depends on its definition. The API preview button in the resource definition screen provides a request sample.
+The event data are contained inside the JSON POST body. The event structure depends on its definition.
 
 The following optional parameters can be added to the event content to manage the sending of transactional messages linked to the event:
 
@@ -73,6 +71,40 @@ The following optional parameters can be added to the event content to manage th
 >[!NOTE]
 >
 >The values of the "expiration" and "scheduled" parameters follow the ISO 8601 format. ISO 8601 specifies the use of the uppercase letter "T" to separate the date and time. It can however be removed from the input or output for better readability.
+
+### Communication channel parameters
+
+Depending on the channel to use, the payload should contain the parameters below:
+
+* Email channel: "mobilePhone" 
+* SMS channel: "email" 
+
+If the payload contains only "mobilePhone", the SMS communication channel will be triggered. If the payload contains only "email", the email communication channel will be triggered.
+
+The example below shows a payload where an SMS communication will be triggered:
+
+```
+curl --location 'https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment' \
+--header 'Authorization: Bearer <ACCESS_TOKEN>' \
+--header 'Cache-Control: no-cache' \
+--header 'X-Api-Key: <API_KEY>' \
+--header 'Content-Type: application/json;charset=utf-8' \
+--header 'Content-Length: 79' \
+--data '
+{
+  "mobilePhone":"+9999999999",
+  "scheduled":"2017-12-01 08:00:00.768Z",
+  "expiration":"2017-12-31 08:00:00.768Z",
+  "ctx":
+  {
+    "cartAmount": "$ 125",
+    "lastProduct": "Leather motorbike jacket",
+    "firstName": "Jack"
+  }
+}'
+```
+
+If the payload includes both "email" and "mobilePhone", the default communication method will be email. To send an SMS when both fields are present, you must explicitly specify it in the payload using the "wishedChannel" parameter.
 
 ### Response to the POST request
 
@@ -96,7 +128,10 @@ POST request to send the event.
 -H 'Content-Length:79'
 
 {
-  "email":"test@example.com",
+  "
+  
+  
+  ":"test@example.com",
   "scheduled":"2017-12-01 08:00:00.768Z",
   "expiration":"2017-12-31 08:00:00.768Z",
   "ctx":
