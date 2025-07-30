@@ -64,7 +64,7 @@ To do this, select the **[!UICONTROL Add email or domain]** button, then follow 
     EMAIL,abc@somedomain.com,Comment
     DOMAIN,somedomain.com,Comment
     ```
-    
+
     >[!CAUTION]
     >
     >Do not change the names of the columns in the CSV template.
