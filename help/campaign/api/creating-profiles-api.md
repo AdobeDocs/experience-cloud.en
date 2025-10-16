@@ -4,7 +4,7 @@ description: Learn more how to create profiles with APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 69e8d034-6bdd-4b82-bcd7-1ef4be0a59b3

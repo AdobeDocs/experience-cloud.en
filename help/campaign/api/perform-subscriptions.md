@@ -1,7 +1,7 @@
 ---
 title: Performing subscriptions
 description: Learn how to perform subscriptions with APIs
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 64f321a3-436a-4b7c-99d8-0c006203012e

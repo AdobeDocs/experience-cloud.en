@@ -4,7 +4,7 @@ description: 64-bit tables
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: ab5f01fd-4ad5-46e9-b132-011fe0f7bbd2
 ---
-# 64-bit schemas {#64-bit-tables}
+# 64-bit schemas {#sixty-four-bit-tables}
 
 In order to facilite the transition from Campaign Standard to Campaign v8, several tables have been changed from 32 to 64 bits. Indeed, Campaign Standard supports 64-bit PK in several out-of-the-box schemas, whereas Campaign v8 supports 32-bit PK in most schemas. 
 

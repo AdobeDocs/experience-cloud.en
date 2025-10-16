@@ -4,7 +4,7 @@ description: Learn more about metadata mechanism.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d

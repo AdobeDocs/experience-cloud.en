@@ -4,7 +4,7 @@ description: Learn more how to perform sorting operations
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 7db25b8d-a6f1-4151-bf37-c47e9991ae48

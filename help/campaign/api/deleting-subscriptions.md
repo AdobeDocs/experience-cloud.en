@@ -1,7 +1,7 @@
 ---
 title: Deleting subscriptions
 description: Learn how to delete subscriptions with APIs
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 76e2d102-c877-41a6-af87-2f407201a572

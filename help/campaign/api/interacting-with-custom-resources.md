@@ -4,7 +4,7 @@ description: Learn more about custom resources management with APIs/
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 19bfeecb-da60-479c-a929-0cfb72ef59e3

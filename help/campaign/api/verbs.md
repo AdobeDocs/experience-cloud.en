@@ -4,7 +4,7 @@ description: Learn more about the verbs used in Campaign Standard APIs.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: de97a194-d497-4665-906e-53178fd3b119
