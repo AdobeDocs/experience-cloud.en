@@ -8,3 +8,4 @@ hide: yes
 
 * [Home](home.md)
 * [Global suppression list](global-suppression-list.md)
+* [Hidden test article](hidden-test.md)
