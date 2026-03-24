@@ -7,7 +7,7 @@ description: Learn how to integrate Adobe Experience Rollouts into a desktop app
 
 Desktop applications integrate with Experience Rollouts by making direct REST API calls. Use the **Feature API V2** for desktop clients.
 
-See [GET Feature API V2](../../feature-api/get-feature-api-v2.md) for the full API reference.
+See **GET Feature API V2** in the Feature API section of this guide for the full API reference.
 
 ## Integration requirements {#requirements}
 
@@ -23,6 +23,5 @@ Desktop clients can use a **product code and product version** as the applicatio
 
 ## See also {#see-also}
 
-* [GET Feature API V2](../../feature-api/get-feature-api-v2.md)
 * [Integration steps](integration-steps.md)
 * [Startup guide](startup-guide.md)

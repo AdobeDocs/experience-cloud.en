@@ -48,9 +48,9 @@ See the [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integr
 | Scenario | Recommendation |
 |---|---|
 | Backend Java or Node.js service | Use the appropriate SDK for automatic caching and simplified integration |
-| Other backend language | Use the [Feature API V3](../../feature-api/get-feature-api-v3.md) directly |
-| Web or mobile application | Use the [Feature API V3](../../feature-api/get-feature-api-v3.md) directly |
-| Desktop application | Use the [Feature API V2](../../feature-api/get-feature-api-v2.md) directly |
+| Other backend language | Use the Feature API V3 directly — see the Feature API section of this guide |
+| Web or mobile application | Use the Feature API V3 directly — see the Feature API section of this guide |
+| Desktop application | Use the Feature API V2 directly — see the Feature API section of this guide |
 
 ## See also {#see-also}
 
