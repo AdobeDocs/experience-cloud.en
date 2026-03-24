@@ -8,12 +8,10 @@ feature: Overview
 # Adobe Experience Rollouts {#experience-rollouts}
 
 + [Overview](home.md)
-
 + Getting Started {#get-started}
   + [Introduction to Experience Rollouts](getting-started/introduction.md)
   + [Why use Experience Rollouts](getting-started/why-use-experience-rollouts.md)
   + [Experience Rollouts modes](getting-started/experience-rollouts-modes.md)
-
 + Concepts {#concepts}
   + [What is a feature flag](concepts/what-is-a-feature-flag.md)
   + [Feature flags to enable and disable features](concepts/feature-flags-to-enable-disable-features.md)
@@ -21,7 +19,6 @@ feature: Overview
   + [Concept of release management](concepts/concept-of-release-management.md)
   + [Release management in Experience Rollouts](concepts/release-management.md)
   + [Gradual rollout](concepts/gradual-rollout.md)
-
 + Guides {#guides}
   + Getting started with the console {#console}
     + [Log in to the Experience Rollouts console](guides/console/log-in-to-the-console.md)
@@ -179,11 +176,9 @@ feature: Overview
       + [Node.js SDK](guides/sdk-releases/nodejs/release-notes-nodejs-sdk.md)
     + SDK benchmarking {#sdk-benchmarking}
       + [Java SDK benchmarking](guides/sdk-releases/java-sdk-benchmarking.md)
-
 + Feature API {#feature-api}
   + [GET Feature API V3](feature-api/get-feature-api-v3.md)
   + [GET Feature API V2](feature-api/get-feature-api-v2.md)
-
 + Management API {#management-api}
   + [Feature management APIs overview](management-api/feature-management-apis-overview.md)
   + [Feature flags management API](management-api/feature-flags-management-api.md)
