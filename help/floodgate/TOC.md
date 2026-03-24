@@ -2,7 +2,6 @@
 audience: user
 user-guide-title: Adobe Target Floodgate Help
 user-guide-description: Adobe Target Floodgate
-feature : Overview
 ---
 
 # Adobe target Floodgate Help {#get-started-floodgate}
