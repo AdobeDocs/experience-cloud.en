@@ -66,6 +66,7 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Use enterprise org data in audience rules](guides/audience/using-enterprise-org-data.md)
     + [Add percentage rules in audience criteria](guides/audience/adding-percentage-rules.md)
     + [Audience rule with client IP context variable](guides/audience/clientip-rule.md)
+<!--
   + Cross-environment workflows {#cross-environment}
     + [Cross-environment concept](guides/cross-environment/cross-environment-concept.md)
     + [Associate environments to an application](guides/cross-environment/associate-environments.md)
@@ -186,3 +187,4 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
   + [Get client ID for an application](management-api/get-client-id.md)
   + [Get desired audience criteria](management-api/get-audience-criteria.md)
   + [Management patch API](management-api/management-patch-api.md)
+-->
