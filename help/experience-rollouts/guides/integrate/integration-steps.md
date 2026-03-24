@@ -21,19 +21,19 @@ Follow the [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-
 
 **Other languages**
 
-If your stack is not listed above, integrate directly with the Feature API V3. Contact Experience Rollouts support if you need guidance.
+If your stack is not listed above, integrate directly with the [Feature API V3](../../feature-api/get-feature-api-v3.md). Contact Experience Rollouts support if you need guidance.
 
 ## Web and mobile applications {#web-mobile}
 
 Web and mobile applications call the **Feature API V3** to retrieve feature flags for the current user and apply conditional logic in the application.
 
-See the Feature API V3 reference for the full API reference. Contact Experience Rollouts support for access.
+See [GET Feature API V3](../../feature-api/get-feature-api-v3.md) for the full API reference.
 
 ## Desktop applications {#desktop}
 
 Desktop applications call the **Feature API V2** to retrieve feature flags.
 
-See the Feature API V2 reference for the full API reference. Contact Experience Rollouts support for access.
+See [GET Feature API V2](../../feature-api/get-feature-api-v2.md) for the full API reference.
 
 >[!IMPORTANT]
 >

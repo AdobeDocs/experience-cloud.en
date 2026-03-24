@@ -18,7 +18,7 @@ Backend services integrate with Experience Rollouts using a server-side SDK. Cho
 
 If your backend service uses a language not listed above, you can integrate directly with the REST API:
 
-* Feature API V3 — contact Experience Rollouts support for access to the API reference
+* [GET Feature API V3](../../feature-api/get-feature-api-v3.md)
 
 Contact Experience Rollouts support if you need guidance on integrating with an unsupported stack.
 
