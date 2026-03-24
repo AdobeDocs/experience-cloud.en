@@ -1,8 +1,8 @@
 ---
 title: Manage applications
 description: Learn how to manage applications in Adobe Experience Rollouts, including adding new applications and understanding team ownership.
+exl-id: 6109fdd5-b5f5-41ca-8690-8aa78df50499
 ---
-
 # Manage applications {#manage-applications}
 
 An **application** in Experience Rollouts represents the service or product you want to control with feature flags. Before your team can create feature flags, you must onboard at least one application to the console.

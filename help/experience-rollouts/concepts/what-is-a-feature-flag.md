@@ -1,8 +1,8 @@
 ---
 title: What is a feature flag
 description: Learn what feature flags are and how they let you turn application features on or off at runtime without redeployment.
+exl-id: c4ed4ab5-0d73-4697-b05c-476d6e4010ce
 ---
-
 # What is a feature flag {#what-is-a-feature-flag}
 
 A feature flag is a mechanism that lets you turn features of your application on or off at runtime — without redeploying code.

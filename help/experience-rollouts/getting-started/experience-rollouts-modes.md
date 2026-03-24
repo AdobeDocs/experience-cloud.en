@@ -1,8 +1,8 @@
 ---
 title: Experience Rollouts modes
 description: Learn about the two feature targeting modes in Adobe Experience Rollouts — user-level targeting and org-level targeting — and when to use each.
+exl-id: 0fdfa429-d9bd-4990-8f96-cd9deb273aa0
 ---
-
 # Experience Rollouts modes {#modes}
 
 Experience Rollouts provides two distinct feature targeting modes. Each serves a different release control purpose and is designed for a specific type of application or use case.

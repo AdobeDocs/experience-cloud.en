@@ -1,8 +1,8 @@
 ---
 title: Use context in audience rules
 description: Learn how to use context variables in audience rules for feature flags and feature groups in Adobe Experience Rollouts.
+exl-id: 0367f475-9209-4d53-86b4-a739a73a23a7
 ---
-
 # Use context in audience rules {#context-in-audience-rules}
 
 Context variables are values provided by the client application at runtime. They allow you to target users based on dynamic, session-level information such as the user's active language, device type, or application state — criteria that are not part of the user's persistent profile.

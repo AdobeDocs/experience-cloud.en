@@ -1,8 +1,8 @@
 ---
 title: Onboard your application
 description: Learn how to onboard a new application to Adobe Experience Rollouts so your team can start creating and managing feature flags.
+exl-id: d88c27a5-f490-4504-9764-5e4ce98fdf20
 ---
-
 # Onboard your application {#onboard-your-application}
 
 You must have the **Admin** role to add a new application. See [User roles](../teams/user-roles.md) if you need to verify your role or request it from your team admin.

@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Rollouts
 description: Learn how to use Adobe Experience Rollouts to deliver features safely and gradually with controlled rollouts, feature flags, and targeted audience management.
+exl-id: c400d75d-d928-4cf6-a094-1a2f443389f0
 ---
-
 # Adobe Experience Rollouts {#experience-rollouts-home}
 
 Adobe Experience Rollouts is a feature management and controlled release platform that helps product teams deliver new capabilities safely, gradually, and with less risk.

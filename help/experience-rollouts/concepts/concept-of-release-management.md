@@ -1,8 +1,8 @@
 ---
 title: Concept of release management
 description: Learn how release management in Experience Rollouts helps coordinate large, cross-team feature rollouts through feature flagging.
+exl-id: f304fc12-e49c-40be-805b-5587fb87478a
 ---
-
 # Concept of release management {#concept-of-release-management}
 
 Large releases share a few common challenges: multiple teams are involved, schedules conflict, and dependencies are difficult to coordinate. Release management addresses these challenges by providing a structured way to roll out changes smoothly.

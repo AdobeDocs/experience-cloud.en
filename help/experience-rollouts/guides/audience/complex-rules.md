@@ -1,8 +1,8 @@
 ---
 title: Complex audience rules
 description: Learn how to work with large or complex audience rule sets in Adobe Experience Rollouts, including bulk value limits and how to split rules across multiple conditions.
+exl-id: 37e037b6-45eb-4261-b580-30d94d8e55da
 ---
-
 # Complex audience rules {#complex-rules}
 
 ## Bulk value limits {#bulk-value-limits}

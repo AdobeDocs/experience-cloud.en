@@ -1,8 +1,8 @@
 ---
 title: Audience in feature flags and feature groups
 description: Learn how to define audience criteria for feature flags and feature groups in Adobe Experience Rollouts using profile attributes, segments, and the audience calculator.
+exl-id: 4a8f7c3f-1ae5-4e65-a070-9fc33133eec0
 ---
-
 # Audience in feature flags and feature groups {#audience-overview}
 
 Experience Rollouts provides rich audience targeting for feature flags and feature groups. You can combine profile attributes, context variables, and audience segments to precisely control which users receive a feature.
