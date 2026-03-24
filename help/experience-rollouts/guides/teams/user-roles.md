@@ -1,8 +1,8 @@
 ---
 title: User roles
 description: Learn about the five user roles available in Adobe Experience Rollouts and how to choose the right role for each team member.
+exl-id: d336c956-ee97-4061-82af-a8dbb11ca874
 ---
-
 # User roles {#user-roles}
 
 Experience Rollouts provides five roles. Each role is designed for a specific set of responsibilities. Roles are mutually exclusive by default — a member with the Admin role does not automatically have Product Release Owner permissions. Assign multiple roles to a member when broader access is needed.

@@ -1,8 +1,8 @@
 ---
 title: Release workflow end-to-end
 description: Learn the end-to-end workflow for managing a coordinated release in Adobe Experience Rollouts, from defining feature flags to going live.
+exl-id: 086e3192-c22b-4de8-a15a-89edb09ac230
 ---
-
 # Release workflow end-to-end {#release-workflow}
 
 This page describes the full sequence of activities involved in a coordinated release managed by a Release Manager.

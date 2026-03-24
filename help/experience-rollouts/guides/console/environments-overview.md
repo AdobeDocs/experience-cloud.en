@@ -1,8 +1,8 @@
 ---
 title: Environments overview
 description: Learn about the Stage and Production environments in Adobe Experience Rollouts and when to use each.
+exl-id: 84b6b640-7f43-4e51-a3b1-29f4efd3670f
 ---
-
 # Environments overview {#environments}
 
 Experience Rollouts provides separate environments so you can validate your feature flags before promoting changes to your live users.

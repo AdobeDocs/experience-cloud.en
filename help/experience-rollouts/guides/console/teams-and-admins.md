@@ -1,8 +1,8 @@
 ---
 title: Teams and their admins
 description: Learn how teams are structured in Adobe Experience Rollouts, what admins can do, and how to find the right team for your project.
+exl-id: d7becf60-a8c4-49f1-b62b-c025cb819054
 ---
-
 # Teams and their admins {#teams-and-admins}
 
 In Experience Rollouts, a **team** is the organizational unit that owns applications and manages feature flags. All access, permissions, and feature flag configuration are scoped to a team.

@@ -1,8 +1,8 @@
 ---
 title: Subscribe to the API application in Adobe Developer Console
 description: Learn how to subscribe your application to the Experience Rollouts API through Adobe Developer Console so you can call the feature flag endpoints.
+exl-id: 23ce5c40-0def-49f8-b34a-2350bb421969
 ---
-
 # Subscribe to the API application in Adobe Developer Console {#subscribe-to-api}
 
 To call the Experience Rollouts API from your application, you need to subscribe to it through the [Adobe Developer Console](https://developer.adobe.com/console). This gives your application a client ID that Experience Rollouts uses to identify the caller.

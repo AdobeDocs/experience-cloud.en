@@ -1,8 +1,8 @@
 ---
 title: Schedule
 description: Learn how to schedule a feature flag, feature group, or cross-team feature group to activate automatically at a future date and time in Adobe Experience Rollouts.
+exl-id: f8309daa-428b-41a0-8817-89c8f603bec8
 ---
-
 # Schedule {#schedule}
 
 Scheduling is an optional feature that lets you set a future date and time for a feature flag, feature group, or cross-team feature group to activate automatically. Manual on/off toggling remains available and is not required to be replaced with a schedule.

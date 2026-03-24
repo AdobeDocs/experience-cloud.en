@@ -1,8 +1,8 @@
 ---
 title: Integration steps
 description: Follow the integration steps for your application type to connect Adobe Experience Rollouts to your web service, web or mobile app, or desktop application.
+exl-id: d584bdf4-9031-40e7-a7f0-807c619bbba1
 ---
-
 # Integration steps {#integration-steps}
 
 Choose the integration path that matches your application type.

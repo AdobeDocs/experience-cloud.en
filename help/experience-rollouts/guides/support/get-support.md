@@ -1,8 +1,8 @@
 ---
 title: Get support
 description: Find out how to get help with Adobe Experience Rollouts, including self-service resources, and how to submit a support request when you need assistance.
+exl-id: f4ba9c00-941b-4c33-b42f-087113d58b0d
 ---
-
 # Get support {#get-support}
 
 If you run into an issue with Experience Rollouts that you cannot resolve using the documentation or the built-in troubleshooting tools, the Experience Rollouts support team is available to help.

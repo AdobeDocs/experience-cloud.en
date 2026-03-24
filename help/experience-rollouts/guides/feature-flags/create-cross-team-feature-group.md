@@ -1,8 +1,8 @@
 ---
 title: Create a cross-team feature group
 description: Learn how to create a cross-team feature group in Adobe Experience Rollouts to coordinate feature flags across applications owned by different teams.
+exl-id: 9627d511-fa60-4650-9d06-1a1eca6b2a36
 ---
-
 # Create a cross-team feature group {#create-cross-team-feature-group}
 
 ## Prerequisites {#prerequisites}

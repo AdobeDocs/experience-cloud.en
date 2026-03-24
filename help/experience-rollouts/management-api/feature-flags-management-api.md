@@ -1,8 +1,8 @@
 ---
 title: Feature flags management API
 description: API reference for the Experience Rollouts feature flags management API, including endpoints to get, create, update, and delete feature flags for an application.
+exl-id: 027e9cfc-01ee-4270-8635-5d6086a67723
 ---
-
 # Feature flags management API {#feature-flags-management-api}
 
 The feature flags management API allows you to programmatically create, read, update, and delete feature flags for your applications in Experience Rollouts.

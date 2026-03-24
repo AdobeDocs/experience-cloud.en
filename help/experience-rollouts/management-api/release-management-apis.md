@@ -1,8 +1,8 @@
 ---
 title: Release management APIs
 description: API reference for the Experience Rollouts release management APIs, including endpoints to get, create, and edit releases and cross-team feature groups.
+exl-id: e8d1d025-0645-4cf2-921f-d94c9f71282d
 ---
-
 # Release management APIs {#release-management-apis}
 
 The release management APIs let you retrieve, create, and edit releases and cross-team feature groups (CTFG) programmatically. These APIs use the v2 management endpoint.

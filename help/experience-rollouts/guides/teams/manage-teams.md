@@ -1,8 +1,8 @@
 ---
 title: Manage teams
 description: Learn how to manage teams in Adobe Experience Rollouts, including member management, roles, and governance.
+exl-id: 2d854cca-5513-4629-b6c1-ed5d97910a63
 ---
-
 # Manage teams {#manage-teams}
 
 Teams are the core organizational unit in Experience Rollouts. Each team owns one or more applications and manages all feature flags, feature groups, and releases for those applications.

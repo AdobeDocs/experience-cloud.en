@@ -1,8 +1,8 @@
 ---
 title: Get client ID for an application
 description: Learn how to find the numeric client ID for an application in the Experience Rollouts console, which is required when calling the management APIs.
+exl-id: cb7c3e30-eb1d-4028-8a4e-b72baa7c3712
 ---
-
 # Get client ID for an application {#get-client-id}
 
 The feature flags and feature group management APIs require a numeric `clientId` to identify which application the feature belongs to. This is different from the string-based IMS client ID used for API authentication.

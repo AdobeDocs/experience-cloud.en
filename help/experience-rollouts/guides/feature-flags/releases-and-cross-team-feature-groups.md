@@ -1,8 +1,8 @@
 ---
 title: Releases and cross-team feature groups
 description: Learn the difference between releases and cross-team feature groups in Adobe Experience Rollouts and when to use each for coordinated multi-team rollouts.
+exl-id: add80676-fe17-49c1-a84c-06010710ae42
 ---
-
 # Releases and cross-team feature groups {#releases-and-cross-team}
 
 Both releases and cross-team feature groups support coordinated rollouts across multiple teams and applications. The right choice depends on your caching requirements, audience targeting needs, and how much control you want over the process.

@@ -1,8 +1,8 @@
 ---
 title: GET Feature API V2
 description: API reference for the Experience Rollouts Feature API V2, used to retrieve feature flags for desktop applications.
+exl-id: c1e63d57-2a5f-48f6-8b2c-8d83a5c39b4b
 ---
-
 # GET Feature API V2 {#get-feature-api-v2}
 
 The Feature API V2 is designed for desktop application integration. It retrieves feature flags and release data for the authenticated user, supporting product code and product version as the application identifier in addition to a standard client ID.

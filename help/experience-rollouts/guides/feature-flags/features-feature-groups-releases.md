@@ -1,8 +1,8 @@
 ---
 title: Features, feature groups, and releases
 description: Learn about the differences between feature flags, feature groups, cross-team feature groups, and releases in Adobe Experience Rollouts and when to use each.
+exl-id: 241054a6-69f3-4349-b456-720b5ec55e1a
 ---
-
 # Features, feature groups, and releases {#features-feature-groups-releases}
 
 Experience Rollouts provides four artifacts for managing feature rollouts. Choosing the right one depends on the scope of your rollout, the number of teams involved, and the audience targeting capabilities you need.

@@ -1,8 +1,8 @@
 ---
 title: Team management FAQ
 description: Find answers to common questions about managing teams, members, and roles in Adobe Experience Rollouts.
+exl-id: 8234f682-526c-47ca-b35b-2a615a95eced
 ---
-
 # Team management FAQ {#team-management-faq}
 
 ## I am trying to add a user, but the search does not return any results {#user-not-found}

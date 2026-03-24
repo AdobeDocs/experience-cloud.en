@@ -1,8 +1,8 @@
 ---
 title: Create a feature group
 description: Learn how to create a feature group in Adobe Experience Rollouts to manage multiple feature flags across applications in your team as a single unit.
+exl-id: 58148df1-84ee-4a78-a4b4-71f74cd8ce0a
 ---
-
 # Create a feature group {#create-feature-group}
 
 ## Prerequisites {#prerequisites}

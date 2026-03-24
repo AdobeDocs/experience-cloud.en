@@ -1,8 +1,8 @@
 ---
 title: Add members to your team
 description: Learn how to add members to your Experience Rollouts team and assign them the appropriate role.
+exl-id: 30fdeb05-f9bb-4161-8f3a-af88232869a6
 ---
-
 # Add members to your team {#add-team-members}
 
 You must have the **Admin** role to add members to your team. See [User roles](user-roles.md) for a description of each role and its permissions.

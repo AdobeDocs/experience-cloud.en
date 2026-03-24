@@ -1,8 +1,8 @@
 ---
 title: Integrate Experience Rollouts in your app
 description: Learn how to integrate Adobe Experience Rollouts into your application, whether it is a web service, web property, mobile app, or desktop application.
+exl-id: e67a34d8-aaba-41d4-bc34-15b23782caa1
 ---
-
 # Integrate Experience Rollouts in your app {#integrate}
 
 This section provides integration guidelines for all Experience Rollouts clients, organized by application type.

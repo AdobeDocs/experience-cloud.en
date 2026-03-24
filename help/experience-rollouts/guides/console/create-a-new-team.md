@@ -1,8 +1,8 @@
 ---
 title: Create a new team
 description: Learn how to request a new team in Adobe Experience Rollouts when no team exists yet for your project.
+exl-id: 4bdf591b-070d-4061-9689-0a684767f9fc
 ---
-
 # Create a new team {#create-a-new-team}
 
 If no team exists for your project in Experience Rollouts, you need to request one before you can start creating feature flags. Team creation is handled through a support request.

@@ -1,8 +1,8 @@
 ---
 title: SDKs
 description: Learn about the SDK architecture in Adobe Experience Rollouts and the available SDKs for Java and Node.js.
+exl-id: 110a440d-b52a-4e1e-a94f-86f9741a223a
 ---
-
 # SDKs {#sdks}
 
 Experience Rollouts provides server-side SDKs for backend service integration. This page describes the SDK architecture and available options.

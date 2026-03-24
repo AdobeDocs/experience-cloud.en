@@ -1,8 +1,8 @@
 ---
 title: Feature group management API
 description: API reference for the Experience Rollouts feature group management API, including endpoints to get, create, update, delete, and control rollout plans for feature groups.
+exl-id: 6c254621-2caf-41c0-ab21-0078f8fe4953
 ---
-
 # Feature group management API {#feature-group-management-api}
 
 The feature group management API allows you to programmatically create, read, update, and delete feature groups in Experience Rollouts, including automated and A/B testing rollout plans.
