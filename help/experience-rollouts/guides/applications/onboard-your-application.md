@@ -33,7 +33,7 @@ You must have the **Admin** role to add a new application. See [User roles](../t
 
 Once your application is onboarded, your team can start creating feature flags:
 
-* [Create your first feature flag](../../feature-flags/create-your-first-feature-flag.md)
+* [Create your first feature flag](../feature-flags/create-your-first-feature-flag.md)
 * [Integrate Experience Rollouts in your app](../integrate/integrating-in-your-app.md)
 
 ## See also {#see-also}

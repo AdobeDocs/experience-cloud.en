@@ -19,4 +19,4 @@ You can increase or decrease the percentage at any time to expand, reduce, or pa
 
 * [Create a feature group](create-a-feature-group.md)
 * [A/B testing with feature flags](a-b-testing.md)
-* [Gradual rollout](../../../concepts/gradual-rollout.md)
+* [Gradual rollout](../../concepts/gradual-rollout.md)

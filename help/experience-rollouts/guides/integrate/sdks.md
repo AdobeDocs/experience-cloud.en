@@ -35,26 +35,26 @@ Key specifications for the Java SDK:
 * **Supported JDK:** JDK 8 and later
 * **Non-cacheable clients:** Supported from SDK version 0.8 onward. For non-cacheable clients, `getFeature()` makes a live API call instead of reading from cache. The SDK continues polling in the background and switches to cache-based serving if the client becomes cacheable.
 
-See the [Java SDK integration guides](../../sdk-releases/java/integration-guide-java-sdk-4-0-6.md) for version-specific setup instructions.
+See the [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md) for setup instructions.
 
 ### Node.js SDK {#nodejs-sdk}
 
 The Node.js SDK is distributed via npm.
 
-See the [Node.js SDK integration guides](../../sdk-releases/nodejs/integration-guides-nodejs-sdk.md) for setup instructions.
+See the [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup instructions.
 
 ## Choosing between SDK and REST API {#sdk-vs-api}
 
 | Scenario | Recommendation |
 |---|---|
 | Backend Java or Node.js service | Use the appropriate SDK for automatic caching and simplified integration |
-| Other backend language | Use the [Feature API V3](../../feature-api/get-feature-api-v3.md) directly |
-| Web or mobile application | Use the [Feature API V3](../../feature-api/get-feature-api-v3.md) directly |
-| Desktop application | Use the [Feature API V2](../../feature-api/get-feature-api-v2.md) directly |
+| Other backend language | Use the Feature API V3 REST endpoint directly |
+| Web or mobile application | Use the Feature API V3 REST endpoint directly |
+| Desktop application | Use the Feature API V2 REST endpoint directly |
 
 ## See also {#see-also}
 
 * [Web services](web-services.md)
 * [Integration steps](integration-steps.md)
-* [Java SDK integration guides](../../sdk-releases/java/integration-guide-java-sdk-4-0-6.md)
-* [Node.js SDK integration guides](../../sdk-releases/nodejs/integration-guides-nodejs-sdk.md)
+* [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md)
+* [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md)

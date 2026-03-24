@@ -28,10 +28,10 @@ Follow these recommendations to avoid configuration errors and protect your prod
 
 * Always create and test feature flags in **Stage** first.
 * Validate audience rules, percentage rollouts, and targeting logic in Stage before replicating in Production.
-* Use the [cross-environment workflow](../../cross-environment/cross-environment-concept.md) to view and manage flag status across environments.
+* Use the [cross-environment workflow](../cross-environment/cross-environment-concept.md) to view and manage flag status across environments.
 
 ## See also {#see-also}
 
 * [Log in to the console](log-in-to-the-console.md)
-* [Associate environments to an application](../../cross-environment/associate-environments.md)
-* [View feature flags across environments](../../cross-environment/view-feature-flags-across-environments.md)
+* [Associate environments to an application](../cross-environment/associate-environments.md)
+* [View feature flags across environments](../cross-environment/view-feature-flags-across-environments.md)

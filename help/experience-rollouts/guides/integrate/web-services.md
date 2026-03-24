@@ -11,14 +11,14 @@ Backend services integrate with Experience Rollouts using a server-side SDK. Cho
 
 | Language | Integration guide | Release notes |
 |---|---|---|
-| **Java** | [Java SDK integration guide](../../sdk-releases/java/integration-guide-java-sdk-4-0-6.md) | [Java SDK release notes](../../sdk-releases/java/release-notes-java-sdk-4-0-6.md) |
-| **Node.js** | [Node.js SDK integration guide](../../sdk-releases/nodejs/integration-guides-nodejs-sdk.md) | [Node.js SDK release notes](../../sdk-releases/nodejs/release-notes-nodejs-sdk.md) |
+| **Java** | [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md) | [Java SDK release notes](../../sdk-releases/java/java-sdk-release-notes.md) |
+| **Node.js** | [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) | [Node.js SDK release notes](../../sdk-releases/nodejs/nodejs-sdk-release-notes.md) |
 
 ## Other languages {#other-languages}
 
 If your backend service uses a language not listed above, you can integrate directly with the REST API:
 
-* [GET Feature API V3](../../feature-api/get-feature-api-v3.md)
+* Feature API V3 — contact Experience Rollouts support for access to the API reference
 
 Contact Experience Rollouts support if you need guidance on integrating with an unsupported stack.
 

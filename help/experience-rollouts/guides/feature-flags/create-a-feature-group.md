@@ -15,7 +15,7 @@ Before creating a feature group, complete the following:
 * You have the **Developer** or **Product Release Owner** role — see [User roles](../teams/user-roles.md)
 * You have created the feature flags you want to add to the group — see [Create your first feature flag](create-your-first-feature-flag.md)
 
-For an introduction to feature groups, see [Feature groups to control multiple features](../../../concepts/feature-groups-to-control-multiple-features.md).
+For an introduction to feature groups, see [Feature groups to control multiple features](../../concepts/feature-groups-to-control-multiple-features.md).
 
 ## Step 1: Create the feature group {#create}
 
@@ -63,4 +63,4 @@ You can schedule the feature group to activate at a future date and time. See [S
 
 * [Set a feature group to gradually roll out](set-feature-group-gradual-rollout.md)
 * [A/B testing with feature flags](a-b-testing.md)
-* [Feature groups to control multiple features](../../../concepts/feature-groups-to-control-multiple-features.md)
+* [Feature groups to control multiple features](../../concepts/feature-groups-to-control-multiple-features.md)

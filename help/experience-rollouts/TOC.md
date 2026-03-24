@@ -66,12 +66,12 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Use enterprise org data in audience rules](guides/audience/using-enterprise-org-data.md)
     + [Add percentage rules in audience criteria](guides/audience/adding-percentage-rules.md)
     + [Audience rule with client IP context variable](guides/audience/clientip-rule.md)
-    <!--
   + Cross-environment workflows {#cross-environment}
     + [Cross-environment concept](guides/cross-environment/cross-environment-concept.md)
     + [Associate environments to an application](guides/cross-environment/associate-environments.md)
     + [View feature flags across environments](guides/cross-environment/view-feature-flags-across-environments.md)
     + [Import feature flags](guides/cross-environment/import-feature-flags.md)
+    <!--
   + Automated rollouts {#automated-rollouts}
     + [Create an automated rollout](guides/automated-rollouts/create-automated-rollout.md)
     + [Automated rollout concept](guides/automated-rollouts/automated-rollout-concept.md)

@@ -43,7 +43,7 @@ Follow the [integration steps](integration-steps.md) for your application type. 
 
 Once integration is complete, create your first feature flag in the console and test it:
 
-* [Create your first feature flag](../../feature-flags/create-your-first-feature-flag.md)
+* [Create your first feature flag](../feature-flags/create-your-first-feature-flag.md)
 
 ## See also {#see-also}
 

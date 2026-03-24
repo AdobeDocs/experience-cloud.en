@@ -28,7 +28,7 @@ Start the creation process from the Releases section of the console:
 Provide a title, key, description, and optionally a tag. Configure the following options:
 
 * **Percentage rollout** — Set how much of the audience receives the feature.
-* **Rollout type** — Choose Manual or Automated. See [Automated rollouts](../../automated-rollouts/create-automated-rollout.md) for details on automated rollouts.
+* **Rollout type** — Choose Manual or Automated. Automated rollouts gradually increase the exposure percentage according to a configured schedule.
 
 >[!NOTE]
 >
@@ -85,4 +85,4 @@ See [Releases and cross-team feature groups](releases-and-cross-team-feature-gro
 
 * [Releases and cross-team feature groups](releases-and-cross-team-feature-groups.md)
 * [Create a feature group](create-a-feature-group.md)
-* [Automated rollouts](../../automated-rollouts/create-automated-rollout.md)
+* [Create a feature group](create-a-feature-group.md)
