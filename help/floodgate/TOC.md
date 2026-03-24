@@ -2,6 +2,7 @@
 audience: user
 user-guide-title: Adobe Target Floodgate Help
 user-guide-description: Adobe Target Floodgate
+hide: yes
 ---
 
 # Adobe target Floodgate Help {#get-started-floodgate}
