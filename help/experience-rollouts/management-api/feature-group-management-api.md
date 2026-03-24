@@ -84,28 +84,6 @@ The request body uses the [feature group object](#feature-group-object). The `ro
 }
 ```
 
-**Sample — automated rollout:**
-
-```json
-{
-  "params": { "rolloutType": "automated", "label": "my-automated-group", "tags": [] },
-  "status": "SAVED",
-  "type": "group",
-  "name": "my.automated.group",
-  "variations": [{ "variantPercentage": 100, "variantName": "Variant 1", "features": [] }],
-  "phaseRollOutPlan": {
-    "phaseRollOutBlocks": [
-      { "isPhaseBlock": true, "phaseRule": { "audience": [] }, "waitRule": null, "blockId": 1, "blockName": "", "isBlockActivated": false },
-      { "isPhaseBlock": false, "phaseRule": null, "waitRule": { "waitDuration": { "val": "2", "unit": "HOURS" } }, "blockId": 2, "blockName": "", "isBlockActivated": false },
-      { "isPhaseBlock": true, "phaseRule": { "audience": [] }, "waitRule": null, "blockId": 3, "blockName": "", "isBlockActivated": false }
-    ],
-    "rollOutPlanState": "DRAFT"
-  },
-  "clients": [],
-  "org": { "id": 95 }
-}
-```
-
 ### Response {#create-response}
 
 | Status | Description |
@@ -130,29 +108,6 @@ Updates an existing feature group. Pass the same structure as the create request
 | `200` | Success. Response body is the updated feature group object. |
 | `400` | Invalid payload. |
 | `403` | Insufficient permissions. |
-
-## Pause, resume, or abort a rollout plan {#pause-resume-abort}
-
-Controls the execution of an in-progress automated or A/B testing rollout plan.
-
-| Action | Endpoint |
-|---|---|
-| **Resume** | `POST /m/api/v1/mgmt/phaserollout/resume` |
-| **Pause** | `POST /m/api/v1/mgmt/phaserollout/pause` |
-| **Abort** | `POST /m/api/v1/mgmt/phaserollout/abort` |
-
-### Request body {#control-request-body}
-
-```json
-{
-  "entityId": 10282,
-  "fgEntityType": "GROUP"
-}
-```
-
-### Response {#control-response}
-
-Returns `true` on success.
 
 ## Delete feature group {#delete-group}
 
@@ -224,4 +179,3 @@ Each block in `phaseRollOutBlocks` is either a **phase block** (`isPhaseBlock: t
 * [Feature management APIs overview](feature-management-apis-overview.md)
 * [Feature flags management API](feature-flags-management-api.md)
 * [Management patch API](management-patch-api.md)
-* [Create an automated rollout](../guides/automated-rollouts/create-automated-rollout.md)
