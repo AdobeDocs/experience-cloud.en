@@ -1,7 +1,6 @@
 ---
 title: Gradual rollout
 description: Learn how gradual rollouts in Experience Rollouts let you phase feature delivery into production safely, with real-time feedback and minimal risk.
-exl-id: c9d0e1f2-9999-4c3d-6e7f-8a9b0c1d2e3f
 ---
 
 # Gradual rollout {#gradual-rollout}

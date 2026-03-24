@@ -1,7 +1,6 @@
 ---
 title: Adobe Experience Rollouts
 description: Learn how to use Adobe Experience Rollouts to deliver features safely and gradually with controlled rollouts, feature flags, and targeted audience management.
-exl-id: c3f4a123-1b2d-4e5f-8a9b-0c1d2e3f4a56
 ---
 
 # Adobe Experience Rollouts {#experience-rollouts-home}

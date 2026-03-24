@@ -1,7 +1,6 @@
 ---
 title: Introduction to Experience Rollouts
 description: Learn how Adobe Experience Rollouts provides a controlled release system for deploying features progressively to targeted audiences.
-exl-id: a1b2c3d4-1111-4a5b-8c9d-0e1f2a3b4c5d
 ---
 
 # Introduction to Experience Rollouts {#introduction}

@@ -1,7 +1,6 @@
 ---
 title: Feature flags to enable and disable features
 description: Learn how feature flags in Experience Rollouts let you control feature availability, manage dependencies, and reduce deployment risk.
-exl-id: e5f6a7b8-5555-4e9f-2a3b-4c5d6e7f8a9b
 ---
 
 # Feature flags to enable and disable features {#feature-flags}
