@@ -11,7 +11,7 @@ The release management APIs let you retrieve, create, and edit releases and cros
 
 All requests require the headers described in the [common requirements](feature-management-apis-overview.md#common-requirements), plus the additional header listed below.
 
-### Additional required header {#additional-header}
+## Additional required header {#additional-header}
 
 | Header | Description | Required |
 |---|---|---|

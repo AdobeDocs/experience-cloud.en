@@ -192,7 +192,7 @@ Deletes a feature group by its numeric ID.
 |---|---|---|---|
 | `id` | Integer | Variation ID. Required only for update calls. | Conditional |
 | `variantName` | String | Variant name. Hardcoded to `"Variant 1"`. | Yes |
-| `variantPercentage` | Decimal | Percentage of the audience receiving this variant. Range: (0, 100]. | Yes |
+| `variantPercentage` | Decimal | Percentage of the audience receiving this variant. Must be greater than 0 and no more than 100. | Yes |
 
 ### PhaseRollOutPlan object {#phaserolloutplan-object}
 

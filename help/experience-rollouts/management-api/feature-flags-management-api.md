@@ -188,7 +188,7 @@ Deletes a feature flag by its numeric ID.
 |---|---|---|---|
 | `id` | Integer | Variation ID. Required only for update calls. | Conditional |
 | `variantName` | String | Variant name. Fixed values: `"Variation 1"`, `"Variation 2"`, `"Variation 3"`. | Yes |
-| `variantPercentage` | Decimal | Percentage of the audience receiving this variant. Range: (0, 100]. Up to 2 decimal places. | Yes |
+| `variantPercentage` | Decimal | Percentage of the audience receiving this variant. Must be greater than 0 and no more than 100, with up to 2 decimal places. | Yes |
 
 ### FeatureRule object {#featurerule-object}
 
