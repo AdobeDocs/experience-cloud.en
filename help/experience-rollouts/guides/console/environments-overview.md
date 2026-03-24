@@ -24,6 +24,8 @@ After logging in to the Experience Rollouts console, select the environment from
 
 ## Best practices {#best-practices}
 
+Follow these recommendations to avoid configuration errors and protect your production audience:
+
 * Always create and test feature flags in **Stage** first.
 * Validate audience rules, percentage rollouts, and targeting logic in Stage before replicating in Production.
 * Use the [cross-environment workflow](../../cross-environment/cross-environment-concept.md) to view and manage flag status across environments.

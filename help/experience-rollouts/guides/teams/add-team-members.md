@@ -9,6 +9,8 @@ You must have the **Admin** role to add members to your team. See [User roles](u
 
 ## Add a member {#add-member}
 
+To add a member to your team and assign them a role, follow these steps:
+
 1. Navigate to your organization's access management system.
 2. Search for **Experience Rollouts** and select the appropriate application for the environment you are managing (Stage or Production).
 3. Search for the team the new member should join.
@@ -22,6 +24,8 @@ The member receives a confirmation once the request is submitted. As an Admin or
 >Members can also request access themselves. See [Request access](../console/request-access.md) for the self-serve steps. As an admin, you will receive a notification to approve or reject their request.
 
 ## Approve a pending request {#approve-request}
+
+When a member requests access on their own, you will receive a notification. To review and act on it:
 
 1. In the access management system, go to **Access → Pending**.
 2. Locate the request for your team.

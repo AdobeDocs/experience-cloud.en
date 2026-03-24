@@ -16,6 +16,8 @@ Before creating a feature flag, complete the following:
 
 ## Step 1: Create the feature flag {#create}
 
+To create a new feature flag, follow these steps in the console:
+
 1. Log in to the Experience Rollouts console and navigate to **Features & Releases > Feature Flags**.
 2. Select your application from the **Application** drop-down.
 3. Select **New Feature**.

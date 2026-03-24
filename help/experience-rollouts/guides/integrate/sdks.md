@@ -30,6 +30,8 @@ Before integrating an SDK, ensure you have the following:
 
 The Java SDK is distributed via Maven. Add the dependency to your project's `pom.xml` to integrate. For Spring-based applications, the Maven dependency automatically sets up the SDK cache before your application fully loads.
 
+Key specifications for the Java SDK:
+
 * **Supported JDK:** JDK 8 and later
 * **Non-cacheable clients:** Supported from SDK version 0.8 onward. For non-cacheable clients, `getFeature()` makes a live API call instead of reading from cache. The SDK continues polling in the background and switches to cache-based serving if the client becomes cacheable.
 

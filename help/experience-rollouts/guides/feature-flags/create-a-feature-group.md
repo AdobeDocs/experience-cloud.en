@@ -19,16 +19,22 @@ For an introduction to feature groups, see [Feature groups to control multiple f
 
 ## Step 1: Create the feature group {#create}
 
+Open the console and start a new feature group:
+
 1. Log in to the Experience Rollouts console and navigate to **Feature Testing > Feature Groups**.
 2. Select **New Feature Group**.
 
 ## Step 2: Basic details {#basic-details}
+
+Configure the general settings for the feature group:
 
 1. Provide a title, key, description, and optionally a tag.
 2. Set a **percentage rollout** for the feature group.
 3. If you want to run an A/B test, select more than one variant. Otherwise, leave it at one variant. See [A/B testing with feature flags](a-b-testing.md) for details.
 
 ## Step 3: Audience {#audience}
+
+Define who will receive the features in this group:
 
 1. On the **Audience** tab, add audience criteria to define which users receive the feature.
 2. Under **Applications**, add one or more applications from your team. Feature groups can span multiple applications as long as they all belong to the same team.
@@ -38,6 +44,8 @@ For an introduction to feature groups, see [Feature groups to control multiple f
 >The **Developer** role is sandboxed. Add your own User ID under **Audience > Profile > User ID** to test privately. To target external users, you need the **Product Release Owner** role.
 
 ## Step 4: Features {#features}
+
+Assign the feature flags that will be controlled by this group:
 
 1. Under the **Features** tab, you see a box for each application you selected.
 2. Add feature flags for each application.

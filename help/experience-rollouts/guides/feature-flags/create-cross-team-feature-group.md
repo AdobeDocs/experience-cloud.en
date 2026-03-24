@@ -7,6 +7,8 @@ description: Learn how to create a cross-team feature group in Adobe Experience 
 
 ## Prerequisites {#prerequisites}
 
+Before creating a cross-team feature group, confirm the following:
+
 * You have access to the console — see [Log in to the console](../console/log-in-to-the-console.md)
 * You belong to a team and your application is onboarded
 * You have the **Feature Admin** role — see [User roles](../teams/user-roles.md)
@@ -15,6 +17,8 @@ description: Learn how to create a cross-team feature group in Adobe Experience 
 A cross-team feature group allows bundling feature flags from applications across multiple teams with rich audience targeting. Unlike releases, it is fully self-serve and has no limit on the number you can create. See [Releases and cross-team feature groups](releases-and-cross-team-feature-groups.md) for a comparison.
 
 ## Step 1: Create the cross-team feature group {#create}
+
+Start the creation process from the Releases section of the console:
 
 1. Navigate to **Features & Releases > Releases** in the console.
 2. Select **New Feature Group (Cross-Team)**.

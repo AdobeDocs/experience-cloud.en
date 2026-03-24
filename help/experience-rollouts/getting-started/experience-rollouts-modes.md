@@ -31,6 +31,8 @@ Use user-level targeting when you want to:
 
 ### Limitations {#user-level-limitations}
 
+User-level targeting is not designed for the following scenarios:
+
 * Does not control features at the organization, environment, or region level
 * Not intended for tenant-wide feature enablement or entitlement gating
 
@@ -54,6 +56,8 @@ Use org-level targeting when you want to:
 * Gate features based on entitlement or subscription tier
 
 ### Limitations {#org-level-limitations}
+
+Org and environment-level targeting is not designed for the following scenarios:
 
 * Does not support rich user profile-based targeting
 * Does not support percentage-based rollout at the individual user level

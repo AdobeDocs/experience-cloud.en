@@ -7,6 +7,8 @@ description: Learn how to configure and update audience criteria for a release i
 
 ## Access the audience settings {#access}
 
+To start configuring who receives your release, navigate to the audience settings in the console:
+
 1. Open your release in the Experience Rollouts console.
 2. Go to the **Audience** tab.
 3. Enable the toggle next to **Audience Rules**.

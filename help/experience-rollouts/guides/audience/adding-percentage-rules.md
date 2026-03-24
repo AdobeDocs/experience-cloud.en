@@ -36,7 +36,8 @@ To apply different percentages to different segments, use **nested logic** to co
 2. Each condition is assigned a number automatically.
 3. Enter a logical expression referencing those numbers.
 
-**Common expressions:**
+Use one of the following expressions to describe the relationship between your conditions:
+
 * `1 and (2 or 3)` — condition 1 AND (condition 2 OR condition 3)
 * `(1 and 2) or 3` — (condition 1 AND condition 2) OR condition 3
 * `(1 and 2) or (3 and 4)` — two independent groups

@@ -20,7 +20,7 @@ A Release Manager can update a release's state directly from the console navigat
 
 ## Allowed transitions {#transitions}
 
-Not all state transitions are permitted. The following rules apply:
+Not all state transitions are permitted. Understanding the allowed paths helps you plan your rollout and avoid errors when managing state changes:
 
 * A release can move forward through the states: Draft → Saved → Published → Full rollout → Baselined
 * A release can be Aborted from Draft, Saved, Published, or Full rollout
