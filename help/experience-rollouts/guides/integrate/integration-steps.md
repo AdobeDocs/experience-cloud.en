@@ -13,25 +13,21 @@ Backend services integrate using a server-side SDK. Choose the SDK for your tech
 
 **Java**
 
-Follow the [Java SDK integration guide](../../sdk-releases/java/integration-guide-java-sdk-4-0-6.md) for setup, dependency configuration, and initialization.
+Follow the [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md) for setup, dependency configuration, and initialization.
 
 **Node.js**
 
-Follow the [Node.js SDK integration guide](../../sdk-releases/nodejs/integration-guides-nodejs-sdk.md) for setup and initialization.
+Follow the [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup and initialization.
 
 **Other languages**
 
 If your stack is not listed above, integrate directly with the [Feature API V3](../../feature-api/get-feature-api-v3.md). Contact Experience Rollouts support if you need guidance.
-
----
 
 ## Web and mobile applications {#web-mobile}
 
 Web and mobile applications call the **Feature API V3** to retrieve feature flags for the current user and apply conditional logic in the application.
 
 See [GET Feature API V3](../../feature-api/get-feature-api-v3.md) for the full API reference.
-
----
 
 ## Desktop applications {#desktop}
 
@@ -42,8 +38,6 @@ See [GET Feature API V2](../../feature-api/get-feature-api-v2.md) for the full A
 >[!IMPORTANT]
 >
 >Desktop clients must honor the TTL value in the API response and implement graceful error handling for API unavailability. See [Desktop applications](desktop-applications.md) for requirements.
-
----
 
 ## See also {#see-also}
 

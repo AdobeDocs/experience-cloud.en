@@ -17,16 +17,21 @@ To start configuring who receives your release, navigate to the audience setting
 ## Supported audience criteria {#criteria}
 
 ### ID type {#id-type}
+
 Target users based on their account type (for example, personal or enterprise accounts).
 
 ### Country {#country}
+
 Target users based on their registered country.
 
 ### User ID {#user-id}
+
 Target specific users by their unique user identifier (GUID).
 
 ### Email address {#email}
+
 Target users by their exact email address. To add multiple email addresses at once, select **in** from the operator drop-down (instead of **is**), then:
+
 * Enter a comma-separated list of addresses in the text box, or
 * Upload a `.txt` file with one address per line, or
 * Upload a `.csv` file with the list of addresses
@@ -34,15 +39,19 @@ Target users by their exact email address. To add multiple email addresses at on
 If your list is very large, split it into smaller batches.
 
 ### Email domain {#email-domain}
+
 Target all users whose email address belongs to a specific domain (for example, `yourcompany.com`).
 
 ### Client IP {#client-ip}
+
 Target users based on their client IP address.
 
 ### Percentage {#percentage}
+
 Target a random percentage of all users, including unauthenticated users.
 
 ### Percentage (authenticated only) {#percentage-auth}
+
 Target a random percentage of authenticated users only. Unauthenticated users are excluded.
 
 ## Combining multiple rules {#combining-rules}

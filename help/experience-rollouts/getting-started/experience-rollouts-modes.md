@@ -36,8 +36,6 @@ User-level targeting is not designed for the following scenarios:
 * Does not control features at the organization, environment, or region level
 * Not intended for tenant-wide feature enablement or entitlement gating
 
----
-
 ## Org and environment-level targeting {#org-level}
 
 ### Overview {#org-level-overview}
@@ -63,8 +61,6 @@ Org and environment-level targeting is not designed for the following scenarios:
 * Does not support percentage-based rollout at the individual user level
 * Not intended for experimentation or A/B testing
 
----
-
 ## Comparison {#comparison}
 
 | Dimension | User-level targeting | Org and environment-level targeting |
@@ -74,8 +70,6 @@ Org and environment-level targeting is not designed for the following scenarios:
 | Percentage rollout | Yes | No |
 | A/B testing | Yes | No |
 | Enterprise gating | No | Yes |
-
----
 
 ## Choosing the right mode {#choosing}
 

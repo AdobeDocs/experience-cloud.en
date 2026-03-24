@@ -66,7 +66,7 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Use enterprise org data in audience rules](guides/audience/using-enterprise-org-data.md)
     + [Add percentage rules in audience criteria](guides/audience/adding-percentage-rules.md)
     + [Audience rule with client IP context variable](guides/audience/clientip-rule.md)
-<!--
+    <!--
   + Cross-environment workflows {#cross-environment}
     + [Cross-environment concept](guides/cross-environment/cross-environment-concept.md)
     + [Associate environments to an application](guides/cross-environment/associate-environments.md)
@@ -81,102 +81,14 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Get support](guides/support/get-support.md)
     + [Contact support](guides/support/contact-support.md)
   + SDK releases {#sdk-releases}
-    + Java SDK integration guides {#java-sdk}
-      + Java SDK 4.x {#java-sdk-4}
-        + [Java SDK 4.0.6](guides/sdk-releases/java/integration-guide-java-sdk-4-0-6.md)
-        + [Java SDK 4.0.5](guides/sdk-releases/java/integration-guide-java-sdk-4-0-5.md)
-        + [Java SDK 4.0.4](guides/sdk-releases/java/integration-guide-java-sdk-4-0-4.md)
-        + [Java SDK 4.0.3](guides/sdk-releases/java/integration-guide-java-sdk-4-0-3.md)
-        + [Java SDK 4.0.2](guides/sdk-releases/java/integration-guide-java-sdk-4-0-2.md)
-        + [Java SDK 4.0.1](guides/sdk-releases/java/integration-guide-java-sdk-4-0-1.md)
-        + [Java SDK 4.0.1-beta](guides/sdk-releases/java/integration-guide-java-sdk-4-0-1-beta.md)
-      + Java SDK 3.x {#java-sdk-3}
-        + [Java SDK 3.1.0](guides/sdk-releases/java/integration-guide-java-sdk-3-1-0.md)
-        + [Java SDK 3.0.1](guides/sdk-releases/java/integration-guide-java-sdk-3-0-1.md)
-        + [Java SDK 3.0.0](guides/sdk-releases/java/integration-guide-java-sdk-3-0-0.md)
-      + Java SDK 2.x {#java-sdk-2}
-        + [Java SDK 2.9.12](guides/sdk-releases/java/integration-guide-java-sdk-2-9-12.md)
-        + [Java SDK 2.9.11](guides/sdk-releases/java/integration-guide-java-sdk-2-9-11.md)
-        + [Java SDK 2.9.10](guides/sdk-releases/java/integration-guide-java-sdk-2-9-10.md)
-        + [Java SDK 2.9.9](guides/sdk-releases/java/integration-guide-java-sdk-2-9-9.md)
-        + [Java SDK 2.9.7](guides/sdk-releases/java/integration-guide-java-sdk-2-9-7.md)
-        + [Java SDK 2.9.6](guides/sdk-releases/java/integration-guide-java-sdk-2-9-6.md)
-        + [Java SDK 2.9.3](guides/sdk-releases/java/integration-guide-java-sdk-2-9-3.md)
-        + [Java SDK 2.9.2](guides/sdk-releases/java/integration-guide-java-sdk-2-9-2.md)
-        + [Java SDK 2.9.1](guides/sdk-releases/java/integration-guide-java-sdk-2-9-1.md)
-        + [Java SDK 2.9.0](guides/sdk-releases/java/integration-guide-java-sdk-2-9-0.md)
-        + [Java SDK 2.8.1](guides/sdk-releases/java/integration-guide-java-sdk-2-8-1.md)
-        + [Java SDK 2.8](guides/sdk-releases/java/integration-guide-java-sdk-2-8.md)
-        + [Java SDK 2.7](guides/sdk-releases/java/integration-guide-java-sdk-2-7.md)
-        + [Java SDK 2.6](guides/sdk-releases/java/integration-guide-java-sdk-2-6.md)
-        + [Java SDK 2.5](guides/sdk-releases/java/integration-guide-java-sdk-2-5.md)
-        + [Java SDK 2.4](guides/sdk-releases/java/integration-guide-java-sdk-2-4.md)
-        + [Java SDK 2.3](guides/sdk-releases/java/integration-guide-java-sdk-2-3.md)
-        + [Java SDK 2.2](guides/sdk-releases/java/integration-guide-java-sdk-2-2.md)
-        + [Java SDK 2.1-SNAPSHOT](guides/sdk-releases/java/integration-guide-java-sdk-2-1-snapshot.md)
-        + [Java SDK 2.0](guides/sdk-releases/java/integration-guide-java-sdk-2-0.md)
-      + Java SDK 1.x {#java-sdk-1}
-        + [Java SDK 1.9](guides/sdk-releases/java/integration-guide-java-sdk-1-9.md)
-        + [Java SDK 1.7](guides/sdk-releases/java/integration-guide-java-sdk-1-7.md)
-        + [Java SDK 1.6](guides/sdk-releases/java/integration-guide-java-sdk-1-6.md)
-        + [Java SDK 1.5](guides/sdk-releases/java/integration-guide-java-sdk-1-5.md)
-        + [Java SDK 1.4](guides/sdk-releases/java/integration-guide-java-sdk-1-4.md)
-        + [Java SDK 1.3](guides/sdk-releases/java/integration-guide-java-sdk-1-3.md)
-        + [Java SDK 1.2](guides/sdk-releases/java/integration-guide-java-sdk-1-2.md)
-    + Node.js SDK integration guides {#nodejs-sdk}
-      + [Node.js SDK 1.0.10](guides/sdk-releases/nodejs/integration-guide-nodejs-sdk-1-0-10.md)
-      + [Node.js SDK 1.0.5](guides/sdk-releases/nodejs/integration-guide-nodejs-sdk-1-0-5.md)
-      + [Node.js SDK 1.0.3](guides/sdk-releases/nodejs/integration-guide-nodejs-sdk-1-0-3.md)
-      + [Node.js SDK overview](guides/sdk-releases/nodejs/integration-guides-nodejs-sdk.md)
-    + Release notes for Java SDK {#java-sdk-rn}
-      + Java SDK 4.x {#java-sdk-rn-4}
-        + [Java SDK 4.0.6](guides/sdk-releases/java/release-notes-java-sdk-4-0-6.md)
-        + [Java SDK 4.0.5](guides/sdk-releases/java/release-notes-java-sdk-4-0-5.md)
-        + [Java SDK 4.0.4](guides/sdk-releases/java/release-notes-java-sdk-4-0-4.md)
-        + [Java SDK 4.0.3](guides/sdk-releases/java/release-notes-java-sdk-4-0-3.md)
-        + [Java SDK 4.0.2](guides/sdk-releases/java/release-notes-java-sdk-4-0-2.md)
-        + [Java SDK 4.0.1-beta](guides/sdk-releases/java/release-notes-java-sdk-4-0-1-beta.md)
-      + Java SDK 3.x {#java-sdk-rn-3}
-        + [Java SDK 3.1.0](guides/sdk-releases/java/release-notes-java-sdk-3-1-0.md)
-        + [Java SDK 3.0.1](guides/sdk-releases/java/release-notes-java-sdk-3-0-1.md)
-        + [Java SDK 3.0.0](guides/sdk-releases/java/release-notes-java-sdk-3-0-0.md)
-      + Java SDK 2.x {#java-sdk-rn-2}
-        + [Java SDK 2.9.12](guides/sdk-releases/java/release-notes-java-sdk-2-9-12.md)
-        + [Java SDK 2.9.11](guides/sdk-releases/java/release-notes-java-sdk-2-9-11.md)
-        + [Java SDK 2.9.10](guides/sdk-releases/java/release-notes-java-sdk-2-9-10.md)
-        + [Java SDK 2.9.9](guides/sdk-releases/java/release-notes-java-sdk-2-9-9.md)
-        + [Java SDK 2.9.7](guides/sdk-releases/java/release-notes-java-sdk-2-9-7.md)
-        + [Java SDK 2.9.6](guides/sdk-releases/java/release-notes-java-sdk-2-9-6.md)
-        + [Java SDK 2.9.3](guides/sdk-releases/java/release-notes-java-sdk-2-9-3.md)
-        + [Java SDK 2.9.2](guides/sdk-releases/java/release-notes-java-sdk-2-9-2.md)
-        + [Java SDK 2.9.1](guides/sdk-releases/java/release-notes-java-sdk-2-9-1.md)
-        + [Java SDK 2.9.0](guides/sdk-releases/java/release-notes-java-sdk-2-9-0.md)
-        + [Java SDK 2.8.1](guides/sdk-releases/java/release-notes-java-sdk-2-8-1.md)
-        + [Java SDK 2.8](guides/sdk-releases/java/release-notes-java-sdk-2-8.md)
-        + [Java SDK 2.7](guides/sdk-releases/java/release-notes-java-sdk-2-7.md)
-        + [Java SDK 2.6](guides/sdk-releases/java/release-notes-java-sdk-2-6.md)
-        + [Java SDK 2.5](guides/sdk-releases/java/release-notes-java-sdk-2-5.md)
-        + [Java SDK 2.4](guides/sdk-releases/java/release-notes-java-sdk-2-4.md)
-        + [Java SDK 2.3](guides/sdk-releases/java/release-notes-java-sdk-2-3.md)
-        + [Java SDK 2.2](guides/sdk-releases/java/release-notes-java-sdk-2-2.md)
-        + [Java SDK 2.1-SNAPSHOT](guides/sdk-releases/java/release-notes-java-sdk-2-1-snapshot.md)
-        + [Java SDK 2.0](guides/sdk-releases/java/release-notes-java-sdk-2-0.md)
-      + Java SDK 1.x {#java-sdk-rn-1}
-        + [Java SDK 1.9](guides/sdk-releases/java/release-notes-java-sdk-1-9.md)
-        + [Java SDK 1.7](guides/sdk-releases/java/release-notes-java-sdk-1-7.md)
-        + [Java SDK 1.6](guides/sdk-releases/java/release-notes-java-sdk-1-6.md)
-        + [Java SDK 1.5](guides/sdk-releases/java/release-notes-java-sdk-1-5.md)
-        + [Java SDK 1.4](guides/sdk-releases/java/release-notes-java-sdk-1-4.md)
-        + [Java SDK 1.3](guides/sdk-releases/java/release-notes-java-sdk-1-3.md)
-        + [Java SDK 1.2](guides/sdk-releases/java/release-notes-java-sdk-1-2.md)
-    + Release notes for Node.js SDK {#nodejs-sdk-rn}
-      + [Node.js SDK 1.0.10](guides/sdk-releases/nodejs/release-notes-nodejs-sdk-1-0-10.md)
-      + [Node.js SDK 1.0.5](guides/sdk-releases/nodejs/release-notes-nodejs-sdk-1-0-5.md)
-      + [Node.js SDK 1.0.3](guides/sdk-releases/nodejs/release-notes-nodejs-sdk-1-0-3.md)
-      + [Node.js SDK](guides/sdk-releases/nodejs/release-notes-nodejs-sdk.md)
-    + SDK benchmarking {#sdk-benchmarking}
-      + [Java SDK benchmarking](guides/sdk-releases/java-sdk-benchmarking.md)
-+ Feature API {#feature-api}
+    + Java SDK {#java-sdk}
+      + [Java SDK integration guide](guides/sdk-releases/java/java-sdk-integration-guide.md)
+      + [Java SDK release notes](guides/sdk-releases/java/java-sdk-release-notes.md)
+    + Node.js SDK {#nodejs-sdk}
+      + [Node.js SDK integration guide](guides/sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
+      + [Node.js SDK release notes](guides/sdk-releases/nodejs/nodejs-sdk-release-notes.md)
+    + [SDK benchmarking](guides/sdk-releases/java-sdk-benchmarking.md)-->
+<!--+ Feature API {#feature-api}
   + [GET Feature API V3](feature-api/get-feature-api-v3.md)
   + [GET Feature API V2](feature-api/get-feature-api-v2.md)
 + Management API {#management-api}
@@ -186,5 +98,4 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
   + [Release management APIs](management-api/release-management-apis.md)
   + [Get client ID for an application](management-api/get-client-id.md)
   + [Get desired audience criteria](management-api/get-audience-criteria.md)
-  + [Management patch API](management-api/management-patch-api.md)
--->
+  + [Management patch API](management-api/management-patch-api.md)-->
