@@ -71,10 +71,6 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Associate environments to an application](guides/cross-environment/associate-environments.md)
     + [View feature flags across environments](guides/cross-environment/view-feature-flags-across-environments.md)
     + [Import feature flags](guides/cross-environment/import-feature-flags.md)
-  + Automated rollouts {#automated-rollouts}
-    + [Create an automated rollout](guides/automated-rollouts/create-automated-rollout.md)
-    + [Automated rollout concept](guides/automated-rollouts/automated-rollout-concept.md)
-    + [Monitor and edit a rollout plan](guides/automated-rollouts/monitor-edit-rollout-plan.md)
   + Support {#support}
     + [Troubleshooting](guides/support/troubleshooting.md)
     + [Get support](guides/support/get-support.md)
@@ -87,7 +83,7 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
       + [Node.js SDK integration guide](guides/sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
       + [Node.js SDK release notes](guides/sdk-releases/nodejs/nodejs-sdk-release-notes.md)
     + [SDK benchmarking](guides/sdk-releases/java-sdk-benchmarking.md)
-<!--+ Feature API {#feature-api}
++ Feature API {#feature-api}
   + [GET Feature API V3](feature-api/get-feature-api-v3.md)
   + [GET Feature API V2](feature-api/get-feature-api-v2.md)
 + Management API {#management-api}
@@ -97,4 +93,4 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
   + [Release management APIs](management-api/release-management-apis.md)
   + [Get client ID for an application](management-api/get-client-id.md)
   + [Get desired audience criteria](management-api/get-audience-criteria.md)
-  + [Management patch API](management-api/management-patch-api.md)-->
+  + [Management patch API](management-api/management-patch-api.md)

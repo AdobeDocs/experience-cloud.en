@@ -16,7 +16,7 @@ The Experience Rollouts management APIs let you manage feature flags, feature gr
 The following management APIs are available:
 
 * [Feature flags management API](feature-flags-management-api.md) — Create, read, update, and delete feature flags for an application.
-* [Feature group management API](feature-group-management-api.md) — Create, read, update, delete, and control automated rollout plans for feature groups.
+* [Feature group management API](feature-group-management-api.md) — Create, read, update, and delete feature groups.
 * [Release management APIs](release-management-apis.md) — Create and edit cross-team feature groups and releases.
 
 ## Common requirements {#common-requirements}
@@ -39,6 +39,5 @@ The following guides assist with building correct API payloads:
 
 ## See also {#see-also}
 
-* [GET Feature API V3](../feature-api/get-feature-api-v3.md)
-* [GET Feature API V2](../feature-api/get-feature-api-v2.md)
+* **GET Feature API V3** and **GET Feature API V2** — see the Feature API section of this guide for the full references.
 * [Subscribe to the API application](../guides/integrate/subscribe-to-api-application.md)
