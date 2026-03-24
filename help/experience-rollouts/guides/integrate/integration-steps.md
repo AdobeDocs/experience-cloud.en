@@ -13,11 +13,11 @@ Backend services integrate using a server-side SDK. Choose the SDK for your tech
 
 **Java**
 
-Follow the [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md) for setup, dependency configuration, and initialization.
+Follow the [Java SDK integration guide](../sdk-releases/java/java-sdk-integration-guide.md) for setup, dependency configuration, and initialization.
 
 **Node.js**
 
-Follow the [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup and initialization.
+Follow the [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup and initialization.
 
 **Other languages**
 

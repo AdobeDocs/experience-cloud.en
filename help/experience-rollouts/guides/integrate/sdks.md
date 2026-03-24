@@ -35,13 +35,13 @@ Key specifications for the Java SDK:
 * **Supported JDK:** JDK 8 and later
 * **Non-cacheable clients:** Supported from SDK version 0.8 onward. For non-cacheable clients, `getFeature()` makes a live API call instead of reading from cache. The SDK continues polling in the background and switches to cache-based serving if the client becomes cacheable.
 
-See the [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md) for setup instructions.
+See the [Java SDK integration guide](../sdk-releases/java/java-sdk-integration-guide.md) for setup instructions.
 
 ### Node.js SDK {#nodejs-sdk}
 
 The Node.js SDK is distributed via npm.
 
-See the [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup instructions.
+See the [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup instructions.
 
 ## Choosing between SDK and REST API {#sdk-vs-api}
 
@@ -56,5 +56,5 @@ See the [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-int
 
 * [Web services](web-services.md)
 * [Integration steps](integration-steps.md)
-* [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md)
-* [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
+* [Java SDK integration guide](../sdk-releases/java/java-sdk-integration-guide.md)
+* [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md)

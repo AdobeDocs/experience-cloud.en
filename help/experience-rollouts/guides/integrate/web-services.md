@@ -11,8 +11,8 @@ Backend services integrate with Experience Rollouts using a server-side SDK. Cho
 
 | Language | Integration guide | Release notes |
 |---|---|---|
-| **Java** | [Java SDK integration guide](../../sdk-releases/java/java-sdk-integration-guide.md) | [Java SDK release notes](../../sdk-releases/java/java-sdk-release-notes.md) |
-| **Node.js** | [Node.js SDK integration guide](../../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) | [Node.js SDK release notes](../../sdk-releases/nodejs/nodejs-sdk-release-notes.md) |
+| **Java** | [Java SDK integration guide](../sdk-releases/java/java-sdk-integration-guide.md) | [Java SDK release notes](../sdk-releases/java/java-sdk-release-notes.md) |
+| **Node.js** | [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) | [Node.js SDK release notes](../sdk-releases/nodejs/nodejs-sdk-release-notes.md) |
 
 ## Other languages {#other-languages}
 
