@@ -2,7 +2,6 @@
 audience: user
 user-guide-title: Adobe Experience Rollouts
 user-guide-description: Learn how to use Adobe Experience Rollouts to manage feature flags, controlled rollouts, and targeted releases across your applications.
-feature: Overview
 ---
 
 # Adobe Experience Rollouts {#experience-rollouts}
