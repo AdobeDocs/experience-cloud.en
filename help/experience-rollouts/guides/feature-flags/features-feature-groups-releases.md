@@ -1,8 +1,8 @@
 ---
 title: Features and feature groups
 description: Learn about the differences between feature flags and feature groups in Adobe Experience Rollouts and when to use each.
+exl-id: 852aa777-6f8a-47c9-bf54-e645a5ee2f3e
 ---
-
 # Features and feature groups {#features-feature-groups}
 
 Experience Rollouts provides two artifacts for managing feature rollouts. Choosing the right one depends on the scope of your rollout and the number of features involved.

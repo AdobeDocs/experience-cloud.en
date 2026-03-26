@@ -1,8 +1,8 @@
 ---
 title: Select your sandbox
 description: Learn how to select the correct Adobe Experience Platform sandbox when working in Adobe Experience Rollouts.
+exl-id: 84b6b640-7f43-4e51-a3b1-29f4efd3670f
 ---
-
 # Select your sandbox {#sandbox}
 
 Experience Rollouts is built on Adobe Experience Platform. Before working with feature flags, select the sandbox that corresponds to your current environment, just as you would in any other Adobe Experience Platform application.
