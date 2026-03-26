@@ -27,7 +27,7 @@ Getting value from Experience Rollouts starts with three steps:
 
 3. **Integrate with your application** — Connect your app to the Experience Rollouts API or SDK so it can retrieve and apply feature flags at runtime. Start with the [integration steps](guides/integrate/integration-steps.md) for your application type.
 
-Once your first flag is live, you can refine its audience, configure a gradual rollout, and promote it through [release states](guides/feature-flags/release-states.md) from saved to full rollout.
+Once your first flag is live, you can refine its audience, configure a gradual rollout, and promote it from saved to full rollout.
 
 ## Need help?
 

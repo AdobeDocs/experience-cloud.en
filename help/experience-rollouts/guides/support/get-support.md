@@ -13,8 +13,7 @@ Before submitting a support request, try these self-service options:
 
 * **Search this documentation** — Use the search function to find guides, concept explanations, and how-to content.
 * **Use the Features Workbench** — Diagnose feature flag evaluation issues for specific users without writing code. See [Troubleshooting](troubleshooting.md) for instructions.
-* **Check release states** — Confirm the feature is in the correct state for your intended audience. See [Release states](../feature-flags/release-states.md).
-* **Verify audience rules** — Review the audience criteria and percentage configuration for the feature. See [Update release audience rules](../feature-flags/update-release-audience-rules.md).
+* **Verify feature flag state** — Confirm the feature flag is published and the audience rules are correctly configured.
 
 ## Submit a support request {#submit-request}
 

@@ -79,5 +79,3 @@ The following table describes common problems and how to investigate them using 
 
 * [Get support](get-support.md)
 * [Contact support](contact-support.md)
-* [Update release audience rules](../feature-flags/update-release-audience-rules.md)
-* [Release states](../feature-flags/release-states.md)
