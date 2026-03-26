@@ -1,8 +1,8 @@
 ---
 title: SDK benchmarking
 description: Review Java SDK benchmarking results for Adobe Experience Rollouts, including response time measurements across varying numbers of feature flags under typical load conditions.
+exl-id: 8c94fd06-48ea-4018-b0d4-c1add96a982f
 ---
-
 # SDK benchmarking {#sdk-benchmarking}
 
 The Experience Rollouts Java SDK is benchmarked to give integrating teams a reliable estimate of the resources and response times to expect when the SDK runs inside their infrastructure.

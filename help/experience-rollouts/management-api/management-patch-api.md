@@ -1,8 +1,8 @@
 ---
 title: Management patch API
 description: Use the Experience Rollouts PATCH API to update individual fields of a feature flag, feature group, or cross-team feature group without passing the full object.
+exl-id: 4af71c80-1a1f-4c55-85a6-f4a0f624552c
 ---
-
 # Management patch API {#management-patch-api}
 
 The PATCH API lets you update specific fields of a feature flag, feature group, or cross-team feature group without sending the full object in the request body. This is useful for targeted updates such as changing an audience rule, toggling state, or adjusting a variation percentage.

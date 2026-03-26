@@ -1,8 +1,8 @@
 ---
 title: Java SDK integration guide
 description: Learn how to integrate the Experience Rollouts Java SDK into your backend service to retrieve and evaluate feature flags.
+exl-id: 7c12bd6c-1883-4f1c-985f-a2b0432e61ce
 ---
-
 # Java SDK integration guide {#java-sdk-integration-guide}
 
 The Experience Rollouts Java SDK is a server-side library that caches feature flag data locally and evaluates flags without a synchronous API call on every request. This guide covers the current SDK (4.x).

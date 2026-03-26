@@ -1,8 +1,8 @@
 ---
 title: Import feature flags
 description: Learn how to import feature flags from a lower environment into a higher environment in Adobe Experience Rollouts to avoid recreating flag configurations manually.
+exl-id: 37c84d75-a565-4202-8c99-f630e05b6bb6
 ---
-
 # Import feature flags {#import-feature-flags}
 
 Experience Rollouts lets you import feature flags from a lower environment (for example, Stage) into a higher environment (for example, Production). This avoids having to recreate flag configurations manually and reduces the risk of configuration drift between environments.

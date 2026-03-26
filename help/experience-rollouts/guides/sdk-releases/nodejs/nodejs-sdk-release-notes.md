@@ -1,8 +1,8 @@
 ---
 title: Node.js SDK release notes
 description: Release notes for the Experience Rollouts Node.js SDK, including a changelog of new features, improvements, and bug fixes across all published versions.
+exl-id: f18e7b3e-374a-479b-aee7-e176e165afb9
 ---
-
 # Node.js SDK release notes {#nodejs-sdk-release-notes}
 
 This page lists the release history of the Experience Rollouts Node.js SDK. For integration setup, see [Node.js SDK integration guide](nodejs-sdk-integration-guide.md).

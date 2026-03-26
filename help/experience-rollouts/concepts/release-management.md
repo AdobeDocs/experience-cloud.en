@@ -1,8 +1,8 @@
 ---
 title: Release management in Experience Rollouts
 description: Learn how release management in Experience Rollouts coordinates multi-team feature delivery through dark deployments, production testing, and gradual rollouts.
+exl-id: df94bc20-8e49-40e5-a57b-38f4069cb486
 ---
-
 # Release management in Experience Rollouts {#release-management}
 
 A typical major release involves multiple teams and multiple applications, each with their own deployment timelines and dependencies. Experience Rollouts provides a release management model that lets teams work independently while still delivering a coordinated, controlled release to end users.

@@ -1,8 +1,8 @@
 ---
 title: Node.js SDK integration guide
 description: Learn how to integrate the Experience Rollouts Node.js SDK into your backend service to retrieve and evaluate feature flags.
+exl-id: 063829fe-6933-45ff-add4-285ca7391778
 ---
-
 # Node.js SDK integration guide {#nodejs-sdk-integration-guide}
 
 The Experience Rollouts Node.js SDK is a server-side library intended for Node.js services. It caches feature flag data locally and evaluates flags without a synchronous API call on every request.

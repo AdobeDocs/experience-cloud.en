@@ -1,8 +1,8 @@
 ---
 title: Use enterprise org data in audience rules
 description: Learn how to use enterprise organization IDs as audience criteria in Adobe Experience Rollouts to target specific customer organizations.
+exl-id: 74f97ec7-a809-41bf-a41d-bb57f033040f
 ---
-
 # Use enterprise org data in audience rules {#enterprise-org-data}
 
 Experience Rollouts supports targeting users based on their enterprise organization (org) ID. This allows you to roll out features to specific customer organizations before making them broadly available.

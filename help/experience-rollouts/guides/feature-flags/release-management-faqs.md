@@ -1,8 +1,8 @@
 ---
 title: Release management FAQs
 description: Find answers to common questions about release management in Adobe Experience Rollouts.
+exl-id: 802b99bd-85ee-4f4d-afca-88d1297f8782
 ---
-
 # Release management FAQs {#release-management-faqs}
 
 ## How do I request a release? {#request-release}

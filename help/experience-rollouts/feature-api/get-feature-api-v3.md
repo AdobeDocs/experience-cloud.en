@@ -1,8 +1,8 @@
 ---
 title: GET Feature API V3
 description: API reference for the Experience Rollouts Feature API V3, used to retrieve feature flags for web and mobile applications.
+exl-id: a2c1b0be-2305-41d9-8e4f-bcf36694fb9b
 ---
-
 # GET Feature API V3 {#get-feature-api-v3}
 
 The Feature API V3 is the primary endpoint for retrieving feature flags in web and mobile applications. It returns the features and releases a user is eligible for, based on their identity and the audience rules configured in the console.

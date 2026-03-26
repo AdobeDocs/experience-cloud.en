@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting
 description: Use the Experience Rollouts workbench to diagnose feature flag evaluation issues for specific users, including checking which features are enabled, disabled, or unmatched for a given user identity.
+exl-id: d64e9573-8e18-46a1-a75a-5ae5bfc7c82d
 ---
-
 # Troubleshooting {#troubleshooting}
 
 Experience Rollouts includes a built-in diagnostic tool called the **Features Workbench** that helps you understand exactly which feature flags a specific user receives and why. Use it to investigate reports of unexpected feature behavior without needing to reproduce issues in code.

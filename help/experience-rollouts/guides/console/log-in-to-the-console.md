@@ -1,8 +1,8 @@
 ---
 title: Log in to the Experience Rollouts console
 description: Learn how to get started with Adobe Experience Rollouts by finding your team, requesting access, and logging in to the console.
+exl-id: 4b109759-43b5-440a-89b4-78c0f0483cd0
 ---
-
 # Log in to the Experience Rollouts console {#log-in}
 
 Getting started with Experience Rollouts involves three steps: finding or creating your team, requesting access, and logging in to the console.

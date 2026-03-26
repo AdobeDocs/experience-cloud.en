@@ -1,8 +1,8 @@
 ---
 title: Java SDK release notes
 description: Release notes for the Experience Rollouts Java SDK, including a changelog of new features, improvements, and bug fixes across all published versions.
+exl-id: c6f6b1d1-54bc-4cfd-8574-506aa833b1a6
 ---
-
 # Java SDK release notes {#java-sdk-release-notes}
 
 This page lists the release history of the Experience Rollouts Java SDK. For integration setup, see [Java SDK integration guide](java-sdk-integration-guide.md).

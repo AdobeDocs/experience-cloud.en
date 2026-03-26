@@ -1,8 +1,8 @@
 ---
 title: Introduction to Experience Rollouts
 description: Learn how Adobe Experience Rollouts provides a controlled release system for deploying features progressively to targeted audiences.
+exl-id: befe7899-096d-4f74-a5a2-35b1fc3cbc58
 ---
-
 # Introduction to Experience Rollouts {#introduction}
 
 Adobe Experience Rollouts is a controlled release system that lets teams deploy features all the way to production while keeping precise control over who sees them and when. A feature can be in production and invisible to end users — then switched on progressively for a targeted audience — without any redeployment.

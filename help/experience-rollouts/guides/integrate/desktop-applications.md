@@ -1,8 +1,8 @@
 ---
 title: Desktop applications
 description: Learn how to integrate Adobe Experience Rollouts into a desktop application using the Feature API V2.
+exl-id: e26c8af8-893a-43f4-905c-7292cc887900
 ---
-
 # Desktop applications {#desktop-applications}
 
 Desktop applications integrate with Experience Rollouts by making direct REST API calls. Use the **Feature API V2** for desktop clients.

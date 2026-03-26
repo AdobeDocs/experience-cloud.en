@@ -1,8 +1,8 @@
 ---
 title: Feature flags to enable and disable features
 description: Learn how feature flags in Experience Rollouts let you control feature availability, manage dependencies, and reduce deployment risk.
+exl-id: 627775e8-9b17-4bc7-9565-07a438ae8ed7
 ---
-
 # Feature flags to enable and disable features {#feature-flags}
 
 Feature flags let you turn application features on or off at runtime without redeploying code. They also separate code deployments from feature availability — new code can be deployed to production behind a flag and switched on only when you are ready.

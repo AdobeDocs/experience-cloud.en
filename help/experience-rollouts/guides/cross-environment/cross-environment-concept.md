@@ -1,8 +1,8 @@
 ---
 title: Cross-environment concept
 description: Learn how cross-environment capabilities in Adobe Experience Rollouts let you link applications across environments and manage feature flags consistently from development to production.
+exl-id: a53b1c62-1d53-404b-9a94-4265cdcabac2
 ---
-
 # Cross-environment concept {#cross-environment-concept}
 
 Cross-environment capabilities let you link your application instances across different deployment environments — such as QA, Stage, and Production — and manage feature flags consistently across all of them from within Experience Rollouts.

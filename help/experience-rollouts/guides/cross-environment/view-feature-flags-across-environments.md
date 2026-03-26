@@ -1,8 +1,8 @@
 ---
 title: View feature flags across environments
 description: Learn how to view the status of feature flags across all linked environments for an application in Adobe Experience Rollouts.
+exl-id: 288c25a0-6c6f-4387-bcb3-b551354b1204
 ---
-
 # View feature flags across environments {#view-flags-across-environments}
 
 Once you have linked your application instances across environments, Experience Rollouts displays the status of each feature flag across all linked environments directly in the feature flags listing page. This gives you a single view to compare flag states — for example, whether a flag is ON in Stage and OFF in Production — without switching environments.

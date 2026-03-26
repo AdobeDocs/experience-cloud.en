@@ -1,8 +1,8 @@
 ---
 title: Associate environments to an application
 description: Learn how to link your application instances across environments in Adobe Experience Rollouts so you can manage feature flags consistently from development to production.
+exl-id: 53080db1-f257-4369-82ab-57c84395a40a
 ---
-
 # Associate environments to an application {#associate-environments}
 
 Linking your application instances across environments enables cross-environment visibility and import workflows. You must have the **Admin** role to configure this. See [User roles](../teams/user-roles.md) if you need to verify your role.

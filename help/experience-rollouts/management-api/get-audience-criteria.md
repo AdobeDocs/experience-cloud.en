@@ -1,8 +1,8 @@
 ---
 title: Get desired audience criteria
 description: Learn how to generate the correct audience criteria JSON structure for use in the Experience Rollouts management APIs by using the console and the GET feature API.
+exl-id: d24d4a70-ea9b-44f0-80e7-8e02afd1b7ac
 ---
-
 # Get desired audience criteria {#get-audience-criteria}
 
 The audience criteria field in the management APIs uses a structured JSON format that can be complex to write by hand. The recommended approach is to build the desired audience using the console and then retrieve its JSON representation via the API.

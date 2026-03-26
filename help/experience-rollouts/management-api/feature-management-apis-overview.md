@@ -1,8 +1,8 @@
 ---
 title: Feature management APIs overview
 description: Overview of the Experience Rollouts management APIs, which allow you to create, read, update, and delete feature flags, feature groups, and releases programmatically.
+exl-id: e6dab68c-bafd-461e-b119-4b70dd8e5179
 ---
-
 # Feature management APIs overview {#feature-management-apis-overview}
 
 The Experience Rollouts management APIs let you manage feature flags, feature groups, and releases programmatically. Teams that need to automate workflows or integrate Experience Rollouts into existing deployment pipelines can use these APIs instead of the console.
