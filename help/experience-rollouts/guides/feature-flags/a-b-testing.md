@@ -11,7 +11,7 @@ A/B tests in Experience Rollouts are performed using **feature groups**. By conf
 
 * You have access to the console — see [Log in to the console](../console/log-in-to-the-console.md)
 * You belong to a team and your application is onboarded
-* You have the **Developer** or **Product Release Owner** role — see [User roles](../teams/user-roles.md)
+* You have the **Developer** or **Product Release Owner** role
 * You have created the feature flags to test — see [Create your first feature flag](create-your-first-feature-flag.md)
 
 ## Step 1: Create a feature group with multiple variants {#create}

@@ -10,9 +10,8 @@ exl-id: ae115120-8da9-465e-a556-c17591ea7054
 Before creating a feature flag, complete the following:
 
 * You have access to the Experience Rollouts console — see [Log in to the console](../console/log-in-to-the-console.md)
-* You belong to a team — see [Manage teams](../teams/manage-teams.md)
 * Your application is onboarded — see [Onboard your application](../applications/onboard-your-application.md)
-* You have the **Developer** or **Product Release Owner** role — see [User roles](../teams/user-roles.md)
+* You have the **Developer** or **Product Release Owner** role
 
 ## Step 1: Create the feature flag {#create}
 
@@ -55,4 +54,3 @@ The **Developer** role is sandboxed. Developers can test features privately by a
 
 * [Set a feature to gradually roll out](set-feature-gradual-rollout.md)
 * [Create a feature group](create-a-feature-group.md)
-* [User roles](../teams/user-roles.md)

@@ -11,7 +11,7 @@ Access to Experience Rollouts is managed at the team level. To use the console, 
 
 Before requesting access, confirm the following:
 
-* You know which team to join. Check with your product or engineering lead, or refer to [Teams and their admins](teams-and-admins.md) to identify your team and its admin.
+* You know which team to join. Check with your product or engineering lead to identify your team and its admin.
 * You know which environment you need access to — **Stage**, **Production**, or both.
 
 ## Request access {#request-steps}
@@ -29,7 +29,7 @@ You will receive a confirmation once the request is submitted. You can monitor t
 
 ## Available roles {#roles}
 
-The role assigned to you determines what actions you can perform in the console. See [User roles](../teams/user-roles.md) for a full description of each role and its permissions.
+The role assigned to you determines what actions you can perform in the console. Contact your team admin if you are unsure which role to request.
 
 ## After access is granted {#after-access}
 
@@ -37,4 +37,4 @@ Once your request is approved, log in to the Experience Rollouts console and ver
 
 ## Need help? {#need-help}
 
-If you are unsure which team to join, or if no team exists for your project yet, see [Create a new team](create-a-new-team.md) or contact your organization's Experience Rollouts admin.
+If you are unsure which team to join, or if no team exists for your project yet, contact your organization's Experience Rollouts admin.

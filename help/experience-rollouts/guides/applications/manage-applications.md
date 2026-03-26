@@ -22,10 +22,7 @@ Each application is owned by exactly one team. Only members of that team can man
 This ownership model also affects how you structure feature groups:
 
 * **Within your team** — A Product Release Owner can group feature flags across applications owned by the same team. See [Feature groups to control multiple features](../../concepts/feature-groups-to-control-multiple-features.md).
-* **Across teams** — If you need to group feature flags from applications owned by different teams, use a cross-team feature group, which requires the **Feature Admin** role.
-
 ## See also {#see-also}
 
 * [Onboard your application](onboard-your-application.md)
 * [Feature groups to control multiple features](../../concepts/feature-groups-to-control-multiple-features.md)
-* [User roles](../teams/user-roles.md)

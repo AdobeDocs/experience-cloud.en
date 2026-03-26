@@ -140,4 +140,3 @@ Updates an existing release or cross-team feature group. Pass the full release o
 * [Feature management APIs overview](feature-management-apis-overview.md)
 * [Feature flags management API](feature-flags-management-api.md)
 * [Feature group management API](feature-group-management-api.md)
-* [Create a cross-team feature group](../guides/feature-flags/create-cross-team-feature-group.md)

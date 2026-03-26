@@ -5,7 +5,7 @@ exl-id: 53080db1-f257-4369-82ab-57c84395a40a
 ---
 # Associate environments to an application {#associate-environments}
 
-Linking your application instances across environments enables cross-environment visibility and import workflows. You must have the **Admin** role to configure this. See [User roles](../teams/user-roles.md) if you need to verify your role.
+Linking your application instances across environments enables cross-environment visibility and import workflows. You must have the **Admin** role to configure this. Contact your team admin if you need to verify or update your role.
 
 For background on why this is useful, see [Cross-environment concept](cross-environment-concept.md).
 
