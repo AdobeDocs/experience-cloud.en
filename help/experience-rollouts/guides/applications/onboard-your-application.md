@@ -5,7 +5,7 @@ exl-id: d88c27a5-f490-4504-9764-5e4ce98fdf20
 ---
 # Onboard your application {#onboard-your-application}
 
-You must have the **Admin** role to add a new application. See [User roles](../teams/user-roles.md) if you need to verify your role or request it from your team admin.
+You must have the **Admin** role to add a new application. Contact your team admin if you need to verify or update your role.
 
 ## Add a new application {#add-application}
 
@@ -39,5 +39,4 @@ Once your application is onboarded, your team can start creating feature flags:
 ## See also {#see-also}
 
 * [Manage applications](manage-applications.md)
-* [User roles](../teams/user-roles.md)
 * [Log in to the console](../console/log-in-to-the-console.md)

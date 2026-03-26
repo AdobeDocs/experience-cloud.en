@@ -21,15 +21,8 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
 + Guides {#guides}
   + Getting started with the console {#console}
     + [Log in to the Experience Rollouts console](guides/console/log-in-to-the-console.md)
-    + [Environments overview](guides/console/environments-overview.md)
+    + [Select your sandbox](guides/console/environments-overview.md)
     + [Request access](guides/console/request-access.md)
-    + [Teams and their admins](guides/console/teams-and-admins.md)
-    + [Create a new team](guides/console/create-a-new-team.md)
-  + Teams {#teams}
-    + [Manage teams](guides/teams/manage-teams.md)
-    + [User roles](guides/teams/user-roles.md)
-    + [Add members to your team](guides/teams/add-team-members.md)
-    + [Team management FAQ](guides/teams/team-management-faq.md)
   + Applications {#applications}
     + [Manage applications](guides/applications/manage-applications.md)
     + [Onboard your application](guides/applications/onboard-your-application.md)
@@ -43,19 +36,13 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [SDKs](guides/integrate/sdks.md)
     + [Integration steps](guides/integrate/integration-steps.md)
     + [Subscribe to the API application in Adobe Developer Console](guides/integrate/subscribe-to-api-application.md)
-  + Feature flags and releases {#feature-flags-releases}
-    + [Features, feature groups, and releases](guides/feature-flags/features-feature-groups-releases.md)
+  + Feature flags {#feature-flags}
+    + [Features and feature groups](guides/feature-flags/features-feature-groups-releases.md)
     + [Create your first feature flag](guides/feature-flags/create-your-first-feature-flag.md)
     + [Set a feature to gradually roll out](guides/feature-flags/set-feature-gradual-rollout.md)
     + [Create a feature group](guides/feature-flags/create-a-feature-group.md)
     + [Set a feature group to gradually roll out](guides/feature-flags/set-feature-group-gradual-rollout.md)
     + [A/B testing with feature flags](guides/feature-flags/a-b-testing.md)
-    + [Releases and cross-team feature groups](guides/feature-flags/releases-and-cross-team-feature-groups.md)
-    + [Release workflow end-to-end](guides/feature-flags/release-workflow-end-to-end.md)
-    + [Request a release](guides/feature-flags/request-a-release.md)
-    + [Update release audience rules](guides/feature-flags/update-release-audience-rules.md)
-    + [Release states](guides/feature-flags/release-states.md)
-    + [Create a cross-team feature group](guides/feature-flags/create-cross-team-feature-group.md)
     + [Release management FAQs](guides/feature-flags/release-management-faqs.md)
     + [Analytics](guides/feature-flags/analytics.md)
     + [Schedule](guides/feature-flags/schedule.md)

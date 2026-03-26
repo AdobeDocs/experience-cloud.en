@@ -11,7 +11,7 @@ Getting started with Experience Rollouts involves three steps: finding or creati
 
 Experience Rollouts is organized around **teams**. Each team owns one or more applications and manages feature flags for those applications. Before you can log in, you need to belong to a team.
 
-Check with your product or engineering lead to find out whether a team already exists for your project. If it does, ask the team admin to add you with the correct [user role](../teams/user-roles.md). If no team exists yet, follow the steps in [Create a new team](create-a-new-team.md).
+Check with your product or engineering lead to find out whether a team already exists for your project. If it does, ask the team admin to add you with the correct user role. If no team exists yet, contact your organization's Experience Rollouts admin.
 
 ## Request access {#request-access}
 
@@ -25,7 +25,7 @@ After access is granted:
 
 1. Go to [https://experience.adobe.com/](https://experience.adobe.com/) and sign in with your organization credentials.
 2. Select **Experience Rollouts** from the application switcher.
-3. Select the appropriate environment — **Stage** for testing, **Production** for live rollouts. See [Environments overview](environments-overview.md) for details.
+3. Select the correct sandbox. See [Select your sandbox](environments-overview.md) for details.
 
 ## First steps after logging in {#first-steps}
 
@@ -37,4 +37,4 @@ After logging in, verify that your application is listed in the console. Applica
 |---|---|
 | **Team** | A self-managed group that owns applications and manages feature flags. Teams have a flat structure with different user roles and permission levels. |
 | **Application** | The application you want to control with feature flags. Each application is owned by a team. |
-| **Feature flag / Feature group / Release** | The artifacts created in Experience Rollouts for feature testing and release management. |
+| **Feature flag / Feature group** | The artifacts created in Experience Rollouts for feature testing and controlled rollouts. |

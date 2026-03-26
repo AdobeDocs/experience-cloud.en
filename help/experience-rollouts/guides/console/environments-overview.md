@@ -1,37 +1,17 @@
 ---
-title: Environments overview
-description: Learn about the Stage and Production environments in Adobe Experience Rollouts and when to use each.
-exl-id: 84b6b640-7f43-4e51-a3b1-29f4efd3670f
+title: Select your sandbox
+description: Learn how to select the correct Adobe Experience Platform sandbox when working in Adobe Experience Rollouts.
 ---
-# Environments overview {#environments}
 
-Experience Rollouts provides separate environments so you can validate your feature flags before promoting changes to your live users.
+# Select your sandbox {#sandbox}
 
-## Available environments {#available-environments}
+Experience Rollouts is built on Adobe Experience Platform. Before working with feature flags, select the sandbox that corresponds to your current environment, just as you would in any other Adobe Experience Platform application.
 
-| Environment | Purpose |
-|---|---|
-| **Stage** | Testing and validation. Use this environment to configure and test feature flags before enabling them in Production. |
-| **Production** | Live rollouts. Feature flags configured here are evaluated against your real user base. |
+## How to select a sandbox {#how-to}
 
->[!IMPORTANT]
->
->Changes made in Stage do not automatically carry over to Production. Feature flags and audience rules must be configured separately in each environment.
-
-## Selecting an environment {#selecting}
-
-After logging in to the Experience Rollouts console, select the environment from the environment switcher at the top of the interface. Make sure you are working in the correct environment before creating or modifying feature flags.
-
-## Best practices {#best-practices}
-
-Follow these recommendations to avoid configuration errors and protect your production audience:
-
-* Always create and test feature flags in **Stage** first.
-* Validate audience rules, percentage rollouts, and targeting logic in Stage before replicating in Production.
-* Use the [cross-environment workflow](../cross-environment/cross-environment-concept.md) to view and manage flag status across environments.
+Use the sandbox switcher in the top navigation bar of the Experience Rollouts console to select the correct sandbox before creating or modifying feature flags.
 
 ## See also {#see-also}
 
 * [Log in to the console](log-in-to-the-console.md)
-* [Associate environments to an application](../cross-environment/associate-environments.md)
-* [View feature flags across environments](../cross-environment/view-feature-flags-across-environments.md)
+* [Request access](request-access.md)

@@ -30,4 +30,3 @@ This is the same mechanism used for percentage rules in combination with other c
 
 * [Audience in feature flags and feature groups](audience-in-feature-flags-and-feature-groups.md)
 * [Add percentage rules in audience criteria](adding-percentage-rules.md)
-* [Update release audience rules](../feature-flags/update-release-audience-rules.md)

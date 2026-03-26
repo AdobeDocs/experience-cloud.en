@@ -35,5 +35,4 @@ DMA orgs use org IDs in the format `XXXXXXXXXXXXXXXXXXXXXXXX@ADOBEORG`. When ent
 ## See also {#see-also}
 
 * [Audience in feature flags and feature groups](audience-in-feature-flags-and-feature-groups.md)
-* [Update release audience rules](../feature-flags/update-release-audience-rules.md)
 * [Complex audience rules](complex-rules.md)
