@@ -1,25 +1,19 @@
 ---
 title: Desktop applications
-description: Learn how to integrate Adobe Experience Rollouts into a desktop application using the Feature API V2.
+description: Learn how to integrate Adobe Experience Rollouts into a desktop application using the SDK.
 exl-id: e26c8af8-893a-43f4-905c-7292cc887900
 ---
 # Desktop applications {#desktop-applications}
 
-Desktop applications integrate with Experience Rollouts by making direct REST API calls. Use the **Feature API V2** for desktop clients.
+Desktop applications integrate with Experience Rollouts via the SDK. Contact your Adobe representative for integration guidance specific to your desktop stack.
 
-See **GET Feature API V2** in the Feature API section of this guide for the full API reference.
-
-## Integration requirements {#requirements}
-
-Desktop clients must:
-
-* **Honor the TTL value** returned in the API response. The TTL defines how long the client should cache feature flag data before calling the API again. Implement a test case that validates this behavior to ensure older application versions enter hibernation correctly when no feature flags are being served.
-* **Handle HTTP error scenarios gracefully**. Build in a fallback feature set so the application remains functional if the API is temporarily unavailable.
-* **Maintain a detailed integration test plan** that covers both the TTL and error handling requirements above.
+>[!NOTE]
+>
+>Desktop SDK documentation is currently being prepared and will be available soon.
 
 ## Application ID {#app-id}
 
-Desktop clients can use a **product code and product version** as the application identifier when calling the API, in place of a standard client ID.
+Desktop clients can use a **product code and product version** as the application identifier.
 
 ## See also {#see-also}
 
