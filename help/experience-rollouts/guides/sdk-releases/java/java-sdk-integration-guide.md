@@ -13,7 +13,7 @@ Before integrating the Java SDK, ensure you have:
 
 * JDK 11 or later (required from SDK version 3.0.0 onward; earlier versions support JDK 8+)
 * A Maven-based build system
-* An **API key** and **service token** client ID from your Adobe Developer Console project — see [Subscribe to the API application](../../integrate/subscribe-to-api-application.md)
+* An **API key** and **service token** client ID from your Adobe Developer Console project — contact Experience Rollouts support to have your client ID allowlisted
 * Your **application client IDs** registered in the Experience Rollouts console — see [Onboard your application](../../applications/onboard-your-application.md)
 
 ## Add the Maven dependency {#maven-dependency}
@@ -182,5 +182,4 @@ try {
 
 * [Java SDK release notes](java-sdk-release-notes.md)
 * [SDKs](../../integrate/sdks.md)
-* [Subscribe to the API application](../../integrate/subscribe-to-api-application.md)
 * [Integration steps](../../integrate/integration-steps.md)

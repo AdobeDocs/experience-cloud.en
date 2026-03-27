@@ -1,6 +1,6 @@
 ---
 title: Integration steps
-description: Follow the integration steps for your application type to connect Adobe Experience Rollouts to your web service, web or mobile app, or desktop application.
+description: Follow the integration steps for your application type to connect Adobe Experience Rollouts to your web service, web or mobile app, or desktop application using the available SDKs.
 exl-id: d584bdf4-9031-40e7-a7f0-807c619bbba1
 ---
 # Integration steps {#integration-steps}
@@ -21,23 +21,23 @@ Follow the [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-int
 
 **Other languages**
 
-If your stack is not listed above, integrate directly with the **Feature API V3** (see the Feature API section of this guide). Contact Experience Rollouts support if you need guidance.
+Contact Experience Rollouts support for guidance on your specific stack.
 
 ## Web and mobile applications {#web-mobile}
 
-Web and mobile applications call the **Feature API V3** to retrieve feature flags for the current user and apply conditional logic in the application.
+Web and mobile applications integrate via the web SDK and mobile SDK respectively.
 
-See **GET Feature API V3** in the Feature API section of this guide for the full API reference.
+>[!NOTE]
+>
+>Web SDK and mobile SDK documentation is currently being prepared and will be available soon. Contact your Adobe representative for early access guidance.
 
 ## Desktop applications {#desktop}
 
-Desktop applications call the **Feature API V2** to retrieve feature flags.
+Desktop applications integrate via the SDK. Contact your Adobe representative for integration guidance specific to your desktop stack.
 
-See **GET Feature API V2** in the Feature API section of this guide for the full API reference.
-
->[!IMPORTANT]
+>[!NOTE]
 >
->Desktop clients must honor the TTL value in the API response and implement graceful error handling for API unavailability. See [Desktop applications](desktop-applications.md) for requirements.
+>Desktop SDK documentation is currently being prepared and will be available soon.
 
 ## See also {#see-also}
 

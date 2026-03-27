@@ -23,21 +23,17 @@ Before onboarding, prepare the following:
 | **Server-side clients** | If integrating with a server-side SDK, you need an admin client ID with appropriate permissions. |
 | **Desktop clients** | A product code and product version can be used in place of a client ID. |
 
-## Step 3: Subscribe to the Experience Rollouts API {#step-3-subscribe}
+## Step 3: Get your credentials {#step-3-credentials}
 
-Subscribe to the Experience Rollouts API through the Adobe Developer Console so your application can call the feature flag endpoints. See [Subscribe to the API application in Adobe Developer Console](subscribe-to-api-application.md).
+If you are integrating via a server-side SDK, you need a service token client ID. Contact Experience Rollouts support to have your client ID allowlisted before you can make API calls from the SDK.
 
->[!NOTE]
->
->If you are integrating via a server-side SDK, you need a service token client ID. Contact Experience Rollouts support to have your client ID allowlisted.
-
-## Step 4: Integrate using an SDK or the API {#step-4-integrate}
+## Step 4: Integrate using an SDK {#step-4-integrate}
 
 Follow the [integration steps](integration-steps.md) for your application type. Choose the path that fits your stack:
 
 * **Web services** → Java SDK or Node.js SDK
-* **Web and mobile apps** → Feature API V3
-* **Desktop apps** → Feature API V2
+* **Web and mobile apps** → Web SDK or mobile SDK (coming soon)
+* **Desktop apps** → SDK (coming soon)
 
 ## Step 5: Create and test your first feature flag {#step-5-feature-flag}
 

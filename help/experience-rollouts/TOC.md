@@ -35,7 +35,6 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Web services](guides/integrate/web-services.md)
     + [SDKs](guides/integrate/sdks.md)
     + [Integration steps](guides/integrate/integration-steps.md)
-    + [Subscribe to the API application in Adobe Developer Console](guides/integrate/subscribe-to-api-application.md)
   + Feature flags {#feature-flags}
     + [Features and feature groups](guides/feature-flags/features-feature-groups-releases.md)
     + [Create your first feature flag](guides/feature-flags/create-your-first-feature-flag.md)
@@ -70,14 +69,3 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
       + [Node.js SDK integration guide](guides/sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
       + [Node.js SDK release notes](guides/sdk-releases/nodejs/nodejs-sdk-release-notes.md)
     + [SDK benchmarking](guides/sdk-releases/java-sdk-benchmarking.md)
-+ Feature API {#feature-api}
-  + [GET Feature API V3](feature-api/get-feature-api-v3.md)
-  + [GET Feature API V2](feature-api/get-feature-api-v2.md)
-+ Management API {#management-api}
-  + [Feature management APIs overview](management-api/feature-management-apis-overview.md)
-  + [Feature flags management API](management-api/feature-flags-management-api.md)
-  + [Feature group management API](management-api/feature-group-management-api.md)
-  + [Release management APIs](management-api/release-management-apis.md)
-  + [Get client ID for an application](management-api/get-client-id.md)
-  + [Get desired audience criteria](management-api/get-audience-criteria.md)
-  + [Management patch API](management-api/management-patch-api.md)

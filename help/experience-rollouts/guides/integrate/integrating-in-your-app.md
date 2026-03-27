@@ -12,9 +12,9 @@ This section provides integration guidelines for all Experience Rollouts clients
 Select the guide that matches your application type:
 
 1. [Startup guide](startup-guide.md) — Start here for a high-level overview of all integration steps
-2. [Desktop applications](desktop-applications.md) — Direct REST API integration for desktop apps
-3. [Mobile applications](mobile-applications.md) — REST API integration for mobile apps
-4. [Web applications](web-applications.md) — REST API integration for web properties
+2. [Desktop applications](desktop-applications.md) — SDK integration for desktop apps
+3. [Mobile applications](mobile-applications.md) — SDK integration for mobile apps
+4. [Web applications](web-applications.md) — SDK integration for web properties
 5. [Web services](web-services.md) — Server-side SDK integration for backend services
 6. [SDKs](sdks.md) — SDK architecture, prerequisites, and available SDKs
 7. [Integration steps](integration-steps.md) — Detailed step-by-step integration instructions
@@ -24,6 +24,6 @@ Select the guide that matches your application type:
 | Application type | Recommended integration |
 |---|---|
 | **Web service / backend** | Java SDK or Node.js SDK |
-| **Web application** | REST API — Feature API V3 |
-| **Mobile application** | REST API — Feature API V3 |
-| **Desktop application** | REST API — Feature API V2 |
+| **Web application** | Web SDK (coming soon) |
+| **Mobile application** | Mobile SDK (coming soon) |
+| **Desktop application** | SDK (coming soon) |

@@ -9,14 +9,14 @@ The Experience Rollouts Node.js SDK is a server-side library intended for Node.j
 
 >[!NOTE]
 >
->The Node.js SDK is designed for server-side use only. For client-side web applications, call the Feature API V3 REST endpoint directly.
+>The Node.js SDK is designed for server-side use only. For client-side web applications, use the web SDK. Web SDK documentation is currently being prepared and will be available soon.
 
 ## Prerequisites {#prerequisites}
 
 Before integrating the Node.js SDK, ensure you have:
 
 * A Node.js server-side application
-* An **API key** and **service token** obtained through Adobe Developer Console — see [Subscribe to the API application](../../integrate/subscribe-to-api-application.md)
+* An **API key** and **service token** obtained through Adobe Developer Console — contact Experience Rollouts support to have your client ID allowlisted
 * Your **application client IDs** registered in the Experience Rollouts console — see [Onboard your application](../../applications/onboard-your-application.md)
 
 ## Install the SDK {#install}
@@ -154,5 +154,4 @@ floodgateClient.createInstance(
 
 * [Node.js SDK release notes](nodejs-sdk-release-notes.md)
 * [SDKs](../../integrate/sdks.md)
-* [Subscribe to the API application](../../integrate/subscribe-to-api-application.md)
 * [Integration steps](../../integrate/integration-steps.md)
