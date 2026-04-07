@@ -260,7 +260,8 @@ Response to the request.
 
 <!-- exemple à vérifier de bout en bout-->
 
-<!--+category = query editor
+<!--
++category = query editor
 privacy ?
 displayFOrmat ?
 pour faire un POST sur une enum, il faut lui passer le @name décrit dans le noeud values, chaque @name a une correspondance en format = au format définit par le resType

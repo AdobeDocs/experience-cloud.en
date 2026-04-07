@@ -21,21 +21,21 @@ Here is the list of schemas changed to 64 bits and their modified attributes.
 
 | Schema name | Atribute name |
 |--- |--- |
-| nms:broadLogRcp | id | 
-| nms:trackingLogRcp | id | 
-| nms:excludeLogRcp | id | 
-| nms:broadLogVisitor | id | 
-| nms:trackingLogVisitor | id | 
-| nms:propositionRcp | interactionId | 
-| nms:propositionVisitor | interactionId | 
-| nms:webTrackingLog | id | 
-| nms:tmpBroadcast | message-id | 
-| nms:tmpMarketingPressure | message-id | 
-| nms:tmpBroadcastExclusion | message-id | 
-| nms:tmpBroadcastPaper | message-id | 
-| nms:broadLogAppSubRcp | id | 
-| nms:trackingLogAppSubRcp | id | 
-| nms:excludeLogAppSubRcp | id | 
-| nms:webEvent | broadLogSrc-id, broadLogRemkt-id | 
-| nms:broadLogMid | mktBroadLogId | 
+| nms:broadLogRcp | id |
+| nms:trackingLogRcp | id |
+| nms:excludeLogRcp | id |
+| nms:broadLogVisitor | id |
+| nms:trackingLogVisitor | id |
+| nms:propositionRcp | interactionId |
+| nms:propositionVisitor | interactionId |
+| nms:webTrackingLog | id |
+| nms:tmpBroadcast | message-id |
+| nms:tmpMarketingPressure | message-id |
+| nms:tmpBroadcastExclusion | message-id |
+| nms:tmpBroadcastPaper | message-id |
+| nms:broadLogAppSubRcp | id |
+| nms:trackingLogAppSubRcp | id |
+| nms:excludeLogAppSubRcp | id |
+| nms:webEvent | broadLogSrc-id, broadLogRemkt-id |
+| nms:broadLogMid | mktBroadLogId |
 | nms:mirrorPageSearch | remoteMessageId |
