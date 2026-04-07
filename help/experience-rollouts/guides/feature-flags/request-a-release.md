@@ -7,9 +7,7 @@ exl-id: 8eee84b2-fbd5-4713-90ac-92fd7b74c163
 
 ## Prerequisites {#prerequisites}
 
-<!-- broken link
-* You have the **Release Manager** role — see [User roles](../teams/user-roles.md)
--->
+* You have the **Release Manager** role — see <!-- broken link[User roles](../teams/user-roles.md) -->
 * Your application is onboarded — see [Onboard your application](../applications/onboard-your-application.md)
 
 >[!TIP]
