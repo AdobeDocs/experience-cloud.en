@@ -1,6 +1,6 @@
 ---
 user-guide-title: Experience Cloud Software Distribution
-index: y
+index: true
 ---
 
 # Experience Cloud Software Distribution {#software-distribution}
