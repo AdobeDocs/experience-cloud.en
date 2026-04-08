@@ -1,23 +1,23 @@
 ---
 title: Onboard your application
-description: Learn how to onboard a new application to Adobe Experience Rollouts so your team can start creating and managing feature flags.
+description: Learn how to onboard a new application to Adobe Experience Rollouts so you can start creating and managing feature flags.
 exl-id: d88c27a5-f490-4504-9764-5e4ce98fdf20
 ---
 # Onboard your application {#onboard-your-application}
 
-You must have the **Admin** role to add a new application. Contact your team admin if you need to verify or update your role.
+You must have the **Admin** role to add a new application. Contact your admin if you need to verify or update your role.
 
 ## Add a new application {#add-application}
 
-1. Log in to the Experience Rollouts console and navigate to **Admin > Applications**.
+1. Log in to the Experience Rollouts console and navigate to **Experience Rollout > Applications**.
 
    >[!NOTE]
    >
-   >If the **New Application** button is not visible, verify that you are in the correct team and that you have the **Admin** role.
+   >If the **New Application** button is not visible, verify that you have the **Floodgate Admin** role.
 
 2. Select **New Application**.
 
-3. Select the **channel** that matches your application type (web, mobile, desktop, or service).
+3. Select the **platform** that matches your application type (web or mobile).
 
 4. Provide the following information:
 
@@ -25,13 +25,12 @@ You must have the **Admin** role to add a new application. Contact your team adm
    |---|---|
    | **Application ID** | A unique identifier used when calling Experience Rollouts from your code. Use your application's client ID. |
    | **TTL** | The polling interval (in seconds) for refreshing the per-application cache. Applies to server-side SDKs only. |
-   | **Team** | The team that will own and manage this application. Only members of this team can create and edit feature flags for it. |
 
 5. Select **Add**. Your application is now registered and ready for feature flag configuration.
 
 ## What comes next {#next-steps}
 
-Once your application is onboarded, your team can start creating feature flags:
+Once your application is onboarded, you can start creating feature flags:
 
 * [Create your first feature flag](../feature-flags/create-your-first-feature-flag.md)
 * [Integrate Experience Rollouts in your app](../integrate/integrating-in-your-app.md)

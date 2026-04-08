@@ -44,7 +44,7 @@ After adding audience criteria, select **Calculate** in the bottom bar to get an
 
 ## Step 4: Schedule (optional) {#schedule}
 
-You can schedule a feature flag to activate at a future date and time. See [Schedule](schedule.md) for details.
+You can schedule a feature flag to activate at a future date and time using the **Schedule** option in the feature flag settings.
 
 ## FAQ: I cannot add a feature flag as a Developer {#faq}
 

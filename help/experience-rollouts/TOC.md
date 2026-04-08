@@ -15,8 +15,6 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
   + [What is a feature flag](concepts/what-is-a-feature-flag.md)
   + [Feature flags to enable and disable features](concepts/feature-flags-to-enable-disable-features.md)
   + [Feature groups to control multiple features](concepts/feature-groups-to-control-multiple-features.md)
-  + [Concept of release management](concepts/concept-of-release-management.md)
-  + [Release management in Experience Rollouts](concepts/release-management.md)
   + [Gradual rollout](concepts/gradual-rollout.md)
 + Guides {#guides}
   + Getting started with the console {#console}
@@ -42,30 +40,14 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
     + [Create a feature group](guides/feature-flags/create-a-feature-group.md)
     + [Set a feature group to gradually roll out](guides/feature-flags/set-feature-group-gradual-rollout.md)
     + [A/B testing with feature flags](guides/feature-flags/a-b-testing.md)
-    + [Release management FAQs](guides/feature-flags/release-management-faqs.md)
     + [Analytics](guides/feature-flags/analytics.md)
-    + [Schedule](guides/feature-flags/schedule.md)
   + Audience criteria {#audience}
     + [Audience in feature flags and feature groups](guides/audience/audience-in-feature-flags-and-feature-groups.md)
     + [Use context in audience rules](guides/audience/using-context-in-audience-rules.md)
     + [Complex audience rules](guides/audience/complex-rules.md)
-    + [Use enterprise org data in audience rules](guides/audience/using-enterprise-org-data.md)
     + [Add percentage rules in audience criteria](guides/audience/adding-percentage-rules.md)
-    + [Audience rule with client IP context variable](guides/audience/clientip-rule.md)
-  + Cross-environment workflows {#cross-environment}
-    + [Cross-environment concept](guides/cross-environment/cross-environment-concept.md)
-    + [Associate environments to an application](guides/cross-environment/associate-environments.md)
-    + [View feature flags across environments](guides/cross-environment/view-feature-flags-across-environments.md)
+  + Import feature flags {#import}
     + [Import feature flags](guides/cross-environment/import-feature-flags.md)
-  + Support {#support}
-    + [Troubleshooting](guides/support/troubleshooting.md)
-    + [Get support](guides/support/get-support.md)
-    + [Contact support](guides/support/contact-support.md)
   + SDK releases {#sdk-releases}
-    + Java SDK {#java-sdk}
-      + [Java SDK integration guide](guides/sdk-releases/java/java-sdk-integration-guide.md)
-      + [Java SDK release notes](guides/sdk-releases/java/java-sdk-release-notes.md)
-    + Node.js SDK {#nodejs-sdk}
-      + [Node.js SDK integration guide](guides/sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
-      + [Node.js SDK release notes](guides/sdk-releases/nodejs/nodejs-sdk-release-notes.md)
-    + [SDK benchmarking](guides/sdk-releases/java-sdk-benchmarking.md)
+    + Android extension {#android-extension}
+      + [Android extension integration guide](guides/sdk-releases/android/android-extension-integration-guide.md)

@@ -15,7 +15,7 @@ Adobe Experience Rollouts lets product teams ship new features gradually and saf
 
 **Reduce release risk.** Break large changes into smaller, controlled rollouts. If a bug or performance issue appears, disable only the affected feature — the rest of your application stays stable.
 
-**Coordinate across teams.** Cross-team feature groups let multiple teams participate in a single coordinated release, each managing their own feature flags while sharing a common rollout schedule and audience.
+**Coordinate across applications.** Feature groups let you manage multiple feature flags together, sharing a common rollout audience across applications.
 
 ## Onboard your first feature
 
@@ -31,4 +31,4 @@ Once your first flag is live, you can refine its audience, configure a gradual r
 
 ## Need help?
 
-If something does not behave as expected, the [troubleshooting guide](guides/support/troubleshooting.md) covers the most common issues. For anything else, [contact support](guides/support/contact-support.md).
+If something does not behave as expected, contact your Adobe representative for support.

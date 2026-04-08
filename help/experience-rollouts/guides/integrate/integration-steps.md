@@ -9,19 +9,11 @@ Choose the integration path that matches your application type.
 
 ## Web services {#web-services}
 
-Backend services integrate using a server-side SDK. Choose the SDK for your technology stack.
+Backend services integrate using a server-side SDK. Contact Experience Rollouts support for guidance on your specific stack.
 
-**Java**
-
-Follow the [Java SDK integration guide](../sdk-releases/java/java-sdk-integration-guide.md) for setup, dependency configuration, and initialization.
-
-**Node.js**
-
-Follow the [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) for setup and initialization.
-
-**Other languages**
-
-Contact Experience Rollouts support for guidance on your specific stack.
+>[!NOTE]
+>
+>Server-side SDK documentation is currently being prepared and will be available soon. Contact your Adobe representative for early access guidance.
 
 ## Web and mobile applications {#web-mobile}
 

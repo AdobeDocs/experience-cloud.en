@@ -56,7 +56,7 @@ Assign the feature flags that will be controlled by this group:
 
 ## Step 5: Schedule (optional) {#schedule}
 
-You can schedule the feature group to activate at a future date and time. See [Schedule](schedule.md) for details.
+You can schedule the feature group to activate at a future date and time using the **Schedule** option in the feature group settings.
 
 ## See also {#see-also}
 

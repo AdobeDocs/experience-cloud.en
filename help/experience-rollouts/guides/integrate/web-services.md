@@ -9,14 +9,13 @@ Backend services integrate with Experience Rollouts using a server-side SDK. Cho
 
 ## Available SDKs {#available-sdks}
 
-| Language | Integration guide | Release notes |
-|---|---|---|
-| **Java** | [Java SDK integration guide](../sdk-releases/java/java-sdk-integration-guide.md) | [Java SDK release notes](../sdk-releases/java/java-sdk-release-notes.md) |
-| **Node.js** | [Node.js SDK integration guide](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) | [Node.js SDK release notes](../sdk-releases/nodejs/nodejs-sdk-release-notes.md) |
+>[!NOTE]
+>
+>Server-side SDK documentation is currently being prepared and will be available soon. Contact your Adobe representative for early access guidance.
 
 ## Other languages {#other-languages}
 
-If your backend service uses a language not listed above, contact Experience Rollouts support for guidance on integrating with your specific stack.
+Contact Experience Rollouts support for guidance on integrating with your specific stack.
 
 ## See also {#see-also}
 

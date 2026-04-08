@@ -38,4 +38,3 @@ A feature flag in Experience Rollouts follows this typical lifecycle:
 1. A developer creates a feature flag and tests it in isolation — without exposing it to other users.
 2. A product owner links an audience to the flag, making the feature visible to a defined set of external users.
 3. The flag is optionally added to a [feature group](feature-groups-to-control-multiple-features.md) to be managed alongside related flags.
-4. The flag is optionally added to a [release](release-management.md) for cross-team coordination.
