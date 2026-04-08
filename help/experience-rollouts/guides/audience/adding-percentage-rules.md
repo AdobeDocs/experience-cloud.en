@@ -14,7 +14,7 @@ However, some rollout scenarios require different percentages for different grou
 * 100% of UK users and 50% of US users
 * All users from an imported email list, plus 50% of users from a specific country
 
-In these cases, use the **Percentage** rule in the **Audience** tab's profile section, combined with nested logic.
+In these cases, use the **Percentage** rule in the **Audience** tab's context section, combined with nested logic.
 
 >[!TIP]
 >
@@ -22,10 +22,10 @@ In these cases, use the **Percentage** rule in the **Audience** tab's profile se
 
 ## How to add a percentage rule {#how-to-add}
 
-The **Percentage** option is available as a rule in the Profile section of the Audience tab.
+The **Percentage** option is available as a rule in the context section of the Audience tab.
 
 1. Go to the **Audience** tab of your feature flag or feature group.
-2. Under **Profile**, add a **Percentage** rule and set the desired value.
+2. Under **Audience**, add a **Context Percentage** rule and set the desired value.
 3. Add any other audience conditions you need (for example, a Country rule).
 
 ## Combining percentage rules with nested logic {#nested-logic}

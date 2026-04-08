@@ -13,4 +13,4 @@ This separation significantly reduces risk. Developers can build and ship contin
 
 >[!NOTE]
 >
->In Experience Rollouts, a feature flag is the most atomic unit of feature control. It can be used on its own to target a single feature, or combined with other flags in a [feature group](feature-groups-to-control-multiple-features.md) or [release](release-management.md).
+>In Experience Rollouts, a feature flag is the most atomic unit of feature control. It can be used on its own to target a single feature, or combined with other flags in a [feature group](feature-groups-to-control-multiple-features.md).

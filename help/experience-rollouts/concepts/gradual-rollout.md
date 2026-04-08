@@ -32,4 +32,3 @@ At every step, a single action can pause the rollout or turn off the feature ent
 ## See also {#see-also}
 
 * [Feature flags to enable and disable features](feature-flags-to-enable-disable-features.md)
-* [Release management](release-management.md)

@@ -15,14 +15,5 @@ For example, consider a collaboration feature that involves changes across a des
 
 ## Cross-application grouping {#cross-application}
 
-Feature groups support cross-application feature management as long as the flags belong to the **same team** in Experience Rollouts. One team can own multiple applications, so related flags across those applications can be grouped together.
+Feature groups support cross-application feature management. Related flags across multiple applications can be grouped together.
 
-## Feature groups versus releases {#vs-releases}
-
-| | Feature group | Release |
-|---|---|---|
-| Scope | Within a single team | Across multiple teams |
-| Use case | Coordinating flags within your team | Large, multi-team launch coordination |
-| Privileges required | Team-level | Higher (release manager) |
-
-If the feature flags you want to group belong to applications owned by different teams, use a [release](release-management.md) instead of a feature group.
