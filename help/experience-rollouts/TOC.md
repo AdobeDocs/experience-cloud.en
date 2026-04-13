@@ -51,3 +51,5 @@ user-guide-description: Learn how to use Adobe Experience Rollouts to manage fea
   + SDK releases {#sdk-releases}
     + Android extension {#android-extension}
       + [Android extension integration guide](guides/sdk-releases/android/android-extension-integration-guide.md)
+    + iOS extension {#ios-extension}
+      + [iOS extension integration guide](guides/sdk-releases/ios/ios-extension-integration-guide.md)
