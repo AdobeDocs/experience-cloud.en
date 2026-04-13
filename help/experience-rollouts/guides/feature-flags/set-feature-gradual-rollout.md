@@ -1,6 +1,7 @@
 ---
 title: Set a feature to gradually roll out
 description: Learn how to configure a percentage-based gradual rollout for a feature flag in Adobe Experience Rollouts.
+hide: yes
 exl-id: 1e03c533-398d-4a83-9f4a-c0419828b460
 ---
 # Set a feature to gradually roll out {#gradual-rollout-feature}

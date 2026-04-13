@@ -1,6 +1,7 @@
 ---
 title: Why use Experience Rollouts
 description: Learn about the key use cases for Adobe Experience Rollouts, from selective feature testing to coordinated multi-application releases.
+hide: yes
 exl-id: c39c6b34-2024-4c38-b2f2-a9b58f5eff63
 ---
 # Why use Experience Rollouts {#why-use}

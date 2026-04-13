@@ -1,6 +1,7 @@
 ---
 title: Experience Rollout extension for Android integration guide
 description: Learn how to integrate the Experience Rollout extension with the Adobe Experience Platform Mobile SDK on Android.
+hide: yes
 exl-id: 683ef4d4-e637-4b7b-b694-689c7e65a99e
 ---
 # Experience Rollout extension for Android {#android-extension-integration-guide}
