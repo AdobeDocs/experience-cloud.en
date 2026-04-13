@@ -1,6 +1,7 @@
 ---
 title: Desktop applications
 description: Learn how to integrate Adobe Experience Rollouts into a desktop application using the SDK.
+hide: yes
 exl-id: e26c8af8-893a-43f4-905c-7292cc887900
 ---
 # Desktop applications {#desktop-applications}

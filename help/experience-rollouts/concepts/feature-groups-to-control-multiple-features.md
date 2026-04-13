@@ -1,6 +1,7 @@
 ---
 title: Feature groups to control multiple features
 description: Learn how feature groups in Experience Rollouts let you bundle and manage related feature flags across applications as a single unit.
+hide: yes
 exl-id: dfeb7eff-34f1-4cb5-9c3e-a40d1eda3016
 ---
 # Feature groups to control multiple features {#feature-groups}

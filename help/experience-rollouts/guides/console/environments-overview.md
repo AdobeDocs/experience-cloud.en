@@ -1,6 +1,7 @@
 ---
 title: Select your sandbox
 description: Learn how to select the correct Adobe Experience Platform sandbox when working in Adobe Experience Rollouts.
+hide: yes
 exl-id: 84b6b640-7f43-4e51-a3b1-29f4efd3670f
 ---
 # Select your sandbox {#sandbox}

@@ -1,6 +1,7 @@
 ---
 title: Experience Rollout extension for iOS integration guide
 description: Learn how to integrate the Experience Rollout extension with the Adobe Experience Platform Mobile SDK on iOS.
+hide: yes
 ---
 # Experience Rollout extension for iOS {#ios-extension-integration-guide}
 

@@ -1,6 +1,7 @@
 ---
 title: Manage applications
 description: Learn how to manage applications in Adobe Experience Rollouts, including adding new applications.
+hide: yes
 exl-id: 6109fdd5-b5f5-41ca-8690-8aa78df50499
 ---
 # Manage applications {#manage-applications}

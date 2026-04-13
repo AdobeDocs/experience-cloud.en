@@ -1,6 +1,7 @@
 ---
 title: Import feature flags
 description: Learn how to import feature flags from one sandbox into another in Adobe Experience Rollouts to avoid recreating flag configurations manually.
+hide: yes
 exl-id: 37c84d75-a565-4202-8c99-f630e05b6bb6
 ---
 # Import feature flags {#import-feature-flags}
