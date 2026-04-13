@@ -1,7 +1,6 @@
 ---
 title: Experience Rollout extension for iOS integration guide
 description: Learn how to integrate the Experience Rollout extension with the Adobe Experience Platform Mobile SDK on iOS.
-exl-id: 
 ---
 # Experience Rollout extension for iOS {#ios-extension-integration-guide}
 
@@ -65,9 +64,11 @@ Add the Mobile SDK dependencies to your project. The Experience Rollout extensio
 
 1. In Xcode, navigate to **File** > **Add Package Dependencies**.
 1. Enter the Adobe Experience Platform Mobile SDK repository URL:
+
    ```
    https://github.com/adobe/aepsdk-core-ios
    ```
+
 1. Add the following packages:
 
    | Package | Repository |
