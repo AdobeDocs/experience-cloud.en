@@ -1,7 +1,7 @@
 ---
 title: Web services
 description: Learn how to integrate Adobe Experience Rollouts into a backend web service using the Java or Node.js SDK.
-hide: yes
+hide: true
 exl-id: 2e73fc30-93d4-46dc-8855-950dd1b15064
 ---
 # Web services {#web-services}

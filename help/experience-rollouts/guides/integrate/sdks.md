@@ -1,7 +1,7 @@
 ---
 title: SDKs
 description: Learn about the SDK architecture in Adobe Experience Rollouts and the available mobile SDK extension for Android.
-hide: yes
+hide: true
 exl-id: 110a440d-b52a-4e1e-a94f-86f9741a223a
 ---
 # SDKs {#sdks}

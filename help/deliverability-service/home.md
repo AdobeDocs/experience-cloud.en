@@ -1,7 +1,7 @@
 ---
 title: Adobe Deliverability Services
 description: Discover Adobe Deliverability Services
-hide: yes
+hide: true
 exl-id: 31ea97e7-b0a0-4a92-bc69-a458fdbc1d7c
 ---
 # Adobe Deliverability Services {#deliv-home}
