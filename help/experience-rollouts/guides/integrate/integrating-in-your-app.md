@@ -28,3 +28,5 @@ Select the guide that matches your application type:
 | **Web application** | Web SDK (coming soon) |
 | **Mobile application** | Mobile SDK (coming soon) |
 | **Desktop application** | SDK (coming soon) |
+
+<!-- -->

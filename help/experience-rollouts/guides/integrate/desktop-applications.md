@@ -20,3 +20,5 @@ Desktop clients can use a **product code and product version** as the applicatio
 
 * [Integration steps](integration-steps.md)
 * [Startup guide](startup-guide.md)
+
+<!-- -->

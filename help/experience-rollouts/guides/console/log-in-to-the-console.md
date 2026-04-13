@@ -39,3 +39,5 @@ After logging in, verify that your application is listed in the console. Applica
 | **Team** | A self-managed group that owns applications and manages feature flags. Teams have a flat structure with different user roles and permission levels. |
 | **Application** | The application you want to control with feature flags. Each application is owned by a team. |
 | **Feature flag / Feature group** | The artifacts created in Experience Rollouts for feature testing and controlled rollouts. |
+
+<!-- -->
