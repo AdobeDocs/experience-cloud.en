@@ -1,7 +1,7 @@
 ---
 title: Web applications
 description: Learn how to integrate Adobe Experience Rollouts into a web application using the web SDK.
-hide: yes
+hide: true
 exl-id: 9b5d744a-263d-4b10-8745-2891f111519f
 ---
 # Web applications {#web-applications}

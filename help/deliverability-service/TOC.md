@@ -2,7 +2,7 @@
 user-guide-title: Adobe Deliverability Service Management
 user-guide-description: Adobe Deliverability Service
 breadcrumb-title: Adobe Deliverability Service
-hide: yes
+hide: true
 ---
 # Adobe Deliverability Service {#deliverability-server}
 

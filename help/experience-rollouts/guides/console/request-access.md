@@ -1,7 +1,7 @@
 ---
 title: Request access
 description: Learn how to request access to an Adobe Experience Rollouts team and the roles available to new members.
-hide: yes
+hide: true
 exl-id: 30d05c90-2913-4e88-a8f9-28a142297337
 ---
 # Request access {#request-access}

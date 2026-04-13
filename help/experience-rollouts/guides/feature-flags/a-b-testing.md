@@ -1,7 +1,7 @@
 ---
 title: A/B testing with feature flags
 description: Learn how to run A/B tests using feature groups in Adobe Experience Rollouts by configuring multiple variants for a set of feature flags.
-hide: yes
+hide: true
 exl-id: bb849049-229c-40ff-bbfe-7996f868bcc3
 ---
 # A/B testing with feature flags {#a-b-testing}

@@ -1,7 +1,7 @@
 ---
 title: Update release audience rules
 description: Learn how to configure and update audience criteria for a release in Adobe Experience Rollouts, including supported rule types and how to combine them.
-hide: yes
+hide: true
 exl-id: 8d546cd7-af66-47c7-aab3-c667568e8582
 ---
 # Update release audience rules {#update-release-audience-rules}

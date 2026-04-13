@@ -1,7 +1,7 @@
 ---
 title: Audience in feature flags and feature groups
 description: Learn how to define audience criteria for feature flags and feature groups in Adobe Experience Rollouts using context variables.
-hide: yes
+hide: true
 exl-id: 4a8f7c3f-1ae5-4e65-a070-9fc33133eec0
 ---
 # Audience in feature flags and feature groups {#audience-overview}

@@ -1,7 +1,7 @@
 ---
 title: Use context in audience rules
 description: Learn how to use context variables in audience rules for feature flags and feature groups in Adobe Experience Rollouts.
-hide: yes
+hide: true
 exl-id: 0367f475-9209-4d53-86b4-a739a73a23a7
 ---
 # Use context in audience rules {#context-in-audience-rules}

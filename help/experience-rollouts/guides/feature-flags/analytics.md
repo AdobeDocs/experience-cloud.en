@@ -1,7 +1,7 @@
 ---
 title: Analytics
 description: Learn how to enable and use the built-in analytics dashboard in Adobe Experience Rollouts to track feature flag performance and measure rollout impact.
-hide: yes
+hide: true
 exl-id: edddca99-f263-461b-a16f-b46ee7c15f6c
 ---
 # Analytics {#analytics}

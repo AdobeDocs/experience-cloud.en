@@ -1,7 +1,7 @@
 ---
 title: Mobile applications
 description: Learn how to integrate Adobe Experience Rollouts into a mobile application using the mobile SDK.
-hide: yes
+hide: true
 exl-id: 27a43994-25e7-4a2c-b01c-ae98d089413d
 ---
 # Mobile applications {#mobile-applications}

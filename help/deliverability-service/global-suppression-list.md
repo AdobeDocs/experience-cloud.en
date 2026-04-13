@@ -1,7 +1,7 @@
 ---
 title: Global suppression list
 description: Discover the global suppression list
-hide: yes
+hide: true
 exl-id: 40aef987-52a3-470b-88ca-c716a116bdfc
 ---
 # Global suppression list {#global-suppression-list}

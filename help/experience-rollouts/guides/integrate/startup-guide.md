@@ -1,7 +1,7 @@
 ---
 title: Startup guide
 description: Follow these steps to get your application integrated with Adobe Experience Rollouts, from requesting access to creating your first feature flag.
-hide: yes
+hide: true
 exl-id: 7aa09535-45fa-4ddf-9e3f-a23f8a8ee666
 ---
 # Startup guide {#startup-guide}

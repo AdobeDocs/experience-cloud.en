@@ -1,7 +1,7 @@
 ---
 title: Onboard your application
 description: Learn how to onboard a new application to Adobe Experience Rollouts so you can start creating and managing feature flags.
-hide: yes
+hide: true
 exl-id: d88c27a5-f490-4504-9764-5e4ce98fdf20
 ---
 # Onboard your application {#onboard-your-application}
