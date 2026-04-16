@@ -1,5 +1,8 @@
 ---
 audience: user
+solution: Target
+landing-page-name: target
+landing-page-breadcrumb-title: Target
 user-guide-title: Flags
 user-guide-description: Learn how to use Flags in Adobe Target to manage feature flags, controlled rollouts, and targeted releases across your applications.
 hide: true
