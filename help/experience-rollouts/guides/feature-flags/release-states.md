@@ -1,6 +1,6 @@
 ---
 title: Release states
-description: Learn about the lifecycle states of a release in Adobe Experience Rollouts, including what each state means and which transitions are allowed.
+description: Learn about the lifecycle states of a release in Flags, including what each state means and which transitions are allowed.
 hide: true
 exl-id: c1311353-9c36-43c5-8e75-3b3ee225da41
 ---

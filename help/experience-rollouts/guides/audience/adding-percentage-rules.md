@@ -1,6 +1,6 @@
 ---
 title: Add percentage rules in audience criteria
-description: Learn how to add percentage-based rules within audience criteria in Adobe Experience Rollouts to target different rollout percentages for different audience segments.
+description: Learn how to add percentage-based rules within audience criteria in Flags to target different rollout percentages for different audience segments.
 hide: true
 exl-id: 15a3c26f-31fc-4e73-aa0e-035dcbe7d770
 ---

@@ -1,13 +1,17 @@
 ---
-title: Adobe Experience Rollouts
-description: Learn how to use Adobe Experience Rollouts to deliver features safely and gradually with controlled rollouts, feature flags, and targeted audience management.
+title: Flags
+description: Learn how to use Flags in Adobe Target to deliver features safely and gradually with controlled rollouts, feature flags, and targeted audience management.
 hide: true
 index: false
 exl-id: c400d75d-d928-4cf6-a094-1a2f443389f0
 ---
-# Adobe Experience Rollouts {#experience-rollouts-home}
+# Flags {#experience-rollouts-home}
 
-Adobe Experience Rollouts lets product teams ship new features gradually and safely — without redeployments or downtime. You define who sees what, when, and at what pace. If something goes wrong, you turn the feature off instantly. If it goes well, you expand the audience on your schedule.
+>[!AVAILABILITY]
+>
+>Flags is currently in Beta and available to Adobe Target customers. Contact your Adobe representative to request access.
+
+Flags in Adobe Target lets product teams ship new features gradually and safely — without redeployments or downtime. You define who sees what, when, and at what pace. If something goes wrong, you turn the feature off instantly. If it goes well, you expand the audience on your schedule.
 
 ## What you can do
 
@@ -19,15 +23,17 @@ Adobe Experience Rollouts lets product teams ship new features gradually and saf
 
 **Coordinate across applications.** Feature groups let you manage multiple feature flags together, sharing a common rollout audience across applications.
 
-## Onboard your first feature
+**Export your data.** Export Flags data to your preferred reporting environment for analysis and measurement alongside your other Adobe data.
 
-Getting value from Experience Rollouts starts with three steps:
+## Onboard your first flag
 
-1. **Set up your team and application** — [Request access](guides/console/request-access.md) to the console, then [onboard your application](guides/applications/onboard-your-application.md) so Experience Rollouts knows which clients to serve.
+Getting value from Flags starts with three steps:
 
-2. **Create and publish a feature flag** — Follow the [Create your first feature flag](guides/feature-flags/create-your-first-feature-flag.md) guide to define a flag, set your initial audience, and publish it to your environment.
+1. **Access Flags through Adobe Target** — Flags is available inside Adobe Target. [Request access](guides/console/request-access.md) and open Flags from within the Target interface.
 
-3. **Integrate with your application** — Connect your app to the Experience Rollouts API or SDK so it can retrieve and apply feature flags at runtime. Start with the [integration steps](guides/integrate/integration-steps.md) for your application type.
+1. **Create and publish a flag** — Follow the [Create your first feature flag](guides/feature-flags/create-your-first-feature-flag.md) guide to define a flag, set your initial audience, and publish it to your environment.
+
+1. **Integrate with your application** — Connect your app using the AEP Web SDK or AEP Mobile SDK so it can retrieve and apply flags at runtime. Start with the [integration steps](guides/integrate/integration-steps.md) for your application type.
 
 Once your first flag is live, you can refine its audience, configure a gradual rollout, and promote it from saved to full rollout.
 

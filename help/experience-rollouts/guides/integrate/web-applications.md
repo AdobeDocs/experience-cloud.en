@@ -1,12 +1,12 @@
 ---
 title: Web applications
-description: Learn how to integrate Adobe Experience Rollouts into a web application using the web SDK.
+description: Learn how to integrate Flags into a web application using the web SDK.
 hide: true
 exl-id: 9b5d744a-263d-4b10-8745-2891f111519f
 ---
 # Web applications {#web-applications}
 
-Web applications integrate with Experience Rollouts via the web SDK.
+Web applications integrate with Flags via the web SDK.
 
 >[!NOTE]
 >

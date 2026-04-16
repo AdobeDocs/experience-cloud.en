@@ -1,6 +1,6 @@
 ---
 title: Gradual rollout
-description: Learn how gradual rollouts in Experience Rollouts let you phase feature delivery into production safely, with real-time feedback and minimal risk.
+description: Learn how gradual rollouts in Flags let you phase feature delivery into production safely, with real-time feedback and minimal risk.
 hide: true
 exl-id: ede24236-de19-4008-893c-e67bd82e23e3
 ---
@@ -21,7 +21,7 @@ Each phase of the rollout surfaces feedback from real users. Teams can act on th
 
 ## How it works {#how-it-works}
 
-Experience Rollouts provides granular targeting rules to increase user exposure step by step. A typical gradual rollout might follow this pattern:
+Flags provides granular targeting rules to increase user exposure step by step. A typical gradual rollout might follow this pattern:
 
 1. Enable the feature for **1%** of users
 2. Monitor feedback and performance metrics

@@ -1,6 +1,6 @@
 ---
 title: Create your first feature flag
-description: Learn how to create a feature flag in Adobe Experience Rollouts, set an audience, and test it before rolling out to users.
+description: Learn how to create a feature flag in Flags, set an audience, and test it before rolling out to users.
 hide: true
 exl-id: ae115120-8da9-465e-a556-c17591ea7054
 ---
@@ -10,7 +10,7 @@ exl-id: ae115120-8da9-465e-a556-c17591ea7054
 
 Before creating a feature flag, complete the following:
 
-* You have access to the Experience Rollouts console — see [Log in to the console](../console/log-in-to-the-console.md)
+* You have access to the Flags console — see [Log in to the console](../console/log-in-to-the-console.md)
 * Your application is onboarded — see [Onboard your application](../applications/onboard-your-application.md)
 * You have the **Developer** or **Product Release Owner** role
 
@@ -18,7 +18,7 @@ Before creating a feature flag, complete the following:
 
 To create a new feature flag, follow these steps in the console:
 
-1. Log in to the Experience Rollouts console and navigate to **Features & Releases > Feature Flags**.
+1. Log in to the Flags console and navigate to **Features & Releases > Feature Flags**.
 2. Select your application from the **Application** drop-down.
 3. Select **New Feature**.
 4. Provide a title, key, description, and optionally a tag.

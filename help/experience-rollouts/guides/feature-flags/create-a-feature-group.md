@@ -1,6 +1,6 @@
 ---
 title: Create a feature group
-description: Learn how to create a feature group in Adobe Experience Rollouts to manage multiple feature flags across applications in your team as a single unit.
+description: Learn how to create a feature group in Flags to manage multiple feature flags across applications in your team as a single unit.
 hide: true
 exl-id: 58148df1-84ee-4a78-a4b4-71f74cd8ce0a
 ---
@@ -10,7 +10,7 @@ exl-id: 58148df1-84ee-4a78-a4b4-71f74cd8ce0a
 
 Before creating a feature group, complete the following:
 
-* You have access to the Experience Rollouts console — see [Log in to the console](../console/log-in-to-the-console.md)
+* You have access to the Flags console — see [Log in to the console](../console/log-in-to-the-console.md)
 * Your application is onboarded — see [Onboard your application](../applications/onboard-your-application.md)
 * You have the **Developer** or **Product Release Owner** role
 * You have created the feature flags you want to add to the group — see [Create your first feature flag](create-your-first-feature-flag.md)
@@ -21,7 +21,7 @@ For an introduction to feature groups, see [Feature groups to control multiple f
 
 Open the console and start a new feature group:
 
-1. Log in to the Experience Rollouts console and navigate to **Feature Testing > Feature Groups**.
+1. Log in to the Flags console and navigate to **Feature Testing > Feature Groups**.
 2. Select **New Feature Group**.
 
 ## Step 2: Basic details {#basic-details}

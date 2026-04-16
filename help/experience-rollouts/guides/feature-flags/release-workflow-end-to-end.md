@@ -1,6 +1,6 @@
 ---
 title: Release workflow end-to-end
-description: Learn the end-to-end workflow for managing a coordinated release in Adobe Experience Rollouts, from defining feature flags to going live.
+description: Learn the end-to-end workflow for managing a coordinated release in Flags, from defining feature flags to going live.
 hide: true
 exl-id: 086e3192-c22b-4de8-a15a-89edb09ac230
 ---
@@ -10,11 +10,11 @@ This page describes the full sequence of activities involved in a coordinated re
 
 ## 1. Define feature flags per application {#define-flags}
 
-Each product team assigns a **Product Release Owner** who logs in to the Experience Rollouts console and creates feature flags for the applications they own. The product team then implements the conditional logic in their code, placing features behind these flags.
+Each product team assigns a **Product Release Owner** who logs in to the Flags console and creates feature flags for the applications they own. The product team then implements the conditional logic in their code, placing features behind these flags.
 
 ## 2. Create the release {#create-release}
 
-Creating a new release requires a support request — it is not fully self-serve. Contact Experience Rollouts support to have the release created. Provide the release name, owning team, target environment, objective, participating applications, and expected duration.
+Creating a new release requires a support request — it is not fully self-serve. Contact Flags support to have the release created. Provide the release name, owning team, target environment, objective, participating applications, and expected duration.
 
 Once the release is confirmed, the Release Manager opens the console and completes the release configuration.
 
