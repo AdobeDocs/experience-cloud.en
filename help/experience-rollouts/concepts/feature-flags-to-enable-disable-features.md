@@ -1,6 +1,6 @@
 ---
 title: Feature flags to enable and disable features
-description: Learn how feature flags in Experience Rollouts let you control feature availability, manage dependencies, and reduce deployment risk.
+description: Learn how feature flags in Flags let you control feature availability, manage dependencies, and reduce deployment risk.
 hide: true
 exl-id: 627775e8-9b17-4bc7-9565-07a438ae8ed7
 ---
@@ -34,7 +34,7 @@ If a release does not go as planned — unfavorable feedback, a bug, or a perfor
 
 ## Feature flag lifecycle {#lifecycle}
 
-A feature flag in Experience Rollouts follows this typical lifecycle:
+A feature flag in Flags follows this typical lifecycle:
 
 1. A developer creates a feature flag and tests it in isolation — without exposing it to other users.
 2. A product owner links an audience to the flag, making the feature visible to a defined set of external users.

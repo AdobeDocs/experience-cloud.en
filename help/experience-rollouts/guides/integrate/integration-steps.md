@@ -1,6 +1,6 @@
 ---
 title: Integration steps
-description: Follow the integration steps for your application type to connect Adobe Experience Rollouts to your web service, web or mobile app, or desktop application using the available SDKs.
+description: Follow the integration steps for your application type to connect Flags to your web service, web or mobile app, or desktop application using the available SDKs.
 hide: true
 exl-id: d584bdf4-9031-40e7-a7f0-807c619bbba1
 ---
@@ -10,7 +10,7 @@ Choose the integration path that matches your application type.
 
 ## Web services {#web-services}
 
-Backend services integrate using a server-side SDK. Contact Experience Rollouts support for guidance on your specific stack.
+Backend services integrate using a server-side SDK. Contact Flags support for guidance on your specific stack.
 
 >[!NOTE]
 >

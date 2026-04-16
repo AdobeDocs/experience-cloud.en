@@ -1,16 +1,20 @@
 ---
-title: Introduction to Experience Rollouts
-description: Learn how Adobe Experience Rollouts provides a controlled release system for deploying features progressively to targeted audiences.
+title: Introduction to Flags
+description: Learn how Flags in Adobe Target provides a controlled release system for deploying features progressively to targeted audiences.
 hide: true
 exl-id: befe7899-096d-4f74-a5a2-35b1fc3cbc58
 ---
-# Introduction to Experience Rollouts {#introduction}
+# Introduction to Flags {#introduction}
 
-Adobe Experience Rollouts is a controlled release system that lets teams deploy features all the way to production while keeping precise control over who sees them and when. A feature can be in production and invisible to end users — then switched on progressively for a targeted audience — without any redeployment.
+>[!AVAILABILITY]
+>
+>Flags is currently in Beta and available to Adobe Target customers. Contact your Adobe representative to request access.
+
+Flags in Adobe Target is a controlled release system that lets teams deploy features all the way to production while keeping precise control over who sees them and when. A feature can be in production and invisible to end users — then switched on progressively for a targeted audience — without any redeployment.
 
 ## From development to production {#dev-to-prod}
 
-Experience Rollouts supports the full journey of a feature from its earliest development stage through to general availability:
+Flags supports the full journey of a feature from its earliest development stage through to general availability:
 
 1. **Developer testing** — A developer creates a feature flag, deploys their code to any environment, and tests against only their own session. No other users are affected and no branching is required.
 
@@ -22,7 +26,7 @@ Experience Rollouts supports the full journey of a feature from its earliest dev
 
 ## Core capabilities {#capabilities}
 
-Experience Rollouts is a feature management platform that provides:
+Flags is a feature management platform that provides:
 
 * **Feature flags** — Turn any feature on or off at runtime for a targeted audience, without redeploying code.
 
@@ -35,5 +39,7 @@ Experience Rollouts is a feature management platform that provides:
 * **Gradual rollouts** — Phase feature delivery incrementally to reduce risk, gather feedback, and manage backend load.
 
 * **Kill switch** — Turn off any feature immediately if a problem is detected, without a code change or redeployment.
+
+* **AEP SDK support** — Flags is deployed via the AEP Web SDK and AEP Mobile SDK, enabling consistent flag evaluation across web and mobile applications.
 
 <!-- -->

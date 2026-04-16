@@ -1,17 +1,17 @@
 ---
 audience: user
-user-guide-title: Adobe Experience Rollouts
-user-guide-description: Learn how to use Adobe Experience Rollouts to manage feature flags, controlled rollouts, and targeted releases across your applications.
+user-guide-title: Flags
+user-guide-description: Learn how to use Flags in Adobe Target to manage feature flags, controlled rollouts, and targeted releases across your applications.
 hide: true
 ---
 
-# Adobe Experience Rollouts {#experience-rollouts-docs}
+# Flags {#experience-rollouts-docs}
 
 + [Overview](home.md)
 + Getting Started {#get-started}
-  + [Introduction to Experience Rollouts](getting-started/introduction.md)
-  + [Why use Experience Rollouts](getting-started/why-use-experience-rollouts.md)
-  + [Experience Rollouts modes](getting-started/experience-rollouts-modes.md)
+  + [Introduction to Flags](getting-started/introduction.md)
+  + [Why use Flags](getting-started/why-use-flags.md)
+  + [Flags modes](getting-started/flags-modes.md)
 + Concepts {#concepts}
   + [What is a feature flag](concepts/what-is-a-feature-flag.md)
   + [Feature flags to enable and disable features](concepts/feature-flags-to-enable-disable-features.md)
@@ -19,14 +19,14 @@ hide: true
   + [Gradual rollout](concepts/gradual-rollout.md)
 + Guides {#guides}
   + Getting started with the console {#console}
-    + [Log in to the Experience Rollouts console](guides/console/log-in-to-the-console.md)
+    + [Log in to Flags](guides/console/log-in-to-the-console.md)
     + [Select your sandbox](guides/console/environments-overview.md)
     + [Request access](guides/console/request-access.md)
   + Applications {#applications}
     + [Manage applications](guides/applications/manage-applications.md)
     + [Onboard your application](guides/applications/onboard-your-application.md)
-  + Integrate Experience Rollouts {#integrate}
-    + [Integrate Experience Rollouts in your app](guides/integrate/integrating-in-your-app.md)
+  + Integrate Flags {#integrate}
+    + [Integrate Flags in your app](guides/integrate/integrating-in-your-app.md)
     + [Startup guide](guides/integrate/startup-guide.md)
     + [Desktop applications](guides/integrate/desktop-applications.md)
     + [Mobile applications](guides/integrate/mobile-applications.md)

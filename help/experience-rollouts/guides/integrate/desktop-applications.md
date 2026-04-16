@@ -1,12 +1,12 @@
 ---
 title: Desktop applications
-description: Learn how to integrate Adobe Experience Rollouts into a desktop application using the SDK.
+description: Learn how to integrate Flags into a desktop application using the SDK.
 hide: true
 exl-id: e26c8af8-893a-43f4-905c-7292cc887900
 ---
 # Desktop applications {#desktop-applications}
 
-Desktop applications integrate with Experience Rollouts via the SDK. Contact your Adobe representative for integration guidance specific to your desktop stack.
+Desktop applications integrate with Flags via the SDK. Contact your Adobe representative for integration guidance specific to your desktop stack.
 
 >[!NOTE]
 >

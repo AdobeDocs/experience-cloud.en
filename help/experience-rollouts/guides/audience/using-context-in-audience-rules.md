@@ -1,6 +1,6 @@
 ---
 title: Use context in audience rules
-description: Learn how to use context variables in audience rules for feature flags and feature groups in Adobe Experience Rollouts.
+description: Learn how to use context variables in audience rules for feature flags and feature groups in Flags.
 hide: true
 exl-id: 0367f475-9209-4d53-86b4-a739a73a23a7
 ---
@@ -12,7 +12,7 @@ Context variables are relevant for web and mobile clients.
 
 ## How context variables work {#how-context-works}
 
-Your application passes context variables to Experience Rollouts when evaluating a feature flag. You define rules in the console that check these values, and the platform uses them at the time of evaluation to determine whether the user qualifies.
+Your application passes context variables to Flags when evaluating a feature flag. You define rules in the console that check these values, and the platform uses them at the time of evaluation to determine whether the user qualifies.
 
 ## Context variable types {#variable-types}
 

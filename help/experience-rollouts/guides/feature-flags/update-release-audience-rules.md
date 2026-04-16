@@ -1,6 +1,6 @@
 ---
 title: Update release audience rules
-description: Learn how to configure and update audience criteria for a release in Adobe Experience Rollouts, including supported rule types and how to combine them.
+description: Learn how to configure and update audience criteria for a release in Flags, including supported rule types and how to combine them.
 hide: true
 exl-id: 8d546cd7-af66-47c7-aab3-c667568e8582
 ---
@@ -10,7 +10,7 @@ exl-id: 8d546cd7-af66-47c7-aab3-c667568e8582
 
 To start configuring who receives your release, navigate to the audience settings in the console:
 
-1. Open your release in the Experience Rollouts console.
+1. Open your release in the Flags console.
 2. Go to the **Audience** tab.
 3. Enable the toggle next to **Audience Rules**.
 4. Select whether to add **inclusion rules** (who should receive the release) or **exclusion rules** (who should not).

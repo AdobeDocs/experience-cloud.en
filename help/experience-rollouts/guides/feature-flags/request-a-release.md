@@ -1,6 +1,6 @@
 ---
 title: Request a release
-description: Learn how to request a new coordinated release in Adobe Experience Rollouts and what information to provide.
+description: Learn how to request a new coordinated release in Flags and what information to provide.
 hide: true
 exl-id: 8eee84b2-fbd5-4713-90ac-92fd7b74c163
 ---
@@ -17,7 +17,7 @@ exl-id: 8eee84b2-fbd5-4713-90ac-92fd7b74c163
 
 ## Submit a support request {#submit}
 
-Release creation is not self-serve. Contact Experience Rollouts support to request a new release. Provide the following information:
+Release creation is not self-serve. Contact Flags support to request a new release. Provide the following information:
 
 | Field | Description |
 |---|---|

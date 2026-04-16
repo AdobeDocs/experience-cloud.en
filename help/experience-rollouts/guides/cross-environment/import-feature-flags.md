@@ -1,12 +1,12 @@
 ---
 title: Import feature flags
-description: Learn how to import feature flags from one sandbox into another in Adobe Experience Rollouts to avoid recreating flag configurations manually.
+description: Learn how to import feature flags from one sandbox into another in Flags to avoid recreating flag configurations manually.
 hide: true
 exl-id: 37c84d75-a565-4202-8c99-f630e05b6bb6
 ---
 # Import feature flags {#import-feature-flags}
 
-Experience Rollouts lets you import feature flags from one sandbox (for example, sandbox 1) into another sandbox (for example, sandbox 2). This avoids having to recreate flag configurations manually and reduces the risk of configuration drift between sandboxes.
+Flags lets you import feature flags from one sandbox (for example, sandbox 1) into another sandbox (for example, sandbox 2). This avoids having to recreate flag configurations manually and reduces the risk of configuration drift between sandboxes.
 
 ## Step 1: Go to the destination sandbox and application {#step-1}
 

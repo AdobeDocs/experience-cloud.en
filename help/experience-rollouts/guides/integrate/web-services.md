@@ -1,12 +1,12 @@
 ---
 title: Web services
-description: Learn how to integrate Adobe Experience Rollouts into a backend web service using the Java or Node.js SDK.
+description: Learn how to integrate Flags into a backend web service using the Java or Node.js SDK.
 hide: true
 exl-id: 2e73fc30-93d4-46dc-8855-950dd1b15064
 ---
 # Web services {#web-services}
 
-Backend services integrate with Experience Rollouts using a server-side SDK. Choose the SDK that matches your technology stack.
+Backend services integrate with Flags using a server-side SDK. Choose the SDK that matches your technology stack.
 
 ## Available SDKs {#available-sdks}
 
@@ -16,7 +16,7 @@ Backend services integrate with Experience Rollouts using a server-side SDK. Cho
 
 ## Other languages {#other-languages}
 
-Contact Experience Rollouts support for guidance on integrating with your specific stack.
+Contact Flags support for guidance on integrating with your specific stack.
 
 ## See also {#see-also}
 

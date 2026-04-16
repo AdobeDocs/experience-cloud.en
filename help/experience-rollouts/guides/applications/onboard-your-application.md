@@ -1,6 +1,6 @@
 ---
 title: Onboard your application
-description: Learn how to onboard a new application to Adobe Experience Rollouts so you can start creating and managing feature flags.
+description: Learn how to onboard a new application to Flags so you can start creating and managing feature flags.
 hide: true
 exl-id: d88c27a5-f490-4504-9764-5e4ce98fdf20
 ---
@@ -10,7 +10,7 @@ You must have the **Admin** role to add a new application. Contact your admin if
 
 ## Add a new application {#add-application}
 
-1. Log in to the Experience Rollouts console and navigate to **Experience Rollout > Applications**.
+1. Log in to the Flags console and navigate to **Experience Rollout > Applications**.
 
    >[!NOTE]
    >
@@ -24,7 +24,7 @@ You must have the **Admin** role to add a new application. Contact your admin if
 
    | Field | Description |
    |---|---|
-   | **Application ID** | A unique identifier used when calling Experience Rollouts from your code. Use your application's client ID. |
+   | **Application ID** | A unique identifier used when calling Flags from your code. Use your application's client ID. |
    | **TTL** | The polling interval (in seconds) for refreshing the per-application cache. Applies to server-side SDKs only. |
 
 5. Select **Add**. Your application is now registered and ready for feature flag configuration.
@@ -34,7 +34,7 @@ You must have the **Admin** role to add a new application. Contact your admin if
 Once your application is onboarded, you can start creating feature flags:
 
 * [Create your first feature flag](../feature-flags/create-your-first-feature-flag.md)
-* [Integrate Experience Rollouts in your app](../integrate/integrating-in-your-app.md)
+* [Integrate Flags in your app](../integrate/integrating-in-your-app.md)
 
 ## See also {#see-also}
 
