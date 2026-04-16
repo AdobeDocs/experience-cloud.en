@@ -5,7 +5,7 @@ user-guide-description: Learn how to use Flags in Adobe Target to manage feature
 hide: true
 ---
 
-# Flags {#experience-rollouts-docs}
+# Flags {#flags}
 
 + [Overview](home.md)
 + Getting Started {#get-started}
