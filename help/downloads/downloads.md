@@ -3,6 +3,13 @@ title: Hidden download files
 description: Hidden download files for reference only
 hide: y
 exl-id: f4b0aa11-ae9b-4074-902d-a5be412d07f7
+TQID: https://experienceleague.adobe.com/5R9-exenYZcGPqxcTmgpxuoOl8VKAdOERgKuZ7Rg5Qk
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: Experience Cloud
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Hidden download files
 
