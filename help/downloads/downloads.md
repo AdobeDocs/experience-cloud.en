@@ -1,7 +1,7 @@
 ---
 title: Hidden download files
 description: Hidden download files for reference only
-hide: y
+hide: true
 exl-id: f4b0aa11-ae9b-4074-902d-a5be412d07f7
 ---
 # Hidden download files
