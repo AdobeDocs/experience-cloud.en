@@ -1,6 +1,6 @@
 ---
 user-guide-title: Experience Cloud Software Distribution
-hide: y
+hide: true
 ---
 
 # Download Files {#files}
