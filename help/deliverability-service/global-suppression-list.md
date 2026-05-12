@@ -3,6 +3,10 @@ title: Global suppression list
 description: Discover the global suppression list
 hide: true
 exl-id: 40aef987-52a3-470b-88ca-c716a116bdfc
+TQID: https://experienceleague.adobe.com/gCmvM2zwg-6CmT-O1HjM24niis-mJRnJEXt3LunUZaI
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: Experience Cloud
 ---
 # Global suppression list {#global-suppression-list}
 

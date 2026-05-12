@@ -5,6 +5,19 @@ level: Beginner
 audience: end-user
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: 9b5a8b5f-2258-4861-b5c2-feefef67ccb3
+TQID: https://experienceleague.adobe.com/KgGIjUbkYS7DwLoATeZSFneGAe9jLELSw11kKfK28bY
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: Experience Cloud
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Reporting interface{#reporting-interface}
 

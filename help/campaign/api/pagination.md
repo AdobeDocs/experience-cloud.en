@@ -8,6 +8,13 @@ role: Developer
 level: Experienced
 badge: label="LIMITED AVAILABILITY" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Restricted to Campaign Standard migrated users"
 exl-id: d6ebce3c-1e84-4b3b-a68d-90df4680af64
+TQID: https://experienceleague.adobe.com/Ft50AgZSedRcL8pvSbeMkWG9Zgz38Dq-3fC7XN2j1-w
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: Experience Cloud
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Pagination
 

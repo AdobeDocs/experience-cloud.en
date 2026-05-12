@@ -2,8 +2,14 @@
 title: Software Distribution
 description: Learn how to use Software Distribution to download your Adobe Experience Cloud software.
 exl-id: ac559a28-4444-4326-ba92-78afd10ed9ab
+TQID: https://experienceleague.adobe.com/KaFci2oowPXO8w8SZORK-sn-LYZd1TM2Y3JFcISsQZM
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: Experience Cloud
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
-
 # Software Distribution
 
 Learn how to use Software Distribution to download your Adobe Experience Cloud software.
