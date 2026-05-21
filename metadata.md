@@ -3,7 +3,7 @@ cloud: Experience Cloud
 solution: Experience Cloud
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    label: "Experience Cloud"
+    internal-label: "Experience Cloud"
 feature-set: Experience Cloud Services
 type: Documentation
 git-repo: https://github.com/AdobeDocs/experience-cloud.en
