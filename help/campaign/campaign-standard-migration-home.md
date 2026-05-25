@@ -1,4 +1,3 @@
-@ -1,91 +0,0 @@
 ---
 title: Adobe Campaign Web User interface
 description: Discover Adobe Campaign Web User interface
@@ -20,4 +19,5 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
+
 # Campaign Standard transition to Campaign v8 {#triggers-home} 

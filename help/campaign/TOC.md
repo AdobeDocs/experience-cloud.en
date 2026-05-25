@@ -1,4 +1,3 @@
-@ -1,77 +0,0 @@
 ---
 user-guide-title: Adobe Campaign v8
 user-guide-description:  Adobe Campaign v8
@@ -10,6 +9,7 @@ product_v2:
 usetq: true
 role: User
 ---
+
 # Adobe Campaign v8 {#campaign}
 
 + [Home](campaign-standard-migration-home.md)
