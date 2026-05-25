@@ -14,7 +14,7 @@ role_v2:
 
 The new user interface for Experience Cloud Triggers offers an intuitive experience to manage consumer behaviors and personalize user experiences.
 
-You can use Experience Cloud Triggers to connect data between Adobe Campaign and Adobe Analytics using the pipeline. The pipeline retrieves user’s actions or triggers from your website. A cart abandonment is an example of trigger. Triggers are processed in Adobe Campaign to send emails in near real-time.
+You can use Experience Cloud Triggers to connect data between Adobe Campaign and Adobe Analytics using the pipeline. The pipeline retrieves user’s actions or triggers from your website. A cart abandonment is an example of trigger. Triggers are processed in Adobe Campaign to send emails in near real-time. 
 
 **Useful links:**
 
