@@ -8,4 +8,3 @@ hide: true
 
 * [Home](home.md)
 * [Global suppression list](global-suppression-list.md)
-* {hide-from-toc} [Hidden test article](hidden-test.md)
