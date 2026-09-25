@@ -5,7 +5,7 @@ exl-id: f49e3da5-acba-4b60-a875-94a6be979cc0
 TQID: https://experienceleague.adobe.com/qY4I-1h-KYpVx3yNz2c5cQFB9bB3I7sSNQ6RtTIyEPY
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: Experience Cloud
+    internal-label: CX Enterprise
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
